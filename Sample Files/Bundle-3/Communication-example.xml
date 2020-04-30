@@ -1,0 +1,47 @@
+<Communication xmlns="http://hl7.org/fhir">
+  <id value="pt-education-example"/> 
+  <identifier> 
+    <type> 
+      <text value="123456789"/> 
+    </type> 
+    <system value="urn:oid:1.3.4.5.6.7"/> 
+    <value value="2345678901"/> 
+  </identifier> 
+  <instantiatesUri value="http://example.org/education"/> 
+  <partOf> 
+  <display value="Pt. advised to see dentist regularly, brush 2x/day w/ fluoride toothpaste, floss"/> 
+  </partOf> 
+  <status value="completed"/> 
+  <category> 
+    <coding> 
+      <system value="http://acme.org/messagetypes"/> 
+      <code value="instruction"/> 
+    </coding> 
+    <text value="Instruction"/> 
+  </category> 
+  <medium> 
+    <coding> 
+      <system value="http://terminology.hl7.org/CodeSystem/v3-ParticipationMode"/> 
+      <code value="VERBAL"/> 
+      <display value="verbal"/> 
+    </coding> 
+    <text value="Verbal"/> 
+  </medium> 
+  <subject> 
+    <reference value="Patient/example-dental"/> 
+  </subject> 
+  <encounter> 
+    <reference value="Encounter/example-1"/> 
+  </encounter> 
+  <sent value="2020-03-12T18:01:10-08:00"/> 
+  <received value="2020-03-12T18:01:11-08:00"/> 
+  <recipient> 
+    <reference value="Patient/example-dental"/> 
+  </recipient> 
+  <sender> 
+    <reference value="Practitioner/practitioner-1"/> 
+  </sender> 
+  <payload> 
+    <contentString value="Pt. Education. Advised to see dentist regularly, brush 2x/day w/ fluoride toothpaste, floss"/> 
+  </payload> 
+</Communication>

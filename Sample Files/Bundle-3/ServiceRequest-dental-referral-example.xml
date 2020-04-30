@@ -1,0 +1,30 @@
+<ServiceRequest xmlns="http://hl7.org/fhir">
+	<id value="example-dental-referral"/> 
+	<status value="active"/> 
+	<intent value="plan"/> 
+	<category> 
+		<coding> 
+			<system value="http://snomed.info/sct"/> 
+			<code value="14736009 "/> 
+			<display value="History and physical examination with evaluation and management of patient (procedure)"/> 
+		</coding> 
+		<text value="Evaluation and management of patient (procedure)"/> 
+	</category> 
+	<code> 
+		<coding>
+			<system value="http://snomed.info/sct"/>
+			<code value="431183005 "/>
+			<display value="Referral to endodontic service"/>
+		</coding>
+		<text value="Referral to endodontic service"/>
+	</code> 
+	<subject> 
+		<reference value="Patient/example-dental"/> 
+	</subject> 
+	<requester>
+		<reference value="Practitioner/practitioner-D"/>
+	</requester>
+	<reasonReference>
+		<reference value="Condition/dental-example-2"/>
+	</reasonReference>
+</ServiceRequest> 

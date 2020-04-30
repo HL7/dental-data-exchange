@@ -1,0 +1,36 @@
+<PractitionerRole>
+	<id value="PractitionerRole-D"/>
+	<meta>
+		<profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole"/>
+	</meta>
+	<practitioner>
+		<reference value="Practitioner/practitioner-D"/>
+		<display value="Dr. John Dentist"/>
+	</practitioner>
+	<organization>
+		<reference value="Organization/GOHC-organization"/>
+		<display value="Good Oral Health Clinic"/>
+	</organization>
+	<code>
+		<coding>
+			<system value="http://nucc.org/provider-taxonomy"/>
+			<code value="361QP2300X"/>
+			<display value="General Dentist"/>
+		</coding>
+	</code>
+	<specialty>
+		<coding>
+			<system value="http://nucc.org/provider-taxonomy"/>
+			<code value="908D00000X"/>
+			<display value="General Denist"/>
+		</coding>
+	</specialty>
+	<endpoint>
+		<reference value="http://52.90.126.238:8080/fhir/baseR4/Endpoint/Endpoint-2"/>
+		<display value="Good Oral Health Clinic Physicians Organization"/>
+	</endpoint>
+	<endpoint>
+		<reference value="http://52.90.126.238:8080/fhir/baseR4/Endpoint/Endpoint-2"/>
+		<display value="John.Dentist.MD@direct.example.org"/>
+	</endpoint>
+</PractitionerRole>

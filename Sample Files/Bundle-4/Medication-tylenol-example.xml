@@ -1,0 +1,14 @@
+<Medication xmlns="http://hl7.org/fhir">
+  <id value="tylenol-dental"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-medication"/>
+  </meta>
+  <code>
+    <coding>
+      <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+      <code value="993836"/>
+      <display value="Acetaminophen 300 MG / Codeine Phosphate 30 MG [Tylenol with Codeine]"/>
+    </coding>
+    <text value="Acetaminophen 300 MG / Codeine Phosphate 30 MG [Tylenol with Codeine]"/>
+  </code>
+</Medication>

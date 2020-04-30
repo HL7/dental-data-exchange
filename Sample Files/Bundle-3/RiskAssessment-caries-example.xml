@@ -1,0 +1,25 @@
+<RiskAssessment xmlns="http://hl7.org/fhir">
+	<id value="dental-riskexample"/>
+	<status value="final"/> 
+	<code> 
+		<coding> 
+			<system value="http://browser.ihtsdotools.org/"/> 
+			<code value="709510001"/> 
+			<display value="Assessment of oral risk for disease (procedure)"/> 
+		</coding> 
+	</code> 
+	<subject> 
+		<reference value="Patient/example-dental"/> 
+	</subject> 
+	<encounter> 
+		<reference value="Encounter/dental-example-1"/> 
+		<display value="Encounter with patient A"/> 
+	</encounter> 
+	<occurrenceDateTime value="2020-02-14"/>  
+	<performer> 
+		<reference value="Practitioner/practitioner-1"/> 
+	</performer>   
+	<note> 
+		<text value="This risk assessment pertains to routine oral health information formerly captured in the Oral Health Risk Assessment"/> 
+	</note> 
+</RiskAssessment> 

@@ -1,0 +1,75 @@
+<Patient xmlns="http://hl7.org/fhir">
+	<id value="example-dental"/>
+	<meta>
+		<profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"/>
+	</meta>
+	<status value="generated"/>
+	<extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-race">
+		<extension url="ombCategory">
+			<valueCoding>
+				<system value="urn:oid:2.16.840.1.113883.6.238"/>
+				<code value="2106-3"/>
+				<display value="White"/>
+			</valueCoding>
+		</extension>
+		
+		<extension url="detailed">
+			<valueCoding>
+				<system value="urn:oid:2.16.840.1.113883.6.238"/>
+				<code value="1516-4"/>
+				<display value="Zuni"/>
+			</valueCoding>
+		</extension>
+		<extension url="text">
+			<valueString value="Mixed"/>
+		</extension>
+	</extension>
+	<extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity">
+		<extension url="ombCategory">
+			<valueCoding>
+				<system value="urn:oid:2.16.840.1.113883.6.238"/>
+				<code value="2135-2"/>
+				<display value="Hispanic or Latino"/>
+			</valueCoding>
+		</extension>
+	</extension>
+	<extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex">
+		<valueCode value="M"/>
+	</extension>
+	<identifier>
+		<use value="usual"/>
+		<type>
+			<coding>
+				<system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+				<code value="MR"/>
+				<display value="Medical Record Number"/>
+			</coding>
+			<text value="Medical Record Number"/>
+		</type>
+		<system value="http://clinic.goodhealth.org"/>
+		<value value="5152020"/>
+	</identifier>
+	<active value="true"/>
+	<name>
+		<family value="A"/>
+		<given value="Patient"/>
+	</name>
+	<telecom>
+		<system value="phone"/>
+		<value value="123-456-7890"/>
+		<use value="home"/>
+	</telecom>
+	<telecom>
+		<system value="email"/>
+		<value value="testA@email.com"/>
+	</telecom>
+	<gender value="male"/>
+	<birthDate value="1990-01-01"/>
+	<address>
+		<line value="123 Test Dr."/>
+		<city value="Denver"/>
+		<state value="CO"/>
+		<postalCode value="80204"/>
+		<country value="US"/>
+	</address>
+</Patient>

@@ -1,0 +1,35 @@
+<Endpoint xmlns="http://hl7.org/fhir">
+	<id value="endo-endpoint-example-4"/>
+	<identifier>
+		<system value="http://example.org/enpoint-identifier"/>
+		<value value="epcp13"/>
+	</identifier>
+	<status value="active"/>
+	<connectionType>
+		<system value="http://terminology.hl7.org/CodeSystem/endpoint-connection-type"/>
+		<code value="hl7-fhir-rest"/>
+	</connectionType>
+	<name value="DART Hub"/>
+	<managingOrganization>
+		<reference value="Organization/Example-DART"/>
+	</managingOrganization>
+	<contact>
+		<system value="email"/>
+		<value value="DARTendpointmanager@example.org"/>
+		<use value="work"/>
+    </contact>
+	<period>
+		<start value="2019-09-01"/>
+	</period>
+	<payloadType>
+		<coding>
+        <system value="http://hl7.org/fhir/payload-types"/>
+			<code value="DICOM"/>
+		</coding>
+	</payloadType>
+	<payloadMimeType value="application/dicom"/>
+
+	<address value="http://fhirR4.dart"/>
+	<!--  Not a valid bearer token, but is here for demonstration purposes  -->
+	<header value="bearer-code CASGS534s5"/>
+</Endpoint>
