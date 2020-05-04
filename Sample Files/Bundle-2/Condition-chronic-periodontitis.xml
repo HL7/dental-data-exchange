@@ -1,7 +1,8 @@
 <Condition xmlns="http://hl7.org/fhir">
-  <id value="Dental-example-3"/>
+  <id value="Chronic-periodontitis-example"/>
   <meta>
     <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"/>
+	<profile value="http://hl7.org/fhir/us/dentalreferral/StructureDefinition/dental-condition"/>
   </meta>
   <clinicalStatus>
     <coding>
@@ -29,11 +30,11 @@
   </category>
   <code>
     <coding>
-      <system value="http://snomed.info/sct"/>
-      <code value="80967001"/>
-      <display value="Dental caries"/>
+      <system value="http://www.ada.org/snodent"/>
+      <code value="116957D"/>
+      <display value="Chronic periodontitis (disorder)"/>
     </coding>
-    <text value="Dental caries"/>
+    <text value="Chronic periodontitis (disorder)"/>
   </code>
   <subject>
     <reference value="Patient/example-dental"/>

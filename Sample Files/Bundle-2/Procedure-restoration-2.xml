@@ -1,28 +1,28 @@
 <Procedure xmlns="http://hl7.org/fhir">
-	<id value="MOBD-amalgam-restoration"/>
+	<id value="Dental-incisor-restoration-example"/>
 	<meta>
 		<profile
              value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"/>
 	</meta>
 	<identifier>
 		<system value="urn:ietf:rfc:3986"/>
-		<value value="urn:uuid:b2a737f2-2fdb-49c1-b097-dac173d07aff"/>
+		<value value="urn:uuid:c2a737f2-2fdb-49c1-b097-dac173d07aff"/>
 	</identifier>
-	<status value="completed"/>
+	<status value="preparation"/>
 	<code>
 		<coding>
 			<system value="http://www.ama-assn.org/go/cdt"/>
-			<code value="D2161"/>
+			<code value="D2393"/>
 		</coding>
 		<text
-          value="Amalgam - four or more surfaces, primary or permanent"/>
+          value="Resin-based composite- three surfaces, posterior (restoration)"/>
 	</code>
 	<subject>
 		<reference value="Patient/example-dental"/>
 	</subject>
 	<performedPeriod>
-		<start value="2018-02-26T12:55:26-07:00"/>
-		<end value="2018-02-26T13:25:26-07:00"/>
+		<start value="2020-05-15T12:55:26-07:00"/>
+		<end value="2020-05-15T13:25:26-07:00"/>
 	</performedPeriod>
 	<performer>
 		<actor>
@@ -33,7 +33,7 @@
 		<code>
 			<coding>
 				<system value="http://hl7.org/fhir/us/dentalreferral/ValueSet/FDI-teeth-codes"/>
-				<code value="30"/>
+				<code value="7"/>
 			</coding>
 		</code>
 	</bodySite>

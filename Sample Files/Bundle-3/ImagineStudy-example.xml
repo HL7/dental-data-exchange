@@ -72,7 +72,7 @@
 		<bodySite> 
 			<!--     Added body site to support duplicate checking example     -->
 			<system value="http://snomed.info/sct"/> 
-			<code value="245592005 "/> 
+			<code value="245592005"/> 
 			<display value="Entire permanent mandibular right first molar tooth (body structure); tooth number 30"/> 
 		</bodySite> 
 		<started value="2020-03-15T11:01:20+03:00"/> 

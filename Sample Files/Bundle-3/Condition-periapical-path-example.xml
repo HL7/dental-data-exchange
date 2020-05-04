@@ -1,0 +1,44 @@
+<Condition xmlns="http://hl7.org/fhir">
+  <id value="Periapical-pathosis-example"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"/>
+	<profile value="http://hl7.org/fhir/us/dentalreferral/StructureDefinition/dental-condition"/>
+  </meta>
+  <clinicalStatus>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
+      <code value="active"/>
+      <display value="Active"/>
+    </coding>
+    <text value="Active"/>
+  </clinicalStatus>
+  <verificationStatus>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/condition-ver-status"/>
+      <code value="confirmed"/>
+      <display value="Confirmed"/>
+    </coding>
+    <text value="Confirmed"/>
+  </verificationStatus>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/condition-category"/>
+      <code value="encounter-diagnosis"/>
+      <display value="encounter-diagnosis (primary)"/>
+    </coding>
+    <text value="Primary Diagnosis"/>
+  </category>
+  <code>
+    <coding>
+      <system value="http://www.ada.org/snodent"/>
+      <code value="121901D "/>
+      <display value="Periapical abscess with sinus tract"/>
+    </coding>
+    <text value="Periapical abscess with sinus tract"/>
+  </code>
+  <subject>
+    <reference value="Patient/example-dental"/>
+    <display value="Patient A"/>
+  </subject>
+  <onsetDateTime value="2019-06-10"/>
+</Condition>

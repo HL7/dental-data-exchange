@@ -1,8 +1,11 @@
 <Observation xmlns="http://hl7.org/fhir">
 	<id value="Dental-findings-example-3"/> 
+	<meta>
+		<profile value="http://hl7.org/fhir/us/dentalreferral/StructureDefinition/oral-finding"/>
+	</meta>
 	<identifier> 
 		<system value="https://dental-test.org"/> 
-		<value value="1304-03720-EPT"/> 
+		<value value="1304-03720"/> 
 	</identifier> 
 	<status value="final"/> 
 	<category> 

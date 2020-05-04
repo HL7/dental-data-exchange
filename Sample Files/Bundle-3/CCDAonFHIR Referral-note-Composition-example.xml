@@ -1,4 +1,3 @@
-
 <Composition xmlns="http://hl7.org/fhir">
 	<id value="CCDA-on-FHIR-Dental-Referral-Note-Example"/>
 	<meta>
@@ -8,12 +7,11 @@
 		<profile value="http://hl7.org/fhir/us/ccda-r4/StructureDefinition/CCDA-on-FHIR-Referral-Note"/>
 	</meta>
 	<language value="en-US"/>
-
 	<identifier>
 		<system value="urn:ietf:rfc:3986"/>
 		<value value="1"/>
 	</identifier>
-	<status value="preliminary"/>
+	<status value="final"/>
 	<type>
 		<coding>
 			<system value="http://loinc.org"/>
@@ -25,12 +23,15 @@
 		<reference value="Patient/example-dental"/>
 		<display value="Patient A"/>
 	</subject>
+	<encounter>
+		<reference value="Encounter/example-genden"/>
+	</encounter>
 	<date value="2020-03-15T09:10:14Z"/>
 	<author>
 		<reference value="PractitionerRole/PractitionerRole-D"/>
 		<display value="Dr. John D, MD"/>
 	</author>
-	<title value="Referral Note"/>
+	<title value="Dental Referral Note"/>
 	<attester>
 		<mode value="legal"/>
 		<time value="2020-03-15T09:10:14Z"/>
@@ -50,16 +51,6 @@
 				<system value="http://loinc.org"/>
 				<code value="48765-2"/>
 				<display value="Allergies and adverse reactions Document"/>
-			</coding>
-		</code>
-	</section>
-	<section>
-		<title value="Advance Directives Section"/>
-		<code>
-			<coding>
-				<system value="http://loinc.org"/>
-				<code value="42348-3"/>
-				<display value="Advance directives"/>
 			</coding>
 		</code>
 		<text>
@@ -89,6 +80,20 @@
 				</table>
 			</div>
 		</text>
+		<entry>
+			<reference value="AllergyIntollerance/Allergy-example-dental"/>
+		</entry>
+	</section>
+	<section>
+		<title value="Advance Directives Section"/>
+		<code>
+			<coding>
+				<system value="http://loinc.org"/>
+				<code value="42348-3"/>
+				<display value="Advance directives"/>
+			</coding>
+		</code>
+		<text/>
 	</section>
 	<section>
 		<title value="Assessment Section"/>
@@ -99,13 +104,7 @@
 				<display value="Evaluation note"/>
 			</coding>
 		</code>
-		<text>
-			<status value="generated"/>
-			<div xmlns="http://www.w3.org/1999/xhtml">
-				<p>Intraoral findings:  On exam of the right lower quadrant, tooth #30 was sensitive to percussion (lingering for 45 seconds) and to cold (sharp, stops when cold removed). No sensitivity to palpation, Radiographic pain upon biting; with relief upon opening. No evidence of new caries on distal; missing #28, replaced with endo implant; #32 impacted with apparent full boney. One cm swelling present on buccal gingivae around #29 and #30 with sinus tract present #30B. </p>
-				<p>Paraoral findings: 2 small, mobile lymph nodes found in right submandibular area.</p>
-			</div>
-		</text>
+		<text/>
 	</section>
 	<section>
 		<title value="Family History Section"/>
@@ -116,34 +115,7 @@
 				<display value="History of family member diseases Narrative"/>
 			</coding>
 		</code>
-		<text>
-			<status value="generated"/>
-			<div xmlns="http://www.w3.org/1999/xhtml">
-				<table>
-					<tr>
-						<td>
-							<b>Relationship</b>
-						</td>
-						<td>
-							<b>Diagnosis</b>
-						</td>
-						<td>
-							<b>Age at Onset</b>
-						</td>
-					</tr>
-					<tr>
-						<td>Father</td>
-						<td>Myocardial Infarction(cause of Death)</td>
-						<td>57</td>
-					</tr>
-					<tr>
-						<td>Father</td>
-						<td>Diabetes</td>
-						<td>40</td>
-					</tr>
-				</table>
-			</div>
-		</text>
+		<text/>
 	</section>
 	<section>
 		<title value="Past Medical History Section"/>
@@ -207,7 +179,7 @@
 					</tr>
 					<tr>
 						<td>Smoking</td>
-						<td>1 pack tobacco per day</td>
+						<td>Non-smoker</td>
 						<td>2005/05/01 - 2010/02/28</td>
 					</tr>
 				</table>
@@ -226,7 +198,7 @@
 		<text>
 			<status value="generated"/>
 			<div xmlns="http://www.w3.org/1999/xhtml">
-				<p>Good, except for reporting pain in lower RQ</p>
+				<p>Good</p>
 			</div>
 		</text>
 	</section>
@@ -239,45 +211,7 @@
 				<display value="Functional status assessment note"/>
 			</coding>
 		</code>
-		<text>
-			<status value="generated"/>
-			<div xmlns="http://www.w3.org/1999/xhtml">
-				<table>
-					<tr>
-						<td>
-							<b>Functional or Cognitive Finding</b>
-						</td>
-						<td>
-							<b>Observation</b>
-						</td>
-						<td>
-							<b>Observation Date</b>
-						</td>
-						<td>
-							<b>Condition Status</b>
-						</td>
-					</tr>
-					<tr>
-						<td>Ambulation (Dependent to Independent</td>
-						<td>Independently able</td>
-						<td>2010/03/11</td>
-						<td>Active</td>
-					</tr>
-					<tr>
-						<td>Finding of Functional Performance and Activity</td>
-						<td>Dyspnea</td>
-						<td>2008/02/16</td>
-						<td>Active</td>
-					</tr>
-					<tr>
-						<td>Cognitive Function Finding</td>
-						<td>Memory Impairment</td>
-						<td>2014/04/29</td>
-						<td>Active</td>
-					</tr>
-				</table>
-			</div>
-		</text>
+		<text/>
 	</section>
 	<section>
 		<title value="Mental Status Section"/>
@@ -288,51 +222,7 @@
 				<display value="Mental status"/>
 			</coding>
 		</code>
-		<text>
-			<status value="generated"/>
-			<div xmlns="http://www.w3.org/1999/xhtml">
-				<table border="1" width="100%">
-					<thead>
-						<tr>
-							<td>
-								<b>Mental Status Findings</b>
-							</td>
-							<td>
-								<b>Effective Dates</b>
-							</td>
-							<td>
-								<b>Condition Status</b>
-							</td>
-						</tr>
-					</thead>
-					<tr>
-						<td>Mental Function</td>
-						<td>July 31, 2013</td>
-						<td>Impaired</td>
-					</tr>
-					<tr>
-						<td>Cognitive Abilities</td>
-						<td>July 31, 2013</td>
-						<td>Judgement, Intact</td>
-					</tr>
-					<tr>
-						<td>Cognitive Function</td>
-						<td>July 31, 2013</td>
-						<td>Aggressive Behavior</td>
-					</tr>
-					<tr>
-						<td>Cognitive Function</td>
-						<td>July 31, 2013</td>
-						<td>Difficulty understanding own emotions</td>
-					</tr>
-					<tr>
-						<td>Cognitive Function</td>
-						<td>July 31, 2013</td>
-						<td>Difficulty communicating Thoughts </td>
-					</tr>
-				</table>
-			</div>
-		</text>
+		<text/>
 	</section>
 	<section>
 		<title value="Immunizations Section"/>
@@ -343,29 +233,7 @@
 				<display value="History of Immunization Narrative"/>
 			</coding>
 		</code>
-		<text>
-			<status value="generated"/>
-			<div xmlns="http://www.w3.org/1999/xhtml">
-				<table>
-					<tr>
-						<td>
-							<b>Vaccine</b>
-						</td>
-						<td>
-							<b>Date</b>
-						</td>
-						<td>
-							<b>Status</b>
-						</td>
-					</tr>
-					<tr>
-						<td>Fluvax (Influenza)</td>
-						<td>2016-04-05</td>
-						<td>Completed</td>
-					</tr>
-				</table>
-			</div>
-		</text>
+		<text/>
 	</section>
 	<section>
 		<title value="Nutrition Section"/>
@@ -376,34 +244,7 @@
 				<display value="Diet and nutrition Narrative"/>
 			</coding>
 		</code>
-		<text>
-			<status value="generated"/>
-			<div xmlns="http://www.w3.org/1999/xhtml">
-				<table>
-					<tr>
-						<td>
-							<b>Date</b>
-						</td>
-						<td>
-							<b>Nutritional Status</b>
-						</td>
-						<td>
-							<b>Diet</b>
-						</td>
-					</tr>
-					<tr>
-						<td>2005/12/29</td>
-						<td>Well nourished</td>
-						<td>Low sodium diet, excessive carbohydrate</td>
-					</tr>
-					<tr>
-						<td>2010/05/26</td>
-						<td>Slight dehydration</td>
-						<td>High protein, low fibre</td>
-					</tr>
-				</table>
-			</div>
-		</text>
+		<text/>
 	</section>
 	<section>
 		<title value="Reason for Referral Section"/>
@@ -421,6 +262,9 @@
 				<p>Suspect irreversible pulpitis with necrotic pulp and periapical pathosis. Tooth is restorable despite possible incomplete fracture DB cusp #30.</p>
 			</div>
 		</text>
+		<entry>
+			<reference value="ServiceRequest/example-dental-referral"/>
+		</entry>
 	</section>
 	<section>
 		<title value="Medication Section"/>
@@ -466,6 +310,9 @@
 				</table>
 			</div>
 		</text>
+		<entry>
+			<reference value="MedicationRequest/dental-medreq-2"/>
+		</entry>
 	</section>
 	<section>
 		<title value="Medical Equipment Section"/>
@@ -476,25 +323,7 @@
 				<display value="History of medical device use"/>
 			</coding>
 		</code>
-		<text>
-			<status value="generated"/>
-			<div xmlns="http://www.w3.org/1999/xhtml">
-				<table>
-					<tr>
-						<td>
-							<b>Supply/Device</b>
-						</td>
-						<td>
-							<b>Date Supplied</b>
-						</td>
-					</tr>
-					<tr>
-						<td>Retainer</td>
-						<td>2012/11/16</td>
-					</tr>
-				</table>
-			</div>
-		</text>
+		<text/>
 	</section>
 	<section>
 		<title value="Plan of Treatment Section"/>
@@ -529,7 +358,7 @@
 			</div>
 		</text>
 		<entry>
-			<reference value="RiskAssessment/dental-riskexample"/>
+			<reference value="ServiceRequest/example-dental-referral"/>
 		</entry>
 	</section>
 	<section>
@@ -563,6 +392,13 @@
 						</td>
 					</tr>
 					<tr>
+						<td>Periapical abscess with sinus tract</td>
+						<td>Condition</td>
+						<td>2019-04-01</td>
+						<td>2016-04-14</td>
+						<td>Active</td>
+					</tr>
+					<tr>
 						<td>Entire permanent mandibular right first molar tooth (body structure); tooth number 30</td>
 						<td>Condition</td>
 						<td>2019-04-01</td>
@@ -580,10 +416,13 @@
 			</div>
 		</text>
 		<entry>
-			<reference value="Condition/example-2"/>
+			<reference value="Condition/Periapical-pathosis-example"/>
 		</entry>
 		<entry>
-			<reference value="Condition/example-3"/>
+			<reference value="Condition/Mandibular-perm-example"/>
+		</entry>
+		<entry>
+			<reference value="Condition/Dental-caries-example"/>
 		</entry>
 	</section>
 	<section>
@@ -614,7 +453,7 @@
 						</td>
 					</tr>
 					<tr>
-						<td>amalgam</td>
+						<td>Amalgam</td>
 						<td>mouth</td>
 						<td>Dr. John Dentist</td>
 						<td>20190405</td>
@@ -635,93 +474,49 @@
 				<display value="Relevant diagnostic tests/laboratory data Narrative"/>
 			</coding>
 		</code>
-						<text>
-					<status value="generated"/>
-					<div xmlns="http://www.w3.org/1999/xhtml">
-						<table>
-							<tr>
-								<td>
-									<b>Test</b>
-								</td>
-								<td>
-									<b>Result Observation Value</b>
-								</td>
-								<td>
-									<b>Date</b>
-								</td>
-								<td>
-									<b>Status</b>
-								</td>
-							</tr>
-							<tr>
-								<td>EPT #30</td>
-								<td>non-responsive</td>
-								<td>2020/03/15</td>
-								<td>Final</td>
-							</tr>
-							<tr>
-								<td>EPT #29</td>
-								<td>positive</td>
-								<td>2020/03/15</td>
-								<td>Final</td>
-							</tr>
-							<tr>
-								<td>EPT #31</td>
-								<td>positive</td>
-								<td>2020/03/15</td>
-								<td>Final</td>
-							</tr>
-							<tr>
-								<td>Cold Test #30</td>
-								<td>Sharp, lingering for 15 seconds</td>
-								<td>2020/03/15</td>
-								<td>Final</td>
-							</tr>
-							<tr>
-								<td>Palpatio</td>
-								<td>No sensitivity to palpatio</td>
-								<td>2020/03/15</td>
-								<td>Final</td>
-							</tr>
-							<tr>
-								<td>Biting pain</td>
-								<td>Radiographic pain upon biting; with relief upon opening</td>
-								<td>2020/03/15</td>
-								<td>Final</td>
-							</tr>
-							<tr>
-								<td>New carries evidence on distal</td>
-								<td>None</td>
-								<td>2020/03/15</td>
-								<td>Final</td>
-							</tr>
-							<tr>
-								<td>Missing teeth</td>
-								<td>#28 - replaced with endosteal (root form) implant</td>
-								<td>2020/03/15</td>
-								<td>Final</td>
-							</tr>
-							<tr>
-								<td>Impaction</td>
-								<td>#32 impacted with apparent bull boney</td>
-								<td>2020/03/15</td>
-								<td>Final</td>
-							</tr>
-														<tr>
-								<td>Swelling</td>
-								<td>One cm swelling present on buccal gingivae around #29 and #30 with sinus tract present #30B</td>
-								<td>2020/03/15</td>
-								<td>Final</td>
-							</tr>
-														<tr>
-								<td>Other observations</td>
-								<td>2 small, mobile lymph nodes found in right submandibular area</td>
-								<td>2020/03/15</td>
-								<td>Final</td>
-							</tr>
-						</table>
-					</div>
-				</text>
+		<text>
+			<status value="generated"/>
+			<div xmlns="http://www.w3.org/1999/xhtml">
+				<table>
+					<tr>
+						<td>
+							<b>Observation</b>
+						</td>
+						<td>
+							<b>Result Observation Value</b>
+						</td>
+						<td>
+							<b>Date</b>
+						</td>
+						<td>
+							<b>Status</b>
+						</td>
+					</tr>
+
+					<tr>
+						<td>Intraoral Findings</td>
+						<td>On exam of the right lower quadrant, tooth #30 was sensitive to percussion (lingering for 45 seconds) and to cold (sharp, stops when cold removed). No sensitivity to palpation, Radiographic pain upon biting; with relief upon opening. No evidence of new caries on distal; missing #28, replaced with endo implant; #32 impacted with apparent full boney. One cm swelling present on buccal gingivae around #29 and #30 with sinus tract present #30B. </td>
+						<td>2020/03/15</td>
+						<td>Final</td>
+					</tr>
+					<tr>
+						<td>Paraoral findings</td>
+						<td>2 small, mobile lymph nodes found in right submandibular area</td>
+						<td>2020/03/15</td>
+						<td>Final</td>
+					</tr>
+					<tr>
+						<td>X-rays and Panoramic Radiograph exposed</td>
+						<td>Radiographic results showed #32 full bony impaction, #28 endosteal (root form) implant with full crown restoration, and tooth #30 with small PA lesion mesial root. Radiographic caries lesion #29 distal caries lesion (ADA Caries Classification System moderate caries lesion). Other WNL</td>
+						<td>2020/03/15</td>
+						<td>Final</td>
+					</tr>
+				</table>
+			</div>
+		</text>
+		<entry>
+			<reference value="Observation/Dental-findings-example-3"/>
+		</entry>
 	</section>
 	<section>
 		<title value="Vital Signs Section"/>

@@ -1,10 +1,9 @@
 <Encounter xmlns="http://hl7.org/fhir">
-	<id value="example-genden"/>
+	<id value="Dentist-followup-prophylaxis"/>
 	<meta>
-		<lastUpdated value="2020-04-26T11:56:57.250-04:00"/>
+		<lastUpdated value="2017-05-26T11:56:57.250-04:00"/>
 		<profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter"/>
 	</meta>
-
 	<status value="planned"/>
 	<class>
 		<system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
@@ -13,10 +12,10 @@
 	</class>
 	<type>
 		<coding>
-			<system value="http://www.ama-assn.org/go/cpt"/>
-			<code value="99201"/>
+			<system value="http://www.ada.org/snodent"/>
+			<code value="209670D"/>
 		</coding>
-		<text value="Office Visit"/>
+		<text value="Encounter for check up (procedure)"/>
 	</type>
 	<priority>
 		<coding>
@@ -29,7 +28,7 @@
 		<reference value="Patient/example-dental"/>
 	</subject>
 	<period>
-		<start value="2020-03-14T15:00:14-05:00"/>
-		<end value="2020-03-14T15:30:14-05:00"/>
+		<start value="2020-10-15T15:00:14-05:00"/>
+		<end value="2020-10-15T15:30:14-05:00"/>
 	</period>
 </Encounter>

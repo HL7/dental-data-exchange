@@ -5,7 +5,7 @@
 	</meta>
 	<practitioner>
 		<reference value="Practitioner/practitioner-D"/>
-		<display value="Dr. John Dentist"/>
+		<display value="Dr. John D"/>
 	</practitioner>
 	<organization>
 		<reference value="Organization/GOHC-organization"/>

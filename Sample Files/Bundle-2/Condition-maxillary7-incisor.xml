@@ -1,0 +1,43 @@
+<Condition xmlns="http://hl7.org/fhir">
+  <id value="Maxillary-perm7-example"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"/>
+  </meta>
+  <clinicalStatus>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
+      <code value="active"/>
+      <display value="Active"/>
+    </coding>
+    <text value="Active"/>
+  </clinicalStatus>
+  <verificationStatus>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/condition-ver-status"/>
+      <code value="confirmed"/>
+      <display value="Confirmed"/>
+    </coding>
+    <text value="Confirmed"/>
+  </verificationStatus>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/condition-category"/>
+      <code value="problem-list-item"/>
+      <display value="Problem List Item"/>
+    </coding>
+    <text value="Problem"/>
+  </category>
+  <code>
+    <coding>
+      <system value="http://www.ada.org/snodent"/>
+      <code value="161941D"/>
+      <display value="Entire permanent maxillary right lateral incisor tooth (body structure); Tooth number 7"/>
+    </coding>
+    <text value="Entire permanent maxillary right lateral incisor tooth (body structure); Tooth number 7"/>
+  </code>
+  <subject>
+    <reference value="Patient/example-dental"/>
+    <display value="Patient A"/>
+  </subject>
+  <onsetDateTime value="2019-06-10"/>
+</Condition>

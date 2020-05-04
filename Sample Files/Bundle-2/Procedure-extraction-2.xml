@@ -1,5 +1,5 @@
 <Procedure xmlns="http://hl7.org/fhir">
-	<id value="MOBD-amalgam-restoration"/>
+	<id value="Dental-extraction-example"/>
 	<meta>
 		<profile
              value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"/>
@@ -8,21 +8,21 @@
 		<system value="urn:ietf:rfc:3986"/>
 		<value value="urn:uuid:b2a737f2-2fdb-49c1-b097-dac173d07aff"/>
 	</identifier>
-	<status value="completed"/>
+	<status value="preparation"/>
 	<code>
 		<coding>
 			<system value="http://www.ama-assn.org/go/cdt"/>
-			<code value="D2161"/>
+			<code value="D7250"/>
 		</coding>
 		<text
-          value="Amalgam - four or more surfaces, primary or permanent"/>
+          value="Surgical removal of residual roots (cutting procedure)"/>
 	</code>
 	<subject>
 		<reference value="Patient/example-dental"/>
 	</subject>
 	<performedPeriod>
-		<start value="2018-02-26T12:55:26-07:00"/>
-		<end value="2018-02-26T13:25:26-07:00"/>
+		<start value="2020-05-15T12:55:26-07:00"/>
+		<end value="2020-05-15T13:25:26-07:00"/>
 	</performedPeriod>
 	<performer>
 		<actor>
@@ -33,7 +33,7 @@
 		<code>
 			<coding>
 				<system value="http://hl7.org/fhir/us/dentalreferral/ValueSet/FDI-teeth-codes"/>
-				<code value="30"/>
+				<code value="18"/>
 			</coding>
 		</code>
 	</bodySite>
