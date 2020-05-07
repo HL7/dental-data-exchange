@@ -1,1 +1,53 @@
-ewoJInJlc291cmNlVHlwZSI6ICJNZWRpY2F0aW9uUmVxdWVzdCIsCgkiaWQiOiAiZXJ5dGhyb215Y2luLW1lZHJlcS0yIiwKCSJtZXRhIjogewoJCSJ2ZXJzaW9uSWQiOiAiMSIsCgkJImxhc3RVcGRhdGVkIjogIjIwMjAtMDUtMDZUMjE6MDc6MDIuODg0KzAwOjAwIiwKCQkic291cmNlIjogIiNoMXQ0ZlBHWGl3NlZ3U3NEIiwKCQkicHJvZmlsZSI6IFsKCQkJImh0dHA6Ly9obDcub3JnL2ZoaXIvdXMvY29yZS9TdHJ1Y3R1cmVEZWZpbml0aW9uL3VzLWNvcmUtbWVkaWNhdGlvbnJlcXVlc3QiCgkJXQoJfSwKCSJzdGF0dXMiOiAiYWN0aXZlIiwKCSJpbnRlbnQiOiAicGxhbiIsCgkibWVkaWNhdGlvblJlZmVyZW5jZSI6IHsKCQkicmVmZXJlbmNlIjogIk1lZGljYXRpb24vZXJ5dGhyb215Y2luLW1lZC1leGFtcGxlIgoJfSwKCSJzdWJqZWN0IjogewoJCSJyZWZlcmVuY2UiOiAiUGF0aWVudC9leGFtcGxlLWRlbnRhbCIsCgkJImRpc3BsYXkiOiAiUGF0aWVudCBBIgoJfSwKCSJhdXRob3JlZE9uIjogIjIwMTctMTItMDYiLAoJInJlcXVlc3RlciI6IHsKCQkicmVmZXJlbmNlIjogIlByYWN0aXRpb25lci9wcmFjdGl0aW9uZXItMSIsCgkJImRpc3BsYXkiOiAiRHIuIEpvaG4gTSwgTUQiCgl9LAoJImRvc2FnZUluc3RydWN0aW9uIjogWwoJCXsKCQkJInRleHQiOiAiVGFrZSAxIHRhYmxldCBldmVyeSBzaXggaG91cnMgWDEwIGRheXMiLAoJCQkidGltaW5nIjogewoJCQkJInJlcGVhdCI6IHsKCQkJCQkiYm91bmRzUGVyaW9kIjogewoJCQkJCQkic3RhcnQiOiAiMjAxNy0xMi0wNiIKCQkJCQl9CgkJCQl9CgkJCX0KCQl9CgldLAoJImRpc3BlbnNlUmVxdWVzdCI6IHsKCQkibnVtYmVyT2ZSZXBlYXRzQWxsb3dlZCI6IDEsCgkJInF1YW50aXR5IjogewoJCQkidmFsdWUiOiA1MDAsCgkJCSJ1bml0IjogIm1nIiwKCQkJInN5c3RlbSI6ICJodHRwOi8vdW5pdHNvZm1lYXN1cmUub3JnIiwKCQkJImNvZGUiOiAibWciCgkJfSwKCQkiZXhwZWN0ZWRTdXBwbHlEdXJhdGlvbiI6IHsKCQkJInZhbHVlIjogMTAsCgkJCSJ1bml0IjogImRheXMiLAoJCQkic3lzdGVtIjogImh0dHA6Ly91bml0c29mbWVhc3VyZS5vcmciLAoJCQkiY29kZSI6ICJkIgoJCX0KCX0KfQ==
+{
+	"resourceType": "MedicationRequest",
+	"id": "erythromycin-medreq-2",
+	"meta": {
+		"versionId": "1",
+		"lastUpdated": "2020-05-06T21:07:02.884+00:00",
+		"source": "#h1t4fPGXiw6VwSsD",
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationrequest"
+		]
+	},
+	"status": "active",
+	"intent": "plan",
+	"medicationReference": {
+		"reference": "Medication/erythromycin-med-example"
+	},
+	"subject": {
+		"reference": "Patient/example-dental",
+		"display": "Patient A"
+	},
+	"authoredOn": "2017-12-06",
+	"requester": {
+		"reference": "Practitioner/practitioner-1",
+		"display": "Dr. John M, MD"
+	},
+	"dosageInstruction": [
+		{
+			"text": "Take 1 tablet every six hours X10 days",
+			"timing": {
+				"repeat": {
+					"boundsPeriod": {
+						"start": "2017-12-06"
+					}
+				}
+			}
+		}
+	],
+	"dispenseRequest": {
+		"numberOfRepeatsAllowed": 1,
+		"quantity": {
+			"value": 500,
+			"unit": "mg",
+			"system": "http://unitsofmeasure.org",
+			"code": "mg"
+		},
+		"expectedSupplyDuration": {
+			"value": 10,
+			"unit": "days",
+			"system": "http://unitsofmeasure.org",
+			"code": "d"
+		}
+	}
+}

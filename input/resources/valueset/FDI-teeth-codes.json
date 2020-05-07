@@ -1,1 +1,21 @@
-ewoJInJlc291cmNlVHlwZSI6ICJWYWx1ZVNldCIsCgkiaWQiOiAiRkRJLXRlZXRoLWNvZGVzIiwKCSJtZXRhIjogewoJCSJ2ZXJzaW9uSWQiOiAiMyIsCgkJImxhc3RVcGRhdGVkIjogIjIwMjAtMDQtMjNUMDM6MDY6MDUuMzkyKzAwOjAwIiwKCQkic291cmNlIjogIiNCVTRLcG9zZTJpZlQ2WnZTIgoJfSwKCSJ1cmwiOiAiaHR0cDovL2hsNy5vcmcvZmhpci91cy9kZW50YWxyZWZlcnJhbC9WYWx1ZVNldC9GREktdGVldGgtY29kZXMiLAoJIm5hbWUiOiAiVGVldGhDb2RlcyIsCgkidGl0bGUiOiAiVGVldGggQ29kZXMiLAoJInN0YXR1cyI6ICJkcmFmdCIsCgkiZGVzY3JpcHRpb24iOiAiVGhpcyB2YWx1ZSBzZXQgY29udGFpbnMgdGhlIEZESSB0ZWV0aCBjb2RlcyIsCgkiY29tcG9zZSI6IHsKCQkiaW5jbHVkZSI6IFsKCQkJewoJCQkJInN5c3RlbSI6ICJodHRwOi8vaGw3Lm9yZy9maGlyL2V4LWZkaSIKCQkJfQoJCV0KCX0KfQ==
+{
+	"resourceType": "ValueSet",
+	"id": "FDI-teeth-codes",
+	"meta": {
+		"versionId": "3",
+		"lastUpdated": "2020-04-23T03:06:05.392+00:00",
+		"source": "#BU4Kpose2ifT6ZvS"
+	},
+	"url": "http://hl7.org/fhir/us/dentalreferral/ValueSet/FDI-teeth-codes",
+	"name": "TeethCodes",
+	"title": "Teeth Codes",
+	"status": "draft",
+	"description": "This value set contains the FDI teeth codes",
+	"compose": {
+		"include": [
+			{
+				"system": "http://hl7.org/fhir/ex-fdi"
+			}
+		]
+	}
+}

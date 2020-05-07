@@ -1,1 +1,48 @@
-ewoJInJlc291cmNlVHlwZSI6ICJWYWx1ZVNldCIsCgkiaWQiOiAiZGVudGFsLW9ic2VydmF0aW9uLWNvZGVzIiwKCSJtZXRhIjogewoJCSJ2ZXJzaW9uSWQiOiAiNSIsCgkJImxhc3RVcGRhdGVkIjogIjIwMjAtMDUtMDRUMTQ6MjY6MzkuMDkyKzAwOjAwIiwKCQkic291cmNlIjogIiMxbU96MWpEd0Z2cDd5QUJJIgoJfSwKCSJ1cmwiOiAiaHR0cDovL2hsNy5vcmcvZmhpci91cy9kZW50YWxyZWZlcnJhbC9WYWx1ZVNldC9kZW50YWwtb2JzZXJ2YXRpb24tY29kZXMiLAoJIm5hbWUiOiAiRGVudGFsT2JzZXJ2YXRpb25Db2RlcyIsCgkidGl0bGUiOiAiRGVudGFsIE9ic2VydmF0aW9uIENvZGVzIiwKCSJzdGF0dXMiOiAiZHJhZnQiLAoJImRlc2NyaXB0aW9uIjogIlRoaXMgVmFsdWVzZXQgY29udGFpbnMgYWxsIElDRC05LzEwLCBDUFQsIENEVCBjb2RlcywgYXMgd2VsbCBhcyB0aGUgQ2xpbmljYWwgRmluZGluZ3MgKGZpbmRpbmcpIGNvbmNlcHQgZnJvbSBib3RoIFNub21lZCBhbmQgU25vZGVudC4gSXQncyBpcyB1c2VkIGJ5IHRoZSBEZW50YWwgT2JzZXJ2YXRpb24gcHJvZmlsZSAuY29kZSB0byByZXByZXNlbnQgd2hhdCB0ZXN0L3NjZW5hcmlvIGlzIGJlaW5nIG9ic2VydmVkLiAiLAoJImNvbXBvc2UiOiB7CgkJImluY2x1ZGUiOiBbCgkJCXsKCQkJCSJzeXN0ZW0iOiAiaHR0cDovL3d3dy5hZGEub3JnL3Nub2RlbnQiLAoJCQkJImNvbmNlcHQiOiBbCgkJCQkJewoJCQkJCQkiY29kZSI6ICIxNjU4NzdEIiwKCQkJCQkJImRpc3BsYXkiOiAiQ2xpbmljYWwgZmluZGluZyAoZmluZGluZykiCgkJCQkJfQoJCQkJXQoJCQl9LAoJCQl7CgkJCQkic3lzdGVtIjogImh0dHA6Ly9zbm9tZWQuaW5mby9zY3QiLAoJCQkJImNvbmNlcHQiOiBbCgkJCQkJewoJCQkJCQkiY29kZSI6ICI0MDQ2ODQwMDMiLAoJCQkJCQkiZGlzcGxheSI6ICJDbGluaWNhbCBmaW5kaW5nIChmaW5kaW5nKSIKCQkJCQl9CgkJCQldCgkJCX0sCgkJCXsKCQkJCSJzeXN0ZW0iOiAiaHR0cHM6Ly93d3cuYWRhLm9yZy9lbi9wdWJsaWNhdGlvbnMvY2R0IgoJCQl9LAoJCQl7CgkJCQkic3lzdGVtIjogImh0dHA6Ly93d3cuYW1hLWFzc24ub3JnL2dvL2NwdCIKCQkJfSwKCQkJewoJCQkJInN5c3RlbSI6ICJodHRwOi8vaGw3Lm9yZy9maGlyL3NpZC9pY2QtOS1jbSIKCQkJfSwKCQkJewoJCQkJInN5c3RlbSI6ICJodHRwOi8vaGw3Lm9yZy9maGlyL3NpZC9pY2QtMTAtdXMiCgkJCX0KCQldCgl9Cn0=
+{
+	"resourceType": "ValueSet",
+	"id": "dental-observation-codes",
+	"meta": {
+		"versionId": "5",
+		"lastUpdated": "2020-05-04T14:26:39.092+00:00",
+		"source": "#1mOz1jDwFvp7yABI"
+	},
+	"url": "http://hl7.org/fhir/us/dentalreferral/ValueSet/dental-observation-codes",
+	"name": "DentalObservationCodes",
+	"title": "Dental Observation Codes",
+	"status": "draft",
+	"description": "This Valueset contains all ICD-9/10, CPT, CDT codes, as well as the Clinical Findings (finding) concept from both Snomed and Snodent. It's is used by the Dental Observation profile .code to represent what test/scenario is being observed. ",
+	"compose": {
+		"include": [
+			{
+				"system": "http://www.ada.org/snodent",
+				"concept": [
+					{
+						"code": "165877D",
+						"display": "Clinical finding (finding)"
+					}
+				]
+			},
+			{
+				"system": "http://snomed.info/sct",
+				"concept": [
+					{
+						"code": "404684003",
+						"display": "Clinical finding (finding)"
+					}
+				]
+			},
+			{
+				"system": "https://www.ada.org/en/publications/cdt"
+			},
+			{
+				"system": "http://www.ama-assn.org/go/cpt"
+			},
+			{
+				"system": "http://hl7.org/fhir/sid/icd-9-cm"
+			},
+			{
+				"system": "http://hl7.org/fhir/sid/icd-10-us"
+			}
+		]
+	}
+}

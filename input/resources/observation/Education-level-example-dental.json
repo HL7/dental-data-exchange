@@ -1,1 +1,36 @@
-ewoJInJlc291cmNlVHlwZSI6ICJPYnNlcnZhdGlvbiIsCgkiaWQiOiAiRWR1Y2F0aW9uLWxldmVsLWV4YW1wbGUtZGVudGFsIiwKCSJtZXRhIjogewoJCSJ2ZXJzaW9uSWQiOiAiMSIsCgkJImxhc3RVcGRhdGVkIjogIjIwMjAtMDUtMDZUMjE6MDY6NTIuNjA3KzAwOjAwIiwKCQkic291cmNlIjogIiNoeXFpNUl4ZXBGTm12WDc4IgoJfSwKCSJzdGF0dXMiOiAiZmluYWwiLAoJImNvZGUiOiB7CgkJImNvZGluZyI6IFsKCQkJewoJCQkJInN5c3RlbSI6ICJodHRwOi8vbG9pbmMub3JnIiwKCQkJCSJjb2RlIjogIjgyNTg5LTMiLAoJCQkJImRpc3BsYXkiOiAiSGlnaGVzdCBMZXZlbCBvZiBFZHVjYXRpb24iCgkJCX0KCQldCgl9LAoJInN1YmplY3QiOiB7CgkJInJlZmVyZW5jZSI6ICJQYXRpZW50L2V4YW1wbGUtZGVudGFsIiwKCQkiZGlzcGxheSI6ICJQYXRpZW50IEEiCgl9LAoJImVmZmVjdGl2ZVBlcmlvZCI6IHsKCQkic3RhcnQiOiAiMjAxMi0wMS0wMSIsCgkJImVuZCI6ICIyMDE2LTAxLTAxIgoJfSwKCSJ2YWx1ZUNvZGVhYmxlQ29uY2VwdCI6IHsKCQkiY29kaW5nIjogWwoJCQl7CgkJCQkic3lzdGVtIjogImh0dHA6Ly9zbm9tZWQuaW5mby9zY3QiLAoJCQkJImNvZGUiOiAiMjI0MzAyMDAwIiwKCQkJCSJkaXNwbGF5IjogIlJlY2VpdmVkIGhpZ2hlciBlZHVjYXRpb24gY29sbGVnZSBlZHVjYXRpb24gKGZpbmRpbmcpIgoJCQl9CgkJXQoJfQp9
+{
+	"resourceType": "Observation",
+	"id": "Education-level-example-dental",
+	"meta": {
+		"versionId": "1",
+		"lastUpdated": "2020-05-06T21:06:52.607+00:00",
+		"source": "#hyqi5IxepFNmvX78"
+	},
+	"status": "final",
+	"code": {
+		"coding": [
+			{
+				"system": "http://loinc.org",
+				"code": "82589-3",
+				"display": "Highest Level of Education"
+			}
+		]
+	},
+	"subject": {
+		"reference": "Patient/example-dental",
+		"display": "Patient A"
+	},
+	"effectivePeriod": {
+		"start": "2012-01-01",
+		"end": "2016-01-01"
+	},
+	"valueCodeableConcept": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "224302000",
+				"display": "Received higher education college education (finding)"
+			}
+		]
+	}
+}

@@ -1,1 +1,5 @@
-W1ByZXZpb3VzIFBhZ2UgLSBEZW50YWwgRGF0YSBFeGNoYW5nZSBQcm9qZWN0IFRlYW1dKERlbnRhbERhdGFFeGNoYW5nZVByb2plY3RUZWFtLmh0bWwpCgpTY29wZSBhbmQgQ29udGV4dCBnb2VzIGhlcmUuIFtJbnNlcnQgd29ya2Zsb3cgaW1hZ2VdCgpbTmV4dCBQYWdlIC0gRGVwZW5kZW5jaWVzIG9uIG90aGVyIHN0YW5kYXJkc10oRGVwZW5kZW5jaWVzb25vdGhlcnN0YW5kYXJkcy5odG1sKQ==
+[Previous Page - Dental Data Exchange Project Team](DentalDataExchangeProjectTeam.html)
+
+Scope and Context goes here. [Insert workflow image]
+
+[Next Page - Dependencies on other standards](Dependenciesonotherstandards.html)

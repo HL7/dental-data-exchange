@@ -1,1 +1,26 @@
-ewoJInJlc291cmNlVHlwZSI6ICJNZWRpY2F0aW9uIiwKCSJpZCI6ICJ0eWxlbm9sLWRlbnRhbCIsCgkibWV0YSI6IHsKCQkidmVyc2lvbklkIjogIjEiLAoJCSJsYXN0VXBkYXRlZCI6ICIyMDIwLTA1LTA2VDIxOjA3OjIxLjM4NiswMDowMCIsCgkJInNvdXJjZSI6ICIjVVNFQ2ZkR3NhVENZSk9oRSIsCgkJInByb2ZpbGUiOiBbCgkJCSJodHRwOi8vaGw3Lm9yZy9maGlyL3VzL2NvcmUvU3RydWN0dXJlRGVmaW5pdGlvbi91cy1jb3JlLW1lZGljYXRpb24iCgkJXQoJfSwKCSJ0ZXh0IjogewoJCSJzdGF0dXMiOiAiZ2VuZXJhdGVkIiwKCQkiZGl2IjogIjxkaXYgeG1sbnM9XCJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hodG1sXCI+PGRpdiBjbGFzcz1cImhhcGlIZWFkZXJUZXh0XCI+QWNldGFtaW5vcGhlbiAzMDAgTUcgLyBDb2RlaW5lIFBob3NwaGF0ZSAzMCBNRyBbVHlsZW5vbCB3aXRoIENvZGVpbmVdPC9kaXY+PC9kaXY+IgoJfSwKCSJjb2RlIjogewoJCSJjb2RpbmciOiBbCgkJCXsKCQkJCSJzeXN0ZW0iOiAiaHR0cDovL3d3dy5ubG0ubmloLmdvdi9yZXNlYXJjaC91bWxzL3J4bm9ybSIsCgkJCQkiY29kZSI6ICI5OTM4MzYiLAoJCQkJImRpc3BsYXkiOiAiQWNldGFtaW5vcGhlbiAzMDAgTUcgLyBDb2RlaW5lIFBob3NwaGF0ZSAzMCBNRyBbVHlsZW5vbCB3aXRoIENvZGVpbmVdIgoJCQl9CgkJXSwKCQkidGV4dCI6ICJBY2V0YW1pbm9waGVuIDMwMCBNRyAvIENvZGVpbmUgUGhvc3BoYXRlIDMwIE1HIFtUeWxlbm9sIHdpdGggQ29kZWluZV0iCgl9Cn0=
+{
+	"resourceType": "Medication",
+	"id": "tylenol-dental",
+	"meta": {
+		"versionId": "1",
+		"lastUpdated": "2020-05-06T21:07:21.386+00:00",
+		"source": "#USECfdGsaTCYJOhE",
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-medication"
+		]
+	},
+	"text": {
+		"status": "generated",
+		"div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div class=\"hapiHeaderText\">Acetaminophen 300 MG / Codeine Phosphate 30 MG [Tylenol with Codeine]</div></div>"
+	},
+	"code": {
+		"coding": [
+			{
+				"system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+				"code": "993836",
+				"display": "Acetaminophen 300 MG / Codeine Phosphate 30 MG [Tylenol with Codeine]"
+			}
+		],
+		"text": "Acetaminophen 300 MG / Codeine Phosphate 30 MG [Tylenol with Codeine]"
+	}
+}

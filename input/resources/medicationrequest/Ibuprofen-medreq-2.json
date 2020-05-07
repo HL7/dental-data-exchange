@@ -1,1 +1,53 @@
-ewoJInJlc291cmNlVHlwZSI6ICJNZWRpY2F0aW9uUmVxdWVzdCIsCgkiaWQiOiAiSWJ1cHJvZmVuLW1lZHJlcS0yIiwKCSJtZXRhIjogewoJCSJ2ZXJzaW9uSWQiOiAiMSIsCgkJImxhc3RVcGRhdGVkIjogIjIwMjAtMDUtMDZUMjE6MDc6MDIuOTgwKzAwOjAwIiwKCQkic291cmNlIjogIiNyRkd0OUo2WmtDQTFyanVBIiwKCQkicHJvZmlsZSI6IFsKCQkJImh0dHA6Ly9obDcub3JnL2ZoaXIvdXMvY29yZS9TdHJ1Y3R1cmVEZWZpbml0aW9uL3VzLWNvcmUtbWVkaWNhdGlvbnJlcXVlc3QiCgkJXQoJfSwKCSJzdGF0dXMiOiAiY29tcGxldGVkIiwKCSJpbnRlbnQiOiAicGxhbiIsCgkibWVkaWNhdGlvblJlZmVyZW5jZSI6IHsKCQkicmVmZXJlbmNlIjogIk1lZGljYXRpb24vaWJ1cHJvZmVuLW1lZC1leGFtcGxlLTIiCgl9LAoJInN1YmplY3QiOiB7CgkJInJlZmVyZW5jZSI6ICJQYXRpZW50L2V4YW1wbGUtZGVudGFsIiwKCQkiZGlzcGxheSI6ICJQYXRpZW50IEEiCgl9LAoJImF1dGhvcmVkT24iOiAiMjAxOS0xMi0wNiIsCgkicmVxdWVzdGVyIjogewoJCSJyZWZlcmVuY2UiOiAiUHJhY3RpdGlvbmVyL3ByYWN0aXRpb25lci0xIiwKCQkiZGlzcGxheSI6ICJEci4gSm9obiBNLCBNRCIKCX0sCgkiZG9zYWdlSW5zdHJ1Y3Rpb24iOiBbCgkJewoJCQkidGV4dCI6ICJUYWtlIDItMyB0YWJsZXRzIGV2ZXJ5IDggaG91cnMgYXMgbmVlZGVkIGZvciBwYWluIiwKCQkJInRpbWluZyI6IHsKCQkJCSJyZXBlYXQiOiB7CgkJCQkJImJvdW5kc1BlcmlvZCI6IHsKCQkJCQkJInN0YXJ0IjogIjIwMTktMTItMDYiCgkJCQkJfQoJCQkJfQoJCQl9CgkJfQoJXSwKCSJkaXNwZW5zZVJlcXVlc3QiOiB7CgkJIm51bWJlck9mUmVwZWF0c0FsbG93ZWQiOiAxLAoJCSJxdWFudGl0eSI6IHsKCQkJInZhbHVlIjogMjAwLAoJCQkidW5pdCI6ICJtZyIsCgkJCSJzeXN0ZW0iOiAiaHR0cDovL3VuaXRzb2ZtZWFzdXJlLm9yZyIsCgkJCSJjb2RlIjogIm1nIgoJCX0sCgkJImV4cGVjdGVkU3VwcGx5RHVyYXRpb24iOiB7CgkJCSJ2YWx1ZSI6IDMwLAoJCQkidW5pdCI6ICJkYXlzIiwKCQkJInN5c3RlbSI6ICJodHRwOi8vdW5pdHNvZm1lYXN1cmUub3JnIiwKCQkJImNvZGUiOiAiZCIKCQl9Cgl9Cn0=
+{
+	"resourceType": "MedicationRequest",
+	"id": "Ibuprofen-medreq-2",
+	"meta": {
+		"versionId": "1",
+		"lastUpdated": "2020-05-06T21:07:02.980+00:00",
+		"source": "#rFGt9J6ZkCA1rjuA",
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationrequest"
+		]
+	},
+	"status": "completed",
+	"intent": "plan",
+	"medicationReference": {
+		"reference": "Medication/ibuprofen-med-example-2"
+	},
+	"subject": {
+		"reference": "Patient/example-dental",
+		"display": "Patient A"
+	},
+	"authoredOn": "2019-12-06",
+	"requester": {
+		"reference": "Practitioner/practitioner-1",
+		"display": "Dr. John M, MD"
+	},
+	"dosageInstruction": [
+		{
+			"text": "Take 2-3 tablets every 8 hours as needed for pain",
+			"timing": {
+				"repeat": {
+					"boundsPeriod": {
+						"start": "2019-12-06"
+					}
+				}
+			}
+		}
+	],
+	"dispenseRequest": {
+		"numberOfRepeatsAllowed": 1,
+		"quantity": {
+			"value": 200,
+			"unit": "mg",
+			"system": "http://unitsofmeasure.org",
+			"code": "mg"
+		},
+		"expectedSupplyDuration": {
+			"value": 30,
+			"unit": "days",
+			"system": "http://unitsofmeasure.org",
+			"code": "d"
+		}
+	}
+}

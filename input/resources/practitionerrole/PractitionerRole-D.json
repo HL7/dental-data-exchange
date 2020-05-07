@@ -1,1 +1,52 @@
-ewoJInJlc291cmNlVHlwZSI6ICJQcmFjdGl0aW9uZXJSb2xlIiwKCSJpZCI6ICJQcmFjdGl0aW9uZXJSb2xlLUQiLAoJIm1ldGEiOiB7CgkJInZlcnNpb25JZCI6ICIxIiwKCQkibGFzdFVwZGF0ZWQiOiAiMjAyMC0wNS0wNlQyMTowNzowMi45MTgrMDA6MDAiLAoJCSJzb3VyY2UiOiAiI3piamdKYUtacTllRUV6WHMiLAoJCSJwcm9maWxlIjogWwoJCQkiaHR0cDovL2hsNy5vcmcvZmhpci91cy9jb3JlL1N0cnVjdHVyZURlZmluaXRpb24vdXMtY29yZS1wcmFjdGl0aW9uZXJyb2xlIgoJCV0KCX0sCgkicHJhY3RpdGlvbmVyIjogewoJCSJyZWZlcmVuY2UiOiAiUHJhY3RpdGlvbmVyL3ByYWN0aXRpb25lci1EIiwKCQkiZGlzcGxheSI6ICJEci4gSm9obiBEIgoJfSwKCSJvcmdhbml6YXRpb24iOiB7CgkJInJlZmVyZW5jZSI6ICJPcmdhbml6YXRpb24vR09IQy1vcmdhbml6YXRpb24iLAoJCSJkaXNwbGF5IjogIkdvb2QgT3JhbCBIZWFsdGggQ2xpbmljIgoJfSwKCSJjb2RlIjogWwoJCXsKCQkJImNvZGluZyI6IFsKCQkJCXsKCQkJCQkic3lzdGVtIjogImh0dHA6Ly9udWNjLm9yZy9wcm92aWRlci10YXhvbm9teSIsCgkJCQkJImNvZGUiOiAiMzYxUVAyMzAwWCIsCgkJCQkJImRpc3BsYXkiOiAiR2VuZXJhbCBEZW50aXN0IgoJCQkJfQoJCQldCgkJfQoJXSwKCSJzcGVjaWFsdHkiOiBbCgkJewoJCQkiY29kaW5nIjogWwoJCQkJewoJCQkJCSJzeXN0ZW0iOiAiaHR0cDovL251Y2Mub3JnL3Byb3ZpZGVyLXRheG9ub215IiwKCQkJCQkiY29kZSI6ICI5MDhEMDAwMDBYIiwKCQkJCQkiZGlzcGxheSI6ICJHZW5lcmFsIERlbmlzdCIKCQkJCX0KCQkJXQoJCX0KCV0sCgkiZW5kcG9pbnQiOiBbCgkJewoJCQkicmVmZXJlbmNlIjogImh0dHA6Ly81Mi45MC4xMjYuMjM4OjgwODAvZmhpci9iYXNlUjQvRW5kcG9pbnQvRW5kcG9pbnQtMiIsCgkJCSJkaXNwbGF5IjogIkdvb2QgT3JhbCBIZWFsdGggQ2xpbmljIFBoeXNpY2lhbnMgT3JnYW5pemF0aW9uIgoJCX0sCgkJewoJCQkicmVmZXJlbmNlIjogImh0dHA6Ly81Mi45MC4xMjYuMjM4OjgwODAvZmhpci9iYXNlUjQvRW5kcG9pbnQvRW5kcG9pbnQtMiIsCgkJCSJkaXNwbGF5IjogIkpvaG4uRGVudGlzdC5NREBkaXJlY3QuZXhhbXBsZS5vcmciCgkJfQoJXQp9
+{
+	"resourceType": "PractitionerRole",
+	"id": "PractitionerRole-D",
+	"meta": {
+		"versionId": "1",
+		"lastUpdated": "2020-05-06T21:07:02.918+00:00",
+		"source": "#zbjgJaKZq9eEEzXs",
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole"
+		]
+	},
+	"practitioner": {
+		"reference": "Practitioner/practitioner-D",
+		"display": "Dr. John D"
+	},
+	"organization": {
+		"reference": "Organization/GOHC-organization",
+		"display": "Good Oral Health Clinic"
+	},
+	"code": [
+		{
+			"coding": [
+				{
+					"system": "http://nucc.org/provider-taxonomy",
+					"code": "361QP2300X",
+					"display": "General Dentist"
+				}
+			]
+		}
+	],
+	"specialty": [
+		{
+			"coding": [
+				{
+					"system": "http://nucc.org/provider-taxonomy",
+					"code": "908D00000X",
+					"display": "General Denist"
+				}
+			]
+		}
+	],
+	"endpoint": [
+		{
+			"reference": "http://52.90.126.238:8080/fhir/baseR4/Endpoint/Endpoint-2",
+			"display": "Good Oral Health Clinic Physicians Organization"
+		},
+		{
+			"reference": "http://52.90.126.238:8080/fhir/baseR4/Endpoint/Endpoint-2",
+			"display": "John.Dentist.MD@direct.example.org"
+		}
+	]
+}

@@ -1,1 +1,15 @@
-ewoJImxpc3QiOiBbCgkJewoJCQkidmVyc2lvbiI6ICJjdXJyZW50IiwKCQkJInBhdGgiOiAiaHR0cDovL2J1aWxkLmZoaXIub3JnL2lnL0hMNy8iLAoJCQkiZGVzYyI6ICJDb250aW51b3VzIEludGVncmF0aW9uIEJ1aWxkIChsYXRlc3QgaW4gdmVyc2lvbiBjb250cm9sKSIsCgkJCSJmaGlydmVyc2lvbiI6ICI0LjAuMSIsCgkJCSJzdGF0dXMiOiAiY2ktYnVpbGQiLAoJCQkiY3VycmVudCI6IHRydWUKCQl9CgldLAoJInBhY2thZ2UtaWQiOiAiaGw3LmZoaXIudXMuZGVudGFscmVmZXJyYWwiLAoJInRpdGxlIjogIkRlbnRhbCBSZWZlcnJhbCBhbmQgQ29uc3VsdCIsCgkiY2Fub25pY2FsIjogImh0dHA6Ly9obDcub3JnL2ZoaXIvdXMvZGVudGFscmVmZXJyYWwiCn0=
+{
+	"list": [
+		{
+			"version": "current",
+			"path": "http://build.fhir.org/ig/HL7/",
+			"desc": "Continuous Integration Build (latest in version control)",
+			"fhirversion": "4.0.1",
+			"status": "ci-build",
+			"current": true
+		}
+	],
+	"package-id": "hl7.fhir.us.dentalreferral",
+	"title": "Dental Referral and Consult",
+	"canonical": "http://hl7.org/fhir/us/dentalreferral"
+}

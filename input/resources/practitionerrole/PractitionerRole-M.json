@@ -1,1 +1,48 @@
-ewoJInJlc291cmNlVHlwZSI6ICJQcmFjdGl0aW9uZXJSb2xlIiwKCSJpZCI6ICJQcmFjdGl0aW9uZXJSb2xlLU0iLAoJIm1ldGEiOiB7CgkJInZlcnNpb25JZCI6ICIxIiwKCQkibGFzdFVwZGF0ZWQiOiAiMjAyMC0wNS0wNlQyMTowNjo1Mi43NzQrMDA6MDAiLAoJCSJzb3VyY2UiOiAiI1ZYTTF1MmRnY3B6eGgwSXoiLAoJCSJwcm9maWxlIjogWwoJCQkiaHR0cDovL2hsNy5vcmcvZmhpci91cy9jb3JlL1N0cnVjdHVyZURlZmluaXRpb24vdXMtY29yZS1wcmFjdGl0aW9uZXJyb2xlIgoJCV0KCX0sCgkicHJhY3RpdGlvbmVyIjogewoJCSJyZWZlcmVuY2UiOiAiUHJhY3RpdGlvbmVyL3ByYWN0aXRpb25lci1NIiwKCQkiZGlzcGxheSI6ICJEci4gSm9obiBNIgoJfSwKCSJvcmdhbml6YXRpb24iOiB7CgkJInJlZmVyZW5jZSI6ICJPcmdhbml6YXRpb24vR0hDLW9yZ2FuaXphdGlvbiIsCgkJImRpc3BsYXkiOiAiR29vZCBIZWFsdGggQ2xpbmljIgoJfSwKCSJjb2RlIjogWwoJCXsKCQkJImNvZGluZyI6IFsKCQkJCXsKCQkJCQkic3lzdGVtIjogImh0dHA6Ly9udWNjLm9yZy9wcm92aWRlci10YXhvbm9teSIsCgkJCQkJImNvZGUiOiAiMjA3UTAwMDAwWCIsCgkJCQkJImRpc3BsYXkiOiAiRmFtaWx5IE1lZGljaW5lIgoJCQkJfQoJCQldCgkJfQoJXSwKCSJzcGVjaWFsdHkiOiBbCgkJewoJCQkiY29kaW5nIjogWwoJCQkJewoJCQkJCSJzeXN0ZW0iOiAiaHR0cDovL251Y2Mub3JnL3Byb3ZpZGVyLXRheG9ub215IiwKCQkJCQkiY29kZSI6ICIxMjIzRzAwMDFYIiwKCQkJCQkiZGlzcGxheSI6ICJHZW5lcmFsIFByYWN0aWNlIgoJCQkJfQoJCQldCgkJfQoJXSwKCSJlbmRwb2ludCI6IFsKCQl7CgkJCSJyZWZlcmVuY2UiOiAiaHR0cDovLzUyLjkwLjEyNi4yMzg6ODA4MC9maGlyL2Jhc2VSNC9FbmRwb2ludC9FbmRwb2ludC0xIiwKCQkJImRpc3BsYXkiOiAiR29vZCBIZWFsdGggQ2xpbmljIFBoeXNpY2lhbnMgT3JnYW5pemF0aW9uIgoJCX0KCV0KfQ==
+{
+	"resourceType": "PractitionerRole",
+	"id": "PractitionerRole-M",
+	"meta": {
+		"versionId": "1",
+		"lastUpdated": "2020-05-06T21:06:52.774+00:00",
+		"source": "#VXM1u2dgcpzxh0Iz",
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole"
+		]
+	},
+	"practitioner": {
+		"reference": "Practitioner/practitioner-M",
+		"display": "Dr. John M"
+	},
+	"organization": {
+		"reference": "Organization/GHC-organization",
+		"display": "Good Health Clinic"
+	},
+	"code": [
+		{
+			"coding": [
+				{
+					"system": "http://nucc.org/provider-taxonomy",
+					"code": "207Q00000X",
+					"display": "Family Medicine"
+				}
+			]
+		}
+	],
+	"specialty": [
+		{
+			"coding": [
+				{
+					"system": "http://nucc.org/provider-taxonomy",
+					"code": "1223G0001X",
+					"display": "General Practice"
+				}
+			]
+		}
+	],
+	"endpoint": [
+		{
+			"reference": "http://52.90.126.238:8080/fhir/baseR4/Endpoint/Endpoint-1",
+			"display": "Good Health Clinic Physicians Organization"
+		}
+	]
+}

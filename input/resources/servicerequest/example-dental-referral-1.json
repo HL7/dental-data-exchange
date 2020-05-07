@@ -1,1 +1,42 @@
-ewoJInJlc291cmNlVHlwZSI6ICJTZXJ2aWNlUmVxdWVzdCIsCgkiaWQiOiAiZXhhbXBsZS1kZW50YWwtcmVmZXJyYWwtMSIsCgkibWV0YSI6IHsKCQkidmVyc2lvbklkIjogIjEiLAoJCSJsYXN0VXBkYXRlZCI6ICIyMDIwLTA1LTA2VDIxOjA2OjUyLjgwNiswMDowMCIsCgkJInNvdXJjZSI6ICIjeExXTjFrWHFLeHFwTVU0eiIsCgkJInByb2ZpbGUiOiBbCgkJCSJodHRwOi8vaGw3Lm9yZy9maGlyL3VzL2RlbnRhbHJlZmVycmFsL2RlbnRhbC1zZXJ2aWNlcmVxdWVzdCIKCQldCgl9LAoJInN0YXR1cyI6ICJhY3RpdmUiLAoJImludGVudCI6ICJwbGFuIiwKCSJjYXRlZ29yeSI6IFsKCQl7CgkJCSJjb2RpbmciOiBbCgkJCQl7CgkJCQkJInN5c3RlbSI6ICJodHRwOi8vc25vbWVkLmluZm8vc2N0IiwKCQkJCQkiY29kZSI6ICIxNDczNjAwOSIsCgkJCQkJImRpc3BsYXkiOiAiSGlzdG9yeSBhbmQgcGh5c2ljYWwgZXhhbWluYXRpb24gd2l0aCBldmFsdWF0aW9uIGFuZCBtYW5hZ2VtZW50IG9mIHBhdGllbnQgKHByb2NlZHVyZSkiCgkJCQl9CgkJCV0sCgkJCSJ0ZXh0IjogIkV2YWx1YXRpb24gYW5kIG1hbmFnZW1lbnQgb2YgcGF0aWVudCAocHJvY2VkdXJlKSIKCQl9CgldLAoJImNvZGUiOiB7CgkJImNvZGluZyI6IFsKCQkJewoJCQkJInN5c3RlbSI6ICJodHRwOi8vc25vbWVkLmluZm8vc2N0IiwKCQkJCSJjb2RlIjogIjEwMzY5NzAwOCIsCgkJCQkiZGlzcGxheSI6ICJQYXRpZW50IHJlZmVycmFsIGZvciBkZW50YWwgY2FyZSAocHJvY2VkdXJlKSIKCQkJfQoJCV0sCgkJInRleHQiOiAiUGF0aWVudCByZWZlcnJhbCBmb3IgZGVudGFsIGNhcmUgKHByb2NlZHVyZSkiCgl9LAoJInN1YmplY3QiOiB7CgkJInJlZmVyZW5jZSI6ICJQYXRpZW50L2V4YW1wbGUtZGVudGFsIgoJfSwKCSJyZXF1ZXN0ZXIiOiB7CgkJInJlZmVyZW5jZSI6ICJQcmFjdGl0aW9uZXIvcHJhY3RpdGlvbmVyLU0iCgl9Cn0=
+{
+	"resourceType": "ServiceRequest",
+	"id": "example-dental-referral-1",
+	"meta": {
+		"versionId": "1",
+		"lastUpdated": "2020-05-06T21:06:52.806+00:00",
+		"source": "#xLWN1kXqKxqpMU4z",
+		"profile": [
+			"http://hl7.org/fhir/us/dentalreferral/dental-servicerequest"
+		]
+	},
+	"status": "active",
+	"intent": "plan",
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://snomed.info/sct",
+					"code": "14736009",
+					"display": "History and physical examination with evaluation and management of patient (procedure)"
+				}
+			],
+			"text": "Evaluation and management of patient (procedure)"
+		}
+	],
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "103697008",
+				"display": "Patient referral for dental care (procedure)"
+			}
+		],
+		"text": "Patient referral for dental care (procedure)"
+	},
+	"subject": {
+		"reference": "Patient/example-dental"
+	},
+	"requester": {
+		"reference": "Practitioner/practitioner-M"
+	}
+}

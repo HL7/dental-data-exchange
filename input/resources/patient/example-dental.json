@@ -1,1 +1,110 @@
-ewoJInJlc291cmNlVHlwZSI6ICJQYXRpZW50IiwKCSJpZCI6ICJleGFtcGxlLWRlbnRhbCIsCgkibWV0YSI6IHsKCQkidmVyc2lvbklkIjogIjIiLAoJCSJsYXN0VXBkYXRlZCI6ICIyMDIwLTA1LTA2VDIxOjA2OjUyLjYwNyswMDowMCIsCgkJInNvdXJjZSI6ICIjM1lrWHlLcG5IYnZob0g1TyIsCgkJInByb2ZpbGUiOiBbCgkJCSJodHRwOi8vaGw3Lm9yZy9maGlyL3VzL2NvcmUvU3RydWN0dXJlRGVmaW5pdGlvbi91cy1jb3JlLXBhdGllbnQiCgkJXQoJfSwKCSJ0ZXh0IjogewoJCSJzdGF0dXMiOiAiZ2VuZXJhdGVkIiwKCQkiZGl2IjogIjxkaXYgeG1sbnM9XCJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hodG1sXCI+PGRpdiBjbGFzcz1cImhhcGlIZWFkZXJUZXh0XCI+UGF0aWVudCA8Yj5BIDwvYj48L2Rpdj48dGFibGUgY2xhc3M9XCJoYXBpUHJvcGVydHlUYWJsZVwiPjx0Ym9keT48dHI+PHRkPklkZW50aWZpZXI8L3RkPjx0ZD41MTUyMDIwPC90ZD48L3RyPjx0cj48dGQ+QWRkcmVzczwvdGQ+PHRkPjxzcGFuPjEyMyBUZXN0IERyLiA8L3NwYW4+PGJyLz48c3Bhbj5EZW52ZXIgPC9zcGFuPjxzcGFuPkNPIDwvc3Bhbj48c3Bhbj5VUyA8L3NwYW4+PC90ZD48L3RyPjx0cj48dGQ+RGF0ZSBvZiBiaXJ0aDwvdGQ+PHRkPjxzcGFuPjAxIEphbnVhcnkgMTk5MDwvc3Bhbj48L3RkPjwvdHI+PC90Ym9keT48L3RhYmxlPjwvZGl2PiIKCX0sCgkiZXh0ZW5zaW9uIjogWwoJCXsKCQkJInVybCI6ICJodHRwOi8vaGw3Lm9yZy9maGlyL3VzL2NvcmUvU3RydWN0dXJlRGVmaW5pdGlvbi91cy1jb3JlLXJhY2UiLAoJCQkiZXh0ZW5zaW9uIjogWwoJCQkJewoJCQkJCSJ1cmwiOiAib21iQ2F0ZWdvcnkiLAoJCQkJCSJ2YWx1ZUNvZGluZyI6IHsKCQkJCQkJInN5c3RlbSI6ICJ1cm46b2lkOjIuMTYuODQwLjEuMTEzODgzLjYuMjM4IiwKCQkJCQkJImNvZGUiOiAiMjEwNi0zIiwKCQkJCQkJImRpc3BsYXkiOiAiV2hpdGUiCgkJCQkJfQoJCQkJfSwKCQkJCXsKCQkJCQkidXJsIjogImRldGFpbGVkIiwKCQkJCQkidmFsdWVDb2RpbmciOiB7CgkJCQkJCSJzeXN0ZW0iOiAidXJuOm9pZDoyLjE2Ljg0MC4xLjExMzg4My42LjIzOCIsCgkJCQkJCSJjb2RlIjogIjE1MTYtNCIsCgkJCQkJCSJkaXNwbGF5IjogIlp1bmkiCgkJCQkJfQoJCQkJfSwKCQkJCXsKCQkJCQkidXJsIjogInRleHQiLAoJCQkJCSJ2YWx1ZVN0cmluZyI6ICJNaXhlZCIKCQkJCX0KCQkJXQoJCX0sCgkJewoJCQkidXJsIjogImh0dHA6Ly9obDcub3JnL2ZoaXIvdXMvY29yZS9TdHJ1Y3R1cmVEZWZpbml0aW9uL3VzLWNvcmUtZXRobmljaXR5IiwKCQkJImV4dGVuc2lvbiI6IFsKCQkJCXsKCQkJCQkidXJsIjogIm9tYkNhdGVnb3J5IiwKCQkJCQkidmFsdWVDb2RpbmciOiB7CgkJCQkJCSJzeXN0ZW0iOiAidXJuOm9pZDoyLjE2Ljg0MC4xLjExMzg4My42LjIzOCIsCgkJCQkJCSJjb2RlIjogIjIxMzUtMiIsCgkJCQkJCSJkaXNwbGF5IjogIkhpc3BhbmljIG9yIExhdGlubyIKCQkJCQl9CgkJCQl9CgkJCV0KCQl9LAoJCXsKCQkJInVybCI6ICJodHRwOi8vaGw3Lm9yZy9maGlyL3VzL2NvcmUvU3RydWN0dXJlRGVmaW5pdGlvbi91cy1jb3JlLWJpcnRoc2V4IiwKCQkJInZhbHVlQ29kZSI6ICJNIgoJCX0KCV0sCgkiaWRlbnRpZmllciI6IFsKCQl7CgkJCSJ1c2UiOiAidXN1YWwiLAoJCQkidHlwZSI6IHsKCQkJCSJjb2RpbmciOiBbCgkJCQkJewoJCQkJCQkic3lzdGVtIjogImh0dHA6Ly90ZXJtaW5vbG9neS5obDcub3JnL0NvZGVTeXN0ZW0vdjItMDIwMyIsCgkJCQkJCSJjb2RlIjogIk1SIiwKCQkJCQkJImRpc3BsYXkiOiAiTWVkaWNhbCBSZWNvcmQgTnVtYmVyIgoJCQkJCX0KCQkJCV0sCgkJCQkidGV4dCI6ICJNZWRpY2FsIFJlY29yZCBOdW1iZXIiCgkJCX0sCgkJCSJzeXN0ZW0iOiAiaHR0cDovL2NsaW5pYy5nb29kaGVhbHRoLm9yZyIsCgkJCSJ2YWx1ZSI6ICI1MTUyMDIwIgoJCX0KCV0sCgkiYWN0aXZlIjogdHJ1ZSwKCSJuYW1lIjogWwoJCXsKCQkJImZhbWlseSI6ICJBIiwKCQkJImdpdmVuIjogWwoJCQkJIlBhdGllbnQiCgkJCV0KCQl9CgldLAoJInRlbGVjb20iOiBbCgkJewoJCQkic3lzdGVtIjogInBob25lIiwKCQkJInZhbHVlIjogIjEyMy00NTYtNzg5MCIsCgkJCSJ1c2UiOiAiaG9tZSIKCQl9LAoJCXsKCQkJInN5c3RlbSI6ICJlbWFpbCIsCgkJCSJ2YWx1ZSI6ICJ0ZXN0QUBlbWFpbC5jb20iCgkJfQoJXSwKCSJnZW5kZXIiOiAibWFsZSIsCgkiYmlydGhEYXRlIjogIjE5OTAtMDEtMDEiLAoJImFkZHJlc3MiOiBbCgkJewoJCQkibGluZSI6IFsKCQkJCSIxMjMgVGVzdCBEci4iCgkJCV0sCgkJCSJjaXR5IjogIkRlbnZlciIsCgkJCSJzdGF0ZSI6ICJDTyIsCgkJCSJwb3N0YWxDb2RlIjogIjgwMjA0IiwKCQkJImNvdW50cnkiOiAiVVMiCgkJfQoJXQp9
+{
+	"resourceType": "Patient",
+	"id": "example-dental",
+	"meta": {
+		"versionId": "2",
+		"lastUpdated": "2020-05-06T21:06:52.607+00:00",
+		"source": "#3YkXyKpnHbvhoH5O",
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"
+		]
+	},
+	"text": {
+		"status": "generated",
+		"div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div class=\"hapiHeaderText\">Patient <b>A </b></div><table class=\"hapiPropertyTable\"><tbody><tr><td>Identifier</td><td>5152020</td></tr><tr><td>Address</td><td><span>123 Test Dr. </span><br/><span>Denver </span><span>CO </span><span>US </span></td></tr><tr><td>Date of birth</td><td><span>01 January 1990</span></td></tr></tbody></table></div>"
+	},
+	"extension": [
+		{
+			"url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race",
+			"extension": [
+				{
+					"url": "ombCategory",
+					"valueCoding": {
+						"system": "urn:oid:2.16.840.1.113883.6.238",
+						"code": "2106-3",
+						"display": "White"
+					}
+				},
+				{
+					"url": "detailed",
+					"valueCoding": {
+						"system": "urn:oid:2.16.840.1.113883.6.238",
+						"code": "1516-4",
+						"display": "Zuni"
+					}
+				},
+				{
+					"url": "text",
+					"valueString": "Mixed"
+				}
+			]
+		},
+		{
+			"url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity",
+			"extension": [
+				{
+					"url": "ombCategory",
+					"valueCoding": {
+						"system": "urn:oid:2.16.840.1.113883.6.238",
+						"code": "2135-2",
+						"display": "Hispanic or Latino"
+					}
+				}
+			]
+		},
+		{
+			"url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex",
+			"valueCode": "M"
+		}
+	],
+	"identifier": [
+		{
+			"use": "usual",
+			"type": {
+				"coding": [
+					{
+						"system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+						"code": "MR",
+						"display": "Medical Record Number"
+					}
+				],
+				"text": "Medical Record Number"
+			},
+			"system": "http://clinic.goodhealth.org",
+			"value": "5152020"
+		}
+	],
+	"active": true,
+	"name": [
+		{
+			"family": "A",
+			"given": [
+				"Patient"
+			]
+		}
+	],
+	"telecom": [
+		{
+			"system": "phone",
+			"value": "123-456-7890",
+			"use": "home"
+		},
+		{
+			"system": "email",
+			"value": "testA@email.com"
+		}
+	],
+	"gender": "male",
+	"birthDate": "1990-01-01",
+	"address": [
+		{
+			"line": [
+				"123 Test Dr."
+			],
+			"city": "Denver",
+			"state": "CO",
+			"postalCode": "80204",
+			"country": "US"
+		}
+	]
+}

@@ -1,1 +1,52 @@
-ewoJInJlc291cmNlVHlwZSI6ICJPcmdhbml6YXRpb24iLAoJImlkIjogIkdFSEMtb3JnYW5pemF0aW9uIiwKCSJtZXRhIjogewoJCSJ2ZXJzaW9uSWQiOiAiMSIsCgkJImxhc3RVcGRhdGVkIjogIjIwMjAtMDUtMDZUMjE6MDc6MjEuMzgwKzAwOjAwIiwKCQkic291cmNlIjogIiM3dGxlVXlUaTdGWGlZZ1IyIiwKCQkicHJvZmlsZSI6IFsKCQkJImh0dHA6Ly9obDcub3JnL2ZoaXIvdXMvY29yZS9TdHJ1Y3R1cmVEZWZpbml0aW9uL3VzLWNvcmUtb3JnYW5pemF0aW9uIgoJCV0KCX0sCgkiaWRlbnRpZmllciI6IFsKCQl7CgkJCSJzeXN0ZW0iOiAiaHR0cDovL2hsNy5vcmcuZmhpci9zaWQvdXMtbnBpIiwKCQkJInZhbHVlIjogIjkzMTY0NTI3MjUiCgkJfQoJXSwKCSJhY3RpdmUiOiB0cnVlLAoJInR5cGUiOiBbCgkJewoJCQkiY29kaW5nIjogWwoJCQkJewoJCQkJCSJzeXN0ZW0iOiAiaHR0cDovL3Rlcm1pbm9sb2d5LmhsNy5vcmcvQ29kZVN5c3RlbS9vcmdhbml6YXRpb24tdHlwZSIsCgkJCQkJImNvZGUiOiAiZW5kbyIsCgkJCQkJImRpc3BsYXkiOiAiRW5kb2Rvbml0aWNzIFByb3ZpZGVyIgoJCQkJfQoJCQldCgkJfQoJXSwKCSJuYW1lIjogIkdvb2QgRW5kb2RvbnRpY3MgSGVhbHRoIENsaW5pYyIsCgkidGVsZWNvbSI6IFsKCQl7CgkJCSJzeXN0ZW0iOiAicGhvbmUiLAoJCQkidmFsdWUiOiAiKCsxKSAzMDMtNjc3LTc3NzciCgkJfSwKCQl7CgkJCSJzeXN0ZW0iOiAiZW1haWwiLAoJCQkidmFsdWUiOiAiRW5kby1zZXJ2aWNlQEdIY2xpbmljLm9yZyIKCQl9CgldLAoJImFkZHJlc3MiOiBbCgkJewoJCQkibGluZSI6IFsKCQkJCSI5NTUyIFcgQWxhbWVkYSBBdmUiCgkJCV0sCgkJCSJjaXR5IjogIkxha2V3b29kIiwKCQkJInN0YXRlIjogIkNPIiwKCQkJInBvc3RhbENvZGUiOiAiODAyMjYiLAoJCQkiY291bnRyeSI6ICJVU0EiCgkJfQoJXQp9
+{
+	"resourceType": "Organization",
+	"id": "GEHC-organization",
+	"meta": {
+		"versionId": "1",
+		"lastUpdated": "2020-05-06T21:07:21.380+00:00",
+		"source": "#7tleUyTi7FXiYgR2",
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization"
+		]
+	},
+	"identifier": [
+		{
+			"system": "http://hl7.org.fhir/sid/us-npi",
+			"value": "9316452725"
+		}
+	],
+	"active": true,
+	"type": [
+		{
+			"coding": [
+				{
+					"system": "http://terminology.hl7.org/CodeSystem/organization-type",
+					"code": "endo",
+					"display": "Endodonitics Provider"
+				}
+			]
+		}
+	],
+	"name": "Good Endodontics Health Clinic",
+	"telecom": [
+		{
+			"system": "phone",
+			"value": "(+1) 303-677-7777"
+		},
+		{
+			"system": "email",
+			"value": "Endo-service@GHclinic.org"
+		}
+	],
+	"address": [
+		{
+			"line": [
+				"9552 W Alameda Ave"
+			],
+			"city": "Lakewood",
+			"state": "CO",
+			"postalCode": "80226",
+			"country": "USA"
+		}
+	]
+}

@@ -1,1 +1,74 @@
-ewoJInJlc291cmNlVHlwZSI6ICJQcmFjdGl0aW9uZXIiLAoJImlkIjogInByYWN0aXRpb25lci1NIiwKCSJtZXRhIjogewoJCSJ2ZXJzaW9uSWQiOiAiMSIsCgkJImxhc3RVcGRhdGVkIjogIjIwMjAtMDUtMDZUMjE6MDY6NTIuNjAzKzAwOjAwIiwKCQkic291cmNlIjogIiNTQzRPRFg5eWpobERDcDZNIiwKCQkicHJvZmlsZSI6IFsKCQkJImh0dHA6Ly9obDcub3JnL2ZoaXIvdXMvY29yZS9TdHJ1Y3R1cmVEZWZpbml0aW9uL3VzLWNvcmUtcHJhY3RpdGlvbmVyIgoJCV0KCX0sCgkiaWRlbnRpZmllciI6IFsKCQl7CgkJCSJzeXN0ZW0iOiAiaHR0cDovL2hsNy5vcmcuZmhpci9zaWQvdXMtbnBpIiwKCQkJInZhbHVlIjogIjEyMzQ1Njk5OTkiCgkJfQoJXSwKCSJuYW1lIjogWwoJCXsKCQkJImZhbWlseSI6ICJNIiwKCQkJImdpdmVuIjogWwoJCQkJIkpvaG4iCgkJCV0sCgkJCSJwcmVmaXgiOiBbCgkJCQkiRHIiCgkJCV0KCQl9CgldLAoJInRlbGVjb20iOiBbCgkJewoJCQkic3lzdGVtIjogInBob25lIiwKCQkJInZhbHVlIjogIjMwMy0zMDMtNjQ0MyIsCgkJCSJ1c2UiOiAid29yayIKCQl9CgldLAoJImdlbmRlciI6ICJtYWxlIiwKCSJiaXJ0aERhdGUiOiAiMTk3NS0wNi0wOSIsCgkicXVhbGlmaWNhdGlvbiI6IFsKCQl7CgkJCSJpZGVudGlmaWVyIjogWwoJCQkJewoJCQkJCSJ1c2UiOiAib2ZmaWNpYWwiLAoJCQkJCSJ0eXBlIjogewoJCQkJCQkiY29kaW5nIjogWwoJCQkJCQkJewoJCQkJCQkJCSJzeXN0ZW0iOiAiaHR0cDovL3Rlcm1pbm9sb2d5LmhsNy5vcmcvQ29kZVN5c3RlbS92Mi0wMjAzIiwKCQkJCQkJCQkiY29kZSI6ICJNRCIsCgkJCQkJCQkJImRpc3BsYXkiOiAiTWVkaWNhbCBMaWNlbnNlIG51bWJlciIKCQkJCQkJCX0KCQkJCQkJXSwKCQkJCQkJInRleHQiOiAiTWlzc291cmkgTWVkaWNhbCBMaWNlbnNlIgoJCQkJCX0sCgkJCQkJInN5c3RlbSI6ICJodHRwOi8vbWlzc291cmkuZ292L2ZoaXIvbWVkaWNhbC1saWNlbnNlIiwKCQkJCQkidmFsdWUiOiAiTU8tNDAwMCIsCgkJCQkJImFzc2lnbmVyIjogewoJCQkJCQkiZGlzcGxheSI6ICJTdGF0ZSBvZiBNaXNzb3VyaSIKCQkJCQl9CgkJCQl9CgkJCV0sCgkJCSJjb2RlIjogewoJCQkJImNvZGluZyI6IFsKCQkJCQl7CgkJCQkJCSJzeXN0ZW0iOiAiaHR0cDovL21pc3NvdXJpLmdvdi9saWNlbnNlLXR5cGUiLAoJCQkJCQkiY29kZSI6ICI4MDAwIiwKCQkJCQkJImRpc3BsYXkiOiAiTWVkaWNhbCBEb2N0b3IiCgkJCQkJfQoJCQkJXQoJCQl9LAoJCQkiaXNzdWVyIjogewoJCQkJImRpc3BsYXkiOiAiTWlzc291cmkgRGVwYXJ0bWVudCBvZiBMaWNlbnNpbmcgYW5kIFJlZ3VsYXRvcnkgQWZmYWlycyIKCQkJfQoJCX0KCV0KfQ==
+{
+	"resourceType": "Practitioner",
+	"id": "practitioner-M",
+	"meta": {
+		"versionId": "1",
+		"lastUpdated": "2020-05-06T21:06:52.603+00:00",
+		"source": "#SC4ODX9yjhlDCp6M",
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"
+		]
+	},
+	"identifier": [
+		{
+			"system": "http://hl7.org.fhir/sid/us-npi",
+			"value": "1234569999"
+		}
+	],
+	"name": [
+		{
+			"family": "M",
+			"given": [
+				"John"
+			],
+			"prefix": [
+				"Dr"
+			]
+		}
+	],
+	"telecom": [
+		{
+			"system": "phone",
+			"value": "303-303-6443",
+			"use": "work"
+		}
+	],
+	"gender": "male",
+	"birthDate": "1975-06-09",
+	"qualification": [
+		{
+			"identifier": [
+				{
+					"use": "official",
+					"type": {
+						"coding": [
+							{
+								"system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+								"code": "MD",
+								"display": "Medical License number"
+							}
+						],
+						"text": "Missouri Medical License"
+					},
+					"system": "http://missouri.gov/fhir/medical-license",
+					"value": "MO-4000",
+					"assigner": {
+						"display": "State of Missouri"
+					}
+				}
+			],
+			"code": {
+				"coding": [
+					{
+						"system": "http://missouri.gov/license-type",
+						"code": "8000",
+						"display": "Medical Doctor"
+					}
+				]
+			},
+			"issuer": {
+				"display": "Missouri Department of Licensing and Regulatory Affairs"
+			}
+		}
+	]
+}

@@ -1,1 +1,44 @@
-ewoJInJlc291cmNlVHlwZSI6ICJWYWx1ZVNldCIsCgkiaWQiOiAiY2FyaWVzLXJpc2thc3Nlc3NtZW50IiwKCSJtZXRhIjogewoJCSJ2ZXJzaW9uSWQiOiAiNSIsCgkJImxhc3RVcGRhdGVkIjogIjIwMjAtMDMtMTBUMTY6NDQ6NTMuNTA2KzAwOjAwIiwKCQkic291cmNlIjogIiNYZEZ5cGduR0ptN0ZYMXlmIgoJfSwKCSJ1cmwiOiAiaHR0cDovL2hsNy5vcmcvZmhpci91cy9kZW50YWxyZWZlcnJhbC9WYWx1ZVNldC9jYXJpZXMtcmlza2Fzc2Vzc21lbnQiLAoJIm5hbWUiOiAiQ2FyaWVzUmlza0Fzc2Vzc21lbnQiLAoJInRpdGxlIjogIkNhcmllcyBSaXNrIEFzc2Vzc21lbnQiLAoJInN0YXR1cyI6ICJkcmFmdCIsCgkiZGVzY3JpcHRpb24iOiAiVGhpcyB2YWx1ZSBzZXQgY29udGFpbnMgY29kZXMgZm9yIHRoZSBDYXJpZXMgUmlzayBBc3Nlc3NtZW50ICIsCgkiY29tcG9zZSI6IHsKCQkiaW5hY3RpdmUiOiBmYWxzZSwKCQkiaW5jbHVkZSI6IFsKCQkJewoJCQkJInN5c3RlbSI6ICJodHRwOi8vc25vbWVkLmluZm8vc2N0IiwKCQkJCSJjb25jZXB0IjogWwoJCQkJCXsKCQkJCQkJImNvZGUiOiAiNjA5NDAzMDA4IiwKCQkJCQkJImRpc3BsYXkiOiAiQXQgZXh0cmVtZSByaXNrIGZvciBkZW50YWwgY2FyaWVzIChmaW5kaW5nKSIKCQkJCQl9LAoJCQkJCXsKCQkJCQkJImNvZGUiOiAiNjA5NDAyMDAzIiwKCQkJCQkJImRpc3BsYXkiOiAiQXQgaGlnaCByaXNrIGZvciBkZW50YWwgY2FyaWVzIChmaW5kaW5nKSIKCQkJCQl9LAoJCQkJCXsKCQkJCQkJImNvZGUiOiAiNjA5NDAwMDA2IiwKCQkJCQkJImRpc3BsYXkiOiAiQXQgbG93IHJpc2sgZm9yIGRlbnRhbCBjYXJpZXMgKGZpbmRpbmcpIgoJCQkJCX0sCgkJCQkJewoJCQkJCQkiY29kZSI6ICI2MDk0MDEwMDUiLAoJCQkJCQkiZGlzcGxheSI6ICJBdCBtb2RlcmF0ZSByaXNrIGZvciBkZW50YWwgY2FyaWVzIChmaW5kaW5nKSIKCQkJCQl9LAoJCQkJCXsKCQkJCQkJImNvZGUiOiAiNjA5Mzk5MDA0IiwKCQkJCQkJImRpc3BsYXkiOiAiQXQgcmlzayBmb3IgZGVudGFsIGNhcmllcyAoZmluZGluZykiCgkJCQkJfQoJCQkJXQoJCQl9CgkJXQoJfQp9
+{
+	"resourceType": "ValueSet",
+	"id": "caries-riskassessment",
+	"meta": {
+		"versionId": "5",
+		"lastUpdated": "2020-03-10T16:44:53.506+00:00",
+		"source": "#XdFypgnGJm7FX1yf"
+	},
+	"url": "http://hl7.org/fhir/us/dentalreferral/ValueSet/caries-riskassessment",
+	"name": "CariesRiskAssessment",
+	"title": "Caries Risk Assessment",
+	"status": "draft",
+	"description": "This value set contains codes for the Caries Risk Assessment ",
+	"compose": {
+		"inactive": false,
+		"include": [
+			{
+				"system": "http://snomed.info/sct",
+				"concept": [
+					{
+						"code": "609403008",
+						"display": "At extreme risk for dental caries (finding)"
+					},
+					{
+						"code": "609402003",
+						"display": "At high risk for dental caries (finding)"
+					},
+					{
+						"code": "609400006",
+						"display": "At low risk for dental caries (finding)"
+					},
+					{
+						"code": "609401005",
+						"display": "At moderate risk for dental caries (finding)"
+					},
+					{
+						"code": "609399004",
+						"display": "At risk for dental caries (finding)"
+					}
+				]
+			}
+		]
+	}
+}

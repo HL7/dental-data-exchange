@@ -1,1 +1,81 @@
-ewoJInJlc291cmNlVHlwZSI6ICJWYWx1ZVNldCIsCgkiaWQiOiAiZGVudGFsLWNvbmRpdGlvbi1jb2RlIiwKCSJtZXRhIjogewoJCSJ2ZXJzaW9uSWQiOiAiMiIsCgkJImxhc3RVcGRhdGVkIjogIjIwMjAtMDMtMTBUMTc6MTU6MDYuMTQ1KzAwOjAwIiwKCQkic291cmNlIjogIiN5bm5QN25YdE9DRmZxUjNSIgoJfSwKCSJ1cmwiOiAiaHR0cDovL2hsNy5vcmcvZmhpci91cy9kZW50YWxyZWZlcnJhbC9WYWx1ZVNldC9kZW50YWwtY29uZGl0aW9uLWNvZGUiLAoJInZlcnNpb24iOiAiMy4xLjAiLAoJIm5hbWUiOiAiRGVudGFsQ29uZGl0aW9uQ29kZSIsCgkidGl0bGUiOiAiRGVudGFsIENvbmRpdGlvbiBDb2RlIiwKCSJzdGF0dXMiOiAiYWN0aXZlIiwKCSJkYXRlIjogIjIwMTktMDUtMjFUMDA6MDA6MDArMTA6MDAiLAoJInB1Ymxpc2hlciI6ICJITDcgVVMgUmVhbG0gU3RlZXJpbmcgQ29tbWl0dGVlIiwKCSJjb250YWN0IjogWwoJCXsKCQkJInRlbGVjb20iOiBbCgkJCQl7CgkJCQkJInN5c3RlbSI6ICJvdGhlciIsCgkJCQkJInZhbHVlIjogImh0dHA6Ly9obDcub3JnL2ZoaXIiCgkJCQl9CgkJCV0KCQl9CgldLAoJImRlc2NyaXB0aW9uIjogIlRoaXMgZGVzY3JpYmVzIHRoZSBwcm9ibGVtLiBEaWFnbm9zaXMvUHJvYmxlbSBMaXN0IGlzIGJyb2FkbHkgZGVmaW5lZCBhcyBhIHNlcmllcyBvZiBicmllZiBzdGF0ZW1lbnRzIHRoYXQgY2F0YWxvZyBhIHBhdGllbnQncyBtZWRpY2FsLCBudXJzaW5nLCBkZW50YWwsIHNvY2lhbCwgcHJldmVudGF0aXZlIGFuZCBwc3ljaGlhdHJpYyBldmVudHMgYW5kIGlzc3VlcyB0aGF0IGFyZSByZWxldmFudCB0byB0aGF0IHBhdGllbnQncyBoZWFsdGhjYXJlIChlLmcuLCBzaWducywgc3ltcHRvbXMsIGFuZCBkZWZpbmVkIGNvbmRpdGlvbnMpLiAgIElDRC0xMCBpcyBhcHByb3ByaWF0ZSBmb3IgRGlhZ25vc2lzIGluZm9ybWF0aW9uLCBhbmQgSUNELTkgZm9yIGhpc3RvcmljYWwgaW5mb3JtYXRpb24uIiwKCSJqdXJpc2RpY3Rpb24iOiBbCgkJewoJCQkiY29kaW5nIjogWwoJCQkJewoJCQkJCSJzeXN0ZW0iOiAidXJuOmlzbzpzdGQ6aXNvOjMxNjYiLAoJCQkJCSJjb2RlIjogIlVTIiwKCQkJCQkiZGlzcGxheSI6ICJVbml0ZWQgU3RhdGVzIG9mIEFtZXJpY2EiCgkJCQl9CgkJCV0KCQl9CgldLAoJImNvcHlyaWdodCI6ICJUaGlzIHZhbHVlIHNldCBpbmNsdWRlcyBjb250ZW50IGZyb20gU05PTUVEIENULCB3aGljaCBpcyBjb3B5cmlnaHQgwqkgMjAwMisgSW50ZXJuYXRpb25hbCBIZWFsdGggVGVybWlub2xvZ3kgU3RhbmRhcmRzIERldmVsb3BtZW50IE9yZ2FuaXNhdGlvbiAoSUhUU0RPKSwgYW5kIGRpc3RyaWJ1dGVkIGJ5IGFncmVlbWVudCBiZXR3ZWVuIElIVFNETyBhbmQgSEw3LiBJbXBsZW1lbnRlciB1c2Ugb2YgU05PTUVEIENUIGlzIG5vdCBjb3ZlcmVkIGJ5IHRoaXMgYWdyZWVtZW50LiBJQ0QtOSBhbmQgSUNELTEwIGFyZSBjb3B5cmlnaHRlZCBieSB0aGUgV29ybGQgSGVhbHRoIE9yZ2FuaXphdGlvbiAoV0hPKSB3aGljaCBvd25zIGFuZCBwdWJsaXNoZXMgdGhlIGNsYXNzaWZpY2F0aW9uLiAgU2VlIGh0dHBzOi8vd3d3Lndoby5pbnQvY2xhc3NpZmljYXRpb25zL2ljZC9lbi4gV0hPIGhhcyBhdXRob3JpemVkIHRoZSBkZXZlbG9wbWVudCBvZiBhbiBhZGFwdGF0aW9uIG9mIElDRC05IGFuZCBJQ0QtMTAgdG8gSUNELTktQ00gdG8gSUNELTEwLUNNIGZvciB1c2UgaW4gdGhlIFVuaXRlZCBTdGF0ZXMgZm9yIFUuUy4gZ292ZXJubWVudCBwdXJwb3Nlcy4gIiwKCSJjb21wb3NlIjogewoJCSJpbmFjdGl2ZSI6IGZhbHNlLAoJCSJpbmNsdWRlIjogWwoJCQl7CgkJCQkic3lzdGVtIjogImh0dHA6Ly9zbm9tZWQuaW5mby9zY3QiLAoJCQkJImNvbmNlcHQiOiBbCgkJCQkJewoJCQkJCQkiY29kZSI6ICIxNjAyNDUwMDEiCgkJCQkJfQoJCQkJXQoJCQl9LAoJCQl7CgkJCQkic3lzdGVtIjogImh0dHA6Ly9zbm9tZWQuaW5mby9zY3QiLAoJCQkJImZpbHRlciI6IFsKCQkJCQl7CgkJCQkJCSJwcm9wZXJ0eSI6ICJjb25jZXB0IiwKCQkJCQkJIm9wIjogImlzLWEiLAoJCQkJCQkidmFsdWUiOiAiNDA0Njg0MDAzIgoJCQkJCX0KCQkJCV0KCQkJfSwKCQkJewoJCQkJInN5c3RlbSI6ICJodHRwOi8vc25vbWVkLmluZm8vc2N0IiwKCQkJCSJmaWx0ZXIiOiBbCgkJCQkJewoJCQkJCQkicHJvcGVydHkiOiAiY29uY2VwdCIsCgkJCQkJCSJvcCI6ICJpcy1hIiwKCQkJCQkJInZhbHVlIjogIjI0Mzc5NjAwOSIKCQkJCQl9CgkJCQldCgkJCX0sCgkJCXsKCQkJCSJzeXN0ZW0iOiAiaHR0cDovL2hsNy5vcmcvZmhpci9zaWQvaWNkLTEwLWNtIgoJCQl9LAoJCQl7CgkJCQkic3lzdGVtIjogImh0dHA6Ly9obDcub3JnL2ZoaXIvc2lkL2ljZC05LWNtIgoJCQl9LAoJCQl7CgkJCQkic3lzdGVtIjogImh0dHA6Ly9hZGEub3JnL3Nub2RlbnQiCgkJCX0KCQldCgl9Cn0=
+{
+	"resourceType": "ValueSet",
+	"id": "dental-condition-code",
+	"meta": {
+		"versionId": "2",
+		"lastUpdated": "2020-03-10T17:15:06.145+00:00",
+		"source": "#ynnP7nXtOCFfqR3R"
+	},
+	"url": "http://hl7.org/fhir/us/dentalreferral/ValueSet/dental-condition-code",
+	"version": "3.1.0",
+	"name": "DentalConditionCode",
+	"title": "Dental Condition Code",
+	"status": "active",
+	"date": "2019-05-21T00:00:00+10:00",
+	"publisher": "HL7 US Realm Steering Committee",
+	"contact": [
+		{
+			"telecom": [
+				{
+					"system": "other",
+					"value": "http://hl7.org/fhir"
+				}
+			]
+		}
+	],
+	"description": "This describes the problem. Diagnosis/Problem List is broadly defined as a series of brief statements that catalog a patient's medical, nursing, dental, social, preventative and psychiatric events and issues that are relevant to that patient's healthcare (e.g., signs, symptoms, and defined conditions).   ICD-10 is appropriate for Diagnosis information, and ICD-9 for historical information.",
+	"jurisdiction": [
+		{
+			"coding": [
+				{
+					"system": "urn:iso:std:iso:3166",
+					"code": "US",
+					"display": "United States of America"
+				}
+			]
+		}
+	],
+	"copyright": "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement. ICD-9 and ICD-10 are copyrighted by the World Health Organization (WHO) which owns and publishes the classification.  See https://www.who.int/classifications/icd/en. WHO has authorized the development of an adaptation of ICD-9 and ICD-10 to ICD-9-CM to ICD-10-CM for use in the United States for U.S. government purposes. ",
+	"compose": {
+		"inactive": false,
+		"include": [
+			{
+				"system": "http://snomed.info/sct",
+				"concept": [
+					{
+						"code": "160245001"
+					}
+				]
+			},
+			{
+				"system": "http://snomed.info/sct",
+				"filter": [
+					{
+						"property": "concept",
+						"op": "is-a",
+						"value": "404684003"
+					}
+				]
+			},
+			{
+				"system": "http://snomed.info/sct",
+				"filter": [
+					{
+						"property": "concept",
+						"op": "is-a",
+						"value": "243796009"
+					}
+				]
+			},
+			{
+				"system": "http://hl7.org/fhir/sid/icd-10-cm"
+			},
+			{
+				"system": "http://hl7.org/fhir/sid/icd-9-cm"
+			},
+			{
+				"system": "http://ada.org/snodent"
+			}
+		]
+	}
+}

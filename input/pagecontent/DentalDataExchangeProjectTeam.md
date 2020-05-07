@@ -1,1 +1,3 @@
-RGVudGFsIERhdGEgRXhjaGFuZ2UgcHJvamVjdCB0ZWFtIGluZm8gZ29lcyBoZXJlLgoKW05leHQgUGFnZSAtIFNjb3BlIGFuZCBDb250ZXh0XShTY29wZWFuZENvbnRleHQuaHRtbCk=
+Dental Data Exchange project team info goes here.
+
+[Next Page - Scope and Context](ScopeandContext.html)

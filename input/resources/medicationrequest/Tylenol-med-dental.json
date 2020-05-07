@@ -1,1 +1,62 @@
-ewoJInJlc291cmNlVHlwZSI6ICJNZWRpY2F0aW9uUmVxdWVzdCIsCgkiaWQiOiAiVHlsZW5vbC1tZWQtZGVudGFsIiwKCSJtZXRhIjogewoJCSJ2ZXJzaW9uSWQiOiAiMSIsCgkJImxhc3RVcGRhdGVkIjogIjIwMjAtMDUtMDZUMjE6MDc6MjEuMzgyKzAwOjAwIiwKCQkic291cmNlIjogIiNrY0hSNjFCWjlZOTQzYXNUIiwKCQkicHJvZmlsZSI6IFsKCQkJImh0dHA6Ly9obDcub3JnL2ZoaXIvdXMvY29yZS9TdHJ1Y3R1cmVEZWZpbml0aW9uL3VzLWNvcmUtbWVkaWNhdGlvbnJlcXVlc3QiCgkJXQoJfSwKCSJzdGF0dXMiOiAiYWN0aXZlIiwKCSJpbnRlbnQiOiAicGxhbiIsCgkibWVkaWNhdGlvbkNvZGVhYmxlQ29uY2VwdCI6IHsKCQkiY29kaW5nIjogWwoJCQl7CgkJCQkic3lzdGVtIjogImh0dHA6Ly93d3cubmxtLm5paC5nb3YvcmVzZWFyY2gvdW1scy9yeG5vcm0iLAoJCQkJImNvZGUiOiAiOTkzODM2IiwKCQkJCSJkaXNwbGF5IjogIkFjZXRhbWlub3BoZW4gMzAwIE1HIC8gQ29kZWluZSBQaG9zcGhhdGUgMzAgTUcgW1R5bGVub2wgd2l0aCBDb2RlaW5lXSIKCQkJfQoJCV0sCgkJInRleHQiOiAiQWNldGFtaW5vcGhlbiAzMDAgTUcgLyBDb2RlaW5lIFBob3NwaGF0ZSAzMCBNRyBbVHlsZW5vbCB3aXRoIENvZGVpbmVdIgoJfSwKCSJzdWJqZWN0IjogewoJCSJyZWZlcmVuY2UiOiAiUGF0aWVudC9leGFtcGxlLWRlbnRhbCIsCgkJImRpc3BsYXkiOiAiUGF0aWVudCBBIgoJfSwKCSJhdXRob3JlZE9uIjogIjIwMjAtMDMtMzAiLAoJInJlcXVlc3RlciI6IHsKCQkicmVmZXJlbmNlIjogIlByYWN0aXRpb25lci9wcmFjdGl0aW9uZXItRSIsCgkJImRpc3BsYXkiOiAiRHIuIEVuZG8gRSwgTUQiCgl9LAoJImRvc2FnZUluc3RydWN0aW9uIjogWwoJCXsKCQkJInRleHQiOiAidGFrZSAxIHRhYmxldCBldmVyeSA0IGhvdXJzIGFzIG5lZWRlZCBmb3IgcGFpbiIsCgkJCSJyb3V0ZSI6IHsKCQkJCSJjb2RpbmciOiBbCgkJCQkJewoJCQkJCQkic3lzdGVtIjogImh0dHA6Ly9zbm9tZWQuaW5mby9zY3QiLAoJCQkJCQkiY29kZSI6ICIyNjY0MzAwNiIsCgkJCQkJCSJkaXNwbGF5IjogIk9yYWwgdXNlIgoJCQkJCX0KCQkJCV0KCQkJfQoJCX0KCV0sCgkiZGlzcGVuc2VSZXF1ZXN0IjogewoJCSJudW1iZXJPZlJlcGVhdHNBbGxvd2VkIjogMTAsCgkJInF1YW50aXR5IjogewoJCQkidmFsdWUiOiAzMDAsCgkJCSJ1bml0IjogIm1nIiwKCQkJInN5c3RlbSI6ICJodHRwOi8vdW5pdHNvZm1lYXN1cmUub3JnIiwKCQkJImNvZGUiOiAibWciCgkJfSwKCQkiZXhwZWN0ZWRTdXBwbHlEdXJhdGlvbiI6IHsKCQkJInZhbHVlIjogMzAsCgkJCSJ1bml0IjogImRheXMiLAoJCQkic3lzdGVtIjogImh0dHA6Ly91bml0c29mbWVhc3VyZS5vcmciLAoJCQkiY29kZSI6ICJkIgoJCX0KCX0KfQ==
+{
+	"resourceType": "MedicationRequest",
+	"id": "Tylenol-med-dental",
+	"meta": {
+		"versionId": "1",
+		"lastUpdated": "2020-05-06T21:07:21.382+00:00",
+		"source": "#kcHR61BZ9Y943asT",
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationrequest"
+		]
+	},
+	"status": "active",
+	"intent": "plan",
+	"medicationCodeableConcept": {
+		"coding": [
+			{
+				"system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+				"code": "993836",
+				"display": "Acetaminophen 300 MG / Codeine Phosphate 30 MG [Tylenol with Codeine]"
+			}
+		],
+		"text": "Acetaminophen 300 MG / Codeine Phosphate 30 MG [Tylenol with Codeine]"
+	},
+	"subject": {
+		"reference": "Patient/example-dental",
+		"display": "Patient A"
+	},
+	"authoredOn": "2020-03-30",
+	"requester": {
+		"reference": "Practitioner/practitioner-E",
+		"display": "Dr. Endo E, MD"
+	},
+	"dosageInstruction": [
+		{
+			"text": "take 1 tablet every 4 hours as needed for pain",
+			"route": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "26643006",
+						"display": "Oral use"
+					}
+				]
+			}
+		}
+	],
+	"dispenseRequest": {
+		"numberOfRepeatsAllowed": 10,
+		"quantity": {
+			"value": 300,
+			"unit": "mg",
+			"system": "http://unitsofmeasure.org",
+			"code": "mg"
+		},
+		"expectedSupplyDuration": {
+			"value": 30,
+			"unit": "days",
+			"system": "http://unitsofmeasure.org",
+			"code": "d"
+		}
+	}
+}

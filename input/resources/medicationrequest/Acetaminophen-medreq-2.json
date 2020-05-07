@@ -1,1 +1,53 @@
-ewoJInJlc291cmNlVHlwZSI6ICJNZWRpY2F0aW9uUmVxdWVzdCIsCgkiaWQiOiAiQWNldGFtaW5vcGhlbi1tZWRyZXEtMiIsCgkibWV0YSI6IHsKCQkidmVyc2lvbklkIjogIjEiLAoJCSJsYXN0VXBkYXRlZCI6ICIyMDIwLTA1LTA2VDIxOjA3OjAyLjY5NyswMDowMCIsCgkJInNvdXJjZSI6ICIjZnJjVUM4SmkxRWs1eFNtbCIsCgkJInByb2ZpbGUiOiBbCgkJCSJodHRwOi8vaGw3Lm9yZy9maGlyL3VzL2NvcmUvU3RydWN0dXJlRGVmaW5pdGlvbi91cy1jb3JlLW1lZGljYXRpb25yZXF1ZXN0IgoJCV0KCX0sCgkic3RhdHVzIjogImNvbXBsZXRlZCIsCgkiaW50ZW50IjogInBsYW4iLAoJIm1lZGljYXRpb25SZWZlcmVuY2UiOiB7CgkJInJlZmVyZW5jZSI6ICJNZWRpY2F0aW9uL0FjZXRhbWlub3BoZW4tbWVkLWV4YW1wbGUtMiIKCX0sCgkic3ViamVjdCI6IHsKCQkicmVmZXJlbmNlIjogIlBhdGllbnQvZXhhbXBsZS1kZW50YWwiLAoJCSJkaXNwbGF5IjogIlBhdGllbnQgQSIKCX0sCgkiYXV0aG9yZWRPbiI6ICIyMDE4LTEyLTA2IiwKCSJyZXF1ZXN0ZXIiOiB7CgkJInJlZmVyZW5jZSI6ICJQcmFjdGl0aW9uZXIvcHJhY3RpdGlvbmVyLTEiLAoJCSJkaXNwbGF5IjogIkRyLiBKb2huIE0sIE1EIgoJfSwKCSJkb3NhZ2VJbnN0cnVjdGlvbiI6IFsKCQl7CgkJCSJ0ZXh0IjogIlRha2UgMiB0YWJsZXRzIGV2ZXJ5IDQtNiBob3VycyBhcyBuZWVkZWQgZm9yIHBhaW4iLAoJCQkidGltaW5nIjogewoJCQkJInJlcGVhdCI6IHsKCQkJCQkiYm91bmRzUGVyaW9kIjogewoJCQkJCQkic3RhcnQiOiAiMjAxOC0xMi0wNiIKCQkJCQl9CgkJCQl9CgkJCX0KCQl9CgldLAoJImRpc3BlbnNlUmVxdWVzdCI6IHsKCQkibnVtYmVyT2ZSZXBlYXRzQWxsb3dlZCI6IDEsCgkJInF1YW50aXR5IjogewoJCQkidmFsdWUiOiAzMjUsCgkJCSJ1bml0IjogIm1nIiwKCQkJInN5c3RlbSI6ICJodHRwOi8vdW5pdHNvZm1lYXN1cmUub3JnIiwKCQkJImNvZGUiOiAibWciCgkJfSwKCQkiZXhwZWN0ZWRTdXBwbHlEdXJhdGlvbiI6IHsKCQkJInZhbHVlIjogMzAsCgkJCSJ1bml0IjogImRheXMiLAoJCQkic3lzdGVtIjogImh0dHA6Ly91bml0c29mbWVhc3VyZS5vcmciLAoJCQkiY29kZSI6ICJkIgoJCX0KCX0KfQ==
+{
+	"resourceType": "MedicationRequest",
+	"id": "Acetaminophen-medreq-2",
+	"meta": {
+		"versionId": "1",
+		"lastUpdated": "2020-05-06T21:07:02.697+00:00",
+		"source": "#frcUC8Ji1Ek5xSml",
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationrequest"
+		]
+	},
+	"status": "completed",
+	"intent": "plan",
+	"medicationReference": {
+		"reference": "Medication/Acetaminophen-med-example-2"
+	},
+	"subject": {
+		"reference": "Patient/example-dental",
+		"display": "Patient A"
+	},
+	"authoredOn": "2018-12-06",
+	"requester": {
+		"reference": "Practitioner/practitioner-1",
+		"display": "Dr. John M, MD"
+	},
+	"dosageInstruction": [
+		{
+			"text": "Take 2 tablets every 4-6 hours as needed for pain",
+			"timing": {
+				"repeat": {
+					"boundsPeriod": {
+						"start": "2018-12-06"
+					}
+				}
+			}
+		}
+	],
+	"dispenseRequest": {
+		"numberOfRepeatsAllowed": 1,
+		"quantity": {
+			"value": 325,
+			"unit": "mg",
+			"system": "http://unitsofmeasure.org",
+			"code": "mg"
+		},
+		"expectedSupplyDuration": {
+			"value": 30,
+			"unit": "days",
+			"system": "http://unitsofmeasure.org",
+			"code": "d"
+		}
+	}
+}

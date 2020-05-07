@@ -1,1 +1,26 @@
-ewoJInJlc291cmNlVHlwZSI6ICJNZWRpY2F0aW9uIiwKCSJpZCI6ICJpYnVwcm9mZW4tbWVkLWV4YW1wbGUtMiIsCgkibWV0YSI6IHsKCQkidmVyc2lvbklkIjogIjEiLAoJCSJsYXN0VXBkYXRlZCI6ICIyMDIwLTA1LTA2VDIxOjA3OjAyLjQ3NSswMDowMCIsCgkJInNvdXJjZSI6ICIjN1JpMmhKQWZSTWZyN1BwUiIsCgkJInByb2ZpbGUiOiBbCgkJCSJodHRwOi8vaGw3Lm9yZy9maGlyL3VzL2NvcmUvU3RydWN0dXJlRGVmaW5pdGlvbi91cy1jb3JlLW1lZGljYXRpb24iCgkJXQoJfSwKCSJ0ZXh0IjogewoJCSJzdGF0dXMiOiAiZ2VuZXJhdGVkIiwKCQkiZGl2IjogIjxkaXYgeG1sbnM9XCJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hodG1sXCI+PGRpdiBjbGFzcz1cImhhcGlIZWFkZXJUZXh0XCI+SWJ1cHJvZmVuIDIwMCBtZyB0YWI8L2Rpdj48L2Rpdj4iCgl9LAoJImNvZGUiOiB7CgkJImNvZGluZyI6IFsKCQkJewoJCQkJInN5c3RlbSI6ICJodHRwOi8vd3d3Lm5sbS5uaWguZ292L3Jlc2VhcmNoL3VtbHMvcnhub3JtIiwKCQkJCSJjb2RlIjogIjMxNjA3NCIsCgkJCQkiZGlzcGxheSI6ICJJYnVwcm9mZW4gMjAwIG1nIHRhYiIKCQkJfQoJCV0sCgkJInRleHQiOiAiSWJ1cHJvZmVuIDIwMCBtZyB0YWIiCgl9Cn0=
+{
+	"resourceType": "Medication",
+	"id": "ibuprofen-med-example-2",
+	"meta": {
+		"versionId": "1",
+		"lastUpdated": "2020-05-06T21:07:02.475+00:00",
+		"source": "#7Ri2hJAfRMfr7PpR",
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-medication"
+		]
+	},
+	"text": {
+		"status": "generated",
+		"div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div class=\"hapiHeaderText\">Ibuprofen 200 mg tab</div></div>"
+	},
+	"code": {
+		"coding": [
+			{
+				"system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+				"code": "316074",
+				"display": "Ibuprofen 200 mg tab"
+			}
+		],
+		"text": "Ibuprofen 200 mg tab"
+	}
+}

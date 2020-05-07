@@ -1,1 +1,3 @@
-VGhpcyBwcm9maWxlIGluY2x1ZGVzIGluZm9ybWF0aW9uIGFib3V0IHRoZSBwYXRpZW50J3MgZGVudGFsIGNvdmVyYWdlIGZvciBwYXltZW50LCB0cmVhdG1lbnQsIGFuZC9vciBvcGVyYXRpb25zIHB1cnBvc2VzIG9mIGV4Y2hhbmdlIGJldHdlZW4gZGVudGFsIHByb3ZpZGVycy4gCgoqKk5lZWQgdG8gZGVjaWRlIGlmIG1lZGljYWwvaGVhbHRoIGluc3VyYW5jZSBjb3ZlcmFnZSBpcyBpbiBzY29wZSoq
+This profile includes information about the patient's dental coverage for payment, treatment, and/or operations purposes of exchange between dental providers. 
+
+**Need to decide if medical/health insurance coverage is in scope**

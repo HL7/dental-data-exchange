@@ -1,1 +1,42 @@
-ewoJInJlc291cmNlVHlwZSI6ICJQcm9jZWR1cmUiLAoJImlkIjogIkRlbnRhbC1pbmNpc29yLXJlc3RvcmF0aW9uLWV4YW1wbGUiLAoJIm1ldGEiOiB7CgkJInZlcnNpb25JZCI6ICIxIiwKCQkibGFzdFVwZGF0ZWQiOiAiMjAyMC0wNS0wNlQyMTowNzowMi45ODArMDA6MDAiLAoJCSJzb3VyY2UiOiAiI1ZWeHd3V01DS1dhRFFLbTgiLAoJCSJwcm9maWxlIjogWwoJCQkiaHR0cDovL2hsNy5vcmcvZmhpci91cy9jb3JlL1N0cnVjdHVyZURlZmluaXRpb24vdXMtY29yZS1wcm9jZWR1cmUiCgkJXQoJfSwKCSJpZGVudGlmaWVyIjogWwoJCXsKCQkJInN5c3RlbSI6ICJ1cm46aWV0ZjpyZmM6Mzk4NiIsCgkJCSJ2YWx1ZSI6ICJ1cm46dXVpZDpjMmE3MzdmMi0yZmRiLTQ5YzEtYjA5Ny1kYWMxNzNkMDdhZmYiCgkJfQoJXSwKCSJzdGF0dXMiOiAicHJlcGFyYXRpb24iLAoJImNvZGUiOiB7CgkJImNvZGluZyI6IFsKCQkJewoJCQkJInN5c3RlbSI6ICJodHRwOi8vd3d3LmFtYS1hc3NuLm9yZy9nby9jZHQiLAoJCQkJImNvZGUiOiAiRDIzOTMiCgkJCX0KCQldLAoJCSJ0ZXh0IjogIlJlc2luLWJhc2VkIGNvbXBvc2l0ZS0gdGhyZWUgc3VyZmFjZXMsIHBvc3RlcmlvciAocmVzdG9yYXRpb24pIgoJfSwKCSJzdWJqZWN0IjogewoJCSJyZWZlcmVuY2UiOiAiUGF0aWVudC9leGFtcGxlLWRlbnRhbCIKCX0sCgkicGVyZm9ybWVkUGVyaW9kIjogewoJCSJzdGFydCI6ICIyMDIwLTA1LTE1VDEyOjU1OjI2LTA3OjAwIiwKCQkiZW5kIjogIjIwMjAtMDUtMTVUMTM6MjU6MjYtMDc6MDAiCgl9LAoJInBlcmZvcm1lciI6IFsKCQl7CgkJCSJhY3RvciI6IHsKCQkJCSJyZWZlcmVuY2UiOiAiUHJhY3RpdGlvbmVyL3ByYWN0aXRpb25lci1EIgoJCQl9CgkJfQoJXQp9
+{
+	"resourceType": "Procedure",
+	"id": "Dental-incisor-restoration-example",
+	"meta": {
+		"versionId": "1",
+		"lastUpdated": "2020-05-06T21:07:02.980+00:00",
+		"source": "#VVxwwWMCKWaDQKm8",
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+		]
+	},
+	"identifier": [
+		{
+			"system": "urn:ietf:rfc:3986",
+			"value": "urn:uuid:c2a737f2-2fdb-49c1-b097-dac173d07aff"
+		}
+	],
+	"status": "preparation",
+	"code": {
+		"coding": [
+			{
+				"system": "http://www.ama-assn.org/go/cdt",
+				"code": "D2393"
+			}
+		],
+		"text": "Resin-based composite- three surfaces, posterior (restoration)"
+	},
+	"subject": {
+		"reference": "Patient/example-dental"
+	},
+	"performedPeriod": {
+		"start": "2020-05-15T12:55:26-07:00",
+		"end": "2020-05-15T13:25:26-07:00"
+	},
+	"performer": [
+		{
+			"actor": {
+				"reference": "Practitioner/practitioner-D"
+			}
+		}
+	]
+}
