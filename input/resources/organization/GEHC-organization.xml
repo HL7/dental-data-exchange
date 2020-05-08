@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Organization
+    xmlns="http://hl7.org/fhir">
+    <id value="GEHC-organization"/>
+    <meta>
+        <versionId value="1"/>
+        <lastUpdated value="2020-05-06T21:07:21.380+00:00"/>
+        <source value="#7tleUyTi7FXiYgR2"/>
+        <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization"/>
+    </meta>
+    <identifier>
+        <system value="http://hl7.org.fhir/sid/us-npi"/>
+        <value value="9316452725"/>
+    </identifier>
+    <active value="true"/>
+    <type>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/organization-type"/>
+            <code value="endo"/>
+            <display value="Endodonitics Provider"/>
+        </coding>
+    </type>
+    <name value="Good Endodontics Health Clinic"/>
+    <telecom>
+        <system value="phone"/>
+        <value value="(+1) 303-677-7777"/>
+    </telecom>
+    <telecom>
+        <system value="email"/>
+        <value value="Endo-service@GHclinic.org"/>
+    </telecom>
+    <address>
+        <line value="9552 W Alameda Ave"/>
+        <city value="Lakewood"/>
+        <state value="CO"/>
+        <postalCode value="80226"/>
+        <country value="USA"/>
+    </address>
+</Organization>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Practitioner
+    xmlns="http://hl7.org/fhir">
+    <id value="practitioner-M"/>
+    <meta>
+        <versionId value="1"/>
+        <lastUpdated value="2020-05-06T21:06:52.603+00:00"/>
+        <source value="#SC4ODX9yjhlDCp6M"/>
+        <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"/>
+    </meta>
+    <identifier>
+        <system value="http://hl7.org.fhir/sid/us-npi"/>
+        <value value="1234569999"/>
+    </identifier>
+    <name>
+        <family value="M"/>
+        <given value="John"/>
+        <prefix value="Dr"/>
+    </name>
+    <telecom>
+        <system value="phone"/>
+        <value value="303-303-6443"/>
+        <use value="work"/>
+    </telecom>
+    <gender value="male"/>
+    <birthDate value="1975-06-09"/>
+    <qualification>
+        <identifier>
+            <use value="official"/>
+            <type>
+                <coding>
+                    <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+                    <code value="MD"/>
+                    <display value="Medical License number"/>
+                </coding>
+                <text value="Missouri Medical License"/>
+            </type>
+            <system value="http://missouri.gov/fhir/medical-license"/>
+            <value value="MO-4000"/>
+            <assigner>
+                <display value="State of Missouri"/>
+            </assigner>
+        </identifier>
+        <code>
+            <coding>
+                <system value="http://missouri.gov/license-type"/>
+                <code value="8000"/>
+                <display value="Medical Doctor"/>
+            </coding>
+        </code>
+        <issuer>
+            <display value="Missouri Department of Licensing and Regulatory Affairs"/>
+        </issuer>
+    </qualification>
+</Practitioner>

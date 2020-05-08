@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PractitionerRole
+    xmlns="http://hl7.org/fhir">
+    <id value="PractitionerRole-M"/>
+    <meta>
+        <versionId value="1"/>
+        <lastUpdated value="2020-05-06T21:06:52.774+00:00"/>
+        <source value="#VXM1u2dgcpzxh0Iz"/>
+        <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole"/>
+    </meta>
+    <practitioner>
+        <reference value="Practitioner/practitioner-M"/>
+        <display value="Dr. John M"/>
+    </practitioner>
+    <organization>
+        <reference value="Organization/GHC-organization"/>
+        <display value="Good Health Clinic"/>
+    </organization>
+    <code>
+        <coding>
+            <system value="http://nucc.org/provider-taxonomy"/>
+            <code value="207Q00000X"/>
+            <display value="Family Medicine"/>
+        </coding>
+    </code>
+    <specialty>
+        <coding>
+            <system value="http://nucc.org/provider-taxonomy"/>
+            <code value="1223G0001X"/>
+            <display value="General Practice"/>
+        </coding>
+    </specialty>
+    <endpoint>
+        <reference value="http://52.90.126.238:8080/fhir/baseR4/Endpoint/Endpoint-1"/>
+        <display value="Good Health Clinic Physicians Organization"/>
+    </endpoint>
+</PractitionerRole>

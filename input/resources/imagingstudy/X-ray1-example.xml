@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ImagingStudy
+    xmlns="http://hl7.org/fhir">
+    <id value="X-ray1-example"/>
+    <meta>
+        <versionId value="1"/>
+        <lastUpdated value="2020-05-08T19:07:10.910+00:00"/>
+        <source value="#EIE0zqgryNCFSdZ8"/>
+    </meta>
+    <identifier>
+        <use value="official"/>
+        <system value="urn:dicom:uid"/>
+        <value value="urn:oid:2.16.124.113543.6003.1154777499.30246.19789.3503430046"/>
+    </identifier>
+    <identifier>
+        <use value="usual"/>
+        <type>
+            <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+                <code value="ACSN"/>
+            </coding>
+        </type>
+        <value value="W12342398"/>
+        <assigner>
+            <reference value="Organization/dicom-organization"/>
+        </assigner>
+    </identifier>
+    <status value="available"/>
+    <subject>
+        <reference value="Patient/example-dental"/>
+    </subject>
+    <started value="2020-03-01T11:01:20+03:00"/>
+    <referrer>
+        <reference value="Practitioner/practitioner-D"/>
+    </referrer>
+    <interpreter>
+        <reference value="Practitioner/practitioner-D"/>
+    </interpreter>
+    <endpoint>
+        <reference value="Endpoint/example-DART"/>
+    </endpoint>
+    <numberOfSeries value="1"/>
+    <numberOfInstances value="1"/>
+    <procedureCode>
+        <coding>
+            <system value="https://www.ada.org/en/publications/cdt"/>
+            <code value="D0220"/>
+            <display value="Intraoral — periapical first radiographic image"/>
+        </coding>
+        <text value="Intraoral — periapical first radiographic image"/>
+    </procedureCode>
+    <note>
+        <text value="Intraoral — periapical first radiographic image #29"/>
+    </note>
+    <series>
+        <uid value="2.16.124.113543.6003.1154777499.30246.19789.3503430045.1"/>
+        <number value="1"/>
+        <modality>
+            <system value="http://dicom.nema.org/resources/ontology/DCM"/>
+            <code value="RG"/>
+        </modality>
+        <description value="PA X-Ray"/>
+        <numberOfInstances value="2"/>
+        <endpoint>
+            <reference value="Endpoint/example-DART"/>
+        </endpoint>
+    </series>
+</ImagingStudy>

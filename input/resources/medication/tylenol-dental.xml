@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Medication
+    xmlns="http://hl7.org/fhir">
+    <id value="tylenol-dental"/>
+    <meta>
+        <versionId value="1"/>
+        <lastUpdated value="2020-05-06T21:07:21.386+00:00"/>
+        <source value="#USECfdGsaTCYJOhE"/>
+        <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-medication"/>
+    </meta>
+    <text>
+        <status value="generated"/>
+        <div
+            xmlns="http://www.w3.org/1999/xhtml">
+            <div class="hapiHeaderText">Acetaminophen 300 MG / Codeine Phosphate 30 MG [Tylenol with Codeine]</div>
+        </div>
+    </text>
+    <code>
+        <coding>
+            <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+            <code value="993836"/>
+            <display value="Acetaminophen 300 MG / Codeine Phosphate 30 MG [Tylenol with Codeine]"/>
+        </coding>
+        <text value="Acetaminophen 300 MG / Codeine Phosphate 30 MG [Tylenol with Codeine]"/>
+    </code>
+</Medication>

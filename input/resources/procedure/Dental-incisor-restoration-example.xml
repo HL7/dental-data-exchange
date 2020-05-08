@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Procedure
+    xmlns="http://hl7.org/fhir">
+    <id value="Dental-incisor-restoration-example"/>
+    <meta>
+        <versionId value="1"/>
+        <lastUpdated value="2020-05-06T21:07:02.980+00:00"/>
+        <source value="#VVxwwWMCKWaDQKm8"/>
+        <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"/>
+    </meta>
+    <identifier>
+        <system value="urn:ietf:rfc:3986"/>
+        <value value="urn:uuid:c2a737f2-2fdb-49c1-b097-dac173d07aff"/>
+    </identifier>
+    <status value="preparation"/>
+    <code>
+        <coding>
+            <system value="http://www.ama-assn.org/go/cdt"/>
+            <code value="D2393"/>
+        </coding>
+        <text value="Resin-based composite- three surfaces, posterior (restoration)"/>
+    </code>
+    <subject>
+        <reference value="Patient/example-dental"/>
+    </subject>
+    <performedPeriod>
+        <start value="2020-05-15T12:55:26-07:00"/>
+        <end value="2020-05-15T13:25:26-07:00"/>
+    </performedPeriod>
+    <performer>
+        <actor>
+            <reference value="Practitioner/practitioner-D"/>
+        </actor>
+    </performer>
+</Procedure>

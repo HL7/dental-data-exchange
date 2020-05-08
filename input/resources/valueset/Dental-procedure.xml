@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet
+    xmlns="http://hl7.org/fhir">
+    <id value="Dental-procedure"/>
+    <meta>
+        <versionId value="5"/>
+        <lastUpdated value="2020-05-03T22:20:25.219+00:00"/>
+        <source value="#b8wcDM3QNRebFfa9"/>
+    </meta>
+    <url value="http://hl7.org/fhir/us/dentalreferral/ValueSet/Dental-procedure"/>
+    <name value="DentalProcedure"/>
+    <title value="Dental Procedure"/>
+    <status value="draft"/>
+    <description value="This value set includes all dental procedure codes from CDTThis value set includes all procedure codes from dental (CDT) as well as medical (CDT)"/>
+    <compose>
+        <include>
+            <system value="https://www.ada.org/en/publications/cdt"/>
+        </include>
+        <include>
+            <system value="http://www.ama-assn.org/go/cpt"/>
+        </include>
+    </compose>
+</ValueSet>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PractitionerRole
+    xmlns="http://hl7.org/fhir">
+    <id value="PractitionerRole-E"/>
+    <meta>
+        <versionId value="1"/>
+        <lastUpdated value="2020-05-06T21:07:21.342+00:00"/>
+        <source value="#vGT8B9BIOa5eqtS0"/>
+        <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole"/>
+    </meta>
+    <practitioner>
+        <reference value="Practitioner/practitioner-D"/>
+        <display value="Dr. Endo E"/>
+    </practitioner>
+    <organization>
+        <reference value="Organization/GOHC-organization"/>
+        <display value="Great Endodontists Health Clinic"/>
+    </organization>
+    <code>
+        <coding>
+            <system value="http://nucc.org/provider-taxonomy"/>
+            <code value="1223E0200X"/>
+            <display value="Endodontics"/>
+        </coding>
+    </code>
+    <specialty>
+        <coding>
+            <system value="http://nucc.org/provider-taxonomy"/>
+            <code value="1223E0200X"/>
+            <display value="Endodontics"/>
+        </coding>
+    </specialty>
+    <endpoint>
+        <reference value="http://52.90.126.238:8080/fhir/baseR4/Endpoint/Endpoint-3"/>
+        <display value="Great Endodontists Health Clinic Organization"/>
+    </endpoint>
+    <endpoint>
+        <reference value="http://52.90.126.238:8080/fhir/baseR4/Endpoint/Endpoint-2"/>
+        <display value="Endo.E.MD@direct.example.org"/>
+    </endpoint>
+</PractitionerRole>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet
+    xmlns="http://hl7.org/fhir">
+    <id value="caries-riskassessment"/>
+    <meta>
+        <versionId value="5"/>
+        <lastUpdated value="2020-03-10T16:44:53.506+00:00"/>
+        <source value="#XdFypgnGJm7FX1yf"/>
+    </meta>
+    <url value="http://hl7.org/fhir/us/dentalreferral/ValueSet/caries-riskassessment"/>
+    <name value="CariesRiskAssessment"/>
+    <title value="Caries Risk Assessment"/>
+    <status value="draft"/>
+    <description value="This value set contains codes for the Caries Risk Assessment "/>
+    <compose>
+        <inactive value="false"/>
+        <include>
+            <system value="http://snomed.info/sct"/>
+            <concept>
+                <code value="609403008"/>
+                <display value="At extreme risk for dental caries (finding)"/>
+            </concept>
+            <concept>
+                <code value="609402003"/>
+                <display value="At high risk for dental caries (finding)"/>
+            </concept>
+            <concept>
+                <code value="609400006"/>
+                <display value="At low risk for dental caries (finding)"/>
+            </concept>
+            <concept>
+                <code value="609401005"/>
+                <display value="At moderate risk for dental caries (finding)"/>
+            </concept>
+            <concept>
+                <code value="609399004"/>
+                <display value="At risk for dental caries (finding)"/>
+            </concept>
+        </include>
+    </compose>
+</ValueSet>
