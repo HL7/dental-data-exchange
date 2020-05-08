@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="dentalreferral"/>
     <meta>
-        <versionId value="115"/>
-        <lastUpdated value="2020-05-08T19:21:16.928+00:00"/>
-        <source value="#zQJ8hffOwZ73c2Db"/>
+        <versionId value="120"/>
+        <lastUpdated value="2020-05-08T23:15:51.711+00:00"/>
+        <source value="#d3SqxMAKsVLFNZkK"/>
     </meta>
     <text>
         <status value="additional"/>
@@ -28,8 +28,7 @@
             <value value="http://www.hl7.org/Special/committees/claims"/>
         </telecom>
     </contact>
-    <description value="The Dental Data Exchange FHIR implementation guide provides guidance for using the HL7 Fast Healthcare Interoperability Resources (FHIR) standard as an exchange format for dental-related information exchange use cases. It is a collection of profiled FHIR resources designed for use in information exchanges supporting the referral of a patient to a general and/or specialized dental provider. The goal of this project is to streamline and enhance the efficacy of the exchange of health information between health care systems and community services organizations involved in addressing chronic health conditions by establishing information exchange standards for electronic referrals and referral outcome reporting.&#xA;&#xA;This guide specifies the structure and content of information to be exhcnaged during a referral of a patient from a general medical practitioner to a dentist as well as from a general dentist to a more specialized dental practitioner, such as an endodontist. &#xA;&#xA;Four use cases are used in this guide to represent the various referral patterns related to dental data exchange:&#xA;1. Medical practitioner to Dentist Referral note&#xA;2. Dental to Medical practitioner Consult note&#xA;3. General Dentist to Endodontist Referral note&#xA;4. Endodontist to General Dentist Consult note"/>
-    <copyright value="[Copyright info goes here]"/>
+    <description value="The Dental Data Exchange FHIR implementation guide provides guidance for using the HL7 Fast Healthcare Interoperability Resources (FHIR) standard as an exchange format for dental-related information exchange. It is a collection of profiled FHIR resources designed for use in information exchanges supporting the document-based information shared during the referral of a patient to a general and/or specialized dental provider. The goal of this project is to streamline and enhance the efficacy of the exchange of health information between health care systems and community services organizations involved in addressing chronic health conditions by establishing information exchange standards for electronic referrals and referral outcome reporting.&#xA;&#xA;At a minimum, a document bundle (CCDAonFHIR Referral Note or Consult Note) will be exchanged along with a ServiceRequest, Patient, Practitioner and PractitionerRole resources. This guide also profiles several dental-specific profiles for consideration including Dental observations, (general and caries) Risk Assessments, dental Conditions, procedures, and coverage. &#xA;&#xA;Four use cases are used in this guide to represent the various referral patterns related to dental data exchange:&#xA;1. Medical practitioner to Dentist Referral note&#xA;2. Dental to Medical practitioner Consult note&#xA;3. General Dentist to Endodontist Referral note&#xA;4. Endodontist to General Dentist Consult note"/>
     <packageId value="hl7.fhir.us.dentalreferral"/>
     <fhirVersion value="4.0.1"/>
     <dependsOn>

@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="example-dental"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2020-05-06T21:06:52.607+00:00"/>
-        <source value="#3YkXyKpnHbvhoH5O"/>
+        <versionId value="3"/>
+        <lastUpdated value="2020-05-08T22:55:19.792+00:00"/>
+        <source value="#RQml2O4exZn7KFGm"/>
         <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"/>
     </meta>
     <text>
@@ -13,6 +13,7 @@
         <div
             xmlns="http://www.w3.org/1999/xhtml">
             <div class="hapiHeaderText">Patient 
+                
                 <b>A </b>
             </div>
             <table class="hapiPropertyTable">
@@ -67,6 +68,9 @@
                 <code value="2135-2"/>
                 <display value="Hispanic or Latino"/>
             </valueCoding>
+        </extension>
+        <extension url="text">
+            <valueString value="Hispanic or Latino"/>
         </extension>
     </extension>
     <extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex">

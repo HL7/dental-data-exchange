@@ -17,3 +17,9 @@ http://hl7.org/fhir/R4/observation-vitalsigns.html
 CCDA-on-FHIR Profiles used by this guide:
 http://build.fhir.org/ig/HL7/ccda-on-fhir/StructureDefinition-CCDA-on-FHIR-Referral-Note.html
 http://build.fhir.org/ig/HL7/ccda-on-fhir/StructureDefinition-CCDA-on-FHIR-Consultation-Note.html
+
+Da Vinci Health Record Exchange (HRex) profile used by this guide:
+http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/hrex-coverage.html
+
+Occupation Data for HEalth (ODH) profile used by this guide:
+http://hl7.org/fhir/us/odh/StructureDefinition/odh-PastOrPresentJob.html

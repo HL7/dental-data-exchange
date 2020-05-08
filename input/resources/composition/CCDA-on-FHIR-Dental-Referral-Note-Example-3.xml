@@ -3,15 +3,15 @@
     xmlns="http://hl7.org/fhir">
     <id value="CCDA-on-FHIR-Dental-Referral-Note-Example-3"/>
     <meta>
-        <versionId value="1"/>
-        <lastUpdated value="2020-05-08T19:17:12.796+00:00"/>
-        <source value="#pgh76l2yLhaw3tzU"/>
-        <profile value="http://hl7.org/fhir/us/ccda-r4/StructureDefinition/CCDA-on-FHIR-Referral-Note"/>
+        <versionId value="2"/>
+        <lastUpdated value="2020-05-08T22:55:19.767+00:00"/>
+        <source value="#wUZbFroHsfryEGd2"/>
+        <profile value="http://hl7.org/fhir/us/ccda/StructureDefinition/CCDA-on-FHIR-Referral-Note"/>
     </meta>
     <language value="en-US"/>
     <identifier>
         <system value="urn:ietf:rfc:3986"/>
-        <value value="1"/>
+        <value value="http://any.org/1"/>
     </identifier>
     <status value="preliminary"/>
     <type>
@@ -31,6 +31,7 @@
         <display value="Dr. John D, MD"/>
     </author>
     <title value="Referral Note"/>
+    <confidentiality value="U"/>
     <attester>
         <mode value="legal"/>
         <time value="2020-03-15T09:10:14Z"/>
@@ -52,6 +53,9 @@
                 <display value="Allergies and adverse reactions Document"/>
             </coding>
         </code>
+        <text>
+            <status value="generated"/>
+        </text>
     </section>
     <section>
         <title value="Advance Directives Section"/>
@@ -593,12 +597,6 @@
                 </table>
             </div>
         </text>
-        <entry>
-            <reference value="Condition/example-2"/>
-        </entry>
-        <entry>
-            <reference value="Condition/example-3"/>
-        </entry>
     </section>
     <section>
         <title value="Procedures Section"/>
