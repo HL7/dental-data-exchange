@@ -1,532 +1,576 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ImplementationGuide
     xmlns="http://hl7.org/fhir">
-    <id value="dentalreferral"/>
-    <meta>
-        <versionId value="141"/>
-        <lastUpdated value="2020-05-11T15:12:01.980+00:00"/>
-        <source value="#TmtFmzNvnKXFatAY"/>
-    </meta>
-    <text>
-        <status value="additional"/>
-        <div
+	<id value="dentalreferral"/>
+	<meta>
+		<versionId value="141"/>
+		<lastUpdated value="2020-05-11T15:12:01.980+00:00"/>
+		<source value="#TmtFmzNvnKXFatAY"/>
+	</meta>
+	<text>
+		<status value="additional"/>
+		<div
             xmlns="http://www.w3.org/1999/xhtml">
-            <div
+			<div
                 xmlns="http://www.w3.org/1999/xhtml">[Narrative/Pages Resource text goes here]
-            </div>
-        </div>
-    </text>
-    <url value="http://hl7.org/fhir/us/dentalreferral"/>
-    <version value="0.0.1"/>
-    <name value="DentalReferral"/>
-    <title value="Dental Referral and Consult"/>
-    <status value="draft"/>
-    <contact>
-        <name value="HL7 International - Payer/Provider Information Exchange Work Group"/>
-        <telecom>
-            <system value="url"/>
-            <value value="http://www.hl7.org/Special/committees/claims"/>
-        </telecom>
-    </contact>
-    <description value="The Dental Data Exchange FHIR implementation guide provides guidance for using the HL7 Fast Healthcare Interoperability Resources (FHIR) standard as an exchange format for dental-related information exchange. It is a collection of profiled FHIR resources designed for use in information exchanges supporting the document-based information shared during the referral of a patient to a general and/or specialized dental provider. The goal of this project is to streamline and enhance the efficacy of the exchange of health information between health care systems and community services organizations involved in addressing chronic health conditions by establishing information exchange standards for electronic referrals and referral outcome reporting.&#xA;&#xA;At a minimum, a document bundle (CCDAonFHIR Referral Note or Consult Note) will be exchanged along with a ServiceRequest, Patient, Practitioner and PractitionerRole resources. This guide also profiles several dental-specific profiles for consideration including Dental observations, (general and caries) Risk Assessments, dental Conditions, procedures, and coverage. &#xA;&#xA;Four use cases are used in this guide to represent the various referral patterns related to dental data exchange:&#xA;1. Medical practitioner to Dentist Referral note&#xA;2. Dental to Medical practitioner Consult note&#xA;3. General Dentist to Endodontist Referral note&#xA;4. Endodontist to General Dentist Consult note"/>
-    <packageId value="hl7.fhir.us.dentalreferral"/>
-    <fhirVersion value="4.0.1"/>
-    <dependsOn>
-        <uri value="http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core-3.1.0"/>
-        <packageId value="hl7.fhir.us.core"/>
-        <version value="3.1.0"/>
-    </dependsOn>
-    <dependsOn>
-        <uri value="http://hl7.org/fhir/us/ccda/ImplementationGuide/hl7.fhir.us.ccda"/>
-        <packageId value="hl7.fhir.us.ccda"/>
-        <version value="current"/>
-    </dependsOn>
-    <dependsOn>
-        <uri value="http://hl7.org/fhir/us/davinci-hrex/ImplementationGuide/davinci-hrex"/>
-        <packageId value="hl7.fhir.us.davinci-hrex"/>
-        <version value="0.1.0"/>
-    </dependsOn>
-    <dependsOn>
-        <uri value="http://hl7.org/fhir/us/odh/ImplementationGuide/odh"/>
-        <packageId value="hl7.fhir.us.odh"/>
-        <version value="1.0.0"/>
-    </dependsOn>
-    <definition>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/caries-riskassessment"/>
-                <display value="caries-riskassessment"/>
-            </reference>
-            <name value="Dental Risk Assessment"/>
-            <description value="This profile documents a clinician's Caries risk assessment"/>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/dental-consult"/>
-                <display value="DentalConsult"/>
-            </reference>
-            <name value="Dental Consult"/>
-            <description value="This Profile defines the Dental Consult Note profile. It contains the textual information regarding what was observed and performed by a general dentist or dental specialist in response to a dental referral as well as references to supplemental dental profiles for that referral. This Consult Note is linked to its Referral via the In-Fulfillment-Of extension reference to ServiceRequest. "/>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/dental-procedure"/>
-                <display value="DentalProcedure"/>
-            </reference>
-            <name value="Dental Procedure"/>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="ValueSet/caries-riskassessment"/>
-                <display value="Caries Risk Assessment"/>
-            </reference>
-            <name value="Caries Risk Assessment"/>
-            <description value="This value set contains codes for the Caries Risk Assessment "/>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="ValueSet/oral-cavity-area"/>
-                <display value="Oral Cavity Area"/>
-            </reference>
-            <name value="Oral Cavity Area"/>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="ValueSet/dental-condition-code"/>
-                <display value="Dental Condition Code"/>
-            </reference>
-            <name value="Dental Condition Code"/>
-            <description value="This describes the problem. Diagnosis/Problem List is broadly defined as a series of brief statements that catalog a patient's medical, nursing, dental, social, preventative and psychiatric events and issues that are relevant to that patient's healthcare (e.g., signs, symptoms, and defined conditions).   ICD-10 is appropriate for Diagnosis information, and ICD-9 for historical information."/>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/dental-condition"/>
-                <display value="DentalCondition"/>
-            </reference>
-            <name value="Dental Condition"/>
-            <description value="This profile is used to record clinically diagnoses conditions. A condition often references one/many Observations to support its assertions. "/>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/dental-coverage"/>
-                <display value="DentalCoverage"/>
-            </reference>
-            <name value="Dental Coverage"/>
-            <description value="Detal coverage profile description goes here"/>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/dental-communication"/>
-                <display value="DentalCommunication"/>
-            </reference>
-            <name value="Dental Communication"/>
-            <description value="**Need to discuss: is any dental-specific communication in scope?**"/>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/dental-servicerequest"/>
-                <display value="DentalServiceRequest"/>
-            </reference>
-            <name value="Dental Service Request"/>
-            <description value="This profile contains information regarding the dental referral request including a required identifier and a reference to the reason for the referral, if possible. It also includes basic information such as the patient, referring provider, and encounter information that resulted in the referral. "/>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="ValueSet/Dental-procedure"/>
-                <display value="Dental Procedure"/>
-            </reference>
-            <name value="Dental Procedure"/>
-            <description value="This value set includes all dental procedure codes from CDTThis value set includes all procedure codes from dental (CDT) as well as medical (CDT)"/>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/oral-finding"/>
-                <display value="OralFinding"/>
-            </reference>
-            <name value="Oral Finding"/>
-            <description value="This profile is used to convey oral findings including findings of an Odontogram, Peridontal (overall assessment and tooth-specific observations), Intra and Extra Oral Soft Tissue, TMJ, TMD, and Occlusion. Note - fingins in this profile often support associated diagnoses (FHIR Conditions). "/>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="ValueSet/FDI-teeth-codes"/>
-                <display value="Teeth Codes"/>
-            </reference>
-            <name value="Teeth Codes"/>
-            <description value="This value set contains the FDI teeth codes"/>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/dental-referralnote"/>
-                <display value="DentalReferralNote"/>
-            </reference>
-            <name value="DentalReferralNote"/>
-            <description value="This Profile defines the Dental Referral Note profile. It contains the textual information regarding a referral to a general dentist or dental specialist as well as references to supplemental dental profiles for the referral"/>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="ValueSet/1.0.1.0.1.2.3.4.5"/>
-                <display value="ReasonForReferral"/>
-            </reference>
-            <name value="ReasonForReferral"/>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="ValueSet/dental-observation-codes"/>
-                <display value="Dental Observation Codes"/>
-            </reference>
-            <name value="Dental Observation Codes"/>
-            <description value="This Valueset contains all ICD-9/10, CPT, CDT codes, as well as the Clinical Findings (finding) concept from both Snomed and Snodent. It's is used by the Dental Observation profile .code to represent what test/scenario is being observed. "/>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/general-riskassessment"/>
-                <display value="GeneralOralHealthRiskAssessment"/>
-            </reference>
-            <name value="GeneralOralHealthRiskAssessment"/>
-            <description value="This profile is used to document a clinician's assessment of a patient's overall oral health and general risk assessment based on all oral information and observations available. Potential factors to consider as inputs for this overall oral health status/assessment include Caries risk, periodontal risk factors, specific habits such as eating/nutrition and brushing/flossing habits, as well as broader considerations including Coverage and socio-economic status. "/>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="AllergyIntolerance/Allergy-example-dental"/></reference>
-            <exampleBoolean value="true"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Bundle/Med-2-Dental-referral-bundle"/></reference>
-            <exampleBoolean value="true"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Bundle/Den2Endo-referral-bundle"/></reference>
-            <exampleBoolean value="true"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="CapabilityStatement/capabilitystatement-dental"/>
-                <display value="Capability Statement - Dental"/>
-            </reference>
-            <name value="Capability Statement - Dental"/>
-            <description value="This resource defines the expected capabilities for both client and server participating in referral exchanges involving a dental actor (medical/dental and dental/dental)"/>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Composition/Med-2-Dental-Referral"/>
-                <display value="Referral Note"/>
-            </reference>
-            <name value="Referral Note"/>
-            <exampleBoolean value="true"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Composition/Dental-2-Med-Consult"/>
-                <display value="Consultation Note"/>
-            </reference>
-            <name value="Consultation Note"/>
-            <exampleBoolean value="true"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Composition/Endo-2-Dental-Consult"/>
-                <display value="Consultation Note"/>
-            </reference>
-            <name value="Consultation Note"/>
-            <exampleBoolean value="true"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Composition/Dental-2-Endo-3"/>
-                <display value="Referral Note"/>
-            </reference>
-            <name value="Referral Note"/>
-            <exampleBoolean value="true"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Condition/Pulpitis-example-4"/></reference>
-            <exampleBoolean value="true"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Condition/toothache-example"/></reference>
-            <exampleBoolean value="true"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Condition/HTN-example"/></reference>
-            <exampleBoolean value="true"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Condition/Chronic-periodontitis-example"/></reference>
-            <exampleBoolean value="true"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Condition/Dental-plaque-example"/></reference>
-            <exampleBoolean value="true"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Condition/Dental-caries-example"/></reference>
-            <exampleBoolean value="true"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Condition/Swollen-gums-example"/></reference>
-            <exampleBoolean value="true"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Condition/Maxillary-perm7-example"/></reference>
-            <exampleBoolean value="true"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Condition/Mandibular-perm18-example"/></reference>
-            <exampleBoolean value="true"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Condition/Mandibular-perm30-example"/></reference>
-            <exampleBoolean value="true"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Encounter/endodontist-example-1"/></reference>
-            <exampleBoolean value="true"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Encounter/Dentist-followup-prophylaxis"/></reference>
-            <exampleBoolean value="true"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Encounter/Med-visit-1"/></reference>
-            <exampleBoolean value="true"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Encounter/Dental-2-Med-Consult"/></reference>
-            <exampleBoolean value="true"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Endpoint/endo-endpoint-example-4"/>
-                <display value="DART Hub"/>
-            </reference>
-            <name value="DART Hub"/>
-            <exampleBoolean value="true"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="ImagingStudy/X-ray2-example"/></reference>
-            <exampleBoolean value="true"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="ImagingStudy/Panoramic-Radiograph-example"/></reference>
-            <exampleBoolean value="true"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="ImagingStudy/X-ray1-example"/></reference>
-            <exampleBoolean value="true"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="ImagingStudy/endo-radiograph-example"/></reference>
-            <exampleBoolean value="true"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Medication/tylenol-dental"/></reference>
-            <exampleBoolean value="true"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Medication/ibuprofen-med-example-2"/></reference>
-            <exampleBoolean value="true"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Medication/erythromycin-med-example"/></reference>
-            <exampleBoolean value="true"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Medication/Acetaminophen-med-example-2"/></reference>
-            <exampleBoolean value="true"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="MedicationRequest/Acetaminophen-medreq-2"/></reference>
-            <exampleBoolean value="true"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="MedicationRequest/Ibuprofen-medreq-2"/></reference>
-            <exampleBoolean value="true"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="MedicationRequest/Tylenol-med-dental"/></reference>
-            <exampleBoolean value="true"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="MedicationRequest/erythromycin-medreq-2"/></reference>
-            <exampleBoolean value="true"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Observation/Present-job-example-dental"/></reference>
-            <exampleBoolean value="true"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Observation/Smoker-obs-example-dental"/></reference>
-            <exampleBoolean value="true"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Observation/Education-level-example-dental"/></reference>
-            <exampleBoolean value="true"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Organization/GOHC-organization"/>
-                <display value="Good Oral Health Clinic"/>
-            </reference>
-            <name value="Good Oral Health Clinic"/>
-            <exampleBoolean value="true"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Organization/GHC-organization"/>
-                <display value="Good Health Clinic"/>
-            </reference>
-            <name value="Good Health Clinic"/>
-            <exampleBoolean value="true"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Organization/GEHC-organization"/>
-                <display value="Good Endodontics Health Clinic"/>
-            </reference>
-            <name value="Good Endodontics Health Clinic"/>
-            <exampleBoolean value="true"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Patient/example-dental"/></reference>
-            <exampleBoolean value="true"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Practitioner/practitioner-D"/></reference>
-            <exampleBoolean value="true"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Practitioner/practitioner-E"/></reference>
-            <exampleBoolean value="true"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Practitioner/practitioner-M"/></reference>
-            <exampleBoolean value="true"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="PractitionerRole/PractitionerRole-M"/></reference>
-            <exampleBoolean value="true"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="PractitionerRole/PractitionerRole-D"/></reference>
-            <exampleBoolean value="true"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="PractitionerRole/PractitionerRole-E"/></reference>
-            <exampleBoolean value="true"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Procedure/Dental-flouride-tx-example"/></reference>
-            <exampleBoolean value="true"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Procedure/Endo-therapy-example"/></reference>
-            <exampleBoolean value="true"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Procedure/Dental-incisor-restoration-example"/></reference>
-            <exampleBoolean value="true"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Procedure/Dental-extraction-example"/></reference>
-            <exampleBoolean value="true"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="ServiceRequest/example-dental-referral-1"/></reference>
-            <exampleBoolean value="true"/>
-        </resource>
-        <page>
-            <nameUrl value="index.html"/>
-            <title value="IG Home Page"/>
-            <generation value="markdown"/>
-            <page>
-                <nameUrl value="toc.html"/>
-                <title value="Table of Contents"/>
-                <generation value="generated"/>
-                <page>
-                    <nameUrl value="DentalDataExchangeProjectTeam.html"/>
-                    <title value="Dental Data Exchange Project Team"/>
-                    <generation value="markdown"/>
-                </page>
-                <page>
-                    <nameUrl value="ScopeandContext.html"/>
-                    <title value="Scope and Context"/>
-                    <generation value="markdown"/>
-                </page>
-                <page>
-                    <nameUrl value="Dependenciesonotherstandards.html"/>
-                    <title value="Dependencies on other standards"/>
-                    <generation value="markdown"/>
-                </page>
-            </page>
-        </page>
-        <parameter>
-            <code value="copyrightyear"/>
-            <value value="2020+"/>
-        </parameter>
-        <parameter>
-            <code value="releaselabel"/>
-            <value value="CI Build"/>
-        </parameter>
-    </definition>
+			</div>
+		</div>
+	</text>
+	<url value="http://hl7.org/fhir/us/dentalreferral"/>
+	<version value="0.0.1"/>
+	<name value="DentalReferral"/>
+	<title value="Dental Referral and Consult"/>
+	<status value="draft"/>
+	<contact>
+		<name value="HL7 International - Payer/Provider Information Exchange Work Group"/>
+		<telecom>
+			<system value="url"/>
+			<value value="http://www.hl7.org/Special/committees/claims"/>
+		</telecom>
+	</contact>
+	<description value="The Dental Data Exchange FHIR implementation guide provides guidance for using the HL7 Fast Healthcare Interoperability Resources (FHIR) standard as an exchange format for dental-related information exchange. It is a collection of profiled FHIR resources designed for use in information exchanges supporting the document-based information shared during the referral of a patient to a general and/or specialized dental provider. The goal of this project is to streamline and enhance the efficacy of the exchange of health information between health care systems and community services organizations involved in addressing chronic health conditions by establishing information exchange standards for electronic referrals and referral outcome reporting.&#xA;&#xA;At a minimum, a document bundle (CCDAonFHIR Referral Note or Consult Note) will be exchanged along with a ServiceRequest, Patient, Practitioner and PractitionerRole resources. This guide also profiles several dental-specific profiles for consideration including Dental observations, (general and caries) Risk Assessments, dental Conditions, procedures, and coverage. &#xA;&#xA;Four use cases are used in this guide to represent the various referral patterns related to dental data exchange:&#xA;1. Medical practitioner to Dentist Referral note&#xA;2. Dental to Medical practitioner Consult note&#xA;3. General Dentist to Endodontist Referral note&#xA;4. Endodontist to General Dentist Consult note"/>
+	<packageId value="hl7.fhir.us.dentalreferral"/>
+	<fhirVersion value="4.0.1"/>
+	<dependsOn>
+		<uri value="http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core-3.1.0"/>
+		<packageId value="hl7.fhir.us.core"/>
+		<version value="3.1.0"/>
+	</dependsOn>
+	<dependsOn>
+		<uri value="http://hl7.org/fhir/us/ccda/ImplementationGuide/hl7.fhir.us.ccda"/>
+		<packageId value="hl7.fhir.us.ccda"/>
+		<version value="current"/>
+	</dependsOn>
+	<dependsOn>
+		<uri value="http://hl7.org/fhir/us/davinci-hrex/ImplementationGuide/davinci-hrex"/>
+		<packageId value="hl7.fhir.us.davinci-hrex"/>
+		<version value="0.1.0"/>
+	</dependsOn>
+	<dependsOn>
+		<uri value="http://hl7.org/fhir/us/odh/ImplementationGuide/odh"/>
+		<packageId value="hl7.fhir.us.odh"/>
+		<version value="1.0.0"/>
+	</dependsOn>
+	<definition>
+		<resource>
+			<reference>
+				<reference value="StructureDefinition/caries-riskassessment"/>
+				<display value="caries-riskassessment"/>
+			</reference>
+			<name value="Dental Risk Assessment"/>
+			<description value="This profile documents a clinician's Caries risk assessment"/>
+			<exampleBoolean value="false"/>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="StructureDefinition/dental-consult"/>
+				<display value="DentalConsult"/>
+			</reference>
+			<name value="Dental Consult"/>
+			<description value="This Profile defines the Dental Consult Note profile. It contains the textual information regarding what was observed and performed by a general dentist or dental specialist in response to a dental referral as well as references to supplemental dental profiles for that referral. This Consult Note is linked to its Referral via the In-Fulfillment-Of extension reference to ServiceRequest. "/>
+			<exampleBoolean value="false"/>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="StructureDefinition/dental-procedure"/>
+				<display value="DentalProcedure"/>
+			</reference>
+			<name value="Dental Procedure"/>
+			<exampleBoolean value="false"/>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="ValueSet/caries-riskassessment"/>
+				<display value="Caries Risk Assessment"/>
+			</reference>
+			<name value="Caries Risk Assessment"/>
+			<description value="This value set contains codes for the Caries Risk Assessment "/>
+			<exampleBoolean value="false"/>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="ValueSet/oral-cavity-area"/>
+				<display value="Oral Cavity Area"/>
+			</reference>
+			<name value="Oral Cavity Area"/>
+			<exampleBoolean value="false"/>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="ValueSet/dental-condition-code"/>
+				<display value="Dental Condition Code"/>
+			</reference>
+			<name value="Dental Condition Code"/>
+			<description value="This describes the problem. Diagnosis/Problem List is broadly defined as a series of brief statements that catalog a patient's medical, nursing, dental, social, preventative and psychiatric events and issues that are relevant to that patient's healthcare (e.g., signs, symptoms, and defined conditions).   ICD-10 is appropriate for Diagnosis information, and ICD-9 for historical information."/>
+			<exampleBoolean value="false"/>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="StructureDefinition/dental-condition"/>
+				<display value="DentalCondition"/>
+			</reference>
+			<name value="Dental Condition"/>
+			<description value="This profile is used to record clinically diagnoses conditions. A condition often references one/many Observations to support its assertions. "/>
+			<exampleBoolean value="false"/>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="StructureDefinition/dental-coverage"/>
+				<display value="DentalCoverage"/>
+			</reference>
+			<name value="Dental Coverage"/>
+			<description value="Detal coverage profile description goes here"/>
+			<exampleBoolean value="false"/>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="StructureDefinition/dental-communication"/>
+				<display value="DentalCommunication"/>
+			</reference>
+			<name value="Dental Communication"/>
+			<description value="**Need to discuss: is any dental-specific communication in scope?**"/>
+			<exampleBoolean value="false"/>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="StructureDefinition/dental-servicerequest"/>
+				<display value="DentalServiceRequest"/>
+			</reference>
+			<name value="Dental Service Request"/>
+			<description value="This profile contains information regarding the dental referral request including a required identifier and a reference to the reason for the referral, if possible. It also includes basic information such as the patient, referring provider, and encounter information that resulted in the referral. "/>
+			<exampleBoolean value="false"/>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="ValueSet/Dental-procedure"/>
+				<display value="Dental Procedure"/>
+			</reference>
+			<name value="Dental Procedure"/>
+			<description value="This value set includes all dental procedure codes from CDTThis value set includes all procedure codes from dental (CDT) as well as medical (CDT)"/>
+			<exampleBoolean value="false"/>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="StructureDefinition/oral-finding"/>
+				<display value="OralFinding"/>
+			</reference>
+			<name value="Oral Finding"/>
+			<description value="This profile is used to convey oral findings including findings of an Odontogram, Peridontal (overall assessment and tooth-specific observations), Intra and Extra Oral Soft Tissue, TMJ, TMD, and Occlusion. Note - fingins in this profile often support associated diagnoses (FHIR Conditions). "/>
+			<exampleBoolean value="false"/>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="ValueSet/FDI-teeth-codes"/>
+				<display value="Teeth Codes"/>
+			</reference>
+			<name value="Teeth Codes"/>
+			<description value="This value set contains the FDI teeth codes"/>
+			<exampleBoolean value="false"/>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="StructureDefinition/dental-referralnote"/>
+				<display value="DentalReferralNote"/>
+			</reference>
+			<name value="DentalReferralNote"/>
+			<description value="This Profile defines the Dental Referral Note profile. It contains the textual information regarding a referral to a general dentist or dental specialist as well as references to supplemental dental profiles for the referral"/>
+			<exampleBoolean value="false"/>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="ValueSet/1.0.1.0.1.2.3.4.5"/>
+				<display value="ReasonForReferral"/>
+			</reference>
+			<name value="ReasonForReferral"/>
+			<exampleBoolean value="false"/>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="ValueSet/dental-observation-codes"/>
+				<display value="Dental Observation Codes"/>
+			</reference>
+			<name value="Dental Observation Codes"/>
+			<description value="This Valueset contains all ICD-9/10, CPT, CDT codes, as well as the Clinical Findings (finding) concept from both Snomed and Snodent. It's is used by the Dental Observation profile .code to represent what test/scenario is being observed. "/>
+			<exampleBoolean value="false"/>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="StructureDefinition/general-riskassessment"/>
+				<display value="GeneralOralHealthRiskAssessment"/>
+			</reference>
+			<name value="GeneralOralHealthRiskAssessment"/>
+			<description value="This profile is used to document a clinician's assessment of a patient's overall oral health and general risk assessment based on all oral information and observations available. Potential factors to consider as inputs for this overall oral health status/assessment include Caries risk, periodontal risk factors, specific habits such as eating/nutrition and brushing/flossing habits, as well as broader considerations including Coverage and socio-economic status. "/>
+			<exampleBoolean value="false"/>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="AllergyIntolerance/Allergy-example-dental"/>
+			</reference>
+			<exampleBoolean value="true"/>
+		</resource>
+<!-- 		<resource>
+			<reference>
+				<reference value="Bundle/Med-2-Dental-referral-bundle"/>
+			</reference>
+			<exampleBoolean value="true"/>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="Bundle/Den2Endo-referral-bundle"/>
+			</reference>
+			<exampleBoolean value="true"/>
+		</resource> -->
+		<resource>
+			<reference>
+				<reference value="CapabilityStatement/capabilitystatement-dental"/>
+				<display value="Capability Statement - Dental"/>
+			</reference>
+			<name value="Capability Statement - Dental"/>
+			<description value="This resource defines the expected capabilities for both client and server participating in referral exchanges involving a dental actor (medical/dental and dental/dental)"/>
+			<exampleBoolean value="false"/>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="Composition/Med-2-Dental-Referral"/>
+				<display value="Referral Note"/>
+			</reference>
+			<name value="Referral Note"/>
+			<exampleBoolean value="true"/>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="Composition/Dental-2-Med-Consult"/>
+				<display value="Consultation Note"/>
+			</reference>
+			<name value="Consultation Note"/>
+			<exampleBoolean value="true"/>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="Composition/Endo-2-Dental-Consult"/>
+				<display value="Consultation Note"/>
+			</reference>
+			<name value="Consultation Note"/>
+			<exampleBoolean value="true"/>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="Composition/Dental-2-Endo-3"/>
+				<display value="Referral Note"/>
+			</reference>
+			<name value="Referral Note"/>
+			<exampleBoolean value="true"/>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="Condition/Pulpitis-example-4"/>
+			</reference>
+			<exampleBoolean value="true"/>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="Condition/toothache-example"/>
+			</reference>
+			<exampleBoolean value="true"/>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="Condition/HTN-example"/>
+			</reference>
+			<exampleBoolean value="true"/>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="Condition/Chronic-periodontitis-example"/>
+			</reference>
+			<exampleBoolean value="true"/>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="Condition/Dental-plaque-example"/>
+			</reference>
+			<exampleBoolean value="true"/>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="Condition/Dental-caries-example"/>
+			</reference>
+			<exampleBoolean value="true"/>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="Condition/Swollen-gums-example"/>
+			</reference>
+			<exampleBoolean value="true"/>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="Condition/Maxillary-perm7-example"/>
+			</reference>
+			<exampleBoolean value="true"/>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="Condition/Mandibular-perm18-example"/>
+			</reference>
+			<exampleBoolean value="true"/>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="Condition/Mandibular-perm30-example"/>
+			</reference>
+			<exampleBoolean value="true"/>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="Encounter/endodontist-example-1"/>
+			</reference>
+			<exampleBoolean value="true"/>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="Encounter/Dentist-followup-prophylaxis"/>
+			</reference>
+			<exampleBoolean value="true"/>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="Encounter/Med-visit-1"/>
+			</reference>
+			<exampleBoolean value="true"/>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="Encounter/Dental-2-Med-Consult"/>
+			</reference>
+			<exampleBoolean value="true"/>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="Endpoint/endo-endpoint-example-4"/>
+				<display value="DART Hub"/>
+			</reference>
+			<name value="DART Hub"/>
+			<exampleBoolean value="true"/>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="ImagingStudy/X-ray2-example"/>
+			</reference>
+			<exampleBoolean value="true"/>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="ImagingStudy/Panoramic-Radiograph-example"/>
+			</reference>
+			<exampleBoolean value="true"/>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="ImagingStudy/X-ray1-example"/>
+			</reference>
+			<exampleBoolean value="true"/>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="ImagingStudy/endo-radiograph-example"/>
+			</reference>
+			<exampleBoolean value="true"/>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="Medication/tylenol-dental"/>
+			</reference>
+			<exampleBoolean value="true"/>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="Medication/ibuprofen-med-example-2"/>
+			</reference>
+			<exampleBoolean value="true"/>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="Medication/erythromycin-med-example"/>
+			</reference>
+			<exampleBoolean value="true"/>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="Medication/Acetaminophen-med-example-2"/>
+			</reference>
+			<exampleBoolean value="true"/>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="MedicationRequest/Acetaminophen-medreq-2"/>
+			</reference>
+			<exampleBoolean value="true"/>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="MedicationRequest/Ibuprofen-medreq-2"/>
+			</reference>
+			<exampleBoolean value="true"/>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="MedicationRequest/Tylenol-med-dental"/>
+			</reference>
+			<exampleBoolean value="true"/>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="MedicationRequest/erythromycin-medreq-2"/>
+			</reference>
+			<exampleBoolean value="true"/>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="Observation/Present-job-example-dental"/>
+			</reference>
+			<exampleBoolean value="true"/>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="Observation/Smoker-obs-example-dental"/>
+			</reference>
+			<exampleBoolean value="true"/>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="Observation/Education-level-example-dental"/>
+			</reference>
+			<exampleBoolean value="true"/>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="Organization/GOHC-organization"/>
+				<display value="Good Oral Health Clinic"/>
+			</reference>
+			<name value="Good Oral Health Clinic"/>
+			<exampleBoolean value="true"/>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="Organization/GHC-organization"/>
+				<display value="Good Health Clinic"/>
+			</reference>
+			<name value="Good Health Clinic"/>
+			<exampleBoolean value="true"/>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="Organization/GEHC-organization"/>
+				<display value="Good Endodontics Health Clinic"/>
+			</reference>
+			<name value="Good Endodontics Health Clinic"/>
+			<exampleBoolean value="true"/>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="Patient/example-dental"/>
+			</reference>
+			<exampleBoolean value="true"/>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="Practitioner/practitioner-D"/>
+			</reference>
+			<exampleBoolean value="true"/>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="Practitioner/practitioner-E"/>
+			</reference>
+			<exampleBoolean value="true"/>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="Practitioner/practitioner-M"/>
+			</reference>
+			<exampleBoolean value="true"/>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="PractitionerRole/PractitionerRole-M"/>
+			</reference>
+			<exampleBoolean value="true"/>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="PractitionerRole/PractitionerRole-D"/>
+			</reference>
+			<exampleBoolean value="true"/>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="PractitionerRole/PractitionerRole-E"/>
+			</reference>
+			<exampleBoolean value="true"/>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="Procedure/Dental-flouride-tx-example"/>
+			</reference>
+			<exampleBoolean value="true"/>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="Procedure/Endo-therapy-example"/>
+			</reference>
+			<exampleBoolean value="true"/>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="Procedure/Dental-incisor-restoration-example"/>
+			</reference>
+			<exampleBoolean value="true"/>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="Procedure/Dental-extraction-example"/>
+			</reference>
+			<exampleBoolean value="true"/>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="ServiceRequest/example-dental-referral-1"/>
+			</reference>
+			<exampleBoolean value="true"/>
+		</resource>
+		<page>
+			<nameUrl value="index.html"/>
+			<title value="IG Home Page"/>
+			<generation value="markdown"/>
+			<page>
+				<nameUrl value="toc.html"/>
+				<title value="Table of Contents"/>
+				<generation value="generated"/>
+				<page>
+					<nameUrl value="DentalDataExchangeProjectTeam.html"/>
+					<title value="Dental Data Exchange Project Team"/>
+					<generation value="markdown"/>
+				</page>
+				<page>
+					<nameUrl value="ScopeandContext.html"/>
+					<title value="Scope and Context"/>
+					<generation value="markdown"/>
+				</page>
+				<page>
+					<nameUrl value="Dependenciesonotherstandards.html"/>
+					<title value="Dependencies on other standards"/>
+					<generation value="markdown"/>
+				</page>
+			</page>
+		</page>
+		<parameter>
+			<code value="copyrightyear"/>
+			<value value="2020+"/>
+		</parameter>
+		<parameter>
+			<code value="releaselabel"/>
+			<value value="CI Build"/>
+		</parameter>
+	</definition>
 </ImplementationGuide>
