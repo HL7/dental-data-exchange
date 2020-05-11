@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bundle
+    xmlns="http://hl7.org/fhir">
+    <id value="Den2Endo-referral-bundle"/>
+    <meta>
+        <versionId value="1"/>
+        <lastUpdated value="2020-05-11T15:09:13.616+00:00"/>
+        <source value="#QHMQgvI3ZvCyDEf5"/>
+    </meta>
+    <identifier>
+        <system value="urn:ietf:rfc:3986"/>
+        <value value="urn:uuid:0c3151bd-1cbf-4d64-b04d-cd9187a4c6e0"/>
+    </identifier>
+    <type value="document"/>
+    <timestamp value="2020-05-08T22:12:21Z"/>
+</Bundle>

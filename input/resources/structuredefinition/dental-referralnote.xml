@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="dental-referralnote"/>
     <meta>
-        <versionId value="4"/>
-        <lastUpdated value="2020-05-04T14:54:58.932+00:00"/>
-        <source value="#w1IsVNhPAZj7sNm6"/>
+        <versionId value="5"/>
+        <lastUpdated value="2020-05-11T15:12:15.496+00:00"/>
+        <source value="#a1IgZ1s5epKWLDLK"/>
     </meta>
     <url value="http://hl7.org/fhir/us/dentalreferral/StructureDefinition/dental-referralnote"/>
     <name value="DentalReferralNote"/>
@@ -417,7 +417,6 @@
                 <min value="1"/>
                 <max value="1"/>
             </base>
-            <type/>
             <fixedUri value="http://hl7.org/fhir/us/ccda/StructureDefinition/Data-Enterer"/>
             <isModifier value="false"/>
             <isSummary value="false"/>
@@ -568,7 +567,6 @@
                 <min value="1"/>
                 <max value="1"/>
             </base>
-            <type/>
             <fixedUri value="http://hl7.org/fhir/us/ccda/StructureDefinition/Informant"/>
             <isModifier value="false"/>
             <isSummary value="false"/>
@@ -721,7 +719,6 @@
                 <min value="1"/>
                 <max value="1"/>
             </base>
-            <type/>
             <fixedUri value="http://hl7.org/fhir/us/ccda/StructureDefinition/Information-Recipient"/>
             <isModifier value="false"/>
             <isSummary value="false"/>
@@ -872,7 +869,6 @@
                 <min value="1"/>
                 <max value="1"/>
             </base>
-            <type/>
             <fixedUri value="http://hl7.org/fhir/us/ccda/StructureDefinition/Participant"/>
             <isModifier value="false"/>
             <isSummary value="false"/>
@@ -1025,7 +1021,6 @@
                 <min value="1"/>
                 <max value="1"/>
             </base>
-            <type/>
             <fixedUri value="http://hl7.org/fhir/us/ccda/StructureDefinition/Performer"/>
             <isModifier value="false"/>
             <isSummary value="false"/>
@@ -1176,7 +1171,6 @@
                 <min value="1"/>
                 <max value="1"/>
             </base>
-            <type/>
             <fixedUri value="http://hl7.org/fhir/us/ccda/StructureDefinition/Authorization"/>
             <mustSupport value="true"/>
             <isModifier value="false"/>
@@ -1327,7 +1321,6 @@
                 <min value="1"/>
                 <max value="1"/>
             </base>
-            <type/>
             <fixedUri value="http://hl7.org/fhir/us/ccda/StructureDefinition/In-Fulfillment-Of-Order"/>
             <isModifier value="false"/>
             <isSummary value="false"/>

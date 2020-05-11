@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Encounter
+    xmlns="http://hl7.org/fhir">
+    <id value="Med-visit-1"/>
+    <meta>
+        <versionId value="1"/>
+        <lastUpdated value="2020-05-11T15:10:28.671+00:00"/>
+        <source value="#afj8obr724RjJQa5"/>
+        <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter"/>
+    </meta>
+    <status value="finished"/>
+    <class>
+        <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+        <code value="AMB"/>
+        <display value="ambulatory"/>
+    </class>
+    <type>
+        <coding>
+            <system value="http://www.ama-assn.org/go/cpt"/>
+            <code value="99201"/>
+        </coding>
+        <text value="Office Visit"/>
+    </type>
+    <priority>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-ActPriority"/>
+            <code value="R"/>
+            <display value="routine"/>
+        </coding>
+    </priority>
+    <subject>
+        <reference value="Patient/example-dental"/>
+    </subject>
+    <period>
+        <start value="2020-01-14T15:00:14-05:00"/>
+        <end value="2020-01-14T15:30:14-05:00"/>
+    </period>
+</Encounter>

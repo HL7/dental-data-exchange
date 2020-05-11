@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bundle
+    xmlns="http://hl7.org/fhir">
+    <id value="Med-2-Dental-referral-bundle"/>
+    <meta>
+        <versionId value="1"/>
+        <lastUpdated value="2020-05-11T15:09:13.616+00:00"/>
+        <source value="#T7PupUIWTSh1IQzd"/>
+    </meta>
+    <type value="document"/>
+    <total value="1"/>
+</Bundle>
