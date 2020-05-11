@@ -24,7 +24,11 @@
 		<reference value="Patient/example-dental"/>
 		<display value="Patient A"/>
 	</subject>
-	<date value="2020-03-14T03:10:14Z"/>
+	<encounter>
+		<reference value="Encounter/Med-visit-1"/>
+		<display value="PCP visit"/>
+	</encounter>
+	<date value="2020-01-14T03:10:14Z"/>
 	<author>
 		<reference value="PractitionerRole/PractitionerRole-M"/>
 		<display value="Dr. John M, MD"/>

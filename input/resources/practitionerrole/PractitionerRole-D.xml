@@ -19,14 +19,14 @@
     <code>
         <coding>
             <system value="http://nucc.org/provider-taxonomy"/>
-            <code value="361QP2300X"/>
+            <code value="122300000X"/>
             <display value="General Dentist"/>
         </coding>
     </code>
     <specialty>
         <coding>
             <system value="http://nucc.org/provider-taxonomy"/>
-            <code value="908D00000X"/>
+            <code value="122300000X"/>
             <display value="General Denist"/>
         </coding>
     </specialty>

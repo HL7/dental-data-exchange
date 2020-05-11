@@ -16,7 +16,7 @@
     <type>
         <coding>
             <system value="http://terminology.hl7.org/CodeSystem/organization-type"/>
-            <code value="endo"/>
+            <code value="prov"/>
             <display value="Endodonitics Provider"/>
         </coding>
     </type>

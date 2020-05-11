@@ -9,11 +9,11 @@
         <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole"/>
     </meta>
     <practitioner>
-        <reference value="Practitioner/practitioner-D"/>
+        <reference value="Practitioner/practitioner-E"/>
         <display value="Dr. Endo E"/>
     </practitioner>
     <organization>
-        <reference value="Organization/GOHC-organization"/>
+        <reference value="Organization/GEHC-organization"/>
         <display value="Great Endodontists Health Clinic"/>
     </organization>
     <code>

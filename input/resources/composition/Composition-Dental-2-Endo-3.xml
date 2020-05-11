@@ -24,6 +24,9 @@
 		<reference value="Patient/example-dental"/>
 		<display value="Patient A"/>
 	</subject>
+	<reference value="Encounter/Dental-2-Med-Consult"/>
+	<encounter>
+	</encounter>
 	<date value="2020-03-15T09:10:14Z"/>
 	<author>
 		<reference value="PractitionerRole/PractitionerRole-D"/>

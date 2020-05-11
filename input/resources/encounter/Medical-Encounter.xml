@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Encounter
     xmlns="http://hl7.org/fhir">
-    <id value="Dental-2-Med-Consult"/>
+    <id value="Med-visit-1"/>
     <meta>
         <versionId value="1"/>
-        <lastUpdated value="2020-05-06T21:07:02.471+00:00"/>
-        <source value="#7iOnwGXxEOuIas3U"/>
+        <lastUpdated value="2020-05-06T21:06:52.625+00:00"/>
+        <source value="#n9JFJzaPdRrCPfHl"/>
         <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter"/>
     </meta>
     <status value="finished"/>
@@ -16,10 +16,10 @@
     </class>
     <type>
         <coding>
-            <system value="http://snomed.info/sct"/>
-            <code value="185347001"/>
+            <system value="http://www.ama-assn.org/go/cpt"/>
+            <code value="99201"/>
         </coding>
-        <text value="Encounter for problem (procedure)"/>
+        <text value="Office Visit"/>
     </type>
     <priority>
         <coding>
@@ -32,7 +32,7 @@
         <reference value="Patient/example-dental"/>
     </subject>
     <period>
-        <start value="2020-02-15T15:00:14-05:00"/>
-        <end value="2020-02-15T15:30:14-05:00"/>
+        <start value="2020-01-14T15:00:14-05:00"/>
+        <end value="2020-01-14T15:30:14-05:00"/>
     </period>
 </Encounter>
