@@ -25,6 +25,10 @@
         <reference value="Patient/example-dental"/>
         <display value="Patient A"/>
     </subject>
+	<encounter>
+        <reference value="Encounter/endodontist-example-1"/>
+        <display value="Dental Referral with patient A"/>
+    </encounter>
     <date value="2020-03-15T09:10:14Z"/>
     <author>
         <reference value="PractitionerRole/PractitionerRole-D"/>

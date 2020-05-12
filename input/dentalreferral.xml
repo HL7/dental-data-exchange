@@ -208,9 +208,15 @@
 			</reference>
 			<exampleBoolean value="true"/>
 		</resource>
-<!-- 		<resource>
+		<resource>
 			<reference>
-				<reference value="Bundle/Med-2-Dental-referral-bundle"/>
+				<reference value="Bundle/Den-2-Med-consult-bundle"/>
+			</reference>
+			<exampleBoolean value="true"/>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="Bundle/Endo-2-Dental-consult-bundle"/>
 			</reference>
 			<exampleBoolean value="true"/>
 		</resource>
@@ -219,7 +225,13 @@
 				<reference value="Bundle/Den2Endo-referral-bundle"/>
 			</reference>
 			<exampleBoolean value="true"/>
-		</resource> -->
+		</resource>
+		<resource>
+			<reference>
+				<reference value="Bundle/Med-2-Dental-referral-bundle"/>
+			</reference>
+			<exampleBoolean value="true"/>
+		</resource>
 		<resource>
 			<reference>
 				<reference value="CapabilityStatement/capabilitystatement-dental"/>

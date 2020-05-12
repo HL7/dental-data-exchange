@@ -1,0 +1,934 @@
+<Bundle xmlns="http://hl7.org/fhir">
+	<id value="Endo-2-Dental-consult-bundle"/> 
+	<!--    this example bundle is a document    -->
+	<meta> 
+		<lastUpdated value="2020-05-11T01:43:30Z"/> 
+	</meta>  
+	<type value="document"/>   
+	<total value="1"/> 
+	<entry> 
+		<Composition
+    xmlns="http://hl7.org/fhir">
+			<id value="Endo-2-Dental-Consult"/>
+			<meta>
+				<versionId value="2"/>
+				<lastUpdated value="2020-05-08T19:20:33.150+00:00"/>
+				<source value="#hooVaw5BjRpfzbjg"/>
+				<profile value="http://hl7.org/fhir/us/ccda/StructureDefinition/CCDA-on-FHIR-Consultation-Note"/>
+			</meta>
+			<language value="en-US"/>
+			<identifier>
+				<system value="urn:ietf:rfc:3986"/>
+				<value value="http://any.org/2"/>
+			</identifier>
+			<status value="final"/>
+			<type>
+				<coding>
+					<system value="http://loinc.org"/>
+					<code value="11488-4"/>
+					<display value="Consult Note"/>
+				</coding>
+			</type>
+			<subject>
+				<reference value="Patient/example-dental"/>
+				<display value="Patient A"/>
+			</subject>
+			<encounter>
+				<reference value="Encounter/endodontist-example-1"/>
+				<display value="Encounter with patient A"/>
+			</encounter>
+			<date value="2020-03-28T09:10:14Z"/>
+			<author>
+				<reference value="Practitioner/practitioner-E"/>
+				<display value="Dentist Endo E, DMD"/>
+			</author>
+			<title value="Consultation Note"/>
+			<confidentiality value="U"/>
+			<attester>
+				<mode value="legal"/>
+				<time value="2020-03-28T09:10:14Z"/>
+				<party>
+					<reference value="Practitioner/practitioner-E"/>
+					<display value="Dentist Endo E, DMD"/>
+				</party>
+			</attester>
+			<custodian>
+				<reference value="Organization/GEHC-organization"/>
+				<display value="Good Endodontics Health Clinic"/>
+			</custodian>
+			<event>
+				<code>
+					<coding>
+						<system value="http://terminology.hl7.org/CodeSystem/v3-ActClass"/>
+						<code value="PCPR"/>
+						<display value="Care Provision"/>
+					</coding>
+				</code>
+				<period>
+					<start value="2020-03-28"/>
+					<end value="2020-03-28"/>
+				</period>
+			</event>
+			<section>
+				<title value="Advance Directives Section"/>
+				<code>
+					<coding>
+						<system value="http://loinc.org"/>
+						<code value="42348-3"/>
+						<display value="Advance directives"/>
+					</coding>
+				</code>
+				<text>
+					<status value="generated"/>
+					<div
+                xmlns="http://www.w3.org/1999/xhtml">
+					</div>
+				</text>
+			</section>
+			<section>
+				<title value="Allergies and Intolerances Section"/>
+				<code>
+					<coding>
+						<system value="http://loinc.org"/>
+						<code value="48765-2"/>
+						<display value="Allergies and adverse reactions Document"/>
+					</coding>
+				</code>
+				<text>
+					<status value="generated"/>
+					<div
+                xmlns="http://www.w3.org/1999/xhtml">
+					</div>
+				</text>
+			</section>
+			<section>
+				<title value="Assessment Section"/>
+				<code>
+					<coding>
+						<system value="http://loinc.org"/>
+						<code value="51848-0"/>
+						<display value="Evaluation note"/>
+					</coding>
+				</code>
+				<text>
+					<status value="generated"/>
+					<div
+                xmlns="http://www.w3.org/1999/xhtml">
+						<p>Exam: Confirmed intraoral and paraoral findings from referring provider </p>
+						<p>Tests: Also performed transillumination and dye tests (blue dye) within pulp chamber during endodontic therapy and saw no evidence of cracks. Exposed one diagnostic periapical radiograph (charge D0220?) and confirmed radiographic findings above  </p>
+						<p>Radiographs: Images from endodontist (one pretreatment periapical and two periapical images of final fill) sent and acquired via DART system </p>
+					</div>
+				</text>
+			</section>
+			<section>
+				<title value="Assessment and Plan Section"/>
+				<code>
+					<coding>
+						<system value="http://loinc.org"/>
+						<code value="51847-2"/>
+						<display value="Evaluation + Plan note"/>
+					</coding>
+				</code>
+				<text>
+					<status value="generated"/>
+					<div
+                xmlns="http://www.w3.org/1999/xhtml">
+						<p>Good. Recommend restoration with full crown.  </p>
+						<p>Note: Puff of sealer noted around M root; </p>
+						<p>monitor for the next year, and, if sealer does not resorb, consider apicoectomy.</p>
+					</div>
+				</text>
+			</section>
+			<section>
+				<title value="Chief Complaint and Reason for Visit Section"/>
+				<code>
+					<coding>
+						<system value="http://loinc.org"/>
+						<code value="46239-0"/>
+						<display value="Chief complaint+Reason for visit Narrative"/>
+					</coding>
+				</code>
+				<text>
+					<status value="generated"/>
+					<div
+                xmlns="http://www.w3.org/1999/xhtml">
+					</div>
+				</text>
+			</section>
+			<section>
+				<title value="Chief Complaint Section"/>
+				<code>
+					<coding>
+						<system value="http://loinc.org"/>
+						<code value="10154-3"/>
+						<display value="Chief complaint Narrative - Reported"/>
+					</coding>
+				</code>
+				<text>
+					<status value="generated"/>
+					<div
+                xmlns="http://www.w3.org/1999/xhtml">
+					</div>
+				</text>
+			</section>
+			<section>
+				<title value="Family History Section"/>
+				<code>
+					<coding>
+						<system value="http://loinc.org"/>
+						<code value="10157-6"/>
+						<display value="History of family member diseases Narrative"/>
+					</coding>
+				</code>
+				<text>
+					<status value="generated"/>
+					<div
+                xmlns="http://www.w3.org/1999/xhtml">
+					</div>
+				</text>
+			</section>
+			<section>
+				<title value="Functional Status Section"/>
+				<code>
+					<coding>
+						<system value="http://loinc.org"/>
+						<code value="47420-5"/>
+						<display value="Functional status assessment note"/>
+					</coding>
+				</code>
+				<text>
+					<status value="generated"/>
+					<div
+                xmlns="http://www.w3.org/1999/xhtml">
+					</div>
+				</text>
+			</section>
+			<section>
+				<title value="General Status Section"/>
+				<code>
+					<coding>
+						<system value="http://loinc.org"/>
+						<code value="10210-3"/>
+						<display value="Physical findings of General status Narrative"/>
+					</coding>
+				</code>
+				<text>
+					<status value="generated"/>
+					<div
+                xmlns="http://www.w3.org/1999/xhtml">
+					</div>
+				</text>
+			</section>
+			<section>
+				<title value="Past Medical History Section"/>
+				<code>
+					<coding>
+						<system value="http://loinc.org"/>
+						<code value="11348-0"/>
+						<display value="History of Past illness Narrative"/>
+					</coding>
+				</code>
+				<text>
+					<status value="generated"/>
+					<div
+                xmlns="http://www.w3.org/1999/xhtml">
+						<p>See History of Present Illness</p>
+					</div>
+				</text>
+			</section>
+			<section>
+				<title value="History of Present Illness Section"/>
+				<code>
+					<coding>
+						<system value="http://loinc.org"/>
+						<code value="10164-2"/>
+						<display value="History of Present illness Narrative"/>
+					</coding>
+				</code>
+				<text>
+					<status value="generated"/>
+					<div
+                xmlns="http://www.w3.org/1999/xhtml">
+						<p>Dental History provided by General dentist was verified</p>
+					</div>
+				</text>
+			</section>
+			<section>
+				<title value="Immunizations Section"/>
+				<code>
+					<coding>
+						<system value="http://loinc.org"/>
+						<code value="11369-6"/>
+						<display value="History of Immunization Narrative"/>
+					</coding>
+				</code>
+				<text>
+					<status value="generated"/>
+					<div
+                xmlns="http://www.w3.org/1999/xhtml">
+					</div>
+				</text>
+			</section>
+			<section>
+				<title value="Medical Equipment Section"/>
+				<code>
+					<coding>
+						<system value="http://loinc.org"/>
+						<code value="46264-8"/>
+						<display value="History of medical device use"/>
+					</coding>
+				</code>
+				<text>
+					<status value="generated"/>
+					<div
+                xmlns="http://www.w3.org/1999/xhtml">
+					</div>
+				</text>
+			</section>
+			<section>
+				<title value="Medication Section"/>
+				<code>
+					<coding>
+						<system value="http://loinc.org"/>
+						<code value="10160-0"/>
+						<display value="History of Medication use Narrative"/>
+					</coding>
+				</code>
+				<text>
+					<status value="generated"/>
+					<div
+                xmlns="http://www.w3.org/1999/xhtml">
+						<table>
+							<tr>
+								<td>
+									<b>Medication</b>
+								</td>
+								<td>
+									<b>Directions</b>
+								</td>
+								<td>
+									<b>Start Date</b>
+								</td>
+								<td>
+									<b>Status</b>
+								</td>
+								<td>
+									<b>Indications</b>
+								</td>
+								<td>
+									<b>Fill Instructions</b>
+								</td>
+							</tr>
+							<tr>
+								<td>Acetaminophen 300 MG / Codeine Phosphate 30 MG</td>
+								<td>Take 1 tablet every 4 hours as needed for pain. </td>
+								<td>20190401</td>
+								<td>Active</td>
+								<td>Pain</td>
+								<td>Dispense #10 tablets.</td>
+							</tr>
+						</table>
+					</div>
+				</text>
+			</section>
+			<section>
+				<title value="Mental Status Section"/>
+				<code>
+					<coding>
+						<system value="http://loinc.org"/>
+						<code value="10190-7"/>
+						<display value="Mental status"/>
+					</coding>
+				</code>
+				<text>
+					<status value="generated"/>
+					<div
+                xmlns="http://www.w3.org/1999/xhtml">
+					</div>
+				</text>
+			</section>
+			<section>
+				<title value="Nutrition Section"/>
+				<code>
+					<coding>
+						<system value="http://loinc.org"/>
+						<code value="61144-2"/>
+						<display value="Diet and nutrition Narrative"/>
+					</coding>
+				</code>
+				<text>
+					<status value="generated"/>
+					<div
+                xmlns="http://www.w3.org/1999/xhtml">
+					</div>
+				</text>
+			</section>
+			<section>
+				<title value="Physical Exam Section"/>
+				<code>
+					<coding>
+						<system value="http://loinc.org"/>
+						<code value="29545-1"/>
+						<display value="Physical findings Narrative"/>
+					</coding>
+				</code>
+				<text>
+					<status value="generated"/>
+					<div
+                xmlns="http://www.w3.org/1999/xhtml">
+					</div>
+				</text>
+			</section>
+			<section>
+				<title value="Plan of Treatment Section"/>
+				<code>
+					<coding>
+						<system value="http://loinc.org"/>
+						<code value="18776-5"/>
+						<display value="Plan of care note"/>
+					</coding>
+				</code>
+				<text>
+					<status value="generated"/>
+					<div
+                xmlns="http://www.w3.org/1999/xhtml">
+						<table>
+							<tr>
+								<td>
+									<b>Planned Activity</b>
+								</td>
+								<td>
+									<b>Period</b>
+								</td>
+								<td>
+									<b>Status</b>
+								</td>
+							</tr>
+							<tr>
+								<td>Recommend restoration with full crown.</td>
+								<td>2020/06/01 - 2020/12/31</td>
+								<td>Planned</td>
+							</tr>
+							<tr>
+								<td>Puff of sealer noted around M root; monitor for the next year, and, if sealer does not resorb, consider apicoectomy</td>
+								<td>2020/04/01 - 2020/12/31</td>
+								<td>Ongoing</td>
+							</tr>
+						</table>
+					</div>
+				</text>
+			</section>
+			<section>
+				<title value="Problem Section"/>
+				<code>
+					<coding>
+						<system value="http://loinc.org"/>
+						<code value="11450-4"/>
+						<display value="Problem list - Reported"/>
+					</coding>
+				</code>
+				<text>
+					<status value="generated"/>
+					<div
+                xmlns="http://www.w3.org/1999/xhtml">
+						<table>
+							<tr>
+								<td>
+									<b>Problem Name</b>
+								</td>
+								<td>
+									<b>Type</b>
+								</td>
+								<td>
+									<b>Onset Date</b>
+								</td>
+								<td>
+									<b>Abatement Date</b>
+								</td>
+								<td>
+									<b>Status</b>
+								</td>
+							</tr>
+							<tr>
+								<td>Irreversible pulpitis #30 with necrotic pulp with PAP mesial root accompanied by draining sinus tract on B</td>
+								<td>Condition</td>
+								<td>2020/03/15</td>
+								<td/>
+								<td>Ongoing</td>
+							</tr>
+							<tr>
+								<td>No vertical fracture of root apparent during endodontic therapy (disorder)</td>
+								<td>Condition</td>
+								<td>2020/03/15</td>
+								<td/>
+								<td>Ongoing</td>
+							</tr>
+						</table>
+					</div>
+				</text>
+			</section>
+			<section>
+				<title value="Procedures Section"/>
+				<code>
+					<coding>
+						<system value="http://loinc.org"/>
+						<code value="47519-4"/>
+						<display value="History of Procedures Document"/>
+					</coding>
+				</code>
+				<text>
+					<status value="generated"/>
+					<div
+                xmlns="http://www.w3.org/1999/xhtml">
+						<table>
+							<tr>
+								<td>
+									<b>Procedure Name</b>
+								</td>
+								<td>
+									<b>Body Site</b>
+								</td>
+								<td>
+									<b>Performer</b>
+								</td>
+								<td>
+									<b>Date Performed</b>
+								</td>
+								<td>
+									<b>Reason</b>
+								</td>
+							</tr>
+							<tr>
+								<td>endodontic therapy, molar tooth (excluding final restoration)</td>
+								<td>molar</td>
+								<td>Dr. Endo E</td>
+								<td>20200415</td>
+								<td>????</td>
+							</tr>
+						</table>
+					</div>
+				</text>
+			</section>
+			<section>
+				<title value="Reason for Visit Section"/>
+				<code>
+					<coding>
+						<system value="http://loinc.org"/>
+						<code value="29299-5"/>
+						<display value="Reason for visit"/>
+					</coding>
+				</code>
+				<text>
+					<status value="generated"/>
+					<div
+                xmlns="http://www.w3.org/1999/xhtml">
+						<p>Referral to endodontist for evaluation of #30 and endodontic therapy.</p>
+						<p>Referring Dx: Suspect irreversible pulpitis tooth #30 with necrotic pulp and periapical pathosis with draining fistula. Tooth is restorable despite possible incomplete fracture DB cusp #30.</p>
+					</div>
+				</text>
+			</section>
+			<section>
+				<title value="Results Section"/>
+				<code>
+					<coding>
+						<system value="http://loinc.org"/>
+						<code value="30954-2"/>
+						<display value="Relevant diagnostic tests/laboratory data Narrative"/>
+					</coding>
+				</code>
+				<text>
+					<status value="generated"/>
+					<div
+                xmlns="http://www.w3.org/1999/xhtml">
+						<table>
+							<tr>
+								<td>
+									<b>Result Type</b>
+								</td>
+								<td>
+									<b>Quantity Value</b>
+								</td>
+								<td>
+									<b>Date</b>
+								</td>
+								<td>
+									<b>Status</b>
+								</td>
+							</tr>
+							<tr>
+								<td>Endodontist confirmed above image report(exam code D0140 or D0160?)</td>
+								<td>True</td>
+								<td>2020/04/01</td>
+								<td>Final</td>
+							</tr>
+							<tr>
+								<td>performed transillumination and dye tests (blue dye) within pulp chamber during endodontic therapy</td>
+								<td>saw no evidence of cracks</td>
+								<td>2020/04/01</td>
+								<td>Final</td>
+							</tr>
+						</table>
+					</div>
+				</text>
+			</section>
+			<section>
+				<title value="Review of Systems Section"/>
+				<code>
+					<coding>
+						<system value="http://loinc.org"/>
+						<code value="10187-3"/>
+						<display value="Review of systems"/>
+					</coding>
+				</code>
+				<text>
+					<status value="generated"/>
+					<div
+                xmlns="http://www.w3.org/1999/xhtml">
+					</div>
+				</text>
+			</section>
+			<section>
+				<title value="Social History Section"/>
+				<code>
+					<coding>
+						<system value="http://loinc.org"/>
+						<code value="29762-2"/>
+						<display value="Social history Narrative"/>
+					</coding>
+				</code>
+				<text>
+					<status value="generated"/>
+					<div
+                xmlns="http://www.w3.org/1999/xhtml">
+						<table>
+							<tr>
+								<td>
+									<b>Social History Element</b>
+								</td>
+								<td>
+									<b>Description</b>
+								</td>
+								<td>
+									<b>Effective Dates</b>
+								</td>
+							</tr>
+							<tr>
+								<td>Smoking</td>
+								<td>Patient reports no use of tobbacco/nicotine products</td>
+								<td>2005/05/01 - 2010/02/28</td>
+							</tr>
+						</table>
+					</div>
+				</text>
+			</section>
+			<section>
+				<title value="Vital Signs Section"/>
+				<code>
+					<coding>
+						<system value="http://loinc.org"/>
+						<code value="8716-3"/>
+						<display value="Vital signs"/>
+					</coding>
+				</code>
+				<text>
+					<status value="generated"/>
+					<div
+                xmlns="http://www.w3.org/1999/xhtml">
+					</div>
+				</text>
+			</section>
+		</Composition>
+	</entry>
+	<entry>
+		<Patient
+    xmlns="http://hl7.org/fhir">
+			<id value="example-dental"/>
+			<meta>
+				<versionId value="2"/>
+				<lastUpdated value="2020-05-06T21:06:52.607+00:00"/>
+				<source value="#3YkXyKpnHbvhoH5O"/>
+				<profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"/>
+			</meta>
+			<text>
+				<status value="generated"/>
+				<div
+            xmlns="http://www.w3.org/1999/xhtml">
+					<div class="hapiHeaderText">Patient 
+						<b>A </b>
+					</div>
+					<table class="hapiPropertyTable">
+						<tbody>
+							<tr>
+								<td>Identifier</td>
+								<td>5152020</td>
+							</tr>
+							<tr>
+								<td>Address</td>
+								<td>
+									<span>123 Test Dr. </span>
+									<br/>
+									<span>Denver </span>
+									<span>CO </span>
+									<span>US </span>
+								</td>
+							</tr>
+							<tr>
+								<td>Date of birth</td>
+								<td>
+									<span>01 January 1990</span>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</text>
+			<extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-race">
+				<extension url="ombCategory">
+					<valueCoding>
+						<system value="urn:oid:2.16.840.1.113883.6.238"/>
+						<code value="2106-3"/>
+						<display value="White"/>
+					</valueCoding>
+				</extension>
+				<extension url="detailed">
+					<valueCoding>
+						<system value="urn:oid:2.16.840.1.113883.6.238"/>
+						<code value="1516-4"/>
+						<display value="Zuni"/>
+					</valueCoding>
+				</extension>
+				<extension url="text">
+					<valueString value="Mixed"/>
+				</extension>
+			</extension>
+			<extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity">
+				<extension url="ombCategory">
+					<valueCoding>
+						<system value="urn:oid:2.16.840.1.113883.6.238"/>
+						<code value="2135-2"/>
+						<display value="Hispanic or Latino"/>
+					</valueCoding>
+				</extension>
+				<extension url="text">
+					<valueString value="Hispanic or Latino"/>
+				</extension>
+			</extension>
+			<extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex">
+				<valueCode value="M"/>
+			</extension>
+			<identifier>
+				<use value="usual"/>
+				<type>
+					<coding>
+						<system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+						<code value="MR"/>
+						<display value="Medical Record Number"/>
+					</coding>
+					<text value="Medical Record Number"/>
+				</type>
+				<system value="http://clinic.goodhealth.org"/>
+				<value value="5152020"/>
+			</identifier>
+			<active value="true"/>
+			<name>
+				<family value="A"/>
+				<given value="Patient"/>
+			</name>
+			<telecom>
+				<system value="phone"/>
+				<value value="123-456-7890"/>
+				<use value="home"/>
+			</telecom>
+			<telecom>
+				<system value="email"/>
+				<value value="testA@email.com"/>
+			</telecom>
+			<gender value="male"/>
+			<birthDate value="1990-01-01"/>
+			<address>
+				<line value="123 Test Dr."/>
+				<city value="Denver"/>
+				<state value="CO"/>
+				<postalCode value="80204"/>
+				<country value="US"/>
+			</address>
+		</Patient>
+	</entry>
+	<entry>
+		<Encounter
+    xmlns="http://hl7.org/fhir">
+			<id value="endodontist-example-1"/>
+			<meta>
+				<versionId value="1"/>
+				<lastUpdated value="2020-05-06T21:07:21.572+00:00"/>
+				<source value="#IAMkTiqz6a6U6Nyl"/>
+				<profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter"/>
+			</meta>
+			<status value="finished"/>
+			<class>
+				<system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+				<code value="AMB"/>
+				<display value="ambulatory"/>
+			</class>
+			<type>
+				<coding>
+					<system value="http://hl7.org/fhir/sid/icd-10"/>
+					<code value="D0140"/>
+				</coding>
+				<text value="Limited Oral Eval - Problem focused"/>
+			</type>
+			<priority>
+				<coding>
+					<system value="http://terminology.hl7.org/CodeSystem/v3-ActPriority"/>
+					<code value="R"/>
+					<display value="routine"/>
+				</coding>
+			</priority>
+			<subject>
+				<reference value="Patient/example-dental"/>
+			</subject>
+			<period>
+				<start value="2020-03-15T15:00:14-05:00"/>
+				<end value="2020-03-15T15:30:14-05:00"/>
+			</period>
+		</Encounter>
+	</entry>
+	<entry>
+		<Practitioner
+    xmlns="http://hl7.org/fhir">
+			<id value="practitioner-E"/>
+			<meta>
+				<versionId value="1"/>
+				<lastUpdated value="2020-05-06T21:07:21.381+00:00"/>
+				<source value="#TicXxInvvuzt4YxG"/>
+				<profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"/>
+			</meta>
+			<identifier>
+				<system value="http://hl7.org.fhir/sid/us-npi"/>
+				<value value="9994560000"/>
+			</identifier>
+			<name>
+				<family value="E"/>
+				<given value="Endo"/>
+				<prefix value="Dr"/>
+			</name>
+			<telecom>
+				<system value="phone"/>
+				<value value="303-555-6443"/>
+				<use value="work"/>
+			</telecom>
+			<gender value="male"/>
+			<birthDate value="1990-11-15"/>
+			<qualification>
+				<identifier>
+					<use value="official"/>
+					<type>
+						<coding>
+							<system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+							<code value="MD"/>
+							<display value="Medical License number"/>
+						</coding>
+						<text value="Missouri Medical License"/>
+					</type>
+					<system value="http://missouri.gov/fhir/medical-license"/>
+					<value value="MO-1000"/>
+					<assigner>
+						<display value="State of Missouri"/>
+					</assigner>
+				</identifier>
+				<code>
+					<coding>
+						<system value="http://missouri.gov/license-type"/>
+						<code value="9000"/>
+						<display value="Medical Doctor"/>
+					</coding>
+				</code>
+				<issuer>
+					<display value="Missouri Department of Licensing and Regulatory Affairs"/>
+				</issuer>
+			</qualification>
+		</Practitioner>
+	</entry>
+	<entry>
+		<PractitionerRole
+    xmlns="http://hl7.org/fhir">
+			<id value="PractitionerRole-E"/>
+			<meta>
+				<versionId value="1"/>
+				<lastUpdated value="2020-05-06T21:07:21.342+00:00"/>
+				<source value="#vGT8B9BIOa5eqtS0"/>
+				<profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole"/>
+			</meta>
+			<practitioner>
+				<reference value="Practitioner/practitioner-E"/>
+				<display value="Dr. Endo E"/>
+			</practitioner>
+			<organization>
+				<reference value="Organization/GEHC-organization"/>
+				<display value="Great Endodontists Health Clinic"/>
+			</organization>
+			<code>
+				<coding>
+					<system value="http://nucc.org/provider-taxonomy"/>
+					<code value="1223E0200X"/>
+					<display value="Endodontics"/>
+				</coding>
+			</code>
+			<specialty>
+				<coding>
+					<system value="http://nucc.org/provider-taxonomy"/>
+					<code value="1223E0200X"/>
+					<display value="Endodontics"/>
+				</coding>
+			</specialty>
+			<endpoint>
+				<reference value="http://52.90.126.238:8080/fhir/baseR4/Endpoint/Endpoint-3"/>
+				<display value="Great Endodontists Health Clinic Organization"/>
+			</endpoint>
+			<endpoint>
+				<reference value="http://52.90.126.238:8080/fhir/baseR4/Endpoint/Endpoint-2"/>
+				<display value="Endo.E.MD@direct.example.org"/>
+			</endpoint>
+		</PractitionerRole>
+	</entry>
+	<entry>
+		<Organization
+    xmlns="http://hl7.org/fhir">
+			<id value="GEHC-organization"/>
+			<meta>
+				<versionId value="1"/>
+				<lastUpdated value="2020-05-06T21:07:21.380+00:00"/>
+				<source value="#7tleUyTi7FXiYgR2"/>
+				<profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization"/>
+			</meta>
+			<identifier>
+				<system value="http://hl7.org.fhir/sid/us-npi"/>
+				<value value="9316452725"/>
+			</identifier>
+			<active value="true"/>
+			<type>
+				<coding>
+					<system value="http://terminology.hl7.org/CodeSystem/organization-type"/>
+					<code value="prov"/>
+					<display value="Endodonitics Provider"/>
+				</coding>
+			</type>
+			<name value="Good Endodontics Health Clinic"/>
+			<telecom>
+				<system value="phone"/>
+				<value value="(+1) 303-677-7777"/>
+			</telecom>
+			<telecom>
+				<system value="email"/>
+				<value value="Endo-service@GHclinic.org"/>
+			</telecom>
+			<address>
+				<line value="9552 W Alameda Ave"/>
+				<city value="Lakewood"/>
+				<state value="CO"/>
+				<postalCode value="80226"/>
+				<country value="USA"/>
+			</address>
+		</Organization>
+	</entry>
+</Bundle>
