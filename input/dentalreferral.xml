@@ -222,7 +222,7 @@
 		</resource>
 		<resource>
 			<reference>
-				<reference value="Bundle/Den2Endo-referral-bundle"/>
+				<reference value="Bundle/Den-2-Endo-referral-bundle"/>
 			</reference>
 			<exampleBoolean value="true"/>
 		</resource>
