@@ -1,5 +1,5 @@
 <Bundle xmlns="http://hl7.org/fhir">
-	<id value="Den2Endo-referral-bundle"/> 
+	<id value="Den-2-Endo-referral-bundle"/> 
 	<meta> 
 		<lastUpdated value="2020-05-08T22:12:21Z"/> 
 	</meta> 
