@@ -1,34 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Bundle
     xmlns="http://hl7.org/fhir">
-    <id value="Med-2-Dental-referral-bundle"/>
+    <id value="Dental-2-Med-Consult-bundle"/>
     <meta>
-        <versionId value="6"/>
-        <lastUpdated value="2020-05-12T21:35:32.694+00:00"/>
-        <source value="#KBtJBn1vYXNsxsRS"/>
+        <versionId value="1"/>
+        <lastUpdated value="2020-05-12T21:35:32.677+00:00"/>
+        <source value="#XLL2eOghiO8cKGQv"/>
     </meta>
     <identifier>
         <system value="urn:ietf:rfc:3986"/>
-        <value value="urn:uuid:3c3151bd-1cbf-4d64-b04d-cd9187a4c6e3"/>
+        <value value="urn:uuid:2c3151bd-1cbf-4d64-b04d-cd9187a4c6e2"/>
     </identifier>
     <type value="document"/>
     <timestamp value="2020-05-11T01:43:30Z"/>
     <entry>
-        <fullUrl value="Composition/Med-2-Dental-Referral"/>
+        <fullUrl value="Composition/Dental-2-Med-Consult"/>
         <resource>
             <Composition>
-                <id value="Med-2-Dental-Referral"/>
+                <id value="Dental-2-Med-Consult"/>
                 <language value="en-US"/>
                 <identifier>
                     <system value="urn:ietf:rfc:3986"/>
-                    <value value="http://any.org/1"/>
+                    <value value="http://any.org/2"/>
                 </identifier>
                 <status value="final"/>
                 <type>
                     <coding>
                         <system value="http://loinc.org"/>
-                        <code value="57133-1"/>
-                        <display value="Referral Note"/>
+                        <code value="11488-4"/>
+                        <display value="Consult Note"/>
                     </coding>
                 </type>
                 <subject>
@@ -36,28 +36,54 @@
                     <display value="Patient A"/>
                 </subject>
                 <encounter>
-                    <reference value="Encounter/Med-visit-1"/>
-                    <display value="PCP visit"/>
+                    <reference value="Encounter/Dental-2-Med-Consult"/>
+                    <display value="Dental Referral with patient A"/>
                 </encounter>
-                <date value="2020-01-14T03:10:14Z"/>
+                <date value="2020-02-15T09:10:14Z"/>
                 <author>
-                    <reference value="PractitionerRole/PractitionerRole-M"/>
-                    <display value="Dr. John M, MD"/>
+                    <reference value="Practitioner/practitioner-D"/>
+                    <display value="Dentist D, DMD"/>
                 </author>
-                <title value="Referral Note"/>
+                <title value="Consultation Note"/>
                 <confidentiality value="U"/>
                 <attester>
                     <mode value="legal"/>
-                    <time value="2020-03-14T09:10:14Z"/>
+                    <time value="2020-03-28T09:10:14Z"/>
                     <party>
-                        <reference value="PractitionerRole/PractitionerRole-M"/>
-                        <display value="Dr. John M, MD"/>
+                        <reference value="Practitioner/practitioner-D"/>
+                        <display value="Dentist Endo E, DMD"/>
                     </party>
                 </attester>
                 <custodian>
-                    <reference value="Organization/GHC-organization"/>
-                    <display value="Good Health Clinic"/>
+                    <reference value="Organization/GOHC-organization"/>
+                    <display value="Good Oral Endodontics Health Clinic"/>
                 </custodian>
+                <event>
+                    <code>
+                        <coding>
+                            <system value="http://terminology.hl7.org/CodeSystem/v3-ActClass"/>
+                            <code value="PCPR"/>
+                            <display value="Care Provision"/>
+                        </coding>
+                    </code>
+                    <period>
+                        <start value="2020-02-15"/>
+                        <end value="2020-02-15"/>
+                    </period>
+                </event>
+                <section>
+                    <title value="Advance Directives Section"/>
+                    <code>
+                        <coding>
+                            <system value="http://loinc.org"/>
+                            <code value="42348-3"/>
+                            <display value="Advance directives"/>
+                        </coding>
+                    </code>
+                    <text>
+                        <status value="generated"/>
+                    </text>
+                </section>
                 <section>
                     <title value="Allergies and Intolerances Section"/>
                     <code>
@@ -74,39 +100,30 @@
                             <table>
                                 <tr>
                                     <td>
-                                        <b>Allergen</b>
+                                        <b>Substance</b>
                                     </td>
                                     <td>
-                                        <b>Code</b>
+                                        <b>Overall Severity</b>
                                     </td>
                                     <td>
-                                        <b>Manifestation</b>
+                                        <b>Reaction</b>
                                     </td>
                                     <td>
-                                        <b>Severity</b>
+                                        <b>Reaction Severity</b>
+                                    </td>
+                                    <td>
+                                        <b>Status</b>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>Penicillin G</td>
-                                    <td>7908</td>
+                                    <td>Penicillin G (Ingredient)</td>
+                                    <td>Mild</td>
                                     <td>Skin rash</td>
-                                    <td>mild</td>
+                                    <td>Mild</td>
+                                    <td>Active</td>
                                 </tr>
                             </table>
                         </div>
-                    </text>
-                </section>
-                <section>
-                    <title value="Advance Directives Section"/>
-                    <code>
-                        <coding>
-                            <system value="http://loinc.org"/>
-                            <code value="42348-3"/>
-                            <display value="Advance directives"/>
-                        </coding>
-                    </code>
-                    <text>
-                        <status value="generated"/>
                     </text>
                 </section>
                 <section>
@@ -116,6 +133,55 @@
                             <system value="http://loinc.org"/>
                             <code value="51848-0"/>
                             <display value="Evaluation note"/>
+                        </coding>
+                    </code>
+                    <text>
+                        <status value="generated"/>
+                        <div
+                            xmlns="http://www.w3.org/1999/xhtml">
+                            <p>Patient A educated on the benefits of using a fluoride toothpaste, daily flossing, and bi-annual routine dental cleaning visits.</p>
+                        </div>
+                    </text>
+                </section>
+                <section>
+                    <title value="Assessment and Plan Section"/>
+                    <code>
+                        <coding>
+                            <system value="http://loinc.org"/>
+                            <code value="51847-2"/>
+                            <display value="Evaluation + Plan note"/>
+                        </coding>
+                    </code>
+                    <text>
+                        <status value="generated"/>
+                        <div
+                            xmlns="http://www.w3.org/1999/xhtml">
+                            <p>Recommend an extraction of the left lower second molar(tooth #18)  and a restoration on the right upper lateral incisor (tooth #7) due to a caries lesion</p>
+                            <p>Scheduled molar extraction and restoration #7 in one month</p>
+                            <p>Follow-up for complete examination and cleaning (prophylaxis) in 6 months</p>
+                        </div>
+                    </text>
+                </section>
+                <section>
+                    <title value="Chief Complaint and Reason for Visit Section"/>
+                    <code>
+                        <coding>
+                            <system value="http://loinc.org"/>
+                            <code value="46239-0"/>
+                            <display value="Chief complaint+Reason for visit Narrative"/>
+                        </coding>
+                    </code>
+                    <text>
+                        <status value="generated"/>
+                    </text>
+                </section>
+                <section>
+                    <title value="Chief Complaint Section"/>
+                    <code>
+                        <coding>
+                            <system value="http://loinc.org"/>
+                            <code value="10154-3"/>
+                            <display value="Chief complaint Narrative - Reported"/>
                         </coding>
                     </code>
                     <text>
@@ -136,97 +202,6 @@
                     </text>
                 </section>
                 <section>
-                    <title value="Past Medical History Section"/>
-                    <code>
-                        <coding>
-                            <system value="http://loinc.org"/>
-                            <code value="11348-0"/>
-                            <display value="History of Past illness Narrative"/>
-                        </coding>
-                    </code>
-                    <text>
-                        <status value="generated"/>
-                        <div
-                            xmlns="http://www.w3.org/1999/xhtml">
-                            <p>See History of Present Illness</p>
-                        </div>
-                    </text>
-                </section>
-                <section>
-                    <title value="History of Present Illness Section"/>
-                    <code>
-                        <coding>
-                            <system value="http://loinc.org"/>
-                            <code value="10164-2"/>
-                            <display value="History of Present illness Narrative"/>
-                        </coding>
-                    </code>
-                    <text>
-                        <status value="generated"/>
-                    </text>
-                </section>
-                <section>
-                    <title value="Social History Section"/>
-                    <code>
-                        <coding>
-                            <system value="http://loinc.org"/>
-                            <code value="29762-2"/>
-                            <display value="Social history Narrative"/>
-                        </coding>
-                    </code>
-                    <text>
-                        <status value="generated"/>
-                        <div
-                            xmlns="http://www.w3.org/1999/xhtml">
-                            <table>
-                                <tr>
-                                    <td>
-                                        <b>Social History Element</b>
-                                    </td>
-                                    <td>
-                                        <b>Description</b>
-                                    </td>
-                                    <td>
-                                        <b>Effective Dates</b>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>Smoking Status</td>
-                                    <td>NA</td>
-                                    <td>2005/05/01 - 2020/03/28</td>
-                                </tr>
-                                <tr>
-                                    <td>Highest Education Received</td>
-                                    <td>Collect Education</td>
-                                    <td>2010/05/01 - 2014/03/28</td>
-                                </tr>
-                                <tr>
-                                    <td>Employment</td>
-                                    <td>Full-time accountant</td>
-                                    <td>2015/05/01 - current</td>
-                                </tr>
-                            </table>
-                        </div>
-                    </text>
-                </section>
-                <section>
-                    <title value="General Status Section"/>
-                    <code>
-                        <coding>
-                            <system value="http://loinc.org"/>
-                            <code value="10210-3"/>
-                            <display value="Physical findings of General status Narrative"/>
-                        </coding>
-                    </code>
-                    <text>
-                        <status value="generated"/>
-                        <div
-                            xmlns="http://www.w3.org/1999/xhtml">
-                            <p>Oral Health Exam findings: Swollen gums, significant plaque buildup and significant tenderness near left lower molar</p>
-                        </div>
-                    </text>
-                </section>
-                <section>
                     <title value="Functional Status Section"/>
                     <code>
                         <coding>
@@ -240,12 +215,42 @@
                     </text>
                 </section>
                 <section>
-                    <title value="Mental Status Section"/>
+                    <title value="General Status Section"/>
                     <code>
                         <coding>
                             <system value="http://loinc.org"/>
-                            <code value="10190-7"/>
-                            <display value="Mental status"/>
+                            <code value="10210-3"/>
+                            <display value="Physical findings of General status Narrative"/>
+                        </coding>
+                    </code>
+                    <text>
+                        <status value="generated"/>
+                    </text>
+                </section>
+                <section>
+                    <title value="Past Medical History Section"/>
+                    <code>
+                        <coding>
+                            <system value="http://loinc.org"/>
+                            <code value="11348-0"/>
+                            <display value="History of Past illness Narrative"/>
+                        </coding>
+                    </code>
+                    <text>
+                        <status value="generated"/>
+                        <div
+                            xmlns="http://www.w3.org/1999/xhtml">
+                            <p>The patient has not visited a dentist or received fluoride treatments in the past four years while away at college</p>
+                        </div>
+                    </text>
+                </section>
+                <section>
+                    <title value="History of Present Illness Section"/>
+                    <code>
+                        <coding>
+                            <system value="http://loinc.org"/>
+                            <code value="10164-2"/>
+                            <display value="History of Present illness Narrative"/>
                         </coding>
                     </code>
                     <text>
@@ -266,34 +271,16 @@
                     </text>
                 </section>
                 <section>
-                    <title value="Nutrition Section"/>
+                    <title value="Medical Equipment Section"/>
                     <code>
                         <coding>
                             <system value="http://loinc.org"/>
-                            <code value="61144-2"/>
-                            <display value="Diet and nutrition Narrative"/>
+                            <code value="46264-8"/>
+                            <display value="History of medical device use"/>
                         </coding>
                     </code>
                     <text>
                         <status value="generated"/>
-                    </text>
-                </section>
-                <section>
-                    <title value="Reason for Referral Section"/>
-                    <code>
-                        <coding>
-                            <system value="http://loinc.org"/>
-                            <code value="42349-1"/>
-                            <display value="Reason for referral (narrative)"/>
-                        </coding>
-                    </code>
-                    <text>
-                        <status value="generated"/>
-                        <div
-                            xmlns="http://www.w3.org/1999/xhtml">
-                            <p>Referral to Dentist for further evaluation - urgent</p>
-                            <p>Establish a Dental Home</p>
-                        </div>
                     </text>
                 </section>
                 <section>
@@ -331,24 +318,67 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>Lisinopril 10 mg tab</td>
-                                    <td>1 tab once/day</td>
+                                    <td>erythromycin 500 mg</td>
+                                    <td>Take 1 tablet every six hours X10 days</td>
                                     <td/>
                                     <td>Active</td>
                                     <td/>
-                                    <td>Generic substitution allowed</td>
+                                    <td/>
+                                </tr>
+                                <tr>
+                                    <td>ibuprofen (OTC)  200 mg tab</td>
+                                    <td>Take 2-3 tablets every 8 hours as needed for pain</td>
+                                    <td>Take 2-3 tablets every 8 hours as needed for pain</td>
+                                    <td/>
+                                    <td>Active</td>
+                                    <td/>
+                                    <td/>
+                                </tr>
+                                <tr>
+                                    <td>acetaminophen (OTC) 325 mg</td>
+                                    <td>Take 2 tablets every 4-6 hours as needed for pain</td>
+                                    <td/>
+                                    <td>Active</td>
+                                    <td/>
+                                    <td/>
                                 </tr>
                             </table>
                         </div>
                     </text>
                 </section>
                 <section>
-                    <title value="Medical Equipment Section"/>
+                    <title value="Mental Status Section"/>
                     <code>
                         <coding>
                             <system value="http://loinc.org"/>
-                            <code value="46264-8"/>
-                            <display value="History of medical device use"/>
+                            <code value="10190-7"/>
+                            <display value="Mental status"/>
+                        </coding>
+                    </code>
+                    <text>
+                        <status value="generated"/>
+                    </text>
+                </section>
+                <section>
+                    <title value="Nutrition Section"/>
+                    <code>
+                        <coding>
+                            <system value="http://loinc.org"/>
+                            <code value="61144-2"/>
+                            <display value="Diet and nutrition Narrative"/>
+                        </coding>
+                    </code>
+                    <text>
+                        <status value="generated"/>
+                    </text>
+                </section>
+                <section>
+                    <title value="Physical Exam Section"/>
+                    <code>
+                        <coding>
+                            <system value="http://loinc.org"/>
+                            <code value="29545-1"/>
+                            <display value="Physical findings Narrative"/>
                         </coding>
                     </code>
                     <text>
@@ -371,24 +401,19 @@
                             <table>
                                 <tr>
                                     <td>
-                                        <b>Planned Activity</b>
+                                        <b>Plan Activity</b>
                                     </td>
                                     <td>
-                                        <b>Period</b>
-                                    </td>
-                                    <td>
-                                        <b>Status</b>
+                                        <b>Date</b>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>Referral to Dentist</td>
-                                    <td>2020/03/16</td>
-                                    <td>Completed</td>
+                                    <td>Scheduled molar extraction and restoration #7 in one month</td>
+                                    <td>2/15/2020</td>
                                 </tr>
                                 <tr>
-                                    <td>Follow-up in 3 months</td>
-                                    <td>2020/03/16</td>
-                                    <td>Completed</td>
+                                    <td>Follow-up for complete examination and cleaning (prophylaxis) in 6 months</td>
+                                    <td>7/15/2020</td>
                                 </tr>
                             </table>
                         </div>
@@ -426,25 +451,25 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>Mild, Hypertension</td>
+                                    <td>significant decay on the left lower second molar (tooth #18)  with signs of infection</td>
                                     <td>Condition</td>
-                                    <td>2019-04-01</td>
-                                    <td>2016-04-14</td>
-                                    <td>Active</td>
+                                    <td>2020/01/15</td>
+                                    <td/>
+                                    <td>Ongoing</td>
                                 </tr>
                                 <tr>
-                                    <td>Tooth pain in left lower jaw</td>
+                                    <td>early signs of a caries lesion (decay) on the right upper lateral incisor (tooth #7)</td>
                                     <td>Condition</td>
-                                    <td>2019-04-01</td>
-                                    <td>2016-04-14</td>
-                                    <td>Active</td>
+                                    <td>2019/03/15</td>
+                                    <td/>
+                                    <td>Ongoing</td>
                                 </tr>
                                 <tr>
-                                    <td>Bleeding gums, occasional</td>
+                                    <td>Patient reports inability to chew on left side due to pain and sensitivity, a condition that has increased in severity in the two days since his medical appointment </td>
                                     <td>Condition</td>
-                                    <td>2019-04-01</td>
-                                    <td>2016-04-14</td>
-                                    <td>Active</td>
+                                    <td>2020/01/15</td>
+                                    <td/>
+                                    <td>Ongoing</td>
                                 </tr>
                             </table>
                         </div>
@@ -461,6 +486,66 @@
                     </code>
                     <text>
                         <status value="generated"/>
+                        <div
+                            xmlns="http://www.w3.org/1999/xhtml">
+                            <table>
+                                <tr>
+                                    <td>
+                                        <b>Procedure Name</b>
+                                    </td>
+                                    <td>
+                                        <b>Body Site</b>
+                                    </td>
+                                    <td>
+                                        <b>Performer</b>
+                                    </td>
+                                    <td>
+                                        <b>Date Performed</b>
+                                    </td>
+                                    <td>
+                                        <b>Reason</b>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Fluoride Treatment</td>
+                                    <td>Mouth</td>
+                                    <td>Dr. D</td>
+                                    <td>20200215</td>
+                                    <td/>
+                                </tr>
+                                <tr>
+                                    <td>Extraction of the left lower molar (tooth #18)</td>
+                                    <td>Tooth 18</td>
+                                    <td>Dr. D</td>
+                                    <td>20200515</td>
+                                    <td/>
+                                </tr>
+                                <tr>
+                                    <td>Restoration on the right upper lateral incisor (tooth #7)</td>
+                                    <td>Tooth 7</td>
+                                    <td>Dr. D</td>
+                                    <td>20200515</td>
+                                    <td/>
+                                </tr>
+                            </table>
+                        </div>
+                    </text>
+                </section>
+                <section>
+                    <title value="Reason for Visit Section"/>
+                    <code>
+                        <coding>
+                            <system value="http://loinc.org"/>
+                            <code value="29299-5"/>
+                            <display value="Reason for visit"/>
+                        </coding>
+                    </code>
+                    <text>
+                        <status value="generated"/>
+                        <div
+                            xmlns="http://www.w3.org/1999/xhtml">
+                            <p>Dental Consult, priority - urgent</p>
+                        </div>
                     </text>
                 </section>
                 <section>
@@ -477,6 +562,58 @@
                     </text>
                 </section>
                 <section>
+                    <title value="Review of Systems Section"/>
+                    <code>
+                        <coding>
+                            <system value="http://loinc.org"/>
+                            <code value="10187-3"/>
+                            <display value="Review of systems"/>
+                        </coding>
+                    </code>
+                    <text>
+                        <status value="generated"/>
+                    </text>
+                </section>
+                <section>
+                    <title value="Social History Section"/>
+                    <code>
+                        <coding>
+                            <system value="http://loinc.org"/>
+                            <code value="29762-2"/>
+                            <display value="Social history Narrative"/>
+                        </coding>
+                    </code>
+                    <text>
+                        <status value="generated"/>
+                        <div
+                            xmlns="http://www.w3.org/1999/xhtml">
+                            <table>
+                                <tr>
+                                    <td>
+                                        <b>Social History Element</b>
+                                    </td>
+                                    <td>
+                                        <b>Description</b>
+                                    </td>
+                                    <td>
+                                        <b>Effective Dates</b>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Highest Education Level</td>
+                                    <td>College Education</td>
+                                    <td>2005/05/01 - 2010/02/28</td>
+                                </tr>
+                                <tr>
+                                    <td>Employment</td>
+                                    <td>Accountaint, Full Time</td>
+                                    <td>2005/05/01 - 2010/02/28</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </text>
+                </section>
+                <section>
                     <title value="Vital Signs Section"/>
                     <code>
                         <coding>
@@ -487,37 +624,6 @@
                     </code>
                     <text>
                         <status value="generated"/>
-                        <div
-                            xmlns="http://www.w3.org/1999/xhtml">
-                            <table>
-                                <tr>
-                                    <td>
-                                        <b>Vital Sign</b>
-                                    </td>
-                                    <td>
-                                        <b>Date</b>
-                                    </td>
-                                    <td>
-                                        <b>Value</b>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>Temperature</td>
-                                    <td>2020/04/15</td>
-                                    <td>98.5</td>
-                                </tr>
-                                <tr>
-                                    <td>Pulse</td>
-                                    <td>2020/04/15</td>
-                                    <td>78</td>
-                                </tr>
-                                <tr>
-                                    <td>Respiration</td>
-                                    <td>2020/04/15</td>
-                                    <td>20</td>
-                                </tr>
-                            </table>
-                        </div>
                     </text>
                 </section>
             </Composition>
@@ -636,60 +742,26 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="PractitionerRole/PractitionerRole-M"/>
-        <resource>
-            <PractitionerRole>
-                <id value="PractitionerRole-M"/>
-                <practitioner>
-                    <reference value="Practitioner/practitioner-M"/>
-                    <display value="Dr. John M"/>
-                </practitioner>
-                <organization>
-                    <reference value="Organization/GHC-organization"/>
-                    <display value="Good Health Clinic"/>
-                </organization>
-                <code>
-                    <coding>
-                        <system value="http://nucc.org/provider-taxonomy"/>
-                        <code value="207Q00000X"/>
-                        <display value="Family Medicine"/>
-                    </coding>
-                </code>
-                <specialty>
-                    <coding>
-                        <system value="http://nucc.org/provider-taxonomy"/>
-                        <code value="1223G0001X"/>
-                        <display value="General Practice"/>
-                    </coding>
-                </specialty>
-                <endpoint>
-                    <reference value="http://52.90.126.238:8080/fhir/baseR4/Endpoint/Endpoint-1"/>
-                    <display value="Good Health Clinic Physicians Organization"/>
-                </endpoint>
-            </PractitionerRole>
-        </resource>
-    </entry>
-    <entry>
-        <fullUrl value="Practitioner/Practitioner-M"/>
+        <fullUrl value="Practitioner/practitioner-D"/>
         <resource>
             <Practitioner>
-                <id value="practitioner-M"/>
+                <id value="practitioner-D"/>
                 <identifier>
                     <system value="http://hl7.org.fhir/sid/us-npi"/>
-                    <value value="1234569999"/>
+                    <value value="1234560000"/>
                 </identifier>
                 <name>
-                    <family value="M"/>
+                    <family value="D"/>
                     <given value="John"/>
                     <prefix value="Dr"/>
                 </name>
                 <telecom>
                     <system value="phone"/>
-                    <value value="303-303-6443"/>
+                    <value value="720-555-6443"/>
                     <use value="work"/>
                 </telecom>
                 <gender value="male"/>
-                <birthDate value="1975-06-09"/>
+                <birthDate value="1990-06-09"/>
                 <qualification>
                     <identifier>
                         <use value="official"/>
@@ -702,7 +774,7 @@
                             <text value="Missouri Medical License"/>
                         </type>
                         <system value="http://missouri.gov/fhir/medical-license"/>
-                        <value value="MO-4000"/>
+                        <value value="MO-9000"/>
                         <assigner>
                             <display value="State of Missouri"/>
                         </assigner>
@@ -722,33 +794,71 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="Organization/GHC-organization"/>
+        <fullUrl value="PractitionerRole/PractitionerRole-D"/>
+        <resource>
+            <PractitionerRole>
+                <id value="PractitionerRole-D"/>
+                <practitioner>
+                    <reference value="Practitioner/practitioner-D"/>
+                    <display value="Dr. John D"/>
+                </practitioner>
+                <organization>
+                    <reference value="Organization/GOHC-organization"/>
+                    <display value="Good Oral Health Clinic"/>
+                </organization>
+                <code>
+                    <coding>
+                        <system value="http://nucc.org/provider-taxonomy"/>
+                        <code value="122300000X"/>
+                        <display value="General Dentist"/>
+                    </coding>
+                </code>
+                <specialty>
+                    <coding>
+                        <system value="http://nucc.org/provider-taxonomy"/>
+                        <code value="122300000X"/>
+                        <display value="General Denist"/>
+                    </coding>
+                </specialty>
+                <endpoint>
+                    <reference value="http://52.90.126.238:8080/fhir/baseR4/Endpoint/Endpoint-2"/>
+                    <display value="Good Oral Health Clinic Physicians Organization"/>
+                </endpoint>
+                <endpoint>
+                    <reference value="http://52.90.126.238:8080/fhir/baseR4/Endpoint/Endpoint-2"/>
+                    <display value="John.Dentist.MD@direct.example.org"/>
+                </endpoint>
+            </PractitionerRole>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="Organization/GOHC-organization"/>
         <resource>
             <Organization>
-                <id value="GHC-organization"/>
+                <id value="GOHC-organization"/>
                 <identifier>
                     <system value="http://hl7.org.fhir/sid/us-npi"/>
-                    <value value="1316452725"/>
+                    <value value="2316452725"/>
                 </identifier>
                 <active value="true"/>
                 <type>
                     <coding>
                         <system value="http://terminology.hl7.org/CodeSystem/organization-type"/>
                         <code value="prov"/>
-                        <display value="Healthcare Provider"/>
+                        <display value="General Dental Provider"/>
                     </coding>
                 </type>
-                <name value="Good Health Clinic"/>
+                <name value="Good Oral Health Clinic"/>
                 <telecom>
                     <system value="phone"/>
-                    <value value="(+1) 555-677-7777"/>
+                    <value value="(+1) 720-677-7777"/>
                 </telecom>
                 <telecom>
                     <system value="email"/>
-                    <value value="customer-service@GHclinic.org"/>
+                    <value value="customer2-service@GHclinic.org"/>
                 </telecom>
                 <address>
-                    <line value="7551 W Alameda Ave"/>
+                    <line value="7552 W Alameda Ave"/>
                     <city value="Lakewood"/>
                     <state value="CO"/>
                     <postalCode value="80226"/>
@@ -758,10 +868,10 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="Encounter/Med-visit-1"/>
+        <fullUrl value="Encounter/Dental-encounter"/>
         <resource>
             <Encounter>
-                <id value="Med-visit-1"/>
+                <id value="Dental-encounter"/>
                 <status value="finished"/>
                 <class>
                     <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
@@ -770,10 +880,10 @@
                 </class>
                 <type>
                     <coding>
-                        <system value="http://www.ama-assn.org/go/cpt"/>
-                        <code value="99201"/>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="185347001"/>
                     </coding>
-                    <text value="Office Visit"/>
+                    <text value="Encounter for problem (procedure)"/>
                 </type>
                 <priority>
                     <coding>
@@ -786,8 +896,8 @@
                     <reference value="Patient/example-dental"/>
                 </subject>
                 <period>
-                    <start value="2020-01-14T15:00:14-05:00"/>
-                    <end value="2020-01-14T15:30:14-05:00"/>
+                    <start value="2020-02-15T15:00:14-05:00"/>
+                    <end value="2020-02-15T15:30:14-05:00"/>
                 </period>
             </Encounter>
         </resource>

@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Med-2-Dental-Referral"/>
     <meta>
-        <versionId value="1"/>
-        <lastUpdated value="2020-05-11T15:10:02.250+00:00"/>
-        <source value="#sIxjRvlSMtMHryh1"/>
+        <versionId value="2"/>
+        <lastUpdated value="2020-05-12T21:32:25.053+00:00"/>
+        <source value="#QhhlOwGiG4QF6oyt"/>
         <profile value="http://hl7.org/fhir/us/ccda/StructureDefinition/CCDA-on-FHIR-Referral-Note"/>
     </meta>
     <language value="en-US"/>
@@ -59,6 +59,31 @@
         </code>
         <text>
             <status value="generated"/>
+            <div
+                xmlns="http://www.w3.org/1999/xhtml">
+                <table>
+                    <tr>
+                        <td>
+                            <b>Allergen</b>
+                        </td>
+                        <td>
+                            <b>Code</b>
+                        </td>
+                        <td>
+                            <b>Manifestation</b>
+                        </td>
+                        <td>
+                            <b>Severity</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Penicillin G</td>
+                        <td>7908</td>
+                        <td>Skin rash</td>
+                        <td>mild</td>
+                    </tr>
+                </table>
+            </div>
         </text>
     </section>
     <section>

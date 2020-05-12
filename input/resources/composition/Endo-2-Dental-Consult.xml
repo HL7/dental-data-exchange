@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Endo-2-Dental-Consult"/>
     <meta>
-        <versionId value="1"/>
-        <lastUpdated value="2020-05-11T15:10:02.251+00:00"/>
-        <source value="#r7EW4o5kd0Az9pcL"/>
+        <versionId value="2"/>
+        <lastUpdated value="2020-05-12T21:32:25.041+00:00"/>
+        <source value="#4LHjH0oobWSaVY9k"/>
         <profile value="http://hl7.org/fhir/us/ccda/StructureDefinition/CCDA-on-FHIR-Consultation-Note"/>
     </meta>
     <language value="en-US"/>
@@ -459,7 +459,7 @@
                         <td>molar</td>
                         <td>Dr. Endo E</td>
                         <td>20200415</td>
-                        <td>????</td>
+                        <td/>
                     </tr>
                 </table>
             </div>

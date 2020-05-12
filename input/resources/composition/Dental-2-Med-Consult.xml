@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Dental-2-Med-Consult"/>
     <meta>
-        <versionId value="1"/>
-        <lastUpdated value="2020-05-11T15:10:02.250+00:00"/>
-        <source value="#tb5RUwmwT66V1NQb"/>
+        <versionId value="2"/>
+        <lastUpdated value="2020-05-12T21:32:25.021+00:00"/>
+        <source value="#qb7CMXKg1rObcdgA"/>
         <profile value="http://hl7.org/fhir/us/ccda/StructureDefinition/CCDA-on-FHIR-Consultation-Note"/>
     </meta>
     <language value="en-US"/>
@@ -386,6 +386,27 @@
         </code>
         <text>
             <status value="generated"/>
+            <div
+                xmlns="http://www.w3.org/1999/xhtml">
+                <table>
+                    <tr>
+                        <td>
+                            <b>Plan Activity</b>
+                        </td>
+                        <td>
+                            <b>Date</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Scheduled molar extraction and restoration #7 in one month</td>
+                        <td>2/15/2020</td>
+                    </tr>
+                    <tr>
+                        <td>Follow-up for complete examination and cleaning (prophylaxis) in 6 months</td>
+                        <td>7/15/2020</td>
+                    </tr>
+                </table>
+            </div>
         </text>
     </section>
     <section>

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Composition
     xmlns="http://hl7.org/fhir">
-    <id value="Dental-2-Endo-3"/>
+    <id value="Dental-2-Endo-referral"/>
     <meta>
         <versionId value="1"/>
-        <lastUpdated value="2020-05-11T15:10:02.265+00:00"/>
-        <source value="#v6gTlbHtUgjhYFGM"/>
+        <lastUpdated value="2020-05-12T21:32:25.093+00:00"/>
+        <source value="#f7l8PkzvPeOeLSlZ"/>
         <profile value="http://hl7.org/fhir/us/ccda/StructureDefinition/CCDA-on-FHIR-Referral-Note"/>
     </meta>
     <language value="en-US"/>
@@ -25,9 +25,8 @@
         <reference value="Patient/example-dental"/>
         <display value="Patient A"/>
     </subject>
-	<encounter>
-        <reference value="Encounter/endodontist-example-1"/>
-        <display value="Dental Referral with patient A"/>
+    <encounter>
+        <reference value="Encounter/Dental-encounter"/>
     </encounter>
     <date value="2020-03-15T09:10:14Z"/>
     <author>
