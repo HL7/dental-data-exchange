@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Med-2-Dental-Referral"/>
     <meta>
-        <versionId value="4"/>
-        <lastUpdated value="2020-05-13T17:07:50.229+00:00"/>
-        <source value="#Hoo25zNHOPN9DWZf"/>
+        <versionId value="5"/>
+        <lastUpdated value="2020-05-13T19:29:41.713+00:00"/>
+        <source value="#x3gvwiayHFr0ZWIA"/>
         <profile value="http://hl7.org/fhir/us/ccda/StructureDefinition/Referral-Note"/>
     </meta>
     <language value="en-US"/>
@@ -35,7 +35,6 @@
         <display value="Dr. John M, MD"/>
     </author>
     <title value="Referral Note"/>
-    <confidentiality value="U"/>
     <attester>
         <mode value="legal"/>
         <time value="2020-03-14T09:10:14Z"/>

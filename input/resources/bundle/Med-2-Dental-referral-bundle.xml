@@ -45,7 +45,6 @@
                     <display value="Dr. John M, MD"/>
                 </author>
                 <title value="Referral Note"/>
-                <confidentiality value="U"/>
                 <attester>
                     <mode value="legal"/>
                     <time value="2020-03-14T09:10:14Z"/>

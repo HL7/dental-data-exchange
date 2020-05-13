@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Endo-2-Dental-Consult"/>
     <meta>
-        <versionId value="4"/>
-        <lastUpdated value="2020-05-13T17:07:50.235+00:00"/>
-        <source value="#oKoAu7O8aO4ljG5q"/>
+        <versionId value="5"/>
+        <lastUpdated value="2020-05-13T19:29:41.744+00:00"/>
+        <source value="#NmY1udHDoXYMpUbT"/>
         <profile value="http://hl7.org/fhir/us/ccda/StructureDefinition/Consultation-Note"/>
     </meta>
     <language value="en-US"/>
@@ -41,7 +41,6 @@
         <display value="Dentist Endo E, DMD"/>
     </author>
     <title value="Consultation Note"/>
-    <confidentiality value="U"/>
     <attester>
         <mode value="legal"/>
         <time value="2020-03-28T09:10:14Z"/>

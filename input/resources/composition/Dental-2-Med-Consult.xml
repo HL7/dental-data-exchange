@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Dental-2-Med-Consult"/>
     <meta>
-        <versionId value="4"/>
-        <lastUpdated value="2020-05-13T17:07:50.229+00:00"/>
-        <source value="#Ycz8WAFYyITt2UPb"/>
+        <versionId value="5"/>
+        <lastUpdated value="2020-05-13T19:29:41.715+00:00"/>
+        <source value="#5KSccUgh1lX1D21T"/>
         <profile value="http://hl7.org/fhir/us/ccda/StructureDefinition/Consultation-Note"/>
     </meta>
     <language value="en-US"/>
@@ -41,7 +41,6 @@
         <display value="Dentist D, DMD"/>
     </author>
     <title value="Consultation Note"/>
-    <confidentiality value="U"/>
     <attester>
         <mode value="legal"/>
         <time value="2020-03-28T09:10:14Z"/>

@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Dental-2-Endo-referral"/>
     <meta>
-        <versionId value="3"/>
-        <lastUpdated value="2020-05-13T17:07:50.216+00:00"/>
-        <source value="#gWIeDnGx3pjm0nvW"/>
+        <versionId value="4"/>
+        <lastUpdated value="2020-05-13T19:29:41.744+00:00"/>
+        <source value="#Wiouq1w6a4VBzUc1"/>
         <profile value="http://hl7.org/fhir/us/ccda/StructureDefinition/Referral-Note"/>
     </meta>
     <language value="en-US"/>
@@ -34,7 +34,6 @@
         <display value="Dr. John D, MD"/>
     </author>
     <title value="Referral Note"/>
-    <confidentiality value="U"/>
     <attester>
         <mode value="legal"/>
         <time value="2020-03-15T09:10:14Z"/>
