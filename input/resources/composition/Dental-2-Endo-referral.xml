@@ -3,10 +3,10 @@
     xmlns="http://hl7.org/fhir">
     <id value="Dental-2-Endo-referral"/>
     <meta>
-        <versionId value="1"/>
-        <lastUpdated value="2020-05-12T21:32:25.093+00:00"/>
-        <source value="#f7l8PkzvPeOeLSlZ"/>
-        <profile value="http://hl7.org/fhir/us/ccda/StructureDefinition/CCDA-on-FHIR-Referral-Note"/>
+        <versionId value="3"/>
+        <lastUpdated value="2020-05-13T17:07:50.216+00:00"/>
+        <source value="#gWIeDnGx3pjm0nvW"/>
+        <profile value="http://hl7.org/fhir/us/ccda/StructureDefinition/Referral-Note"/>
     </meta>
     <language value="en-US"/>
     <identifier>
@@ -58,19 +58,6 @@
         </code>
         <text>
             <status value="generated"/>
-        </text>
-    </section>
-    <section>
-        <title value="Advance Directives Section"/>
-        <code>
-            <coding>
-                <system value="http://loinc.org"/>
-                <code value="42348-3"/>
-                <display value="Advance directives"/>
-            </coding>
-        </code>
-        <text>
-            <status value="generated"/>
             <div
                 xmlns="http://www.w3.org/1999/xhtml">
                 <table>
@@ -95,6 +82,23 @@
                         <td>mild</td>
                     </tr>
                 </table>
+            </div>
+        </text>
+    </section>
+    <section>
+        <title value="Advance Directives Section"/>
+        <code>
+            <coding>
+                <system value="http://loinc.org"/>
+                <code value="42348-3"/>
+                <display value="Advance directives"/>
+            </coding>
+        </code>
+        <text>
+            <status value="generated"/>
+            <div
+                xmlns="http://www.w3.org/1999/xhtml">
+                <p>Advanced Directives text</p>
             </div>
         </text>
     </section>
@@ -131,29 +135,7 @@
             <status value="generated"/>
             <div
                 xmlns="http://www.w3.org/1999/xhtml">
-                <table>
-                    <tr>
-                        <td>
-                            <b>Relationship</b>
-                        </td>
-                        <td>
-                            <b>Diagnosis</b>
-                        </td>
-                        <td>
-                            <b>Age at Onset</b>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Father</td>
-                        <td>Myocardial Infarction(cause of Death)</td>
-                        <td>57</td>
-                    </tr>
-                    <tr>
-                        <td>Father</td>
-                        <td>Diabetes</td>
-                        <td>40</td>
-                    </tr>
-                </table>
+                <p>Family History text</p>
             </div>
         </text>
     </section>
@@ -208,24 +190,7 @@
             <status value="generated"/>
             <div
                 xmlns="http://www.w3.org/1999/xhtml">
-                <table>
-                    <tr>
-                        <td>
-                            <b>Social History Element</b>
-                        </td>
-                        <td>
-                            <b>Description</b>
-                        </td>
-                        <td>
-                            <b>Effective Dates</b>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Smoking</td>
-                        <td>1 pack tobacco per day</td>
-                        <td>2005/05/01 - 2010/02/28</td>
-                    </tr>
-                </table>
+                <p>Smoking Hx text</p>
             </div>
         </text>
     </section>
@@ -257,6 +222,10 @@
         </code>
         <text>
             <status value="generated"/>
+            <div
+                xmlns="http://www.w3.org/1999/xhtml">
+                <p>General Status text</p>
+            </div>
         </text>
     </section>
     <section>
@@ -272,40 +241,7 @@
             <status value="generated"/>
             <div
                 xmlns="http://www.w3.org/1999/xhtml">
-                <table>
-                    <tr>
-                        <td>
-                            <b>Functional or Cognitive Finding</b>
-                        </td>
-                        <td>
-                            <b>Observation</b>
-                        </td>
-                        <td>
-                            <b>Observation Date</b>
-                        </td>
-                        <td>
-                            <b>Condition Status</b>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Ambulation (Dependent to Independent</td>
-                        <td>Independently able</td>
-                        <td>2010/03/11</td>
-                        <td>Active</td>
-                    </tr>
-                    <tr>
-                        <td>Finding of Functional Performance and Activity</td>
-                        <td>Dyspnea</td>
-                        <td>2008/02/16</td>
-                        <td>Active</td>
-                    </tr>
-                    <tr>
-                        <td>Cognitive Function Finding</td>
-                        <td>Memory Impairment</td>
-                        <td>2014/04/29</td>
-                        <td>Active</td>
-                    </tr>
-                </table>
+                <p>Functional status text</p>
             </div>
         </text>
     </section>
@@ -322,46 +258,7 @@
             <status value="generated"/>
             <div
                 xmlns="http://www.w3.org/1999/xhtml">
-                <table border="1" width="100%">
-                    <thead>
-                        <tr>
-                            <td>
-                                <b>Mental Status Findings</b>
-                            </td>
-                            <td>
-                                <b>Effective Dates</b>
-                            </td>
-                            <td>
-                                <b>Condition Status</b>
-                            </td>
-                        </tr>
-                    </thead>
-                    <tr>
-                        <td>Mental Function</td>
-                        <td>July 31, 2013</td>
-                        <td>Impaired</td>
-                    </tr>
-                    <tr>
-                        <td>Cognitive Abilities</td>
-                        <td>July 31, 2013</td>
-                        <td>Judgement, Intact</td>
-                    </tr>
-                    <tr>
-                        <td>Cognitive Function</td>
-                        <td>July 31, 2013</td>
-                        <td>Aggressive Behavior</td>
-                    </tr>
-                    <tr>
-                        <td>Cognitive Function</td>
-                        <td>July 31, 2013</td>
-                        <td>Difficulty understanding own emotions</td>
-                    </tr>
-                    <tr>
-                        <td>Cognitive Function</td>
-                        <td>July 31, 2013</td>
-                        <td>Difficulty communicating Thoughts </td>
-                    </tr>
-                </table>
+                <p>Mental Status text</p>
             </div>
         </text>
     </section>
@@ -378,24 +275,7 @@
             <status value="generated"/>
             <div
                 xmlns="http://www.w3.org/1999/xhtml">
-                <table>
-                    <tr>
-                        <td>
-                            <b>Vaccine</b>
-                        </td>
-                        <td>
-                            <b>Date</b>
-                        </td>
-                        <td>
-                            <b>Status</b>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Fluvax (Influenza)</td>
-                        <td>2016-04-05</td>
-                        <td>Completed</td>
-                    </tr>
-                </table>
+                <p>Immunizations text</p>
             </div>
         </text>
     </section>
@@ -412,29 +292,7 @@
             <status value="generated"/>
             <div
                 xmlns="http://www.w3.org/1999/xhtml">
-                <table>
-                    <tr>
-                        <td>
-                            <b>Date</b>
-                        </td>
-                        <td>
-                            <b>Nutritional Status</b>
-                        </td>
-                        <td>
-                            <b>Diet</b>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>2005/12/29</td>
-                        <td>Well nourished</td>
-                        <td>Low sodium diet, excessive carbohydrate</td>
-                    </tr>
-                    <tr>
-                        <td>2010/05/26</td>
-                        <td>Slight dehydration</td>
-                        <td>High protein, low fibre</td>
-                    </tr>
-                </table>
+                <p>Nutrition Status text</p>
             </div>
         </text>
     </section>
@@ -515,20 +373,7 @@
             <status value="generated"/>
             <div
                 xmlns="http://www.w3.org/1999/xhtml">
-                <table>
-                    <tr>
-                        <td>
-                            <b>Supply/Device</b>
-                        </td>
-                        <td>
-                            <b>Date Supplied</b>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Retainer</td>
-                        <td>2012/11/16</td>
-                    </tr>
-                </table>
+                <p>Medical Equipment text</p>
             </div>
         </text>
     </section>

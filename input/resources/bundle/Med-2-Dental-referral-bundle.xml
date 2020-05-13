@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Med-2-Dental-referral-bundle"/>
     <meta>
-        <versionId value="6"/>
-        <lastUpdated value="2020-05-12T21:35:32.694+00:00"/>
-        <source value="#KBtJBn1vYXNsxsRS"/>
+        <versionId value="9"/>
+        <lastUpdated value="2020-05-13T17:08:20.426+00:00"/>
+        <source value="#dwSJf4sHL6GxQnDo"/>
     </meta>
     <identifier>
         <system value="urn:ietf:rfc:3986"/>
@@ -107,6 +107,10 @@
                     </code>
                     <text>
                         <status value="generated"/>
+                        <div
+                            xmlns="http://www.w3.org/1999/xhtml">
+                            <p>Advanced Directives text</p>
+                        </div>
                     </text>
                 </section>
                 <section>
@@ -120,6 +124,10 @@
                     </code>
                     <text>
                         <status value="generated"/>
+                        <div
+                            xmlns="http://www.w3.org/1999/xhtml">
+                            <p>Assessment Section text</p>
+                        </div>
                     </text>
                 </section>
                 <section>
@@ -133,6 +141,10 @@
                     </code>
                     <text>
                         <status value="generated"/>
+                        <div
+                            xmlns="http://www.w3.org/1999/xhtml">
+                            <p>Family History text</p>
+                        </div>
                     </text>
                 </section>
                 <section>
@@ -163,6 +175,10 @@
                     </code>
                     <text>
                         <status value="generated"/>
+                        <div
+                            xmlns="http://www.w3.org/1999/xhtml">
+                            <p>History of Present Illness text</p>
+                        </div>
                     </text>
                 </section>
                 <section>
@@ -237,6 +253,10 @@
                     </code>
                     <text>
                         <status value="generated"/>
+                        <div
+                            xmlns="http://www.w3.org/1999/xhtml">
+                            <p>Functional Status text</p>
+                        </div>
                     </text>
                 </section>
                 <section>
@@ -250,6 +270,10 @@
                     </code>
                     <text>
                         <status value="generated"/>
+                        <div
+                            xmlns="http://www.w3.org/1999/xhtml">
+                            <p>Mental Status text</p>
+                        </div>
                     </text>
                 </section>
                 <section>
@@ -263,6 +287,10 @@
                     </code>
                     <text>
                         <status value="generated"/>
+                        <div
+                            xmlns="http://www.w3.org/1999/xhtml">
+                            <p>Immunizations text</p>
+                        </div>
                     </text>
                 </section>
                 <section>
@@ -276,6 +304,10 @@
                     </code>
                     <text>
                         <status value="generated"/>
+                        <div
+                            xmlns="http://www.w3.org/1999/xhtml">
+                            <p>Nutrition Section text</p>
+                        </div>
                     </text>
                 </section>
                 <section>
@@ -353,6 +385,10 @@
                     </code>
                     <text>
                         <status value="generated"/>
+                        <div
+                            xmlns="http://www.w3.org/1999/xhtml">
+                            <p>Medical Equipment text</p>
+                        </div>
                     </text>
                 </section>
                 <section>
@@ -461,6 +497,10 @@
                     </code>
                     <text>
                         <status value="generated"/>
+                        <div
+                            xmlns="http://www.w3.org/1999/xhtml">
+                            <p>Procedures text</p>
+                        </div>
                     </text>
                 </section>
                 <section>
@@ -474,6 +514,10 @@
                     </code>
                     <text>
                         <status value="generated"/>
+                        <div
+                            xmlns="http://www.w3.org/1999/xhtml">
+                            <p>Results text</p>
+                        </div>
                     </text>
                 </section>
                 <section>
@@ -534,6 +578,8 @@
                         xmlns="http://www.w3.org/1999/xhtml">
                         <div class="hapiHeaderText">Patient 
 	            
+                            
+                            
                             <b>A </b>
                         </div>
                         <table class="hapiPropertyTable">

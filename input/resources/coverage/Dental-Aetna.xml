@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Coverage
+    xmlns="http://hl7.org/fhir">
+    <id value="Dental-Aetna"/>
+    <meta>
+        <versionId value="1"/>
+        <lastUpdated value="2020-05-13T17:08:37.484+00:00"/>
+        <source value="#mITLp6VeXtPNWdyr"/>
+        <profile value="http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/hrex-coverage"/>
+    </meta>
+    <identifier>
+        <system value="http://benefitsAetna.com/certificate"/>
+        <value value="12345"/>
+    </identifier>
+    <status value="active"/>
+    <type>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+            <code value="HIP"/>
+            <display value="Aetna Comprehensive Medical /Dental Insurance"/>
+        </coding>
+    </type>
+    <policyHolder>
+        <reference value="http://benefitsAetna.com/FHIR/Organization/CBI35"/>
+    </policyHolder>
+    <subscriber>
+        <reference value="Patient/example-dental"/>
+    </subscriber>
+    <beneficiary>
+        <reference value="Patient/example-dental"/>
+    </beneficiary>
+    <dependent value="0"/>
+    <relationship>
+        <coding>
+            <code value="self"/>
+        </coding>
+    </relationship>
+    <period>
+        <start value="2019-05-23"/>
+        <end value="2020-05-23"/>
+    </period>
+    <payor>
+        <reference value="Organization/Aetna-organization"/>
+    </payor>
+    <class>
+        <type>
+            <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/coverage-class"/>
+                <code value="plan"/>
+            </coding>
+        </type>
+        <value value="B37FC"/>
+        <name value="Aetna Full Coverage: Medical, Dental, Pharmacy, Vision, EHC"/>
+    </class>
+</Coverage>

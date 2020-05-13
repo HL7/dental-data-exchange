@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="example-dental"/>
     <meta>
-        <versionId value="3"/>
-        <lastUpdated value="2020-05-08T22:55:19.792+00:00"/>
-        <source value="#RQml2O4exZn7KFGm"/>
+        <versionId value="4"/>
+        <lastUpdated value="2020-05-13T03:18:44.289+00:00"/>
+        <source value="#1qfGuHvKtD99fqmL"/>
         <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"/>
     </meta>
     <text>
@@ -13,7 +13,6 @@
         <div
             xmlns="http://www.w3.org/1999/xhtml">
             <div class="hapiHeaderText">Patient 
-                
                 <b>A </b>
             </div>
             <table class="hapiPropertyTable">

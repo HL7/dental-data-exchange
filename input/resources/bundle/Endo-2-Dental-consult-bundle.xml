@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Endo-2-Dental-consult-bundle"/>
     <meta>
-        <versionId value="3"/>
-        <lastUpdated value="2020-05-12T21:35:32.723+00:00"/>
-        <source value="#0RNsS1bYYnNVaPee"/>
+        <versionId value="5"/>
+        <lastUpdated value="2020-05-13T17:08:20.445+00:00"/>
+        <source value="#hbvYhi3laCtSUYX0"/>
     </meta>
     <identifier>
         <system value="urn:ietf:rfc:3986"/>
@@ -19,6 +19,12 @@
             <Composition>
                 <id value="Endo-2-Dental-Consult"/>
                 <language value="en-US"/>
+                <extension url="https://http://hl7.org/fhir/us/ccda/StructureDefinition/In-Fulfillment-Of-Order">
+                    <valueReference>
+                        <reference value="ServiceRequest/example-dental-referral-2"/>
+                        <display value="Endodontist Referral"/>
+                    </valueReference>
+                </extension>
                 <identifier>
                     <system value="urn:ietf:rfc:3986"/>
                     <value value="http://any.org/2"/>
@@ -82,6 +88,10 @@
                     </code>
                     <text>
                         <status value="generated"/>
+                        <div
+                            xmlns="http://www.w3.org/1999/xhtml">
+                            <p>Advanced Directives text</p>
+                        </div>
                     </text>
                 </section>
                 <section>
@@ -95,6 +105,10 @@
                     </code>
                     <text>
                         <status value="generated"/>
+                        <div
+                            xmlns="http://www.w3.org/1999/xhtml">
+                            <p>Allergies text</p>
+                        </div>
                     </text>
                 </section>
                 <section>
@@ -146,6 +160,10 @@
                     </code>
                     <text>
                         <status value="generated"/>
+                        <div
+                            xmlns="http://www.w3.org/1999/xhtml">
+                            <p>Chief Complaint and Reason for Visit text</p>
+                        </div>
                     </text>
                 </section>
                 <section>
@@ -159,6 +177,10 @@
                     </code>
                     <text>
                         <status value="generated"/>
+                        <div
+                            xmlns="http://www.w3.org/1999/xhtml">
+                            <p>Chief Complaint Narrative text text</p>
+                        </div>
                     </text>
                 </section>
                 <section>
@@ -172,6 +194,10 @@
                     </code>
                     <text>
                         <status value="generated"/>
+                        <div
+                            xmlns="http://www.w3.org/1999/xhtml">
+                            <p>Family History text</p>
+                        </div>
                     </text>
                 </section>
                 <section>
@@ -185,6 +211,10 @@
                     </code>
                     <text>
                         <status value="generated"/>
+                        <div
+                            xmlns="http://www.w3.org/1999/xhtml">
+                            <p>Functional Status text text</p>
+                        </div>
                     </text>
                 </section>
                 <section>
@@ -198,6 +228,10 @@
                     </code>
                     <text>
                         <status value="generated"/>
+                        <div
+                            xmlns="http://www.w3.org/1999/xhtml">
+                            <p>General Status text</p>
+                        </div>
                     </text>
                 </section>
                 <section>
@@ -245,6 +279,10 @@
                     </code>
                     <text>
                         <status value="generated"/>
+                        <div
+                            xmlns="http://www.w3.org/1999/xhtml">
+                            <p>Immunizations text</p>
+                        </div>
                     </text>
                 </section>
                 <section>
@@ -258,6 +296,10 @@
                     </code>
                     <text>
                         <status value="generated"/>
+                        <div
+                            xmlns="http://www.w3.org/1999/xhtml">
+                            <p>Medical Equipment Section text</p>
+                        </div>
                     </text>
                 </section>
                 <section>
@@ -317,6 +359,10 @@
                     </code>
                     <text>
                         <status value="generated"/>
+                        <div
+                            xmlns="http://www.w3.org/1999/xhtml">
+                            <p>Mental Status text</p>
+                        </div>
                     </text>
                 </section>
                 <section>
@@ -330,6 +376,10 @@
                     </code>
                     <text>
                         <status value="generated"/>
+                        <div
+                            xmlns="http://www.w3.org/1999/xhtml">
+                            <p>Nutrition Status text</p>
+                        </div>
                     </text>
                 </section>
                 <section>
@@ -343,6 +393,10 @@
                     </code>
                     <text>
                         <status value="generated"/>
+                        <div
+                            xmlns="http://www.w3.org/1999/xhtml">
+                            <p>Physical Exam text</p>
+                        </div>
                     </text>
                 </section>
                 <section>
@@ -548,6 +602,10 @@
                     </code>
                     <text>
                         <status value="generated"/>
+                        <div
+                            xmlns="http://www.w3.org/1999/xhtml">
+                            <p>Review of Systems text</p>
+                        </div>
                     </text>
                 </section>
                 <section>
@@ -595,6 +653,10 @@
                     </code>
                     <text>
                         <status value="generated"/>
+                        <div
+                            xmlns="http://www.w3.org/1999/xhtml">
+                            <p>Vital Signs text</p>
+                        </div>
                     </text>
                 </section>
             </Composition>
@@ -611,6 +673,8 @@
                         xmlns="http://www.w3.org/1999/xhtml">
                         <div class="hapiHeaderText">Patient 
 	            
+                            
+                            
                             <b>A </b>
                         </div>
                         <table class="hapiPropertyTable">
@@ -871,6 +935,38 @@
                     <country value="USA"/>
                 </address>
             </Organization>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="ServiceRequest/example-dental-referral-2"/>
+        <resource>
+            <ServiceRequest>
+                <id value="example-dental-referral-2"/>
+                <status value="active"/>
+                <intent value="plan"/>
+                <category>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="14736009"/>
+                        <display value="History and physical examination with evaluation and management of patient (procedure)"/>
+                    </coding>
+                    <text value="Evaluation and management of patient (procedure)"/>
+                </category>
+                <code>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="103697008"/>
+                        <display value="Patient referral for dental care (procedure)"/>
+                    </coding>
+                    <text value="Patient referral for dental care (procedure)"/>
+                </code>
+                <subject>
+                    <reference value="Patient/example-dental"/>
+                </subject>
+                <requester>
+                    <reference value="Practitioner/practitioner-D"/>
+                </requester>
+            </ServiceRequest>
         </resource>
     </entry>
 </Bundle>

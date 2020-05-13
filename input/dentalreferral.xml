@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="dentalreferral"/>
     <meta>
-        <versionId value="158"/>
-        <lastUpdated value="2020-05-12T21:35:32.894+00:00"/>
-        <source value="#g44tgyYleehxWGbK"/>
+        <versionId value="166"/>
+        <lastUpdated value="2020-05-13T17:25:32.437+00:00"/>
+        <source value="#33fHZKKhLV3wrL6I"/>
     </meta>
     <text>
         <status value="additional"/>
@@ -83,7 +83,7 @@
                 <reference value="ValueSet/caries-riskassessment"/>
                 <display value="Caries Risk Assessment"/>
             </reference>
-            <name value="Caries Risk Assessment"/>
+            <name value="Caries Risk Assessment ValueSet"/>
             <description value="This value set contains codes for the Caries Risk Assessment "/>
             <exampleBoolean value="false"/>
         </resource>
@@ -92,7 +92,7 @@
                 <reference value="ValueSet/oral-cavity-area"/>
                 <display value="Oral Cavity Area"/>
             </reference>
-            <name value="Oral Cavity Area"/>
+            <name value="Oral Cavity Area ValueSet"/>
             <exampleBoolean value="false"/>
         </resource>
         <resource>
@@ -100,7 +100,7 @@
                 <reference value="ValueSet/dental-condition-code"/>
                 <display value="Dental Condition Code"/>
             </reference>
-            <name value="Dental Condition Code"/>
+            <name value="Dental Condition ValueSet"/>
             <description value="This describes the problem. Diagnosis/Problem List is broadly defined as a series of brief statements that catalog a patient's medical, nursing, dental, social, preventative and psychiatric events and issues that are relevant to that patient's healthcare (e.g., signs, symptoms, and defined conditions).   ICD-10 is appropriate for Diagnosis information, and ICD-9 for historical information."/>
             <exampleBoolean value="false"/>
         </resource>
@@ -109,7 +109,7 @@
                 <reference value="StructureDefinition/dental-condition"/>
                 <display value="DentalCondition"/>
             </reference>
-            <name value="Dental Condition"/>
+            <name value="Dental Condition Profile"/>
             <description value="This profile is used to record clinically diagnoses conditions. A condition often references one/many Observations to support its assertions. "/>
             <exampleBoolean value="false"/>
         </resource>
@@ -118,7 +118,7 @@
                 <reference value="StructureDefinition/dental-coverage"/>
                 <display value="DentalCoverage"/>
             </reference>
-            <name value="Dental Coverage"/>
+            <name value="Dental Coverage Profile"/>
             <description value="Detal coverage profile description goes here"/>
             <exampleBoolean value="false"/>
         </resource>
@@ -127,7 +127,7 @@
                 <reference value="StructureDefinition/dental-communication"/>
                 <display value="DentalCommunication"/>
             </reference>
-            <name value="Dental Communication"/>
+            <name value="Dental Communication Profile"/>
             <description value="**Need to discuss: is any dental-specific communication in scope?**"/>
             <exampleBoolean value="false"/>
         </resource>
@@ -136,7 +136,7 @@
                 <reference value="StructureDefinition/dental-servicerequest"/>
                 <display value="DentalServiceRequest"/>
             </reference>
-            <name value="Dental Service Request"/>
+            <name value="Dental Service Request Profile"/>
             <description value="This profile contains information regarding the dental referral request including a required identifier and a reference to the reason for the referral, if possible. It also includes basic information such as the patient, referring provider, and encounter information that resulted in the referral. "/>
             <exampleBoolean value="false"/>
         </resource>
@@ -145,7 +145,7 @@
                 <reference value="ValueSet/Dental-procedure"/>
                 <display value="Dental Procedure"/>
             </reference>
-            <name value="Dental Procedure"/>
+            <name value="Dental Procedure ValueSet"/>
             <description value="This value set includes all dental procedure codes from CDTThis value set includes all procedure codes from dental (CDT) as well as medical (CDT)"/>
             <exampleBoolean value="false"/>
         </resource>
@@ -154,7 +154,7 @@
                 <reference value="StructureDefinition/oral-finding"/>
                 <display value="OralFinding"/>
             </reference>
-            <name value="Oral Finding"/>
+            <name value="Oral Finding Profile"/>
             <description value="This profile is used to convey oral findings including findings of an Odontogram, Peridontal (overall assessment and tooth-specific observations), Intra and Extra Oral Soft Tissue, TMJ, TMD, and Occlusion. Note - fingins in this profile often support associated diagnoses (FHIR Conditions). "/>
             <exampleBoolean value="false"/>
         </resource>
@@ -163,7 +163,7 @@
                 <reference value="ValueSet/FDI-teeth-codes"/>
                 <display value="Teeth Codes"/>
             </reference>
-            <name value="Teeth Codes"/>
+            <name value="Teeth Codes ValueSet"/>
             <description value="This value set contains the FDI teeth codes"/>
             <exampleBoolean value="false"/>
         </resource>
@@ -172,7 +172,7 @@
                 <reference value="StructureDefinition/dental-referralnote"/>
                 <display value="DentalReferralNote"/>
             </reference>
-            <name value="DentalReferralNote"/>
+            <name value="Dental Referral Note Profile"/>
             <description value="This Profile defines the Dental Referral Note profile. It contains the textual information regarding a referral to a general dentist or dental specialist as well as references to supplemental dental profiles for the referral"/>
             <exampleBoolean value="false"/>
         </resource>
@@ -181,7 +181,7 @@
                 <reference value="ValueSet/1.0.1.0.1.2.3.4.5"/>
                 <display value="ReasonForReferral"/>
             </reference>
-            <name value="ReasonForReferral"/>
+            <name value="Reason For Referral ValueSet ValueSet"/>
             <exampleBoolean value="false"/>
         </resource>
         <resource>
@@ -189,7 +189,7 @@
                 <reference value="ValueSet/dental-observation-codes"/>
                 <display value="Dental Observation Codes"/>
             </reference>
-            <name value="Dental Observation Codes"/>
+            <name value="Dental Observation Codes ValueSet"/>
             <description value="This Valueset contains all ICD-9/10, CPT, CDT codes, as well as the Clinical Findings (finding) concept from both Snomed and Snodent. It's is used by the Dental Observation profile .code to represent what test/scenario is being observed. "/>
             <exampleBoolean value="false"/>
         </resource>
@@ -198,13 +198,14 @@
                 <reference value="StructureDefinition/general-riskassessment"/>
                 <display value="GeneralOralHealthRiskAssessment"/>
             </reference>
-            <name value="General Oral Health Risk Assessment"/>
+            <name value="General Oral Health Risk Assessment Profile"/>
             <description value="This profile is used to document a clinician's assessment of a patient's overall oral health and general risk assessment based on all oral information and observations available. Potential factors to consider as inputs for this overall oral health status/assessment include Caries risk, periodontal risk factors, specific habits such as eating/nutrition and brushing/flossing habits, as well as broader considerations including Coverage and socio-economic status. "/>
             <exampleBoolean value="false"/>
         </resource>
         <resource>
             <reference>
                 <reference value="AllergyIntolerance/Allergy-example-dental"/></reference>
+            <name value="Allergy example"/>
             <exampleBoolean value="true"/>
         </resource>
         <resource>
@@ -219,51 +220,61 @@
         <resource>
             <reference>
                 <reference value="Condition/Pulpitis-example-4"/></reference>
+            <name value="Pulpitis example"/>
             <exampleBoolean value="true"/>
         </resource>
         <resource>
             <reference>
                 <reference value="Condition/toothache-example"/></reference>
+            <name value="Tootheache (example)"/>
             <exampleBoolean value="true"/>
         </resource>
         <resource>
             <reference>
                 <reference value="Condition/HTN-example"/></reference>
+            <name value="Hypertension (example)"/>
             <exampleBoolean value="true"/>
         </resource>
         <resource>
             <reference>
                 <reference value="Condition/Chronic-periodontitis-example"/></reference>
+            <name value="Periodontitis (example)"/>
             <exampleBoolean value="true"/>
         </resource>
         <resource>
             <reference>
                 <reference value="Condition/Dental-plaque-example"/></reference>
+            <name value="Plaque (example)"/>
             <exampleBoolean value="true"/>
         </resource>
         <resource>
             <reference>
                 <reference value="Condition/Dental-caries-example"/></reference>
+            <name value="Caries (example)"/>
             <exampleBoolean value="true"/>
         </resource>
         <resource>
             <reference>
                 <reference value="Condition/Swollen-gums-example"/></reference>
+            <name value="Swollen gums (example)"/>
             <exampleBoolean value="true"/>
         </resource>
         <resource>
             <reference>
                 <reference value="Condition/Maxillary-perm7-example"/></reference>
+            <name value="Permanent Mandibullar #7 (example)"/>
             <exampleBoolean value="true"/>
         </resource>
         <resource>
             <reference>
                 <reference value="Condition/Mandibular-perm18-example"/></reference>
+            <name value="Permanent Mandibular #18 (example)"/>
             <exampleBoolean value="true"/>
         </resource>
         <resource>
             <reference>
                 <reference value="Condition/Mandibular-perm30-example"/></reference>
+            <name value="Permanent Mandibular #30 (example)"/>
             <exampleBoolean value="true"/>
         </resource>
         <resource>
@@ -271,142 +282,169 @@
                 <reference value="Endpoint/endo-endpoint-example-4"/>
                 <display value="DART Hub"/>
             </reference>
-            <name value="DART Hub"/>
+            <name value="DART Hub (example)"/>
             <exampleBoolean value="true"/>
         </resource>
         <resource>
             <reference>
                 <reference value="ImagingStudy/X-ray2-example"/></reference>
+            <name value="PA X-ray-2 (example)"/>
             <exampleBoolean value="true"/>
         </resource>
         <resource>
             <reference>
                 <reference value="ImagingStudy/Panoramic-Radiograph-example"/></reference>
+            <name value="Panoramic Radiograph Dental (example)"/>
             <exampleBoolean value="true"/>
         </resource>
         <resource>
             <reference>
                 <reference value="ImagingStudy/X-ray1-example"/></reference>
+            <name value="PA X-ray-1 (example)"/>
             <exampleBoolean value="true"/>
         </resource>
         <resource>
             <reference>
                 <reference value="ImagingStudy/endo-radiograph-example"/></reference>
+            <name value="Panoramic Radiograph Endodontist (example)"/>
             <exampleBoolean value="true"/>
         </resource>
         <resource>
             <reference>
                 <reference value="Medication/tylenol-dental"/></reference>
+            <name value="Medication1 (example)"/>
             <exampleBoolean value="true"/>
         </resource>
         <resource>
             <reference>
                 <reference value="Medication/ibuprofen-med-example-2"/></reference>
+            <name value="Mediation2 (example)"/>
             <exampleBoolean value="true"/>
         </resource>
         <resource>
             <reference>
                 <reference value="Medication/erythromycin-med-example"/></reference>
+            <name value="Medication3 (example)"/>
             <exampleBoolean value="true"/>
         </resource>
         <resource>
             <reference>
                 <reference value="Medication/Acetaminophen-med-example-2"/></reference>
+            <name value="Medication4 (example)"/>
             <exampleBoolean value="true"/>
         </resource>
         <resource>
             <reference>
                 <reference value="MedicationRequest/Acetaminophen-medreq-2"/></reference>
+            <name value="Medication Statement4 (example)"/>
             <exampleBoolean value="true"/>
         </resource>
         <resource>
             <reference>
                 <reference value="MedicationRequest/Ibuprofen-medreq-2"/></reference>
+            <name value="Medication Statement2 (example)"/>
             <exampleBoolean value="true"/>
         </resource>
         <resource>
             <reference>
                 <reference value="MedicationRequest/Tylenol-med-dental"/></reference>
+            <name value="Medication Statement1 (example)"/>
             <exampleBoolean value="true"/>
         </resource>
         <resource>
             <reference>
                 <reference value="MedicationRequest/erythromycin-medreq-2"/></reference>
+            <name value="Medication Statement3 (example)"/>
             <exampleBoolean value="true"/>
         </resource>
         <resource>
             <reference>
                 <reference value="Observation/Present-job-example-dental"/></reference>
+            <name value="Occupation (example)"/>
             <exampleBoolean value="true"/>
         </resource>
         <resource>
             <reference>
                 <reference value="Observation/Smoker-obs-example-dental"/></reference>
+            <name value="Smoking Status (example)"/>
             <exampleBoolean value="true"/>
         </resource>
         <resource>
             <reference>
                 <reference value="Observation/Education-level-example-dental"/></reference>
+            <name value="Education level (example)"/>
             <exampleBoolean value="true"/>
         </resource>
         <resource>
             <reference>
                 <reference value="Patient/example-dental"/></reference>
+            <name value="Patient A (example)"/>
             <exampleBoolean value="true"/>
         </resource>
         <resource>
             <reference>
                 <reference value="Practitioner/practitioner-D"/></reference>
+            <name value="Practitioner Dentist (example)"/>
             <exampleBoolean value="true"/>
         </resource>
         <resource>
             <reference>
                 <reference value="Practitioner/practitioner-E"/></reference>
+            <name value="Practitioner Endodontist (example)"/>
             <exampleBoolean value="true"/>
         </resource>
         <resource>
             <reference>
                 <reference value="Practitioner/practitioner-M"/></reference>
+            <name value="Practitioner Medical (example)"/>
             <exampleBoolean value="true"/>
         </resource>
         <resource>
             <reference>
                 <reference value="PractitionerRole/PractitionerRole-M"/></reference>
+            <name value="PractitionerRole Medical (example)"/>
             <exampleBoolean value="true"/>
         </resource>
         <resource>
             <reference>
                 <reference value="PractitionerRole/PractitionerRole-D"/></reference>
+            <name value="PractitionerRole Dentist (example)"/>
             <exampleBoolean value="true"/>
         </resource>
         <resource>
             <reference>
                 <reference value="PractitionerRole/PractitionerRole-E"/></reference>
+            <name value="PractitionerRole Endodontist (example)"/>
             <exampleBoolean value="true"/>
         </resource>
         <resource>
             <reference>
                 <reference value="Procedure/Dental-flouride-tx-example"/></reference>
+            <name value="Flouride Treatment (example)"/>
             <exampleBoolean value="true"/>
         </resource>
         <resource>
             <reference>
                 <reference value="Procedure/Endo-therapy-example"/></reference>
+            <name value="Endodontic Therapy (example)"/>
             <exampleBoolean value="true"/>
         </resource>
         <resource>
             <reference>
                 <reference value="Procedure/Dental-incisor-restoration-example"/></reference>
+            <name value="Incisor Restoration (example)"/>
             <exampleBoolean value="true"/>
         </resource>
         <resource>
             <reference>
                 <reference value="Procedure/Dental-extraction-example"/></reference>
+            <name value="Extraction Procedure (example)"/>
             <exampleBoolean value="true"/>
         </resource>
         <resource>
             <reference>
                 <reference value="ServiceRequest/example-dental-referral-1"/></reference>
+            <name value="Dental Referral ServiceRequest (example)"/>
             <exampleBoolean value="true"/>
         </resource>
         <resource>
@@ -414,7 +452,7 @@
                 <reference value="Composition/Med-2-Dental-Referral"/>
                 <display value="Referral Note"/>
             </reference>
-            <name value="Referral Note"/>
+            <name value="Medical to Dental Referral Note (example)"/>
             <exampleBoolean value="true"/>
         </resource>
         <resource>
@@ -422,7 +460,7 @@
                 <reference value="Composition/Dental-2-Med-Consult"/>
                 <display value="Consultation Note"/>
             </reference>
-            <name value="Consultation Note"/>
+            <name value="Dental Consultation Note (example)"/>
             <exampleBoolean value="true"/>
         </resource>
         <resource>
@@ -430,7 +468,7 @@
                 <reference value="Composition/Endo-2-Dental-Consult"/>
                 <display value="Consultation Note"/>
             </reference>
-            <name value="Consultation Note"/>
+            <name value="Endo Consultation Note (example)"/>
             <exampleBoolean value="true"/>
         </resource>
         <resource>
@@ -438,27 +476,31 @@
                 <reference value="Composition/Dental-2-Endo-referral"/>
                 <display value="Referral Note"/>
             </reference>
-            <name value="Referral Note"/>
+            <name value="Dental Referral Note (example)"/>
             <exampleBoolean value="true"/>
         </resource>
         <resource>
             <reference>
                 <reference value="Encounter/endodontist-example-1"/></reference>
+            <name value="Endodontist Encounter (example)"/>
             <exampleBoolean value="true"/>
         </resource>
         <resource>
             <reference>
                 <reference value="Encounter/Dentist-followup-prophylaxis"/></reference>
+            <name value="Dental followup - prophylaxis (example)"/>
             <exampleBoolean value="true"/>
         </resource>
         <resource>
             <reference>
                 <reference value="Encounter/Med-visit-1"/></reference>
+            <name value="Medical Encounter (example)"/>
             <exampleBoolean value="true"/>
         </resource>
         <resource>
             <reference>
                 <reference value="Encounter/Dental-encounter"/></reference>
+            <name value="Dental Encounter (example)"/>
             <exampleBoolean value="true"/>
         </resource>
         <resource>
@@ -488,21 +530,51 @@
         <resource>
             <reference>
                 <reference value="Bundle/Den-2-Endo-referral-bundle"/></reference>
+            <name value="Bundle Dental to Endodontist Referral Note"/>
             <exampleBoolean value="true"/>
         </resource>
         <resource>
             <reference>
                 <reference value="Bundle/Dental-2-Med-Consult-bundle"/></reference>
+            <name value="Bundle Dentist Consult Note"/>
             <exampleBoolean value="true"/>
         </resource>
         <resource>
             <reference>
                 <reference value="Bundle/Med-2-Dental-referral-bundle"/></reference>
+            <name value="Bundle Medical to Dental Referral Note"/>
             <exampleBoolean value="true"/>
         </resource>
         <resource>
             <reference>
                 <reference value="Bundle/Endo-2-Dental-consult-bundle"/></reference>
+            <name value="Bundle Endodontist Consult Note"/>
+            <exampleBoolean value="true"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Coverage/Dental-Aetna"/></reference>
+            <name value="Coverage (example)"/>
+            <exampleBoolean value="true"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Organization/Aetna-organization"/>
+                <display value="Aetna Insurance"/>
+            </reference>
+            <name value="Aetna Insurance"/>
+            <exampleBoolean value="true"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="ServiceRequest/example-dental-referral-2"/></reference>
+            <name value="Endodontist Referral ServiceRequest (example)"/>
+            <exampleBoolean value="true"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Communication/dental-education"/></reference>
+            <name value="Pt education (example)"/>
             <exampleBoolean value="true"/>
         </resource>
         <page>
