@@ -6,6 +6,14 @@
         <versionId value="2"/>
         <lastUpdated value="2020-03-10T17:15:06.145+00:00"/>
         <source value="#ynnP7nXtOCFfqR3R"/>
+        <security>
+            <system value="https://trifolia-fhir.lantanagroup.com/security"/>
+            <code value="user^jcDbBWaz^write"/>
+        </security>
+        <security>
+            <system value="https://trifolia-fhir.lantanagroup.com/security"/>
+            <code value="user^jcDbBWaz^read"/>
+        </security>
     </meta>
     <url value="http://hl7.org/fhir/us/dentalreferral/ValueSet/dental-condition-code"/>
     <version value="3.1.0"/>
@@ -60,7 +68,7 @@
             <system value="http://hl7.org/fhir/sid/icd-9-cm"/>
         </include>
         <include>
-            <system value="http://ada.org/snodent"/>
+            <system value="http://www.ada.org/snodent"/>
         </include>
     </compose>
 </ValueSet>
