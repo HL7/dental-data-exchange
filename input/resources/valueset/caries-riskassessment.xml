@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="caries-riskassessment"/>
     <meta>
-        <versionId value="5"/>
-        <lastUpdated value="2020-03-10T16:44:53.506+00:00"/>
-        <source value="#XdFypgnGJm7FX1yf"/>
+        <versionId value="6"/>
+        <lastUpdated value="2020-05-14T18:30:07.633+00:00"/>
+        <source value="#Ip0IpOAhGjZ1b0Yx"/>
     </meta>
     <url value="http://hl7.org/fhir/us/dentalreferral/ValueSet/caries-riskassessment"/>
     <name value="CariesRiskAssessment"/>
@@ -32,9 +32,43 @@
                 <code value="609401005"/>
                 <display value="At moderate risk for dental caries (finding)"/>
             </concept>
+        </include>
+        <include>
+            <system value="http://www.ada.org/snodent"/>
             <concept>
-                <code value="609399004"/>
-                <display value="At risk for dental caries (finding)"/>
+                <code value="179033D"/>
+                <display value="At extreme risk for dental caries (finding)"/>
+            </concept>
+            <concept>
+                <code value="179046D"/>
+                <display value="At high risk for dental caries (finding)"/>
+            </concept>
+            <concept>
+                <code value="179051D"/>
+                <display value="At low risk for dental caries (finding)"/>
+            </concept>
+            <concept>
+                <code value="179067D"/>
+                <display value="At moderate risk for dental caries (finding)"/>
+            </concept>
+        </include>
+        <include>
+            <system value="http://hl7.org/fhir/sid/icd-10-us"/>
+            <concept>
+                <code value="Z91.841"/>
+                <display value="Risk for dental caries, low"/>
+            </concept>
+            <concept>
+                <code value="Z91.842"/>
+                <display value="Risk for dental caries, moderate"/>
+            </concept>
+            <concept>
+                <code value="Z91.843"/>
+                <display value="Risk for dental caries, high"/>
+            </concept>
+            <concept>
+                <code value="Z91.849"/>
+                <display value="Unspecified risk for dental caries"/>
             </concept>
         </include>
     </compose>
