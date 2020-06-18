@@ -3,15 +3,15 @@
     xmlns="http://hl7.org/fhir">
     <id value="dental-observation-codes"/>
     <meta>
-        <versionId value="5"/>
-        <lastUpdated value="2020-05-04T14:26:39.092+00:00"/>
-        <source value="#1mOz1jDwFvp7yABI"/>
+        <versionId value="9"/>
+        <lastUpdated value="2020-06-18T20:49:54.563+00:00"/>
+        <source value="#j2Hr42PwV8ZKeocm"/>
     </meta>
     <url value="http://hl7.org/fhir/us/dentalreferral/ValueSet/dental-observation-codes"/>
     <name value="DentalObservationCodes"/>
     <title value="Dental Observation Codes"/>
     <status value="draft"/>
-    <description value="This Valueset contains all ICD-9/10, CPT, CDT codes, as well as the Clinical Findings (finding) concept from both Snomed and Snodent. It's is used by the Dental Observation profile .code to represent what test/scenario is being observed. "/>
+    <description value="This ValueSet contains all ICD-9/10, CPT, CDT, LOINC codes, as well as the Clinical Findings (finding) concept from both Snomed and Snodent. "/>
     <compose>
         <include>
             <system value="http://www.ada.org/snodent"/>
@@ -38,6 +38,9 @@
         </include>
         <include>
             <system value="http://hl7.org/fhir/sid/icd-10-us"/>
+        </include>
+        <include>
+            <system value="http://loinc.org"/>
         </include>
     </compose>
 </ValueSet>

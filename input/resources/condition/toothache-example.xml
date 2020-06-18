@@ -7,7 +7,6 @@
         <lastUpdated value="2020-05-06T21:07:02.468+00:00"/>
         <source value="#hBPSBfol9hPSIuQB"/>
         <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"/>
-		<profile value="http://hl7.org/fhir/us/dentalreferral/StructureDefinition/dental-condition"/>
     </meta>
     <clinicalStatus>
         <coding>
@@ -35,8 +34,8 @@
     </category>
     <code>
         <coding>
-            <system value="http://snomed.info/sct"/>
-            <code value="27355003"/>
+            <system value="http://www.ada.org/snodent"/>
+            <code value="131687D"/>
             <display value="Toothache (finding)"/>
         </coding>
         <text value="Toothache (finding)"/>

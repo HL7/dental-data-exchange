@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="endodontist-example-1"/>
     <meta>
-        <versionId value="1"/>
-        <lastUpdated value="2020-05-06T21:07:21.572+00:00"/>
-        <source value="#IAMkTiqz6a6U6Nyl"/>
+        <versionId value="2"/>
+        <lastUpdated value="2020-06-18T21:14:18.589+00:00"/>
+        <source value="#jh0op056Sv5GYP9R"/>
         <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter"/>
     </meta>
     <status value="finished"/>
@@ -16,10 +16,10 @@
     </class>
     <type>
         <coding>
-            <system value="http://hl7.org/fhir/sid/icd-10"/>
-            <code value="D0140"/>
+            <system value="http://www.ama-assn.org/go/cpt"/>
+            <code value="99201"/>
         </coding>
-        <text value="Limited Oral Eval - Problem focused"/>
+        <text value="Office Visit"/>
     </type>
     <priority>
         <coding>

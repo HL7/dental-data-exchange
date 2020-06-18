@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Allergy-example-dental"/>
     <meta>
-        <versionId value="1"/>
-        <lastUpdated value="2020-05-11T15:08:46.633+00:00"/>
-        <source value="#ds9HH0sS5uxg5v36"/>
+        <versionId value="2"/>
+        <lastUpdated value="2020-06-18T21:18:57.259+00:00"/>
+        <source value="#lrphmtDlW4AZ7PMb"/>
         <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-allergyintolerance"/>
     </meta>
     <clinicalStatus>
@@ -26,7 +26,7 @@
         <coding>
             <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
             <code value="7980"/>
-            <display value="Penicillin G (Ingredient)"/>
+            <display value="Penicillin G"/>
         </coding>
         <text value="Penicillin G (Ingredient)"/>
     </code>

@@ -9,15 +9,9 @@
    <artifactPageExtension value="-definitions"/>
    <artifactPageExtension value="-examples"/>
    <artifactPageExtension value="-mappings"/>
-   <artifact name="Dental Risk Assessment"
-             key="StructureDefinition-caries-riskassessment"
-             id="StructureDefinition/caries-riskassessment"/>
    <artifact name="Dental Consult"
              key="StructureDefinition-dental-consult"
              id="StructureDefinition/dental-consult"/>
-   <artifact name="Dental Procedure"
-             key="StructureDefinition-dental-procedure"
-             id="StructureDefinition/dental-procedure"/>
    <artifact name="Caries Risk Assessment ValueSet"
              key="ValueSet-caries-riskassessment"
              id="ValueSet/caries-riskassessment"/>
@@ -39,9 +33,6 @@
    <artifact name="Dental Service Request Profile"
              key="StructureDefinition-dental-servicerequest"
              id="StructureDefinition/dental-servicerequest"/>
-   <artifact name="Dental Procedure ValueSet"
-             key="ValueSet-Dental-procedure"
-             id="ValueSet/Dental-procedure"/>
    <artifact name="Oral Finding Profile"
              key="StructureDefinition-oral-finding"
              id="StructureDefinition/oral-finding"/>
@@ -51,9 +42,6 @@
    <artifact name="Dental Referral Note Profile"
              key="StructureDefinition-dental-referralnote"
              id="StructureDefinition/dental-referralnote"/>
-   <artifact name="Reason For Referral ValueSet ValueSet"
-             key="ValueSet-1.0.1.0.1.2.3.4.5"
-             id="ValueSet/1.0.1.0.1.2.3.4.5"/>
    <artifact name="Dental Observation Codes ValueSet"
              key="ValueSet-dental-observation-codes"
              id="ValueSet/dental-observation-codes"/>
@@ -96,9 +84,6 @@
    <artifact name="Permanent Mandibular #30 (example)"
              key="Condition-Mandibular-perm30-example"
              id="Condition/Mandibular-perm30-example"/>
-   <artifact name="DART Hub (example)"
-             key="Endpoint-endo-endpoint-example-4"
-             id="Endpoint/endo-endpoint-example-4"/>
    <artifact name="PA X-ray-2 (example)"
              key="ImagingStudy-X-ray2-example"
              id="ImagingStudy/X-ray2-example"/>
@@ -213,18 +198,6 @@
    <artifact name="Good Endodontics Health Clinic"
              key="Organization-GEHC-organization"
              id="Organization/GEHC-organization"/>
-   <artifact name="Bundle Dental to Endodontist Referral Note"
-             key="Bundle-Den-2-Endo-referral-bundle"
-             id="Bundle/Den-2-Endo-referral-bundle"/>
-   <artifact name="Bundle Dentist Consult Note"
-             key="Bundle-Dental-2-Med-Consult-bundle"
-             id="Bundle/Dental-2-Med-Consult-bundle"/>
-   <artifact name="Bundle Medical to Dental Referral Note"
-             key="Bundle-Med-2-Dental-referral-bundle"
-             id="Bundle/Med-2-Dental-referral-bundle"/>
-   <artifact name="Bundle Endodontist Consult Note"
-             key="Bundle-Endo-2-Dental-consult-bundle"
-             id="Bundle/Endo-2-Dental-consult-bundle"/>
    <artifact name="Coverage (example)"
              key="Coverage-Dental-Aetna"
              id="Coverage/Dental-Aetna"/>
@@ -237,15 +210,24 @@
    <artifact name="Pt education (example)"
              key="Communication-dental-education"
              id="Communication/dental-education"/>
+   <artifact name="DentalUniversalNumberingSystem"
+             key="ValueSet-dental-universal-numbering-system"
+             id="ValueSet/dental-universal-numbering-system"/>
+   <artifact name="Oral Risk Assessment"
+             key="ValueSet-oral-riskassessment"
+             id="ValueSet/oral-riskassessment"/>
+   <artifact name="Dental Reason For Referral"
+             key="ValueSet-dental-reason-for-referral"
+             id="ValueSet/dental-reason-for-referral"/>
    <page name="(NA)" key="NA"/>
    <page name="(many)" key="many"/>
    <page name="Table of Contents" key="toc"/>
    <page name="IG Home Page" key="index"/>
-   <page name="Dental Data Exchange Project Team"
-         key="DentalDataExchangeProjectTeam"/>
    <page name="Scope and Context" key="ScopeandContext"/>
    <page name="Dependencies on other standards"
          key="Dependenciesonotherstandards"/>
+   <page name="Dental Data Exchange Project Team"
+         key="DentalDataExchangeProjectTeam"/>
    <page name="Artifacts Summary" key="artifacts"/>
    <page name="(profiles)" key="profiles" deprecated="true"/>
    <page name="terminologies-valuesets"

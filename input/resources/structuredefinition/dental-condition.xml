@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="dental-condition"/>
     <meta>
-        <versionId value="5"/>
-        <lastUpdated value="2020-05-03T19:27:16.958+00:00"/>
-        <source value="#skFP1FrIzBuydGvX"/>
+        <versionId value="6"/>
+        <lastUpdated value="2020-06-18T21:33:26.029+00:00"/>
+        <source value="#xH5JRgvh4X3wDU6W"/>
     </meta>
     <url value="http://hl7.org/fhir/us/dentalreferral/StructureDefinition/dental-condition"/>
     <version value="0.0.1"/>
@@ -506,8 +506,7 @@
             <isSummary value="true"/>
             <binding>
                 <strength value="required"/>
-                <description value="ConditionClinicalStatusCodes"/>
-                <valueSet value="http://hl7.org/fhir/R4/codesystem-condition-clinical"/>
+                <valueSet value="http://hl7.org/fhir/ValueSet/condition-clinical"/>
             </binding>
             <mapping>
                 <identity value="workflow"/>
@@ -1656,11 +1655,6 @@
         <element id="Condition.clinicalStatus">
             <path value="Condition.clinicalStatus"/>
             <mustSupport value="true"/>
-            <binding>
-                <strength value="required"/>
-                <description value="ConditionClinicalStatusCodes"/>
-                <valueSet value="http://hl7.org/fhir/R4/codesystem-condition-clinical"/>
-            </binding>
         </element>
         <element id="Condition.code">
             <path value="Condition.code"/>

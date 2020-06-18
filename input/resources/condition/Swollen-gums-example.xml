@@ -28,18 +28,18 @@
     <category>
         <coding>
             <system value="http://terminology.hl7.org/CodeSystem/condition-category"/>
-            <code value="problem-list-item"/>
-            <display value="problem-list-item"/>
+            <code value="problem-list"/>
+            <display value="problem-list"/>
         </coding>
         <text value="Problem List"/>
     </category>
     <code>
         <coding>
-            <system value="http://snomed.info/sct"/>
-            <code value="86276007"/>
-            <display value="Bleeding gums (finding)"/>
+            <system value="http://www.ada.org/snodent"/>
+            <code value="309685001"/>
+            <display value="Swollen gums (finding)"/>
         </coding>
-        <text value="Bleeding gums (finding)"/>
+        <text value="Swollen gums (finding)"/>
     </code>
     <subject>
         <reference value="Patient/example-dental"/>

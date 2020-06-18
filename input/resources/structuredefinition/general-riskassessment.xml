@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="general-riskassessment"/>
     <meta>
-        <versionId value="8"/>
-        <lastUpdated value="2020-05-08T17:12:53.013+00:00"/>
-        <source value="#Uc4z01Gt883X7Kne"/>
+        <versionId value="10"/>
+        <lastUpdated value="2020-06-10T16:24:46.070+00:00"/>
+        <source value="#wB1fm6gNXplbqYvF"/>
     </meta>
     <url value="http://hl7.org/fhir/us/dentalreferral/StructureDefinition/general-riskassessment"/>
     <name value="GeneralOralHealthRiskAssessment"/>
@@ -594,7 +594,7 @@
             </base>
             <type>
                 <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/StructureDefinition/Condition"/>
+                <targetProfile value="http://hl7.org/fhir/us/dentalreferral/StructureDefinition/dental-condition"/>
             </type>
             <isModifier value="false"/>
             <isSummary value="true"/>
@@ -912,12 +912,8 @@
             <isModifier value="false"/>
             <isSummary value="false"/>
             <binding>
-                <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-                    <valueString value="RiskAssessmentProbability"/>
-                </extension>
-                <strength value="example"/>
-                <description value="The likelihood of the occurrence of a specified outcome."/>
-                <valueSet value="http://hl7.org/fhir/ValueSet/risk-probability"/>
+                <strength value="extensible"/>
+                <valueSet value="http://hl7.org/fhir/us/dentalreferral/ValueSet/oral-riskassessment"/>
             </binding>
         </element>
         <element id="RiskAssessment.prediction.relativeRisk">
@@ -1054,12 +1050,26 @@
                 <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter"/>
             </type>
         </element>
+        <element id="RiskAssessment.condition">
+            <path value="RiskAssessment.condition"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/dentalreferral/StructureDefinition/dental-condition"/>
+            </type>
+        </element>
         <element id="RiskAssessment.performer">
             <path value="RiskAssessment.performer"/>
             <type>
                 <code value="Reference"/>
                 <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole"/>
             </type>
+        </element>
+        <element id="RiskAssessment.prediction.qualitativeRisk">
+            <path value="RiskAssessment.prediction.qualitativeRisk"/>
+            <binding>
+                <strength value="extensible"/>
+                <valueSet value="http://hl7.org/fhir/us/dentalreferral/ValueSet/oral-riskassessment"/>
+            </binding>
         </element>
     </differential>
 </StructureDefinition>

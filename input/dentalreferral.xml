@@ -3,19 +3,10 @@
     xmlns="http://hl7.org/fhir">
     <id value="dentalreferral"/>
     <meta>
-        <versionId value="166"/>
-        <lastUpdated value="2020-05-13T17:25:32.437+00:00"/>
-        <source value="#33fHZKKhLV3wrL6I"/>
+        <versionId value="187"/>
+        <lastUpdated value="2020-06-18T21:56:51.642+00:00"/>
+        <source value="#t6OHwPYPuqjcZRvB"/>
     </meta>
-    <text>
-        <status value="additional"/>
-        <div
-            xmlns="http://www.w3.org/1999/xhtml">
-            <div
-                xmlns="http://www.w3.org/1999/xhtml">[Narrative/Pages Resource text goes here]
-            </div>
-        </div>
-    </text>
     <url value="http://hl7.org/fhir/us/dentalreferral"/>
     <version value="0.0.1"/>
     <name value="DentalReferral"/>
@@ -28,7 +19,14 @@
             <value value="http://www.hl7.org/Special/committees/claims"/>
         </telecom>
     </contact>
-    <description value="The Dental Data Exchange FHIR implementation guide provides guidance for using the HL7 Fast Healthcare Interoperability Resources (FHIR) standard as an exchange format for dental-related information exchange. It is a collection of profiled FHIR resources designed for use in information exchanges supporting the document-based information shared during the referral of a patient to a general and/or specialized dental provider. The goal of this project is to streamline and enhance the efficacy of the exchange of health information between health care systems and community services organizations involved in addressing chronic health conditions by establishing information exchange standards for electronic referrals and referral outcome reporting.&#xA;&#xA;At a minimum, a document bundle (CCDAonFHIR Referral Note or Consult Note) will be exchanged along with a ServiceRequest, Patient, Practitioner and PractitionerRole resources. This guide also profiles several dental-specific profiles for consideration including Dental observations, (general and caries) Risk Assessments, dental Conditions, procedures, and coverage. &#xA;&#xA;Four use cases are used in this guide to represent the various referral patterns related to dental data exchange:&#xA;1. Medical practitioner to Dentist Referral note&#xA;2. Dental to Medical practitioner Consult note&#xA;3. General Dentist to Endodontist Referral note&#xA;4. Endodontist to General Dentist Consult note"/>
+    <description value="The Dental Data Exchange FHIR Implementation Guide provides guidance for using the HL7 Fast Healthcare Interoperability Resources (FHIR) standard as an exchange format for dental-related information exchange. It is a collection of profiled FHIR resources designed for use in information exchanges supporting the document-based information shared during the referral of a patient to a general and/or specialized dental provider. The goal of this project is to streamline and enhance the efficacy of the exchange of health information between health care systems and community services organizations involved in addressing chronic health conditions by establishing information exchange standards for electronic referrals and referral outcome reporting.&#xA;&#xA;At a minimum, a document bundle (CCDAonFHIR Referral Note or Consult Note) will be exchanged along with a ServiceRequest, Patient, Practitioner and PractitionerRole resources. This guide also profiles several dental-specific profiles for consideration including Dental observations, (general and caries) Risk Assessments, dental Conditions, procedures, and coverage. &#xA;&#xA;Four use cases are used in this guide to represent the various referral patterns related to dental data exchange:&#xA;1. Medical practitioner to Dentist Referral note&#xA;2. Dental to Medical practitioner Consult note&#xA;3. General Dentist to Endodontist Referral note&#xA;4. Endodontist to General Dentist Consult note"/>
+    <jurisdiction>
+        <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+        </coding>
+        <text value="US"/>
+    </jurisdiction>
     <packageId value="hl7.fhir.us.dentalreferral"/>
     <fhirVersion value="4.0.1"/>
     <dependsOn>
@@ -54,15 +52,6 @@
     <definition>
         <resource>
             <reference>
-                <reference value="StructureDefinition/caries-riskassessment"/>
-                <display value="caries-riskassessment"/>
-            </reference>
-            <name value="Dental Risk Assessment"/>
-            <description value="This profile documents a clinician's Caries risk assessment"/>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
                 <reference value="StructureDefinition/dental-consult"/>
                 <display value="DentalConsult"/>
             </reference>
@@ -72,19 +61,11 @@
         </resource>
         <resource>
             <reference>
-                <reference value="StructureDefinition/dental-procedure"/>
-                <display value="DentalProcedure"/>
-            </reference>
-            <name value="Dental Procedure"/>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
                 <reference value="ValueSet/caries-riskassessment"/>
                 <display value="Caries Risk Assessment"/>
             </reference>
             <name value="Caries Risk Assessment ValueSet"/>
-            <description value="This value set contains codes for the Caries Risk Assessment "/>
+            <description value="This ValueSet contains codes for the Caries Risk Assessment "/>
             <exampleBoolean value="false"/>
         </resource>
         <resource>
@@ -93,6 +74,7 @@
                 <display value="Oral Cavity Area"/>
             </reference>
             <name value="Oral Cavity Area ValueSet"/>
+            <description value="This ValueSet contains codes for standard oral cavity areas of the mouth"/>
             <exampleBoolean value="false"/>
         </resource>
         <resource>
@@ -101,7 +83,7 @@
                 <display value="Dental Condition Code"/>
             </reference>
             <name value="Dental Condition ValueSet"/>
-            <description value="This describes the problem. Diagnosis/Problem List is broadly defined as a series of brief statements that catalog a patient's medical, nursing, dental, social, preventative and psychiatric events and issues that are relevant to that patient's healthcare (e.g., signs, symptoms, and defined conditions).   ICD-10 is appropriate for Diagnosis information, and ICD-9 for historical information."/>
+            <description value="This ValueSet escribes the problem. Diagnosis/Problem List is broadly defined as a series of brief statements that catalog a patient's medical, nursing, dental, social, preventative and psychiatric events and issues that are relevant to that patient's healthcare (e.g., signs, symptoms, and defined conditions).  ICD-10 is appropriate for Diagnosis information, and ICD-9 for historical information."/>
             <exampleBoolean value="false"/>
         </resource>
         <resource>
@@ -128,7 +110,7 @@
                 <display value="DentalCommunication"/>
             </reference>
             <name value="Dental Communication Profile"/>
-            <description value="**Need to discuss: is any dental-specific communication in scope?**"/>
+            <description value="This profile is used to convey explicit verbal and written communication between providers, patient,s and other members of the care team. "/>
             <exampleBoolean value="false"/>
         </resource>
         <resource>
@@ -138,15 +120,6 @@
             </reference>
             <name value="Dental Service Request Profile"/>
             <description value="This profile contains information regarding the dental referral request including a required identifier and a reference to the reason for the referral, if possible. It also includes basic information such as the patient, referring provider, and encounter information that resulted in the referral. "/>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="ValueSet/Dental-procedure"/>
-                <display value="Dental Procedure"/>
-            </reference>
-            <name value="Dental Procedure ValueSet"/>
-            <description value="This value set includes all dental procedure codes from CDTThis value set includes all procedure codes from dental (CDT) as well as medical (CDT)"/>
             <exampleBoolean value="false"/>
         </resource>
         <resource>
@@ -164,7 +137,7 @@
                 <display value="Teeth Codes"/>
             </reference>
             <name value="Teeth Codes ValueSet"/>
-            <description value="This value set contains the FDI teeth codes"/>
+            <description value="This ValueSet contains the FDI teeth codes"/>
             <exampleBoolean value="false"/>
         </resource>
         <resource>
@@ -178,19 +151,11 @@
         </resource>
         <resource>
             <reference>
-                <reference value="ValueSet/1.0.1.0.1.2.3.4.5"/>
-                <display value="ReasonForReferral"/>
-            </reference>
-            <name value="Reason For Referral ValueSet ValueSet"/>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
                 <reference value="ValueSet/dental-observation-codes"/>
                 <display value="Dental Observation Codes"/>
             </reference>
             <name value="Dental Observation Codes ValueSet"/>
-            <description value="This Valueset contains all ICD-9/10, CPT, CDT codes, as well as the Clinical Findings (finding) concept from both Snomed and Snodent. It's is used by the Dental Observation profile .code to represent what test/scenario is being observed. "/>
+            <description value="This ValueSet contains all ICD-9/10, CPT, CDT, LOINC codes, as well as the Clinical Findings (finding) concept from both Snomed and Snodent. "/>
             <exampleBoolean value="false"/>
         </resource>
         <resource>
@@ -214,7 +179,7 @@
                 <display value="Capability Statement - Dental"/>
             </reference>
             <name value="Capability Statement - Dental"/>
-            <description value="This resource defines the expected capabilities for both client and server participating in referral exchanges involving a dental actor (medical/dental and dental/dental)"/>
+            <description value="Note to ballot commenters- we encourage ballot comments, especially from potential implementer systems, regarding Capability Statements.&#xA;&#xA;This resource defines the expected capabilities for both client and server participating in referral exchanges involving a dental actor (medical/dental and dental/dental). "/>
             <exampleBoolean value="false"/>
         </resource>
         <resource>
@@ -275,14 +240,6 @@
             <reference>
                 <reference value="Condition/Mandibular-perm30-example"/></reference>
             <name value="Permanent Mandibular #30 (example)"/>
-            <exampleBoolean value="true"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Endpoint/endo-endpoint-example-4"/>
-                <display value="DART Hub"/>
-            </reference>
-            <name value="DART Hub (example)"/>
             <exampleBoolean value="true"/>
         </resource>
         <resource>
@@ -529,30 +486,6 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Bundle/Den-2-Endo-referral-bundle"/></reference>
-            <name value="Bundle Dental to Endodontist Referral Note"/>
-            <exampleBoolean value="true"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Bundle/Dental-2-Med-Consult-bundle"/></reference>
-            <name value="Bundle Dentist Consult Note"/>
-            <exampleBoolean value="true"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Bundle/Med-2-Dental-referral-bundle"/></reference>
-            <name value="Bundle Medical to Dental Referral Note"/>
-            <exampleBoolean value="true"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Bundle/Endo-2-Dental-consult-bundle"/></reference>
-            <name value="Bundle Endodontist Consult Note"/>
-            <exampleBoolean value="true"/>
-        </resource>
-        <resource>
-            <reference>
                 <reference value="Coverage/Dental-Aetna"/></reference>
             <name value="Coverage (example)"/>
             <exampleBoolean value="true"/>
@@ -577,19 +510,41 @@
             <name value="Pt education (example)"/>
             <exampleBoolean value="true"/>
         </resource>
+        <resource>
+            <reference>
+                <reference value="ValueSet/dental-universal-numbering-system"/>
+                <display value="DentalUniversalNumberingSystem"/>
+            </reference>
+            <name value="DentalUniversalNumberingSystem"/>
+            <description value="A dental notation system for associating information to a specific tooth, commonly used in the United States."/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="ValueSet/oral-riskassessment"/>
+                <display value="Oral Risk Assessment"/>
+            </reference>
+            <name value="Oral Risk Assessment"/>
+            <description value="This ValueSet is an overarching ValueSet to group possible Risk Assessment types, including caries risk assessment, as well as potentially additional risk assessments in the future such as periodontal risk. "/>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="ValueSet/dental-reason-for-referral"/>
+                <display value="Dental Reason For Referral"/>
+            </reference>
+            <name value="Dental Reason For Referral"/>
+            <description value="This ValueSet contains coded prominent reasons for referral between medical and dental care settings. "/>
+            <exampleBoolean value="false"/>
+        </resource>
         <page>
             <nameUrl value="index.html"/>
             <title value="IG Home Page"/>
             <generation value="markdown"/>
             <page>
-                <nameUrl value="toc.html"/>
-                <title value="Table of Contents"/>
+                <nameUrl value="Introduction.html"/>
+                <title value="Introduction"/>
                 <generation value="generated"/>
-                <page>
-                    <nameUrl value="DentalDataExchangeProjectTeam.html"/>
-                    <title value="Dental Data Exchange Project Team"/>
-                    <generation value="markdown"/>
-                </page>
                 <page>
                     <nameUrl value="ScopeandContext.html"/>
                     <title value="Scope and Context"/>
@@ -598,6 +553,11 @@
                 <page>
                     <nameUrl value="Dependenciesonotherstandards.html"/>
                     <title value="Dependencies on other standards"/>
+                    <generation value="markdown"/>
+                </page>
+                <page>
+                    <nameUrl value="DentalDataExchangeProjectTeam.html"/>
+                    <title value="Dental Data Exchange Project Team"/>
                     <generation value="markdown"/>
                 </page>
             </page>

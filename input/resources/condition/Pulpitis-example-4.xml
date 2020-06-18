@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Pulpitis-example-4"/>
     <meta>
-        <versionId value="1"/>
-        <lastUpdated value="2020-05-06T21:07:21.456+00:00"/>
-        <source value="#JfP6TqU9DNvut0DF"/>
+        <versionId value="2"/>
+        <lastUpdated value="2020-06-18T21:01:06.842+00:00"/>
+        <source value="#ZgOVseJflbB9SU0E"/>
         <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"/>
     </meta>
     <clinicalStatus>
@@ -34,7 +34,7 @@
     </category>
     <code>
         <coding>
-            <system value="	http://www.ada.org/snodent"/>
+            <system value="http://www.ada.org/snodent"/>
             <code value="125784D"/>
             <display value="Irreversible pulpitis (disorder)"/>
         </coding>

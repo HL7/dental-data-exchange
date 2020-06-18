@@ -3,15 +3,16 @@
     xmlns="http://hl7.org/fhir">
     <id value="oral-cavity-area"/>
     <meta>
-        <versionId value="3"/>
-        <lastUpdated value="2020-03-10T20:41:27.693+00:00"/>
-        <source value="#wutwyB8hUGbQylHm"/>
+        <versionId value="5"/>
+        <lastUpdated value="2020-06-18T20:50:57.769+00:00"/>
+        <source value="#OIrHG0LHGgAu2zQk"/>
     </meta>
     <url value="http://hl7.org/fhir/us/dentalreferral/ValueSet/oral-cavity-area"/>
     <version value="0.0.1"/>
     <name value="OralCavityArea"/>
     <title value="Oral Cavity Area"/>
     <status value="draft"/>
+    <description value="This ValueSet contains codes for standard oral cavity areas of the mouth"/>
     <compose>
         <include>
             <system value="http://ada.org/snodent"/>

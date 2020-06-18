@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="dental-consult"/>
     <meta>
-        <versionId value="12"/>
-        <lastUpdated value="2020-05-13T05:36:51.879+00:00"/>
-        <source value="#X2DB0zHdcrmmbH2J"/>
+        <versionId value="18"/>
+        <lastUpdated value="2020-06-18T18:37:06.827+00:00"/>
+        <source value="#2Iv9ItTRtR1ZGyao"/>
     </meta>
     <url value="http://hl7.org/fhir/us/dentalreferral/StructureDefinition/dental-consult"/>
     <version value="0.0.1"/>
@@ -419,7 +419,6 @@
                 <min value="1"/>
                 <max value="1"/>
             </base>
-            <type/>
             <fixedUri value="http://hl7.org/fhir/us/ccda/StructureDefinition/Data-Enterer"/>
             <isModifier value="false"/>
             <isSummary value="false"/>
@@ -570,7 +569,6 @@
                 <min value="1"/>
                 <max value="1"/>
             </base>
-            <type/>
             <fixedUri value="http://hl7.org/fhir/us/ccda/StructureDefinition/Informant"/>
             <isModifier value="false"/>
             <isSummary value="false"/>
@@ -723,7 +721,6 @@
                 <min value="1"/>
                 <max value="1"/>
             </base>
-            <type/>
             <fixedUri value="http://hl7.org/fhir/us/ccda/StructureDefinition/Information-Recipient"/>
             <isModifier value="false"/>
             <isSummary value="false"/>
@@ -874,7 +871,6 @@
                 <min value="1"/>
                 <max value="1"/>
             </base>
-            <type/>
             <fixedUri value="http://hl7.org/fhir/us/ccda/StructureDefinition/Participant"/>
             <isModifier value="false"/>
             <isSummary value="false"/>
@@ -1027,7 +1023,6 @@
                 <min value="1"/>
                 <max value="1"/>
             </base>
-            <type/>
             <fixedUri value="http://hl7.org/fhir/us/ccda/StructureDefinition/Performer"/>
             <isModifier value="false"/>
             <isSummary value="false"/>
@@ -1178,7 +1173,6 @@
                 <min value="1"/>
                 <max value="1"/>
             </base>
-            <type/>
             <fixedUri value="http://hl7.org/fhir/us/ccda/StructureDefinition/Authorization"/>
             <mustSupport value="true"/>
             <isModifier value="false"/>
@@ -1329,7 +1323,6 @@
                 <min value="1"/>
                 <max value="1"/>
             </base>
-            <type/>
             <fixedUri value="http://hl7.org/fhir/us/ccda/StructureDefinition/In-Fulfillment-Of-Order"/>
             <isModifier value="false"/>
             <isSummary value="false"/>
@@ -15445,59 +15438,6 @@
                 <map value=".component.section"/>
             </mapping>
         </element>
-        <element id="Composition.section:Reason for Referral Section">
-            <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
-                <valueString value="Section"/>
-            </extension>
-            <path value="Composition.section"/>
-            <sliceName value="Reason for Referral Section"/>
-            <short value="Composition is broken into sections"/>
-            <definition value="The root of the sections that make up the composition."/>
-            <min value="0"/>
-            <max value="*"/>
-            <base>
-                <path value="Composition.section"/>
-                <min value="0"/>
-                <max value="*"/>
-            </base>
-            <type>
-                <code value="BackboneElement"/>
-            </type>
-            <constraint>
-                <key value="ele-1"/>
-                <severity value="error"/>
-                <human value="All FHIR elements must have a @value or children"/>
-                <expression value="hasValue() or (children().count() &gt; id.count())"/>
-                <xpath value="@value|f:*|h:div"/>
-                <source value="Element"/>
-            </constraint>
-            <constraint>
-                <key value="cmp-1"/>
-                <severity value="error"/>
-                <human value="A section must contain at least one of text, entries, or sub-sections"/>
-                <expression value="text.exists() or entry.exists() or section.exists()"/>
-                <xpath value="exists(f:text) or exists(f:entry) or exists(f:section)"/>
-                <source value="Composition.section"/>
-            </constraint>
-            <constraint>
-                <key value="cmp-2"/>
-                <severity value="error"/>
-                <human value="A section can only have an emptyReason if it is empty"/>
-                <expression value="emptyReason.empty() or entry.empty()"/>
-                <xpath value="not(exists(f:emptyReason) and exists(f:entry))"/>
-                <source value="Composition.section"/>
-            </constraint>
-            <isModifier value="false"/>
-            <isSummary value="false"/>
-            <mapping>
-                <identity value="rim"/>
-                <map value="./outboundRelationship[typeCode=&quot;COMP&quot; and isNormalActRelationship()]/target[moodCode=&quot;EVN&quot; and classCode=&quot;DOCSECT&quot; and isNormalAct]"/>
-            </mapping>
-            <mapping>
-                <identity value="cda"/>
-                <map value=".component.structuredBody.component.section"/>
-            </mapping>
-        </element>
     </snapshot>
     <differential>
         <element id="Composition">
@@ -15518,6 +15458,9 @@
             </type>
             <mustSupport value="true"/>
         </element>
+        <element id="Composition">
+            <path value="Composition"/>
+        </element>
         <element id="Composition.section">
             <path value="Composition.section"/>
             <slicing>
@@ -15528,11 +15471,38 @@
                 <rules value="open"/>
             </slicing>
         </element>
-        <element id="Composition.section:Reason for Referral Section">
+        <element id="Composition.section:Dental Findings Section">
             <path value="Composition.section"/>
-            <sliceName value="Reason for Referral Section"/>
+            <sliceName value="Dental Findings Section"/>
+        </element>
+        <element id="Composition.section:Dental Findings Section.code">
+            <path value="Composition.section.code"/>
+            <min value="1"/>
+            <patternCodeableConcept>
+                <coding>
+                    <system value="http://LOINC.org"/>
+                    <code value="8704-9"/>
+                </coding>
+            </patternCodeableConcept>
+        </element>
+        <element id="Composition.section:Dental Findings Section.entry">
+            <path value="Composition.section.entry"/>
+            <slicing>
+                <discriminator>
+                    <type value="profile"/>
+                    <path value="resolve()"/>
+                </discriminator>
+                <rules value="open"/>
+            </slicing>
+        </element>
+        <element id="Composition.section:Dental Findings Section.entry:DentalFindingsEntry">
+            <path value="Composition.section.entry"/>
+            <sliceName value="DentalFindingsEntry"/>
+            <max value="*"/>
             <type>
-                <code value="BackboneElement"/>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/dentalreferral/StructureDefinition/oral-finding"/>
+                <targetProfile value="http://hl7.org/fhir/us/dentalreferral/StructureDefinition/dental-condition"/>
             </type>
         </element>
     </differential>

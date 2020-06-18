@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="HTN-example"/>
     <meta>
-        <versionId value="1"/>
-        <lastUpdated value="2020-05-06T21:06:52.812+00:00"/>
-        <source value="#ZZImruPqYWVLziop"/>
+        <versionId value="2"/>
+        <lastUpdated value="2020-06-18T21:35:08.795+00:00"/>
+        <source value="#UWcrFKpJHxSOkcUU"/>
         <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"/>
     </meta>
     <clinicalStatus>
@@ -36,7 +36,7 @@
         <coding>
             <system value="http://snomed.info/sct"/>
             <code value="38341003"/>
-            <display value="Hypertensive disorder (disorder)"/>
+            <display value="High blood pressure"/>
         </coding>
         <text value="Hypertensive disorder (disorder)"/>
     </code>

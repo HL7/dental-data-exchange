@@ -3,15 +3,15 @@
     xmlns="http://hl7.org/fhir">
     <id value="caries-riskassessment"/>
     <meta>
-        <versionId value="6"/>
-        <lastUpdated value="2020-05-14T18:30:07.633+00:00"/>
-        <source value="#Ip0IpOAhGjZ1b0Yx"/>
+        <versionId value="8"/>
+        <lastUpdated value="2020-06-18T20:46:03.703+00:00"/>
+        <source value="#EyU2opO6B0ad4JHY"/>
     </meta>
     <url value="http://hl7.org/fhir/us/dentalreferral/ValueSet/caries-riskassessment"/>
     <name value="CariesRiskAssessment"/>
     <title value="Caries Risk Assessment"/>
     <status value="draft"/>
-    <description value="This value set contains codes for the Caries Risk Assessment "/>
+    <description value="This ValueSet contains codes for the Caries Risk Assessment "/>
     <compose>
         <inactive value="false"/>
         <include>

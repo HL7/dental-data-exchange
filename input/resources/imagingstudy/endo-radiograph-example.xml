@@ -3,34 +3,14 @@
     xmlns="http://hl7.org/fhir">
     <id value="endo-radiograph-example"/>
     <meta>
-        <versionId value="1"/>
-        <lastUpdated value="2020-05-06T21:07:21.363+00:00"/>
-        <source value="#explXwBpBMSLlo0q"/>
+        <versionId value="4"/>
+        <lastUpdated value="2020-06-18T22:00:54.895+00:00"/>
+        <source value="#LWspDuFaeLo1M2nI"/>
     </meta>
     <identifier>
         <use value="official"/>
         <system value="urn:dicom:uid"/>
         <value value="urn:oid:2.16.124.113543.6003.1154777499.30246.19789.3503430046"/>
-    </identifier>
-    <identifier>
-        <use value="usual"/>
-        <type>
-            <coding>
-                <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
-                <code value="ACSN"/>
-            </coding>
-        </type>
-        <value value="X12342398"/>
-        <assigner>
-            <reference value="Organization/dicom-organization"/>
-        </assigner>
-    </identifier>
-    <identifier>
-        <use value="secondary"/>
-        <value value="55551234"/>
-        <assigner>
-            <reference value="Organization/dicom-organization"/>
-        </assigner>
     </identifier>
     <status value="available"/>
     <modality>
@@ -47,15 +27,12 @@
     <referrer>
         <reference value="Practitioner/practitioner-E"/>
     </referrer>
-    <endpoint>
-        <reference value="Endpoint/example-dental"/>
-    </endpoint>
     <numberOfSeries value="1"/>
     <numberOfInstances value="2"/>
     <procedureCode>
         <coding>
-            <system value="	http://www.ada.org/snodent"/>
-            <code value="D0230 "/>
+            <system value="http://www.ada.org/snodent"/>
+            <code value="D0230"/>
             <display value="intraoral - periapical each additional radiographic image"/>
         </coding>
         <text value="intraoral - periapical each additional radiographic image"/>

@@ -3,15 +3,15 @@
     xmlns="http://hl7.org/fhir">
     <id value="FDI-teeth-codes"/>
     <meta>
-        <versionId value="3"/>
-        <lastUpdated value="2020-04-23T03:06:05.392+00:00"/>
-        <source value="#BU4Kpose2ifT6ZvS"/>
+        <versionId value="4"/>
+        <lastUpdated value="2020-06-18T20:51:14.131+00:00"/>
+        <source value="#bwylq0fbAofvTxWv"/>
     </meta>
     <url value="http://hl7.org/fhir/us/dentalreferral/ValueSet/FDI-teeth-codes"/>
     <name value="TeethCodes"/>
     <title value="Teeth Codes"/>
     <status value="draft"/>
-    <description value="This value set contains the FDI teeth codes"/>
+    <description value="This ValueSet contains the FDI teeth codes"/>
     <compose>
         <include>
             <system value="http://hl7.org/fhir/ex-fdi"/>

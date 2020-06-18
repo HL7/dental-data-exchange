@@ -3,27 +3,14 @@
     xmlns="http://hl7.org/fhir">
     <id value="X-ray2-example"/>
     <meta>
-        <versionId value="1"/>
-        <lastUpdated value="2020-05-08T19:07:10.910+00:00"/>
-        <source value="#W4FOZV2vcU2zPs7M"/>
+        <versionId value="3"/>
+        <lastUpdated value="2020-06-18T21:59:29.429+00:00"/>
+        <source value="#CabHoJJI6eaheWC0"/>
     </meta>
     <identifier>
         <use value="official"/>
         <system value="urn:dicom:uid"/>
         <value value="urn:oid:2.16.124.113543.6003.1154777499.30246.19789.3503430046"/>
-    </identifier>
-    <identifier>
-        <use value="usual"/>
-        <type>
-            <coding>
-                <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
-                <code value="ACSN"/>
-            </coding>
-        </type>
-        <value value="Y12342398"/>
-        <assigner>
-            <reference value="Organization/dicom-organization"/>
-        </assigner>
     </identifier>
     <status value="available"/>
     <subject>
@@ -36,9 +23,6 @@
     <interpreter>
         <reference value="Practitioner/practitioner-D"/>
     </interpreter>
-    <endpoint>
-        <reference value="Endpoint/example-DART"/>
-    </endpoint>
     <numberOfSeries value="1"/>
     <numberOfInstances value="1"/>
     <procedureCode>

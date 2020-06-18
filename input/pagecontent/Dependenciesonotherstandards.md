@@ -23,3 +23,5 @@ http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/hrex-coverage.html
 
 Occupation Data for HEalth (ODH) profile used by this guide:
 http://hl7.org/fhir/us/odh/StructureDefinition/odh-PastOrPresentJob.html
+
+[Next Page - Dental Data Exchange Project Team](DentalDataExchangeProjectTeam.html)
