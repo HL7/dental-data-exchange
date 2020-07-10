@@ -7,11 +7,12 @@
         <lastUpdated value="2020-06-18T21:27:35.459+00:00"/>
         <source value="#0P6bGFNusTn6SwTB"/>
         <profile value="http://hl7.org/fhir/us/ccda/StructureDefinition/Referral-Note"/>
+      <profile value="http://hl7.org/fhir/us/dentalreferral/StructureDefinition/dental-referralnote"/>
     </meta>
     <language value="en-US"/>
     <identifier>
         <system value="urn:ietf:rfc:3986"/>
-        <value value="http://any.org/1"/>
+        <value value="http://acme.org/1"/>
     </identifier>
     <status value="final"/>
     <type>
@@ -29,7 +30,7 @@
         <reference value="Encounter/Med-visit-1"/>
         <display value="PCP visit"/>
     </encounter>
-    <date value="2020-01-14T03:10:14Z"/>
+    <date value="2020-02-14T03:10:14Z"/>
     <author>
         <reference value="PractitionerRole/PractitionerRole-M"/>
         <display value="Dr. John M, MD"/>
@@ -84,23 +85,9 @@
                 </table>
             </div>
         </text>
-    </section>
-    <section>
-        <title value="Advance Directives Section"/>
-        <code>
-            <coding>
-                <system value="http://loinc.org"/>
-                <code value="42348-3"/>
-                <display value="Advance directives"/>
-            </coding>
-        </code>
-        <text>
-            <status value="generated"/>
-            <div
-                xmlns="http://www.w3.org/1999/xhtml">
-                <p>Advanced Directives text</p>
-            </div>
-        </text>
+      <entry>
+        <reference value="AllergyIntolerance/Allergy-example-dental"/>
+      </entry>
     </section>
     <section>
         <title value="Assessment Section"/>
@@ -116,23 +103,6 @@
             <div
                 xmlns="http://www.w3.org/1999/xhtml">
                 <p>Assessment Section text</p>
-            </div>
-        </text>
-    </section>
-    <section>
-        <title value="Family History Section"/>
-        <code>
-            <coding>
-                <system value="http://loinc.org"/>
-                <code value="10157-6"/>
-                <display value="History of family member diseases Narrative"/>
-            </coding>
-        </code>
-        <text>
-            <status value="generated"/>
-            <div
-                xmlns="http://www.w3.org/1999/xhtml">
-                <p>Family History text</p>
             </div>
         </text>
     </section>
@@ -166,7 +136,7 @@
             <status value="generated"/>
             <div
                 xmlns="http://www.w3.org/1999/xhtml">
-                <p>History of Present Illness text</p>
+                <p>The patient has not visited a dentist or received flouride treatments in the past 4 years while away at college</p>
             </div>
         </text>
     </section>
@@ -197,7 +167,7 @@
                     </tr>
                     <tr>
                         <td>Smoking Status</td>
-                        <td>NA</td>
+                        <td>Non-smoker</td>
                         <td>2005/05/01 - 2020/03/28</td>
                     </tr>
                     <tr>
@@ -213,57 +183,16 @@
                 </table>
             </div>
         </text>
-    </section>
-    <section>
-        <title value="General Status Section"/>
-        <code>
-            <coding>
-                <system value="http://loinc.org"/>
-                <code value="10210-3"/>
-                <display value="Physical findings of General status Narrative"/>
-            </coding>
-        </code>
-        <text>
-            <status value="generated"/>
-            <div
-                xmlns="http://www.w3.org/1999/xhtml">
-                <p>Oral Health Exam findings: Swollen gums, significant plaque buildup and significant tenderness near left lower molar</p>
-            </div>
-        </text>
-    </section>
-    <section>
-        <title value="Functional Status Section"/>
-        <code>
-            <coding>
-                <system value="http://loinc.org"/>
-                <code value="47420-5"/>
-                <display value="Functional status assessment note"/>
-            </coding>
-        </code>
-        <text>
-            <status value="generated"/>
-            <div
-                xmlns="http://www.w3.org/1999/xhtml">
-                <p>Functional Status text</p>
-            </div>
-        </text>
-    </section>
-    <section>
-        <title value="Mental Status Section"/>
-        <code>
-            <coding>
-                <system value="http://loinc.org"/>
-                <code value="10190-7"/>
-                <display value="Mental status"/>
-            </coding>
-        </code>
-        <text>
-            <status value="generated"/>
-            <div
-                xmlns="http://www.w3.org/1999/xhtml">
-                <p>Mental Status text</p>
-            </div>
-        </text>
+      <entry>
+        <reference value="Observation/Smoker-obs-example-dental"/>
+      </entry>
+      <entry>
+        <reference value="Observation/Education-level-example-dental"/>
+      </entry>
+      <!-- TODO: Review/compare with CDA; different code and value -->
+      <entry>
+        <reference value="Observation/Present-job-example-dental"/>
+      </entry>
     </section>
     <section>
         <title value="Immunizations Section"/>
@@ -278,9 +207,29 @@
             <status value="generated"/>
             <div
                 xmlns="http://www.w3.org/1999/xhtml">
-                <p>Immunizations text</p>
+              <table border="1" width="100%">
+                <thead>
+                  <tr>
+                    <th>Vaccine</th>
+                    <th>Date</th>
+                    <th>Status</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      Hepatitis B vaccine
+                    </td>
+                    <td>January 4, 2020</td>
+                    <td>Completed</td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
         </text>
+      <entry>
+        <reference value="Immunization/imm-1"/>
+      </entry>
     </section>
     <section>
         <title value="Dental Findings Section"/>
@@ -291,47 +240,7 @@
                 <display value="Physical findings of Mouth and Throat and Teeth"/>
             </coding>
         </code>
-        <text>
-            <status value="generated"/>
-            <div
-                xmlns="http://www.w3.org/1999/xhtml">
-                <table>
-                    <tr>
-                        <td>
-                            <b>Finding Name</b>
-                        </td>
-                        <td>
-                            <b>Date</b>
-                        </td>
-                        <td>
-                            <b>Author</b>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Patient has plaque building arounds gums on upper right quandrant.</td>
-                        <td>2020/04/16</td>
-                        <td>Dr. M</td>
-                    </tr>
-                </table>
-            </div>
-        </text>
-    </section>
-    <section>
-        <title value="Nutrition Section"/>
-        <code>
-            <coding>
-                <system value="http://loinc.org"/>
-                <code value="61144-2"/>
-                <display value="Diet and nutrition Narrative"/>
-            </coding>
-        </code>
-        <text>
-            <status value="generated"/>
-            <div
-                xmlns="http://www.w3.org/1999/xhtml">
-                <p>Nutrition Section text</p>
-            </div>
-        </text>
+      <text>No Information</text>
     </section>
     <section>
         <title value="Reason for Referral Section"/>
@@ -342,14 +251,16 @@
                 <display value="Reason for referral (narrative)"/>
             </coding>
         </code>
-        <text>
-            <status value="generated"/>
-            <div
-                xmlns="http://www.w3.org/1999/xhtml">
-                <p>Referral to Dentist for further evaluation - urgent</p>
-                <p>Establish a Dental Home</p>
-            </div>
-        </text>
+      <text>
+        <list listType="ordered">
+          <item>Toothache</item>
+          <item>Left lower quadrant pain</item>
+          <item>Bleeding gums</item>
+        </list>
+      </text>
+      <entry>
+        <reference value="ServiceRequest/example-dental-referral-1"/>
+      </entry>
     </section>
     <section>
         <title value="Medication Section"/>
@@ -388,7 +299,7 @@
                     <tr>
                         <td>Lisinopril 10 mg tab</td>
                         <td>1 tab once/day</td>
-                        <td/>
+                        <td>Jan 3rd, 2020</td>
                         <td>Active</td>
                         <td/>
                         <td>Generic substitution allowed</td>
@@ -396,6 +307,9 @@
                 </table>
             </div>
         </text>
+      <entry>
+        <reference value="MedicationRequest/Lisinopril-medreq"/>
+      </entry>
     </section>
     <section>
         <title value="Medical Equipment Section"/>
@@ -410,10 +324,29 @@
             <status value="generated"/>
             <div
                 xmlns="http://www.w3.org/1999/xhtml">
-                <p>Medical Equipment text</p>
+              <table border="1" width="100%">
+                <thead>
+                  <tr>
+                    <th>Device Type</th>  <!-- This is the generic name of the device. -->
+                    <th>Procedure</th>
+                    <th>Implant Date</th>  <!-- separated out implant date -->
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Insulin Pump</td> 
+                    <td>Insertion of insulin pump (procedure)</td>
+                    <td>November 3, 2013</td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
         </text>
+      <entry>
+        <reference value="Procedure/Insulin-pump-insertion"/>
+      </entry>
     </section>
+  <!-- Required -->
     <section>
         <title value="Plan of Treatment Section"/>
         <code>
@@ -427,31 +360,14 @@
             <status value="generated"/>
             <div
                 xmlns="http://www.w3.org/1999/xhtml">
-                <table>
-                    <tr>
-                        <td>
-                            <b>Planned Activity</b>
-                        </td>
-                        <td>
-                            <b>Period</b>
-                        </td>
-                        <td>
-                            <b>Status</b>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Referral to Dentist</td>
-                        <td>2020/03/16</td>
-                        <td>Completed</td>
-                    </tr>
-                    <tr>
-                        <td>Follow-up in 3 months</td>
-                        <td>2020/03/16</td>
-                        <td>Completed</td>
-                    </tr>
-                </table>
+              <list listType="ordered">
+                <item>D0150 - Comprehensive Oral Evaluation</item>
+              </list>
             </div>
         </text>
+      <entry>
+        <reference value="Encounter/Dental-encounter"/>
+      </entry>
     </section>
     <section>
         <title value="Problem Section"/>
@@ -462,52 +378,42 @@
                 <display value="Problem list - Reported"/>
             </coding>
         </code>
-        <text>
-            <status value="generated"/>
-            <div
-                xmlns="http://www.w3.org/1999/xhtml">
-                <table>
-                    <tr>
-                        <td>
-                            <b>Problem Name</b>
-                        </td>
-                        <td>
-                            <b>Type</b>
-                        </td>
-                        <td>
-                            <b>Onset Date</b>
-                        </td>
-                        <td>
-                            <b>Abatement Date</b>
-                        </td>
-                        <td>
-                            <b>Status</b>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Mild, Hypertension</td>
-                        <td>Condition</td>
-                        <td>2019-04-01</td>
-                        <td>2016-04-14</td>
-                        <td>Active</td>
-                    </tr>
-                    <tr>
-                        <td>Tooth pain in left lower jaw</td>
-                        <td>Condition</td>
-                        <td>2019-04-01</td>
-                        <td>2016-04-14</td>
-                        <td>Active</td>
-                    </tr>
-                    <tr>
-                        <td>Bleeding gums, occasional</td>
-                        <td>Condition</td>
-                        <td>2019-04-01</td>
-                        <td>2016-04-14</td>
-                        <td>Active</td>
-                    </tr>
-                </table>
-            </div>
-        </text>
+      <text>
+        <list listType="ordered">
+          <item>Mild, Hypertension</item>
+          <item>Type 1 diabetes</item>
+          <item>Teeth covered in plague</item>
+          <item>Toothache</item>
+          <item>Swollen Gums</item>
+          <item>Bleeding Gums</item>
+          <item>Chronic periodontitis</item>
+          <item>At high risk for dental carries</item>
+        </list>
+      </text>
+      <entry>
+        <reference value="Condition/HTN-example"/>
+      </entry>
+      <entry>
+        <reference value="Condition/DM1-example"/>
+      </entry>
+      <entry>
+        <reference value="Condition/Dental-plaque-example"/>
+      </entry>
+      <entry>
+        <reference value="Condition/toothache-example"/>
+      </entry>
+      <entry>
+        <reference value="Condition/Swollen-gums-example"/>
+      </entry>
+      <entry>
+        <reference value="Condition/Bleeding-gums-example"/>
+      </entry>
+      <entry>
+        <reference value="Condition/Chronic-periodontitis-example"/>
+      </entry>
+      <entry>
+        <reference value="Condition/Caries-risk"/>
+      </entry>
     </section>
     <section>
         <title value="Procedures Section"/>
@@ -539,7 +445,7 @@
             <status value="generated"/>
             <div
                 xmlns="http://www.w3.org/1999/xhtml">
-                <p>Results text</p>
+                <p>N/A</p>
             </div>
         </text>
     </section>
@@ -557,34 +463,88 @@
             <div
                 xmlns="http://www.w3.org/1999/xhtml">
                 <table>
-                    <tr>
-                        <td>
-                            <b>Vital Sign</b>
-                        </td>
-                        <td>
-                            <b>Date</b>
-                        </td>
-                        <td>
-                            <b>Value</b>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Temperature</td>
-                        <td>2020/04/15</td>
+                  <table border="1" width="100%">
+                    <thead>
+                      <tr>
+                        <th>Observation Type</th>
+                        <th>Value</th>
+                        <th>Units</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Body Temperature</td>
                         <td>98.5</td>
-                    </tr>
-                    <tr>
-                        <td>Pulse</td>
-                        <td>2020/04/15</td>
+                        <td>[degF]</td>
+                      </tr>
+                      <tr>
+                        <td>Heart Rate</td>
                         <td>78</td>
-                    </tr>
-                    <tr>
-                        <td>Respiration</td>
-                        <td>2020/04/15</td>
+                        <td>/min</td>
+                      </tr>
+                      <tr>
+                        <td>Respiratory Rate</td>
                         <td>20</td>
-                    </tr>
+                        <td>/min</td>
+                      </tr>
+                      <tr>
+                        <td>Systolic Blood Pressure</td>
+                        <td>120</td>
+                        <td>mmHg</td>
+                      </tr>
+                      <tr>
+                        <td>Diastolic Blood Pressure</td>
+                        <td>80</td>
+                        <td>mmHg</td>
+                      </tr>
+                    </tbody>
+                  </table>
                 </table>
             </div>
         </text>
+      <entry>
+        <reference value="Observation/vitals-panel"/>
+      </entry>
     </section>
+  <section>
+    <title value="Payers Section"/>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="48768-6"/>
+        <display value="Payers Section (V3)"/>
+      </coding>
+    </code>
+    <text>
+      <status value="generated"/>
+      <div
+        xmlns="http://www.w3.org/1999/xhtml">
+        <p>Aetna Comprehensive Medical /Dental Insurance</p>
+      </div>
+    </text>
+    <entry>
+      <reference value="Coverage/Dental-Aetna"/>
+    </entry>
+  </section>
+  <section>
+    <title value="Instructions Section"/>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="69730-0"/>
+        <display value="Insturctions Section (V2)"/>
+      </coding>
+    </code>
+    <text>
+      <status value="generated"/>
+      <div
+        xmlns="http://www.w3.org/1999/xhtml">
+        <p>Pt. Education. Advised to see dentist regularly, brush 2x/day w/ fluoride
+          toothpaste, floss</p>
+      </div>
+    </text>
+    <entry>
+      <reference value="Communication/dental-education"/>
+    </entry>
+  </section>
 </Composition>

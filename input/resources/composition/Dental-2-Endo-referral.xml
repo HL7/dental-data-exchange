@@ -7,6 +7,7 @@
         <lastUpdated value="2020-06-18T21:27:35.484+00:00"/>
         <source value="#SnuvrLPbQQvlGPnF"/>
         <profile value="http://hl7.org/fhir/us/ccda/StructureDefinition/Referral-Note"/>
+      <profile value="http://hl7.org/fhir/us/dentalreferral/StructureDefinition/dental-referralnote"/>
     </meta>
     <language value="en-US"/>
     <identifier>
@@ -81,23 +82,6 @@
                         <td>mild</td>
                     </tr>
                 </table>
-            </div>
-        </text>
-    </section>
-    <section>
-        <title value="Advance Directives Section"/>
-        <code>
-            <coding>
-                <system value="http://loinc.org"/>
-                <code value="42348-3"/>
-                <display value="Advance directives"/>
-            </coding>
-        </code>
-        <text>
-            <status value="generated"/>
-            <div
-                xmlns="http://www.w3.org/1999/xhtml">
-                <p>Advanced Directives text</p>
             </div>
         </text>
     </section>
@@ -625,4 +609,38 @@
             </div>
         </text>
     </section>
+  <section>
+    <title value="Payers Section"/>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="48768-6"/>
+        <display value="Payers Section (V3)"/>
+      </coding>
+    </code>
+    <text>
+      <status value="generated"/>
+      <div
+        xmlns="http://www.w3.org/1999/xhtml">
+        <p>Payment sources</p>
+      </div>
+    </text>
+  </section>
+  <section>
+    <title value="Instructions Section"/>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="69730-0"/>
+        <display value="Insturctions Section (V2)"/>
+      </coding>
+    </code>
+    <text>
+      <status value="generated"/>
+      <div
+        xmlns="http://www.w3.org/1999/xhtml">
+        <p>Instructions</p>
+      </div>
+    </text>
+  </section>
 </Composition>

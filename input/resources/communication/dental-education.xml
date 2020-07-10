@@ -6,6 +6,7 @@
         <versionId value="2"/>
         <lastUpdated value="2020-06-18T21:25:34.624+00:00"/>
         <source value="#4dtR45rMpj4KrNMX"/>
+      <profile value="http://hl7.org/fhir/us/dentalreferral/StructureDefinition/dental-communication"/>
     </meta>
     <text>
         <status value="generated"/>
@@ -14,18 +15,6 @@
         
         </div>
     </text>
-    <identifier>
-        <type>
-            <coding>
-                <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
-                <display value="Placer Identifier"/>
-            </coding>
-            <text value="Placer Identifier"/>
-        </type>
-    </identifier>
-    <partOf>
-        <reference value="Encounter/Med-visit-1"/>
-    </partOf>
     <status value="completed"/>
     <subject>
         <reference value="Patient/example-dental"/>
@@ -33,7 +22,7 @@
     <encounter>
         <reference value="Encounter/Med-visit-1"/>
     </encounter>
-    <sent value="2020-01-12T18:01:10-08:00"/>
+    <sent value="2020-02-14T18:01:10-08:00"/>
     <received value="2020-01-12T18:01:11-08:00"/>
     <recipient>
         <reference value="Patient/example-dental"/>

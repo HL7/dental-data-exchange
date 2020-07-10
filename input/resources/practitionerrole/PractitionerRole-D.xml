@@ -30,12 +30,8 @@
             <display value="General Denist"/>
         </coding>
     </specialty>
-    <endpoint>
-        <reference value="http://52.90.126.238:8080/fhir/baseR4/Endpoint/Endpoint-2"/>
-        <display value="Good Oral Health Clinic Physicians Organization"/>
-    </endpoint>
-    <endpoint>
-        <reference value="http://52.90.126.238:8080/fhir/baseR4/Endpoint/Endpoint-2"/>
-        <display value="John.Dentist.MD@direct.example.org"/>
-    </endpoint>
+  <telecom>
+    <system value="phone"/>
+    <value value="5555555555"/>
+  </telecom>
 </PractitionerRole>

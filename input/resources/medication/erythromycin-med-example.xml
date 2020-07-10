@@ -19,8 +19,8 @@
         <coding>
             <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
             <code value="315877"/>
-            <display value="Erythromycin 500 mg tab"/>
+          <display value="Erythromycin 500 MG"/>
         </coding>
-        <text value="Erythromycin 500 mg tab"/>
+      <text value="Erythromycin 500 MG"/>
     </code>
 </Medication>

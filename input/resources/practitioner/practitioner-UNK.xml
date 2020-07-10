@@ -1,0 +1,19 @@
+<Practitioner xmlns="http://hl7.org/fhir">
+  <id value="practitioner-UNK"/>
+  <meta>
+    <profile
+      value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"/>
+  </meta>
+  <identifier>
+    <system value="http://hl7.org.fhir/sid/us-npi"/>
+    <value value="555555555"/>
+  </identifier>
+  <name>
+    <family value="UNK">
+      <extension url="http://hl7.org/fhir/ValueSet/data-absent-reason">
+        <!-- 	The value is expected to exist but is not known. -->
+        <valueCode value="unknown"/>
+      </extension>
+    </family>
+  </name>
+</Practitioner>

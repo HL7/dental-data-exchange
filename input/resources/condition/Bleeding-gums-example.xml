@@ -1,5 +1,5 @@
 <Condition xmlns="http://hl7.org/fhir">
-  <id value="Swollen-gums-example" />
+  <id value="Bleeding-gums-example" />
   <meta>
     <versionId value="1" />
     <lastUpdated value="2020-05-06T21:06:52.638+00:00" />
@@ -35,14 +35,14 @@
     <coding>
       <system value="http://www.ada.org/snodent" />
       <code value="148393D" />
-      <display value="Swollen gums (finding)" />
+      <display value="Bleeding gums" />
     </coding>
     <coding>
       <system value="http://snomed.info/sct" />
-      <code value="309685001" />
-      <display value="Swollen gums (finding)" />
+      <code value="86276007" />
+      <display value="Bleeding gums" />
     </coding>
-    <text value="Swollen gums (finding)" />
+    <text value="Bleeding gums" />
   </code>
   <subject>
     <reference value="Patient/example-dental" />

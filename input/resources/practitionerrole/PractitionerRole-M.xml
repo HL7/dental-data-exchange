@@ -30,8 +30,8 @@
             <display value="General Practice"/>
         </coding>
     </specialty>
-    <endpoint>
-        <reference value="http://52.90.126.238:8080/fhir/baseR4/Endpoint/Endpoint-1"/>
-        <display value="Good Health Clinic Physicians Organization"/>
-    </endpoint>
+  <telecom>
+    <system value="phone"/>
+    <value value="5555557777"/>
+  </telecom>
 </PractitionerRole>

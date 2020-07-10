@@ -244,30 +244,6 @@
         </resource>
         <resource>
             <reference>
-                <reference value="ImagingStudy/X-ray2-example"/></reference>
-            <name value="PA X-ray-2 (example)"/>
-            <exampleBoolean value="true"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="ImagingStudy/Panoramic-Radiograph-example"/></reference>
-            <name value="Panoramic Radiograph Dental (example)"/>
-            <exampleBoolean value="true"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="ImagingStudy/X-ray1-example"/></reference>
-            <name value="PA X-ray-1 (example)"/>
-            <exampleBoolean value="true"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="ImagingStudy/endo-radiograph-example"/></reference>
-            <name value="Panoramic Radiograph Endodontist (example)"/>
-            <exampleBoolean value="true"/>
-        </resource>
-        <resource>
-            <reference>
                 <reference value="Medication/tylenol-dental"/></reference>
             <name value="Medication1 (example)"/>
             <exampleBoolean value="true"/>

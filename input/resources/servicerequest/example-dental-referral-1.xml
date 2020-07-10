@@ -32,4 +32,13 @@
     <requester>
         <reference value="Practitioner/practitioner-M"/>
     </requester>
+  <reasonReference>
+    <reference value="Condition/toothache-example"/>
+  </reasonReference>
+  <reasonReference>
+    <reference value="Condition/LLQP-example"/>
+  </reasonReference>
+  <reasonReference>
+    <reference value="Condition/Bleeding-gums-example"/>
+  </reasonReference>
 </ServiceRequest>

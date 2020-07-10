@@ -12,15 +12,15 @@
         <status value="generated"/>
         <div
             xmlns="http://www.w3.org/1999/xhtml">
-            <div class="hapiHeaderText">Acetaminophen 325 mg tab</div>
+          <div class="hapiHeaderText">Acetaminophen 160 MG</div>
         </div>
     </text>
     <code>
         <coding>
             <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
             <code value="315253"/>
-            <display value="Acetaminophen 325 mg tab"/>
+          <display value="Acetaminophen 160 MG"/>
         </coding>
-        <text value="Acetaminophen 325 mg tab"/>
+      <text value="Acetaminophen 160 MG"/>
     </code>
 </Medication>

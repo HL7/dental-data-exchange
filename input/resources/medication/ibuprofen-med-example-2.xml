@@ -19,8 +19,8 @@
         <coding>
             <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
             <code value="316074"/>
-            <display value="Ibuprofen 200 mg tab"/>
+          <display value="Ibuprofen 200 MG"/>
         </coding>
-        <text value="Ibuprofen 200 mg tab"/>
+      <text value="Ibuprofen 200 MG"/>
     </code>
 </Medication>

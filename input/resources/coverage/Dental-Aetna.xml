@@ -17,7 +17,7 @@
         <coding>
             <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
             <code value="HIP"/>
-            <display value="Aetna Comprehensive Medical /Dental Insurance"/>
+            <display value="Aetna Comprehensive Medical/Dental Insurance"/>
         </coding>
     </type>
     <subscriber>
@@ -34,8 +34,8 @@
         </coding>
     </relationship>
     <period>
-        <start value="2019-05-23"/>
-        <end value="2020-05-23"/>
+        <start value="2020-01-01"/>
+        <end value="2020-01-01"/>
     </period>
     <payor>
         <reference value="Organization/Aetna-organization"/>

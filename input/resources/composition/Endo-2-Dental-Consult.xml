@@ -7,6 +7,7 @@
         <lastUpdated value="2020-06-18T21:27:35.496+00:00"/>
         <source value="#DPErBgwbP3u1poOM"/>
         <profile value="http://hl7.org/fhir/us/ccda/StructureDefinition/Consultation-Note"/>
+      <profile value="http://hl7.org/fhir/us/dentalreferral/StructureDefinition/dental-consult"/>
     </meta>
     <language value="en-US"/>
     <extension url="https://http://hl7.org/fhir/us/ccda/StructureDefinition/In-Fulfillment-Of-Order">
@@ -66,23 +67,6 @@
             <end value="2020-03-28"/>
         </period>
     </event>
-    <section>
-        <title value="Advance Directives Section"/>
-        <code>
-            <coding>
-                <system value="http://loinc.org"/>
-                <code value="42348-3"/>
-                <display value="Advance directives"/>
-            </coding>
-        </code>
-        <text>
-            <status value="generated"/>
-            <div
-                xmlns="http://www.w3.org/1999/xhtml">
-                <p>Advanced Directives text</p>
-            </div>
-        </text>
-    </section>
     <section>
         <title value="Allergies and Intolerances Section"/>
         <code>

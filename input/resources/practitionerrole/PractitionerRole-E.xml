@@ -30,12 +30,8 @@
             <display value="Endodontics"/>
         </coding>
     </specialty>
-    <endpoint>
-        <reference value="http://52.90.126.238:8080/fhir/baseR4/Endpoint/Endpoint-3"/>
-        <display value="Great Endodontists Health Clinic Organization"/>
-    </endpoint>
-    <endpoint>
-        <reference value="http://52.90.126.238:8080/fhir/baseR4/Endpoint/Endpoint-2"/>
-        <display value="Endo.E.MD@direct.example.org"/>
-    </endpoint>
+  <telecom>
+    <system value="phone"/>
+    <value value="5555556666"/>
+  </telecom>
 </PractitionerRole>
