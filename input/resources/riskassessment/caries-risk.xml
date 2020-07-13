@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="caries-risk"/>
     <meta>
-        <versionId value="1"/>
-        <lastUpdated value="2020-07-10T17:21:38.663+00:00"/>
-        <source value="#jRrOuo2EPevzwxHo"/>
+        <versionId value="2"/>
+        <lastUpdated value="2020-07-13T22:18:05.156+00:00"/>
+        <source value="#jdabklI9X9qp2DeU"/>
         <profile value="http://hl7.org/fhir/us/dentalreferral/StructureDefinition/general-riskassessment"/>
     </meta>
     <status value="final"/>
@@ -13,7 +13,7 @@
         <reference value="Patient/example-dental"/>
     </subject>
     <encounter>
-        <reference value="Encounter/Encounter/Med-visit-1"/>
+        <reference value="Encounter/Med-visit-1"/>
     </encounter>
     <occurrenceDateTime value="2020-02-14T16:04:00Z"/>
     <condition>

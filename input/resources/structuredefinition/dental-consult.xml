@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="dental-consult"/>
     <meta>
-        <versionId value="23"/>
-        <lastUpdated value="2020-07-13T21:02:53.570+00:00"/>
-        <source value="#5fjUfRzk1LmBelmE"/>
+        <versionId value="30"/>
+        <lastUpdated value="2020-07-13T22:46:20.324+00:00"/>
+        <source value="#PNkFuffjwpsIbmwH"/>
     </meta>
     <url value="http://hl7.org/fhir/us/dentalreferral/StructureDefinition/dental-consult"/>
     <version value="0.0.1"/>
@@ -81,6 +81,8 @@
         <element id="Composition.section:dental_findings_section">
             <path value="Composition.section"/>
             <sliceName value="Dental Findings Section"/>
+            <min value="1"/>
+            <max value="1"/>
         </element>
         <element id="Composition.section:dental_findings_section.code">
             <path value="Composition.section.code"/>
@@ -152,6 +154,36 @@
             <path value="Composition.section"/>
             <sliceName value="payers"/>
             <max value="1"/>
+        </element>
+        <element id="Composition.section:assessment_section">
+            <path value="Composition.section"/>
+            <min value="1"/>
+            <max value="1"/>
+        </element>
+        <element id="Composition.section:plan_of_treatment_section">
+            <path value="Composition.section"/>
+            <min value="1"/>
+            <max value="1"/>
+        </element>
+        <element id="Composition.section:procedures_section">
+            <path value="Composition.section"/>
+            <min value="1"/>
+            <max value="1"/>
+        </element>
+        <element id="Composition.section:reason_for_visit_section">
+            <path value="Composition.section"/>
+            <min value="1"/>
+            <max value="1"/>
+        </element>
+        <element id="Composition.section:medications_section">
+            <path value="Composition.section"/>
+            <min value="1"/>
+            <max value="1"/>
+        </element>
+        <element id="Composition.section:assessment_and_plan_section">
+            <path value="Composition.section"/>
+            <min value="0"/>
+            <max value="0"/>
         </element>
         <element id="Composition.section:payers.code">
             <path value="Composition.section.code"/>
