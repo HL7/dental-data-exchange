@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="PractitionerRole-D"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2020-05-11T15:11:45.616+00:00"/>
-        <source value="#vj5Os1rmPF4kzxqM"/>
+        <versionId value="4"/>
+        <lastUpdated value="2020-07-09T18:27:38.577+00:00"/>
+        <source value="#i2wwlXNjHyChQj8U"/>
         <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole"/>
     </meta>
     <practitioner>
@@ -30,8 +30,8 @@
             <display value="General Denist"/>
         </coding>
     </specialty>
-  <telecom>
-    <system value="phone"/>
-    <value value="5555555555"/>
-  </telecom>
+    <telecom>
+        <system value="phone"/>
+        <value value="5555555555"/>
+    </telecom>
 </PractitionerRole>

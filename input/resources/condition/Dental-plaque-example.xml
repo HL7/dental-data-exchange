@@ -1,55 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Condition xmlns="http://hl7.org/fhir">
-  <id value="Dental-plaque-example" />
-  <meta>
-    <versionId value="1" />
-    <lastUpdated value="2020-05-06T21:07:02.469+00:00" />
-    <source value="#bfU5rvd4VRjLUl3a" />
-    <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition" />
-  </meta>
-  <clinicalStatus>
-    <coding>
-      <system value="http://terminology.hl7.org/CodeSystem/condition-clinical" />
-      <code value="active" />
-      <display value="Active" />
-    </coding>
-    <text value="Active" />
-  </clinicalStatus>
-  <verificationStatus>
-    <coding>
-      <system value="http://terminology.hl7.org/CodeSystem/condition-ver-status" />
-      <code value="confirmed" />
-      <display value="Confirmed" />
-    </coding>
-    <text value="Confirmed" />
-  </verificationStatus>
-  <category>
-    <coding>
-      <system value="http://terminology.hl7.org/CodeSystem/condition-category" />
-      <code value="problem-list-item" />
-      <display value="Problem List Item" />
-    </coding>
-    <text value="Problem" />
-  </category>
-  <code>
-    <coding>
-      <system value="http://snomed.info/sct" />
-      <code value="276453000" />
-      <display value="Teeth covered in plaque (finding)" />
-    </coding>
-    <coding>
-      <system value="http://www.ada.org/snodent" />
-      <code value="108723D" />
-      <display value="Teeth covered in plaque (finding)" />
-    </coding>
-    <text value="Teeth covered in plaque (finding)" />
-  </code>
-  <subject>
-    <reference value="Patient/example-dental" />
-    <display value="Patient A" />
-  </subject>
-  <onsetDateTime value="2013-07-06"/>
-  <asserter>
-    <reference value="Practitioner/practitioner-UNK"/>
-  </asserter>
+<Condition
+    xmlns="http://hl7.org/fhir">
+    <id value="Dental-plaque-example"/>
+    <meta>
+        <versionId value="4"/>
+        <lastUpdated value="2020-07-08T01:27:47.453+00:00"/>
+        <source value="#h5OItTmW4l65es4S"/>
+        <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"/>
+    </meta>
+    <clinicalStatus>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
+            <code value="active"/>
+            <display value="Active"/>
+        </coding>
+        <text value="Active"/>
+    </clinicalStatus>
+    <verificationStatus>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-ver-status"/>
+            <code value="confirmed"/>
+            <display value="Confirmed"/>
+        </coding>
+        <text value="Confirmed"/>
+    </verificationStatus>
+    <category>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-category"/>
+            <code value="problem-list-item"/>
+            <display value="Problem List Item"/>
+        </coding>
+        <text value="Problem"/>
+    </category>
+    <code>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="276453000"/>
+            <display value="Teeth covered in plaque (finding)"/>
+        </coding>
+        <coding>
+            <system value="http://www.ada.org/snodent"/>
+            <code value="108723D"/>
+            <display value="Teeth covered in plaque (finding)"/>
+        </coding>
+        <text value="Teeth covered in plaque (finding)"/>
+    </code>
+    <subject>
+        <reference value="Patient/example-dental"/>
+        <display value="Patient A"/>
+    </subject>
+    <onsetDateTime value="2013-07-06"/>
+    <asserter>
+        <reference value="Practitioner/practitioner-UNK"/>
+    </asserter>
 </Condition>

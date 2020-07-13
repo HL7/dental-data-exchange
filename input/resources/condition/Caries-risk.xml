@@ -1,54 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Condition
-  xmlns="http://hl7.org/fhir">
-  <id value="Caries-risk"/>
-  <meta>
-    <versionId value="1"/>
-    <lastUpdated value="2020-05-06T21:07:03.069+00:00"/>
-    <source value="#4Fhihu9AQyKX0x4N"/>
-    <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"/>
-    <profile value="http://hl7.org/fhir/us/dentalreferral/StructureDefinition/dental-condition"/>
-  </meta>
-  <clinicalStatus>
-    <coding>
-      <system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
-      <code value="active"/>
-      <display value="Active"/>
-    </coding>
-    <text value="Active"/>
-  </clinicalStatus>
-  <verificationStatus>
-    <coding>
-      <system value="http://terminology.hl7.org/CodeSystem/condition-ver-status"/>
-      <code value="confirmed"/>
-      <display value="Confirmed"/>
-    </coding>
-    <text value="Confirmed"/>
-  </verificationStatus>
-  <category>
-    <coding>
-      <system value="http://terminology.hl7.org/CodeSystem/condition-category"/>
-      <code value="problem-list-item"/>
-      <display value="Problem List Item"/>
-    </coding>
-    <text value="Problem"/>
-  </category>
-  <code>
-    <coding>
-      <system value="http://www.ada.org/snodent"/>
-      <code value="179051D"/>
-      <display value="At high risk for dental caries (finding)"/>
-    </coding>
-    <coding>
-      <system value="http://snomed.info/sct"/>
-      <code value="609402003"/>
-      <display value="At high risk for dental caries (finding)"/>
-    </coding>
-    <text value="At high risk for dental caries (finding)"/>
-  </code>
-  <subject>
-    <reference value="Patient/example-dental"/>
-    <display value="Patient A"/>
-  </subject>
-  <onsetDateTime value="2020-02-14"/>
+    xmlns="http://hl7.org/fhir">
+    <id value="Caries-risk"/>
+    <meta>
+        <versionId value="1"/>
+        <lastUpdated value="2020-07-08T01:27:47.703+00:00"/>
+        <source value="#Hm6XP4E50WE57LJh"/>
+        <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"/>
+    </meta>
+    <clinicalStatus>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
+            <code value="active"/>
+            <display value="Active"/>
+        </coding>
+        <text value="Active"/>
+    </clinicalStatus>
+    <verificationStatus>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-ver-status"/>
+            <code value="confirmed"/>
+            <display value="Confirmed"/>
+        </coding>
+        <text value="Confirmed"/>
+    </verificationStatus>
+    <category>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-category"/>
+            <code value="problem-list-item"/>
+            <display value="Problem List Item"/>
+        </coding>
+        <text value="Problem"/>
+    </category>
+    <code>
+        <coding>
+            <system value="http://www.ada.org/snodent"/>
+            <code value="179051D"/>
+            <display value="At high risk for dental caries (finding)"/>
+        </coding>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="609402003"/>
+            <display value="At high risk for dental caries (finding)"/>
+        </coding>
+        <text value="At high risk for dental caries (finding)"/>
+    </code>
+    <subject>
+        <reference value="Patient/example-dental"/>
+        <display value="Patient A"/>
+    </subject>
+    <onsetDateTime value="2020-02-14"/>
 </Condition>

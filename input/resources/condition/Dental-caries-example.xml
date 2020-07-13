@@ -3,11 +3,10 @@
     xmlns="http://hl7.org/fhir">
     <id value="Dental-caries-example"/>
     <meta>
-        <versionId value="1"/>
-        <lastUpdated value="2020-05-06T21:07:02.955+00:00"/>
-        <source value="#9eG7LysNVyLQphO6"/>
+        <versionId value="5"/>
+        <lastUpdated value="2020-07-13T18:20:54.282+00:00"/>
+        <source value="#EYv12x7totg6m0dw"/>
         <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"/>
-        <profile value="http://hl7.org/fhir/us/dentalreferral/StructureDefinition/dental-condition"/>
     </meta>
     <clinicalStatus>
         <coding>
@@ -35,8 +34,8 @@
     </category>
     <code>
         <coding>
-            <system value="http://www.ada.org/snodent"/>
-            <code value="118065D"/>
+            <system value="http://snomed.info/sct"/>
+            <code value="80967001"/>
             <display value="Dental caries (disorder)"/>
         </coding>
         <text value="Dental caries (disorder)"/>

@@ -3,11 +3,11 @@
     xmlns="http://hl7.org/fhir">
     <id value="Dental-2-Endo-referral"/>
     <meta>
-        <versionId value="6"/>
-        <lastUpdated value="2020-06-18T21:27:35.484+00:00"/>
-        <source value="#SnuvrLPbQQvlGPnF"/>
+        <versionId value="7"/>
+        <lastUpdated value="2020-07-09T17:55:31.594+00:00"/>
+        <source value="#vgv6N7AXiwvjKRfb"/>
         <profile value="http://hl7.org/fhir/us/ccda/StructureDefinition/Referral-Note"/>
-      <profile value="http://hl7.org/fhir/us/dentalreferral/StructureDefinition/dental-referralnote"/>
+        <profile value="http://hl7.org/fhir/us/dentalreferral/StructureDefinition/dental-referralnote"/>
     </meta>
     <language value="en-US"/>
     <identifier>
@@ -609,38 +609,38 @@
             </div>
         </text>
     </section>
-  <section>
-    <title value="Payers Section"/>
-    <code>
-      <coding>
-        <system value="http://loinc.org"/>
-        <code value="48768-6"/>
-        <display value="Payers Section (V3)"/>
-      </coding>
-    </code>
-    <text>
-      <status value="generated"/>
-      <div
-        xmlns="http://www.w3.org/1999/xhtml">
-        <p>Payment sources</p>
-      </div>
-    </text>
-  </section>
-  <section>
-    <title value="Instructions Section"/>
-    <code>
-      <coding>
-        <system value="http://loinc.org"/>
-        <code value="69730-0"/>
-        <display value="Insturctions Section (V2)"/>
-      </coding>
-    </code>
-    <text>
-      <status value="generated"/>
-      <div
-        xmlns="http://www.w3.org/1999/xhtml">
-        <p>Instructions</p>
-      </div>
-    </text>
-  </section>
+    <section>
+        <title value="Payers Section"/>
+        <code>
+            <coding>
+                <system value="http://loinc.org"/>
+                <code value="48768-6"/>
+                <display value="Payers Section (V3)"/>
+            </coding>
+        </code>
+        <text>
+            <status value="generated"/>
+            <div
+                xmlns="http://www.w3.org/1999/xhtml">
+                <p>Payment sources</p>
+            </div>
+        </text>
+    </section>
+    <section>
+        <title value="Instructions Section"/>
+        <code>
+            <coding>
+                <system value="http://loinc.org"/>
+                <code value="69730-0"/>
+                <display value="Insturctions Section (V2)"/>
+            </coding>
+        </code>
+        <text>
+            <status value="generated"/>
+            <div
+                xmlns="http://www.w3.org/1999/xhtml">
+                <p>Instructions</p>
+            </div>
+        </text>
+    </section>
 </Composition>

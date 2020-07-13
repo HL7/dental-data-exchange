@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="general-riskassessment"/>
     <meta>
-        <versionId value="10"/>
-        <lastUpdated value="2020-06-10T16:24:46.070+00:00"/>
-        <source value="#wB1fm6gNXplbqYvF"/>
+        <versionId value="11"/>
+        <lastUpdated value="2020-07-10T17:13:45.081+00:00"/>
+        <source value="#qAKXYHq7vNGvkrT3"/>
     </meta>
     <url value="http://hl7.org/fhir/us/dentalreferral/StructureDefinition/general-riskassessment"/>
     <name value="GeneralOralHealthRiskAssessment"/>
@@ -723,7 +723,7 @@
             <definition value="Describes the expected outcome for the subject."/>
             <comment value="Multiple repetitions can be used to identify the same type of outcome in different timeframes as well as different types of outcomes."/>
             <min value="0"/>
-            <max value="*"/>
+            <max value="1"/>
             <base>
                 <path value="RiskAssessment.prediction"/>
                 <min value="0"/>
@@ -746,6 +746,7 @@
                 <human value="Must be &lt;= 100"/>
                 <expression value="probability is decimal implies (probability as decimal) &lt;= 100"/>
                 <xpath value="not(f:probabilityDecimal) or f:probabilityDecimal/@value &lt;= 100"/>
+                <source value="RiskAssessment.prediction"/>
             </constraint>
             <isModifier value="false"/>
             <isSummary value="false"/>
@@ -1063,6 +1064,14 @@
                 <code value="Reference"/>
                 <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole"/>
             </type>
+        </element>
+        <element id="RiskAssessment.prediction">
+            <path value="RiskAssessment.prediction"/>
+            <max value="1"/>
+            <binding>
+                <strength value="extensible"/>
+                <valueSet value="http://hl7.org/fhir/us/dentalreferral/ValueSet/oral-riskassessment"/>
+            </binding>
         </element>
         <element id="RiskAssessment.prediction.qualitativeRisk">
             <path value="RiskAssessment.prediction.qualitativeRisk"/>

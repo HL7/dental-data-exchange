@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Med-visit-1"/>
     <meta>
-        <versionId value="1"/>
-        <lastUpdated value="2020-05-11T15:10:28.671+00:00"/>
-        <source value="#afj8obr724RjJQa5"/>
+        <versionId value="2"/>
+        <lastUpdated value="2020-07-08T01:28:24.252+00:00"/>
+        <source value="#3wv1USmYo7RRAc58"/>
         <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter"/>
     </meta>
     <status value="finished"/>
@@ -18,7 +18,7 @@
         <coding>
             <system value="http://www.ama-assn.org/go/cpt"/>
             <code value="99201"/>
-          <display value="Level 1 New Patient Office Visit"/>
+            <display value="Level 1 New Patient Office Visit"/>
         </coding>
         <text value="Office Visit"/>
     </type>

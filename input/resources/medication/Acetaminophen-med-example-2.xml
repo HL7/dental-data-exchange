@@ -3,24 +3,24 @@
     xmlns="http://hl7.org/fhir">
     <id value="Acetaminophen-med-example-2"/>
     <meta>
-        <versionId value="1"/>
-        <lastUpdated value="2020-05-06T21:07:02.467+00:00"/>
-        <source value="#FvTtYRW1O8aidxe1"/>
+        <versionId value="3"/>
+        <lastUpdated value="2020-07-09T18:14:17.401+00:00"/>
+        <source value="#j1xtCTX6Sm6Tqpvp"/>
         <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-medication"/>
     </meta>
     <text>
         <status value="generated"/>
         <div
             xmlns="http://www.w3.org/1999/xhtml">
-          <div class="hapiHeaderText">Acetaminophen 160 MG</div>
+            <div class="hapiHeaderText">Acetaminophen 160 MG</div>
         </div>
     </text>
     <code>
         <coding>
             <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
             <code value="315253"/>
-          <display value="Acetaminophen 160 MG"/>
+            <display value="Acetaminophen 160 MG"/>
         </coding>
-      <text value="Acetaminophen 160 MG"/>
+        <text value="Acetaminophen 160 MG"/>
     </code>
 </Medication>

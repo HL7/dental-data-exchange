@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Mandibular-perm30-example"/>
     <meta>
-        <versionId value="1"/>
-        <lastUpdated value="2020-05-06T21:07:02.475+00:00"/>
-        <source value="#AO6M8FyLxH76e000"/>
+        <versionId value="4"/>
+        <lastUpdated value="2020-07-08T01:27:47.433+00:00"/>
+        <source value="#ox5IzVng0ULZv7Pg"/>
         <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"/>
     </meta>
     <clinicalStatus>

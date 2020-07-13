@@ -3,11 +3,10 @@
     xmlns="http://hl7.org/fhir">
     <id value="Chronic-periodontitis-example"/>
     <meta>
-        <versionId value="1"/>
-        <lastUpdated value="2020-05-06T21:07:03.069+00:00"/>
-        <source value="#4Fhihu9AQyKX0x4N"/>
+        <versionId value="4"/>
+        <lastUpdated value="2020-07-08T01:27:47.865+00:00"/>
+        <source value="#dEWuQ7supfYYPvSc"/>
         <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"/>
-        <profile value="http://hl7.org/fhir/us/dentalreferral/StructureDefinition/dental-condition"/>
     </meta>
     <clinicalStatus>
         <coding>
@@ -39,11 +38,11 @@
             <code value="116957D"/>
             <display value="Chronic periodontitis (disorder)"/>
         </coding>
-      <coding>
-        <system value="http://snomed.info/sct"/>
-        <code value="5689008"/>
-        <display value="Chronic periodontitis (disorder)"/>
-      </coding>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="5689008"/>
+            <display value="Chronic periodontitis (disorder)"/>
+        </coding>
         <text value="Chronic periodontitis (disorder)"/>
     </code>
     <subject>

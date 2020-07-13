@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="dental-reason-for-referral"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2020-06-18T20:45:42.333+00:00"/>
-        <source value="#oCbAhmg7SSW5fCmv"/>
+        <versionId value="3"/>
+        <lastUpdated value="2020-06-18T22:30:04.301+00:00"/>
+        <source value="#ZFdItyycnYwn0t2w"/>
     </meta>
     <url value="http://hl7.org/fhir/us/dentalreferral/ValueSet/dental-reason-for-referral"/>
     <name value="DentalReasonForReferral"/>
@@ -282,21 +282,21 @@
         <include>
             <system value="http://ada.org/snodent"/>
             <concept>
-                <code value="174950D "/>
+                <code value="174950D"/>
                 <display value="Pregnant"/>
             </concept>
         </include>
         <include>
             <system value="http://ada.org/snodent"/>
             <concept>
-                <code value="144684D "/>
+                <code value="144684D"/>
                 <display value="Disturbance of tooth eruption or exfoliation"/>
             </concept>
         </include>
         <include>
             <system value="http://ada.org/snodent"/>
             <concept>
-                <code value="150365D "/>
+                <code value="150365D"/>
                 <display value="Malocclusion of teeth"/>
             </concept>
         </include>
@@ -408,14 +408,14 @@
         <include>
             <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
             <concept>
-                <code value="E13.9 "/>
+                <code value="E13.9"/>
                 <display value="Other specified diabetes mellitus without complications"/>
             </concept>
         </include>
         <include>
             <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
             <concept>
-                <code value="Z33.1 "/>
+                <code value="Z33.1"/>
                 <display value="Pregnant state, incidental"/>
             </concept>
         </include>
@@ -436,7 +436,7 @@
         <include>
             <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
             <concept>
-                <code value="M26.4 "/>
+                <code value="M26.4"/>
                 <display value="Malocclusion, unspecified"/>
             </concept>
         </include>

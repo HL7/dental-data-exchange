@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Endo-therapy-example"/>
     <meta>
-        <versionId value="1"/>
-        <lastUpdated value="2020-05-06T21:07:21.339+00:00"/>
-        <source value="#4UUhxie00nJpM1cP"/>
+        <versionId value="2"/>
+        <lastUpdated value="2020-07-08T01:29:49.925+00:00"/>
+        <source value="#P8Vs6hGQ5rVCAZaw"/>
         <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"/>
     </meta>
     <identifier>

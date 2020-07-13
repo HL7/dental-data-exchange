@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="PractitionerRole-M"/>
     <meta>
-        <versionId value="1"/>
-        <lastUpdated value="2020-05-06T21:06:52.774+00:00"/>
-        <source value="#VXM1u2dgcpzxh0Iz"/>
+        <versionId value="3"/>
+        <lastUpdated value="2020-07-09T18:27:38.576+00:00"/>
+        <source value="#wCT0bsgjsrlChTqH"/>
         <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole"/>
     </meta>
     <practitioner>
@@ -30,8 +30,8 @@
             <display value="General Practice"/>
         </coding>
     </specialty>
-  <telecom>
-    <system value="phone"/>
-    <value value="5555557777"/>
-  </telecom>
+    <telecom>
+        <system value="phone"/>
+        <value value="5555557777"/>
+    </telecom>
 </PractitionerRole>

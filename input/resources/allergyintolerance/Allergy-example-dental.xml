@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Allergy-example-dental"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2020-06-18T21:18:57.259+00:00"/>
-        <source value="#lrphmtDlW4AZ7PMb"/>
+        <versionId value="3"/>
+        <lastUpdated value="2020-07-08T01:26:59.579+00:00"/>
+        <source value="#KmD0qLgOLL1QgYon"/>
         <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-allergyintolerance"/>
     </meta>
     <clinicalStatus>
@@ -34,5 +34,5 @@
         <reference value="Patient/example-dental"/>
         <display value="Patient A"/>
     </patient>
-  <onsetDateTime value="1998-05-01"/>
+    <onsetDateTime value="1998-05-01"/>
 </AllergyIntolerance>

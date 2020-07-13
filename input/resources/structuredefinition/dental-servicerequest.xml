@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="dental-servicerequest"/>
     <meta>
-        <versionId value="11"/>
-        <lastUpdated value="2020-05-04T14:00:11.145+00:00"/>
-        <source value="#S6PS516or9u9kJwD"/>
+        <versionId value="14"/>
+        <lastUpdated value="2020-07-08T02:02:41.975+00:00"/>
+        <source value="#w0aL4LrunGKujuQC"/>
     </meta>
     <url value="http://hl7.org/fhir/us/dentalreferral/dental-servicerequest"/>
     <name value="DentalServiceRequest"/>
@@ -324,7 +324,7 @@
             <short value="Identifiers assigned to this order"/>
             <definition value="Identifiers assigned to this order instance by the orderer and/or the receiver and/or order fulfiller."/>
             <comment value="The identifier.type element is used to distinguish between the identifiers assigned by the orderer (known as the 'Placer' in HL7 v2) and the producer of the observations in response to the order (known as the 'Filler' in HL7 v2).  For further discussion and examples see the resource notes section below."/>
-            <min value="1"/>
+            <min value="0"/>
             <max value="*"/>
             <base>
                 <path value="ServiceRequest.identifier"/>
@@ -739,7 +739,7 @@
             <isModifier value="false"/>
             <isSummary value="true"/>
             <binding>
-                <strength value="preferred"/>
+                <strength value="example"/>
                 <valueSet value="http://hl7.org/fhir/us/dentalreferral/ValueSet/reason-for-referral"/>
             </binding>
             <mapping>
@@ -921,7 +921,7 @@
             <short value="When service should occur"/>
             <definition value="The date/time at which the requested service should occur."/>
             <alias value="schedule"/>
-            <min value="1"/>
+            <min value="0"/>
             <max value="1"/>
             <base>
                 <path value="ServiceRequest.occurrence[x]"/>
@@ -1532,7 +1532,7 @@
         </element>
         <element id="ServiceRequest.identifier">
             <path value="ServiceRequest.identifier"/>
-            <min value="1"/>
+            <min value="0"/>
             <max value="*"/>
             <mustSupport value="true"/>
         </element>
@@ -1540,7 +1540,7 @@
             <path value="ServiceRequest.code"/>
             <mustSupport value="true"/>
             <binding>
-                <strength value="preferred"/>
+                <strength value="example"/>
                 <valueSet value="http://hl7.org/fhir/us/dentalreferral/ValueSet/reason-for-referral"/>
             </binding>
         </element>
@@ -1560,7 +1560,7 @@
         </element>
         <element id="ServiceRequest.occurrence[x]">
             <path value="ServiceRequest.occurrence[x]"/>
-            <min value="1"/>
+            <max value="1"/>
             <mustSupport value="true"/>
         </element>
         <element id="ServiceRequest.insurance">

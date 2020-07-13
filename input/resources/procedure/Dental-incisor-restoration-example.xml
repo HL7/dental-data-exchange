@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Dental-incisor-restoration-example"/>
     <meta>
-        <versionId value="1"/>
-        <lastUpdated value="2020-05-06T21:07:02.980+00:00"/>
-        <source value="#VVxwwWMCKWaDQKm8"/>
+        <versionId value="2"/>
+        <lastUpdated value="2020-07-08T01:29:49.945+00:00"/>
+        <source value="#LMTqT0FpasxK8SNK"/>
         <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"/>
     </meta>
     <identifier>

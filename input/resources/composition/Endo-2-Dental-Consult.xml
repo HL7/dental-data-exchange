@@ -3,11 +3,11 @@
     xmlns="http://hl7.org/fhir">
     <id value="Endo-2-Dental-Consult"/>
     <meta>
-        <versionId value="7"/>
-        <lastUpdated value="2020-06-18T21:27:35.496+00:00"/>
-        <source value="#DPErBgwbP3u1poOM"/>
+        <versionId value="8"/>
+        <lastUpdated value="2020-07-09T17:55:31.619+00:00"/>
+        <source value="#1FtSdpPDtGq3IcZB"/>
         <profile value="http://hl7.org/fhir/us/ccda/StructureDefinition/Consultation-Note"/>
-      <profile value="http://hl7.org/fhir/us/dentalreferral/StructureDefinition/dental-consult"/>
+        <profile value="http://hl7.org/fhir/us/dentalreferral/StructureDefinition/dental-consult"/>
     </meta>
     <language value="en-US"/>
     <extension url="https://http://hl7.org/fhir/us/ccda/StructureDefinition/In-Fulfillment-Of-Order">

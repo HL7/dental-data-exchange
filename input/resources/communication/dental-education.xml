@@ -3,15 +3,16 @@
     xmlns="http://hl7.org/fhir">
     <id value="dental-education"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2020-06-18T21:25:34.624+00:00"/>
-        <source value="#4dtR45rMpj4KrNMX"/>
-      <profile value="http://hl7.org/fhir/us/dentalreferral/StructureDefinition/dental-communication"/>
+        <versionId value="3"/>
+        <lastUpdated value="2020-07-08T01:27:09.053+00:00"/>
+        <source value="#TqUUYzuHVKXs14gp"/>
+        <profile value="http://hl7.org/fhir/us/dentalreferral/StructureDefinition/dental-communication"/>
     </meta>
     <text>
         <status value="generated"/>
         <div
             xmlns="http://www.w3.org/1999/xhtml">Patient education
+        
         
         </div>
     </text>

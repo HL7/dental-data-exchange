@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="dental-observation-codes"/>
     <meta>
-        <versionId value="9"/>
-        <lastUpdated value="2020-06-18T20:49:54.563+00:00"/>
-        <source value="#j2Hr42PwV8ZKeocm"/>
+        <versionId value="11"/>
+        <lastUpdated value="2020-06-29T15:11:32.466+00:00"/>
+        <source value="#KNN3CzSooATCrY8Z"/>
     </meta>
     <url value="http://hl7.org/fhir/us/dentalreferral/ValueSet/dental-observation-codes"/>
     <name value="DentalObservationCodes"/>
@@ -15,32 +15,32 @@
     <compose>
         <include>
             <system value="http://www.ada.org/snodent"/>
-            <concept>
-                <code value="165877D"/>
-                <display value="Clinical finding (finding)"/>
-            </concept>
+            <filter>
+                <property value="parent"/>
+                <op value="="/>
+                <value value="165877D"/>
+            </filter>
+            <filter>
+                <property value="parent"/>
+                <op value="="/>
+                <value value="165733D"/>
+            </filter>
         </include>
         <include>
             <system value="http://snomed.info/sct"/>
-            <concept>
-                <code value="404684003"/>
-                <display value="Clinical finding (finding)"/>
-            </concept>
+            <filter>
+                <property value="parent"/>
+                <op value="="/>
+                <value value="404684003"/>
+            </filter>
+            <filter>
+                <property value="parent"/>
+                <op value="="/>
+                <value value="243796009"/>
+            </filter>
         </include>
         <include>
-            <system value="https://www.ada.org/en/publications/cdt"/>
-        </include>
-        <include>
-            <system value="http://www.ama-assn.org/go/cpt"/>
-        </include>
-        <include>
-            <system value="http://hl7.org/fhir/sid/icd-9-cm"/>
-        </include>
-        <include>
-            <system value="http://hl7.org/fhir/sid/icd-10-us"/>
-        </include>
-        <include>
-            <system value="http://loinc.org"/>
+            <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
         </include>
     </compose>
 </ValueSet>

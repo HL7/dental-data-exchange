@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition
     xmlns="http://hl7.org/fhir">
-    <id value="oral-finding"/>
+    <id value="dental-findings"/>
     <meta>
-        <versionId value="10"/>
-        <lastUpdated value="2020-05-04T14:11:15.421+00:00"/>
-        <source value="#IE5BO04kK62v0z8r"/>
+        <versionId value="6"/>
+        <lastUpdated value="2020-07-13T18:24:12.788+00:00"/>
+        <source value="#DgHvJnuwv2LmWp55"/>
     </meta>
-    <url value="http://hl7.org/fhir/us/dentalreferral/StructureDefinition/oral-finding"/>
-    <name value="OralFinding"/>
-    <title value="Oral Finding"/>
+    <url value="http://hl7.org/fhir/us/dentalreferral/StructureDefinition/dental-findings"/>
+    <name value="DentalFindings"/>
+    <title value="Dental Findings"/>
     <status value="active"/>
-    <description value="This profile is used to convey oral findings including findings of an Odontogram, Peridontal (overall assessment and tooth-specific observations), Intra and Extra Oral Soft Tissue, TMJ, TMD, and Occlusion. Note - fingins in this profile often support associated diagnoses (FHIR Conditions). "/>
+    <description value="This profile is used to convey oral findings including findings of an Odontogram, Peridontal (overall assessment and tooth-specific observations), Intra and Extra Oral Soft Tissue, TMJ, TMD, and Occlusion. Note - findings in this profile often support associated diagnoses (FHIR Conditions). "/>
     <fhirVersion value="4.0.1"/>
     <mapping>
         <identity value="workflow"/>

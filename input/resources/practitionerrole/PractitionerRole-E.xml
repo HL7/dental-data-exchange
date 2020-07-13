@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="PractitionerRole-E"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2020-05-11T15:11:45.648+00:00"/>
-        <source value="#bfP3R9Fr9Vf9Z2DL"/>
+        <versionId value="4"/>
+        <lastUpdated value="2020-07-09T18:27:38.575+00:00"/>
+        <source value="#qaeFGWxLmWKJpiL9"/>
         <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole"/>
     </meta>
     <practitioner>
@@ -30,8 +30,8 @@
             <display value="Endodontics"/>
         </coding>
     </specialty>
-  <telecom>
-    <system value="phone"/>
-    <value value="5555556666"/>
-  </telecom>
+    <telecom>
+        <system value="phone"/>
+        <value value="5555556666"/>
+    </telecom>
 </PractitionerRole>

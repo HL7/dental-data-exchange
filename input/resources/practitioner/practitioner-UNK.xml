@@ -1,19 +1,22 @@
-<Practitioner xmlns="http://hl7.org/fhir">
-  <id value="practitioner-UNK"/>
-  <meta>
-    <profile
-      value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"/>
-  </meta>
-  <identifier>
-    <system value="http://hl7.org.fhir/sid/us-npi"/>
-    <value value="555555555"/>
-  </identifier>
-  <name>
-    <family value="UNK">
-      <extension url="http://hl7.org/fhir/ValueSet/data-absent-reason">
-        <!-- 	The value is expected to exist but is not known. -->
-        <valueCode value="unknown"/>
-      </extension>
-    </family>
-  </name>
+<?xml version="1.0" encoding="UTF-8"?>
+<Practitioner
+    xmlns="http://hl7.org/fhir">
+    <id value="practitioner-UNK"/>
+    <meta>
+        <versionId value="2"/>
+        <lastUpdated value="2020-07-08T02:06:58.558+00:00"/>
+        <source value="#qsYGzOK6DnspJlap"/>
+        <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"/>
+    </meta>
+    <identifier>
+        <system value="http://hl7.org.fhir/sid/us-npi"/>
+        <value value="555555555"/>
+    </identifier>
+    <name>
+        <family value="UNK">
+            <extension url="http://hl7.org/fhir/ValueSet/data-absent-reason">
+                <valueCode value="unknown"/>
+            </extension>
+        </family>
+    </name>
 </Practitioner>

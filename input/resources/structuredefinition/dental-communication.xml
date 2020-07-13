@@ -3,15 +3,15 @@
     xmlns="http://hl7.org/fhir">
     <id value="dental-communication"/>
     <meta>
-        <versionId value="12"/>
-        <lastUpdated value="2020-06-18T20:42:36.803+00:00"/>
-        <source value="#49ZSCguaUugCwarm"/>
+        <versionId value="13"/>
+        <lastUpdated value="2020-07-07T20:36:15.758+00:00"/>
+        <source value="#yUrx4NLtBcvXIjfE"/>
     </meta>
     <url value="http://hl7.org/fhir/us/dentalreferral/StructureDefinition/dental-communication"/>
     <name value="DentalCommunication"/>
     <title value="Dental Communication"/>
     <status value="active"/>
-    <description value="This profile is used to convey explicit verbal and written communication between providers, patient,s and other members of the care team. "/>
+    <description value="This profile is used to convey verbal and written communication and education between providers, patients and other members of the care team."/>
     <fhirVersion value="4.0.1"/>
     <mapping>
         <identity value="workflow"/>

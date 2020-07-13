@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Aetna-organization"/>
     <meta>
-        <versionId value="1"/>
-        <lastUpdated value="2020-05-13T17:09:29.512+00:00"/>
-        <source value="#w6sFQ3WcDI84R8ar"/>
+        <versionId value="2"/>
+        <lastUpdated value="2020-07-08T01:29:18.859+00:00"/>
+        <source value="#ln5Tz1NXGNZGbtrk"/>
         <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization"/>
     </meta>
     <identifier>

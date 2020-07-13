@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Maxillary-perm7-example"/>
     <meta>
-        <versionId value="1"/>
-        <lastUpdated value="2020-05-06T21:07:02.472+00:00"/>
-        <source value="#e7vEyDSyMAL2O5kt"/>
+        <versionId value="4"/>
+        <lastUpdated value="2020-07-08T01:27:47.370+00:00"/>
+        <source value="#f3G68GYPNPq6DHWR"/>
         <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"/>
     </meta>
     <clinicalStatus>

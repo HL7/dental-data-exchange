@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Dental-Aetna"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2020-06-18T21:06:59.009+00:00"/>
-        <source value="#KenQXkdIfHxrL9LR"/>
+        <versionId value="4"/>
+        <lastUpdated value="2020-07-10T17:24:40.970+00:00"/>
+        <source value="#RK1a87RwV8ax0jlb"/>
         <profile value="http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/hrex-coverage"/>
     </meta>
     <identifier>

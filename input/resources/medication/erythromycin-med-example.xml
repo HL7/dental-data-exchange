@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="erythromycin-med-example"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2020-06-18T21:16:35.620+00:00"/>
-        <source value="#ouG8AVxCHZfNqkWD"/>
+        <versionId value="4"/>
+        <lastUpdated value="2020-07-09T18:15:23.025+00:00"/>
+        <source value="#gspKBRK7HoGhPdUm"/>
         <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-medication"/>
     </meta>
     <text>
@@ -19,8 +19,8 @@
         <coding>
             <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
             <code value="315877"/>
-          <display value="Erythromycin 500 MG"/>
+            <display value="Erythromycin 500 MG"/>
         </coding>
-      <text value="Erythromycin 500 MG"/>
+        <text value="Erythromycin 500 MG"/>
     </code>
 </Medication>

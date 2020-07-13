@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="ibuprofen-med-example-2"/>
     <meta>
-        <versionId value="1"/>
-        <lastUpdated value="2020-05-06T21:07:02.475+00:00"/>
-        <source value="#7Ri2hJAfRMfr7PpR"/>
+        <versionId value="3"/>
+        <lastUpdated value="2020-07-09T18:15:52.760+00:00"/>
+        <source value="#cZsXZlvyY9BWXwhp"/>
         <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-medication"/>
     </meta>
     <text>
@@ -19,8 +19,8 @@
         <coding>
             <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
             <code value="316074"/>
-          <display value="Ibuprofen 200 MG"/>
+            <display value="Ibuprofen 200 MG"/>
         </coding>
-      <text value="Ibuprofen 200 MG"/>
+        <text value="Ibuprofen 200 MG"/>
     </code>
 </Medication>
