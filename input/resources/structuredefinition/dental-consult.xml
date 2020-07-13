@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="dental-consult"/>
     <meta>
-        <versionId value="22"/>
-        <lastUpdated value="2020-07-09T15:39:02.822+00:00"/>
-        <source value="#freZfZK9AbEAxdVc"/>
+        <versionId value="23"/>
+        <lastUpdated value="2020-07-13T21:02:53.570+00:00"/>
+        <source value="#5fjUfRzk1LmBelmE"/>
     </meta>
     <url value="http://hl7.org/fhir/us/dentalreferral/StructureDefinition/dental-consult"/>
     <version value="0.0.1"/>
@@ -50,6 +50,7 @@
         </element>
         <element id="Composition.extension">
             <path value="Composition.extension"/>
+            <max value="1"/>
             <type>
                 <code value="Extension"/>
                 <targetProfile value="http://hl7.org/fhir/us/ccda/StructureDefinition/In-Fulfillment-Of-Order"/>

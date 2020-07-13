@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="dentalreferral"/>
     <meta>
-        <versionId value="236"/>
-        <lastUpdated value="2020-07-13T18:12:59.612+00:00"/>
-        <source value="#Zr4QiYXktkmAWFzX"/>
+        <versionId value="237"/>
+        <lastUpdated value="2020-07-13T21:03:48.771+00:00"/>
+        <source value="#Tm3tHPeuxBEd8hz6"/>
     </meta>
     <url value="http://hl7.org/fhir/us/dentalreferral"/>
     <version value="0.0.1"/>
@@ -598,21 +598,21 @@
             <exampleBoolean value="true"/>
         </resource>
         <page>
-            <nameUrl value="index.md"/>
+            <nameUrl value="index.html"/>
             <title value="Introduction"/>
             <generation value="markdown"/>
             <page>
-                <nameUrl value="Scope.md"/>
+                <nameUrl value="Scope.html"/>
                 <title value="Scope"/>
                 <generation value="markdown"/>
             </page>
             <page>
-                <nameUrl value="Dependencies.md"/>
+                <nameUrl value="Dependencies.html"/>
                 <title value="Dependencies"/>
                 <generation value="markdown"/>
             </page>
             <page>
-                <nameUrl value="Team.md"/>
+                <nameUrl value="Team.html"/>
                 <title value="Dental Data Exchange Project Team"/>
                 <generation value="markdown"/>
             </page>

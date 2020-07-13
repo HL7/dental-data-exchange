@@ -1,3 +1,5 @@
+[Previous Page - Scope](Scope.html)
+
 This Implementation Guide is based upon the prior work from the US Core and CCDA-on-FHIR Implementation Guides. This Implementation Guide is supported by the Da Vinci initiative which is a private effort to accelerate the adoption of Health Level Seven International Fast Healthcare Interoperability Resources (HL7. FHIR.) as the standard to support and integrate value-based care (VBC) data exchange across communities. As an HL7 FHIR Implementation Guide, changes to this specification are managed by the sponsoring Payer/Provider Information Exchange (PPIE) workgroup and are incorporated as part of the standard balloting process.
 
 US Core Profiles used by this guide:
@@ -21,3 +23,5 @@ http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/hrex-coverage.html
 
 Occupation Data for HEalth (ODH) profile used by this guide:
 http://hl7.org/fhir/us/odh/StructureDefinition/odh-PastOrPresentJob.html
+
+[Next Page - Dental Data Exchange Project Team](Team.html)

@@ -1,3 +1,5 @@
+[Previous Page - Dependencies](Dependencies.html)
+
 This guide was developed and produced through the efforts of Health Level Seven (HL7).
 The editors appreciate the support and sponsorship of the HL7 Payer/Provider Information Exchange (PIE) Working Group, the HL7 Structured Documents Working Group (SDWG), and all volunteers and staff associated with the creation of this document. This guide would not have been possible without the support of the following organizations:
 * American Dental Association

@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="dental-referralnote"/>
     <meta>
-        <versionId value="40"/>
-        <lastUpdated value="2020-07-10T18:24:38.846+00:00"/>
-        <source value="#iii5vwvJAvYJ2GxE"/>
+        <versionId value="41"/>
+        <lastUpdated value="2020-07-13T20:56:53.723+00:00"/>
+        <source value="#rzwIQWMhVq8BhPEW"/>
     </meta>
     <url value="http://hl7.org/fhir/us/dentalreferral/StructureDefinition/dental-referralnote"/>
     <name value="DentalReferralNote"/>
@@ -9034,9 +9034,9 @@
                 <map value=".entry"/>
             </mapping>
         </element>
-        <element id="Composition.section:advance_directives_section.entry:consent_entry">
+        <element id="Composition.section:advance_directives_section.entry:advance_directive_entry">
             <path value="Composition.section.entry"/>
-            <sliceName value="consent_entry"/>
+            <sliceName value="advance_directive_entry"/>
             <short value="A reference to data that supports this section"/>
             <definition value="A reference to the actual resource from which the narrative in the section is derived."/>
             <comment value="If there are no entries in the list, an emptyReason SHOULD be provided."/>
@@ -9049,7 +9049,7 @@
             </base>
             <type>
                 <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/StructureDefinition/AdvanceDirective"/>
+                <targetProfile value="http://hl7.org/fhir/us/ccda/StructureDefinition/AdvanceDirective"/>
             </type>
             <condition value="cmp-2"/>
             <mustSupport value="true"/>
@@ -17469,7 +17469,60 @@
                 <map value=".component.structuredBody.component.section"/>
             </mapping>
         </element>
-        <element id="Composition.section.id">
+        <element id="Composition.section:slice7557">
+            <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
+                <valueString value="Section"/>
+            </extension>
+            <path value="Composition.section"/>
+            <sliceName value="slice7557"/>
+            <short value="Composition is broken into sections"/>
+            <definition value="The root of the sections that make up the composition."/>
+            <min value="0"/>
+            <max value="*"/>
+            <base>
+                <path value="Composition.section"/>
+                <min value="0"/>
+                <max value="*"/>
+            </base>
+            <type>
+                <code value="BackboneElement"/>
+            </type>
+            <constraint>
+                <key value="ele-1"/>
+                <severity value="error"/>
+                <human value="All FHIR elements must have a @value or children"/>
+                <expression value="hasValue() or (children().count() &gt; id.count())"/>
+                <xpath value="@value|f:*|h:div"/>
+                <source value="Element"/>
+            </constraint>
+            <constraint>
+                <key value="cmp-1"/>
+                <severity value="error"/>
+                <human value="A section must contain at least one of text, entries, or sub-sections"/>
+                <expression value="text.exists() or entry.exists() or section.exists()"/>
+                <xpath value="exists(f:text) or exists(f:entry) or exists(f:section)"/>
+                <source value="Composition.section"/>
+            </constraint>
+            <constraint>
+                <key value="cmp-2"/>
+                <severity value="error"/>
+                <human value="A section can only have an emptyReason if it is empty"/>
+                <expression value="emptyReason.empty() or entry.empty()"/>
+                <xpath value="not(exists(f:emptyReason) and exists(f:entry))"/>
+                <source value="Composition.section"/>
+            </constraint>
+            <isModifier value="false"/>
+            <isSummary value="false"/>
+            <mapping>
+                <identity value="rim"/>
+                <map value="./outboundRelationship[typeCode=&quot;COMP&quot; and isNormalActRelationship()]/target[moodCode=&quot;EVN&quot; and classCode=&quot;DOCSECT&quot; and isNormalAct]"/>
+            </mapping>
+            <mapping>
+                <identity value="cda"/>
+                <map value=".component.structuredBody.component.section"/>
+            </mapping>
+        </element>
+        <element id="Composition.section:slice7557.id">
             <path value="Composition.section.id"/>
             <representation value="xmlAttr"/>
             <short value="Unique id for inter-element referencing"/>
@@ -17491,7 +17544,7 @@
                 <map value="n/a"/>
             </mapping>
         </element>
-        <element id="Composition.section.extension">
+        <element id="Composition.section:slice7557.extension">
             <path value="Composition.section.extension"/>
             <short value="Additional content defined by implementations"/>
             <definition value="May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
@@ -17515,7 +17568,7 @@
                 <map value="n/a"/>
             </mapping>
         </element>
-        <element id="Composition.section.modifierExtension">
+        <element id="Composition.section:slice7557.modifierExtension">
             <path value="Composition.section.modifierExtension"/>
             <short value="Extensions that cannot be ignored even if unrecognized"/>
             <definition value="May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.  Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself)."/>
@@ -17542,7 +17595,7 @@
                 <map value="N/A"/>
             </mapping>
         </element>
-        <element id="Composition.section.title">
+        <element id="Composition.section:slice7557.title">
             <path value="Composition.section.title"/>
             <short value="Label for section (e.g. for ToC)"/>
             <definition value="The label for this particular section.  This will be part of the rendered content for the document, and is often used to build a table of contents."/>
@@ -17572,7 +17625,7 @@
                 <map value=".title"/>
             </mapping>
         </element>
-        <element id="Composition.section.code">
+        <element id="Composition.section:slice7557.code">
             <path value="Composition.section.code"/>
             <short value="Classification of section (recommended)"/>
             <definition value="A code identifying the kind of content contained within the section. This must be consistent with the section title."/>
@@ -17613,7 +17666,7 @@
                 <map value=".code"/>
             </mapping>
         </element>
-        <element id="Composition.section.author">
+        <element id="Composition.section:slice7557.author">
             <path value="Composition.section.author"/>
             <short value="Who and/or what authored the section"/>
             <definition value="Identifies who is responsible for the information in this section, not necessarily who typed it in."/>
@@ -17649,7 +17702,7 @@
                 <map value=".author.assignedAuthor"/>
             </mapping>
         </element>
-        <element id="Composition.section.focus">
+        <element id="Composition.section:slice7557.focus">
             <path value="Composition.section.focus"/>
             <short value="Who/what the section is about, when it is not about the subject of composition"/>
             <definition value="The actual focus of the section when it is not the subject of the composition, but instead represents something or someone associated with the subject such as (for a patient subject) a spouse, parent, fetus, or donor. If not focus is specified, the focus is assumed to be focus of the parent section, or, for a section in the Composition itself, the subject of the composition. Sections with a focus SHALL only include resources where the logical subject (patient, subject, focus, etc.) matches the section focus, or the resources have no logical subject (few resources)."/>
@@ -17672,7 +17725,7 @@
                 <map value=".subject? (CDA did not differentiate between subject and focus)"/>
             </mapping>
         </element>
-        <element id="Composition.section.text">
+        <element id="Composition.section:slice7557.text">
             <path value="Composition.section.text"/>
             <short value="Text summary of the section, for human interpretation"/>
             <definition value="A human-readable narrative that contains the attested content of the section, used to represent the content of the resource to a human. The narrative need not encode all the structured data, but is required to contain sufficient detail to make it &quot;clinically safe&quot; for a human to just read the narrative."/>
@@ -17699,7 +17752,7 @@
                 <map value=".text"/>
             </mapping>
         </element>
-        <element id="Composition.section.mode">
+        <element id="Composition.section:slice7557.mode">
             <path value="Composition.section.mode"/>
             <short value="working | snapshot | changes"/>
             <definition value="How the entry list was prepared - whether it is a working list that is suitable for being maintained on an ongoing basis, or if it represents a snapshot of a list of items from another source, or whether it is a prepared list where items may be marked as added, modified or deleted."/>
@@ -17738,7 +17791,7 @@
                 <map value="n/a"/>
             </mapping>
         </element>
-        <element id="Composition.section.orderedBy">
+        <element id="Composition.section:slice7557.orderedBy">
             <path value="Composition.section.orderedBy"/>
             <short value="Order of section entries"/>
             <definition value="Specifies the order applied to the items in the section entries."/>
@@ -17773,7 +17826,7 @@
                 <map value="n/a"/>
             </mapping>
         </element>
-        <element id="Composition.section.entry">
+        <element id="Composition.section:slice7557.entry">
             <path value="Composition.section.entry"/>
             <slicing>
                 <discriminator>
@@ -17809,7 +17862,7 @@
                 <map value=".entry"/>
             </mapping>
         </element>
-        <element id="Composition.section.emptyReason">
+        <element id="Composition.section:slice7557.emptyReason">
             <path value="Composition.section.emptyReason"/>
             <short value="Why the section is empty"/>
             <definition value="If the section is empty, why the list is empty. An empty section typically has some text explaining the empty reason."/>
@@ -17845,7 +17898,7 @@
                 <map value="n/a"/>
             </mapping>
         </element>
-        <element id="Composition.section.section">
+        <element id="Composition.section:slice7557.section">
             <path value="Composition.section.section"/>
             <short value="Nested Section"/>
             <definition value="A nested sub-section within this section."/>
@@ -17857,7 +17910,7 @@
                 <min value="0"/>
                 <max value="*"/>
             </base>
-            <contentReference value="#Composition.section"/>
+            <contentReference value="#Composition.section:slice7557"/>
             <condition value="cmp-1"/>
             <isModifier value="false"/>
             <isSummary value="false"/>
@@ -18010,9 +18063,20 @@
         </element>
         <element id="Composition.section">
             <path value="Composition.section"/>
+            <slicing>
+                <discriminator>
+                    <type value="value"/>
+                    <path value="code"/>
+                </discriminator>
+                <rules value="open"/>
+            </slicing>
             <min value="1"/>
         </element>
-        <element id="Composition.section.code">
+        <element id="Composition.section:slice7557">
+            <path value="Composition.section"/>
+            <sliceName value="slice7557"/>
+        </element>
+        <element id="Composition.section:slice7557.code">
             <path value="Composition.section.code"/>
             <min value="0"/>
             <max value="1"/>
@@ -18023,7 +18087,7 @@
                 </coding>
             </patternCodeableConcept>
         </element>
-        <element id="Composition.section.entry">
+        <element id="Composition.section:slice7557.entry">
             <path value="Composition.section.entry"/>
             <slicing>
                 <discriminator>
