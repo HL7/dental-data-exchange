@@ -23,6 +23,7 @@
     <subject>
         <reference value="Patient/example-dental"/>
     </subject>
+  <performedDateTime value="2020-03-10"/>
     <performer>
         <actor>
             <reference value="Practitioner/practitioner-M"/>

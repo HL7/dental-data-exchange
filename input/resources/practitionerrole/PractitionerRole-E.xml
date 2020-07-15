@@ -25,9 +25,9 @@
     </code>
     <specialty>
         <coding>
-            <system value="http://nucc.org/provider-taxonomy"/>
-            <code value="1223E0200X"/>
-            <display value="Endodontics"/>
+          <system value="http://snomed.info/sct"/>
+          <code value="408441001"/>
+          <display value="Endodontics - specialty"/>
         </coding>
     </specialty>
     <telecom>

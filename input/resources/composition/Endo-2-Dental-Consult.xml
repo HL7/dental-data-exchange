@@ -10,16 +10,16 @@
         <profile value="http://hl7.org/fhir/us/dentalreferral/StructureDefinition/dental-consult"/>
     </meta>
     <language value="en-US"/>
-    <extension url="https://http://hl7.org/fhir/us/ccda/StructureDefinition/In-Fulfillment-Of-Order">
+    <extension url="http://hl7.org/fhir/us/ccda/StructureDefinition/In-Fulfillment-Of-Order">
         <valueReference>
             <reference value="ServiceRequest/example-dental-referral-2"/>
             <display value="Endodontist Referral"/>
         </valueReference>
     </extension>
-    <identifier>
-        <system value="urn:ietf:rfc:3986"/>
-        <value value="http://any.org/2"/>
-    </identifier>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:uuid:e28fefc8-5aac-427c-93d7-f0bc7d633a9a"/>
+  </identifier>
     <status value="final"/>
     <type>
         <coding>

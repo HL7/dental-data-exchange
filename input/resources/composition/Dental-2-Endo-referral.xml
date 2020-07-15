@@ -615,7 +615,7 @@
             <coding>
                 <system value="http://loinc.org"/>
                 <code value="48768-6"/>
-                <display value="Payers Section (V3)"/>
+              <display value="Payment sources Document"/>
             </coding>
         </code>
         <text>
@@ -632,7 +632,7 @@
             <coding>
                 <system value="http://loinc.org"/>
                 <code value="69730-0"/>
-                <display value="Insturctions Section (V2)"/>
+                <display value="Instructions"/>
             </coding>
         </code>
         <text>

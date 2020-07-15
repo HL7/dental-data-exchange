@@ -20,14 +20,14 @@
         <coding>
             <system value="http://nucc.org/provider-taxonomy"/>
             <code value="122300000X"/>
-            <display value="General Dentist"/>
+            <display value="Dentist"/>
         </coding>
     </code>
     <specialty>
         <coding>
-            <system value="http://nucc.org/provider-taxonomy"/>
-            <code value="122300000X"/>
-            <display value="General Denist"/>
+          <system value="http://snomed.info/sct"/>
+          <code value="408444009"/>
+          <display value="General dental practice"/>
         </coding>
     </specialty>
     <telecom>

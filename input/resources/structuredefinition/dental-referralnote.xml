@@ -114,7 +114,7 @@
         <rules value="open"/>
       </slicing>
     </element>
-    
+    <!-- Including HPI Section section as required section -->
     <element id="Composition.section:history_of_present_illness_section/dental_history_of_present_illness_section">
       <path value="Composition.section" />
       <sliceName value="history_of_present_illness_section/dental_history_of_present_illness_section"/>
@@ -148,6 +148,7 @@
       <min value="1"/>
       <mustSupport value="true"/>
     </element>
+    <!-- Including Procedures Section section as required section -->
     <element id="Composition.section:procedures_section/dental_procedures_section">
       <path value="Composition.section" />
       <sliceName value="procedures_section/dental_procedures_section"/>
@@ -201,6 +202,7 @@
       </type>
       <mustSupport value="true"/>
     </element>
+    <!-- Including Plan of Treatment Section section as required section -->
     <element id="Composition.section:plan_of_treatment_section/dental_plan_of_treatment_section">
       <path value="Composition.section" />
       <sliceName value="plan_of_treatment_section/dental_plan_of_treatment_section"/>
@@ -252,6 +254,7 @@
       </type>
       <mustSupport value="true"/>
     </element>
+    <!-- Including Assessment Section section as required section -->
     <element id="Composition.section:assessment_section/dental_assessment_section">
       <path value="Composition.section" />
       <sliceName value="assessment_section/dental_assessment_section"/>
@@ -286,7 +289,7 @@
       <min value="1"/>
       <mustSupport value="true"/>
     </element>
-    
+    <!-- Including Dental Findings Section section as optional section -->
     <element id="Composition.section:dental_findings_section">
       <path value="Composition.section" />
       <sliceName value="DentalFindingsSection" />
@@ -332,6 +335,7 @@
       </type>
       <mustSupport value="true"/>
     </element>
+    <!-- Including Instructions section as optional section -->
     <element id="Composition.section:instructions">
       <path value="Composition.section"/>
       <sliceName value="instructions"/>
@@ -376,6 +380,7 @@
       </type>
       <mustSupport value="true"/>
     </element>
+    <!-- Adding Payers section as optional section -->
     <element id="Composition.section:payers">
       <path value="Composition.section" />
       <sliceName value="payers" />
@@ -421,7 +426,5 @@
       </type>
       <mustSupport value="true"/>
     </element>
-    
-    
   </differential>
 </StructureDefinition>

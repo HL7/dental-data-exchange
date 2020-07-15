@@ -17,7 +17,7 @@
         <coding>
             <system value="http://terminology.hl7.org/CodeSystem/organization-type"/>
             <code value="prov"/>
-            <display value="General Dental Provider"/>
+          <display value="Healthcare Provider"/>
         </coding>
     </type>
     <name value="Good Oral Health Clinic"/>

@@ -58,7 +58,7 @@
       </reference>
       <name value="Dental Consult Note" />
       <description
-        value="This Profile defines the Dental Consult Note profile. It contains the textual information regarding what was observed and performed by a general dentist or dental specialist in response to a dental referral as well as references to supplemental dental profiles for that referral. This Consult Note is linked to its Referral via the In-Fulfillment-Of extension reference to ServiceRequest. " />
+        value="This Profile defines the Dental Consult Note profile. It contains the textual information regarding what was observed and performed by a general dentist or dental specialist in response to a dental referral as well as references to supplemental dental profiles for that referral. This Consult Note is linked to its Referral via the In-Fulfillment-Of extension reference to ServiceRequest." />
       <exampleBoolean value="false" />
     </resource>
     <resource>
@@ -67,7 +67,7 @@
         <display value="Caries Risk Assessment" />
       </reference>
       <name value="Caries Risk Assessment ValueSet" />
-      <description value="This ValueSet contains codes for the Caries Risk Assessment " />
+      <description value="This ValueSet contains codes for the Caries Risk Assessment" />
       <exampleBoolean value="false" />
     </resource>
     <resource>
@@ -96,7 +96,7 @@
       </reference>
       <name value="Dental Service Request Profile" />
       <description
-        value="This profile contains information regarding the dental referral request including a required identifier and a reference to the reason for the referral, if possible. It also includes basic information such as the patient, referring provider, and encounter information that resulted in the referral. " />
+        value="This profile contains information regarding the dental referral request including a required identifier and a reference to the reason for the referral, if possible. It also includes basic information such as the patient, referring provider, and encounter information that resulted in the referral." />
       <exampleBoolean value="false" />
     </resource>
     <resource>
@@ -106,7 +106,7 @@
       </reference>
       <name value="Dental Findings Profile" />
       <description
-        value="This profile is used to convey oral findings including findings of an Odontogram, Peridontal (overall assessment and tooth-specific observations), Intra and Extra Oral Soft Tissue, TMJ, TMD, and Occlusion. Note - findings in this profile often support associated diagnoses (FHIR Conditions). " />
+        value="This profile is used to convey oral findings including findings of an Odontogram, Peridontal (overall assessment and tooth-specific observations), Intra and Extra Oral Soft Tissue, TMJ, TMD, and Occlusion. Note - findings in this profile often support associated diagnoses (FHIR Conditions)." />
       <exampleBoolean value="false" />
     </resource>
     <resource>
@@ -135,7 +135,7 @@
       </reference>
       <name value="Dental Observation Codes ValueSet" />
       <description
-        value="This ValueSet contains all ICD-9/10, CPT, CDT, LOINC codes, as well as the Clinical Findings (finding) concept from both Snomed and Snodent. " />
+        value="This ValueSet contains all ICD-9/10, CPT, CDT, LOINC codes, as well as the Clinical Findings (finding) concept from both Snomed and Snodent." />
       <exampleBoolean value="false" />
     </resource>
     <resource>
@@ -145,7 +145,7 @@
       </reference>
       <name value="General Oral Health Risk Assessment Profile" />
       <description
-        value="This profile is used to document a clinician's assessment of a patient's overall oral health and general risk assessment based on all oral information and observations available. Potential factors to consider as inputs for this overall oral health status/assessment include Caries risk, periodontal risk factors, specific habits such as eating/nutrition and brushing/flossing habits, as well as broader considerations including Coverage and socio-economic status. " />
+        value="This profile is used to document a clinician's assessment of a patient's overall oral health and general risk assessment based on all oral information and observations available. Potential factors to consider as inputs for this overall oral health status/assessment include Caries risk, periodontal risk factors, specific habits such as eating/nutrition and brushing/flossing habits, as well as broader considerations including Coverage and socio-economic status." />
       <exampleBoolean value="false" />
     </resource>
     <resource>
@@ -163,7 +163,7 @@
       </reference>
       <name value="Capability Statement - Dental" />
       <description
-        value="Note to ballot commenters- we encourage ballot comments, especially from potential implementer systems, regarding Capability Statements.&#xA;&#xA;This resource defines the expected capabilities for both client and server participating in referral exchanges involving a dental actor (medical/dental and dental/dental). " />
+        value="Note to ballot commenters- we encourage ballot comments, especially from potential implementer systems, regarding Capability Statements.&#xA;&#xA;This resource defines the expected capabilities for both client and server participating in referral exchanges involving a dental actor (medical/dental and dental/dental)." />
       <exampleBoolean value="false" />
     </resource>
     <resource>
@@ -495,7 +495,7 @@
       </reference>
       <name value="Oral Risk Assessment" />
       <description
-        value="This ValueSet is an overarching ValueSet to group possible Risk Assessment types, including caries risk assessment, as well as potentially additional risk assessments in the future such as periodontal risk. " />
+        value="This ValueSet is an overarching ValueSet to group possible Risk Assessment types, including caries risk assessment, as well as potentially additional risk assessments in the future such as periodontal risk." />
       <exampleBoolean value="false" />
     </resource>
     <resource>
@@ -505,7 +505,7 @@
       </reference>
       <name value="Dental Reason For Referral" />
       <description
-        value="This ValueSet contains coded prominent reasons for referral between medical and dental care settings. " />
+        value="This ValueSet contains coded prominent reasons for referral between medical and dental care settings." />
       <exampleBoolean value="false" />
     </resource>
     <resource>

@@ -593,7 +593,7 @@
             <coding>
                 <system value="http://loinc.org"/>
                 <code value="48768-6"/>
-                <display value="Payers Section (V3)"/>
+              <display value="Payment sources Document"/>
             </coding>
         </code>
         <text>

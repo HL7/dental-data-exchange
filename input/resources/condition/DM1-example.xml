@@ -36,14 +36,14 @@
         <coding>
             <system value="http://snomed.info/sct"/>
             <code value="46635009"/>
-            <display value="Type 1 diabetes"/>
+          <display value="Diabetes mellitus type I"/>
         </coding>
         <coding>
             <system value="http://www.ada.org/snodent"/>
             <code value="175321D"/>
-            <display value="Type 1 diabetes"/>
+          <display value="Diabetes mellitus type I"/>
         </coding>
-        <text value="Type 1 diabetes"/>
+      <text value="Diabetes mellitus type I"/>
     </code>
     <subject>
         <reference value="Patient/example-dental"/>
