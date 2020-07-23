@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Encounter
+    xmlns="http://hl7.org/fhir">
+    <id value="Dental-encounter"/>
+    <meta>
+        <versionId value="3"/>
+        <lastUpdated value="2020-07-20T18:16:38.636+00:00"/>
+        <source value="#ddXAzepgPcvugmm4"/>
+        <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter"/>
+    </meta>
+    <status value="finished"/>
+    <class>
+        <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+        <code value="AMB"/>
+        <display value="ambulatory"/>
+    </class>
+    <type>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="185347001"/>
+        </coding>
+        <text value="Encounter for problem (procedure)"/>
+    </type>
+    <priority>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-ActPriority"/>
+            <code value="R"/>
+            <display value="routine"/>
+        </coding>
+    </priority>
+    <subject>
+        <reference value="Patient/example-dental"/>
+    </subject>
+    <period>
+        <start value="2020-02-16T15:00:14-05:00"/>
+        <end value="2020-02-16T15:30:14-05:00"/>
+    </period>
+</Encounter>

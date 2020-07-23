@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PractitionerRole
+    xmlns="http://hl7.org/fhir">
+    <id value="PractitionerRole-D"/>
+    <meta>
+        <versionId value="5"/>
+        <lastUpdated value="2020-07-16T15:29:22.323+00:00"/>
+        <source value="#LljscrbzyLuDMEtx"/>
+        <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole"/>
+    </meta>
+    <practitioner>
+        <reference value="Practitioner/practitioner-D"/>
+        <display value="Dr. John D"/>
+    </practitioner>
+    <organization>
+        <reference value="Organization/GOHC-organization"/>
+        <display value="Good Oral Health Clinic"/>
+    </organization>
+    <code>
+        <coding>
+            <system value="http://nucc.org/provider-taxonomy"/>
+            <code value="122300000X"/>
+            <display value="Dentist"/>
+        </coding>
+    </code>
+    <specialty>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="408444009"/>
+            <display value="General dental practice"/>
+        </coding>
+    </specialty>
+    <telecom>
+        <system value="phone"/>
+        <value value="5555555555"/>
+    </telecom>
+</PractitionerRole>

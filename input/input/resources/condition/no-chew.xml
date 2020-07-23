@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Condition
+    xmlns="http://hl7.org/fhir">
+    <id value="no-chew"/>
+    <meta>
+        <versionId value="2"/>
+        <lastUpdated value="2020-07-21T18:49:07.328+00:00"/>
+        <source value="#a3rZUg2ZYTwtMPAw"/>
+        <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"/>
+    </meta>
+    <clinicalStatus>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
+            <code value="active"/>
+            <display value="Active"/>
+        </coding>
+        <text value="Active"/>
+    </clinicalStatus>
+    <verificationStatus>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-ver-status"/>
+            <code value="confirmed"/>
+            <display value="Confirmed"/>
+        </coding>
+        <text value="Confirmed"/>
+    </verificationStatus>
+    <category>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-category"/>
+            <code value="problem-list-item"/>
+            <display value="Problem List Item"/>
+        </coding>
+        <text value="Problem List Item"/>
+    </category>
+    <code>
+        <coding>
+            <system value="http://www.ada.org/snodent"/>
+            <code value="126488D"/>
+            <display value="Unable to chew (finding)"/>
+        </coding>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="288920002"/>
+            <display value="Unable to chew (finding)"/>
+        </coding>
+        <text value="Unable to chew (finding)"/>
+    </code>
+    <subject>
+        <reference value="Patient/example-dental"/>
+        <display value="Patient A"/>
+    </subject>
+</Condition>

@@ -1,0 +1,10 @@
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li><a href="index.html">IG Home</a></li>
+  <li><a href="toc.html">Table of Contents</a></li>
+  <li><a href="dependencies.html">Dependencies</a></li>
+
+  <li><a href="scope.html">Scope</a></li>
+
+  <li><a href="best_practice_recommendations.html">Best Practice Recommendations</a></li>
+  <li><a href="artifacts.html">Artifact Index</a></li>
+</ul>

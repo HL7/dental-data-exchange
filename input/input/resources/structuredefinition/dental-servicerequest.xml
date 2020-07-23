@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition
+    xmlns="http://hl7.org/fhir">
+    <id value="dental-servicerequest"/>
+    <meta>
+        <versionId value="19"/>
+        <lastUpdated value="2020-07-23T15:45:16.722+00:00"/>
+        <source value="#cBK3tBB9AIVQFvU6"/>
+    </meta>
+    <url value="http://hl7.org/fhir/us/dentalreferral/dental-servicerequest"/>
+    <name value="DentalServiceRequest"/>
+    <title value="Dental Service Request"/>
+    <status value="active"/>
+    <description value="This profile contains information regarding the dental referral request including a required identifier and a reference to the reason for the referral, if possible. It also includes basic information such as the patient, referring provider, and encounter information that resulted in the referral. "/>
+    <fhirVersion value="4.0.1"/>
+    <mapping>
+        <identity value="workflow"/>
+        <uri value="http://hl7.org/fhir/workflow"/>
+        <name value="Workflow Pattern"/>
+    </mapping>
+    <mapping>
+        <identity value="v2"/>
+        <uri value="http://hl7.org/v2"/>
+        <name value="HL7 v2 Mapping"/>
+    </mapping>
+    <mapping>
+        <identity value="rim"/>
+        <uri value="http://hl7.org/v3"/>
+        <name value="RIM Mapping"/>
+    </mapping>
+    <mapping>
+        <identity value="w5"/>
+        <uri value="http://hl7.org/fhir/fivews"/>
+        <name value="FiveWs Pattern Mapping"/>
+    </mapping>
+    <mapping>
+        <identity value="quick"/>
+        <uri value="http://siframework.org/cqf"/>
+        <name value="Quality Improvement and Clinical Knowledge (QUICK)"/>
+    </mapping>
+    <kind value="resource"/>
+    <abstract value="false"/>
+    <type value="ServiceRequest"/>
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/ServiceRequest"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="ServiceRequest">
+            <path value="ServiceRequest"/>
+        </element>
+        <element id="ServiceRequest.identifier">
+            <path value="ServiceRequest.identifier"/>
+            <min value="0"/>
+            <max value="*"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="ServiceRequest.code">
+            <path value="ServiceRequest.code"/>
+            <mustSupport value="true"/>
+            <binding>
+                <strength value="example"/>
+                <valueSet value="http://hl7.org/fhir/us/dentalreferral/ValueSet/dental-reason-for-referral"/>
+            </binding>
+        </element>
+        <element id="ServiceRequest.subject">
+            <path value="ServiceRequest.subject"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"/>
+            </type>
+        </element>
+        <element id="ServiceRequest.encounter">
+            <path value="ServiceRequest.encounter"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter"/>
+            </type>
+        </element>
+        <element id="ServiceRequest.occurrence[x]">
+            <path value="ServiceRequest.occurrence[x]"/>
+            <max value="1"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="ServiceRequest.insurance">
+            <path value="ServiceRequest.insurance"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/hrex-coverage"/>
+            </type>
+        </element>
+        <element id="ServiceRequest.supportingInfo">
+            <path value="ServiceRequest.supportingInfo"/>
+            <mustSupport value="false"/>
+        </element>
+    </differential>
+</StructureDefinition>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Procedure
+    xmlns="http://hl7.org/fhir">
+    <id value="Radiograph-survey"/>
+    <meta>
+        <versionId value="1"/>
+        <lastUpdated value="2020-07-20T18:17:24.870+00:00"/>
+        <source value="#nY8azW4YMX7vvkXo"/>
+        <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"/>
+    </meta>
+    <identifier>
+        <system value="urn:ietf:rfc:3986"/>
+        <value value="urn:uuid:b2a737f2-2fdb-49c1-b097-dac173d07aff"/>
+    </identifier>
+    <status value="preparation"/>
+    <code>
+        <coding>
+            <system value="http://www.ama-assn.org/go/cdt"/>
+            <code value="D0210"/>
+        </coding>
+        <text value="Full mouth radiographic survey"/>
+    </code>
+    <subject>
+        <reference value="Patient/example-dental"/>
+    </subject>
+    <performedDateTime value="2020-03-10"/>
+    <performer>
+        <actor>
+            <reference value="Practitioner/practitioner-D"/>
+        </actor>
+    </performer>
+</Procedure>

@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet
+    xmlns="http://hl7.org/fhir">
+    <id value="dental-reason-for-referral"/>
+    <meta>
+        <versionId value="5"/>
+        <lastUpdated value="2020-07-21T18:30:15.680+00:00"/>
+        <source value="#E52qQNV8iKbQlOUy"/>
+    </meta>
+    <url value="http://hl7.org/fhir/us/dentalreferral/ValueSet/dental-reason-for-referral"/>
+    <name value="DentalReasonForReferral"/>
+    <title value="Dental Reason For Referral"/>
+    <status value="draft"/>
+    <description value="This ValueSet contains coded prominent reasons for referral between medical and dental care settings. "/>
+    <compose>
+        <include>
+            <system value="http://snomed.info/sct"/>
+            <concept>
+                <code value="27355003"/>
+                <display value="Toothache"/>
+            </concept>
+        </include>
+        <include>
+            <system value="http://snomed.info/sct"/>
+            <concept>
+                <code value="11114002"/>
+                <display value="Sore gums"/>
+            </concept>
+        </include>
+        <include>
+            <system value="http://snomed.info/sct"/>
+            <concept>
+                <code value="309685001"/>
+                <display value="Swollen gums"/>
+            </concept>
+        </include>
+        <include>
+            <system value="http://snomed.info/sct"/>
+            <concept>
+                <code value="80967001"/>
+                <display value="Dental caries"/>
+            </concept>
+        </include>
+        <include>
+            <system value="http://snomed.info/sct"/>
+            <concept>
+                <code value="110475006"/>
+                <display value="Compliance with suggested dental care"/>
+            </concept>
+        </include>
+        <include>
+            <system value="http://snomed.info/sct"/>
+            <concept>
+                <code value="397869004"/>
+                <display value="Dental trauma"/>
+            </concept>
+        </include>
+        <include>
+            <system value="http://snomed.info/sct"/>
+            <concept>
+                <code value="65124004"/>
+                <display value="Swelling"/>
+            </concept>
+        </include>
+        <include>
+            <system value="http://snomed.info/sct"/>
+            <concept>
+                <code value="1071000119107"/>
+                <display value="Oral lesion"/>
+            </concept>
+        </include>
+        <include>
+            <system value="http://snomed.info/sct"/>
+            <concept>
+                <code value="298376001"/>
+                <display value="Temporomandibular joint painful on movement"/>
+            </concept>
+        </include>
+        <include>
+            <system value="http://snomed.info/sct"/>
+            <concept>
+                <code value="82212003"/>
+                <display value="Erosion of teeth"/>
+            </concept>
+        </include>
+        <include>
+            <system value="http://snomed.info/sct"/>
+            <concept>
+                <code value="52031007"/>
+                <display value="Erosion of teeth due to persistent vomiting"/>
+            </concept>
+        </include>
+        <include>
+            <system value="http://snomed.info/sct"/>
+            <concept>
+                <code value="87715008"/>
+                <display value="Xerostomia"/>
+            </concept>
+        </include>
+        <include>
+            <system value="http://snomed.info/sct"/>
+            <concept>
+                <code value="110299009"/>
+                <display value="Poor oral hygiene"/>
+            </concept>
+        </include>
+        <include>
+            <system value="http://snomed.info/sct"/>
+            <concept>
+                <code value="6288001"/>
+                <display value="Accretion on teeth"/>
+            </concept>
+        </include>
+        <include>
+            <system value="http://snomed.info/sct"/>
+            <concept>
+                <code value="128477000"/>
+                <display value="Abscess"/>
+            </concept>
+        </include>
+        <include>
+            <system value="http://snomed.info/sct"/>
+            <concept>
+                <code value="40733004"/>
+                <display value="Infectious disease"/>
+            </concept>
+        </include>
+        <include>
+            <system value="http://snomed.info/sct"/>
+            <concept>
+                <code value="73211009"/>
+                <display value="Diabetes mellitus"/>
+            </concept>
+        </include>
+        <include>
+            <system value="http://snomed.info/sct"/>
+            <concept>
+                <code value="77386006"/>
+                <display value="Pregnant"/>
+            </concept>
+        </include>
+        <include>
+            <system value="http://snomed.info/sct"/>
+            <concept>
+                <code value="103697008"/>
+                <display value="Patient referral for dental care (procedure)"/>
+            </concept>
+        </include>
+        <include>
+            <system value="http://snomed.info/sct"/>
+            <concept>
+                <code value="234972003"/>
+                <display value="Disturbance of tooth eruption or exfoliation"/>
+            </concept>
+        </include>
+        <include>
+            <system value="http://snomed.info/sct"/>
+            <concept>
+                <code value="47944004"/>
+                <display value="Malocclusion of teeth"/>
+            </concept>
+        </include>
+        <include>
+            <system value="http://ada.org/snodent"/>
+            <concept>
+                <code value="131687D"/>
+                <display value="Toothache"/>
+            </concept>
+        </include>
+        <include>
+            <system value="http://ada.org/snodent"/>
+            <concept>
+                <code value="104458D"/>
+                <display value="Sore gums"/>
+            </concept>
+        </include>
+        <include>
+            <system value="http://ada.org/snodent"/>
+            <concept>
+                <code value="148393D"/>
+                <display value="Swollen gums"/>
+            </concept>
+        </include>
+        <include>
+            <system value="http://ada.org/snodent"/>
+            <concept>
+                <code value="118065D"/>
+                <display value="Dental caries"/>
+            </concept>
+        </include>
+        <include>
+            <system value="http://ada.org/snodent"/>
+            <concept>
+                <code value="146328D"/>
+                <display value="Compliance with suggested dental care"/>
+            </concept>
+        </include>
+        <include>
+            <system value="http://ada.org/snodent"/>
+            <concept>
+                <code value="128117D"/>
+                <display value="Dental trauma"/>
+            </concept>
+        </include>
+        <include>
+            <system value="http://ada.org/snodent"/>
+            <concept>
+                <code value="128015D"/>
+                <display value="Swelling"/>
+            </concept>
+        </include>
+        <include>
+            <system value="http://ada.org/snodent"/>
+            <concept>
+                <code value="180678D"/>
+                <display value="Oral lesion"/>
+            </concept>
+        </include>
+        <include>
+            <system value="http://ada.org/snodent"/>
+            <concept>
+                <code value="167337D"/>
+                <display value="Temporomandibular joint painful on movement"/>
+            </concept>
+        </include>
+        <include>
+            <system value="http://ada.org/snodent"/>
+            <concept>
+                <code value="135988D"/>
+                <display value="Erosion of teeth"/>
+            </concept>
+        </include>
+        <include>
+            <system value="http://ada.org/snodent"/>
+            <concept>
+                <code value="104212D"/>
+                <display value="Erosion of teeth due to persistent vomiting"/>
+            </concept>
+        </include>
+        <include>
+            <system value="http://ada.org/snodent"/>
+            <concept>
+                <code value="138508D"/>
+                <display value="Xerostomia"/>
+            </concept>
+        </include>
+        <include>
+            <system value="http://ada.org/snodent"/>
+            <concept>
+                <code value="140234D"/>
+                <display value="Poor oral hygiene"/>
+            </concept>
+        </include>
+        <include>
+            <system value="http://ada.org/snodent"/>
+            <concept>
+                <code value="127701D"/>
+                <display value="Accretion on teeth"/>
+            </concept>
+        </include>
+        <include>
+            <system value="http://ada.org/snodent"/>
+            <concept>
+                <code value="123286D"/>
+                <display value="Abscess"/>
+            </concept>
+        </include>
+        <include>
+            <system value="http://ada.org/snodent"/>
+            <concept>
+                <code value="138169D"/>
+                <display value="Infectious disease"/>
+            </concept>
+        </include>
+        <include>
+            <system value="http://ada.org/snodent"/>
+            <concept>
+                <code value="133643D"/>
+                <display value="Diabetes mellitus"/>
+            </concept>
+        </include>
+        <include>
+            <system value="http://ada.org/snodent"/>
+            <concept>
+                <code value="174950D"/>
+                <display value="Pregnant"/>
+            </concept>
+        </include>
+        <include>
+            <system value="http://ada.org/snodent"/>
+            <concept>
+                <code value="144684D"/>
+                <display value="Disturbance of tooth eruption or exfoliation"/>
+            </concept>
+        </include>
+        <include>
+            <system value="http://ada.org/snodent"/>
+            <concept>
+                <code value="150365D"/>
+                <display value="Malocclusion of teeth"/>
+            </concept>
+        </include>
+        <include>
+            <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
+            <concept>
+                <code value="K08.89"/>
+                <display value="Other specified disorders of teeth and supporting structures"/>
+            </concept>
+        </include>
+        <include>
+            <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
+            <concept>
+                <code value="K06.8"/>
+                <display value="Other specified disorders of gingiva and edentulous alveolar ridge"/>
+            </concept>
+        </include>
+        <include>
+            <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
+            <concept>
+                <code value="K06.8"/>
+                <display value="Other specified disorders of gingiva and edentulous alveolar ridge"/>
+            </concept>
+        </include>
+        <include>
+            <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
+            <concept>
+                <code value="K02.9"/>
+                <display value="Dental caries, unspecified"/>
+            </concept>
+        </include>
+        <include>
+            <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
+            <concept>
+                <code value="Z09"/>
+                <display value="Encounter for follow-up examination after completed treatment for conditions other than malignant neoplasm"/>
+            </concept>
+        </include>
+        <include>
+            <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
+            <concept>
+                <code value="T79.9XXA"/>
+                <display value="Unspecified early complication of trauma, initial encounter"/>
+            </concept>
+        </include>
+        <include>
+            <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
+            <concept>
+                <code value="K06.8"/>
+                <display value="Other specified disorders of gingiva and edentulous alveolar ridge"/>
+            </concept>
+        </include>
+        <include>
+            <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
+            <concept>
+                <code value="K06.8"/>
+                <display value="Other specified disorders of gingiva and edentulous alveolar ridge"/>
+            </concept>
+        </include>
+        <include>
+            <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
+            <concept>
+                <code value="M26.69"/>
+                <display value="Other specified disorders of temporomandibular joint"/>
+            </concept>
+        </include>
+        <include>
+            <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
+            <concept>
+                <code value="K03.2"/>
+                <display value="Erosion of teeth"/>
+            </concept>
+        </include>
+        <include>
+            <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
+            <concept>
+                <code value="K03.2"/>
+                <display value="Erosion of teeth"/>
+            </concept>
+        </include>
+        <include>
+            <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
+            <concept>
+                <code value="R68.2"/>
+                <display value="Dry mouth, unspecified"/>
+            </concept>
+        </include>
+        <include>
+            <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
+            <concept>
+                <code value="K03.6"/>
+                <display value="Deposits [accretions] on teeth"/>
+            </concept>
+        </include>
+        <include>
+            <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
+            <concept>
+                <code value="K12.2"/>
+                <display value="Cellulitis and abscess of mouth"/>
+            </concept>
+        </include>
+        <include>
+            <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
+            <concept>
+                <code value="K12.2"/>
+                <display value="Cellulitis and abscess of mouth"/>
+            </concept>
+        </include>
+        <include>
+            <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
+            <concept>
+                <code value="E13.9"/>
+                <display value="Other specified diabetes mellitus without complications"/>
+            </concept>
+        </include>
+        <include>
+            <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
+            <concept>
+                <code value="Z33.1"/>
+                <display value="Pregnant state, incidental"/>
+            </concept>
+        </include>
+        <include>
+            <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
+            <concept>
+                <code value="Z02.9"/>
+                <display value="Encounter for Administrative exam, unspecified"/>
+            </concept>
+        </include>
+        <include>
+            <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
+            <concept>
+                <code value="K00.6"/>
+                <display value="Disturbances in tooth eruption"/>
+            </concept>
+        </include>
+        <include>
+            <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
+            <concept>
+                <code value="M26.4"/>
+                <display value="Malocclusion, unspecified"/>
+            </concept>
+        </include>
+    </compose>
+</ValueSet>

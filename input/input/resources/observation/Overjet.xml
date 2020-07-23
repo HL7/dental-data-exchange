@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Observation
+    xmlns="http://hl7.org/fhir">
+    <id value="Overjet"/>
+    <meta>
+        <versionId value="3"/>
+        <lastUpdated value="2020-07-21T20:34:16.744+00:00"/>
+        <source value="#qhE99HWqP9vUbYc3"/>
+        <profile value="http://hl7.org/fhir/us/dentalreferral/StructureDefinition/dental-findings"/>
+    </meta>
+    <status value="final"/>
+    <category>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+            <code value="exam"/>
+            <display value="Exam"/>
+        </coding>
+        <text value="Exam"/>
+    </category>
+    <code>
+        <coding>
+            <system value="http://loinc.org"/>
+            <code value="32916-9"/>
+            <display value="Horizontal overlap [Length] Maxilla and Mandible Measured"/>
+        </coding>
+        <text value="Overjet"/>
+    </code>
+    <subject>
+        <reference value="Patient/example-dental"/>
+    </subject>
+    <effectiveDateTime value="2020-02-16"/>
+    <valueQuantity>
+        <value value="3"/>
+        <unit value="mm"/>
+        <system value="http://unitsofmeasure.org"/>
+    </valueQuantity>
+</Observation>

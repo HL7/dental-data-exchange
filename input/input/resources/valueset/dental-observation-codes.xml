@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet
+    xmlns="http://hl7.org/fhir">
+    <id value="dental-observation-codes"/>
+    <meta>
+        <versionId value="18"/>
+        <lastUpdated value="2020-07-23T22:27:03.548+00:00"/>
+        <source value="#pljEr9xLF5WMxVFk"/>
+    </meta>
+    <url value="http://hl7.org/fhir/us/dentalreferral/ValueSet/dental-observation-codes"/>
+    <name value="DentalObservationCodes"/>
+    <title value="Dental Observation Codes"/>
+    <status value="draft"/>
+    <description value="This ValueSet contains all ICD-9/10, CPT, CDT, LOINC codes, as well as the Clinical Findings (finding) concept from both Snomed and Snodent. "/>
+    <compose>
+        <include>
+            <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
+        </include>
+        <include>
+            <system value="http://loinc.org"/>
+        </include>
+        <include>
+            <system value="http://www.ada.org/snodent"/>
+            <filter>
+                <property value="concept"/>
+                <op value="descendent-of"/>
+                <value value="165877D"/>
+            </filter>
+            <filter>
+                <property value="concept"/>
+                <op value="descendent-of"/>
+                <value value="165733D"/>
+            </filter>
+        </include>
+        <include>
+            <system value="http://snomed.info/sct"/>
+            <filter>
+                <property value="concept"/>
+                <op value="descendent-of"/>
+                <value value="404684003"/>
+            </filter>
+            <filter>
+                <property value="concept"/>
+                <op value="descendent-of"/>
+                <value value="243796009"/>
+            </filter>
+        </include>
+    </compose>
+</ValueSet>
