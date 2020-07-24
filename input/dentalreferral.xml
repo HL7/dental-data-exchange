@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="dentalreferral"/>
     <meta>
-        <versionId value="317"/>
-        <lastUpdated value="2020-07-23T21:41:00.385+00:00"/>
-        <source value="#ZH8V9SnTtSt1j7Pu"/>
+        <versionId value="335"/>
+        <lastUpdated value="2020-07-24T19:24:07.091+00:00"/>
+        <source value="#FMT7MJuzzlmL5n4L"/>
     </meta>
     <url value="http://hl7.org/fhir/us/dentalreferral"/>
     <version value="0.0.1"/>
@@ -628,7 +628,8 @@
         <resource>
             <reference>
                 <reference value="MedicationRequest/Tylenol-med-dental"/></reference>
-            <name value="Tylenol-med-dental"/>
+            <name value="Tylenol Medication"/>
+          <description value="This is an example of US Core MedicationRequest"/>
             <exampleBoolean value="true"/>
         </resource>
         <page>

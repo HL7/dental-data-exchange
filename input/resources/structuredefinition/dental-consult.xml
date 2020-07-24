@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="dental-consult"/>
     <meta>
-        <versionId value="39"/>
-        <lastUpdated value="2020-07-23T19:20:59.417+00:00"/>
-        <source value="#hErC51GU5QahUYT2"/>
+        <versionId value="40"/>
+        <lastUpdated value="2020-07-24T19:28:51.250+00:00"/>
+        <source value="#BNKQXGaTaXYMJDoF"/>
     </meta>
     <url value="http://hl7.org/fhir/us/dentalreferral/StructureDefinition/dental-consult"/>
     <version value="0.0.1"/>
@@ -98,65 +98,22 @@
                 <rules value="open"/>
             </slicing>
         </element>
-        <element id="Composition.section:assessment_section/dental_assessment_section">
+        <element id="Composition.section:assessment_section">
             <path value="Composition.section"/>
-            <sliceName value="assessment_section/dental_assessment_section"/>
+            <sliceName value="assessment_section"/>
             <min value="1"/>
             <max value="1"/>
         </element>
-        <element id="Composition.section:assessment_section/dental_assessment_section.title">
-            <path value="Composition.section.title"/>
-            <short value="title"/>
-            <min value="1"/>
-        </element>
-        <element id="Composition.section:assessment_section/dental_assessment_section.code">
-            <path value="Composition.section.code"/>
-            <short value="code"/>
-            <min value="1"/>
-            <max value="1"/>
-            <patternCodeableConcept>
-                <coding>
-                    <system value="http://LOINC.org"/>
-                    <code value="51848-0"/>
-                </coding>
-            </patternCodeableConcept>
-        </element>
-        <element id="Composition.section:assessment_section/dental_assessment_section.text">
-            <path value="Composition.section.text"/>
-            <short value="This section contains only human readable content"/>
-            <min value="1"/>
-        </element>
-        <element id="Composition.section:plan_of_treatment_section/dental_plan_of_treatment_section">
+        <element id="Composition.section:plan_of_treatment_section">
             <path value="Composition.section"/>
-            <sliceName value="plan_of_treatment_section/dental_plan_of_treatment_section"/>
+            <sliceName value="plan_of_treatment_section"/>
             <label value="Plan of Treatment Section"/>
             <short value="Plan of Treatment Section"/>
             <comment value="Plan of Treatment Section"/>
             <min value="1"/>
+            <max value="1"/>
         </element>
-        <element id="Composition.section:plan_of_treatment_section/dental_plan_of_treatment_section.title">
-            <path value="Composition.section.title"/>
-            <short value="title"/>
-            <min value="1"/>
-        </element>
-        <element id="Composition.section:plan_of_treatment_section/dental_plan_of_treatment_section.code">
-            <path value="Composition.section.code"/>
-            <label value="Plan of treatment"/>
-            <short value="Plan of treatment"/>
-            <min value="1"/>
-            <patternCodeableConcept>
-                <coding>
-                    <system value="http://loinc.org"/>
-                    <code value="18776-5"/>
-                </coding>
-            </patternCodeableConcept>
-        </element>
-        <element id="Composition.section:plan_of_treatment_section/dental_plan_of_treatment_section.text">
-            <path value="Composition.section.text"/>
-            <short value="text"/>
-            <min value="1"/>
-        </element>
-        <element id="Composition.section:plan_of_treatment_section/dental_plan_of_treatment_section.entry">
+        <element id="Composition.section:plan_of_treatment_section.entry">
             <path value="Composition.section.entry"/>
             <slicing>
                 <discriminator>
@@ -167,9 +124,9 @@
             </slicing>
             <short value="entry"/>
         </element>
-        <element id="Composition.section:plan_of_treatment_section/dental_plan_of_treatment_section.entry:dental_sliceEntry">
+        <element id="Composition.section:plan_of_treatment_section.entry:sliceEntry/dental_sliceEntry">
             <path value="Composition.section.entry"/>
-            <sliceName value="dental_sliceEntry"/>
+            <sliceName value="sliceEntry/dental_sliceEntry"/>
             <short value="This section contains unprofiled resources not covered by US Core. Please refer to C-CDA R2.1 for guidance on terminology, etc."/>
             <type>
                 <code value="Reference"/>
@@ -184,89 +141,27 @@
                 <targetProfile value="http://hl7.org/fhir/StructureDefinition/ServiceRequest"/>
                 <targetProfile value="http://hl7.org/fhir/StructureDefinition/VisionPrescription"/>
                 <targetProfile value="http://hl7.org/fhir/StructureDefinition/RequestGroup"/>
+                <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter"/>
+                <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"/>
             </type>
         </element>
-        <element id="Composition.section:procedures_section/dental_procedures_section">
+        <element id="Composition.section:procedures_section">
             <path value="Composition.section"/>
-            <sliceName value="procedures_section/dental_procedures_section"/>
+            <sliceName value="procedures_section"/>
             <label value="Procedures Section"/>
             <short value="Procedures Section"/>
             <comment value="Procedures Section"/>
             <min value="1"/>
             <max value="1"/>
         </element>
-        <element id="Composition.section:procedures_section/dental_procedures_section.title">
-            <path value="Composition.section.title"/>
-            <short value="title"/>
-            <min value="1"/>
-        </element>
-        <element id="Composition.section:procedures_section/dental_procedures_section.code">
-            <path value="Composition.section.code"/>
-            <label value="History of Procedures"/>
-            <short value="History of Procedures"/>
-            <min value="1"/>
-            <max value="1"/>
-            <patternCodeableConcept>
-                <coding>
-                    <system value="http://LOINC.org"/>
-                    <code value="47519-4"/>
-                </coding>
-            </patternCodeableConcept>
-        </element>
-        <element id="Composition.section:procedures_section/dental_procedures_section.text">
-            <path value="Composition.section.text"/>
-            <short value="text"/>
-            <min value="1"/>
-        </element>
-        <element id="Composition.section:procedures_section/dental_procedures_section.entry">
-            <path value="Composition.section.entry"/>
-            <slicing>
-                <discriminator>
-                    <type value="profile"/>
-                    <path value="resolve()"/>
-                </discriminator>
-                <rules value="open"/>
-            </slicing>
-            <short value="entry"/>
-        </element>
-        <element id="Composition.section:procedures_section/dental_procedures_section.entry:dental_sliceEntry">
-            <path value="Composition.section.entry"/>
-            <sliceName value="dental_sliceEntry"/>
-            <type>
-                <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"/>
-            </type>
-        </element>
-        <element id="Composition.section:reason_for_visit_section/dental_reason_for_visit_section">
+        <element id="Composition.section:reason_for_visit_section">
             <path value="Composition.section"/>
-            <sliceName value="reason_for_visit_section/dental_reason_for_visit_section"/>
+            <sliceName value="reason_for_visit_section"/>
             <label value="Reason for Visit Section"/>
             <short value="Reason for Visit Section"/>
             <comment value="Reason for Visit Section"/>
             <min value="1"/>
             <max value="1"/>
-        </element>
-        <element id="Composition.section:reason_for_visit_section/dental_reason_for_visit_section.title">
-            <path value="Composition.section.title"/>
-            <short value="title"/>
-            <min value="1"/>
-        </element>
-        <element id="Composition.section:reason_for_visit_section/dental_reason_for_visit_section.code">
-            <path value="Composition.section.code"/>
-            <label value="Reason for visit"/>
-            <short value="Reason for visit"/>
-            <min value="1"/>
-            <patternCodeableConcept>
-                <coding>
-                    <system value="http://loinc.org"/>
-                    <code value="29299-5"/>
-                </coding>
-            </patternCodeableConcept>
-        </element>
-        <element id="Composition.section:reason_for_visit_section/dental_reason_for_visit_section.text">
-            <path value="Composition.section.text"/>
-            <short value="This section contains only human readable content"/>
-            <min value="1"/>
         </element>
         <element id="Composition.section:instructions">
             <path value="Composition.section"/>
@@ -349,14 +244,19 @@
         </element>
         <element id="Composition.section:dental_findings_section">
             <path value="Composition.section"/>
-            <sliceName value="dental_findings_section"/>
-            <min value="1"/>
+            <sliceName value="DentalFindingsSection"/>
             <max value="1"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section:dental_findings_section.title">
+            <path value="Composition.section.title"/>
+            <short value="title"/>
+            <min value="1"/>
+            <mustSupport value="true"/>
         </element>
         <element id="Composition.section:dental_findings_section.code">
             <path value="Composition.section.code"/>
-            <short value="code"/>
-            <min value="1"/>
+            <min value="0"/>
             <max value="1"/>
             <patternCodeableConcept>
                 <coding>
@@ -364,6 +264,7 @@
                     <code value="8704-9"/>
                 </coding>
             </patternCodeableConcept>
+            <mustSupport value="true"/>
         </element>
         <element id="Composition.section:dental_findings_section.entry">
             <path value="Composition.section.entry"/>
@@ -375,14 +276,15 @@
                 <rules value="open"/>
             </slicing>
         </element>
-        <element id="Composition.section:dental_findings_section.entry:DentalFindingsEntry">
+        <element id="Composition.section:dental_findings_section.entry:dental_findings_entry">
             <path value="Composition.section.entry"/>
-            <sliceName value="DentalFindingsEntry"/>
+            <sliceName value="dental_findings_entry"/>
             <max value="*"/>
             <type>
                 <code value="Reference"/>
                 <targetProfile value="http://hl7.org/fhir/us/dentalreferral/StructureDefinition/dental-findings"/>
             </type>
+            <mustSupport value="true"/>
         </element>
     </differential>
 </StructureDefinition>

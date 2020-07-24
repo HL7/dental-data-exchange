@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Dental-2-Med-Consult"/>
     <meta>
-        <versionId value="15"/>
-        <lastUpdated value="2020-07-23T21:24:33.710+00:00"/>
-        <source value="#giACFhA7HfK4Wa7z"/>
+        <versionId value="16"/>
+        <lastUpdated value="2020-07-24T19:26:23.821+00:00"/>
+        <source value="#GGscNkROSzQdWPSv"/>
         <profile value="http://hl7.org/fhir/us/ccda/StructureDefinition/Consultation-Note"/>
         <profile value="http://hl7.org/fhir/us/dentalreferral/StructureDefinition/dental-consult"/>
     </meta>
@@ -113,32 +113,6 @@
         </entry>
     </section>
     <section>
-        <title value="Assessment Section"/>
-        <code>
-            <coding>
-                <system value="http://loinc.org"/>
-                <code value="51848-0"/>
-                <display value="Evaluation note"/>
-            </coding>
-        </code>
-        <text>
-            <status value="generated"/>
-            <div
-                xmlns="http://www.w3.org/1999/xhtml">
-                <p> Patient reports inability to chew on left side due to pain and
-        sensitivity, a condition that has increased in severity in the two days
-        since his medical appointment </p>
-                <p> Significant decay on the left lower second molar (tooth #18)
-         with signs of infection  </p>
-                <p> Early signs of a caries lesion (decay) on the right upper
-        lateral incisor (tooth #7) </p>
-                <p> Recommend an extraction of the left lower second molar(tooth
-        #18) and a restoration on the right upper lateral incisor (tooth #7) due
-        to a caries lesion </p>
-            </div>
-        </text>
-    </section>
-    <section>
         <title value="History of Present Illness Section"/>
         <code>
             <coding>
@@ -156,75 +130,55 @@
         </text>
     </section>
     <section>
-        <title value="Immunizations Section"/>
+        <title value="Problem Section"/>
         <code>
             <coding>
                 <system value="http://loinc.org"/>
-                <code value="11369-6"/>
-                <display value="History of Immunization Narrative"/>
+                <code value="11450-4"/>
+                <display value="Problem list - Reported"/>
             </coding>
         </code>
         <text>
             <status value="generated"/>
             <div
                 xmlns="http://www.w3.org/1999/xhtml">
-                <table border="1" width="100%">
-                    <thead>
-                        <tr>
-                            <th>Vaccine</th>
-                            <th>Date</th>
-                            <th>Status</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>
-              Hepatitis B vaccine
-            </td>
-                            <td>January 4, 2020</td>
-                            <td>Completed</td>
-                        </tr>
-                    </tbody>
-                </table>
+                <p>Mild, Hypertension</p>
+                <p>Type 1 diabetes</p>
+                <p>Dental caries</p>
+                <p>Unable to chew</p>
+                <p>Teeth covered in plague</p>
+                <p>Toothache</p>
+                <p>Chronic periodontitis</p>
+                <p>Infection of tooth</p>
+                <p>At high risk for dental caries (finding)</p>
             </div>
         </text>
         <entry>
-            <reference value="Immunization/imm-1"/>
+            <reference value="Condition/HTN-example"/>
         </entry>
-    </section>
-    <section>
-        <title value="Medical Equipment Section"/>
-        <code>
-            <coding>
-                <system value="http://loinc.org"/>
-                <code value="46264-8"/>
-                <display value="History of medical device use"/>
-            </coding>
-        </code>
-        <text>
-            <status value="generated"/>
-            <div
-                xmlns="http://www.w3.org/1999/xhtml">
-                <table border="1" width="100%">
-                    <thead>
-                        <tr>
-                            <th>Device Type</th>
-                            <th>Procedure</th>
-                            <th>Implant Date</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Insulin Pump</td>
-                            <td>Insertion of insulin pump (procedure)</td>
-                            <td>November 3, 2013</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </text>
         <entry>
-            <reference value="Procedure/Insulin-pump-insertion"/>
+            <reference value="Condition/DM1-example"/>
+        </entry>
+        <entry>
+            <reference value="Condition/Dental-caries"/>
+        </entry>
+        <entry>
+            <reference value="Condition/no-chew"/>
+        </entry>
+        <entry>
+            <reference value="Condition/Dental-plaque-example"/>
+        </entry>
+        <entry>
+            <reference value="Condition/toothache-example"/>
+        </entry>
+        <entry>
+            <reference value="Condition/Chronic-periodontitis-example"/>
+        </entry>
+        <entry>
+            <reference value="Condition/Tooth-infection"/>
+        </entry>
+        <entry>
+            <reference value="Condition/Caries-risk"/>
         </entry>
     </section>
     <section>
@@ -311,23 +265,101 @@
         </entry>
     </section>
     <section>
-        <title value="Payers Section"/>
+        <title value="Assessment Section"/>
         <code>
             <coding>
                 <system value="http://loinc.org"/>
-                <code value="48768-6"/>
-                <display value="Payment sources Document"/>
+                <code value="51848-0"/>
+                <display value="Evaluation note"/>
             </coding>
         </code>
         <text>
             <status value="generated"/>
             <div
                 xmlns="http://www.w3.org/1999/xhtml">
-                <p>Aetna Comprehensive Medical /Dental Insurance</p>
+                <p> Patient reports inability to chew on left side due to pain and
+        sensitivity, a condition that has increased in severity in the two days
+        since his medical appointment </p>
+                <p> Significant decay on the left lower second molar (tooth #18)
+         with signs of infection  </p>
+                <p> Early signs of a caries lesion (decay) on the right upper
+        lateral incisor (tooth #7) </p>
+                <p> Recommend an extraction of the left lower second molar(tooth
+        #18) and a restoration on the right upper lateral incisor (tooth #7) due
+        to a caries lesion </p>
+            </div>
+        </text>
+    </section>
+    <section>
+        <title value="Immunizations Section"/>
+        <code>
+            <coding>
+                <system value="http://loinc.org"/>
+                <code value="11369-6"/>
+                <display value="History of Immunization Narrative"/>
+            </coding>
+        </code>
+        <text>
+            <status value="generated"/>
+            <div
+                xmlns="http://www.w3.org/1999/xhtml">
+                <table border="1" width="100%">
+                    <thead>
+                        <tr>
+                            <th>Vaccine</th>
+                            <th>Date</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+              Hepatitis B vaccine
+            </td>
+                            <td>January 4, 2020</td>
+                            <td>Completed</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </text>
         <entry>
-            <reference value="Coverage/Dental-Aetna"/>
+            <reference value="Immunization/imm-1"/>
+        </entry>
+    </section>
+    <section>
+        <title value="Medical Equipment Section"/>
+        <code>
+            <coding>
+                <system value="http://loinc.org"/>
+                <code value="46264-8"/>
+                <display value="History of medical device use"/>
+            </coding>
+        </code>
+        <text>
+            <status value="generated"/>
+            <div
+                xmlns="http://www.w3.org/1999/xhtml">
+                <table border="1" width="100%">
+                    <thead>
+                        <tr>
+                            <th>Device Type</th>
+                            <th>Procedure</th>
+                            <th>Implant Date</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Insulin Pump</td>
+                            <td>Insertion of insulin pump (procedure)</td>
+                            <td>November 3, 2013</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </text>
+        <entry>
+            <reference value="Procedure/Insulin-pump-insertion"/>
         </entry>
     </section>
     <section>
@@ -357,21 +389,21 @@
                             <td>Feb 23, 2020</td>
                             <td>D7140</td>
                             <td>Extraction, erupted tooth or exposed root (elevation and/or
-              forceps removal)</td>
+                forceps removal)</td>
                             <td>Tooth #18</td>
                         </tr>
                         <tr>
                             <td>Mar 3, 2020</td>
                             <td>D1352</td>
                             <td>Preventive resin restoration in a moderate to high caries
-              risk patient-permanent tooth</td>
+                risk patient-permanent tooth</td>
                             <td>Tooth #7</td>
                         </tr>
                         <tr>
                             <td>Mar 10, 2020</td>
                             <td>D0150</td>
                             <td>comprehensive oral evaluation - new or established
-              patient</td>
+                patient</td>
                             <td>N/A</td>
                         </tr>
                         <tr>
@@ -404,117 +436,6 @@
         </entry>
         <entry>
             <reference value="Procedure/Radiograph-survey"/>
-        </entry>
-    </section>
-    <section>
-        <title value="Problem Section"/>
-        <code>
-            <coding>
-                <system value="http://loinc.org"/>
-                <code value="11450-4"/>
-                <display value="Problem list - Reported"/>
-            </coding>
-        </code>
-        <text>
-            <status value="generated"/>
-            <div
-                xmlns="http://www.w3.org/1999/xhtml">
-                <p>Mild, Hypertension</p>
-                <p>Type 1 diabetes</p>
-                <p>Dental caries</p>
-                <p>Unable to chew</p>
-                <p>Teeth covered in plague</p>
-                <p>Toothache</p>
-                <p>Chronic periodontitis</p>
-                <p>Infection of tooth</p>
-                <p>At high risk for dental caries (finding)</p>
-            </div>
-        </text>
-        <entry>
-            <reference value="Condition/HTN-example"/>
-        </entry>
-        <entry>
-            <reference value="Condition/DM1-example"/>
-        </entry>
-        <entry>
-            <reference value="Condition/Dental-caries"/>
-        </entry>
-        <entry>
-            <reference value="Condition/no-chew"/>
-        </entry>
-        <entry>
-            <reference value="Condition/Dental-plaque-example"/>
-        </entry>
-        <entry>
-            <reference value="Condition/toothache-example"/>
-        </entry>
-        <entry>
-            <reference value="Condition/Chronic-periodontitis-example"/>
-        </entry>
-        <entry>
-            <reference value="Condition/Tooth-infection"/>
-        </entry>
-        <entry>
-            <reference value="Condition/Caries-risk"/>
-        </entry>
-    </section>
-    <section>
-        <title value="Dental Findings Section"/>
-        <code>
-            <coding>
-                <system value="http://loinc.org"/>
-                <code value="8704-9"/>
-                <display value="Physical findings of Mouth and Throat and Teeth"/>
-            </coding>
-        </code>
-        <text>
-            <status value="generated"/>
-            <div
-                xmlns="http://www.w3.org/1999/xhtml">
-                <table border="1" width="100%">
-                    <thead>
-                        <tr>
-                            <th>Finding Type</th>
-                            <th>Value</th>
-                            <th>Location</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Problem</td>
-                            <td>Dental Caries</td>
-                            <td>Tooth #18</td>
-                        </tr>
-                        <tr>
-                            <td>Problem</td>
-                            <td>Infection of Tooth</td>
-                            <td>Tooth #18</td>
-                        </tr>
-                        <tr>
-                            <td>Problem</td>
-                            <td>Dental Caries</td>
-                            <td>Tooth #7</td>
-                        </tr>
-                        <tr>
-                            <td>Result</td>
-                            <td>Overjet</td>
-                            <td>3mm</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </text>
-        <entry>
-            <reference value="Condition/Mandibular-perm18-example"/>
-        </entry>
-        <entry>
-            <reference value="Condition/Tooth-infection18"/>
-        </entry>
-        <entry>
-            <reference value="Condition/Maxillary-perm7-example"/>
-        </entry>
-        <entry>
-            <reference value="Observation/Overjet"/>
         </entry>
     </section>
     <section>
@@ -609,6 +530,12 @@
                 </table>
             </div>
         </text>
+        <entry>
+            <reference value="Observation/Education-level-example-dental"/>
+        </entry>
+        <entry>
+            <reference value="Observation/Present-job-example-dental"/>
+        </entry>
     </section>
     <section>
         <title value="Vital Signs Section"/>
@@ -685,6 +612,85 @@
         </text>
         <entry>
             <reference value="Communication/dental-education2"/>
+        </entry>
+    </section>
+    <section>
+        <title value="Payers Section"/>
+        <code>
+            <coding>
+                <system value="http://loinc.org"/>
+                <code value="48768-6"/>
+                <display value="Payment sources Document"/>
+            </coding>
+        </code>
+        <text>
+            <status value="generated"/>
+            <div
+                xmlns="http://www.w3.org/1999/xhtml">
+                <p>Aetna Comprehensive Medical /Dental Insurance</p>
+            </div>
+        </text>
+        <entry>
+            <reference value="Coverage/Dental-Aetna"/>
+        </entry>
+    </section>
+    <section>
+        <title value="Dental Findings Section"/>
+        <code>
+            <coding>
+                <system value="http://loinc.org"/>
+                <code value="8704-9"/>
+                <display value="Physical findings of Mouth and Throat and Teeth"/>
+            </coding>
+        </code>
+        <text>
+            <status value="generated"/>
+            <div
+                xmlns="http://www.w3.org/1999/xhtml">
+                <table border="1" width="100%">
+                    <thead>
+                        <tr>
+                            <th>Finding Type</th>
+                            <th>Value</th>
+                            <th>Location</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Problem</td>
+                            <td>Dental Caries</td>
+                            <td>Tooth #18</td>
+                        </tr>
+                        <tr>
+                            <td>Problem</td>
+                            <td>Infection of Tooth</td>
+                            <td>Tooth #18</td>
+                        </tr>
+                        <tr>
+                            <td>Problem</td>
+                            <td>Dental Caries</td>
+                            <td>Tooth #7</td>
+                        </tr>
+                        <tr>
+                            <td>Result</td>
+                            <td>Overjet</td>
+                            <td>3mm</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </text>
+        <entry>
+            <reference value="Condition/Mandibular-perm18-example"/>
+        </entry>
+        <entry>
+            <reference value="Condition/Tooth-infection18"/>
+        </entry>
+        <entry>
+            <reference value="Condition/Maxillary-perm7-example"/>
+        </entry>
+        <entry>
+            <reference value="Observation/Overjet"/>
         </entry>
     </section>
 </Composition>
