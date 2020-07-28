@@ -1,2 +1,101 @@
 == Suppressed Messages ==
 
+# Unknown Code http://www.ada.org/snodent#148393D in http://www.ada.org/snodent - note that the code system is labelled as a fragment, so the code may be valid in some other fragment for "http://www.ada.org/snodent#148393D"
+# the dental data exchange IG is using codes that are not in the UTG fragment
+
+#Unknown Code http://www.ada.org/snodent#148393D in http://www.ada.org/snodent - note that the code system is labelled as a fragment, so the code may be valid in some other fragment
+# the dental data exchange IG is using codes that are not in the UTG fragment
+
+#Unknown Code http://www.ada.org/snodent#179051D in http://www.ada.org/snodent - note that the code system is labelled as a fragment, so the code may be valid in some other fragment for "http://www.ada.org/snodent#179051D"
+# the dental data exchange IG is using codes that are not in the UTG fragment
+
+#Unknown Code http://www.ada.org/snodent#179051D in http://www.ada.org/snodent - note that the code system is labelled as a fragment, so the code may be valid in some other fragment
+# the dental data exchange IG is using codes that are not in the UTG fragment
+
+#Unknown Code http://www.ada.org/snodent#116957D in http://www.ada.org/snodent - note that the code system is labelled as a fragment, so the code may be valid in some other fragment for "http://www.ada.org/snodent#116957D"
+# the dental data exchange IG is using codes that are not in the UTG fragment
+
+#Unknown Code http://www.ada.org/snodent#116957D in http://www.ada.org/snodent - note that the code system is labelled as a fragment, so the code may be valid in some other fragment
+# the dental data exchange IG is using codes that are not in the UTG fragment
+
+#Unknown Code http://www.ada.org/snodent#175321D in http://www.ada.org/snodent - note that the code system is labelled as a fragment, so the code may be valid in some other fragment for "http://www.ada.org/snodent#175321D"
+# the dental data exchange IG is using codes that are not in the UTG fragment
+
+#Unknown Code http://www.ada.org/snodent#175321D in http://www.ada.org/snodent - note that the code system is labelled as a fragment, so the code may be valid in some other fragment
+# the dental data exchange IG is using codes that are not in the UTG fragment
+
+#Unknown Code http://www.ada.org/snodent#118065D in http://www.ada.org/snodent - note that the code system is labelled as a fragment, so the code may be valid in some other fragment for "http://www.ada.org/snodent#118065D"
+# the dental data exchange IG is using codes that are not in the UTG fragment
+
+#Unknown Code http://www.ada.org/snodent#118065D in http://www.ada.org/snodent - note that the code system is labelled as a fragment, so the code may be valid in some other fragment
+# the dental data exchange IG is using codes that are not in the UTG fragment
+
+#Unknown Code http://www.ada.org/snodent#108723D in http://www.ada.org/snodent - note that the code system is labelled as a fragment, so the code may be valid in some other fragment for "http://www.ada.org/snodent#108723D"
+# the dental data exchange IG is using codes that are not in the UTG fragment
+
+#Unknown Code http://www.ada.org/snodent#108723D in http://www.ada.org/snodent - note that the code system is labelled as a fragment, so the code may be valid in some other fragment
+# the dental data exchange IG is using codes that are not in the UTG fragment
+
+#Unknown Code http://www.ada.org/snodent#175027D in http://www.ada.org/snodent - note that the code system is labelled as a fragment, so the code may be valid in some other fragment for "http://www.ada.org/snodent#175027D"
+# the dental data exchange IG is using codes that are not in the UTG fragment
+
+#Unknown Code http://www.ada.org/snodent#175027D in http://www.ada.org/snodent - note that the code system is labelled as a fragment, so the code may be valid in some other fragment
+# the dental data exchange IG is using codes that are not in the UTG fragment
+
+#Unknown Code http://www.ada.org/snodent#118065D in http://www.ada.org/snodent - note that the code system is labelled as a fragment, so the code may be valid in some other fragment for "http://www.ada.org/snodent#118065D"
+# the dental data exchange IG is using codes that are not in the UTG fragment
+
+#Unknown Code http://www.ada.org/snodent#118065D in http://www.ada.org/snodent - note that the code system is labelled as a fragment, so the code may be valid in some other fragment
+# the dental data exchange IG is using codes that are not in the UTG fragment
+
+#Unknown Code http://www.ada.org/snodent#118065D in http://www.ada.org/snodent - note that the code system is labelled as a fragment, so the code may be valid in some other fragment for "http://www.ada.org/snodent#118065D"
+# the dental data exchange IG is using codes that are not in the UTG fragment
+
+#Unknown Code http://www.ada.org/snodent#118065D in http://www.ada.org/snodent - note that the code system is labelled as a fragment, so the code may be valid in some other fragment
+# the dental data exchange IG is using codes that are not in the UTG fragment
+
+#Unknown Code http://www.ada.org/snodent#125784D in http://www.ada.org/snodent - note that the code system is labelled as a fragment, so the code may be valid in some other fragment for "http://www.ada.org/snodent#125784D"
+# the dental data exchange IG is using codes that are not in the UTG fragment
+
+#Unknown Code http://www.ada.org/snodent#148393D in http://www.ada.org/snodent - note that the code system is labelled as a fragment, so the code may be valid in some other fragment for "http://www.ada.org/snodent#148393D"
+# the dental data exchange IG is using codes that are not in the UTG fragment
+
+#Unknown Code http://www.ada.org/snodent#148393D in http://www.ada.org/snodent - note that the code system is labelled as a fragment, so the code may be valid in some other fragment
+# the dental data exchange IG is using codes that are not in the UTG fragment
+
+#Unknown Code http://www.ada.org/snodent#181608D in http://www.ada.org/snodent - note that the code system is labelled as a fragment, so the code may be valid in some other fragment for "http://www.ada.org/snodent#181608D"
+# the dental data exchange IG is using codes that are not in the UTG fragment
+
+#Unknown Code http://www.ada.org/snodent#181608D in http://www.ada.org/snodent - note that the code system is labelled as a fragment, so the code may be valid in some other fragment
+# the dental data exchange IG is using codes that are not in the UTG fragment
+
+#Unknown Code http://www.ada.org/snodent#181608D in http://www.ada.org/snodent - note that the code system is labelled as a fragment, so the code may be valid in some other fragment for "http://www.ada.org/snodent#181608D"
+# the dental data exchange IG is using codes that are not in the UTG fragment
+
+#Unknown Code http://www.ada.org/snodent#181608D in http://www.ada.org/snodent - note that the code system is labelled as a fragment, so the code may be valid in some other fragment
+# the dental data exchange IG is using codes that are not in the UTG fragment
+
+#Unknown Code http://www.ada.org/snodent#126488D in http://www.ada.org/snodent - note that the code system is labelled as a fragment, so the code may be valid in some other fragment for "http://www.ada.org/snodent#126488D"
+# the dental data exchange IG is using codes that are not in the UTG fragment
+
+#Unknown Code http://www.ada.org/snodent#126488D in http://www.ada.org/snodent - note that the code system is labelled as a fragment, so the code may be valid in some other fragment
+# the dental data exchange IG is using codes that are not in the UTG fragment
+
+#Unknown Code http://www.ada.org/snodent#131687D in http://www.ada.org/snodent - note that the code system is labelled as a fragment, so the code may be valid in some other fragment for "http://www.ada.org/snodent#131687D"
+# the dental data exchange IG is using codes that are not in the UTG fragment
+
+#Unknown Code http://www.ada.org/snodent#131687D in http://www.ada.org/snodent - note that the code system is labelled as a fragment, so the code may be valid in some other fragment
+# the dental data exchange IG is using codes that are not in the UTG fragment
+
+#Unknown Code http://www.ada.org/snodent#209670D in http://www.ada.org/snodent - note that the code system is labelled as a fragment, so the code may be valid in some other fragment for "http://www.ada.org/snodent#209670D"
+# the dental data exchange IG is using codes that are not in the UTG fragment
+
+#US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles. Comparison with US Core Pediatric BMI for Age Observation Profile. Comparison with US Core Pediatric Weight for Height Observation Profile. Comparison with US Core Laboratory Result Observation Profile. Comparison with US Core Pulse Oximetry Profile. Comparison with US Core Smoking Status Observation Profile
+# Known issue that has been raised with US Steering Committee
+
+#ValueSet https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7186 not found by validator
+# IG Publisher not integrated with PhinVads
+
+# # The following code systems are external and not supported by terminology server
+Error from server: Not implemented
+Error from server: Unable to find value set "http://hl7.org/fhir/us/dentalreferral/ValueSet/oral-cavity-area"
