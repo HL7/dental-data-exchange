@@ -12,9 +12,9 @@
   <status value="draft" />
   <compose>
     <include>
-      <valueSet value="http://hl7.org/fhir/us/dentalreferral/ValueSet/oral-cavity-area" />
       <valueSet
         value="http://hl7.org/fhir/us/dentalreferral/ValueSet/dental-universal-numbering-system" />
+      <valueSet value="http://hl7.org/fhir/us/dentalreferral/ValueSet/oral-cavity-area" />
     </include>
   </compose>
 </ValueSet>
