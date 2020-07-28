@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ValueSet
-    xmlns="http://hl7.org/fhir">
-    <id value="dental-anatomy"/>
-    <meta>
-        <versionId value="3"/>
-        <lastUpdated value="2020-07-23T19:43:50.651+00:00"/>
-        <source value="#oEJytSHXwobB0bdJ"/>
-    </meta>
-    <url value="http://hl7.org/fhir/us/dentalreferral/ValueSet/dental-anatomy"/>
-    <name value="DentalAnatomy"/>
-    <title value="Dental Anatomy"/>
-    <status value="draft"/>
-    <compose>
-        <include>
-            <valueSet value="http://hl7.org/fhir/us/dentalreferral/ValueSet/oral-cavity-area"/>
-            <valueSet value="http://hl7.org/fhir/us/dentalreferral/ValueSet/dental-universal-numbering-system"/>
-        </include>
-    </compose>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="dental-anatomy" />
+  <meta>
+    <versionId value="3" />
+    <lastUpdated value="2020-07-23T19:43:50.651+00:00" />
+    <source value="#oEJytSHXwobB0bdJ" />
+  </meta>
+  <url value="http://hl7.org/fhir/us/dentalreferral/ValueSet/dental-anatomy" />
+  <name value="DentalAnatomy" />
+  <title value="Dental Anatomy" />
+  <status value="draft" />
+  <compose>
+    <include>
+      <valueSet value="http://hl7.org/fhir/us/dentalreferral/ValueSet/oral-cavity-area" />
+      <valueSet
+        value="http://hl7.org/fhir/us/dentalreferral/ValueSet/dental-universal-numbering-system" />
+    </include>
+  </compose>
 </ValueSet>
