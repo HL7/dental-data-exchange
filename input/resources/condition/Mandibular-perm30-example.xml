@@ -36,7 +36,7 @@
         <coding>
             <system value="http://www.ada.org/snodent"/>
             <code value="160770D"/>
-            <display value="Entire permanent mandibular right first molar tooth (body structure); tooth number 30"/>
+          <display value="Permanent lower right first molar tooth"/>
         </coding>
         <text value="Entire permanent mandibular right first molar tooth (body structure); tooth number 30"/>
     </code>
