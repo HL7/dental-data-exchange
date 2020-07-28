@@ -42,7 +42,7 @@
         <coding>
             <system value="http://www.ada.org/snodent"/>
             <code value="161372D"/>
-            <display value="Mandibular left second molar tooth"/>
+          <display value="Permanent lower left second molar tooth"/>
         </coding>
     </bodySite>
 </Procedure>

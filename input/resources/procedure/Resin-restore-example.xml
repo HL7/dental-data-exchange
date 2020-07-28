@@ -37,7 +37,7 @@
         <coding>
             <system value="http://www.ada.org/snodent"/>
             <code value="161941D"/>
-            <display value="Entire permanent maxillary right lateral incisor tooth (body structure); Tooth number 7"/>
+          <display value="Permanent upper right lateral incisor tooth"/>
         </coding>
         <coding>
             <system value="http://wwwhttp://snomed.info/sct"/>
