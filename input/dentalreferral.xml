@@ -7,7 +7,7 @@
         <lastUpdated value="2020-07-24T19:24:07.091+00:00"/>
         <source value="#FMT7MJuzzlmL5n4L"/>
     </meta>
-    <url value="http://hl7.org/fhir/us/dentalreferral"/>
+    <url value="http://hl7.org/fhir/us/dentalreferral/ImplementationGuide/dentalreferral"/>
     <version value="0.0.1"/>
     <name value="DentalReferral"/>
     <title value="Dental Referral and Consult"/>
