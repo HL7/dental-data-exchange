@@ -31,11 +31,29 @@ Unknown Code http://www.ada.org/snodent#126488D in http://www.ada.org/snodent - 
 Unknown Code http://www.ada.org/snodent#131687D in http://www.ada.org/snodent - note that the code system is labelled as a fragment, so the code may be valid in some other fragment for "http://www.ada.org/snodent#131687D"
 Unknown Code http://www.ada.org/snodent#131687D in http://www.ada.org/snodent - note that the code system is labelled as a fragment, so the code may be valid in some other fragment
 Unknown Code http://www.ada.org/snodent#209670D in http://www.ada.org/snodent - note that the code system is labelled as a fragment, so the code may be valid in some other fragment for "http://www.ada.org/snodent#209670D"
+Internal error: Unknown Code http://www.ada.org/snodent#148393D in http://www.ada.org/snodent - note that the code system is labelled as a fragment, so the code may be valid in some other fragment
+Internal error: Unknown Code http://www.ada.org/snodent#179051D in http://www.ada.org/snodent - note that the code system is labelled as a fragment, so the code may be valid in some other fragment
+Internal error: Unknown Code http://www.ada.org/snodent#116957D in http://www.ada.org/snodent - note that the code system is labelled as a fragment, so the code may be valid in some other fragment
+Internal error: Unknown Code http://www.ada.org/snodent#175321D in http://www.ada.org/snodent - note that the code system is labelled as a fragment, so the code may be valid in some other fragment
+Internal error: Unknown Code http://www.ada.org/snodent#118065D in http://www.ada.org/snodent - note that the code system is labelled as a fragment, so the code may be valid in some other fragment
+Internal error: Unknown Code http://www.ada.org/snodent#108723D in http://www.ada.org/snodent - note that the code system is labelled as a fragment, so the code may be valid in some other fragment
+Internal error: Unknown Code http://www.ada.org/snodent#175027D in http://www.ada.org/snodent - note that the code system is labelled as a fragment, so the code may be valid in some other fragment
+Internal error: Unknown Code http://www.ada.org/snodent#118065D in http://www.ada.org/snodent - note that the code system is labelled as a fragment, so the code may be valid in some other fragment
+Internal error: Unknown Code http://www.ada.org/snodent#118065D in http://www.ada.org/snodent - note that the code system is labelled as a fragment, so the code may be valid in some other fragment
+Internal error: Unknown Code http://www.ada.org/snodent#125784D in http://www.ada.org/snodent - note that the code system is labelled as a fragment, so the code may be valid in some other fragment
+Internal error: Unknown Code http://www.ada.org/snodent#148393D in http://www.ada.org/snodent - note that the code system is labelled as a fragment, so the code may be valid in some other fragment
+Internal error: Unknown Code http://www.ada.org/snodent#181608D in http://www.ada.org/snodent - note that the code system is labelled as a fragment, so the code may be valid in some other fragment
+Internal error: Unknown Code http://www.ada.org/snodent#181608D in http://www.ada.org/snodent - note that the code system is labelled as a fragment, so the code may be valid in some other fragment
+Internal error: Unknown Code http://www.ada.org/snodent#126488D in http://www.ada.org/snodent - note that the code system is labelled as a fragment, so the code may be valid in some other fragment
+Internal error: Unknown Code http://www.ada.org/snodent#131687D in http://www.ada.org/snodent - note that the code system is labelled as a fragment, so the code may be valid in some other fragment
+Internal error: Unknown Code http://www.ada.org/snodent#209670D in http://www.ada.org/snodent - note that the code system is labelled as a fragment, so the code may be valid in some other fragment
+Error from server: Unable to provide support for code system http://ada.org/snodent
+Unknown System specified, so Concepts and Filters can't be checked
 
 # Known issue that has been raised with US Steering Committee
 US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles. Comparison with US Core Pediatric BMI for Age Observation Profile. Comparison with US Core Pediatric Weight for Height Observation Profile. Comparison with US Core Laboratory Result Observation Profile. Comparison with US Core Pulse Oximetry Profile. Comparison with US Core Smoking Status Observation Profile
 
-# IG Publisher not integrated with PhinVads or VSAC
+# The following value sets are external and not supported by terminology server
 ValueSet https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7186 not found by validator
 ValueSet https://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.11.20.9.31 not found by validator
 ValueSet https://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.1.11.20.2.3 not found by validator
@@ -43,3 +61,20 @@ ValueSet https://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.1.11.20.2.3 not
 # The following code systems are external and not supported by terminology server
 Error from server: Not implemented
 Error from server: Unable to find value set "http://hl7.org/fhir/us/dentalreferral/ValueSet/oral-cavity-area"
+
+# Known ICD-10-CM issue
+The code K08.89 is not valid in the system http://hl7.org/fhir/sid/icd-10-cm
+The code K06.8 is not valid in the system http://hl7.org/fhir/sid/icd-10-cm
+The code K02.9 is not valid in the system http://hl7.org/fhir/sid/icd-10-cm
+The code Z09 is not valid in the system http://hl7.org/fhir/sid/icd-10-cm
+The code T79.9XXA is not valid in the system http://hl7.org/fhir/sid/icd-10-cm
+The code M26.69 is not valid in the system http://hl7.org/fhir/sid/icd-10-cm
+The code K03.2 is not valid in the system http://hl7.org/fhir/sid/icd-10-cm
+The code R68.2 is not valid in the system http://hl7.org/fhir/sid/icd-10-cm
+The code K03.6 is not valid in the system http://hl7.org/fhir/sid/icd-10-cm
+The code K12.2 is not valid in the system http://hl7.org/fhir/sid/icd-10-cm
+The code E13.9 is not valid in the system http://hl7.org/fhir/sid/icd-10-cm
+The code Z33.1 is not valid in the system http://hl7.org/fhir/sid/icd-10-cm
+The code K00.6 is not valid in the system http://hl7.org/fhir/sid/icd-10-cm
+The code M26.4 is not valid in the system http://hl7.org/fhir/sid/icd-10-cm
+

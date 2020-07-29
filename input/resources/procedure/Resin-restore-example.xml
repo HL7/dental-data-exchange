@@ -40,7 +40,7 @@
           <display value="Permanent upper right lateral incisor tooth"/>
         </coding>
         <coding>
-            <system value="http://wwwhttp://snomed.info/sct"/>
+            <system value="http://www.snomed.info/sct"/>
             <code value="245574002"/>
             <display value="Entire permanent maxillary right lateral incisor tooth (body structure); Tooth number 7"/>
         </coding>
