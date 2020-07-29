@@ -53,6 +53,7 @@
         </include>
     </compose>
     <expansion>
+        <timestamp value="2020-07-28T10:00:00Z"/> 
         <contains>
             <system value="http://ada.org/snodent"/>
             <code value="210965D"/>
