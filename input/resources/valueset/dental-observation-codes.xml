@@ -11,7 +11,7 @@
     <name value="DentalObservationCodes"/>
     <title value="Dental Observation Codes"/>
     <status value="draft"/>
-    <description value="This ValueSet contains all ICD-9/10, CPT, CDT, LOINC codes, as well as the Clinical Findings (finding) concept from both Snomed and Snodent. "/>
+    <description value="This ValueSet contains all ICD-9/10, CPT, CDT, LOINC codes, as well as the Clinical Findings (finding) concept from both SNOMED CT and SNODENT. "/>
     <compose>
         <include>
             <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
