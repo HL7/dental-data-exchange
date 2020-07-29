@@ -19,7 +19,7 @@
         <!--<include>
             <system value="http://loinc.org"/>
         </include>-->
-        <!--<include>
+        <include>
             <system value="http://www.ada.org/snodent"/>
             <filter>
                 <property value="concept"/>
@@ -31,7 +31,7 @@
                 <op value="descendent-of"/>
                 <value value="165733D"/>
             </filter>
-        </include>-->
+        </include>
         <include>
             <system value="http://snomed.info/sct"/>
             <filter>
