@@ -16,9 +16,9 @@
         <!--<include>
             <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
         </include>-->
-        <include>
+        <!--<include>
             <system value="http://loinc.org"/>
-        </include>
+        </include>-->
         <!--<include>
             <system value="http://www.ada.org/snodent"/>
             <filter>
@@ -31,7 +31,7 @@
                 <op value="descendent-of"/>
                 <value value="165733D"/>
             </filter>
-        </include>
+        </include>-->
         <include>
             <system value="http://snomed.info/sct"/>
             <filter>
@@ -44,6 +44,6 @@
                 <op value="descendent-of"/>
                 <value value="243796009"/>
             </filter>
-        </include>-->
+        </include>
     </compose>
 </ValueSet>
