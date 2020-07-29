@@ -52,7 +52,7 @@
             </concept>
         </include>
     </compose>
-    <expansion>
+    <!--<expansion>
         <timestamp value="2020-07-28T10:00:00Z"/> 
         <contains>
             <system value="http://www.ada.org/snodent"/>
@@ -94,5 +94,5 @@
             <code value="280710004"/>
             <display value="Posterior segment of maxilla"/>
         </contains>
-    </expansion>
+    </expansion>-->
 </ValueSet>
