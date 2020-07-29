@@ -19,7 +19,7 @@
         <include>
             <system value="http://loinc.org"/>
         </include>
-        <include>
+        <!--<include>
             <system value="http://www.ada.org/snodent"/>
             <filter>
                 <property value="concept"/>
@@ -44,6 +44,6 @@
                 <op value="descendent-of"/>
                 <value value="243796009"/>
             </filter>
-        </include>
+        </include>-->
     </compose>
 </ValueSet>
