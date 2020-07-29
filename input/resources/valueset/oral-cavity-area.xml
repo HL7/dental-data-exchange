@@ -14,7 +14,7 @@
     <description value="This ValueSet contains codes for standard oral cavity areas of the mouth"/>
     <compose>
         <include>
-            <system value="http://ada.org/snodent"/>
+            <system value="http://www.ada.org/snodent"/>
             <concept>
                 <code value="210965D"/>
                 <display value="Anterior part of lower alveolar ridge"/>
@@ -55,22 +55,22 @@
     <expansion>
         <timestamp value="2020-07-28T10:00:00Z"/> 
         <contains>
-            <system value="http://ada.org/snodent"/>
+            <system value="http://www.ada.org/snodent"/>
             <code value="210965D"/>
             <display value="Anterior part of lower alveolar ridge"/>
         </contains>
         <contains>
-            <system value="http://ada.org/snodent"/>
+            <system value="http://www.ada.org/snodent"/>
             <code value="210963D"/>
             <display value="Anterior segment of maxilla"/>
         </contains>
         <contains>
-            <system value="http://ada.org/snodent"/>
+            <system value="http://www.ada.org/snodent"/>
             <code value="210966D"/>
             <display value="Posterior part of lower alveolar ridge"/>
         </contains>
         <contains>
-            <system value="http://ada.org/snodent"/>
+            <system value="http://www.ada.org/snodent"/>
             <code value="210964D"/>
             <display value="Posterior segment of maxilla"/>
         </contains>

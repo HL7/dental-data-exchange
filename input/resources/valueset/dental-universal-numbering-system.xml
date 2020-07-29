@@ -9,7 +9,7 @@
     </meta>
     <url value="http://hl7.org/fhir/us/dentalreferral/ValueSet/dental-universal-numbering-system"/>
     <name value="DentalUniversalNumberingSystem"/>
-    <title value="DentalUniversalNumberingSystem"/>
+    <title value="Dental Universal Numbering System"/>
     <status value="draft"/>
     <compose>
         <include>
