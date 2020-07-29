@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ValueSet
-    xmlns="http://hl7.org/fhir">
+<ValueSet xmlns="http://hl7.org/fhir">
     <id value="oral-cavity-area"/>
     <meta>
         <versionId value="7"/>
@@ -53,4 +52,46 @@
             </concept>
         </include>
     </compose>
+    <expansion>
+        <contains>
+            <system value="http://ada.org/snodent"/>
+            <code value="210965D"/>
+            <display value="Anterior part of lower alveolar ridge"/>
+        </contains>
+        <contains>
+            <system value="http://ada.org/snodent"/>
+            <code value="210963D"/>
+            <display value="Anterior segment of maxilla"/>
+        </contains>
+        <contains>
+            <system value="http://ada.org/snodent"/>
+            <code value="210966D"/>
+            <display value="Posterior part of lower alveolar ridge"/>
+        </contains>
+        <contains>
+            <system value="http://ada.org/snodent"/>
+            <code value="210964D"/>
+            <display value="Posterior segment of maxilla"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="245796006"/>
+            <display value="Anterior part of lower alveolar ridge"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="280709009"/>
+            <display value="Anterior segment of maxilla"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="245797002"/>
+            <display value="Posterior part of lower alveolar ridge"/>
+        </contains>
+        <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="280710004"/>
+            <display value="Posterior segment of maxilla"/>
+        </contains>
+    </expansion>
 </ValueSet>
