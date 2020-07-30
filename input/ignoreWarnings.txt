@@ -77,4 +77,5 @@ The code E13.9 is not valid in the system http://hl7.org/fhir/sid/icd-10-cm
 The code Z33.1 is not valid in the system http://hl7.org/fhir/sid/icd-10-cm
 The code K00.6 is not valid in the system http://hl7.org/fhir/sid/icd-10-cm
 The code M26.4 is not valid in the system http://hl7.org/fhir/sid/icd-10-cm
+The code Z02.9 is not valid in the system http://hl7.org/fhir/sid/icd-10-cm
 
