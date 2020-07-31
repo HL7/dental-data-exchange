@@ -50,11 +50,6 @@
                 <code value="271649006"/>
                 <display value="Systolic blood pressure"/>
             </coding>
-            <coding>
-                <system value="http://acme.org/devices/clinical-codes"/>
-                <code value="bp-s"/>
-                <display value="Systolic Blood pressure"/>
-            </coding>
         </code>
         <valueQuantity>
             <value value="120"/>

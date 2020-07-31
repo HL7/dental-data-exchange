@@ -15,7 +15,7 @@
     <status value="completed"/>
     <code>
         <coding>
-            <system value="http://www.ama-assn.org/go/cdt"/>
+          <system value="https://www.ada.org/en/publications/cdt"/>
             <code value="D1206"/>
         </coding>
         <text value="topical application of fluoride varnish"/>

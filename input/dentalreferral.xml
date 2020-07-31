@@ -252,9 +252,9 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Procedure/Dental-extraction-example"/></reference>
+                <reference value="ServiceRequest/Dental-extraction-example"/></reference>
             <name value="Extraction Procedure (example)"/>
-            <description value="This is an example of US Core Procedure"/>
+            <description value="This is an example of Dental ServiceRequest"/>
             <exampleBoolean value="true"/>
         </resource>
         <resource>
@@ -606,16 +606,16 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Procedure/Radiograph-survey"/></reference>
+                <reference value="ServiceRequest/Radiograph-survey"/></reference>
             <name value="Radiography Imaging (example)"/>
-            <description value="This is an example of US Core Procedure"/>
+            <description value="This is an example of Dental ServiceRequest"/>
             <exampleBoolean value="true"/>
         </resource>
         <resource>
             <reference>
-                <reference value="Procedure/Resin-restore-example"/></reference>
+                <reference value="ServiceRequest/Resin-restore-example"/></reference>
             <name value="Resin restoration (example)"/>
-            <description value="This is an example of US Core Procedure"/>
+            <description value="This is an example of Dental ServiceRequest"/>
             <exampleBoolean value="true"/>
         </resource>
         <resource>

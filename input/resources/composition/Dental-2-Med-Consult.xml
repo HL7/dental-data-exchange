@@ -423,10 +423,10 @@
             </div>
         </text>
         <entry>
-            <reference value="Procedure/Dental-extraction-example"/>
+            <reference value="ServiceRequest/Dental-extraction-example"/>
         </entry>
         <entry>
-            <reference value="Procedure/Resin-restore-example"/>
+            <reference value="ServiceRequest/Resin-restore-example"/>
         </entry>
         <entry>
             <reference value="Encounter/Comp-oral-eval"/>
@@ -435,7 +435,7 @@
             <reference value="Encounter/Dentist-followup-prophylaxis"/>
         </entry>
         <entry>
-            <reference value="Procedure/Radiograph-survey"/>
+            <reference value="ServiceRequest/Radiograph-survey"/>
         </entry>
     </section>
     <section>
@@ -517,6 +517,11 @@
                             <b>Effective Dates</b>
                         </td>
                     </tr>
+                  <tr>
+                    <td>Smoking Status - Meaningful Use</td>
+                    <td>Never smoked tobacco</td>
+                    <td>Feb 14, 2020</td>
+                  </tr>
                     <tr>
                         <td>Highest Education Level</td>
                         <td>College Education</td>
@@ -530,6 +535,9 @@
                 </table>
             </div>
         </text>
+      <entry>
+        <reference value="Observation/Smoker-obs-example-dental"/>
+      </entry>
         <entry>
             <reference value="Observation/Education-level-example-dental"/>
         </entry>

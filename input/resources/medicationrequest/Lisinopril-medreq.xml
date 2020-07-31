@@ -35,11 +35,11 @@
             </repeat>
         </timing>
         <route>
-            <coding>
-                <system value="http://ncimeta.nci.nih.gov"/>
-                <code value="C38288"/>
-                <display value="Oral Route of Administration"/>
-            </coding>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="26643006"/>
+            <display value="Oral use"/>
+          </coding>
         </route>
     </dosageInstruction>
 </MedicationRequest>
