@@ -3,13 +3,72 @@
     xmlns="http://hl7.org/fhir">
     <id value="dental-reason-for-referral"/>
     <meta>
-        <versionId value="8"/>
-        <lastUpdated value="2020-08-06T17:16:05.628+00:00"/>
-        <source value="#0YCxIENZIiVTbASP"/>
+        <versionId value="10"/>
+        <lastUpdated value="2020-08-06T17:59:52.316+00:00"/>
+        <source value="#IZAeN0vH1roWNTRm"/>
+        <security>
+            <system value="https://trifolia-fhir.lantanagroup.com/security"/>
+            <code value="user^G4dwOcFt^read"/>
+        </security>
+        <security>
+            <system value="https://trifolia-fhir.lantanagroup.com/security"/>
+            <code value="user^N5vFqxe9^read"/>
+        </security>
+        <security>
+            <system value="https://trifolia-fhir.lantanagroup.com/security"/>
+            <code value="user^1cNk7Rvo^write"/>
+        </security>
+        <security>
+            <system value="https://trifolia-fhir.lantanagroup.com/security"/>
+            <code value="user^N5vFqxe9^write"/>
+        </security>
+        <security>
+            <system value="https://trifolia-fhir.lantanagroup.com/security"/>
+            <code value="user^dBvXPzf6^write"/>
+        </security>
+        <security>
+            <system value="https://trifolia-fhir.lantanagroup.com/security"/>
+            <code value="user^E8rHe8si^write"/>
+        </security>
+        <security>
+            <system value="https://trifolia-fhir.lantanagroup.com/security"/>
+            <code value="user^E8rHe8si^read"/>
+        </security>
+        <security>
+            <system value="https://trifolia-fhir.lantanagroup.com/security"/>
+            <code value="everyone^read"/>
+        </security>
+        <security>
+            <system value="https://trifolia-fhir.lantanagroup.com/security"/>
+            <code value="user^34EAHd1Q^read"/>
+        </security>
+        <security>
+            <system value="https://trifolia-fhir.lantanagroup.com/security"/>
+            <code value="user^G4dwOcFt^write"/>
+        </security>
+        <security>
+            <system value="https://trifolia-fhir.lantanagroup.com/security"/>
+            <code value="user^s7DIn2HM^read"/>
+        </security>
+        <security>
+            <system value="https://trifolia-fhir.lantanagroup.com/security"/>
+            <code value="user^dBvXPzf6^read"/>
+        </security>
+        <security>
+            <system value="https://trifolia-fhir.lantanagroup.com/security"/>
+            <code value="user^34EAHd1Q^write"/>
+        </security>
+        <security>
+            <system value="https://trifolia-fhir.lantanagroup.com/security"/>
+            <code value="user^1cNk7Rvo^read"/>
+        </security>
+        <security>
+            <system value="https://trifolia-fhir.lantanagroup.com/security"/>
+            <code value="user^s7DIn2HM^write"/>
+        </security>
     </meta>
     <url value="http://hl7.org/fhir/us/dental-data-exchange/ValueSet/dental-reason-for-referral"/>
     <name value="DentalReasonForReferral"/>
-    <title value="DentalReasonForReferral"/>
     <status value="draft"/>
     <compose>
         <include>
@@ -24,11 +83,11 @@
             </concept>
             <concept>
                 <code value="309685001"/>
-                <display value="Swollen gums "/>
+                <display value="Swollen gums"/>
             </concept>
             <concept>
                 <code value="80967001"/>
-                <display value="Dental caries "/>
+                <display value="Dental caries"/>
             </concept>
             <concept>
                 <code value="110475006"/>
@@ -111,11 +170,11 @@
             </concept>
             <concept>
                 <code value="148393D"/>
-                <display value="Swollen gums "/>
+                <display value="Swollen gums"/>
             </concept>
             <concept>
                 <code value="118065D"/>
-                <display value="Dental caries "/>
+                <display value="Dental caries"/>
             </concept>
             <concept>
                 <code value="146328D"/>
@@ -170,15 +229,15 @@
                 <display value="Diabetes mellitus"/>
             </concept>
             <concept>
-                <code value="174950D "/>
+                <code value="174950D"/>
                 <display value="Pregnant"/>
             </concept>
             <concept>
-                <code value="144684D "/>
+                <code value="144684D"/>
                 <display value="Disturbance of tooth eruption or exfoliation"/>
             </concept>
             <concept>
-                <code value="150365D "/>
+                <code value="150365D"/>
                 <display value="Malocclusion of teeth"/>
             </concept>
         </include>
@@ -225,11 +284,11 @@
                 <display value="Cellulitis and abscess of mouth"/>
             </concept>
             <concept>
-                <code value="E13.9 "/>
+                <code value="E13.9"/>
                 <display value="Other specified diabetes mellitus without complications"/>
             </concept>
             <concept>
-                <code value="Z33.1 "/>
+                <code value="Z33.1"/>
                 <display value="Pregnant state, incidental"/>
             </concept>
             <concept>
@@ -241,7 +300,7 @@
                 <display value="Disturbances in tooth eruption"/>
             </concept>
             <concept>
-                <code value="M26.4 "/>
+                <code value="M26.4"/>
                 <display value="Malocclusion, unspecified"/>
             </concept>
         </include>
