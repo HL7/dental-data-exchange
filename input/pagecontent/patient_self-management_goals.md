@@ -17,4 +17,4 @@ A Goals Section is represented as a MAY in the referral and consult note, provid
 
 
 
-[Next Page - Value Set Discrepencies (TBD)](value_set_discrepencies_tbd.html)
+[Next Page - Dental Use Case Scenarios](dental_use_case_scenarios.html)

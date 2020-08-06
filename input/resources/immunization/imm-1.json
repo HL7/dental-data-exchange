@@ -1,0 +1,32 @@
+{
+	"resourceType": "Immunization",
+	"id": "imm-1",
+	"meta": {
+		"versionId": "7",
+		"lastUpdated": "2020-08-06T17:04:21.471+00:00",
+		"source": "#aPpQXivh90J78Qc4",
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-immunization"
+		]
+	},
+	"text": {
+		"status": "generated",
+		"div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"1\" width=\"100%\"><thead><tr><th>Vaccine</th><th>Date</th><th>Status</th></tr></thead><tbody><tr><td>\n              Hepatitis B vaccine\n\t\t\t\t\t\t\t\t\t</td><td>January 4, 2020</td><td>Completed</td></tr></tbody></table></div>"
+	},
+	"status": "completed",
+	"vaccineCode": {
+		"coding": [
+			{
+				"system": "http://hl7.org/fhir/sid/cvx",
+				"code": "08",
+				"display": "Hep B, adolescent or pediatric"
+			}
+		]
+	},
+	"patient": {
+		"reference": "Patient/example-dental",
+		"display": "Patient A"
+	},
+	"occurrenceDateTime": "2020-01-04",
+	"primarySource": false
+}

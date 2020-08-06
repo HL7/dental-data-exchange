@@ -1,0 +1,36 @@
+{
+	"resourceType": "Observation",
+	"id": "Education-level-example-dental",
+	"meta": {
+		"versionId": "3",
+		"lastUpdated": "2020-08-06T17:04:19.072+00:00",
+		"source": "#JtfdlChUIkdgBsah"
+	},
+	"status": "final",
+	"code": {
+		"coding": [
+			{
+				"system": "http://loinc.org",
+				"code": "82589-3",
+				"display": "Highest Level of Education"
+			}
+		]
+	},
+	"subject": {
+		"reference": "Patient/example-dental",
+		"display": "Patient A"
+	},
+	"effectivePeriod": {
+		"start": "2012-01-01",
+		"end": "2016-01-01"
+	},
+	"valueCodeableConcept": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "224302000",
+				"display": "Received higher education college education (finding)"
+			}
+		]
+	}
+}

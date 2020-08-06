@@ -1,0 +1,53 @@
+{
+	"resourceType": "MedicationRequest",
+	"id": "erythromycin-medreq-2",
+	"meta": {
+		"versionId": "4",
+		"lastUpdated": "2020-08-06T17:04:21.460+00:00",
+		"source": "#sRqmcVChZmoyJzL0",
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationrequest"
+		]
+	},
+	"status": "active",
+	"intent": "plan",
+	"medicationReference": {
+		"reference": "Medication/erythromycin-med-example"
+	},
+	"subject": {
+		"reference": "Patient/example-dental",
+		"display": "Patient A"
+	},
+	"authoredOn": "2017-12-06",
+	"requester": {
+		"reference": "Practitioner/practitioner-D",
+		"display": "Dr. John M, MD"
+	},
+	"dosageInstruction": [
+		{
+			"text": "Take 1 tablet every six hours X10 days",
+			"timing": {
+				"repeat": {
+					"boundsPeriod": {
+						"start": "2017-12-06"
+					}
+				}
+			}
+		}
+	],
+	"dispenseRequest": {
+		"numberOfRepeatsAllowed": 1,
+		"quantity": {
+			"value": 500,
+			"unit": "mg",
+			"system": "http://unitsofmeasure.org",
+			"code": "mg"
+		},
+		"expectedSupplyDuration": {
+			"value": 10,
+			"unit": "days",
+			"system": "http://unitsofmeasure.org",
+			"code": "d"
+		}
+	}
+}

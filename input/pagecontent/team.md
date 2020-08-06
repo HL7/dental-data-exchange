@@ -1,18 +1,6 @@
-[Previous Page - Scenario 4 Dental (Endodontist) to Dental (General Dentist) Referral Result](scenario_4_dental_endodontist_to_dental_general_dentist_referral_result.html)
+[Previous Page - Acknowledgements](acknowledgements.html)
 
-This guide was developed and produced through the efforts of Health Level Seven (HL7).
-The editors appreciate the support and sponsorship of the HL7 Payer/Provider Information Exchange (PIE) Working Group, the HL7 Structured Documents Working Group (SDWG), and all volunteers and staff associated with the creation of this document. This guide would not have been possible without the support of the following organizations:
-•	American Dental Association
-•	Defense Health Agency, US Department of Defense
-•	Lantana Consulting Group
-•	DentaQuest Partnership for Oral Health Advancement 
-
-This material contains content from SNOMED CT® (http://www.ihtsdo.org/snomed-ct/). SNOMED CT is a registered trademark of the International Health Terminology Standard Development Organization (IHTSDO).
-This material contains content from SNODENT® (http://www.ada.org/snodent). SNODENT is a registered trademark of the American Dental Association (ADA). Licensing information is available at http://www.ada.org/8466.aspx.
-This material contains content from LOINC® (http://loinc.org). The LOINC table, LOINC codes, LOINC panels and forms file, LOINC linguistic variants file, LOINC/RSNA Radiology Playbook, and LOINC/IEEE Medical Device Code Mapping Table are copyright © 1995-2016, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/terms-of-use.
-
-
-Contributors
+**Contributors**
 
 | Role | Name | Affiliation | Contact |
 | -------- | -------- | -------- |
@@ -34,4 +22,4 @@ Contributors
 Current Work Group includes those who participated in the Dental Summary Exchange Project: Russ Ott, Greg Zeller, Jean Narcisi, Manisha Khatta, Zabrina Gonzaga, David DeRoode, Col William Baez, LTC Kevin Parker, CDR Steve Stallings, LCDR Michael Bohman, LTC Jeffrey Ford, Nancy Orvis, Rebekah Fiehn, Gyle Gales, Kipp Clemmons, Michael Honeycutt, Chris Brancato, Chris Khanoyan, Joel Bales, Eric Kirnbauer, Matt Szczepankievicz, Beto, Chris Breeden
 
 
-[Next Page - Acknowlegements](acknowlegements.html)
+[Next Page - Appendix A Imaging Results Example Code](appendix_a_imaging_results_example_code.html)

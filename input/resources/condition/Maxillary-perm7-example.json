@@ -1,0 +1,81 @@
+{
+	"resourceType": "Condition",
+	"id": "Maxillary-perm7-example",
+	"meta": {
+		"versionId": "10",
+		"lastUpdated": "2020-08-06T17:04:20.206+00:00",
+		"source": "#xCfGbGwHhMZiOrzH",
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"
+		]
+	},
+	"clinicalStatus": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+				"code": "active",
+				"display": "Active"
+			}
+		],
+		"text": "Active"
+	},
+	"verificationStatus": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+				"code": "confirmed",
+				"display": "Confirmed"
+			}
+		],
+		"text": "Confirmed"
+	},
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://terminology.hl7.org/CodeSystem/condition-category",
+					"code": "problem-list-item",
+					"display": "Problem List Item"
+				}
+			],
+			"text": "Problem"
+		}
+	],
+	"code": {
+		"coding": [
+			{
+				"system": "http://www.ada.org/snodent",
+				"code": "118065D",
+				"display": "Dental caries (disorder)"
+			},
+			{
+				"system": "http://snomed.info/sct",
+				"code": "80967001",
+				"display": "Dental caries (disorder)"
+			}
+		],
+		"text": "Dental caries (disorder)"
+	},
+	"bodySite": [
+		{
+			"coding": [
+				{
+					"system": "http://www.ada.org/snodent",
+					"code": "161941D",
+					"display": "Permanent upper right lateral incisor tooth"
+				},
+				{
+					"system": "http://snomed.info/sct",
+					"code": "245574002",
+					"display": "Entire permanent maxillary right lateral incisor tooth (body structure)"
+				}
+			],
+			"text": "Entire permanent maxillary right lateral incisor tooth (body structure)"
+		}
+	],
+	"subject": {
+		"reference": "Patient/example-dental",
+		"display": "Patient A"
+	},
+	"onsetDateTime": "2019-06-10"
+}

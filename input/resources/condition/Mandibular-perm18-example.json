@@ -1,0 +1,81 @@
+{
+	"resourceType": "Condition",
+	"id": "Mandibular-perm18-example",
+	"meta": {
+		"versionId": "8",
+		"lastUpdated": "2020-08-06T17:04:20.794+00:00",
+		"source": "#9GYYu4r2nFbcaNBI",
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"
+		]
+	},
+	"clinicalStatus": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+				"code": "active",
+				"display": "Active"
+			}
+		],
+		"text": "Active"
+	},
+	"verificationStatus": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+				"code": "confirmed",
+				"display": "Confirmed"
+			}
+		],
+		"text": "Confirmed"
+	},
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://terminology.hl7.org/CodeSystem/condition-category",
+					"code": "problem-list-item",
+					"display": "Problem List Item"
+				}
+			],
+			"text": "Problem"
+		}
+	],
+	"code": {
+		"coding": [
+			{
+				"system": "http://www.ada.org/snodent",
+				"code": "118065D",
+				"display": "Dental caries (disorder)"
+			},
+			{
+				"system": "http://snomed.info/sct",
+				"code": "80967001",
+				"display": "Dental caries (disorder)"
+			}
+		],
+		"text": "Dental caries (disorder)"
+	},
+	"bodySite": [
+		{
+			"coding": [
+				{
+					"system": "http://www.ada.org/snodent",
+					"code": "161372D",
+					"display": "Permanent lower left second molar tooth"
+				},
+				{
+					"system": "http://snomed.info/sct",
+					"code": "48402004",
+					"display": "Mandibular left second molar tooth"
+				}
+			],
+			"text": "Mandibular left second molar tooth"
+		}
+	],
+	"subject": {
+		"reference": "Patient/example-dental",
+		"display": "Patient A"
+	},
+	"onsetDateTime": "2020-02-16"
+}

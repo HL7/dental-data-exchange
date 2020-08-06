@@ -1,0 +1,53 @@
+{
+	"resourceType": "MedicationRequest",
+	"id": "Ibuprofen-medreq-2",
+	"meta": {
+		"versionId": "4",
+		"lastUpdated": "2020-08-06T17:04:21.723+00:00",
+		"source": "#nsfdXhFa9WJvBHdj",
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationrequest"
+		]
+	},
+	"status": "completed",
+	"intent": "plan",
+	"medicationReference": {
+		"reference": "Medication/ibuprofen-med-example-2"
+	},
+	"subject": {
+		"reference": "Patient/example-dental",
+		"display": "Patient A"
+	},
+	"authoredOn": "2019-12-06",
+	"requester": {
+		"reference": "Practitioner/practitioner-D",
+		"display": "Dr. John M, MD"
+	},
+	"dosageInstruction": [
+		{
+			"text": "Take 2-3 tablets every 8 hours as needed for pain",
+			"timing": {
+				"repeat": {
+					"boundsPeriod": {
+						"start": "2019-12-06"
+					}
+				}
+			}
+		}
+	],
+	"dispenseRequest": {
+		"numberOfRepeatsAllowed": 1,
+		"quantity": {
+			"value": 200,
+			"unit": "mg",
+			"system": "http://unitsofmeasure.org",
+			"code": "mg"
+		},
+		"expectedSupplyDuration": {
+			"value": 30,
+			"unit": "days",
+			"system": "http://unitsofmeasure.org",
+			"code": "d"
+		}
+	}
+}

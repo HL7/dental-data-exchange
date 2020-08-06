@@ -1,0 +1,256 @@
+{
+	"resourceType": "ValueSet",
+	"id": "dental-reason-for-referral",
+	"meta": {
+		"versionId": "10",
+		"lastUpdated": "2020-08-06T17:59:52.316+00:00",
+		"source": "#IZAeN0vH1roWNTRm"
+	},
+	"url": "http://hl7.org/fhir/us/dental-data-exchange/ValueSet/dental-reason-for-referral",
+	"name": "DentalReasonForReferral",
+	"status": "draft",
+	"compose": {
+		"include": [
+			{
+				"system": "http://snomed.info/sct",
+				"concept": [
+					{
+						"code": "27355003",
+						"display": "Toothache"
+					},
+					{
+						"code": "11114002",
+						"display": "Sore gums"
+					},
+					{
+						"code": "309685001",
+						"display": "Swollen gums"
+					},
+					{
+						"code": "80967001",
+						"display": "Dental caries"
+					},
+					{
+						"code": "110475006",
+						"display": "Compliance with suggested dental care"
+					},
+					{
+						"code": "397869004",
+						"display": "Dental trauma"
+					},
+					{
+						"code": "65124004",
+						"display": "Swelling"
+					},
+					{
+						"code": "1071000119107",
+						"display": "Oral lesion"
+					},
+					{
+						"code": "298376001",
+						"display": "Temporomandibular joint painful on movement"
+					},
+					{
+						"code": "82212003",
+						"display": "Erosion of teeth"
+					},
+					{
+						"code": "52031007",
+						"display": "Erosion of teeth due to persistent vomiting"
+					},
+					{
+						"code": "87715008",
+						"display": "Xerostomia"
+					},
+					{
+						"code": "110299009",
+						"display": "Poor oral hygiene"
+					},
+					{
+						"code": "6288001",
+						"display": "Accretion on teeth"
+					},
+					{
+						"code": "128477000",
+						"display": "Abscess"
+					},
+					{
+						"code": "40733004",
+						"display": "Infectious disease"
+					},
+					{
+						"code": "73211009",
+						"display": "Diabetes mellitus"
+					},
+					{
+						"code": "77386006",
+						"display": "Pregnant"
+					},
+					{
+						"code": "103697008",
+						"display": "Patient referral for dental care (procedure)"
+					},
+					{
+						"code": "234972003",
+						"display": "Disturbance of tooth eruption or exfoliation"
+					},
+					{
+						"code": "47944004",
+						"display": "Malocclusion of teeth"
+					}
+				]
+			},
+			{
+				"system": "http://ada.org/snodent",
+				"concept": [
+					{
+						"code": "131687D",
+						"display": "Toothache"
+					},
+					{
+						"code": "104458D",
+						"display": "Sore gums"
+					},
+					{
+						"code": "148393D",
+						"display": "Swollen gums"
+					},
+					{
+						"code": "118065D",
+						"display": "Dental caries"
+					},
+					{
+						"code": "146328D",
+						"display": "Compliance with suggested dental care"
+					},
+					{
+						"code": "128117D",
+						"display": "Dental trauma"
+					},
+					{
+						"code": "128015D",
+						"display": "Swelling"
+					},
+					{
+						"code": "180678D",
+						"display": "Oral lesion"
+					},
+					{
+						"code": "167337D",
+						"display": "Temporomandibular joint painful on movement"
+					},
+					{
+						"code": "135988D",
+						"display": "Erosion of teeth"
+					},
+					{
+						"code": "104212D",
+						"display": "Erosion of teeth due to persistent vomiting"
+					},
+					{
+						"code": "138508D",
+						"display": "Xerostomia"
+					},
+					{
+						"code": "140234D",
+						"display": "Poor oral hygiene"
+					},
+					{
+						"code": "127701D",
+						"display": "Accretion on teeth"
+					},
+					{
+						"code": "123286D",
+						"display": "Abscess"
+					},
+					{
+						"code": "138169D",
+						"display": "Infectious disease"
+					},
+					{
+						"code": "133643D",
+						"display": "Diabetes mellitus"
+					},
+					{
+						"code": "174950D",
+						"display": "Pregnant"
+					},
+					{
+						"code": "144684D",
+						"display": "Disturbance of tooth eruption or exfoliation"
+					},
+					{
+						"code": "150365D",
+						"display": "Malocclusion of teeth"
+					}
+				]
+			},
+			{
+				"system": "http://hl7.org/fhir/sid/icd-10-cm",
+				"concept": [
+					{
+						"code": "K08.89",
+						"display": "Other specified disorders of teeth and supporting structures"
+					},
+					{
+						"code": "K06.8",
+						"display": "Other specified disorders of gingiva and edentulous alveolar ridge"
+					},
+					{
+						"code": "K02.9",
+						"display": "Dental caries, unspecified"
+					},
+					{
+						"code": "Z09",
+						"display": "Encounter for follow-up examination after completed treatment for conditions other than malignant neoplasm"
+					},
+					{
+						"code": "T79.9XXA",
+						"display": "Unspecified early complication of trauma, initial encounter"
+					},
+					{
+						"code": "M26.69",
+						"display": "Other specified disorders of temporomandibular joint"
+					},
+					{
+						"code": "K03.2",
+						"display": "Erosion of teeth"
+					},
+					{
+						"code": "R68.2",
+						"display": "Dry mouth, unspecified"
+					},
+					{
+						"code": "K03.6",
+						"display": "Deposits [accretions] on teeth"
+					},
+					{
+						"code": "K12.2",
+						"display": "Cellulitis and abscess of mouth"
+					},
+					{
+						"code": "E13.9",
+						"display": "Other specified diabetes mellitus without complications"
+					},
+					{
+						"code": "Z33.1",
+						"display": "Pregnant state, incidental"
+					},
+					{
+						"code": "Z02.9",
+						"display": "Encounter for Administrative exam, unspecified"
+					},
+					{
+						"code": "K00.6",
+						"display": "Disturbances in tooth eruption"
+					},
+					{
+						"code": "M26.4",
+						"display": "Malocclusion, unspecified"
+					}
+				]
+			}
+		]
+	},
+	"title": "DentalReasonForReferral"
+}

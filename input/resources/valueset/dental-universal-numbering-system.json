@@ -1,0 +1,855 @@
+{
+	"resourceType": "ValueSet",
+	"id": "dental-universal-numbering-system",
+	"meta": {
+		"versionId": "9",
+		"lastUpdated": "2020-08-06T17:04:18.550+00:00",
+		"source": "#HfSbexG1vSdIjS0p"
+	},
+	"url": "http://hl7.org/fhir/us/dental-data-exchange/ValueSet/dental-universal-numbering-system",
+	"name": "DentalUniversalNumberingSystem",
+	"title": "DentalUniversalNumberingSystem",
+	"status": "draft",
+	"compose": {
+		"include": [
+			{
+				"system": "http://www.ada.org/snodent",
+				"concept": [
+					{
+						"code": "161227D",
+						"display": "Permanent upper right third molar tooth"
+					},
+					{
+						"code": "161262D",
+						"display": "Permanent upper right second molar tooth"
+					},
+					{
+						"code": "161010D",
+						"display": "Permanent upper right first molar tooth"
+					},
+					{
+						"code": "161546D",
+						"display": "Permanent upper right second premolar tooth"
+					},
+					{
+						"code": "161607D",
+						"display": "Permanent upper right first premolar tooth"
+					},
+					{
+						"code": "160840D",
+						"display": "Permanent upper right canine tooth"
+					},
+					{
+						"code": "161941D",
+						"display": "Permanent upper right lateral incisor tooth"
+					},
+					{
+						"code": "160903D",
+						"display": "Permanent upper right central incisor tooth"
+					},
+					{
+						"code": "161006D",
+						"display": "Permanent upper left central incisor tooth"
+					},
+					{
+						"code": "161109D",
+						"display": "Permanent upper left lateral incisor tooth"
+					},
+					{
+						"code": "160957D",
+						"display": "Permanent upper left canine tooth"
+					},
+					{
+						"code": "161329D",
+						"display": "Permanent upper left first premolar tooth"
+					},
+					{
+						"code": "161178D",
+						"display": "Permanent upper left second premolar tooth"
+					},
+					{
+						"code": "161132D",
+						"display": "Permanent upper left first molar tooth"
+					},
+					{
+						"code": "161317D",
+						"display": "Permanent upper left second molar tooth"
+					},
+					{
+						"code": "161454D",
+						"display": "Permanent upper left third molar tooth"
+					},
+					{
+						"code": "161258D",
+						"display": "Permanent lower left third molar tooth"
+					},
+					{
+						"code": "161372D",
+						"display": "Permanent lower left second molar tooth"
+					},
+					{
+						"code": "161533D",
+						"display": "Permanent lower left first molar tooth"
+					},
+					{
+						"code": "161150D",
+						"display": "Permanent lower left second premolar tooth"
+					},
+					{
+						"code": "160654D",
+						"display": "Permanent lower left first premolar tooth"
+					},
+					{
+						"code": "160817D",
+						"display": "Permanent lower left canine tooth"
+					},
+					{
+						"code": "161477D",
+						"display": "Permanent lower left lateral incisor tooth"
+					},
+					{
+						"code": "161068D",
+						"display": "Permanent lower left central incisor tooth"
+					},
+					{
+						"code": "161291D",
+						"display": "Permanent lower right central incisor tooth"
+					},
+					{
+						"code": "161197D",
+						"display": "Permanent lower right lateral incisor tooth"
+					},
+					{
+						"code": "161514D",
+						"display": "Permanent lower right canine tooth"
+					},
+					{
+						"code": "161496D",
+						"display": "Permanent lower right first premolar tooth"
+					},
+					{
+						"code": "161412D",
+						"display": "Permanent lower right second premolar tooth"
+					},
+					{
+						"code": "160770D",
+						"display": "Permanent lower right first molar tooth"
+					},
+					{
+						"code": "160704D",
+						"display": "Permanent lower right second molar tooth"
+					},
+					{
+						"code": "161121D",
+						"display": "Permanent lower right third molar tooth"
+					},
+					{
+						"code": "162091D",
+						"display": "Primary upper right second molar tooth"
+					},
+					{
+						"code": "162234D",
+						"display": "Primary upper right first molar tooth"
+					},
+					{
+						"code": "162268D",
+						"display": "Primary upper right canine tooth"
+					},
+					{
+						"code": "162494D",
+						"display": "Primary upper right lateral incisor tooth"
+					},
+					{
+						"code": "162619D",
+						"display": "Primary upper right central incisor tooth"
+					},
+					{
+						"code": "162418D",
+						"display": "Primary upper left central incisor tooth"
+					},
+					{
+						"code": "162350D",
+						"display": "Primary upper left lateral incisor tooth"
+					},
+					{
+						"code": "162309D",
+						"display": "Primary upper left canine tooth"
+					},
+					{
+						"code": "162004D",
+						"display": "Primary upper left first molar tooth"
+					},
+					{
+						"code": "162585D",
+						"display": "Primary upper left second molar tooth"
+					},
+					{
+						"code": "162321D",
+						"display": "Primary lower left second molar tooth"
+					},
+					{
+						"code": "162537D",
+						"display": "Primary lower left first molar tooth"
+					},
+					{
+						"code": "162441D",
+						"display": "Primary lower left canine tooth"
+					},
+					{
+						"code": "162129D",
+						"display": "Primary lower left lateral incisor tooth"
+					},
+					{
+						"code": "162345D",
+						"display": "Primary lower left central incisor tooth"
+					},
+					{
+						"code": "162062D",
+						"display": "Primary lower right central incisor tooth"
+					},
+					{
+						"code": "161956D",
+						"display": "Primary lower right lateral incisor tooth"
+					},
+					{
+						"code": "161892D",
+						"display": "Primary lower right canine tooth"
+					},
+					{
+						"code": "162206D",
+						"display": "Primary lower right first molar tooth"
+					},
+					{
+						"code": "162425D",
+						"display": "Primary lower right second molar tooth"
+					},
+					{
+						"code": "177552D",
+						"display": "Supernumerary deciduous mandibular left canine tooth"
+					},
+					{
+						"code": "177292D",
+						"display": "Supernumerary deciduous mandibular left central incisor tooth"
+					},
+					{
+						"code": "177421D",
+						"display": "Supernumerary deciduous mandibular left first molar tooth"
+					},
+					{
+						"code": "177318D",
+						"display": "Supernumerary deciduous mandibular left lateral incisor tooth"
+					},
+					{
+						"code": "177704D",
+						"display": "Supernumerary deciduous mandibular left second molar tooth "
+					},
+					{
+						"code": "177387D",
+						"display": "Supernumerary deciduous mandibular right canine tooth"
+					},
+					{
+						"code": "177450D ",
+						"display": "Supernumerary deciduous mandibular right central incisor tooth"
+					},
+					{
+						"code": "177758D",
+						"display": "Supernumerary deciduous mandibular right first molar tooth"
+					},
+					{
+						"code": "177466D",
+						"display": "Supernumerary deciduous mandibular right lateral incisor tooth"
+					},
+					{
+						"code": "177302D",
+						"display": "Supernumerary deciduous mandibular right second molar tooth"
+					},
+					{
+						"code": "177497D",
+						"display": "Supernumerary deciduous maxillary left canine tooth"
+					},
+					{
+						"code": "177736D",
+						"display": "Supernumerary deciduous maxillary left central incisor tooth"
+					},
+					{
+						"code": "177715D",
+						"display": "Supernumerary deciduous maxillary left first molar tooth"
+					},
+					{
+						"code": "177263D",
+						"display": "Supernumerary deciduous maxillary left lateral incisor tooth"
+					},
+					{
+						"code": "177581D",
+						"display": "Supernumerary deciduous maxillary left second molar tooth"
+					},
+					{
+						"code": "177575D",
+						"display": "Supernumerary deciduous maxillary right canine tooth"
+					},
+					{
+						"code": "177696D",
+						"display": "Supernumerary deciduous maxillary right central incisor tooth"
+					},
+					{
+						"code": "177360D ",
+						"display": "Supernumerary deciduous maxillary right first molar tooth"
+					},
+					{
+						"code": "177620D",
+						"display": "Supernumerary deciduous maxillary right lateral incisor tooth"
+					},
+					{
+						"code": "177665D ",
+						"display": "Supernumerary deciduous maxillary right second molar tooth"
+					},
+					{
+						"code": "177523D",
+						"display": "Supernumerary permanent mandibular left canine tooth"
+					},
+					{
+						"code": "177510D",
+						"display": "Supernumerary permanent mandibular left central incisor tooth"
+					},
+					{
+						"code": "177478D",
+						"display": "Supernumerary permanent mandibular left first molar tooth"
+					},
+					{
+						"code": "177631D",
+						"display": "Supernumerary permanent mandibular left first premolar tooth"
+					},
+					{
+						"code": "177271D",
+						"display": "Supernumerary permanent mandibular left lateral incisor tooth"
+					},
+					{
+						"code": "177677D",
+						"display": "Supernumerary permanent mandibular left second molar tooth"
+					},
+					{
+						"code": "177727D",
+						"display": "Supernumerary permanent mandibular left second premolar tooth"
+					},
+					{
+						"code": "177743D",
+						"display": "Supernumerary permanent mandibular left third molar tooth"
+					},
+					{
+						"code": "177341D",
+						"display": "Supernumerary permanent mandibular right canine tooth"
+					},
+					{
+						"code": "177285D",
+						"display": "Supernumerary permanent mandibular right central incisor tooth"
+					},
+					{
+						"code": "177413D",
+						"display": "Supernumerary permanent mandibular right first molar tooth"
+					},
+					{
+						"code": "177599D",
+						"display": "Supernumerary permanent mandibular right first premolar tooth"
+					},
+					{
+						"code": "177506D",
+						"display": "Supernumerary permanent mandibular right lateral incisor tooth"
+					},
+					{
+						"code": "177432D",
+						"display": "Supernumerary permanent mandibular right second molar tooth"
+					},
+					{
+						"code": "177409D",
+						"display": "Supernumerary permanent mandibular right second premolar tooth"
+					},
+					{
+						"code": "177608D",
+						"display": "Supernumerary permanent mandibular right third molar tooth"
+					},
+					{
+						"code": "177356D ",
+						"display": "Supernumerary permanent maxillary left canine tooth"
+					},
+					{
+						"code": "177762D",
+						"display": "Supernumerary permanent maxillary left central incisor tooth"
+					},
+					{
+						"code": "177654D",
+						"display": "Supernumerary permanent maxillary left first molar tooth"
+					},
+					{
+						"code": "177445D ",
+						"display": "Supernumerary permanent maxillary left first premolar tooth"
+					},
+					{
+						"code": "177683D ",
+						"display": "Supernumerary permanent maxillary left lateral incisor tooth"
+					},
+					{
+						"code": "177373D",
+						"display": "Supernumerary permanent maxillary left second molar tooth"
+					},
+					{
+						"code": "177325D ",
+						"display": "Supernumerary permanent maxillary left second premolar tooth"
+					},
+					{
+						"code": "177568D",
+						"display": "Supernumerary permanent maxillary left third molar tooth"
+					},
+					{
+						"code": "177339D",
+						"display": "Supernumerary permanent maxillary right canine tooth"
+					},
+					{
+						"code": "177259D",
+						"display": "Supernumerary permanent maxillary right central incisor tooth"
+					},
+					{
+						"code": "177534D",
+						"display": "Supernumerary permanent maxillary right first molar tooth"
+					},
+					{
+						"code": "177612D",
+						"display": "Supernumerary permanent maxillary right first premolar tooth"
+					},
+					{
+						"code": "177484D",
+						"display": "Supernumerary permanent maxillary right lateral incisor tooth"
+					},
+					{
+						"code": "177649D",
+						"display": "Supernumerary permanent maxillary right second molar tooth"
+					},
+					{
+						"code": "177547D",
+						"display": "Supernumerary permanent maxillary right second premolar tooth"
+					},
+					{
+						"code": "177394D ",
+						"display": "Supernumerary permanent maxillary right third molar tooth"
+					}
+				]
+			},
+			{
+				"system": "http://snomed.info/sct",
+				"concept": [
+					{
+						"code": "68085002",
+						"display": "Permanent upper right third molar tooth"
+					},
+					{
+						"code": "7121006",
+						"display": "Permanent upper right second molar tooth"
+					},
+					{
+						"code": "5140004",
+						"display": "Permanent upper right first molar tooth"
+					},
+					{
+						"code": "36492000",
+						"display": "Permanent upper right second premolar tooth"
+					},
+					{
+						"code": "57826002",
+						"display": "Permanent upper right first premolar tooth"
+					},
+					{
+						"code": "80647007",
+						"display": "Permanent upper right canine tooth"
+					},
+					{
+						"code": "11712009",
+						"display": "Permanent upper right lateral incisor tooth"
+					},
+					{
+						"code": "22120004",
+						"display": "Permanent upper right central incisor tooth"
+					},
+					{
+						"code": "31982000",
+						"display": "Permanent upper left central incisor tooth"
+					},
+					{
+						"code": "25748002",
+						"display": "Permanent upper left lateral incisor tooth"
+					},
+					{
+						"code": "72876007",
+						"display": "Permanent upper left canine tooth"
+					},
+					{
+						"code": "61897005",
+						"display": "Permanent upper left first premolar tooth"
+					},
+					{
+						"code": "23226009",
+						"display": "Permanent upper left second premolar tooth"
+					},
+					{
+						"code": "23427002",
+						"display": "Permanent upper left first molar tooth"
+					},
+					{
+						"code": "66303006",
+						"display": "Permanent upper left second molar tooth"
+					},
+					{
+						"code": "87704003",
+						"display": "Permanent upper left third molar tooth"
+					},
+					{
+						"code": "74344005",
+						"display": "Permanent lower left third molar tooth"
+					},
+					{
+						"code": "48402004",
+						"display": "Permanent lower left second molar tooth"
+					},
+					{
+						"code": "89625000",
+						"display": "Permanent lower left first molar tooth"
+					},
+					{
+						"code": "24573005",
+						"display": "Permanent lower left second premolar tooth"
+					},
+					{
+						"code": "2400006",
+						"display": "Permanent lower left first premolar tooth"
+					},
+					{
+						"code": "39844006",
+						"display": "Permanent lower left canine tooth"
+					},
+					{
+						"code": "77130001",
+						"display": "Permanent lower left lateral incisor tooth"
+					},
+					{
+						"code": "113278005",
+						"display": "Permanent lower left central incisor tooth"
+					},
+					{
+						"code": "15422005",
+						"display": "Permanent lower right central incisor tooth"
+					},
+					{
+						"code": "82628004",
+						"display": "Permanent lower right lateral incisor tooth"
+					},
+					{
+						"code": "47055002",
+						"display": "Permanent lower right canine tooth"
+					},
+					{
+						"code": "80140008",
+						"display": "Permanent lower right first premolar tooth"
+					},
+					{
+						"code": "8873007",
+						"display": "Permanent lower right second premolar tooth"
+					},
+					{
+						"code": "28480000",
+						"display": "Permanent lower right first molar tooth"
+					},
+					{
+						"code": "40005008",
+						"display": "Permanent lower right second molar tooth"
+					},
+					{
+						"code": "38994002",
+						"display": "Permanent lower right third molar tooth"
+					},
+					{
+						"code": "27855007",
+						"display": "Primary upper right second molar tooth"
+					},
+					{
+						"code": "17505006",
+						"display": "Primary upper right first molar tooth"
+					},
+					{
+						"code": "30618001",
+						"display": "Primary upper right canine tooth"
+					},
+					{
+						"code": "65624003",
+						"display": "Primary upper right lateral incisor tooth"
+					},
+					{
+						"code": "88824007",
+						"display": "Primary upper right central incisor tooth"
+					},
+					{
+						"code": "51678005",
+						"display": "Primary upper left central incisor tooth"
+					},
+					{
+						"code": "43622005",
+						"display": "Primary upper left lateral incisor tooth"
+					},
+					{
+						"code": "73937000",
+						"display": "Primary upper left canine tooth"
+					},
+					{
+						"code": "45234009",
+						"display": "Primary upper left first molar tooth"
+					},
+					{
+						"code": "51943008",
+						"display": "Primary upper left second molar tooth"
+					},
+					{
+						"code": "49330006",
+						"display": "Primary lower left second molar tooth"
+					},
+					{
+						"code": "38896004",
+						"display": "Primary lower left first molar tooth"
+					},
+					{
+						"code": "43281008",
+						"display": "Primary lower left canine tooth"
+					},
+					{
+						"code": "14770005",
+						"display": "Primary lower left lateral incisor tooth"
+					},
+					{
+						"code": "89552004",
+						"display": "Primary lower left central incisor tooth"
+					},
+					{
+						"code": "67834006",
+						"display": "Primary lower right central incisor tooth"
+					},
+					{
+						"code": "22445006",
+						"display": "Primary lower right lateral incisor tooth"
+					},
+					{
+						"code": "6062009",
+						"display": "Primary lower right canine tooth"
+					},
+					{
+						"code": "58646007",
+						"display": "Primary lower right first molar tooth"
+					},
+					{
+						"code": "61868007",
+						"display": "Primary lower right second molar tooth"
+					},
+					{
+						"code": "707029006",
+						"display": "Supernumerary deciduous mandibular left canine tooth"
+					},
+					{
+						"code": "707021009",
+						"display": "Supernumerary deciduous mandibular left central incisor tooth"
+					},
+					{
+						"code": "707030001",
+						"display": "Supernumerary deciduous mandibular left first molar tooth"
+					},
+					{
+						"code": "707028003",
+						"display": "Supernumerary deciduous mandibular left lateral incisor tooth"
+					},
+					{
+						"code": "707031002",
+						"display": "Supernumerary deciduous mandibular left second molar tooth "
+					},
+					{
+						"code": "707023007",
+						"display": "Supernumerary deciduous mandibular right canine tooth"
+					},
+					{
+						"code": "707025000",
+						"display": "Supernumerary deciduous mandibular right central incisor tooth"
+					},
+					{
+						"code": "707022002",
+						"display": "Supernumerary deciduous mandibular right first molar tooth"
+					},
+					{
+						"code": "707024001",
+						"display": "Supernumerary deciduous mandibular right lateral incisor tooth"
+					},
+					{
+						"code": "707016006",
+						"display": "Supernumerary deciduous maxillary left canine tooth"
+					},
+					{
+						"code": "707014009",
+						"display": "Supernumerary deciduous maxillary left central incisor tooth"
+					},
+					{
+						"code": "707017002",
+						"display": "Supernumerary deciduous maxillary left first molar tooth"
+					},
+					{
+						"code": "707015005",
+						"display": "Supernumerary deciduous maxillary left lateral incisor tooth"
+					},
+					{
+						"code": "707018007",
+						"display": "Supernumerary deciduous maxillary left second molar tooth"
+					},
+					{
+						"code": "707011001",
+						"display": "Supernumerary deciduous maxillary right canine tooth"
+					},
+					{
+						"code": "707013003",
+						"display": "Supernumerary deciduous maxillary right central incisor tooth"
+					},
+					{
+						"code": "707010000",
+						"display": "Supernumerary deciduous maxillary right first molar tooth"
+					},
+					{
+						"code": "707012008",
+						"display": "Supernumerary deciduous maxillary right lateral incisor tooth"
+					},
+					{
+						"code": "707009005",
+						"display": "Supernumerary deciduous maxillary right second molar tooth"
+					},
+					{
+						"code": "707058009",
+						"display": "Supernumerary permanent mandibular left canine tooth"
+					},
+					{
+						"code": "707060006",
+						"display": "Supernumerary permanent mandibular left central incisor tooth"
+					},
+					{
+						"code": "707055007",
+						"display": "Supernumerary permanent mandibular left first molar tooth"
+					},
+					{
+						"code": "707057004",
+						"display": "Supernumerary permanent mandibular left first premolar tooth"
+					},
+					{
+						"code": "707059001",
+						"display": "Supernumerary permanent mandibular left lateral incisor tooth"
+					},
+					{
+						"code": "707054006",
+						"display": "Supernumerary permanent mandibular left second molar tooth"
+					},
+					{
+						"code": "707056008",
+						"display": "Supernumerary permanent mandibular left second premolar tooth"
+					},
+					{
+						"code": "707052005",
+						"display": "Supernumerary permanent mandibular left third molar tooth"
+					},
+					{
+						"code": "707063008",
+						"display": "Supernumerary permanent mandibular right canine tooth"
+					},
+					{
+						"code": "707061005",
+						"display": "Supernumerary permanent mandibular right central incisor tooth"
+					},
+					{
+						"code": "707066000",
+						"display": "Supernumerary permanent mandibular right first molar tooth"
+					},
+					{
+						"code": "707064002",
+						"display": "Supernumerary permanent mandibular right first premolar tooth"
+					},
+					{
+						"code": "707062003",
+						"display": "Supernumerary permanent mandibular right lateral incisor tooth"
+					},
+					{
+						"code": "707067009",
+						"display": "Supernumerary permanent mandibular right second molar tooth"
+					},
+					{
+						"code": "707065001",
+						"display": "Supernumerary permanent mandibular right second premolar tooth"
+					},
+					{
+						"code": "707068004",
+						"display": "Supernumerary permanent mandibular right third molar tooth"
+					},
+					{
+						"code": "707044007",
+						"display": "Supernumerary permanent maxillary left canine tooth"
+					},
+					{
+						"code": "707042006",
+						"display": "Supernumerary permanent maxillary left central incisor tooth"
+					},
+					{
+						"code": "707047000",
+						"display": "Supernumerary permanent maxillary left first molar tooth"
+					},
+					{
+						"code": "707045008",
+						"display": "Supernumerary permanent maxillary left first premolar tooth"
+					},
+					{
+						"code": "707043001",
+						"display": "Supernumerary permanent maxillary left lateral incisor tooth"
+					},
+					{
+						"code": "707048005",
+						"display": "Supernumerary permanent maxillary left second molar tooth"
+					},
+					{
+						"code": "707046009",
+						"display": "Supernumerary permanent maxillary left second premolar tooth"
+					},
+					{
+						"code": "707049002",
+						"display": "Supernumerary permanent maxillary left third molar tooth"
+					},
+					{
+						"code": "707038008",
+						"display": "Supernumerary permanent maxillary right canine tooth"
+					},
+					{
+						"code": "707041004",
+						"display": "Supernumerary permanent maxillary right central incisor tooth"
+					},
+					{
+						"code": "707035006",
+						"display": "Supernumerary permanent maxillary right first molar tooth"
+					},
+					{
+						"code": "707037003",
+						"display": "Supernumerary permanent maxillary right first premolar tooth"
+					},
+					{
+						"code": "707039000",
+						"display": "Supernumerary permanent maxillary right lateral incisor tooth"
+					},
+					{
+						"code": "707033004",
+						"display": "Supernumerary permanent maxillary right second molar tooth"
+					},
+					{
+						"code": "707036007",
+						"display": "Supernumerary permanent maxillary right second premolar tooth"
+					},
+					{
+						"code": "707032009",
+						"display": "Supernumerary permanent maxillary right third molar tooth"
+					}
+				]
+			}
+		]
+	}
+}

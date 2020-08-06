@@ -1,0 +1,922 @@
+{
+	"id": "hl7.fhir.us.dentalreferral",
+	"meta": {
+		"versionId": "21",
+		"lastUpdated": "2020-08-06T20:59:47.848+00:00",
+		"source": "#nNBS3zmTpykJ9yWE"
+	},
+	"resourceType": "ImplementationGuide",
+	"status": "draft",
+	"fhirVersion": [
+		"4.0.1"
+	],
+	"url": "http://hl7.org/fhir/us/dental-data-exchange/ImplementationGuide/hl7.fhir.us.dentalreferral",
+	"version": "0.0.1",
+	"name": "DentalDataExchange",
+	"title": "Dental Data Exchange",
+	"publisher": "Lantana Consulting Group",
+	"contact": [
+		{
+			"name": "HL7 International - Payer/Provider Information Exchange Work Group",
+			"telecom": [
+				{
+					"system": "url",
+					"value": "http://www.hl7.org/Special/committees/claims"
+				}
+			]
+		}
+	],
+	"description": "This implementation guide provides HL7 FHIR resources to define standards for bi-directional information exchange between a medical and a dental provider or between dental providers. This publication provides the data model, defined data items, and their corresponding code and value sets, specific to a dental referral note and dental consultation note. This guide describes constraints on the [C-CDA on FHIR](http://www.hl7.org/fhir/us/ccda/) header and body elements for dental information, which are derived from requirements developed by the Dental Summary Exchange Project of the Health Level Seven (HL7) Payer/Provider Information Exchange Work Group (PIE WG). Resources in this US Realm implementation guide are specific to dental referral and consultation notes for exchange and interoperability among dental providers and with medical providers.\n\nThis guide contains a library of FHIR profiles and is compliant with FHIR Release 4. At a minimum, a document bundle (C-CDA on FHIR Referral Note or Consultation Note) will be exchanged along with a ServiceRequest, Patient, and associated medical and dental information. This guide specifies how and where these resources are included within the C-CDA on FHIR profiles. \n\nThis guide defines 5 new Profiles:\n* Dental Consult Note\n* Dental Communication\n* Dental Service Request\n* Dental Findings\n* Dental Referral Note\n\nAll proprietary documents, guides, guidance, standards, codes, and values contained herein remain the property of their respective Standards Developing Organization (SDO). HL7 does not make any claim to ownership herein.\n\nThis HL7 FHIR® R4 Implementation Guide: Dental Data Exchange is developed in parallel to the HL7 CDA® R2 Implementation Guide: Dental Data Exchange.",
+	"jurisdiction": [
+		{
+			"coding": [
+				{
+					"system": "urn:iso:std:iso:3166",
+					"code": "US"
+				}
+			],
+			"text": "US"
+		}
+	],
+	"packageId": "hl7.fhir.us.dentalreferral",
+	"dependsOn": [
+		{
+			"uri": "http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core",
+			"packageId": "hl7.fhir.us.core",
+			"version": "3.1.0"
+		},
+		{
+			"uri": "http://hl7.org/fhir/us/ccda/ImplementationGuide/hl7.fhir.us.ccda",
+			"packageId": "hl7.fhir.us.ccda",
+			"version": "current"
+		},
+		{
+			"uri": "http://hl7.org/fhir/us/davinci-hrex/ImplementationGuide/davinci-hrex",
+			"packageId": "hl7.fhir.us.davinci-hrex",
+			"version": "0.1.0"
+		},
+		{
+			"uri": "http://hl7.org/fhir/us/odh/ImplementationGuide/hl7.fhir.us.odh",
+			"packageId": "hl7.fhir.us.odh",
+			"version": "1.0.0"
+		}
+	],
+	"definition": {
+		"resource": [
+			{
+				"extension": [],
+				"exampleBoolean": false,
+				"reference": {
+					"reference": "StructureDefinition/dental-consult",
+					"display": "DentalConsult"
+				},
+				"name": "Dental Consult Note",
+				"description": "This Profile defines the Dental Consult Note profile. It contains the textual information regarding what was observed and performed by a general dentist or dental specialist in response to a dental referral as well as references to supplemental dental profiles for that referral. This Consult Note is linked to its Referral via the In-Fulfillment-Of extension reference to ServiceRequest."
+			},
+			{
+				"exampleBoolean": false,
+				"reference": {
+					"reference": "ValueSet/oral-cavity-area",
+					"display": "Oral Cavity Area"
+				},
+				"name": "Oral Cavity Area ValueSet",
+				"description": "This ValueSet contains codes for standard oral cavity areas of the mouth"
+			},
+			{
+				"exampleBoolean": false,
+				"reference": {
+					"reference": "StructureDefinition/dental-communication",
+					"display": "DentalCommunication"
+				},
+				"name": "Dental Communication Profile",
+				"description": "This profile is used to convey verbal and written communication and education between providers, patients and other members of the care team."
+			},
+			{
+				"extension": [],
+				"exampleBoolean": false,
+				"reference": {
+					"reference": "StructureDefinition/dental-servicerequest",
+					"display": "DentalServiceRequest"
+				},
+				"name": "Dental Service Request Profile",
+				"description": "This profile contains information regarding the dental referral request including a required identifier and a reference to the reason for the referral, if possible. It also includes basic information such as the patient, referring provider, and encounter information that resulted in the referral."
+			},
+			{
+				"extension": [],
+				"exampleBoolean": false,
+				"reference": {
+					"reference": "StructureDefinition/dental-findings",
+					"display": "dental-findings"
+				},
+				"name": "Dental Findings Profile",
+				"description": "This profile is used to convey oral findings including findings of an Odontogram, Peridontal (overall assessment and tooth-specific observations), Intra and Extra Oral Soft Tissue, TMJ, TMD, and Occlusion. Note - findings in this profile often support associated diagnoses (FHIR Conditions)."
+			},
+			{
+				"exampleBoolean": false,
+				"reference": {
+					"reference": "StructureDefinition/dental-referralnote",
+					"display": "DentalReferralNote"
+				},
+				"name": "Dental Referral Note Profile",
+				"description": "This Profile defines the Dental Referral Note profile. It contains the textual information regarding a referral to a general dentist or dental specialist as well as references to supplemental dental profiles for the referral"
+			},
+			{
+				"extension": [],
+				"exampleBoolean": false,
+				"reference": {
+					"reference": "ValueSet/dental-observation-codes",
+					"display": "Dental Observation Codes"
+				},
+				"name": "Dental Observation Codes ValueSet",
+				"description": "This ValueSet contains all ICD-9/10, CPT, CDT, LOINC codes, as well as the Clinical Findings (finding) concept from both Snomed and Snodent."
+			},
+			{
+				"exampleBoolean": true,
+				"reference": {
+					"reference": "AllergyIntolerance/Allergy-example-dental"
+				},
+				"name": "Allergy example (example)",
+				"description": "This is an example of US Core AllergyIntollerance"
+			},
+			{
+				"extension": [],
+				"exampleBoolean": false,
+				"reference": {
+					"reference": "CapabilityStatement/capabilitystatement-dental",
+					"display": "Capability Statement - Dental"
+				},
+				"name": "Capability Statement - Dental",
+				"description": "Note to ballot commenters- we encourage ballot comments, especially from potential implementer systems, regarding Capability Statements.\n\nThis resource defines the expected capabilities for both client and server participating in referral exchanges involving a dental actor (medical/dental and dental/dental)."
+			},
+			{
+				"exampleBoolean": true,
+				"reference": {
+					"reference": "Medication/tylenol-dental"
+				},
+				"name": "Medication1 (example)",
+				"description": "This is an example of US Core Medication"
+			},
+			{
+				"exampleBoolean": true,
+				"reference": {
+					"reference": "Medication/ibuprofen-med-example-2"
+				},
+				"name": "Mediation2 (example)",
+				"description": "This is an example of US Core Medication"
+			},
+			{
+				"exampleBoolean": true,
+				"reference": {
+					"reference": "Medication/erythromycin-med-example"
+				},
+				"name": "Medication3 (example)",
+				"description": "This is an example of US Core Medication"
+			},
+			{
+				"exampleBoolean": true,
+				"reference": {
+					"reference": "Medication/Acetaminophen-med-example-2"
+				},
+				"name": "Medication4 (example)",
+				"description": "This is an example of US Core Medication"
+			},
+			{
+				"exampleBoolean": true,
+				"reference": {
+					"reference": "MedicationRequest/Acetaminophen-medreq-2"
+				},
+				"name": "Medication Statement4 (example)",
+				"description": "This is an example of US Core MedicationRequest"
+			},
+			{
+				"exampleBoolean": true,
+				"reference": {
+					"reference": "MedicationRequest/Ibuprofen-medreq-2"
+				},
+				"name": "Medication Statement2 (example)",
+				"description": "This is an example of US Core MedicationRequest"
+			},
+			{
+				"exampleBoolean": true,
+				"reference": {
+					"reference": "MedicationRequest/erythromycin-medreq-2"
+				},
+				"name": "Medication Statement3 (example)",
+				"description": "This is an example of US Core MedicationRequest"
+			},
+			{
+				"exampleBoolean": true,
+				"reference": {
+					"reference": "Observation/Present-job-example-dental"
+				},
+				"name": "Occupation (example)",
+				"description": "This is an example of ODH past or present occupation Observation"
+			},
+			{
+				"exampleBoolean": true,
+				"reference": {
+					"reference": "Observation/Smoker-obs-example-dental"
+				},
+				"name": "Smoking Status (example)",
+				"description": "This is an example of smoking status"
+			},
+			{
+				"exampleBoolean": true,
+				"reference": {
+					"reference": "Observation/Education-level-example-dental"
+				},
+				"name": "Education level (example)",
+				"description": "This is an example of education level"
+			},
+			{
+				"exampleBoolean": true,
+				"reference": {
+					"reference": "Patient/example-dental"
+				},
+				"name": "Patient A (example)",
+				"description": "This is an example of US Core Patient"
+			},
+			{
+				"exampleBoolean": true,
+				"reference": {
+					"reference": "Practitioner/practitioner-D"
+				},
+				"name": "Practitioner Dentist (example)",
+				"description": "This is an example of US Core Practitioner"
+			},
+			{
+				"exampleBoolean": true,
+				"reference": {
+					"reference": "Practitioner/practitioner-M"
+				},
+				"name": "Practitioner Medical (example)",
+				"description": "This is an example of US Core Practitioner"
+			},
+			{
+				"exampleBoolean": true,
+				"reference": {
+					"reference": "PractitionerRole/PractitionerRole-M"
+				},
+				"name": "PractitionerRole Medical (example)",
+				"description": "This is an example of US Core PractitionerRole"
+			},
+			{
+				"exampleBoolean": true,
+				"reference": {
+					"reference": "PractitionerRole/PractitionerRole-D"
+				},
+				"name": "PractitionerRole Dentist (example)",
+				"description": "This is an example of US Core PractitionerRole"
+			},
+			{
+				"exampleBoolean": true,
+				"reference": {
+					"reference": "Procedure/Dental-flouride-tx-example"
+				},
+				"name": "Flouride Treatment (example)",
+				"description": "This is an example of US Core Procedure"
+			},
+			{
+				"exampleBoolean": true,
+				"reference": {
+					"reference": "Procedure/Dental-incisor-restoration-example"
+				},
+				"name": "Incisor Restoration (example)",
+				"description": "This is an example of US Core Procedure"
+			},
+			{
+				"exampleBoolean": true,
+				"reference": {
+					"reference": "ServiceRequest/example-dental-referral-1"
+				},
+				"name": "Dental Referral ServiceRequest (example)",
+				"description": "This is an example of ServiceRequest"
+			},
+			{
+				"exampleBoolean": true,
+				"reference": {
+					"reference": "Composition/Med-2-Dental-Referral",
+					"display": "Referral Note"
+				},
+				"name": "Medical to Dental Referral Note (example)",
+				"description": "This is an example of Referral Note Composition"
+			},
+			{
+				"exampleBoolean": true,
+				"reference": {
+					"reference": "Composition/Dental-2-Med-Consult",
+					"display": "Consultation Note"
+				},
+				"name": "Dental Consultation Note (example)",
+				"description": "This is an example of Consult Note Composition"
+			},
+			{
+				"exampleBoolean": true,
+				"reference": {
+					"reference": "Encounter/Dentist-followup-prophylaxis"
+				},
+				"name": "Dental followup - prophylaxis (example)",
+				"description": "This is an example of US Core Encounter"
+			},
+			{
+				"exampleBoolean": true,
+				"reference": {
+					"reference": "Encounter/Med-visit-1"
+				},
+				"name": "Medical Encounter (example)",
+				"description": "This is an example of US Core Encounter"
+			},
+			{
+				"exampleBoolean": true,
+				"reference": {
+					"reference": "Encounter/Dental-encounter"
+				},
+				"name": "Dental Encounter (example)",
+				"description": "This is an example of US Core Encounter"
+			},
+			{
+				"exampleBoolean": true,
+				"reference": {
+					"reference": "Organization/GHC-organization",
+					"display": "Good Health Clinic"
+				},
+				"name": "Good Health Clinic (example)",
+				"description": "This is an example of US Core Organization"
+			},
+			{
+				"exampleBoolean": true,
+				"reference": {
+					"reference": "Organization/GOHC-organization",
+					"display": "Good Oral Health Clinic"
+				},
+				"name": "Good Oral Health Clinic (example)",
+				"description": "This is an example of US Core Organization"
+			},
+			{
+				"extension": [],
+				"exampleBoolean": true,
+				"reference": {
+					"reference": "Organization/GEHC-organization",
+					"display": "Good Endodontics Health Clinic"
+				},
+				"name": "Good Endodontics Health Clinic (example)",
+				"description": "This is an example of US Core Organization"
+			},
+			{
+				"exampleBoolean": true,
+				"reference": {
+					"reference": "Coverage/Dental-Aetna"
+				},
+				"name": "Coverage (example)",
+				"description": "This is an example of Coverage"
+			},
+			{
+				"extension": [],
+				"exampleBoolean": true,
+				"reference": {
+					"reference": "Organization/Aetna-organization",
+					"display": "Aetna Insurance"
+				},
+				"name": "Aetna Insurance (example)",
+				"description": "This is an example of US Core Organization"
+			},
+			{
+				"extension": [],
+				"exampleBoolean": true,
+				"reference": {
+					"reference": "Communication/dental-education"
+				},
+				"name": "Pt education (example)",
+				"description": "This is an example of Communication"
+			},
+			{
+				"extension": [],
+				"exampleBoolean": false,
+				"reference": {
+					"reference": "ValueSet/dental-universal-numbering-system",
+					"display": "DentalUniversalNumberingSystem"
+				},
+				"name": "DentalUniversalNumberingSystem",
+				"description": "A dental notation system for associating information to a specific tooth, commonly used in the United States."
+			},
+			{
+				"extension": [],
+				"exampleBoolean": false,
+				"reference": {
+					"reference": "ValueSet/dental-reason-for-referral",
+					"display": "Dental Reason For Referral"
+				},
+				"name": "Dental Reason For Referral",
+				"description": "This ValueSet contains coded prominent reasons for referral between medical and dental care settings."
+			},
+			{
+				"exampleBoolean": false,
+				"reference": {
+					"reference": "ValueSet/dental-anatomy",
+					"display": "Dental Anatomy"
+				},
+				"name": "Dental Anatomy",
+				"description": "This is a dental anatomy ValueSet"
+			},
+			{
+				"exampleBoolean": true,
+				"reference": {
+					"reference": "Condition/Maxillary-perm7-example"
+				},
+				"name": "Permanent Mandibular 7 (example)",
+				"description": "This is an example of US Core Condition"
+			},
+			{
+				"exampleBoolean": true,
+				"reference": {
+					"reference": "Condition/DM1-example"
+				},
+				"name": "Diabetes (example)",
+				"description": "This is an example of US Core Condition"
+			},
+			{
+				"exampleBoolean": true,
+				"reference": {
+					"reference": "Condition/LLQP-example"
+				},
+				"name": "Left Lower Quadrant Pain (example)",
+				"description": "This is an example of US Core Condition"
+			},
+			{
+				"exampleBoolean": true,
+				"reference": {
+					"reference": "Condition/Swollen-gums-example"
+				},
+				"name": "Swollen gums (example)",
+				"description": "This is an example of US Core Condition"
+			},
+			{
+				"exampleBoolean": true,
+				"reference": {
+					"reference": "Condition/Mandibular-perm30-example"
+				},
+				"name": "Permanent Mandibular 30 (example)",
+				"description": "This is an example of US Core Condition"
+			},
+			{
+				"exampleBoolean": true,
+				"reference": {
+					"reference": "Condition/HTN-example"
+				},
+				"name": "Hypertension (example)",
+				"description": "This is an example of US Core Condition"
+			},
+			{
+				"exampleBoolean": true,
+				"reference": {
+					"reference": "Condition/Pulpitis-example-4"
+				},
+				"name": "Pulpitis (example)",
+				"description": "This is an example of US Core Condition"
+			},
+			{
+				"exampleBoolean": true,
+				"reference": {
+					"reference": "Condition/Dental-plaque-example"
+				},
+				"name": "Plaque (example)",
+				"description": "This is an example of US Core Condition"
+			},
+			{
+				"exampleBoolean": true,
+				"reference": {
+					"reference": "Condition/toothache-example"
+				},
+				"name": "Tootheache (example)",
+				"description": "This is an example of US Core Condition"
+			},
+			{
+				"exampleBoolean": true,
+				"reference": {
+					"reference": "Condition/Mandibular-perm18-example"
+				},
+				"name": "Permanent Mandibular 18 (example)",
+				"description": "This is an example of US Core Condition"
+			},
+			{
+				"exampleBoolean": true,
+				"reference": {
+					"reference": "Condition/Bleeding-gums-example"
+				},
+				"name": "Bleeding gums (example)",
+				"description": "This is an example of US Core Condition"
+			},
+			{
+				"exampleBoolean": true,
+				"reference": {
+					"reference": "Condition/Caries-risk"
+				},
+				"name": "Caries risk (example)",
+				"description": "This is an example of US Core Condition"
+			},
+			{
+				"exampleBoolean": true,
+				"reference": {
+					"reference": "Condition/Chronic-periodontitis-example"
+				},
+				"name": "Periodontitis (example)",
+				"description": "This is an example of US Core Condition"
+			},
+			{
+				"exampleBoolean": true,
+				"reference": {
+					"reference": "Condition/Dental-caries-example"
+				},
+				"name": "Caries condition (example)",
+				"description": "This is an example of US Core Condition"
+			},
+			{
+				"exampleBoolean": true,
+				"reference": {
+					"reference": "Immunization/imm-1"
+				},
+				"name": "Immunization (example)",
+				"description": "This is an example of US Core Immunization"
+			},
+			{
+				"exampleBoolean": true,
+				"reference": {
+					"reference": "Medication/Lisinopril-med-example"
+				},
+				"name": "Lisinporil Medication (example)",
+				"description": "This is an example of US Core Medication"
+			},
+			{
+				"exampleBoolean": true,
+				"reference": {
+					"reference": "MedicationRequest/Lisinopril-medreq"
+				},
+				"name": "Lisinopril MedicationRequest (example)",
+				"description": "This is an example of US Core MedicationRequest"
+			},
+			{
+				"exampleBoolean": true,
+				"reference": {
+					"reference": "Observation/respiratory-rate"
+				},
+				"name": "Respiratory Rate (example)",
+				"description": "This is an example of Respiratory Rate"
+			},
+			{
+				"exampleBoolean": true,
+				"reference": {
+					"reference": "Observation/vitals-panel"
+				},
+				"name": "Vital signs panel (example)",
+				"description": "This is an example of US Core Vitals panel"
+			},
+			{
+				"exampleBoolean": true,
+				"reference": {
+					"reference": "Observation/body-temperature"
+				},
+				"name": "Body temperature (example)",
+				"description": "This is an example of body temp"
+			},
+			{
+				"exampleBoolean": true,
+				"reference": {
+					"reference": "Observation/heart-rate"
+				},
+				"name": "Heart rate (example)",
+				"description": "This is an example of heart rate"
+			},
+			{
+				"exampleBoolean": true,
+				"reference": {
+					"reference": "Observation/blood-pressure"
+				},
+				"name": "Blood pressure (example)",
+				"description": "This is an example of blood pressure"
+			},
+			{
+				"exampleBoolean": true,
+				"reference": {
+					"reference": "Practitioner/practitioner-UNK2"
+				},
+				"name": "Practitioner with unknown name2 (example)",
+				"description": "This is an example of US Core Practitioner"
+			},
+			{
+				"exampleBoolean": true,
+				"reference": {
+					"reference": "Practitioner/practitioner-UNK"
+				},
+				"name": "Practitioner with unknown name (example)",
+				"description": "This is an example of US Core Practitioner"
+			},
+			{
+				"exampleBoolean": true,
+				"reference": {
+					"reference": "Procedure/Insulin-pump-insertion"
+				},
+				"name": "Insulin pump insertion (example)",
+				"description": "This is an example of US Core Procedure"
+			},
+			{
+				"exampleBoolean": true,
+				"reference": {
+					"reference": "Procedure/Oral-eval-example"
+				},
+				"name": "Oral evaluation (example)",
+				"description": "This is an example of US Core Procedure"
+			},
+			{
+				"extension": [],
+				"exampleBoolean": true,
+				"reference": {
+					"reference": "Communication/dental-education2"
+				},
+				"name": "Patient Education (example)",
+				"description": "This is an example of Patient education (verbal)"
+			},
+			{
+				"extension": [],
+				"exampleBoolean": true,
+				"reference": {
+					"reference": "Condition/Dental-caries"
+				},
+				"name": "Dental Caries (example)",
+				"description": "This is an example of US Core Condition"
+			},
+			{
+				"extension": [],
+				"exampleBoolean": true,
+				"reference": {
+					"reference": "Condition/no-chew"
+				},
+				"name": "Unable to Chew (example)",
+				"description": "This is an example of US Core Condition"
+			},
+			{
+				"extension": [],
+				"exampleBoolean": true,
+				"reference": {
+					"reference": "Condition/Tooth-infection"
+				},
+				"name": "Tooth infection (example)",
+				"description": "This is an example of US Core Condition"
+			},
+			{
+				"extension": [],
+				"exampleBoolean": true,
+				"reference": {
+					"reference": "Condition/Tooth-infection18"
+				},
+				"name": "Tooth infection18 (example)",
+				"description": "This is an example of US Core Condition"
+			},
+			{
+				"extension": [],
+				"exampleBoolean": true,
+				"reference": {
+					"reference": "Encounter/Comp-oral-eval"
+				},
+				"name": "Comprehensive Oral Eval (example)",
+				"description": "This is an example of US Core Encounter"
+			},
+			{
+				"extension": [],
+				"exampleBoolean": true,
+				"reference": {
+					"reference": "Observation/Overjet"
+				},
+				"name": "Overjet (example)",
+				"description": "This is an example of a dental finding (measurement)"
+			},
+			{
+				"extension": [],
+				"exampleBoolean": true,
+				"reference": {
+					"reference": "MedicationRequest/Tylenol-med-dental"
+				},
+				"name": "Tylenol Medication (example)",
+				"description": "This is an example of US Core MedicationRequest"
+			},
+			{
+				"extension": [],
+				"exampleBoolean": true,
+				"reference": {
+					"reference": "ServiceRequest/Dental-extraction-example"
+				},
+				"name": "Extraction (example)",
+				"description": "This is an example of a Dental ServiceRequest for a future dental procedure"
+			},
+			{
+				"extension": [],
+				"exampleBoolean": true,
+				"reference": {
+					"reference": "ServiceRequest/Radiograph-survey"
+				},
+				"name": "Full Mouth Radiography imaging survey (example)",
+				"description": "This is an example of a Dental ServiceRequest for a future dental procedure"
+			},
+			{
+				"extension": [],
+				"exampleBoolean": true,
+				"reference": {
+					"reference": "ServiceRequest/Resin-restore-example"
+				},
+				"name": "Resin Restoration (example)",
+				"description": "This is an example of a Dental ServiceRequest for a future dental procedure"
+			}
+		],
+		"page": {
+			"extension": [],
+			"nameUrl": "index.html",
+			"title": "Introduction",
+			"generation": "markdown",
+			"page": [
+				{
+					"extension": [],
+					"nameUrl": "scope.html",
+					"title": "Scope",
+					"generation": "markdown"
+				},
+				{
+					"extension": [],
+					"nameUrl": "dependencies.html",
+					"title": "Dependencies",
+					"generation": "markdown"
+				},
+				{
+					"extension": [],
+					"nameUrl": "audience.html",
+					"title": "Audience",
+					"generation": "markdown"
+				},
+				{
+					"extension": [],
+					"nameUrl": "background.html",
+					"title": "Background",
+					"generation": "markdown"
+				},
+				{
+					"extension": [],
+					"nameUrl": "current_project.html",
+					"title": "Current Project",
+					"generation": "markdown"
+				},
+				{
+					"extension": [],
+					"nameUrl": "workflows.html",
+					"title": "Workflows",
+					"generation": "markdown"
+				},
+				{
+					"extension": [],
+					"nameUrl": "best_practice_recommendations.html",
+					"title": "Best Practice Recommendations",
+					"generation": "markdown",
+					"page": [
+						{
+							"extension": [],
+							"nameUrl": "proper_use_of_the_dental_findings_section.html",
+							"title": "Proper use of the Dental Findings Section",
+							"generation": "markdown"
+						},
+						{
+							"extension": [],
+							"nameUrl": "incorporating_snodent_concepts.html",
+							"title": "Incorporating SNODENT Concepts",
+							"generation": "markdown"
+						},
+						{
+							"extension": [],
+							"nameUrl": "planned_procedures_and_encounters_using_cdt_and_snodent.html",
+							"title": "Planned Procedures and Encounters using CDT and SNODENT",
+							"generation": "markdown"
+						},
+						{
+							"extension": [],
+							"nameUrl": "dental_images_as_results.html",
+							"title": "Dental Images as Results",
+							"generation": "markdown"
+						},
+						{
+							"extension": [],
+							"nameUrl": "reason_for_referral_indications.html",
+							"title": "Reason for Referral Indications",
+							"generation": "markdown"
+						},
+						{
+							"extension": [],
+							"nameUrl": "referral_identifiers_in_the_consult_note.html",
+							"title": "Referral Identifiers in the Consult Note",
+							"generation": "markdown"
+						},
+						{
+							"extension": [],
+							"nameUrl": "periodontal_findings.html",
+							"title": "Periodontal Findings",
+							"generation": "markdown"
+						},
+						{
+							"extension": [],
+							"nameUrl": "content_inclusion.html",
+							"title": "Content Inclusion",
+							"generation": "markdown",
+							"page": [
+								{
+									"extension": [],
+									"nameUrl": "caries_risk_assessment.html",
+									"title": "Caries Risk Assessment",
+									"generation": "markdown"
+								},
+								{
+									"extension": [],
+									"nameUrl": "patient_self-management_goals.html",
+									"title": "Patient Self-Management Goals",
+									"generation": "markdown"
+								}
+							]
+						}
+					]
+				},
+				{
+					"extension": [],
+					"nameUrl": "dental_use_case_scenarios.html",
+					"title": "Dental Use Case Scenarios",
+					"generation": "markdown",
+					"page": [
+						{
+							"extension": [],
+							"nameUrl": "scenario_1_medical_to_dental_referral.html",
+							"title": "Scenario 1 Medical to Dental Referral",
+							"generation": "markdown"
+						},
+						{
+							"extension": [],
+							"nameUrl": "scenario_2_dental_to_medical_consult_note.html",
+							"title": "Scenario 2 Dental to Medical Consult Note",
+							"generation": "markdown"
+						},
+						{
+							"extension": [],
+							"nameUrl": "scenario_3_dental_to_dental_endodontist_referral.html",
+							"title": "Scenario 3 Dental to Dental (Endodontist) Referral",
+							"generation": "markdown"
+						},
+						{
+							"extension": [],
+							"nameUrl": "scenario_4_dental_endodontist_to_dental_general_dentist_referral_result.html",
+							"title": "Scenario 4 Dental (Endodontist) to Dental (General Dentist) Referral Result",
+							"generation": "markdown"
+						}
+					]
+				},
+				{
+					"extension": [],
+					"nameUrl": "acknowledgements.html",
+					"title": "Acknowledgements",
+					"generation": "markdown"
+				},
+				{
+					"extension": [],
+					"nameUrl": "team.html",
+					"title": "Dental Data Exchange Project Team",
+					"generation": "markdown"
+				},
+				{
+					"extension": [],
+					"nameUrl": "appendix_a_imaging_results_example_code.html",
+					"title": "Appendix A Imaging Results Example Code",
+					"generation": "markdown"
+				},
+				{
+					"extension": [],
+					"nameUrl": "appendix_b_dentaquest_more_care_referral_form.html",
+					"title": "Appendix B DentaQuest MORE Care Referral Form",
+					"generation": "markdown"
+				},
+				{
+					"extension": [],
+					"nameUrl": "appendix_c_dentaquest_more_care_dental_treatment_form.html",
+					"title": "Appendix C DentaQuest MORE Care Dental Treatment Form",
+					"generation": "markdown"
+				},
+				{
+					"extension": [],
+					"nameUrl": "appendix_d_value_set_discrepancy_mapping.html",
+					"title": "Appendix D Value Set Discrepancy Mapping",
+					"generation": "markdown"
+				}
+			]
+		},
+		"parameter": [
+			{
+				"code": "releaselabel",
+				"value": "CI Build"
+			},
+			{
+				"code": "copyrightyear",
+				"value": "2020+"
+			}
+		]
+	}
+}

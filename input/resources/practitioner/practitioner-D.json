@@ -1,0 +1,38 @@
+{
+	"resourceType": "Practitioner",
+	"id": "practitioner-D",
+	"meta": {
+		"versionId": "4",
+		"lastUpdated": "2020-07-30T22:03:00.656+00:00",
+		"source": "#jvbTK8x0CL9mqWkF",
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"
+		]
+	},
+	"identifier": [
+		{
+			"system": "http://hl7.org/fhir/sid/us-npi",
+			"value": "1234560000"
+		}
+	],
+	"name": [
+		{
+			"family": "D",
+			"given": [
+				"John"
+			],
+			"prefix": [
+				"Dr"
+			]
+		}
+	],
+	"telecom": [
+		{
+			"system": "phone",
+			"value": "720-555-6443",
+			"use": "work"
+		}
+	],
+	"gender": "male",
+	"birthDate": "1990-06-09"
+}

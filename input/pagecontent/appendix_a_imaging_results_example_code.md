@@ -1,6 +1,6 @@
-[Previous Page - Acknowlegements](acknowlegements.html)
+[Previous Page - Dental Data Exchange Project Team](team.html)
 
-Results Description Value / Unit Interpretation Reference Range   Chest X-RAY 2 views  Performed on 02-25-2015 9:10a  Chest X-Ray 2 Views The lungs are clear. The heart is enlarged with evidence of cardiomegaly. Pulmonary vasculature is normal. The aorta is mildly ectatic and tortuous. IMPRESSION: Cardiomegaly. No other acute abnormality.      Electronically signed: Hermione Seaven, MD 02-25-2015 10:32a
+Results Description Value / Unit Interpretation Reference Range   Chest X-RAY 2 views   Performed on 02-25-2015 9:10a   Chest X-Ray 2 Views   The lungs are clear. The heart is enlarged with evidence of cardiomegaly. Pulmonary vasculature is normal. The aorta is mildly ectatic and tortuous. IMPRESSION: Cardiomegaly. No other acute abnormality.   Electronically signed: Hermione Seaven, MD 02-25-2015 10:32a
 
 <section>
   <templateId root="2.16.840.1.113883.10.20.22.2.3.1"/>
@@ -70,7 +70,7 @@ Results Description Value / Unit Interpretation Reference Range   Chest X-RAY 2 
             <reference value="#Result1OriginalText" />
           </value>
           <author>
-            <!-- This is the timestamp of when the author (i.e. the radiologist) interepreted the chest x-ray-->
+            <!-- This is the timestamp of when the author (i.e. the radiologist) interpreted the chest x-ray-->
             <time value="20150225103206-0500"/>
             <assignedAuthor>
               <id extension="66666" root="2.16.840.1.113883.4.6"/>
@@ -100,4 +100,4 @@ Results Description Value / Unit Interpretation Reference Range   Chest X-RAY 2 
 
 
 
-[Next Page - Appendix B  DentaQuest MORE Care Referral](appendix_b__dentaquest_more_care_referral.html)
+[Next Page - Appendix B DentaQuest MORE Care Referral Form](appendix_b_dentaquest_more_care_referral_form.html)

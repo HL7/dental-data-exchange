@@ -1,0 +1,64 @@
+{
+	"resourceType": "ValueSet",
+	"id": "dental-observation-codes",
+	"meta": {
+		"versionId": "20",
+		"lastUpdated": "2020-08-06T20:19:17.896+00:00",
+		"source": "#88uQVyz4ROXaJDTO"
+	},
+	"url": "http://hl7.org/fhir/us/dental-data-exchange/ValueSet/dental-observation-codes",
+	"name": "DentalObservationCodes",
+	"title": "Dental Observation Codes",
+	"status": "draft",
+	"description": "This ValueSet contains all ICD-9/10, CPT, CDT, LOINC codes, as well as the Clinical Findings (finding) concept from both Snomed and Snodent. ",
+	"compose": {
+		"include": [
+			{
+				"system": "http://hl7.org/fhir/sid/icd-10-cm"
+			},
+			{
+				"system": "http://loinc.org"
+			},
+			{
+				"system": "http://www.ada.org/snodent",
+				"filter": [
+					{
+						"property": "concept",
+						"op": "descendent-of",
+						"value": "165877D"
+					}
+				]
+			},
+			{
+				"system": "http://snomed.info/sct",
+				"filter": [
+					{
+						"property": "concept",
+						"op": "descendent-of",
+						"value": "404684003"
+					}
+				]
+			},
+			{
+				"system": "http://www.ada.org/snodent",
+				"filter": [
+					{
+						"property": "concept",
+						"op": "descendent-of",
+						"value": "165733D"
+					}
+				]
+			},
+			{
+				"system": "http://snomed.info/sct",
+				"filter": [
+					{
+						"property": "concept",
+						"op": "descendent-of",
+						"value": "243796009"
+					}
+				]
+			}
+		]
+	}
+}

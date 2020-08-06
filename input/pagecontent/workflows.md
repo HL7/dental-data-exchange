@@ -1,4 +1,4 @@
-[Previous Page - Background](background.html)
+[Previous Page - Current Project](current_project.html)
 
 The project described the current workflow for sending and receiving medical to dental and dental to dental information to identify pain points and crucial gaps in the current state. The figure below represents a dental referral request from the Military Health System.
 
@@ -18,7 +18,6 @@ The ideal future state involves sharing the patient’s medical information via 
 
 <table><tr><td><img src="DQ Ideal State.png" /></td></tr></table>
 
-It is anticipated that these standards will have applicability and relevance outside of the specific use cases. For example, they may be used to standardize the transmission of data to plans and payers to develop utilization and quality metrics to enhance value-based care and payment methodologies. In addition, the standardization of the data elements embedded in the exchange will allow for more complete analysis of the connection between oral health and overall health. 
-
+It is anticipated that these standards will have applicability and relevance outside of the specific use cases. For example, they may be used to standardize the transmission of data to plans and payers to develop utilization and quality metrics to enhance value-based care and payment methodologies. In addition, the standardization of the data elements embedded in the exchange will allow for more complete analysis of the connection between oral health and overall health.
 
 [Next Page - Best Practice Recommendations](best_practice_recommendations.html)

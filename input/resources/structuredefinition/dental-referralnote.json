@@ -1,0 +1,211 @@
+{
+	"resourceType": "StructureDefinition",
+	"id": "dental-referralnote",
+	"meta": {
+		"versionId": "58",
+		"lastUpdated": "2020-08-06T19:21:26.760+00:00",
+		"source": "#4NHIB5pV7HEDS1xb"
+	},
+	"url": "http://hl7.org/fhir/us/dental-data-exchange/StructureDefinition/dental-referralnote",
+	"name": "DentalReferralNote",
+	"title": "Dental Referral Note",
+	"status": "active",
+	"description": "This Profile defines the Dental Referral Note profile. It contains the textual information regarding a referral to a general dentist or dental specialist as well as references to supplemental dental profiles for the referral",
+	"fhirVersion": "4.0.1",
+	"mapping": [
+		{
+			"identity": "workflow",
+			"uri": "http://hl7.org/fhir/workflow",
+			"name": "Workflow Pattern"
+		},
+		{
+			"identity": "rim",
+			"uri": "http://hl7.org/v3",
+			"name": "RIM Mapping"
+		},
+		{
+			"identity": "cda",
+			"uri": "http://hl7.org/v3/cda",
+			"name": "CDA (R2)"
+		},
+		{
+			"identity": "fhirdocumentreference",
+			"uri": "http://hl7.org/fhir/documentreference",
+			"name": "FHIR DocumentReference"
+		},
+		{
+			"identity": "w5",
+			"uri": "http://hl7.org/fhir/fivews",
+			"name": "FiveWs Pattern Mapping"
+		}
+	],
+	"kind": "resource",
+	"abstract": false,
+	"type": "Composition",
+	"baseDefinition": "http://hl7.org/fhir/us/ccda/StructureDefinition/Referral-Note",
+	"derivation": "constraint",
+	"differential": {
+		"element": [
+			{
+				"id": "Composition",
+				"path": "Composition"
+			},
+			{
+				"id": "Composition.type",
+				"path": "Composition.type",
+				"short": "type",
+				"mustSupport": true
+			},
+			{
+				"id": "Composition.section",
+				"path": "Composition.section",
+				"slicing": {
+					"discriminator": [
+						{
+							"type": "value",
+							"path": "code"
+						}
+					],
+					"rules": "open"
+				}
+			},
+			{
+				"id": "Composition.section:plan_of_treatment_section",
+				"path": "Composition.section",
+				"sliceName": "plan_of_treatment_section",
+				"min": 1,
+				"max": "1",
+				"mustSupport": true
+			},
+			{
+				"id": "Composition.section:plan_of_treatment_section.entry",
+				"path": "Composition.section.entry",
+				"slicing": {
+					"discriminator": [
+						{
+							"type": "profile",
+							"path": "resolve()"
+						}
+					],
+					"rules": "open"
+				},
+				"short": "entry"
+			},
+			{
+				"id": "Composition.section:assessment_section",
+				"path": "Composition.section",
+				"sliceName": "assessment_section",
+				"label": "Assessment Section",
+				"short": "Assessment Section",
+				"min": 1,
+				"max": "1",
+				"mustSupport": true
+			},
+			{
+				"id": "Composition.section:history_of_present_illness_section",
+				"path": "Composition.section",
+				"sliceName": "history_of_present_illness_section",
+				"label": "History of Present Illness Section",
+				"short": "History of Present Illness Section",
+				"min": 1,
+				"max": "1",
+				"mustSupport": true
+			},
+			{
+				"id": "Composition.section:procedures_section",
+				"path": "Composition.section",
+				"sliceName": "procedures_section",
+				"label": "Procedures Section",
+				"short": "Procedures Section",
+				"min": 1,
+				"max": "1",
+				"mustSupport": true
+			},
+			{
+				"id": "Composition.section:payers_section.entry",
+				"path": "Composition.section.entry",
+				"slicing": {
+					"discriminator": [
+						{
+							"type": "profile",
+							"path": "resolve()"
+						}
+					],
+					"rules": "open"
+				}
+			},
+			{
+				"id": "Composition.section:payers_section.entry:coverage_entry/dental_coverage_entry",
+				"path": "Composition.section.entry",
+				"sliceName": "coverage_entry/dental_coverage_entry",
+				"max": "*",
+				"type": [
+					{
+						"code": "Reference",
+						"targetProfile": [
+							"http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/hrex-coverage"
+						]
+					}
+				],
+				"mustSupport": true
+			},
+			{
+				"id": "Composition.section:dental_findings_section",
+				"path": "Composition.section",
+				"sliceName": "DentalFindingsSection",
+				"max": "1",
+				"mustSupport": true
+			},
+			{
+				"id": "Composition.section:dental_findings_section.title",
+				"path": "Composition.section.title",
+				"short": "title",
+				"min": 1,
+				"mustSupport": true
+			},
+			{
+				"id": "Composition.section:dental_findings_section.code",
+				"path": "Composition.section.code",
+				"min": 0,
+				"max": "1",
+				"patternCodeableConcept": {
+					"coding": [
+						{
+							"system": "http://loinc.org",
+							"code": "8704-9"
+						}
+					]
+				},
+				"mustSupport": true
+			},
+			{
+				"id": "Composition.section:dental_findings_section.entry",
+				"path": "Composition.section.entry",
+				"slicing": {
+					"discriminator": [
+						{
+							"type": "profile",
+							"path": "resolve()"
+						}
+					],
+					"rules": "open"
+				}
+			},
+			{
+				"id": "Composition.section:dental_findings_section.entry:dental_findings_entry",
+				"path": "Composition.section.entry",
+				"sliceName": "dental_findings_entry",
+				"max": "*",
+				"type": [
+					{
+						"code": "Reference",
+						"targetProfile": [
+							"http://hl7.org/fhir/us/dental-data-exchange/StructureDefinition/dental-findings"
+						]
+					}
+				],
+				"mustSupport": true
+			}
+		]
+	}
+}

@@ -1,0 +1,26 @@
+{
+	"resourceType": "Medication",
+	"id": "Lisinopril-med-example",
+	"meta": {
+		"versionId": "2",
+		"lastUpdated": "2020-08-06T17:04:18.517+00:00",
+		"source": "#6xV4ZRPx9bRZU3DT",
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-medication"
+		]
+	},
+	"text": {
+		"status": "generated",
+		"div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div class=\"hapiHeaderText\">Lisinopril 10 mg tab</div></div>"
+	},
+	"code": {
+		"coding": [
+			{
+				"system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+				"code": "314076",
+				"display": "Lisinopril 10 mg Oral Tablet"
+			}
+		],
+		"text": "Lisinopril 10 mg Oral Tablet"
+	}
+}

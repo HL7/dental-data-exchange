@@ -1,4 +1,4 @@
-[Previous Page - App. C. Dental Treatment Rpt](app._c._dental_treatment_rpt.html)
+[Previous Page - Appendix C DentaQuest MORE Care Dental Treatment Form](appendix_c_dentaquest_more_care_dental_treatment_form.html)
 
 The table below is the crosswalk mapping of all teeth.
 <style type="text/css">

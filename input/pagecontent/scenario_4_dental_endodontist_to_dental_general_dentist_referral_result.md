@@ -2,4 +2,4 @@
 
 No content has been defined for this page, yet.
 
-[Next Page - Dental Data Exchange Project Team](team.html)
+[Next Page - Acknowledgements](acknowledgements.html)

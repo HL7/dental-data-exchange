@@ -5,4 +5,4 @@ The audience for this implementation guide includes architects and developers of
 Implementers of this Dental Data Exchange FHIR standard must have FHIR implemented for US Core and C-CDA.
 
 
-[Next Page - Current Project](current_project.html)
+[Next Page - Background](background.html)

@@ -1,4 +1,4 @@
-[Previous Page - Value Set Discrepencies (TBD)](value_set_discrepencies_tbd.html)
+[Previous Page - Patient Self-Management Goals](patient_self-management_goals.html)
 
 To help bridge the gap between conceptual and technical interpretations, the work group developed several use cases that can help integrate an implementable Dental Summary Exchange CDA document. These use cases have been tested at the May 2020 FHIR Connectathon: Dental Summary Exchange Track, and further refined by the work group since then.  
 
