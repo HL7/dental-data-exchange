@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Bleeding-gums-example"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2020-07-09T18:03:45.003+00:00"/>
-        <source value="#f8giIDkJhd6PbDfe"/>
+        <versionId value="3"/>
+        <lastUpdated value="2020-08-06T17:04:23.478+00:00"/>
+        <source value="#Z96sg1Xbiu18fl1a"/>
         <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"/>
     </meta>
     <clinicalStatus>

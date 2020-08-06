@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Mandibular-perm30-example"/>
     <meta>
-        <versionId value="4"/>
-        <lastUpdated value="2020-07-08T01:27:47.433+00:00"/>
-        <source value="#ox5IzVng0ULZv7Pg"/>
+        <versionId value="6"/>
+        <lastUpdated value="2020-08-06T17:04:20.230+00:00"/>
+        <source value="#efqZO06YwKBiUVUt"/>
         <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"/>
     </meta>
     <clinicalStatus>
@@ -36,7 +36,7 @@
         <coding>
             <system value="http://www.ada.org/snodent"/>
             <code value="160770D"/>
-          <display value="Permanent lower right first molar tooth"/>
+            <display value="Permanent lower right first molar tooth"/>
         </coding>
         <text value="Entire permanent mandibular right first molar tooth (body structure); tooth number 30"/>
     </code>

@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="tylenol-dental"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2020-07-08T01:28:51.059+00:00"/>
-        <source value="#3AuvM1QvOadkbGD4"/>
+        <versionId value="3"/>
+        <lastUpdated value="2020-08-06T17:04:23.474+00:00"/>
+        <source value="#tSl9UVZgnKo52sEq"/>
         <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-medication"/>
     </meta>
     <text>

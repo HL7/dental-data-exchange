@@ -2,4 +2,4 @@
 
 <table><tr><td><img src="MORE Care Referral Form.png" /></td></tr></table>
 
-[Next Page - Appendix C  DentaQuest MORE Care Dental Treatment](appendix_c__dentaquest_more_care_dental_treatment.html)
+[Next Page - App. C. Dental Treatment Rpt](app._c._dental_treatment_rpt.html)

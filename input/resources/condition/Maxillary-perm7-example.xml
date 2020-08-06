@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Maxillary-perm7-example"/>
     <meta>
-        <versionId value="5"/>
-        <lastUpdated value="2020-07-20T18:15:23.780+00:00"/>
-        <source value="#voxrj478F5rvHD5e"/>
+        <versionId value="10"/>
+        <lastUpdated value="2020-08-06T17:04:20.206+00:00"/>
+        <source value="#xCfGbGwHhMZiOrzH"/>
         <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"/>
     </meta>
     <clinicalStatus>
@@ -49,14 +49,14 @@
         <coding>
             <system value="http://www.ada.org/snodent"/>
             <code value="161941D"/>
-          <display value="Permanent upper right lateral incisor tooth"/>
+            <display value="Permanent upper right lateral incisor tooth"/>
         </coding>
         <coding>
             <system value="http://snomed.info/sct"/>
             <code value="245574002"/>
-          <display value="Entire permanent maxillary right lateral incisor tooth (body structure)"/>
+            <display value="Entire permanent maxillary right lateral incisor tooth (body structure)"/>
         </coding>
-      <text value="Entire permanent maxillary right lateral incisor tooth (body structure)"/>
+        <text value="Entire permanent maxillary right lateral incisor tooth (body structure)"/>
     </bodySite>
     <subject>
         <reference value="Patient/example-dental"/>

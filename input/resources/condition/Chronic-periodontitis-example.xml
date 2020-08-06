@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Chronic-periodontitis-example"/>
     <meta>
-        <versionId value="4"/>
-        <lastUpdated value="2020-07-08T01:27:47.865+00:00"/>
-        <source value="#dEWuQ7supfYYPvSc"/>
+        <versionId value="5"/>
+        <lastUpdated value="2020-08-06T17:04:22.104+00:00"/>
+        <source value="#FhDbTHMatmugZK9r"/>
         <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"/>
     </meta>
     <clinicalStatus>

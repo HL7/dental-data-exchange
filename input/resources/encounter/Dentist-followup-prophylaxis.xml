@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Dentist-followup-prophylaxis"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2020-07-16T15:28:15.147+00:00"/>
-        <source value="#yiaF3FtOWfcSpvGh"/>
+        <versionId value="3"/>
+        <lastUpdated value="2020-08-06T17:04:20.739+00:00"/>
+        <source value="#ZQj5HZ9KjDqf9sTl"/>
         <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter"/>
     </meta>
     <status value="planned"/>

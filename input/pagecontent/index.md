@@ -1,14 +1,19 @@
 ### Overview
 
-The Dental Data Exchange FHIR Implementation Guide provides guidance for using the HL7 Fast Healthcare Interoperability Resources (FHIR) standard as an exchange format for dental-related information exchange. It is a collection of profiled FHIR resources designed for use in information exchanges supporting the document-based information shared during the referral of a patient to a general and/or specialized dental provider. The goal of this project is to streamline and enhance the efficacy of the exchange of health information between health care systems and community services organizations involved in addressing chronic health conditions by establishing information exchange standards for electronic referrals and referral outcome reporting.
+This implementation guide provides HL7 FHIR resources to define standards for bi-directional information exchange between a medical and a dental provider or between dental providers. This publication provides the data model, defined data items, and their corresponding code and value sets, specific to a dental referral note and dental consultation note. This guide describes constraints on the C-CDA on FHIR header and body elements for dental information, which are derived from requirements developed by the Dental Summary Exchange Project of the Health Level Seven (HL7) Payer/Provider Information Exchange Work Group (PIE WG). Resources in this US Realm implementation guide are specific to dental referral and consultation notes for exchange and interoperability among dental providers and with medical providers.
 
-At a minimum, a document bundle (CCDAonFHIR Referral Note or Consult Note) will be exchanged along with a ServiceRequest, Patient, and associated medical and dental information. This guide specifies how and where these resources are included within the CCDAonFHIR profiles. 
+This guide contains a library of FHIR profiles and is compliant with FHIR Release 4. At a minimum, a document bundle (C-CDA on FHIR Referral Note or Consultation Note) will be exchanged along with a ServiceRequest, Patient, and associated medical and dental information. This guide specifies how and where these resources are included within the C-CDA on FHIR profiles. 
 
-Four use cases are used in this guide to represent the various referral patterns related to dental data exchange:
-1. Medical to Dental practitioner Referral note
-2. Dental to Medical practitioner Consult note
-3. General Dentist to Endodontist Referral note
-4. Endodontist to General Dentist Consult note
+This guide defines 5 new Profiles:
+* Dental Consult Note
+* Dental Communication Profile
+* Dental Service Request Profile
+* Dental Findings Profile
+* Dental Referral Note Profile
+
+All proprietary documents, guides, guidance, standards, codes, and values contained herein remain the property of their respective Standards Developing Organization (SDO). HL7 does not make any claim to ownership herein.
+
+This HL7 FHIR® R4 Implementation Guide: Dental Data Exchange is developed in parallel to the HL7 CDA® R2 Implementation Guide: Dental Data Exchange.
 
 
 
@@ -32,4 +37,4 @@ Four use cases are used in this guide to represent the various referral patterns
 
 
 
-[Next Page - Dependencies](dependencies.html)
+[Next Page - Scope](scope.html)

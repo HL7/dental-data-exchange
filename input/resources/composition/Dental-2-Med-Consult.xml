@@ -3,11 +3,11 @@
     xmlns="http://hl7.org/fhir">
     <id value="Dental-2-Med-Consult"/>
     <meta>
-        <versionId value="16"/>
-        <lastUpdated value="2020-07-24T19:26:23.821+00:00"/>
-        <source value="#GGscNkROSzQdWPSv"/>
+        <versionId value="18"/>
+        <lastUpdated value="2020-08-06T17:04:22.341+00:00"/>
+        <source value="#SVm0tHbmHoKOA68J"/>
         <profile value="http://hl7.org/fhir/us/ccda/StructureDefinition/Consultation-Note"/>
-        <profile value="http://hl7.org/fhir/us/dentalreferral/StructureDefinition/dental-consult"/>
+        <profile value="http://hl7.org/fhir/us/dental-data-exchange/StructureDefinition/dental-consult"/>
     </meta>
     <language value="en-US"/>
     <extension url="http://hl7.org/fhir/us/ccda/StructureDefinition/OrderExtension">
@@ -517,11 +517,11 @@
                             <b>Effective Dates</b>
                         </td>
                     </tr>
-                  <tr>
-                    <td>Smoking Status - Meaningful Use</td>
-                    <td>Never smoked tobacco</td>
-                    <td>Feb 14, 2020</td>
-                  </tr>
+                    <tr>
+                        <td>Smoking Status - Meaningful Use</td>
+                        <td>Never smoked tobacco</td>
+                        <td>Feb 14, 2020</td>
+                    </tr>
                     <tr>
                         <td>Highest Education Level</td>
                         <td>College Education</td>
@@ -535,9 +535,9 @@
                 </table>
             </div>
         </text>
-      <entry>
-        <reference value="Observation/Smoker-obs-example-dental"/>
-      </entry>
+        <entry>
+            <reference value="Observation/Smoker-obs-example-dental"/>
+        </entry>
         <entry>
             <reference value="Observation/Education-level-example-dental"/>
         </entry>

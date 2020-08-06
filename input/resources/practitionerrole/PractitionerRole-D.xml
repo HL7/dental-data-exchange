@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="PractitionerRole-D"/>
     <meta>
-        <versionId value="5"/>
-        <lastUpdated value="2020-07-16T15:29:22.323+00:00"/>
-        <source value="#LljscrbzyLuDMEtx"/>
+        <versionId value="6"/>
+        <lastUpdated value="2020-08-06T17:04:21.648+00:00"/>
+        <source value="#Jn7RqGja5KewNTuy"/>
         <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole"/>
     </meta>
     <practitioner>

@@ -3,15 +3,14 @@
     xmlns="http://hl7.org/fhir">
     <id value="dental-reason-for-referral"/>
     <meta>
-        <versionId value="5"/>
-        <lastUpdated value="2020-07-21T18:30:15.680+00:00"/>
-        <source value="#E52qQNV8iKbQlOUy"/>
+        <versionId value="8"/>
+        <lastUpdated value="2020-08-06T17:16:05.628+00:00"/>
+        <source value="#0YCxIENZIiVTbASP"/>
     </meta>
-    <url value="http://hl7.org/fhir/us/dentalreferral/ValueSet/dental-reason-for-referral"/>
+    <url value="http://hl7.org/fhir/us/dental-data-exchange/ValueSet/dental-reason-for-referral"/>
     <name value="DentalReasonForReferral"/>
-    <title value="Dental Reason For Referral"/>
+    <title value="DentalReasonForReferral"/>
     <status value="draft"/>
-    <description value="This ValueSet contains coded prominent reasons for referral between medical and dental care settings. "/>
     <compose>
         <include>
             <system value="http://snomed.info/sct"/>
@@ -25,11 +24,11 @@
             </concept>
             <concept>
                 <code value="309685001"/>
-                <display value="Swollen gums"/>
+                <display value="Swollen gums "/>
             </concept>
             <concept>
                 <code value="80967001"/>
-                <display value="Dental caries"/>
+                <display value="Dental caries "/>
             </concept>
             <concept>
                 <code value="110475006"/>
@@ -101,7 +100,7 @@
             </concept>
         </include>
         <include>
-            <system value="http://www.ada.org/snodent"/>
+            <system value="http://ada.org/snodent"/>
             <concept>
                 <code value="131687D"/>
                 <display value="Toothache"/>
@@ -112,11 +111,11 @@
             </concept>
             <concept>
                 <code value="148393D"/>
-                <display value="Swollen gums"/>
+                <display value="Swollen gums "/>
             </concept>
             <concept>
                 <code value="118065D"/>
-                <display value="Dental caries"/>
+                <display value="Dental caries "/>
             </concept>
             <concept>
                 <code value="146328D"/>
@@ -171,15 +170,15 @@
                 <display value="Diabetes mellitus"/>
             </concept>
             <concept>
-                <code value="174950D"/>
+                <code value="174950D "/>
                 <display value="Pregnant"/>
             </concept>
             <concept>
-                <code value="144684D"/>
+                <code value="144684D "/>
                 <display value="Disturbance of tooth eruption or exfoliation"/>
             </concept>
             <concept>
-                <code value="150365D"/>
+                <code value="150365D "/>
                 <display value="Malocclusion of teeth"/>
             </concept>
         </include>
@@ -188,10 +187,6 @@
             <concept>
                 <code value="K08.89"/>
                 <display value="Other specified disorders of teeth and supporting structures"/>
-            </concept>
-            <concept>
-                <code value="K06.8"/>
-                <display value="Other specified disorders of gingiva and edentulous alveolar ridge"/>
             </concept>
             <concept>
                 <code value="K06.8"/>
@@ -210,20 +205,8 @@
                 <display value="Unspecified early complication of trauma, initial encounter"/>
             </concept>
             <concept>
-                <code value="K06.8"/>
-                <display value="Other specified disorders of gingiva and edentulous alveolar ridge"/>
-            </concept>
-            <concept>
-                <code value="K06.8"/>
-                <display value="Other specified disorders of gingiva and edentulous alveolar ridge"/>
-            </concept>
-            <concept>
                 <code value="M26.69"/>
                 <display value="Other specified disorders of temporomandibular joint"/>
-            </concept>
-            <concept>
-                <code value="K03.2"/>
-                <display value="Erosion of teeth"/>
             </concept>
             <concept>
                 <code value="K03.2"/>
@@ -242,15 +225,11 @@
                 <display value="Cellulitis and abscess of mouth"/>
             </concept>
             <concept>
-                <code value="K12.2"/>
-                <display value="Cellulitis and abscess of mouth"/>
-            </concept>
-            <concept>
-                <code value="E13.9"/>
+                <code value="E13.9 "/>
                 <display value="Other specified diabetes mellitus without complications"/>
             </concept>
             <concept>
-                <code value="Z33.1"/>
+                <code value="Z33.1 "/>
                 <display value="Pregnant state, incidental"/>
             </concept>
             <concept>
@@ -262,7 +241,7 @@
                 <display value="Disturbances in tooth eruption"/>
             </concept>
             <concept>
-                <code value="M26.4"/>
+                <code value="M26.4 "/>
                 <display value="Malocclusion, unspecified"/>
             </concept>
         </include>

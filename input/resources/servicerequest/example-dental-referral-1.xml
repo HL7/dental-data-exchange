@@ -3,10 +3,10 @@
     xmlns="http://hl7.org/fhir">
     <id value="example-dental-referral-1"/>
     <meta>
-        <versionId value="3"/>
-        <lastUpdated value="2020-07-21T18:49:46.898+00:00"/>
-        <source value="#8Sso77Ae3vlEe8ov"/>
-        <profile value="http://hl7.org/fhir/us/dentalreferral/dental-servicerequest"/>
+        <versionId value="4"/>
+        <lastUpdated value="2020-08-06T17:04:19.913+00:00"/>
+        <source value="#csg3mayPcO4M1lAE"/>
+        <profile value="http://hl7.org/fhir/us/dental-data-exchange/dental-servicerequest"/>
     </meta>
     <status value="active"/>
     <intent value="plan"/>

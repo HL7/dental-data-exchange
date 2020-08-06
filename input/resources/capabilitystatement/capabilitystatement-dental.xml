@@ -3,11 +3,11 @@
     xmlns="http://hl7.org/fhir">
     <id value="capabilitystatement-dental"/>
     <meta>
-        <versionId value="8"/>
-        <lastUpdated value="2020-07-23T20:07:25.522+00:00"/>
-        <source value="#0SbbME9uy1J1irXa"/>
+        <versionId value="9"/>
+        <lastUpdated value="2020-08-06T17:04:18.455+00:00"/>
+        <source value="#mirDY4bsjl620fZS"/>
     </meta>
-    <url value="http://hl7.org/fhir/us/dentalreferral/CapabilityStatement/capabilitystatement-dental"/>
+    <url value="http://hl7.org/fhir/us/dental-data-exchange/CapabilityStatement/capabilitystatement-dental"/>
     <version value="1.0.0"/>
     <name value="CapabilityStatementDental"/>
     <title value="Capability Statement - Dental"/>

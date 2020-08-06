@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="heart-rate"/>
     <meta>
-        <versionId value="3"/>
-        <lastUpdated value="2020-07-08T02:07:15.174+00:00"/>
-        <source value="#srjgZNtXbiFkx9p5"/>
+        <versionId value="4"/>
+        <lastUpdated value="2020-08-06T17:04:22.628+00:00"/>
+        <source value="#FO9ihw7oUtcuY4mT"/>
         <profile value="http://hl7.org/fhir/StructureDefinition/vitalsigns"/>
     </meta>
     <status value="final"/>

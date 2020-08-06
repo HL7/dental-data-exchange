@@ -3,11 +3,11 @@
     xmlns="http://hl7.org/fhir">
     <id value="dental-communication"/>
     <meta>
-        <versionId value="14"/>
-        <lastUpdated value="2020-07-16T15:30:01.159+00:00"/>
-        <source value="#qvzSDf6F1KJgPR8N"/>
+        <versionId value="15"/>
+        <lastUpdated value="2020-08-06T17:04:21.362+00:00"/>
+        <source value="#Dp5AbQToEpFeq7LH"/>
     </meta>
-    <url value="http://hl7.org/fhir/us/dentalreferral/StructureDefinition/dental-communication"/>
+    <url value="http://hl7.org/fhir/us/dental-data-exchange/StructureDefinition/dental-communication"/>
     <name value="DentalCommunication"/>
     <title value="Dental Communication"/>
     <status value="active"/>

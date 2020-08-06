@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ImplementationGuide
     xmlns="http://hl7.org/fhir">
-    <id value="dentalreferral"/>
+    <id value="hl7.fhir.us.dentalreferral"/>
     <meta>
-        <versionId value="335"/>
-        <lastUpdated value="2020-07-24T19:24:07.091+00:00"/>
-        <source value="#FMT7MJuzzlmL5n4L"/>
+        <versionId value="4"/>
+        <lastUpdated value="2020-08-06T17:35:26.748+00:00"/>
+        <source value="#lIevNzgRpqr9oa1c"/>
     </meta>
-    <url value="http://hl7.org/fhir/us/dentalreferral/ImplementationGuide/dentalreferral"/>
+    <url value="http://hl7.org/fhir/us/dental-data-exchange/ImplementationGuide/hl7.fhir.us.dentalreferral"/>
     <version value="0.0.1"/>
-    <name value="DentalReferral"/>
-    <title value="Dental Referral and Consult"/>
+    <name value="DentalDataExchange"/>
+    <title value="Dental Data Exchange"/>
     <status value="draft"/>
-    <publisher value="LCG"/>
+    <publisher value="Lantana Consulting Group"/>
     <contact>
         <name value="HL7 International - Payer/Provider Information Exchange Work Group"/>
         <telecom>
@@ -20,7 +20,7 @@
             <value value="http://www.hl7.org/Special/committees/claims"/>
         </telecom>
     </contact>
-    <description value="The Dental Data Exchange FHIR Implementation Guide provides guidance for using the HL7 Fast Healthcare Interoperability Resources (FHIR) standard as an exchange format for dental-related information exchange. It is a collection of profiled FHIR resources designed for use in information exchanges supporting the document-based information shared during the referral of a patient to a general and/or specialized dental provider. The goal of this project is to streamline and enhance the efficacy of the exchange of health information between health care systems and community services organizations involved in addressing chronic health conditions by establishing information exchange standards for electronic referrals and referral outcome reporting.&#xA;&#xA;At a minimum, a document bundle (CCDAonFHIR Referral Note or Consult Note) will be exchanged along with a ServiceRequest, Patient, and associated medical and dental information. This guide specifies how and where these resources are included within the CCDAonFHIR profiles. &#xA;&#xA;Four use cases are used in this guide to represent the various referral patterns related to dental data exchange:&#xA;1. Medical to Dental practitioner Referral note&#xA;2. Dental to Medical practitioner Consult note&#xA;3. General Dentist to Endodontist Referral note&#xA;4. Endodontist to General Dentist Consult note"/>
+    <description value="This implementation guide provides HL7 FHIR resources to define standards for bi-directional information exchange between a medical and a dental provider or between dental providers. This publication provides the data model, defined data items, and their corresponding code and value sets, specific to a dental referral note and dental consultation note. This guide describes constraints on the C-CDA on FHIR header and body elements for dental information, which are derived from requirements developed by the Dental Summary Exchange Project of the Health Level Seven (HL7) Payer/Provider Information Exchange Work Group (PIE WG). Resources in this US Realm implementation guide are specific to dental referral and consultation notes for exchange and interoperability among dental providers and with medical providers.&#xA;&#xA;This guide contains a library of FHIR profiles and is compliant with FHIR Release 4. At a minimum, a document bundle (C-CDA on FHIR Referral Note or Consultation Note) will be exchanged along with a ServiceRequest, Patient, and associated medical and dental information. This guide specifies how and where these resources are included within the C-CDA on FHIR profiles. &#xA;&#xA;This guide defines 5 new Profiles:&#xA;* Dental Consult Note&#xA;* Dental Communication Profile&#xA;* Dental Service Request Profile&#xA;* Dental Findings Profile&#xA;* Dental Referral Note Profile&#xA;&#xA;All proprietary documents, guides, guidance, standards, codes, and values contained herein remain the property of their respective Standards Developing Organization (SDO). HL7 does not make any claim to ownership herein.&#xA;&#xA;This HL7 FHIR® R4 Implementation Guide: Dental Data Exchange is developed in parallel to the HL7 CDA® R2 Implementation Guide: Dental Data Exchange."/>
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -248,13 +248,6 @@
                 <reference value="Procedure/Dental-incisor-restoration-example"/></reference>
             <name value="Incisor Restoration (example)"/>
             <description value="This is an example of US Core Procedure"/>
-            <exampleBoolean value="true"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="ServiceRequest/Dental-extraction-example"/></reference>
-            <name value="Extraction Procedure (example)"/>
-            <description value="This is an example of Dental ServiceRequest"/>
             <exampleBoolean value="true"/>
         </resource>
         <resource>
@@ -606,20 +599,6 @@
         </resource>
         <resource>
             <reference>
-                <reference value="ServiceRequest/Radiograph-survey"/></reference>
-            <name value="Radiography Imaging (example)"/>
-            <description value="This is an example of Dental ServiceRequest"/>
-            <exampleBoolean value="true"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="ServiceRequest/Resin-restore-example"/></reference>
-            <name value="Resin restoration (example)"/>
-            <description value="This is an example of Dental ServiceRequest"/>
-            <exampleBoolean value="true"/>
-        </resource>
-        <resource>
-            <reference>
                 <reference value="Observation/Overjet"/></reference>
             <name value="Overjet (example)"/>
             <description value="This is an example of a dental finding (measurement)"/>
@@ -628,8 +607,29 @@
         <resource>
             <reference>
                 <reference value="MedicationRequest/Tylenol-med-dental"/></reference>
-            <name value="Tylenol Medication"/>
-          <description value="This is an example of US Core MedicationRequest"/>
+            <name value="Tylenol Medication (example)"/>
+            <description value="This is an example of US Core MedicationRequest"/>
+            <exampleBoolean value="true"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="ServiceRequest/Dental-extraction-example"/></reference>
+            <name value="Extraction (example)"/>
+            <description value="This is an example of a Dental ServiceRequest for a future dental procedure"/>
+            <exampleBoolean value="true"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="ServiceRequest/Radiograph-survey"/></reference>
+            <name value="Full Mouth Radiography imaging survey (example)"/>
+            <description value="This is an example of a Dental ServiceRequest for a future dental procedure"/>
+            <exampleBoolean value="true"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="ServiceRequest/Resin-restore-example"/></reference>
+            <name value="Resin Restoration (example)"/>
+            <description value="This is an example of a Dental ServiceRequest for a future dental procedure"/>
             <exampleBoolean value="true"/>
         </resource>
         <page>
@@ -637,8 +637,23 @@
             <title value="Introduction"/>
             <generation value="markdown"/>
             <page>
+                <nameUrl value="scope.html"/>
+                <title value="Scope"/>
+                <generation value="markdown"/>
+            </page>
+            <page>
                 <nameUrl value="dependencies.html"/>
                 <title value="Dependencies"/>
+                <generation value="markdown"/>
+            </page>
+            <page>
+                <nameUrl value="audience.html"/>
+                <title value="Audience"/>
+                <generation value="markdown"/>
+            </page>
+            <page>
+                <nameUrl value="current_project.html"/>
+                <title value="Current Project"/>
                 <generation value="markdown"/>
             </page>
             <page>
@@ -647,14 +662,9 @@
                 <generation value="markdown"/>
             </page>
             <page>
-                <nameUrl value="scope.html"/>
-                <title value="Scope"/>
+                <nameUrl value="workflows.html"/>
+                <title value="Workflows"/>
                 <generation value="markdown"/>
-                <page>
-                    <nameUrl value="dentaquest_partnership.html"/>
-                    <title value="DentaQuest Partnership"/>
-                    <generation value="markdown"/>
-                </page>
             </page>
             <page>
                 <nameUrl value="best_practice_recommendations.html"/>
@@ -700,13 +710,13 @@
                     <title value="Content Inclusion"/>
                     <generation value="markdown"/>
                     <page>
-                        <nameUrl value="patient_self-management_goals.html"/>
-                        <title value="Patient Self-Management Goals"/>
+                        <nameUrl value="caries_risk_assessment.html"/>
+                        <title value="Caries Risk Assessment"/>
                         <generation value="markdown"/>
                     </page>
                     <page>
-                        <nameUrl value="caries_risk_assessment.html"/>
-                        <title value="Caries Risk Assessment"/>
+                        <nameUrl value="patient_self-management_goals.html"/>
+                        <title value="Patient Self-Management Goals"/>
                         <generation value="markdown"/>
                     </page>
                 </page>
@@ -762,8 +772,13 @@
                 <generation value="markdown"/>
             </page>
             <page>
-                <nameUrl value="appendix_c__dentaquest_more_care_dental_treatment.html"/>
-                <title value="Appendix C  DentaQuest MORE Care Dental Treatment"/>
+                <nameUrl value="app._c._dental_treatment_rpt.html"/>
+                <title value="App. C. Dental Treatment Rpt"/>
+                <generation value="markdown"/>
+            </page>
+            <page>
+                <nameUrl value="appendix_d_value_set_discrepancy_mapping.html"/>
+                <title value="Appendix D Value Set Discrepancy Mapping"/>
                 <generation value="markdown"/>
             </page>
         </page>

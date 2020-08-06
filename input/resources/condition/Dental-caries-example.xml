@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Dental-caries-example"/>
     <meta>
-        <versionId value="5"/>
-        <lastUpdated value="2020-07-13T18:20:54.282+00:00"/>
-        <source value="#EYv12x7totg6m0dw"/>
+        <versionId value="6"/>
+        <lastUpdated value="2020-08-06T17:04:21.776+00:00"/>
+        <source value="#F4FmM7555HccNM56"/>
         <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"/>
     </meta>
     <clinicalStatus>

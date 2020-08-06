@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="respiratory-rate"/>
     <meta>
-        <versionId value="3"/>
-        <lastUpdated value="2020-07-08T02:07:15.313+00:00"/>
-        <source value="#wUM2Dyg5CnTOdDJx"/>
+        <versionId value="4"/>
+        <lastUpdated value="2020-08-06T17:04:22.940+00:00"/>
+        <source value="#ZJZlUXrQUpfDobxJ"/>
         <profile value="http://hl7.org/fhir/StructureDefinition/vitalsigns"/>
     </meta>
     <status value="final"/>

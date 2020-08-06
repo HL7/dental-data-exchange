@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="erythromycin-medreq-2"/>
     <meta>
-        <versionId value="3"/>
-        <lastUpdated value="2020-07-08T01:29:01.034+00:00"/>
-        <source value="#PsSGpC3embZVgdSi"/>
+        <versionId value="4"/>
+        <lastUpdated value="2020-08-06T17:04:21.460+00:00"/>
+        <source value="#sRqmcVChZmoyJzL0"/>
         <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationrequest"/>
     </meta>
     <status value="active"/>

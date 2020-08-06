@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Tooth-infection"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2020-07-21T18:48:48.889+00:00"/>
-        <source value="#kOgWpw0l0M9oZGeu"/>
+        <versionId value="3"/>
+        <lastUpdated value="2020-08-06T17:04:21.217+00:00"/>
+        <source value="#s6zW0m7Fh9aRHUK0"/>
         <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"/>
     </meta>
     <clinicalStatus>

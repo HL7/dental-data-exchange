@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="toothache-example"/>
     <meta>
-        <versionId value="5"/>
-        <lastUpdated value="2020-07-09T18:11:24.968+00:00"/>
-        <source value="#E2pinQrE8lDCpm03"/>
+        <versionId value="6"/>
+        <lastUpdated value="2020-08-06T17:04:20.303+00:00"/>
+        <source value="#CHrd9gLiCD17eKe6"/>
         <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"/>
     </meta>
     <clinicalStatus>

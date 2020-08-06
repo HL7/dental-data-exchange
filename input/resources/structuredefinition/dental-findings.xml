@@ -3,11 +3,11 @@
     xmlns="http://hl7.org/fhir">
     <id value="dental-findings"/>
     <meta>
-        <versionId value="9"/>
-        <lastUpdated value="2020-07-21T19:15:51.740+00:00"/>
-        <source value="#fBe0quebJbEMmulI"/>
+        <versionId value="10"/>
+        <lastUpdated value="2020-08-06T17:04:18.537+00:00"/>
+        <source value="#cPnK7EKUrQ3HUjdU"/>
     </meta>
-    <url value="http://hl7.org/fhir/us/dentalreferral/StructureDefinition/dental-findings"/>
+    <url value="http://hl7.org/fhir/us/dental-data-exchange/StructureDefinition/dental-findings"/>
     <name value="DentalFindings"/>
     <title value="Dental Findings"/>
     <status value="active"/>
@@ -56,7 +56,7 @@
             <path value="Observation.code"/>
             <binding>
                 <strength value="extensible"/>
-                <valueSet value="http://hl7.org/fhir/us/dentalreferral/ValueSet/dental-observation-codes"/>
+                <valueSet value="http://hl7.org/fhir/us/dental-data-exchange/ValueSet/dental-observation-codes"/>
             </binding>
         </element>
         <element id="Observation.subject">
@@ -84,7 +84,7 @@
             <path value="Observation.bodySite"/>
             <binding>
                 <strength value="preferred"/>
-                <valueSet value="http://hl7.org/fhir/us/dentalreferral/ValueSet/dental-anatomy"/>
+                <valueSet value="http://hl7.org/fhir/us/dental-data-exchange/ValueSet/dental-anatomy"/>
             </binding>
         </element>
     </differential>

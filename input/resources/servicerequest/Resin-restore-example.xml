@@ -1,40 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ServiceRequest
-  xmlns="http://hl7.org/fhir">
-  <id value="Resin-restore-example"/>
-  <meta>
-    <versionId value="3"/>
-    <lastUpdated value="2020-07-21T18:49:46.898+00:00"/>
-    <source value="#8Sso77Ae3vlEe8ov"/>
-    <profile value="http://hl7.org/fhir/us/dentalreferral/dental-servicerequest"/>
-  </meta>
-  <status value="active"/>
-  <intent value="plan"/>
-  <code>
-    <coding>
-      <system value="https://ada.org/en/publications/cdt"/>
-      <code value="D1352"/>
-      <display value="Preventive resin restoration in a moderate to high caries risk patient-permanent tooth"/>
-    </coding>
-    <text value="Preventive resin restoration in a moderate to high caries risk patient-permanent tooth"/>
-  </code>
-  <subject>
-    <reference value="Patient/example-dental"/>
-  </subject>
-  <requester>
-    <reference value="Practitioner/practitioner-D"/>
-  </requester>
-  <bodySite>
-    <coding>
-      <system value="http://www.ada.org/snodent"/>
-      <code value="161941D"/>
-      <display value="Permanent upper right lateral incisor tooth"/>
-    </coding>
-    <coding>
-      <system value="http://snomed.info/sct"/>
-      <code value="245574002"/>
-      <display value="Entire maxillary right lateral incisor tooth"/>
-    </coding>
-    <text value="Entire maxillary right lateral incisor tooth"/>
-  </bodySite>
+    xmlns="http://hl7.org/fhir">
+    <id value="Resin-restore-example"/>
+    <meta>
+        <versionId value="2"/>
+        <lastUpdated value="2020-08-06T17:04:19.936+00:00"/>
+        <source value="#nCbPfQgJGYzektQG"/>
+        <profile value="http://hl7.org/fhir/us/dental-data-exchange/dental-servicerequest"/>
+    </meta>
+    <status value="active"/>
+    <intent value="plan"/>
+    <code>
+        <coding>
+            <system value="https://ada.org/en/publications/cdt"/>
+            <code value="D1352"/>
+            <display value="Preventive resin restoration in a moderate to high caries risk patient-permanent tooth"/>
+        </coding>
+        <text value="Preventive resin restoration in a moderate to high caries risk patient-permanent tooth"/>
+    </code>
+    <subject>
+        <reference value="Patient/example-dental"/>
+    </subject>
+    <requester>
+        <reference value="Practitioner/practitioner-D"/>
+    </requester>
+    <bodySite>
+        <coding>
+            <system value="http://www.ada.org/snodent"/>
+            <code value="161941D"/>
+            <display value="Permanent upper right lateral incisor tooth"/>
+        </coding>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="245574002"/>
+            <display value="Entire maxillary right lateral incisor tooth"/>
+        </coding>
+        <text value="Entire maxillary right lateral incisor tooth"/>
+    </bodySite>
 </ServiceRequest>

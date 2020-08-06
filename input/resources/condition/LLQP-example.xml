@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="LLQP-example"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2020-07-16T15:27:39.857+00:00"/>
-        <source value="#H0MeEF1mzRyoxGTn"/>
+        <versionId value="3"/>
+        <lastUpdated value="2020-08-06T17:04:22.986+00:00"/>
+        <source value="#nchVAiiM2vASoPIN"/>
         <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"/>
     </meta>
     <clinicalStatus>

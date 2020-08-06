@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Dental-plaque-example"/>
     <meta>
-        <versionId value="4"/>
-        <lastUpdated value="2020-07-08T01:27:47.453+00:00"/>
-        <source value="#h5OItTmW4l65es4S"/>
+        <versionId value="5"/>
+        <lastUpdated value="2020-08-06T17:04:20.355+00:00"/>
+        <source value="#GAguozBiEybolH95"/>
         <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"/>
     </meta>
     <clinicalStatus>

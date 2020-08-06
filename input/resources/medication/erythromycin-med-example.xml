@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="erythromycin-med-example"/>
     <meta>
-        <versionId value="4"/>
-        <lastUpdated value="2020-07-09T18:15:23.025+00:00"/>
-        <source value="#gspKBRK7HoGhPdUm"/>
+        <versionId value="5"/>
+        <lastUpdated value="2020-08-06T17:04:20.972+00:00"/>
+        <source value="#wBV0i9Iv1g0Kdoxf"/>
         <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-medication"/>
     </meta>
     <text>

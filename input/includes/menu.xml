@@ -1,10 +1,65 @@
 <ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
   <li><a href="index.html">IG Home</a></li>
   <li><a href="toc.html">Table of Contents</a></li>
-  <li><a href="dependencies.html">Dependencies</a></li>
+  <li><a href="index.html">Introduction</a></li>
 
-  <li><a href="scope.html">Scope</a></li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Scope & Background<b class="caret">
+      </b>
+    </a>
+    <ul class="dropdown-menu">
+      <li><a href="scope.html">Scope</a></li>
+      <li><a href="dependencies.html">Dependencies</a></li>
+      <li><a href="current_project.html">Current Project</a></li>
+      <li><a href="background.html">Background</a></li>
+      <li><a href="workflows.html">Workflows</a></li>    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Best Practice Recommendations<b class="caret">
+      </b>
+    </a>
+    <ul class="dropdown-menu">
+      <li><a href="best_practice_recommendations.html">Best Practice Recommendations</a></li>
+      <li><a href="proper_use_of_the_dental_findings_section.html">Proper use of the Dental Findings Section</a></li>
+      <li><a href="incorporating_snodent_concepts.html">Incorporating SNODENT Concepts</a></li>
+      <li><a href="planned_procedures_and_encounters_using_cdt_and_snodent.html">Planned Procedures and Encounters using CDT and SNODENT</a></li>
+      <li><a href="dental_images_as_results.html">Dental Images as Results</a></li>
+      <li><a href="reason_for_referral_indications.html">Reason for Referral Indications</a></li>
+      <li><a href="referral_identifiers_in_the_consult_note.html">Referral Identifiers in the Consult Note</a></li>
+      <li><a href="periodontal_findings.html">Periodontal Findings</a></li>    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Content Inclusion<b class="caret">
+      </b>
+    </a>
+    <ul class="dropdown-menu">
+      <li><a href="content_inclusion.html">Content Inclusion</a></li>
+      <li><a href="caries_risk_assessment.html">Caries Risk Assessment</a></li>
+      <li><a href="patient_self-management_goals.html">Patient Self-Management Goals</a></li>    </ul>
+  </li>
+  <li><a href="value_set_discrepencies_tbd.html">Value Set Discrepencies (TBD)</a></li>
 
-  <li><a href="best_practice_recommendations.html">Best Practice Recommendations</a></li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Dental Use Case Scenarios<b class="caret">
+      </b>
+    </a>
+    <ul class="dropdown-menu">
+      <li><a href="dental_use_case_scenarios.html">Dental Use Case Scenarios</a></li>
+      <li><a href="scenario_1_medical_to_dental_referral.html">Scenario 1 Medical to Dental Referral</a></li>
+      <li><a href="scenario_2_dental_to_medical_consult_note.html">Scenario 2 Dental to Medical Consult Note</a></li>
+      <li><a href="scenario_3_dental_to_dental_endodontist_referral.html">Scenario 3 Dental to Dental (Endodontist) Referral</a></li>
+      <li><a href="scenario_4_dental_endodontist_to_dental_general_dentist_referral_result.html">Scenario 4 Dental (Endodontist) to Dental (General Dentist) Referral Result</a></li>    </ul>
+  </li>
+  <li><a href="team.html">Dental Data Exchange Project Team</a></li>
+
+  <li><a href="acknowlegements.html">Acknowlegements</a></li>
+
+  <li><a href="appendix_a_imaging_results_example_code.html">Appendix A Imaging Results Example Code</a></li>
+
+  <li><a href="appendix_b__dentaquest_more_care_referral.html">Appendix B  DentaQuest MORE Care Referral</a></li>
+
+  <li><a href="app._c._dental_treatment_rpt.html">App. C. Dental Treatment Rpt</a></li>
+
+  <li><a href="appendix_d_value_set_discrepancy_mapping.html">Appendix D Value Set Discrepancy Mapping</a></li>
   <li><a href="artifacts.html">Artifact Index</a></li>
 </ul>

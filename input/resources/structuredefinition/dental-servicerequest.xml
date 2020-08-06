@@ -3,11 +3,11 @@
     xmlns="http://hl7.org/fhir">
     <id value="dental-servicerequest"/>
     <meta>
-        <versionId value="19"/>
-        <lastUpdated value="2020-07-23T15:45:16.722+00:00"/>
-        <source value="#cBK3tBB9AIVQFvU6"/>
+        <versionId value="20"/>
+        <lastUpdated value="2020-08-06T17:04:22.942+00:00"/>
+        <source value="#k06KyWJEOcgwkXLv"/>
     </meta>
-    <url value="http://hl7.org/fhir/us/dentalreferral/dental-servicerequest"/>
+    <url value="http://hl7.org/fhir/us/dental-data-exchange/dental-servicerequest"/>
     <name value="DentalServiceRequest"/>
     <title value="Dental Service Request"/>
     <status value="active"/>
@@ -58,7 +58,7 @@
             <mustSupport value="true"/>
             <binding>
                 <strength value="example"/>
-                <valueSet value="http://hl7.org/fhir/us/dentalreferral/ValueSet/dental-reason-for-referral"/>
+                <valueSet value="http://hl7.org/fhir/us/dental-data-exchange/ValueSet/dental-reason-for-referral"/>
             </binding>
         </element>
         <element id="ServiceRequest.subject">

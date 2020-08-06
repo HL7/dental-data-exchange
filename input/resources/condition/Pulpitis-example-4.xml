@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Pulpitis-example-4"/>
     <meta>
-        <versionId value="5"/>
-        <lastUpdated value="2020-07-08T01:27:47.454+00:00"/>
-        <source value="#HXvuLAaqT8AYUahI"/>
+        <versionId value="6"/>
+        <lastUpdated value="2020-08-06T17:04:23.549+00:00"/>
+        <source value="#M00Bj6RYqOpq5hTR"/>
         <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"/>
     </meta>
     <clinicalStatus>

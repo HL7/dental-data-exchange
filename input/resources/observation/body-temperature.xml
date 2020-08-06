@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="body-temperature"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2020-07-08T02:07:15.170+00:00"/>
-        <source value="#mBe5m5ZqMpa9QleF"/>
+        <versionId value="3"/>
+        <lastUpdated value="2020-08-06T17:04:18.536+00:00"/>
+        <source value="#bX2IGEVGYKyg15Gs"/>
         <profile value="http://hl7.org/fhir/StructureDefinition/vitalsigns"/>
     </meta>
     <status value="final"/>

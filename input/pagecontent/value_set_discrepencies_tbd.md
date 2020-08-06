@@ -1,4 +1,4 @@
-[Previous Page - Caries Risk Assessment](caries_risk_assessment.html)
+[Previous Page - Patient Self-Management Goals](patient_self-management_goals.html)
 
 **Value Set Name:** Universal Numbering System
 <style type="text/css">

@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Swollen-gums-example"/>
     <meta>
-        <versionId value="5"/>
-        <lastUpdated value="2020-07-09T18:08:52.013+00:00"/>
-        <source value="#8f01bJxvpG8jZ154"/>
+        <versionId value="6"/>
+        <lastUpdated value="2020-08-06T17:04:19.255+00:00"/>
+        <source value="#NsrPh39pBy1lIYMF"/>
         <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"/>
     </meta>
     <clinicalStatus>

@@ -1,4 +1,4 @@
-[Previous Page - Content Inclusion](content_inclusion.html)
+[Previous Page - Caries Risk Assessment](caries_risk_assessment.html)
 
 A Goals Section is represented as a MAY in the referral and consult note, providing specific patient goals separate from instruction. Goals may represent what the patient should do in addition to standard instructions given to the patient. The work group suggests conveying dental goals in the Problem Section of the CCDA. Below are examples of self-management dental goals:
 
@@ -17,4 +17,4 @@ A Goals Section is represented as a MAY in the referral and consult note, provid
 
 
 
-[Next Page - Caries Risk Assessment](caries_risk_assessment.html)
+[Next Page - Value Set Discrepencies (TBD)](value_set_discrepencies_tbd.html)

@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="HTN-example"/>
     <meta>
-        <versionId value="5"/>
-        <lastUpdated value="2020-07-08T01:27:47.432+00:00"/>
-        <source value="#ECpL0x41JjPttGKJ"/>
+        <versionId value="6"/>
+        <lastUpdated value="2020-08-06T17:04:19.936+00:00"/>
+        <source value="#146BZQPP4buwqzpE"/>
         <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"/>
     </meta>
     <clinicalStatus>

@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Oral-eval-example"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2020-07-16T15:29:31.255+00:00"/>
-        <source value="#RHVyGr432qISDviS"/>
+        <versionId value="3"/>
+        <lastUpdated value="2020-08-06T17:04:19.434+00:00"/>
+        <source value="#q2809Ep1zIYuZAxS"/>
         <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"/>
     </meta>
     <identifier>
@@ -15,7 +15,7 @@
     <status value="preparation"/>
     <code>
         <coding>
-          <system value="https://www.ada.org/en/publications/cdt"/>
+            <system value="http://www.ama-assn.org/go/cdt"/>
             <code value="D0150"/>
         </coding>
         <text value="Comprehensive Oral Evaluation"/>

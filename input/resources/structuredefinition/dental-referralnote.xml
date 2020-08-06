@@ -3,11 +3,11 @@
     xmlns="http://hl7.org/fhir">
     <id value="dental-referralnote"/>
     <meta>
-        <versionId value="55"/>
-        <lastUpdated value="2020-07-24T19:29:01.227+00:00"/>
-        <source value="#yBDkPsdQFCrHtvoG"/>
+        <versionId value="57"/>
+        <lastUpdated value="2020-08-06T17:04:18.456+00:00"/>
+        <source value="#ThY4Ud226B6WaDp4"/>
     </meta>
-    <url value="http://hl7.org/fhir/us/dentalreferral/StructureDefinition/dental-referralnote"/>
+    <url value="http://hl7.org/fhir/us/dental-data-exchange/StructureDefinition/dental-referralnote"/>
     <name value="DentalReferralNote"/>
     <title value="Dental Referral Note"/>
     <status value="active"/>
@@ -145,7 +145,7 @@
             <max value="1"/>
             <patternCodeableConcept>
                 <coding>
-                    <system value="http://loinc.org"/>
+                    <system value="http://LOINC.org"/>
                     <code value="8704-9"/>
                 </coding>
             </patternCodeableConcept>
@@ -167,7 +167,7 @@
             <max value="*"/>
             <type>
                 <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/dentalreferral/StructureDefinition/dental-findings"/>
+                <targetProfile value="http://hl7.org/fhir/us/dental-data-exchange/StructureDefinition/dental-findings"/>
             </type>
             <mustSupport value="true"/>
         </element>

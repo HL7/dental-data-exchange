@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Lisinopril-medreq"/>
     <meta>
-        <versionId value="1"/>
-        <lastUpdated value="2020-07-08T01:29:01.122+00:00"/>
-        <source value="#PttCLxn4tAriO5Qu"/>
+        <versionId value="2"/>
+        <lastUpdated value="2020-07-30T22:29:20.342+00:00"/>
+        <source value="#PBk3iywhZw66qmvq"/>
         <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationrequest"/>
     </meta>
     <status value="completed"/>
@@ -35,11 +35,11 @@
             </repeat>
         </timing>
         <route>
-          <coding>
-            <system value="http://snomed.info/sct"/>
-            <code value="26643006"/>
-            <display value="Oral use"/>
-          </coding>
+            <coding>
+                <system value="http://snomed.info/sct"/>
+                <code value="26643006"/>
+                <display value="Oral use"/>
+            </coding>
         </route>
     </dosageInstruction>
 </MedicationRequest>

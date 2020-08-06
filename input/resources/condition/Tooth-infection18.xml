@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Tooth-infection18"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2020-07-21T18:48:55.166+00:00"/>
-        <source value="#KrH16DQdDAUG9rXW"/>
+        <versionId value="4"/>
+        <lastUpdated value="2020-08-06T17:04:21.363+00:00"/>
+        <source value="#HPyMDtGCdUum1kn2"/>
         <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"/>
     </meta>
     <clinicalStatus>
@@ -49,7 +49,7 @@
         <coding>
             <system value="http://www.ada.org/snodent"/>
             <code value="161372D"/>
-          <display value="Permanent lower left second molar tooth"/>
+            <display value="Permanent lower left second molar tooth"/>
         </coding>
         <coding>
             <system value="http://snomed.info/sct"/>

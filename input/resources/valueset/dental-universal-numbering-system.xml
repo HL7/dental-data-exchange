@@ -3,13 +3,13 @@
     xmlns="http://hl7.org/fhir">
     <id value="dental-universal-numbering-system"/>
     <meta>
-        <versionId value="7"/>
-        <lastUpdated value="2020-07-24T19:44:10.641+00:00"/>
-        <source value="#VawvmvHFLHNVmstP"/>
+        <versionId value="9"/>
+        <lastUpdated value="2020-08-06T17:04:18.550+00:00"/>
+        <source value="#HfSbexG1vSdIjS0p"/>
     </meta>
-    <url value="http://hl7.org/fhir/us/dentalreferral/ValueSet/dental-universal-numbering-system"/>
+    <url value="http://hl7.org/fhir/us/dental-data-exchange/ValueSet/dental-universal-numbering-system"/>
     <name value="DentalUniversalNumberingSystem"/>
-    <title value="Dental Universal Numbering System"/>
+    <title value="DentalUniversalNumberingSystem"/>
     <status value="draft"/>
     <compose>
         <include>

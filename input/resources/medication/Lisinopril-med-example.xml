@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Lisinopril-med-example"/>
     <meta>
-        <versionId value="1"/>
-        <lastUpdated value="2020-07-08T01:28:51.096+00:00"/>
-        <source value="#5nkaUVw3XhciUcOp"/>
+        <versionId value="2"/>
+        <lastUpdated value="2020-08-06T17:04:18.517+00:00"/>
+        <source value="#6xV4ZRPx9bRZU3DT"/>
         <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-medication"/>
     </meta>
     <text>

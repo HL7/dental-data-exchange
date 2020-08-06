@@ -11,7 +11,7 @@
 				{
 			"version": "0.0.1",
 			"date": "2020-08-05",
-			"path": "http://hl7.org/fhir/us/dentalreferral/STU1",
+			"path": "http://hl7.org/fhir/us/dental-data-exchange/STU1",
 			"desc": "Ballot for STU Release 1",
 			"fhirversion": "4.0.1",
 			"status": "ballot",
@@ -20,6 +20,6 @@
 		
 	],
 	"package-id": "hl7.fhir.us.dentalreferral",
-	"title": "Dental Referral and Consult",
-	"canonical": "http://hl7.org/fhir/us/dentalreferral"
+	"title": "Dental Data Exchange",
+	"canonical": "http://hl7.org/fhir/us/dental-data-exchange"
 }

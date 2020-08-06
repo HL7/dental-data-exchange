@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Allergy-example-dental"/>
     <meta>
-        <versionId value="3"/>
-        <lastUpdated value="2020-07-08T01:26:59.579+00:00"/>
-        <source value="#KmD0qLgOLL1QgYon"/>
+        <versionId value="4"/>
+        <lastUpdated value="2020-08-06T17:04:21.858+00:00"/>
+        <source value="#E8CdDQ0mBY5KkSU9"/>
         <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-allergyintolerance"/>
     </meta>
     <clinicalStatus>
