@@ -24,6 +24,6 @@ Da Vinci Health Record Exchange (HRex) profile used by this guide:
 [http://hl7.org/fhir/us/davinci-hrex/2019Jun/StructureDefinition-hrex-coverage.html](http://hl7.org/fhir/us/davinci-hrex/2019Jun/StructureDefinition-hrex-coverage.html)
 
 Occupation Data for Health (ODH) profile used by this guide:
-[http://hl7.org/fhir/us/odh/2018Sep/StructureDefinition-odh-PastOrPresentJob.html](http://hl7.org/fhir/us/odh/2018Sep/StructureDefinition-odh-PastOrPresentJob.html)
+[http://hl7.org/fhir/us/odh/StructureDefinition-odh-PastOrPresentJob.html](http://hl7.org/fhir/us/odh/StructureDefinition-odh-PastOrPresentJob.html)
 
 [Next Page - Audience](audience.html)

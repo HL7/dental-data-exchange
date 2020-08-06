@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MedicationRequest
+    xmlns="http://hl7.org/fhir">
+    <id value="Lisinopril-medreq"/>
+    <meta>
+        <versionId value="2"/>
+        <lastUpdated value="2020-07-30T22:29:20.342+00:00"/>
+        <source value="#PBk3iywhZw66qmvq"/>
+        <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationrequest"/>
+    </meta>
+    <status value="completed"/>
+    <intent value="plan"/>
+    <medicationReference>
+        <reference value="Medication/Lisinopril-med-example"/>
+    </medicationReference>
+    <subject>
+        <reference value="Patient/example-dental"/>
+        <display value="Patient A"/>
+    </subject>
+    <authoredOn value="2020-02-14"/>
+    <requester>
+        <reference value="Practitioner/practitioner-M"/>
+        <display value="Dr. John M, MD"/>
+    </requester>
+    <reasonReference>
+        <reference value="Condition/HTN-example"/>
+    </reasonReference>
+    <dosageInstruction>
+        <text value="Take 1 tab once a day"/>
+        <timing>
+            <repeat>
+                <boundsPeriod>
+                    <start value="2020-01-03"/>
+                </boundsPeriod>
+            </repeat>
+        </timing>
+        <route>
+            <coding>
+                <system value="http://snomed.info/sct"/>
+                <code value="26643006"/>
+                <display value="Oral use"/>
+            </coding>
+        </route>
+    </dosageInstruction>
+</MedicationRequest>

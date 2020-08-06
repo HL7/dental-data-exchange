@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Communication
+    xmlns="http://hl7.org/fhir">
+    <id value="dental-education"/>
+    <meta>
+        <versionId value="4"/>
+        <lastUpdated value="2020-08-06T17:04:21.046+00:00"/>
+        <source value="#czq2jlsVbCk8xfAe"/>
+        <profile value="http://hl7.org/fhir/us/dental-data-exchange/StructureDefinition/dental-communication"/>
+    </meta>
+    <text>
+        <status value="generated"/>
+        <div
+            xmlns="http://www.w3.org/1999/xhtml">Patient education
+        
+        
+        </div>
+    </text>
+    <status value="completed"/>
+    <subject>
+        <reference value="Patient/example-dental"/>
+    </subject>
+    <encounter>
+        <reference value="Encounter/Med-visit-1"/>
+    </encounter>
+    <sent value="2020-02-14T18:01:10-08:00"/>
+    <received value="2020-01-12T18:01:11-08:00"/>
+    <recipient>
+        <reference value="Patient/example-dental"/>
+    </recipient>
+    <sender>
+        <reference value="Practitioner/practitioner-M"/>
+    </sender>
+    <payload>
+        <contentString value="Pt. Education. Advised to see dentist regularly, brush 2x/day w/ fluoride toothpaste, floss"/>
+    </payload>
+</Communication>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ServiceRequest
+    xmlns="http://hl7.org/fhir">
+    <id value="Dental-extraction-example"/>
+    <meta>
+        <versionId value="4"/>
+        <lastUpdated value="2020-08-06T19:17:07.676+00:00"/>
+        <source value="#BEKih8bMtfeRUqHZ"/>
+        <profile value="http://hl7.org/fhir/us/dental-data-exchange/dental-servicerequest"/>
+    </meta>
+    <status value="active"/>
+    <intent value="plan"/>
+    <category>
+        <coding>
+            <system value="https://www.ada.org/en/publications/cdt"/>
+            <code value="387713003"/>
+            <display value="Surgical procedure"/>
+        </coding>
+        <text value="Surgical procedure"/>
+    </category>
+    <code>
+        <coding>
+            <system value="https://ada.org/en/publications/cdt"/>
+            <code value="D7140"/>
+            <display value="Extraction, erupted tooth or exposed root (elevation and/or forceps removal)"/>
+        </coding>
+        <text value="Extraction, erupted tooth or exposed root (elevation and/or forceps removal)"/>
+    </code>
+    <subject>
+        <reference value="Patient/example-dental"/>
+    </subject>
+    <requester>
+        <reference value="Practitioner/practitioner-D"/>
+    </requester>
+    <bodySite>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="48402004"/>
+            <display value="Structure of mandibular left second molar tooth"/>
+        </coding>
+        <coding>
+            <system value="http://www.ada.org/snodent"/>
+            <code value="161372D"/>
+            <display value="Permanent lower left second molar tooth"/>
+        </coding>
+    </bodySite>
+</ServiceRequest>

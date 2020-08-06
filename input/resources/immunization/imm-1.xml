@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Immunization
+    xmlns="http://hl7.org/fhir">
+    <id value="imm-1"/>
+    <meta>
+        <versionId value="7"/>
+        <lastUpdated value="2020-08-06T17:04:21.471+00:00"/>
+        <source value="#aPpQXivh90J78Qc4"/>
+        <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-immunization"/>
+    </meta>
+    <text>
+        <status value="generated"/>
+        <div
+            xmlns="http://www.w3.org/1999/xhtml">
+            <table border="1" width="100%">
+                <thead>
+                    <tr>
+                        <th>Vaccine</th>
+                        <th>Date</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+              Hepatitis B vaccine
+									</td>
+                        <td>January 4, 2020</td>
+                        <td>Completed</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </text>
+    <status value="completed"/>
+    <vaccineCode>
+        <coding>
+            <system value="http://hl7.org/fhir/sid/cvx"/>
+            <code value="08"/>
+            <display value="Hep B, adolescent or pediatric"/>
+        </coding>
+    </vaccineCode>
+    <patient>
+        <reference value="Patient/example-dental"/>
+        <display value="Patient A"/>
+    </patient>
+    <occurrenceDateTime value="2020-01-04"/>
+    <primarySource value="false"/>
+</Immunization>

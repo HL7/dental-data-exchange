@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Communication
+    xmlns="http://hl7.org/fhir">
+    <id value="dental-education2"/>
+    <meta>
+        <versionId value="2"/>
+        <lastUpdated value="2020-08-06T17:04:20.229+00:00"/>
+        <source value="#0nqBwdD1fsJJdCRN"/>
+        <profile value="http://hl7.org/fhir/us/dental-data-exchange/StructureDefinition/dental-communication"/>
+    </meta>
+    <status value="completed"/>
+    <subject>
+        <reference value="Patient/example-dental"/>
+    </subject>
+    <encounter>
+        <reference value="Encounter/Dental-encounter"/>
+    </encounter>
+    <sent value="2020-02-16T18:01:10-08:00"/>
+    <received value="2020-01-16T18:01:11-08:00"/>
+    <recipient>
+        <reference value="Patient/example-dental"/>
+    </recipient>
+    <sender>
+        <reference value="Practitioner/practitioner-D"/>
+    </sender>
+    <payload>
+        <contentString value="Patient educated on the benefits of using a fluoride toothpaste, daily flossing, and bi-annual routine dental cleaning visits."/>
+    </payload>
+</Communication>

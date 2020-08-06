@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet
+    xmlns="http://hl7.org/fhir">
+    <id value="oral-cavity-area"/>
+    <meta>
+        <versionId value="8"/>
+        <lastUpdated value="2020-08-06T17:04:18.517+00:00"/>
+        <source value="#vi2ecOZENuNV6s6A"/>
+    </meta>
+    <url value="http://hl7.org/fhir/us/dental-data-exchange/ValueSet/oral-cavity-area"/>
+    <version value="0.0.1"/>
+    <name value="OralCavityArea"/>
+    <title value="Oral Cavity Area"/>
+    <status value="draft"/>
+    <description value="This ValueSet contains codes for standard oral cavity areas of the mouth"/>
+    <compose>
+        <include>
+            <system value="http://ada.org/snodent"/>
+            <concept>
+                <code value="210965D"/>
+                <display value="Anterior part of lower alveolar ridge"/>
+            </concept>
+            <concept>
+                <code value="210963D"/>
+                <display value="Anterior segment of maxilla"/>
+            </concept>
+            <concept>
+                <code value="210966D"/>
+                <display value="Posterior part of lower alveolar ridge"/>
+            </concept>
+            <concept>
+                <code value="210964D"/>
+                <display value="Posterior segment of maxilla"/>
+            </concept>
+        </include>
+        <include>
+            <system value="http://snomed.info/sct"/>
+            <concept>
+                <code value="245796006"/>
+                <display value="Anterior part of lower alveolar ridge"/>
+            </concept>
+            <concept>
+                <code value="280709009"/>
+                <display value="Anterior segment of maxilla"/>
+            </concept>
+            <concept>
+                <code value="245797002"/>
+                <display value="Posterior part of lower alveolar ridge"/>
+            </concept>
+            <concept>
+                <code value="280710004"/>
+                <display value="Posterior segment of maxilla"/>
+            </concept>
+        </include>
+    </compose>
+</ValueSet>

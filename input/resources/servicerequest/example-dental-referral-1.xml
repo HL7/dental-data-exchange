@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ServiceRequest
+    xmlns="http://hl7.org/fhir">
+    <id value="example-dental-referral-1"/>
+    <meta>
+        <versionId value="4"/>
+        <lastUpdated value="2020-08-06T17:04:19.913+00:00"/>
+        <source value="#csg3mayPcO4M1lAE"/>
+        <profile value="http://hl7.org/fhir/us/dental-data-exchange/dental-servicerequest"/>
+    </meta>
+    <status value="active"/>
+    <intent value="plan"/>
+    <category>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="14736009"/>
+            <display value="History and physical examination with evaluation and management of patient (procedure)"/>
+        </coding>
+        <text value="Evaluation and management of patient (procedure)"/>
+    </category>
+    <code>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="103697008"/>
+            <display value="Patient referral for dental care (procedure)"/>
+        </coding>
+        <text value="Patient referral for dental care (procedure)"/>
+    </code>
+    <subject>
+        <reference value="Patient/example-dental"/>
+    </subject>
+    <requester>
+        <reference value="Practitioner/practitioner-M"/>
+    </requester>
+    <reasonReference>
+        <reference value="Condition/toothache-example"/>
+    </reasonReference>
+    <reasonReference>
+        <reference value="Condition/LLQP-example"/>
+    </reasonReference>
+    <reasonReference>
+        <reference value="Condition/Bleeding-gums-example"/>
+    </reasonReference>
+</ServiceRequest>
