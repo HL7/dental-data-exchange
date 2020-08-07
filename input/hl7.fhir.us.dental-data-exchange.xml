@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ImplementationGuide
     xmlns="http://hl7.org/fhir">
-    <id value="hl7.fhir.us.dentalreferral"/>
+    <id value="hl7.fhir.us.dental-data-exchange"/>
     <meta>
-        <versionId value="23"/>
-        <lastUpdated value="2020-08-06T22:44:31.605+00:00"/>
-        <source value="#Mhd9DYDXe61DyXuU"/>
+        <versionId value="9"/>
+        <lastUpdated value="2020-08-07T16:27:33.703+00:00"/>
+        <source value="#k7BH6LJSnJpPibjv"/>
     </meta>
-    <url value="http://hl7.org/fhir/us/dental-data-exchange/ImplementationGuide/hl7.fhir.us.dentalreferral"/>
+    <url value="http://hl7.org/fhir/us/dental-data-exchange/ImplementationGuide/hl7.fhir.us.dental-data-exchange"/>
     <version value="0.0.1"/>
     <name value="DentalDataExchange"/>
     <title value="Dental Data Exchange"/>
@@ -20,7 +20,7 @@
             <value value="http://www.hl7.org/Special/committees/claims"/>
         </telecom>
     </contact>
-    <description value="This implementation guide provides HL7 FHIR resources to define standards for bi-directional information exchange between a medical and a dental provider or between dental providers. This publication provides the data model, defined data items, and their corresponding code and value sets, specific to a dental referral note and dental consultation note. This guide describes constraints on the [C-CDA on FHIR](http://www.hl7.org/fhir/us/ccda/) header and body elements for dental information, which are derived from requirements developed by the Dental Summary Exchange Project of the Health Level Seven (HL7) Payer/Provider Information Exchange Work Group (PIE WG). Resources in this US Realm implementation guide are specific to dental referral and consultation notes for exchange and interoperability among dental providers and with medical providers.&#xA;&#xA;This guide contains a library of FHIR profiles and is compliant with FHIR Release 4. At a minimum, a document bundle (C-CDA on FHIR Referral Note or Consultation Note) will be exchanged along with a ServiceRequest, Patient, and associated medical and dental information. This guide specifies how and where these resources are included within the C-CDA on FHIR profiles. &#xA;&#xA;This guide defines 5 new Profiles:&#xA;* Dental Consult Note&#xA;* Dental Communication&#xA;* Dental Service Request&#xA;* Dental Findings&#xA;* Dental Referral Note&#xA;&#xA;All proprietary documents, guides, guidance, standards, codes, and values contained herein remain the property of their respective Standards Developing Organization (SDO). HL7 does not make any claim to ownership herein.&#xA;&#xA;This HL7 FHIR® R4 Implementation Guide: Dental Data Exchange is developed in parallel to the HL7 CDA® R2 Implementation Guide: Dental Data Exchange."/>
+    <description value="Note to balloters: This implementation guide as balloted depends on the current build of  CCDAonFHIR#2.0.0, in it's final form ready for publication, but due to publication timing, CCDAonFHIR#2.0.0 is not yet released. &#xA;A technical correction may be published to correct this dependency subsequently if this proves necessary once  CCDAonFHIR#2.0.0 is published&#xA;&#xA;This implementation guide provides HL7 FHIR resources to define standards for bi-directional information exchange between a medical and a dental provider or between dental providers. This publication provides the data model, defined data items, and their corresponding code and value sets, specific to a dental referral note and dental consultation note. This guide describes constraints on the [C-CDA on FHIR](http://www.hl7.org/fhir/us/ccda/) header and body elements for dental information, which are derived from requirements developed by the Dental Summary Exchange Project of the Health Level Seven (HL7) Payer/Provider Information Exchange Work Group (PIE WG). Resources in this US Realm implementation guide are specific to dental referral and consultation notes for exchange and interoperability among dental providers and with medical providers.&#xA;&#xA;This guide contains a library of FHIR profiles and is compliant with FHIR Release 4. At a minimum, a document bundle (C-CDA on FHIR Referral Note or Consultation Note) will be exchanged along with a ServiceRequest, Patient, and associated medical and dental information. This guide specifies how and where these resources are included within the C-CDA on FHIR profiles. &#xA;&#xA;This guide defines 5 new Profiles:&#xA;* Dental Consult Note&#xA;* Dental Communication&#xA;* Dental Service Request&#xA;* Dental Findings&#xA;* Dental Referral Note&#xA;&#xA;All proprietary documents, guides, guidance, standards, codes, and values contained herein remain the property of their respective Standards Developing Organization (SDO). HL7 does not make any claim to ownership herein.&#xA;&#xA;This HL7 FHIR® R4 Implementation Guide: Dental Data Exchange is developed in parallel to the HL7 CDA® R2 Implementation Guide: Dental Data Exchange."/>
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -28,7 +28,7 @@
         </coding>
         <text value="US"/>
     </jurisdiction>
-    <packageId value="hl7.fhir.us.dentalreferral"/>
+    <packageId value="hl7.fhir.us.dental-data-exchange"/>
     <fhirVersion value="4.0.1"/>
     <dependsOn>
         <uri value="http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core"/>
@@ -725,8 +725,8 @@
                 <title value="Dental Use Case Scenarios"/>
                 <generation value="markdown"/>
                 <page>
-                    <nameUrl value="scenario_1_medical_to_dental_referral.html"/>
-                    <title value="Scenario 1 Medical to Dental Referral"/>
+                    <nameUrl value="scenario_1_medical_to_dental_referral_note.html"/>
+                    <title value="Scenario 1 Medical to Dental Referral Note"/>
                     <generation value="markdown"/>
                 </page>
                 <page>
@@ -740,8 +740,8 @@
                     <generation value="markdown"/>
                 </page>
                 <page>
-                    <nameUrl value="scenario_4_dental_endodontist_to_dental_general_dentist_referral_result.html"/>
-                    <title value="Scenario 4 Dental (Endodontist) to Dental (General Dentist) Referral Result"/>
+                    <nameUrl value="scenario_4_dental_endodontist_to_dental_general_dentist_consult_note.html"/>
+                    <title value="Scenario 4 Dental (Endodontist) to Dental (General Dentist) Consult Note"/>
                     <generation value="markdown"/>
                 </page>
             </page>
@@ -774,6 +774,16 @@
                 <nameUrl value="appendix_d_value_set_discrepancy_mapping.html"/>
                 <title value="Appendix D Value Set Discrepancy Mapping"/>
                 <generation value="markdown"/>
+                <page>
+                    <nameUrl value="d1_crosswalk_of_all_teeth.html"/>
+                    <title value="D1 Crosswalk of All Teeth"/>
+                    <generation value="markdown"/>
+                </page>
+                <page>
+                    <nameUrl value="d2_crosswalk_of_regions_of_the_mouth.html"/>
+                    <title value="D2 Crosswalk of Regions of the Mouth"/>
+                    <generation value="markdown"/>
+                </page>
             </page>
         </page>
         <parameter>

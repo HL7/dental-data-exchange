@@ -1,19 +1,12 @@
 <ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
   <li><a href="index.html">IG Home</a></li>
   <li><a href="toc.html">Table of Contents</a></li>
-  <li><a href="index.html">Introduction</a></li>
-
   <li class="dropdown">
-    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Scope and Background<b class="caret">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Introduction &amp; Scope<b class="caret">
       </b>
     </a>
     <ul class="dropdown-menu">
-      <li><a href="scope.html">Scope</a></li>
-      <li><a href="dependencies.html">Dependencies</a></li>
-      <li><a href="audience.html">Audience</a></li>
-      <li><a href="background.html">Background</a></li>
-      <li><a href="current_project.html">Current Project</a></li>
-      <li><a href="workflows.html">Workflows</a></li>    </ul>
+    </ul>
   </li>
   <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Best Practice Recommendations<b class="caret">
@@ -38,15 +31,19 @@
     </a>
     <ul class="dropdown-menu">
       <li><a href="dental_use_case_scenarios.html">Dental Use Case Scenarios</a></li>
-      <li><a href="scenario_1_medical_to_dental_referral.html">Scenario 1 Medical to Dental Referral</a></li>
+      <li><a href="scenario_1_medical_to_dental_referral_note.html">Scenario 1 Medical to Dental Referral Note</a></li>
       <li><a href="scenario_2_dental_to_medical_consult_note.html">Scenario 2 Dental to Medical Consult Note</a></li>
       <li><a href="scenario_3_dental_to_dental_endodontist_referral.html">Scenario 3 Dental to Dental (Endodontist) Referral</a></li>
-      <li><a href="scenario_4_dental_endodontist_to_dental_general_dentist_referral_result.html">Scenario 4 Dental (Endodontist) to Dental (General Dentist) Referral Result</a></li>    </ul>
+      <li><a href="scenario_4_dental_endodontist_to_dental_general_dentist_consult_note.html">Scenario 4 Dental (Endodontist) to Dental (General Dentist) Consult Note</a></li>    </ul>
   </li>
-  <li><a href="acknowledgements.html">Acknowledgements</a></li>
-
-  <li><a href="team.html">Dental Data Exchange Project Team</a></li>
-
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Acknowledgements<b class="caret">
+      </b>
+    </a>
+    <ul class="dropdown-menu">
+      <li><a href="acknowledgements.html">Acknowledgements</a></li>
+      <li><a href="team.html">Dental Data Exchange Project Team</a></li>    </ul>
+  </li>
   <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Appendix<b class="caret">
       </b>
@@ -55,6 +52,8 @@
       <li><a href="appendix_a_imaging_results_example_code.html">Appendix A Imaging Results Example Code</a></li>
       <li><a href="appendix_b_dentaquest_more_care_referral_form.html">Appendix B DentaQuest MORE Care Referral Form</a></li>
       <li><a href="appendix_c_dentaquest_more_care_dental_treatment_form.html">Appendix C DentaQuest MORE Care Dental Treatment Form</a></li>
-      <li><a href="appendix_d_value_set_discrepancy_mapping.html">Appendix D Value Set Discrepancy Mapping</a></li>    </ul>
+      <li><a href="appendix_d_value_set_discrepancy_mapping.html">Appendix D Value Set Discrepancy Mapping</a></li>
+      <li><a href="d1_crosswalk_of_all_teeth.html">D1 Crosswalk of All Teeth</a></li>
+      <li><a href="d2_crosswalk_of_regions_of_the_mouth.html">D2 Crosswalk of Regions of the Mouth</a></li>    </ul>
   </li>  <li><a href="artifacts.html">Artifact Index</a></li>
 </ul>

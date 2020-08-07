@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="PractitionerRole-D"/>
     <meta>
-        <versionId value="6"/>
-        <lastUpdated value="2020-08-06T17:04:21.648+00:00"/>
-        <source value="#Jn7RqGja5KewNTuy"/>
+        <versionId value="7"/>
+        <lastUpdated value="2020-08-06T23:24:09.120+00:00"/>
+        <source value="#AUoOY809OaLUpiaR"/>
         <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole"/>
     </meta>
     <practitioner>
@@ -16,14 +16,6 @@
         <reference value="Organization/GOHC-organization"/>
         <display value="Good Oral Health Clinic"/>
     </organization>
-  <!-- 
-    <code>
-        <coding>
-            <system value="http://nucc.org/provider-taxonomy"/>
-            <code value="122300000X"/>
-            <display value="Dentist"/>
-        </coding>
-    </code> -->
     <specialty>
         <coding>
             <system value="http://snomed.info/sct"/>

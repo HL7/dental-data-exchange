@@ -8,7 +8,7 @@
 			"status": "ci-build",
 			"current": true
 		},
-				{
+		{
 			"version": "0.0.1",
 			"date": "2020-08-05",
 			"path": "http://hl7.org/fhir/us/dental-data-exchange/STU1",
@@ -17,9 +17,8 @@
 			"status": "ballot",
 			"sequence": "STU1"
 		}
-		
 	],
-	"package-id": "hl7.fhir.us.dentalreferral",
+	"package-id": "hl7.fhir.us.dental-data-exchange",
 	"title": "Dental Data Exchange",
 	"canonical": "http://hl7.org/fhir/us/dental-data-exchange"
 }

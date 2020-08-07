@@ -1,6 +1,6 @@
 [Previous Page - Audience](audience.html)
 
-Currently, there is no standard for the exchange of discrete dental observations between dental providers. While some Dental EHRs have implemented C-CDA for data exchange, that standard was primarily built for medical care and does not include the structured data elements needed by dental providers.
+Currently, there is no standard for the exchange of discrete dental observations between dental providers. While some dental electronic health record (EHR) systems have implemented C-CDA for data exchange, that standard was primarily built for medical care and does not include the structured data elements needed by dental providers.
 
 The Department of Defense (DoD) and the American Dental Association (ADA) recognized the need for foundational dental data exchange between medical and dental practices and among dental practices. The DoD wishes to support the dental health of service members and their readiness for deployment. The ADA wishes to support a continued, industry-wide, drive to promote and enhance standardized and structured dental data for seamless interoperability using CDA and FHIR. Lantana Consulting Group and DentaQuest Partnership have collaborated to develop a FHIR Dental Data Exchange Implementation Guide in parallel to this CDA implementation guide. 
 

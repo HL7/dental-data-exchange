@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="PractitionerRole-M"/>
     <meta>
-        <versionId value="5"/>
-        <lastUpdated value="2020-08-06T17:04:19.612+00:00"/>
-        <source value="#V97Frmwi9YgynRbV"/>
+        <versionId value="6"/>
+        <lastUpdated value="2020-08-06T23:24:33.582+00:00"/>
+        <source value="#2SJyfJgnNKtdbk05"/>
         <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole"/>
     </meta>
     <practitioner>
@@ -16,14 +16,6 @@
         <reference value="Organization/GHC-organization"/>
         <display value="Good Health Clinic"/>
     </organization>
-  <!-- 
-    <code>
-        <coding>
-            <system value="http://nucc.org/provider-taxonomy"/>
-            <code value="207Q00000X"/>
-            <display value="Family Medicine"/>
-        </coding> 
-    </code> -->
     <specialty>
         <coding>
             <system value="http://snomed.info/sct"/>

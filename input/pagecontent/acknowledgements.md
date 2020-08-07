@@ -1,4 +1,4 @@
-[Previous Page - Scenario 4 Dental (Endodontist) to Dental (General Dentist) Referral Result](scenario_4_dental_endodontist_to_dental_general_dentist_referral_result.html)
+[Previous Page - Scenario 4 Dental (Endodontist) to Dental (General Dentist) Consult Note](scenario_4_dental_endodontist_to_dental_general_dentist_consult_note.html)
 
 This guide was developed and produced through the efforts of Health Level Seven (HL7).
 
