@@ -1,0 +1,33 @@
+{
+	"resourceType": "CapabilityStatement",
+	"id": "capabilitystatement-dental",
+	"meta": {
+		"versionId": "9",
+		"lastUpdated": "2020-08-06T17:04:18.455+00:00",
+		"source": "#mirDY4bsjl620fZS"
+	},
+	"url": "http://hl7.org/fhir/us/dental-data-exchange/CapabilityStatement/capabilitystatement-dental",
+	"version": "1.0.0",
+	"name": "CapabilityStatementDental",
+	"title": "Capability Statement - Dental",
+	"status": "draft",
+	"experimental": false,
+	"date": "2020-04-27",
+	"description": "Note to ballot commenters- we encourage ballot comments regarding the expected capability, both required and supported functionality of your and your partnering systems. \n\nThis resource defines the expected capabilities for both client and server participating in referral exchanges involving a dental actor (medical/dental and dental/dental). ",
+	"kind": "requirements",
+	"fhirVersion": "4.0.1",
+	"format": [
+		"xml",
+		"json"
+	],
+	"rest": [
+		{
+			"mode": "server",
+			"documentation": "This Section describes the expected capabilities of the Dental FHIR Server actor which is responsible for providing responses to the queries submitted by the Dental Requestors. A lsit of required and recommended Dental profiles, RESTful operations, and search parameters are defined."
+		},
+		{
+			"mode": "client",
+			"documentation": "Note to balloters - please provide comments for your system(s) expectations for the use of this guide. "
+		}
+	]
+}

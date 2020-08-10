@@ -1,0 +1,26 @@
+{
+	"resourceType": "Medication",
+	"id": "ibuprofen-med-example-2",
+	"meta": {
+		"versionId": "4",
+		"lastUpdated": "2020-08-06T17:04:20.941+00:00",
+		"source": "#yc3rDlQN67DavTtV",
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-medication"
+		]
+	},
+	"text": {
+		"status": "generated",
+		"div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div class=\"hapiHeaderText\">Ibuprofen 200 mg tab</div></div>"
+	},
+	"code": {
+		"coding": [
+			{
+				"system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+				"code": "316074",
+				"display": "Ibuprofen 200 MG"
+			}
+		],
+		"text": "Ibuprofen 200 MG"
+	}
+}

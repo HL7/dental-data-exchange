@@ -1,0 +1,26 @@
+{
+	"resourceType": "Medication",
+	"id": "erythromycin-med-example",
+	"meta": {
+		"versionId": "5",
+		"lastUpdated": "2020-08-06T17:04:20.972+00:00",
+		"source": "#wBV0i9Iv1g0Kdoxf",
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-medication"
+		]
+	},
+	"text": {
+		"status": "generated",
+		"div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div class=\"hapiHeaderText\">Erythromycin 500 mg tab</div></div>"
+	},
+	"code": {
+		"coding": [
+			{
+				"system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+				"code": "315877",
+				"display": "Erythromycin 500 MG"
+			}
+		],
+		"text": "Erythromycin 500 MG"
+	}
+}

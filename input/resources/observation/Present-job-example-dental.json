@@ -1,0 +1,38 @@
+{
+	"resourceType": "Observation",
+	"id": "Present-job-example-dental",
+	"meta": {
+		"versionId": "4",
+		"lastUpdated": "2020-08-06T17:04:19.266+00:00",
+		"source": "#5Uyr7B50ItkEsmGZ",
+		"profile": [
+			"http://hl7.org/fhir/us/odh/StructureDefinition/odh-PastOrPresentJob"
+		]
+	},
+	"status": "final",
+	"code": {
+		"coding": [
+			{
+				"system": "http://loinc.org",
+				"code": "11341-5",
+				"display": "History of Occupation"
+			}
+		]
+	},
+	"subject": {
+		"reference": "Patient/example-dental",
+		"display": "Patient A"
+	},
+	"effectivePeriod": {
+		"start": "2015-01-01"
+	},
+	"valueCodeableConcept": {
+		"coding": [
+			{
+				"system": "urn:oid:2.16.840.1.114222.4.11.7186",
+				"code": "0800",
+				"display": "Accountants and Auditors"
+			}
+		]
+	}
+}

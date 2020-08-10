@@ -1,0 +1,34 @@
+{
+	"resourceType": "Communication",
+	"id": "dental-education2",
+	"meta": {
+		"versionId": "2",
+		"lastUpdated": "2020-08-06T17:04:20.229+00:00",
+		"source": "#0nqBwdD1fsJJdCRN",
+		"profile": [
+			"http://hl7.org/fhir/us/dental-data-exchange/StructureDefinition/dental-communication"
+		]
+	},
+	"status": "completed",
+	"subject": {
+		"reference": "Patient/example-dental"
+	},
+	"encounter": {
+		"reference": "Encounter/Dental-encounter"
+	},
+	"sent": "2020-02-16T18:01:10-08:00",
+	"received": "2020-01-16T18:01:11-08:00",
+	"recipient": [
+		{
+			"reference": "Patient/example-dental"
+		}
+	],
+	"sender": {
+		"reference": "Practitioner/practitioner-D"
+	},
+	"payload": [
+		{
+			"contentString": "Patient educated on the benefits of using a fluoride toothpaste, daily flossing, and bi-annual routine dental cleaning visits."
+		}
+	]
+}

@@ -1,0 +1,52 @@
+{
+	"resourceType": "MedicationRequest",
+	"id": "Lisinopril-medreq",
+	"meta": {
+		"versionId": "2",
+		"lastUpdated": "2020-07-30T22:29:20.342+00:00",
+		"source": "#PBk3iywhZw66qmvq",
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationrequest"
+		]
+	},
+	"status": "completed",
+	"intent": "plan",
+	"medicationReference": {
+		"reference": "Medication/Lisinopril-med-example"
+	},
+	"subject": {
+		"reference": "Patient/example-dental",
+		"display": "Patient A"
+	},
+	"authoredOn": "2020-02-14",
+	"requester": {
+		"reference": "Practitioner/practitioner-M",
+		"display": "Dr. John M, MD"
+	},
+	"reasonReference": [
+		{
+			"reference": "Condition/HTN-example"
+		}
+	],
+	"dosageInstruction": [
+		{
+			"text": "Take 1 tab once a day",
+			"timing": {
+				"repeat": {
+					"boundsPeriod": {
+						"start": "2020-01-03"
+					}
+				}
+			},
+			"route": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "26643006",
+						"display": "Oral use"
+					}
+				]
+			}
+		}
+	]
+}

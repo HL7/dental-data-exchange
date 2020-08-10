@@ -1,0 +1,52 @@
+{
+	"resourceType": "Organization",
+	"id": "GHC-organization",
+	"meta": {
+		"versionId": "3",
+		"lastUpdated": "2020-07-30T21:59:52.717+00:00",
+		"source": "#7DpAiFqmrBGDwwju",
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization"
+		]
+	},
+	"identifier": [
+		{
+			"system": "http://hl7.org/fhir/sid/us-npi",
+			"value": "1316452725"
+		}
+	],
+	"active": true,
+	"type": [
+		{
+			"coding": [
+				{
+					"system": "http://terminology.hl7.org/CodeSystem/organization-type",
+					"code": "prov",
+					"display": "Healthcare Provider"
+				}
+			]
+		}
+	],
+	"name": "Good Health Clinic",
+	"telecom": [
+		{
+			"system": "phone",
+			"value": "(+1) 555-677-7777"
+		},
+		{
+			"system": "email",
+			"value": "customer-service@GHclinic.org"
+		}
+	],
+	"address": [
+		{
+			"line": [
+				"7551 W Alameda Ave"
+			],
+			"city": "Lakewood",
+			"state": "CO",
+			"postalCode": "80226",
+			"country": "USA"
+		}
+	]
+}

@@ -1,0 +1,45 @@
+{
+	"resourceType": "Encounter",
+	"id": "Comp-oral-eval",
+	"meta": {
+		"versionId": "2",
+		"lastUpdated": "2020-08-06T17:04:21.616+00:00",
+		"source": "#QZSCqR3h3zVtaXVj",
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter"
+		]
+	},
+	"status": "planned",
+	"class": {
+		"system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+		"code": "AMB",
+		"display": "ambulatory"
+	},
+	"type": [
+		{
+			"coding": [
+				{
+					"system": "https://www.ada.org/en/publications/cdt",
+					"code": "D0150"
+				}
+			],
+			"text": "Comprehensive Oral Evaluation"
+		}
+	],
+	"priority": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/v3-ActPriority",
+				"code": "R",
+				"display": "routine"
+			}
+		]
+	},
+	"subject": {
+		"reference": "Patient/example-dental"
+	},
+	"period": {
+		"start": "2020-03-10T15:00:14-05:00",
+		"end": "2020-03-10T15:30:14-05:00"
+	}
+}

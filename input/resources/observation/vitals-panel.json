@@ -1,0 +1,57 @@
+{
+	"resourceType": "Observation",
+	"id": "vitals-panel",
+	"meta": {
+		"versionId": "4",
+		"lastUpdated": "2020-08-06T17:04:18.506+00:00",
+		"source": "#GpJmaAMWyMGGQjJH",
+		"profile": [
+			"http://hl7.org/fhir/StructureDefinition/vitalsigns"
+		]
+	},
+	"status": "final",
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://terminology.hl7.org/CodeSystem/observation-category",
+					"code": "vital-signs",
+					"display": "Vital Signs"
+				}
+			],
+			"text": "Vital Signs"
+		}
+	],
+	"code": {
+		"coding": [
+			{
+				"system": "http://loinc.org",
+				"code": "85353-1",
+				"display": "Vital signs, weight, height, head circumference, oxygen saturation and BMI panel"
+			}
+		],
+		"text": "Vital signs Panel"
+	},
+	"subject": {
+		"reference": "Patient/example-dental"
+	},
+	"effectiveDateTime": "2020-02-14",
+	"hasMember": [
+		{
+			"reference": "Observation/respiratory-rate",
+			"display": "Respiratory Rate"
+		},
+		{
+			"reference": "Observation/heart-rate",
+			"display": "Heart Rate"
+		},
+		{
+			"reference": "Observation/blood-pressure",
+			"display": "Blood Pressure"
+		},
+		{
+			"reference": "Observation/body-temperature",
+			"display": "Body Temperature"
+		}
+	]
+}

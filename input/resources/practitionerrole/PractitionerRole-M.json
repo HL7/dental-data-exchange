@@ -1,0 +1,37 @@
+{
+	"resourceType": "PractitionerRole",
+	"id": "PractitionerRole-M",
+	"meta": {
+		"versionId": "6",
+		"lastUpdated": "2020-08-06T23:24:33.582+00:00",
+		"source": "#2SJyfJgnNKtdbk05",
+		"profile": [
+			"http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole"
+		]
+	},
+	"practitioner": {
+		"reference": "Practitioner/practitioner-M",
+		"display": "Dr. John M"
+	},
+	"organization": {
+		"reference": "Organization/GHC-organization",
+		"display": "Good Health Clinic"
+	},
+	"specialty": [
+		{
+			"coding": [
+				{
+					"system": "http://snomed.info/sct",
+					"code": "394814009",
+					"display": "General practice (specialty)"
+				}
+			]
+		}
+	],
+	"telecom": [
+		{
+			"system": "phone",
+			"value": "5555557777"
+		}
+	]
+}
