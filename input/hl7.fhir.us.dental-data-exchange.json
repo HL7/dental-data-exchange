@@ -1,9 +1,9 @@
 {
 	"id": "hl7.fhir.us.dental-data-exchange",
 	"meta": {
-		"versionId": "11",
-		"lastUpdated": "2020-08-10T15:27:43.595+00:00",
-		"source": "#aNJRITVDXik5D0eI"
+		"versionId": "12",
+		"lastUpdated": "2020-08-10T17:39:18.855+00:00",
+		"source": "#ClpyTno03b7czIeq"
 	},
 	"resourceType": "ImplementationGuide",
 	"status": "draft",
@@ -14,7 +14,7 @@
 	"version": "0.1.0",
 	"name": "DentalDataExchange",
 	"title": "Dental Data Exchange",
-	"publisher": "Lantana Consulting Group",
+	"publisher": "Payer/Provider Information Exchange Work Group",
 	"contact": [
 		{
 			"name": "HL7 International - Payer/Provider Information Exchange Work Group",
