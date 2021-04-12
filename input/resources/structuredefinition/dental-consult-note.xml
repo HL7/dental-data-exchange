@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition
+    xmlns="http://hl7.org/fhir">
+    <id value="dental-consult-note"/>
+    <meta>
+        <versionId value="2"/>
+        <lastUpdated value="2021-04-02T17:12:03.335+00:00"/>
+        <source value="#wRM4n3E8rVDUUvu3"/>
+    </meta>
+    <url value="http://hl7.org/fhir/us/dental-data-exchange/StructureDefinition/dental-consult-note"/>
+    <version value="0.0.1"/>
+    <name value="DentalConsultNote"/>
+    <title value="Dental Consult Note"/>
+    <status value="active"/>
+    <description value="This Profile defines the Dental Consult Note profile. It contains the textual information regarding what was observed and performed by a general dentist or dental specialist in response to a dental referral as well as references to supplemental dental profiles for that referral. This Consult Note is linked to its Referral via the In-Fulfillment-Of extension reference to ServiceRequest. "/>
+    <fhirVersion value="4.0.1"/>
+    <mapping>
+        <identity value="workflow"/>
+        <uri value="http://hl7.org/fhir/workflow"/>
+        <name value="Workflow Pattern"/>
+    </mapping>
+    <mapping>
+        <identity value="rim"/>
+        <uri value="http://hl7.org/v3"/>
+        <name value="RIM Mapping"/>
+    </mapping>
+    <mapping>
+        <identity value="cda"/>
+        <uri value="http://hl7.org/v3/cda"/>
+        <name value="CDA (R2)"/>
+    </mapping>
+    <mapping>
+        <identity value="fhirdocumentreference"/>
+        <uri value="http://hl7.org/fhir/documentreference"/>
+        <name value="FHIR DocumentReference"/>
+    </mapping>
+    <mapping>
+        <identity value="w5"/>
+        <uri value="http://hl7.org/fhir/fivews"/>
+        <name value="FiveWs Pattern Mapping"/>
+    </mapping>
+    <kind value="resource"/>
+    <abstract value="false"/>
+    <type value="Composition"/>
+    <baseDefinition value="http://hl7.org/fhir/us/ccda/StructureDefinition/Consultation-Note"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="Composition">
+            <path value="Composition"/>
+        </element>
+        <element id="Composition.extension:order_extension">
+            <path value="Composition.extension"/>
+            <sliceName value="order_extension"/>
+            <label value="authorization"/>
+            <short value="authorization"/>
+            <type>
+                <code value="Extension"/>
+                <profile value="http://hl7.org/fhir/us/ccda/StructureDefinition/OrderExtension"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.extension:order_extension.url">
+            <path value="Composition.extension.url"/>
+            <fixedUri value="http://hl7.org/fhir/us/ccda/StructureDefinition/OrderExtension"/>
+        </element>
+        <element id="Composition.extension:order_extension.value[x]">
+            <path value="Composition.extension.value[x]"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/dental-data-exchange/dental-servicerequest"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.extension.value[x]">
+            <path value="Composition.extension.value[x]"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/dental-data-exchange/dental-servicerequest"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.type">
+            <path value="Composition.type"/>
+            <label value="Consultation Note"/>
+            <short value="Consultation Note"/>
+            <mustSupport value="true"/>
+            <binding>
+                <strength value="required"/>
+                <valueSet value="https://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.11.20.9.31"/>
+            </binding>
+        </element>
+        <element id="Composition.encounter">
+            <path value="Composition.encounter"/>
+            <label value="encompassingEncounter"/>
+            <short value="encompassingEncounter"/>
+            <min value="1"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section">
+            <path value="Composition.section"/>
+            <slicing>
+                <discriminator>
+                    <type value="value"/>
+                    <path value="code"/>
+                </discriminator>
+                <rules value="open"/>
+            </slicing>
+        </element>
+        <element id="Composition.section:problem_section.entry">
+            <path value="Composition.section.entry"/>
+            <slicing>
+                <rules value="open"/>
+            </slicing>
+        </element>
+        <element id="Composition.section:problem_section.entry:dental_problem_entry">
+            <path value="Composition.section.entry"/>
+            <sliceName value="dental_problem_entry"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/dental-data-exchange/StructureDefinition/dental-condition"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section:assessment_section">
+            <path value="Composition.section"/>
+            <sliceName value="assessment_section"/>
+            <min value="1"/>
+            <max value="1"/>
+        </element>
+        <element id="Composition.section:plan_of_treatment_section">
+            <path value="Composition.section"/>
+            <sliceName value="plan_of_treatment_section"/>
+            <label value="Plan of Treatment Section"/>
+            <short value="Plan of Treatment Section"/>
+            <comment value="Plan of Treatment Section"/>
+            <min value="1"/>
+            <max value="1"/>
+        </element>
+        <element id="Composition.section:plan_of_treatment_section.entry">
+            <path value="Composition.section.entry"/>
+            <slicing>
+                <discriminator>
+                    <type value="profile"/>
+                    <path value="resolve()"/>
+                </discriminator>
+                <rules value="open"/>
+            </slicing>
+            <short value="entry"/>
+        </element>
+        <element id="Composition.section:plan_of_treatment_section.entry:sliceEntry/dental_service_request">
+            <path value="Composition.section.entry"/>
+            <sliceName value="sliceEntry/dental_service_request"/>
+            <short value="This section contains unprofiled resources not covered by US Core. Please refer to C-CDA R2.1 for guidance on terminology, etc."/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/dental-data-exchange/dental-servicerequest"/>
+            </type>
+        </element>
+        <element id="Composition.section:procedures_section">
+            <path value="Composition.section"/>
+            <sliceName value="procedures_section"/>
+            <label value="Procedures Section"/>
+            <short value="Procedures Section"/>
+            <comment value="Procedures Section"/>
+            <min value="1"/>
+            <max value="1"/>
+        </element>
+        <element id="Composition.section:reason_for_visit_section">
+            <path value="Composition.section"/>
+            <sliceName value="reason_for_visit_section"/>
+            <label value="Reason for Visit Section"/>
+            <short value="Reason for Visit Section"/>
+            <comment value="Reason for Visit Section"/>
+            <min value="1"/>
+            <max value="1"/>
+        </element>
+        <element id="Composition.section:instructions">
+            <path value="Composition.section"/>
+            <sliceName value="instructions"/>
+            <max value="1"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section:instructions.title">
+            <path value="Composition.section.title"/>
+            <short value="title"/>
+            <min value="1"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section:instructions.code">
+            <path value="Composition.section.code"/>
+            <min value="1"/>
+            <max value="1"/>
+            <patternCodeableConcept>
+                <coding>
+                    <system value="http://loinc.org"/>
+                    <code value="69730-0"/>
+                </coding>
+            </patternCodeableConcept>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section:instructions.entry">
+            <path value="Composition.section.entry"/>
+            <slicing>
+                <discriminator>
+                    <type value="profile"/>
+                    <path value="resolve()"/>
+                </discriminator>
+                <rules value="open"/>
+            </slicing>
+        </element>
+        <element id="Composition.section:instructions.entry:DentalInstructionsEntry">
+            <path value="Composition.section.entry"/>
+            <sliceName value="DentalInstructionsEntry"/>
+            <max value="*"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/dental-data-exchange/StructureDefinition/dental-communication"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section:payers_section">
+            <path value="Composition.section"/>
+            <sliceName value="payers_section"/>
+            <max value="1"/>
+        </element>
+        <element id="Composition.section:payers_section.code">
+            <path value="Composition.section.code"/>
+            <min value="1"/>
+            <max value="1"/>
+            <patternCodeableConcept>
+                <coding>
+                    <system value="http://loinc.org"/>
+                    <code value="48768-6"/>
+                </coding>
+            </patternCodeableConcept>
+        </element>
+        <element id="Composition.section:payers_section.entry">
+            <path value="Composition.section.entry"/>
+            <slicing>
+                <discriminator>
+                    <type value="profile"/>
+                    <path value="resolve()"/>
+                </discriminator>
+                <rules value="open"/>
+            </slicing>
+        </element>
+        <element id="Composition.section:payers_section.entry:payersEntry">
+            <path value="Composition.section.entry"/>
+            <sliceName value="payersEntry"/>
+            <max value="*"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/hrex-coverage"/>
+            </type>
+        </element>
+        <element id="Composition.section:dental_findings_section">
+            <path value="Composition.section"/>
+            <sliceName value="dental_findings_section"/>
+            <max value="1"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section:dental_findings_section.title">
+            <path value="Composition.section.title"/>
+            <short value="title"/>
+            <min value="1"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section:dental_findings_section.code">
+            <path value="Composition.section.code"/>
+            <min value="0"/>
+            <max value="1"/>
+            <patternCodeableConcept>
+                <coding>
+                    <system value="http://loinc.org"/>
+                    <code value="8704-9"/>
+                </coding>
+            </patternCodeableConcept>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Composition.section:dental_findings_section.entry">
+            <path value="Composition.section.entry"/>
+            <slicing>
+                <discriminator>
+                    <type value="profile"/>
+                    <path value="resolve()"/>
+                </discriminator>
+                <rules value="open"/>
+            </slicing>
+        </element>
+        <element id="Composition.section:dental_findings_section.entry:dental_findings_entry">
+            <path value="Composition.section.entry"/>
+            <sliceName value="dental_findings_entry"/>
+            <max value="*"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/dental-data-exchange/StructureDefinition/dental-findings"/>
+                <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+    </differential>
+</StructureDefinition>

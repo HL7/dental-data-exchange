@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Condition
+    xmlns="http://hl7.org/fhir">
+    <id value="Tooth-infection18"/>
+    <meta>
+        <versionId value="5"/>
+        <lastUpdated value="2021-04-10T03:54:38.451+00:00"/>
+        <source value="#ZiGFep3fCsTA84jh"/>
+        <profile value="http://hl7.org/fhir/us/dental-data-exchange/StructureDefinition/dental-condition"/>
+    </meta>
+    <clinicalStatus>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
+            <code value="active"/>
+            <display value="Active"/>
+        </coding>
+        <text value="Active"/>
+    </clinicalStatus>
+    <verificationStatus>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-ver-status"/>
+            <code value="confirmed"/>
+            <display value="Confirmed"/>
+        </coding>
+        <text value="Confirmed"/>
+    </verificationStatus>
+    <category>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-category"/>
+            <code value="problem-list-item"/>
+            <display value="Problem List Item"/>
+        </coding>
+        <text value="Problem List Item"/>
+    </category>
+    <category>
+        <coding>
+            <system value="http://www.ada.org/snodent"/>
+            <code value="118666D"/>
+            <display value="Disease of the mouth (disorder)"/>
+        </coding>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="118938008"/>
+            <display value="Disease of the mouth (disorder)"/>
+        </coding>
+        <text value="Disease of the mouth (disorder)"/>
+    </category>
+    <code>
+        <coding>
+            <system value="http://www.ada.org/snodent"/>
+            <code value="181608D"/>
+            <display value="Infection of tooth"/>
+        </coding>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="427898007"/>
+            <display value="Infection of tooth"/>
+        </coding>
+        <text value="Infection of tooth"/>
+    </code>
+    <bodySite>
+        <coding>
+            <system value="http://www.ada.org/snodent"/>
+            <code value="161372D"/>
+            <display value="Permanent lower left second molar tooth"/>
+        </coding>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="48402004"/>
+            <display value="Mandibular left second molar tooth"/>
+        </coding>
+        <text value="Mandibular left second molar tooth"/>
+    </bodySite>
+    <subject>
+        <reference value="Patient/example-dental"/>
+        <display value="Patient A"/>
+    </subject>
+</Condition>

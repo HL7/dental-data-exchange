@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet
+    xmlns="http://hl7.org/fhir">
+    <id value="dental-observation-codes"/>
+    <meta>
+        <versionId value="21"/>
+        <lastUpdated value="2021-02-02T18:15:45.768+00:00"/>
+        <source value="#lZhnkkLrPQ9ceHjf"/>
+    </meta>
+    <url value="http://hl7.org/fhir/us/dental-data-exchange/ValueSet/dental-observation-codes"/>
+    <name value="DentalObservationCodes"/>
+    <title value="Dental Observation Codes"/>
+    <status value="draft"/>
+    <description value="This is an intensional ValueSet composed of all Snomed CT and Snodent concepts underneath 'Clinical Findings' or 'Situation with explcit context'. "/>
+    <compose>
+        <include>
+            <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
+        </include>
+        <include>
+            <system value="http://loinc.org"/>
+        </include>
+        <include>
+            <system value="http://www.ada.org/snodent"/>
+            <filter>
+                <property value="concept"/>
+                <op value="descendent-of"/>
+                <value value="165877D"/>
+            </filter>
+        </include>
+        <include>
+            <system value="http://snomed.info/sct"/>
+            <filter>
+                <property value="concept"/>
+                <op value="descendent-of"/>
+                <value value="404684003"/>
+            </filter>
+        </include>
+        <include>
+            <system value="http://www.ada.org/snodent"/>
+            <filter>
+                <property value="concept"/>
+                <op value="descendent-of"/>
+                <value value="165733D"/>
+            </filter>
+        </include>
+        <include>
+            <system value="http://snomed.info/sct"/>
+            <filter>
+                <property value="concept"/>
+                <op value="descendent-of"/>
+                <value value="243796009"/>
+            </filter>
+        </include>
+    </compose>
+</ValueSet>

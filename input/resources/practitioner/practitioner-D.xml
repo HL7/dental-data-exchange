@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Practitioner
+    xmlns="http://hl7.org/fhir">
+    <id value="practitioner-D"/>
+    <meta>
+        <versionId value="4"/>
+        <lastUpdated value="2020-07-30T22:03:00.656+00:00"/>
+        <source value="#jvbTK8x0CL9mqWkF"/>
+        <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"/>
+    </meta>
+    <identifier>
+        <system value="http://hl7.org/fhir/sid/us-npi"/>
+        <value value="1234560000"/>
+    </identifier>
+    <name>
+        <family value="D"/>
+        <given value="John"/>
+        <prefix value="Dr"/>
+    </name>
+    <telecom>
+        <system value="phone"/>
+        <value value="720-555-6443"/>
+        <use value="work"/>
+    </telecom>
+    <gender value="male"/>
+    <birthDate value="1990-06-09"/>
+</Practitioner>

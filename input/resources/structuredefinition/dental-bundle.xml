@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition
+    xmlns="http://hl7.org/fhir">
+    <id value="dental-bundle"/>
+    <meta>
+        <versionId value="10"/>
+        <lastUpdated value="2021-04-02T17:07:33.213+00:00"/>
+        <source value="#300tFv3Ieirq0o4S"/>
+    </meta>
+    <url value="http://hl7.org/fhir/us/dental-data-exchange/StructureDefinition/dental-bundle"/>
+    <name value="DentalBundle"/>
+    <title value="Dental Bundle"/>
+    <status value="active"/>
+    <fhirVersion value="4.0.1"/>
+    <kind value="resource"/>
+    <abstract value="false"/>
+    <type value="Bundle"/>
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Bundle"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="Bundle">
+            <path value="Bundle"/>
+        </element>
+        <element id="Bundle.entry">
+            <path value="Bundle.entry"/>
+            <slicing>
+                <rules value="open"/>
+            </slicing>
+            <min value="1"/>
+        </element>
+        <element id="Bundle.entry:composition">
+            <path value="Bundle.entry"/>
+            <sliceName value="composition"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="BackboneElement"/>
+            </type>
+        </element>
+        <element id="Bundle.entry:composition.resource">
+            <path value="Bundle.entry.resource"/>
+            <min value="1"/>
+            <type>
+                <code value="Resource"/>
+                <targetProfile value="http://hl7.org/fhir/us/dental-data-exchange/StructureDefinition/dental-referral-note"/>
+                <targetProfile value="http://hl7.org/fhir/us/dental-data-exchange/StructureDefinition/dental-consult-note"/>
+            </type>
+        </element>
+    </differential>
+</StructureDefinition>

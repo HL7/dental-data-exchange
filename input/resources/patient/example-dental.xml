@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patient
+    xmlns="http://hl7.org/fhir">
+    <id value="example-dental"/>
+    <meta>
+        <versionId value="6"/>
+        <lastUpdated value="2021-03-30T15:54:14.486+00:00"/>
+        <source value="#nRym4nap90mqpxVr"/>
+        <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"/>
+    </meta>
+    <text>
+        <status value="generated"/>
+        <div
+            xmlns="http://www.w3.org/1999/xhtml">
+            <div class="hapiHeaderText">Patient 
+                
+                <b>A </b>
+            </div>
+            <table class="hapiPropertyTable">
+                <tbody>
+                    <tr>
+                        <td>Identifier</td>
+                        <td>5152020</td>
+                    </tr>
+                    <tr>
+                        <td>Address</td>
+                        <td>
+                            <span>123 Test Dr. </span>
+                            <br/>
+                            <span>Denver </span>
+                            <span>CO </span>
+                            <span>US </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Date of birth</td>
+                        <td>
+                            <span>01 January 1990</span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </text>
+    <extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-race">
+        <extension url="ombCategory">
+            <valueCoding>
+                <system value="urn:oid:2.16.840.1.113883.6.238"/>
+                <code value="2106-3"/>
+                <display value="White"/>
+            </valueCoding>
+        </extension>
+        <extension url="detailed">
+            <valueCoding>
+                <system value="urn:oid:2.16.840.1.113883.6.238"/>
+                <code value="1516-4"/>
+                <display value="Zuni"/>
+            </valueCoding>
+        </extension>
+        <extension url="text">
+            <valueString value="Mixed"/>
+        </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity">
+        <extension url="ombCategory">
+            <valueCoding>
+                <system value="urn:oid:2.16.840.1.113883.6.238"/>
+                <code value="2135-2"/>
+                <display value="Hispanic or Latino"/>
+            </valueCoding>
+        </extension>
+        <extension url="text">
+            <valueString value="Hispanic or Latino"/>
+        </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex">
+        <valueCode value="M"/>
+    </extension>
+    <identifier>
+        <use value="usual"/>
+        <type>
+            <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+                <code value="MR"/>
+                <display value="Medical Record Number"/>
+            </coding>
+            <text value="Medical Record Number"/>
+        </type>
+        <system value="http://clinic.goodhealth.org"/>
+        <value value="5152020"/>
+    </identifier>
+    <active value="true"/>
+    <name>
+        <family value="A"/>
+        <given value="Patient"/>
+    </name>
+    <telecom>
+        <system value="phone"/>
+        <value value="123-456-7890"/>
+        <use value="home"/>
+    </telecom>
+    <telecom>
+        <system value="email"/>
+        <value value="testA@email.com"/>
+    </telecom>
+    <gender value="male"/>
+    <birthDate value="1990-01-01"/>
+    <address>
+        <line value="123 Test Dr."/>
+        <city value="Denver"/>
+        <state value="CO"/>
+        <postalCode value="80204"/>
+        <country value="US"/>
+    </address>
+</Patient>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet
+    xmlns="http://hl7.org/fhir">
+    <id value="dental-condition"/>
+    <meta>
+        <versionId value="3"/>
+        <lastUpdated value="2021-04-02T17:31:52.187+00:00"/>
+        <source value="#SAygKJ1gw5ZGJHLR"/>
+    </meta>
+    <url value="http://hl7.org/fhir/us/dental-data-exchange/ValueSet/dental-condition"/>
+    <version value="0.1.0"/>
+    <name value="DentalConditionValueSet"/>
+    <title value="Dental Condition Value Set"/>
+    <status value="draft"/>
+    <compose>
+        <include>
+            <system value="http://snomed.info/sct"/>
+            <concept>
+                <code value="118938008"/>
+                <display value="Disorder of mouth (disorder)"/>
+            </concept>
+        </include>
+        <include>
+            <system value="http://www.ada.org/snodent"/>
+            <concept>
+                <code value="118666D"/>
+                <display value="Disorder of mouth (disorder)"/>
+            </concept>
+        </include>
+    </compose>
+</ValueSet>

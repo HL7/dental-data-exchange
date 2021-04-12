@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition
+    xmlns="http://hl7.org/fhir">
+    <id value="dental-communication"/>
+    <meta>
+        <versionId value="30"/>
+        <lastUpdated value="2020-12-04T20:51:10.691+00:00"/>
+        <source value="#aeyVSKz11TnK4lJO"/>
+    </meta>
+    <url value="http://hl7.org/fhir/us/dental-data-exchange/StructureDefinition/dental-communication"/>
+    <name value="DentalCommunication"/>
+    <title value="Dental Communication"/>
+    <status value="active"/>
+    <description value="This profile is used to convey verbal and written communication and education between providers, patients and other members of the care team."/>
+    <fhirVersion value="4.0.1"/>
+    <mapping>
+        <identity value="workflow"/>
+        <uri value="http://hl7.org/fhir/workflow"/>
+        <name value="Workflow Pattern"/>
+    </mapping>
+    <mapping>
+        <identity value="w5"/>
+        <uri value="http://hl7.org/fhir/fivews"/>
+        <name value="FiveWs Pattern Mapping"/>
+    </mapping>
+    <mapping>
+        <identity value="rim"/>
+        <uri value="http://hl7.org/v3"/>
+        <name value="RIM Mapping"/>
+    </mapping>
+    <kind value="resource"/>
+    <abstract value="false"/>
+    <type value="Communication"/>
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Communication"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="Communication">
+            <path value="Communication"/>
+        </element>
+        <element id="Communication.subject">
+            <path value="Communication.subject"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"/>
+            </type>
+        </element>
+        <element id="Communication.encounter">
+            <path value="Communication.encounter"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter"/>
+            </type>
+        </element>
+    </differential>
+</StructureDefinition>

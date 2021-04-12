@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Procedure
+    xmlns="http://hl7.org/fhir">
+    <id value="Dental-flouride-tx-example"/>
+    <meta>
+        <versionId value="4"/>
+        <lastUpdated value="2020-08-06T17:04:21.753+00:00"/>
+        <source value="#3hgxMRXoaIm6ErWP"/>
+        <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"/>
+    </meta>
+    <identifier>
+        <system value="urn:ietf:rfc:3986"/>
+        <value value="urn:uuid:c2a737f2-2fdb-49c1-b097-dac173d07aff"/>
+    </identifier>
+    <status value="completed"/>
+    <code>
+        <coding>
+            <system value="http://www.ama-assn.org/go/cdt"/>
+            <code value="D1206"/>
+        </coding>
+        <text value="topical application of fluoride varnish"/>
+    </code>
+    <subject>
+        <reference value="Patient/example-dental"/>
+    </subject>
+    <performedPeriod>
+        <start value="2020-02-16T12:55:26-07:00"/>
+        <end value="2020-02-16T13:25:26-07:00"/>
+    </performedPeriod>
+    <performer>
+        <actor>
+            <reference value="Practitioner/practitioner-D"/>
+        </actor>
+    </performer>
+</Procedure>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Observation
+    xmlns="http://hl7.org/fhir">
+    <id value="Education-level-example-dental"/>
+    <meta>
+        <versionId value="3"/>
+        <lastUpdated value="2020-08-06T17:04:19.072+00:00"/>
+        <source value="#JtfdlChUIkdgBsah"/>
+    </meta>
+    <status value="final"/>
+    <code>
+        <coding>
+            <system value="http://loinc.org"/>
+            <code value="82589-3"/>
+            <display value="Highest Level of Education"/>
+        </coding>
+    </code>
+    <subject>
+        <reference value="Patient/example-dental"/>
+        <display value="Patient A"/>
+    </subject>
+    <effectivePeriod>
+        <start value="2012-01-01"/>
+        <end value="2016-01-01"/>
+    </effectivePeriod>
+    <valueCodeableConcept>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="224302000"/>
+            <display value="Received higher education college education (finding)"/>
+        </coding>
+    </valueCodeableConcept>
+</Observation>

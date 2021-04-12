@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Observation
+    xmlns="http://hl7.org/fhir">
+    <id value="respiratory-rate"/>
+    <meta>
+        <versionId value="5"/>
+        <lastUpdated value="2021-03-09T19:22:48.090+00:00"/>
+        <source value="#vs92wMVjGftjYYHy"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/resprate"/>
+    </meta>
+    <status value="final"/>
+    <category>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+            <code value="vital-signs"/>
+            <display value="Vital Signs"/>
+        </coding>
+        <text value="Vital Signs"/>
+    </category>
+    <code>
+        <coding>
+            <system value="http://loinc.org"/>
+            <code value="9279-1"/>
+            <display value="Respiratory rate"/>
+        </coding>
+        <text value="Respiratory rate"/>
+    </code>
+    <subject>
+        <reference value="Patient/example-dental"/>
+    </subject>
+    <effectiveDateTime value="2020-02-14"/>
+    <valueQuantity>
+        <value value="20"/>
+        <unit value="breaths/minute"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="/min"/>
+    </valueQuantity>
+</Observation>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition
+    xmlns="http://hl7.org/fhir">
+    <id value="dental-condition"/>
+    <meta>
+        <versionId value="18"/>
+        <lastUpdated value="2021-04-06T15:55:39.637+00:00"/>
+        <source value="#ulfah6l4KWcK3lRW"/>
+    </meta>
+    <url value="http://hl7.org/fhir/us/dental-data-exchange/StructureDefinition/dental-condition"/>
+    <version value="0.1.0"/>
+    <name value="DentalCondition"/>
+    <title value="Dental Condition"/>
+    <status value="active"/>
+    <description value="This profile specifies a 'dental' slice on Condition category. It also constrains bodySite and evidence to MustSupport. Providing evidence (i.e. point-in-time Observations) in support of longitudinal Conditions is highly encouraged. "/>
+    <fhirVersion value="4.0.1"/>
+    <kind value="resource"/>
+    <abstract value="false"/>
+    <type value="Condition"/>
+    <baseDefinition value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="Condition">
+            <path value="Condition"/>
+        </element>
+        <element id="Condition.bodySite">
+            <path value="Condition.bodySite"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Condition.evidence">
+            <path value="Condition.evidence"/>
+            <mustSupport value="true"/>
+        </element>
+    </differential>
+</StructureDefinition>
