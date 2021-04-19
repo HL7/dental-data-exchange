@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Tooth-infection18"/>
     <meta>
-        <versionId value="5"/>
-        <lastUpdated value="2021-04-10T03:54:38.451+00:00"/>
-        <source value="#ZiGFep3fCsTA84jh"/>
+        <versionId value="6"/>
+        <lastUpdated value="2021-04-13T16:24:40.846+00:00"/>
+        <source value="#gFpauy8GRaGtSGya"/>
         <profile value="http://hl7.org/fhir/us/dental-data-exchange/StructureDefinition/dental-condition"/>
     </meta>
     <clinicalStatus>
@@ -34,16 +34,10 @@
     </category>
     <category>
         <coding>
-            <system value="http://www.ada.org/snodent"/>
-            <code value="118666D"/>
-            <display value="Disease of the mouth (disorder)"/>
+            <system value="http://hl7.org/fhir/us/dental-data-exchange/CodeSystem/dental-category"/>
+            <code value="dental"/>
+            <display value="Dental in nature"/>
         </coding>
-        <coding>
-            <system value="http://snomed.info/sct"/>
-            <code value="118938008"/>
-            <display value="Disease of the mouth (disorder)"/>
-        </coding>
-        <text value="Disease of the mouth (disorder)"/>
     </category>
     <code>
         <coding>

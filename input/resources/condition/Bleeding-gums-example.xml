@@ -3,10 +3,10 @@
     xmlns="http://hl7.org/fhir">
     <id value="Bleeding-gums-example"/>
     <meta>
-        <versionId value="4"/>
-        <lastUpdated value="2021-04-09T17:07:08.690+00:00"/>
-        <source value="#0lOaLFEd2boXsF4C"/>
-        <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"/>
+        <versionId value="6"/>
+        <lastUpdated value="2021-04-13T16:24:40.468+00:00"/>
+        <source value="#wdK46VOCfbwIY708"/>
+        <profile value="http://hl7.org/fhir/us/dental-data-exchange/StructureDefinition/dental-condition"/>
     </meta>
     <clinicalStatus>
         <coding>
@@ -31,6 +31,13 @@
             <display value="Health Concern"/>
         </coding>
         <text value="Health Concern"/>
+    </category>
+    <category>
+        <coding>
+            <system value="http://hl7.org/fhir/us/dental-data-exchange/CodeSystem/dental-category"/>
+            <code value="dental"/>
+            <display value="Dental in nature"/>
+        </coding>
     </category>
     <code>
         <coding>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSystem
+    xmlns="http://hl7.org/fhir">
+    <id value="dental-category"/>
+    <meta>
+        <versionId value="1"/>
+        <lastUpdated value="2021-04-13T16:01:43.653+00:00"/>
+        <source value="#kYPh6D092UYWTJTz"/>
+    </meta>
+    <url value="http://hl7.org/fhir/us/dental-data-exchange/CodeSystem/dental-category"/>
+    <name value="DentalCategory"/>
+    <title value="Dental Category"/>
+    <status value="draft"/>
+    <content value="not-present"/>
+    <concept>
+        <code value="dental"/>
+        <display value="Dental"/>
+        <definition value="Dental in nature"/>
+    </concept>
+</CodeSystem>

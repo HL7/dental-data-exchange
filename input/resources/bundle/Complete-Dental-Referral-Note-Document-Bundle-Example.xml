@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Complete-Dental-Referral-Note-Document-Bundle-Example"/>
     <meta>
-        <versionId value="1"/>
-        <lastUpdated value="2021-04-12T03:21:54.139+00:00"/>
-        <source value="#anYNXvHSU6LyBjQa"/>
+        <versionId value="2"/>
+        <lastUpdated value="2021-04-13T17:32:55.080+00:00"/>
+        <source value="#hIwl66UcF5eveoRv"/>
         <profile value="http://hl7.org/fhir/us/dental-data-exchange/StructureDefinition/dental-bundle"/>
     </meta>
     <identifier>
@@ -15,7 +15,7 @@
     <type value="document"/>
     <timestamp value="2021-04-11T10:30:00.000-08:00"/>
     <entry>
-        <fullUrl value="http://hl7.org/fhir/us/dental-data-exchange/StructureDefinition/dental-referral-note"/>
+        <fullUrl value="http://hl7.org/fhir/us/dental-data-exchange/Composition/Med-2-Dental-Referral"/>
         <resource>
             <Composition>
                 <id value="Med-2-Dental-Referral"/>

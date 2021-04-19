@@ -3,16 +3,18 @@
     xmlns="http://hl7.org/fhir">
     <id value="Dental-2-Med-Consult"/>
     <meta>
-        <versionId value="21"/>
-        <lastUpdated value="2021-04-12T14:20:21.377+00:00"/>
-        <source value="#7ypOwYPRV0V9AbEA"/>
+        <versionId value="22"/>
+        <lastUpdated value="2021-04-13T15:56:50.159+00:00"/>
+        <source value="#20Qp1wEw44J8eXwZ"/>
         <profile value="http://hl7.org/fhir/us/dental-data-exchange/StructureDefinition/dental-consult-note"/>
     </meta>
     <language value="en-US"/>
     <extension url="http://hl7.org/fhir/us/ccda/StructureDefinition/OrderExtension">
         <valueReference>
-            <reference value="ServiceRequest/example-dental-referral-1"/>
-            <display value="Dental Referral"/>
+            <identifier>
+                <system value="urn:ietf:rfc:3986"/>
+                <value value="http://good-health-clinic.org/101"/>
+            </identifier>
         </valueReference>
     </extension>
     <identifier>

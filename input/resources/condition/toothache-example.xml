@@ -3,10 +3,10 @@
     xmlns="http://hl7.org/fhir">
     <id value="toothache-example"/>
     <meta>
-        <versionId value="7"/>
-        <lastUpdated value="2021-04-09T17:07:08.689+00:00"/>
-        <source value="#qMv7ECFszzcR6w9d"/>
-        <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"/>
+        <versionId value="9"/>
+        <lastUpdated value="2021-04-13T16:24:41.709+00:00"/>
+        <source value="#KxM9tVkDOn9jKkxp"/>
+        <profile value="http://hl7.org/fhir/us/dental-data-exchange/StructureDefinition/dental-condition"/>
     </meta>
     <clinicalStatus>
         <coding>
@@ -31,6 +31,13 @@
             <display value="Health Concern"/>
         </coding>
         <text value="Health Concern"/>
+    </category>
+    <category>
+        <coding>
+            <system value="http://hl7.org/fhir/us/dental-data-exchange/CodeSystem/dental-category"/>
+            <code value="dental"/>
+            <display value="Dental in nature"/>
+        </coding>
     </category>
     <code>
         <coding>

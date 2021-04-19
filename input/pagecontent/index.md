@@ -8,7 +8,8 @@ All proprietary documents, guides, guidance, standards, codes, and values contai
 This HL7 FHIR® R4 Implementation Guide: Dental Data Exchange is developed in parallel to the HL7 CDA® R2 Implementation Guide: Dental Data Exchange.
 
 ### Scope
-This guide defines 5 FHIR Profiles:
+This guide defines 6 FHIR Profiles:
+* Dental Condition
 * Dental Consult Note
 * Dental Communication
 * Dental Service Request
