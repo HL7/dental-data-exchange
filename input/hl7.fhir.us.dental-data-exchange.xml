@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7.fhir.us.dental-data-exchange"/>
     <meta>
-        <versionId value="214"/>
-        <lastUpdated value="2021-04-19T15:24:45.129+00:00"/>
-        <source value="#jT7JGlfJTlSPrcG7"/>
+        <versionId value="224"/>
+        <lastUpdated value="2021-04-22T22:54:34.361+00:00"/>
+        <source value="#lxbKcd9VquHoxpYD"/>
     </meta>
     <url value="http://hl7.org/fhir/us/dental-data-exchange/ImplementationGuide/hl7.fhir.us.dental-data-exchange"/>
     <version value="0.1.0"/>
@@ -31,10 +31,10 @@
     </jurisdiction>
     <packageId value="hl7.fhir.us.dental-data-exchange"/>
     <fhirVersion value="4.0.1"/>
-    <dependsOn id="uscore">
+    <dependsOn id="hl7fhiruscore">
         <uri value="http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core"/>
         <packageId value="hl7.fhir.us.core"/>
-        <version value="3.1.0"/>
+        <version value="3.1.1"/>
     </dependsOn>
     <dependsOn id="ccda">
         <uri value="http://hl7.org/fhir/us/ccda/ImplementationGuide/hl7.fhir.us.ccda#1.1.0"/>
@@ -151,16 +151,6 @@
             </reference>
             <name value="Dental Reason For Referral"/>
             <description value="This ValueSet contains coded prominent reasons for referral between medical and dental care settings."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="dental-terminologies"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="ValueSet/dental-condition"/>
-                <display value="Dental Condition Value Set"/>
-            </reference>
-            <name value="Dental Condition Value Set"/>
-            <description value="ValueSet containing dental conditions (diseases of the mouth)"/>
             <exampleBoolean value="false"/>
             <groupingId value="dental-terminologies"/>
         </resource>

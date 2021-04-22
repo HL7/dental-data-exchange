@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="dental-condition"/>
     <meta>
-        <versionId value="19"/>
-        <lastUpdated value="2021-04-13T16:02:27.294+00:00"/>
-        <source value="#kKOtFmq9KLhvTOXe"/>
+        <versionId value="25"/>
+        <lastUpdated value="2021-04-22T22:59:21.708+00:00"/>
+        <source value="#hmiSPVC4BGz0rqlo"/>
     </meta>
     <url value="http://hl7.org/fhir/us/dental-data-exchange/StructureDefinition/dental-condition"/>
     <version value="0.1.0"/>
@@ -26,19 +26,24 @@
         <element id="Condition.category">
             <path value="Condition.category"/>
             <slicing>
+                <discriminator>
+                    <type value="pattern"/>
+                    <path value="coding"/>
+                </discriminator>
                 <rules value="open"/>
             </slicing>
         </element>
         <element id="Condition.category:dental">
             <path value="Condition.category"/>
             <sliceName value="dental"/>
+            <short value="dental"/>
             <min value="1"/>
             <max value="1"/>
             <patternCodeableConcept>
                 <coding>
                     <system value="http://hl7.org/fhir/us/dental-data-exchange/CodeSystem/dental-category"/>
                     <code value="dental"/>
-                    <display value="Dental in nature"/>
+                    <display value="Dental"/>
                 </coding>
             </patternCodeableConcept>
             <mustSupport value="true"/>

@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="dental-findings"/>
     <meta>
-        <versionId value="21"/>
-        <lastUpdated value="2021-04-13T16:05:27.520+00:00"/>
-        <source value="#SXzEYgriOK1lSnlJ"/>
+        <versionId value="22"/>
+        <lastUpdated value="2021-04-19T18:02:16.242+00:00"/>
+        <source value="#5o5mrfmD667xxOEA"/>
     </meta>
     <url value="http://hl7.org/fhir/us/dental-data-exchange/StructureDefinition/dental-findings"/>
     <name value="DentalFindings"/>
@@ -99,7 +99,7 @@
         </element>
         <element id="Observation.effective[x]">
             <path value="Observation.effective[x]"/>
-            <min value="1"/>
+            <min value="0"/>
             <max value="1"/>
             <mustSupport value="true"/>
         </element>
