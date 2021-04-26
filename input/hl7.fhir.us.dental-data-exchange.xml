@@ -37,7 +37,7 @@
         <version value="3.1.1"/>
     </dependsOn>
     <dependsOn id="ccda">
-        <uri value="http://hl7.org/fhir/us/ccda/ImplementationGuide/hl7.fhir.us.ccda#1.1.0"/>
+        <uri value="http://hl7.org/fhir/us/ccda/ImplementationGuide/hl7.fhir.us.ccda"/>
         <packageId value="hl7.fhir.us.ccda"/>
         <version value="1.1.0"/>
     </dependsOn>
