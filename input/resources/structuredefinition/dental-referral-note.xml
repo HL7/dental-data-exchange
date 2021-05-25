@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="dental-referral-note"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2021-04-02T17:10:21.137+00:00"/>
-        <source value="#cpCd8v2o6tRs5jUJ"/>
+        <versionId value="3"/>
+        <lastUpdated value="2021-04-27T16:37:29.185+00:00"/>
+        <source value="#nV4iMOINF5IpWfmd"/>
     </meta>
     <url value="http://hl7.org/fhir/us/dental-data-exchange/StructureDefinition/dental-referral-note"/>
     <name value="DentalReferralNote"/>
@@ -67,15 +67,6 @@
             <slicing>
                 <rules value="open"/>
             </slicing>
-        </element>
-        <element id="Composition.section:problem_section.entry:dental_problem_entry">
-            <path value="Composition.section.entry"/>
-            <sliceName value="dental_problem_entry"/>
-            <type>
-                <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/dental-data-exchange/StructureDefinition/dental-condition"/>
-            </type>
-            <mustSupport value="true"/>
         </element>
         <element id="Composition.section:plan_of_treatment_section">
             <path value="Composition.section"/>

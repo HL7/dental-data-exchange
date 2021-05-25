@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="dental-consult-note"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2021-04-02T17:12:03.335+00:00"/>
-        <source value="#wRM4n3E8rVDUUvu3"/>
+        <versionId value="6"/>
+        <lastUpdated value="2021-04-30T17:00:15.052+00:00"/>
+        <source value="#sS3hegyeAAHRZMbK"/>
     </meta>
     <url value="http://hl7.org/fhir/us/dental-data-exchange/StructureDefinition/dental-consult-note"/>
     <version value="0.0.1"/>
@@ -48,35 +48,11 @@
         <element id="Composition">
             <path value="Composition"/>
         </element>
-        <element id="Composition.extension:order_extension">
+        <element id="Composition.extension:order_extension/dental">
             <path value="Composition.extension"/>
-            <sliceName value="order_extension"/>
+            <sliceName value="order_extension/dental"/>
             <label value="authorization"/>
             <short value="authorization"/>
-            <type>
-                <code value="Extension"/>
-                <profile value="http://hl7.org/fhir/us/ccda/StructureDefinition/OrderExtension"/>
-            </type>
-            <mustSupport value="true"/>
-        </element>
-        <element id="Composition.extension:order_extension.url">
-            <path value="Composition.extension.url"/>
-            <fixedUri value="http://hl7.org/fhir/us/ccda/StructureDefinition/OrderExtension"/>
-        </element>
-        <element id="Composition.extension:order_extension.value[x]">
-            <path value="Composition.extension.value[x]"/>
-            <type>
-                <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/dental-data-exchange/dental-servicerequest"/>
-            </type>
-            <mustSupport value="true"/>
-        </element>
-        <element id="Composition.extension.value[x]">
-            <path value="Composition.extension.value[x]"/>
-            <type>
-                <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/dental-data-exchange/dental-servicerequest"/>
-            </type>
             <mustSupport value="true"/>
         </element>
         <element id="Composition.type">
@@ -146,15 +122,6 @@
                 <rules value="open"/>
             </slicing>
             <short value="entry"/>
-        </element>
-        <element id="Composition.section:plan_of_treatment_section.entry:sliceEntry/dental_service_request">
-            <path value="Composition.section.entry"/>
-            <sliceName value="sliceEntry/dental_service_request"/>
-            <short value="This section contains unprofiled resources not covered by US Core. Please refer to C-CDA R2.1 for guidance on terminology, etc."/>
-            <type>
-                <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/us/dental-data-exchange/dental-servicerequest"/>
-            </type>
         </element>
         <element id="Composition.section:procedures_section">
             <path value="Composition.section"/>

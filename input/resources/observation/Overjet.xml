@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Overjet"/>
     <meta>
-        <versionId value="5"/>
-        <lastUpdated value="2021-04-13T16:25:42.435+00:00"/>
-        <source value="#ZqOTEdbgpf77I2aY"/>
+        <versionId value="8"/>
+        <lastUpdated value="2021-04-27T21:35:07.062+00:00"/>
+        <source value="#wasa91D7ZMcJlS0t"/>
         <profile value="http://hl7.org/fhir/us/dental-data-exchange/StructureDefinition/dental-findings"/>
     </meta>
     <status value="final"/>
@@ -21,7 +21,7 @@
         <coding>
             <system value="http://hl7.org/fhir/us/dental-data-exchange/CodeSystem/dental-category"/>
             <code value="dental"/>
-            <display value="Dental in nature"/>
+            <display value="Dental"/>
         </coding>
     </category>
     <code>

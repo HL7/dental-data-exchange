@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CapabilityStatement
     xmlns="http://hl7.org/fhir">
-    <id value="DentalClient"/>
+    <id value="dental-client-capstat"/>
     <meta>
-        <versionId value="7"/>
-        <lastUpdated value="2021-04-12T14:11:34.488+00:00"/>
-        <source value="#8P3U6tqIjjFdsDZn"/>
+        <versionId value="9"/>
+        <lastUpdated value="2021-04-30T03:02:35.571+00:00"/>
+        <source value="#5kmKWUTew6gnS8cV"/>
     </meta>
-    <url value="http://hl7.org/fhir/us/dental-data-exchange/CapabilityStatement/DentalClient"/>
-    <version value="1.1.0"/>
+    <url value="http://hl7.org/fhir/us/dental-data-exchange/CapabilityStatement/dental-client-capstat"/>
+    <version value="0.1.0"/>
     <name value="DentalClient"/>
     <title value="Dental Data Exchange Client"/>
     <status value="active"/>
@@ -26,7 +26,7 @@
         <name value="David deRoode"/>
         <telecom>
             <system value="email"/>
-            <value value="sdavid.deroode@lantanagroup.com"/>
+            <value value="david.deroode@lantanagroup.com"/>
         </telecom>
     </contact>
     <contact>
@@ -36,7 +36,7 @@
             <value value="rick.geimer@lantanagroup.com"/>
         </telecom>
     </contact>
-    <description value="This section describes the expected capabilities of the Dental Data Exchange Document Consumer (aka client) actor which is responsible for creating and initiating the queries for clinical documents provided by a Dental Data Exchange Document Source (aka server) actors. This CapabilityStatement imports and extends [CCDAonFHIR-client CapabilityStatement](http://hl7.org/fhir/us/ccda/CapabilityStatement/CcdaOnFhirClient.html)CCDAonFHIR client CapabilityStatement, which imports and extends the [us-core-client CapabilityStatement](https://www.hl7.org/fhir/us/core/CapabilityStatement-us-core-client.html). As a result, this CapabilityStatement uses the FHIR Document paradigm to define the exchange of a FHIR Document bundle. In order to exchange resources defined in this guide via REST API, this CapabilitStatement defines 9 ReSTful interactions that should be supported."/>
+    <description value="This section describes the expected capabilities of the Dental Data Exchange Document Consumer (aka client) actor which is responsible for creating and initiating the queries for clinical documents provided by a Dental Data Exchange Document Source (aka server) actors. This CapabilityStatement imports and extends [CCDAonFHIR-client CapabilityStatement](http://hl7.org/fhir/us/ccda/CapabilityStatement/CcdaOnFhirClient.html)CCDAonFHIR client CapabilityStatement, which imports and extends the [us-core-client CapabilityStatement](https://www.hl7.org/fhir/us/core/CapabilityStatement-us-core-client.html)"/>
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -53,7 +53,6 @@
         <documentation value="The expected capabilities for the client actor within the stanadards-based exchange conforming to this FHIR ImplementationGuide,"/>
         <resource>
             <type value="Bundle"/>
-            <profile value="http://hl7.org/fhir/us/dental-data-exchange/StructureDefinition/dental-bundle"/>
             <interaction>
                 <code value="create"/>
             </interaction>
@@ -84,9 +83,8 @@
         </resource>
         <resource>
             <type value="Composition"/>
-            <profile value="http://hl7.org/fhir/us/dental-data-exchange/StructureDefinition/dental-referral-note"/>
-            <supportedProfile value="http://hl7.org/fhir/us/dental-data-exchange/StructureDefinition/dental-referralnote"/>
-            <supportedProfile value="http://hl7.org/fhir/us/dental-data-exchange/StructureDefinition/dental-consult"/>
+            <supportedProfile value="http://hl7.org/fhir/us/dental-data-exchange/StructureDefinition/dental-referral-note"/>
+            <supportedProfile value="http://hl7.org/fhir/us/dental-data-exchange/StructureDefinition/dental-consult-note"/>
             <interaction>
                 <code value="create"/>
             </interaction>
@@ -117,7 +115,6 @@
         </resource>
         <resource>
             <type value="Communication"/>
-            <profile value="http://hl7.org/fhir/us/dental-data-exchange/StructureDefinition/dental-communication"/>
             <supportedProfile value="http://hl7.org/fhir/us/dental-data-exchange/StructureDefinition/dental-communication"/>
             <interaction>
                 <code value="create"/>
@@ -148,12 +145,7 @@
             </interaction>
         </resource>
         <resource>
-            <type value="Condition"/>
-            <profile value="http://hl7.org/fhir/us/dental-data-exchange/StructureDefinition/dental-condition"/>
-        </resource>
-        <resource>
             <type value="ServiceRequest"/>
-            <profile value="http://hl7.org/fhir/us/dental-data-exchange/dental-servicerequest"/>
             <supportedProfile value="http://hl7.org/fhir/us/dental-data-exchange/dental-servicerequest"/>
             <interaction>
                 <code value="create"/>
@@ -185,8 +177,38 @@
         </resource>
         <resource>
             <type value="Observation"/>
-            <profile value="http://hl7.org/fhir/us/dental-data-exchange/StructureDefinition/dental-findings"/>
             <supportedProfile value="http://hl7.org/fhir/us/dental-data-exchange/StructureDefinition/dental-findings"/>
+            <interaction>
+                <code value="create"/>
+            </interaction>
+            <interaction>
+                <code value="search-type"/>
+            </interaction>
+            <interaction>
+                <code value="read"/>
+            </interaction>
+            <interaction>
+                <code value="vread"/>
+            </interaction>
+            <interaction>
+                <code value="update"/>
+            </interaction>
+            <interaction>
+                <code value="patch"/>
+            </interaction>
+            <interaction>
+                <code value="delete"/>
+            </interaction>
+            <interaction>
+                <code value="history-instance"/>
+            </interaction>
+            <interaction>
+                <code value="history-type"/>
+            </interaction>
+        </resource>
+        <resource>
+            <type value="Condition"/>
+            <supportedProfile value="http://hl7.org/fhir/us/dental-data-exchange/StructureDefinition/dental-condition"/>
             <interaction>
                 <code value="create"/>
             </interaction>
@@ -218,6 +240,26 @@
     </rest>
     <document>
         <mode value="consumer"/>
-        <profile value="http://hl7.org/fhir/us/dental-data-exchange/StructureDefinition/dental-bundle"/>
+        <profile value="http://hl7.org/fhir/us/dental-data-exchange/StructureDefinition/dental-referral-note"/>
+    </document>
+    <document>
+        <mode value="consumer"/>
+        <profile value="http://hl7.org/fhir/us/dental-data-exchange/StructureDefinition/dental-consult-note"/>
+    </document>
+    <document>
+        <mode value="consumer"/>
+        <profile value="http://hl7.org/fhir/us/dental-data-exchange/StructureDefinition/dental-communication"/>
+    </document>
+    <document>
+        <mode value="consumer"/>
+        <profile value="http://hl7.org/fhir/us/dental-data-exchange/dental-servicerequest"/>
+    </document>
+    <document>
+        <mode value="consumer"/>
+        <profile value="http://hl7.org/fhir/us/dental-data-exchange/StructureDefinition/dental-findings"/>
+    </document>
+    <document>
+        <mode value="consumer"/>
+        <profile value="http://hl7.org/fhir/us/dental-data-exchange/StructureDefinition/dental-condition"/>
     </document>
 </CapabilityStatement>

@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Dental-plaque-example"/>
     <meta>
-        <versionId value="8"/>
-        <lastUpdated value="2021-04-13T16:24:40.470+00:00"/>
-        <source value="#Uuxn688TowA4w3OZ"/>
+        <versionId value="10"/>
+        <lastUpdated value="2021-04-28T00:01:25.126+00:00"/>
+        <source value="#X2hPir6JPI5pvG5b"/>
         <profile value="http://hl7.org/fhir/us/dental-data-exchange/StructureDefinition/dental-condition"/>
     </meta>
     <clinicalStatus>
@@ -26,7 +26,7 @@
     </verificationStatus>
     <category>
         <coding>
-            <system value="http://terminology.hl7.org/CodeSystem/condition-category"/>
+            <system value="http://hl7.org/fhir/us/core/CodeSystem/condition-category"/>
             <code value="health-concern"/>
             <display value="Health Concern"/>
         </coding>
@@ -36,7 +36,7 @@
         <coding>
             <system value="http://hl7.org/fhir/us/dental-data-exchange/CodeSystem/dental-category"/>
             <code value="dental"/>
-            <display value="Dental in nature"/>
+            <display value="Dental"/>
         </coding>
     </category>
     <code>

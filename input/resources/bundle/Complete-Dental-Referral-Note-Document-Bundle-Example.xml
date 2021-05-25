@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Complete-Dental-Referral-Note-Document-Bundle-Example"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2021-04-13T17:32:55.080+00:00"/>
-        <source value="#hIwl66UcF5eveoRv"/>
+        <versionId value="3"/>
+        <lastUpdated value="2021-04-30T03:11:55.721+00:00"/>
+        <source value="#23n7PLI9zRam4i2r"/>
         <profile value="http://hl7.org/fhir/us/dental-data-exchange/StructureDefinition/dental-bundle"/>
     </meta>
     <identifier>
@@ -64,7 +64,7 @@
                         <coding>
                             <system value="http://loinc.org"/>
                             <code value="48765-2"/>
-                            <display value="Allergies and adverse reactions section"/>
+                            <display value="Allergies and adverse reactions Document"/>
                         </coding>
                     </code>
                     <text>

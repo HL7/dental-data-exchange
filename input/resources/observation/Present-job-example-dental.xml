@@ -3,42 +3,11 @@
     xmlns="http://hl7.org/fhir">
     <id value="Present-job-example-dental"/>
     <meta>
-        <versionId value="5"/>
-        <lastUpdated value="2021-04-10T02:45:58.003+00:00"/>
-        <source value="#HfiQ9kX9lfGh71nY"/>
+        <versionId value="6"/>
+        <lastUpdated value="2021-04-28T00:01:25.126+00:00"/>
+        <source value="#tBxNgqGxyFmgQxMw"/>
         <profile value="http://hl7.org/fhir/us/odh/StructureDefinition/odh-PastOrPresentJob"/>
     </meta>
-    <text>
-        <status value="generated"/>
-        <div
-            xmlns="http://www.w3.org/1999/xhtml">
-            <p>
-                <b>Generated Narrative</b>
-            </p>
-            <p>
-                <b>id</b>: Present-job-example-dental
-            </p>
-            <p>
-                <b>meta</b>: 
-            </p>
-            <p/>
-            <p>
-                <b>code</b>: 
-                <span title="Codes: {http://loinc.org 11341-5}">History of Occupation</span>
-            </p>
-            <p>
-                <b>subject</b>: 
-                <a href="Patient-example-dental.html">Patient A. Generated Summary: id: example-dental; Medical Record Number: 5152020 (USUAL); active; Patient A ; ph: 123-456-7890(HOME), testA@email.com; gender: male; birthDate: 1990-01-01</a>
-            </p>
-            <p>
-                <b>effective</b>: 2015-01-01 --&gt; (ongoing)
-            </p>
-            <p>
-                <b>value</b>: 
-                <span title="Codes: {urn:oid:2.16.840.1.114222.4.11.7186 0800}">Accountants and Auditors</span>
-            </p>
-        </div>
-    </text>
     <status value="final"/>
     <code>
         <coding>

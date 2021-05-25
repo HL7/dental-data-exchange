@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Mandibular-perm18-example"/>
     <meta>
-        <versionId value="11"/>
-        <lastUpdated value="2021-04-13T16:24:40.581+00:00"/>
-        <source value="#p39NdYFSUq2Cj5QO"/>
+        <versionId value="13"/>
+        <lastUpdated value="2021-04-27T21:33:33.618+00:00"/>
+        <source value="#yZkbvwBQJCBjro62"/>
         <profile value="http://hl7.org/fhir/us/dental-data-exchange/StructureDefinition/dental-condition"/>
     </meta>
     <clinicalStatus>
@@ -36,7 +36,7 @@
         <coding>
             <system value="http://hl7.org/fhir/us/dental-data-exchange/CodeSystem/dental-category"/>
             <code value="dental"/>
-            <display value="Dental in nature"/>
+            <display value="Dental"/>
         </coding>
     </category>
     <category>
@@ -48,9 +48,9 @@
         <coding>
             <system value="http://snomed.info/sct"/>
             <code value="118938008"/>
-            <display value="Disease of the mouth (disorder)"/>
+            <display value="Disorder of mouth (disorder)"/>
         </coding>
-        <text value="Disease of the mouth (disorder)"/>
+        <text value="Disorder of mouth (disorder)"/>
     </category>
     <code>
         <coding>

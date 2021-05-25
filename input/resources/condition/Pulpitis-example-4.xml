@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Pulpitis-example-4"/>
     <meta>
-        <versionId value="8"/>
-        <lastUpdated value="2021-04-13T16:24:40.790+00:00"/>
-        <source value="#AJ9GYCUiT6HNWcLq"/>
+        <versionId value="9"/>
+        <lastUpdated value="2021-04-27T16:41:00.055+00:00"/>
+        <source value="#dszHkr7PJmfibr7t"/>
         <profile value="http://hl7.org/fhir/us/dental-data-exchange/StructureDefinition/dental-condition"/>
     </meta>
     <clinicalStatus>
@@ -36,7 +36,7 @@
         <coding>
             <system value="http://hl7.org/fhir/us/dental-data-exchange/CodeSystem/dental-category"/>
             <code value="dental"/>
-            <display value="Dental in nature"/>
+            <display value="Dental"/>
         </coding>
     </category>
     <code>

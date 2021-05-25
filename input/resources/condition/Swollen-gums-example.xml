@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Swollen-gums-example"/>
     <meta>
-        <versionId value="9"/>
-        <lastUpdated value="2021-04-13T16:24:40.885+00:00"/>
-        <source value="#eAWAw9wEYtVclhTS"/>
+        <versionId value="11"/>
+        <lastUpdated value="2021-04-28T00:01:25.128+00:00"/>
+        <source value="#NgPzYTp2PrBQq4QQ"/>
         <profile value="http://hl7.org/fhir/us/dental-data-exchange/StructureDefinition/dental-condition"/>
     </meta>
     <clinicalStatus>
@@ -26,7 +26,7 @@
     </verificationStatus>
     <category>
         <coding>
-            <system value="http://terminology.hl7.org/CodeSystem/condition-category"/>
+            <system value="http://hl7.org/fhir/us/core/CodeSystem/condition-category"/>
             <code value="health-concern"/>
             <display value="Health Concern"/>
         </coding>
@@ -36,7 +36,7 @@
         <coding>
             <system value="http://hl7.org/fhir/us/dental-data-exchange/CodeSystem/dental-category"/>
             <code value="dental"/>
-            <display value="Dental in nature"/>
+            <display value="Dental"/>
         </coding>
     </category>
     <code>
