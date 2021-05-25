@@ -3,26 +3,38 @@
     xmlns="http://hl7.org/fhir">
     <id value="Overjet"/>
     <meta>
+<<<<<<< HEAD
         <versionId value="8"/>
         <lastUpdated value="2021-04-27T21:35:07.062+00:00"/>
         <source value="#wasa91D7ZMcJlS0t"/>
+=======
+        <versionId value="6"/>
+        <lastUpdated value="2021-04-19T16:16:19.558+00:00"/>
+        <source value="#QwCcP7ivzXHxhDEd"/>
+>>>>>>> 58fea4bcef1761ef84cdd5978bfbcb3bedca6da3
         <profile value="http://hl7.org/fhir/us/dental-data-exchange/StructureDefinition/dental-findings"/>
     </meta>
     <status value="final"/>
     <category>
         <coding>
-            <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
-            <code value="exam"/>
-            <display value="Exam"/>
+            <system value="http://hl7.org/fhir/us/dental-data-exchange/CodeSystem/dental-category"/>
+            <code value="dental"/>
+            <display value="Dental in nature"/>
         </coding>
-        <text value="Exam"/>
     </category>
     <category>
         <coding>
+<<<<<<< HEAD
             <system value="http://hl7.org/fhir/us/dental-data-exchange/CodeSystem/dental-category"/>
             <code value="dental"/>
             <display value="Dental"/>
+=======
+            <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+            <code value="exam"/>
+            <display value="Exam"/>
+>>>>>>> 58fea4bcef1761ef84cdd5978bfbcb3bedca6da3
         </coding>
+        <text value="Exam"/>
     </category>
     <code>
         <coding>
