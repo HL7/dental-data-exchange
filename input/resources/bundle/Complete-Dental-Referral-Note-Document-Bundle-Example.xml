@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Complete-Dental-Referral-Note-Document-Bundle-Example"/>
     <meta>
-        <versionId value="3"/>
-        <lastUpdated value="2021-04-30T03:11:55.721+00:00"/>
-        <source value="#23n7PLI9zRam4i2r"/>
+        <versionId value="4"/>
+        <lastUpdated value="2021-05-25T17:34:57.719+00:00"/>
+        <source value="#DogatC4Ccqp66N8a"/>
         <profile value="http://hl7.org/fhir/us/dental-data-exchange/StructureDefinition/dental-bundle"/>
     </meta>
     <identifier>
@@ -1022,7 +1022,7 @@
                 </verificationStatus>
                 <category>
                     <coding>
-                        <system value="http://terminology.hl7.org/CodeSystem/condition-category"/>
+                        <system value="http://hl7.org/fhir/us/core/CodeSystem/condition-category"/>
                         <code value="health-concern"/>
                         <display value="Health Concern"/>
                     </coding>
@@ -1094,7 +1094,7 @@
                 </verificationStatus>
                 <category>
                     <coding>
-                        <system value="http://terminology.hl7.org/CodeSystem/condition-category"/>
+                        <system value="http://hl7.org/fhir/us/core/CodeSystem/condition-category"/>
                         <code value="health-concern"/>
                         <display value="Health Concern"/>
                     </coding>
@@ -1144,7 +1144,7 @@
                 </verificationStatus>
                 <category>
                     <coding>
-                        <system value="http://terminology.hl7.org/CodeSystem/condition-category"/>
+                        <system value="http://hl7.org/fhir/us/core/CodeSystem/condition-category"/>
                         <code value="health-concern"/>
                         <display value="Health Concern"/>
                     </coding>
@@ -1194,7 +1194,7 @@
                 </verificationStatus>
                 <category>
                     <coding>
-                        <system value="http://terminology.hl7.org/CodeSystem/condition-category"/>
+                        <system value="http://hl7.org/fhir/us/core/CodeSystem/condition-category"/>
                         <code value="health-concern"/>
                         <display value="Health Concern"/>
                     </coding>
@@ -1358,7 +1358,7 @@
                     <coding>
                         <system value="http://hl7.org/fhir/sid/cvx"/>
                         <code value="08"/>
-                        <display value="Hep B, adolescent or pediatric"/>
+                        <display value="hepatitis B vaccine, pediatric or pediatric/adolescent dosage"/>
                     </coding>
                 </vaccineCode>
                 <patient>
