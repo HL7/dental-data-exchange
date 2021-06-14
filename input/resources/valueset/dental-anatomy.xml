@@ -3,14 +3,15 @@
     xmlns="http://hl7.org/fhir">
     <id value="dental-anatomy"/>
     <meta>
-        <versionId value="5"/>
-        <lastUpdated value="2021-04-02T17:55:25.114+00:00"/>
-        <source value="#jwV4mtdm3rH4Pkds"/>
+        <versionId value="6"/>
+        <lastUpdated value="2021-06-11T12:56:30.832+00:00"/>
+        <source value="#blMPeYzyGpkXZ7Xs"/>
     </meta>
     <url value="http://hl7.org/fhir/us/dental-data-exchange/ValueSet/dental-anatomy"/>
     <name value="DentalAnatomy"/>
     <title value="Dental Anatomy"/>
     <status value="draft"/>
+    <description value="This Dental Anatomy ValueSet comprises the Oral Cavity Area ValueSet and the Tooth Identification ValueSet."/>
     <compose>
         <include>
             <valueSet value="http://hl7.org/fhir/us/dental-data-exchange/ValueSet/oral-cavity-area"/>

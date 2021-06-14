@@ -22,10 +22,10 @@ Similarly, dental-specific measurements should be shared via the Dental Finding 
 
 ### Use of the Dental Finding, Dental Condition, and US Core Condition Profiles
 Implementors should use the following profiles within a Dental Referral Note or Dental Consult Note:
-* Dental Condition: This profile contains clinically significant observation confirmed or discovered during a dental visit. It should be used to specify:
- * A dental condition that does not require action, such as a missing tooth (see [Scenario 3](background.html#scenario-3-dental-to-dental-endodontist-referral))
- * A problem that is actionable or may require attention (such as active caries), which may include a reference to evidence of that problem via a Dental Finding.
-* Dental Finding: This profile should be used to record oral measurements or assessment scores including an odontogram or periodontal assessment.
+* **Dental Condition**: This profile contains clinically significant observation confirmed or discovered during a dental visit. It should be used to specify:
+    * A dental condition that does not require action, such as a missing tooth (see [Scenario 3](background.html#scenario-3-dental-to-dental-endodontist-referral))
+    * A problem that is actionable or may require attention (such as active caries), which may include a reference to evidence of that problem via a Dental Finding.
+* **Dental Finding**: This profile should be used to record oral measurements or assessment scores including an odontogram or periodontal assessment.
 
 The HL7 community recommends the following practices:
 * Dental observations that are important to other medical providers (e.g., bleeding gums) should be placed in the US Core Condition profile. (See [Scenario 1](background.html#scenario-1-medical-to-dental-referral-note).)
@@ -222,6 +222,8 @@ For most dental practices, dental caries risk assessments are important referenc
 
 * Low
 * Elevated Risk
+
+For more information on available Risk Assessment modeling, see the American Academy of Pediatrics, [FHIR Standards](https://services.aap.org/en/patient-care/oral-health/fhir-standards/) webpage.
 
 ### Patient Self-Management Goals
 

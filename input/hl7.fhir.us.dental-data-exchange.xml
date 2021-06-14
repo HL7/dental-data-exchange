@@ -3,12 +3,12 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7.fhir.us.dental-data-exchange"/>
     <meta>
-        <versionId value="361"/>
-        <lastUpdated value="2021-05-25T17:33:23.316+00:00"/>
-        <source value="#QTlmHFisIbsP6M19"/>
+        <versionId value="388"/>
+        <lastUpdated value="2021-06-14T16:55:10.443+00:00"/>
+        <source value="#WApq4dhDwZBXFdzN"/>
     </meta>
     <url value="http://hl7.org/fhir/us/dental-data-exchange/ImplementationGuide/hl7.fhir.us.dental-data-exchange"/>
-    <version value="0.1.0"/>
+    <version value="1.0.0"/>
     <name value="DentalDataExchange"/>
     <title value="Dental Data Exchange"/>
     <status value="draft"/>
@@ -31,11 +31,6 @@
     </jurisdiction>
     <packageId value="hl7.fhir.us.dental-data-exchange"/>
     <fhirVersion value="4.0.1"/>
-    <dependsOn id="hl7fhiruscore">
-        <uri value="http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core"/>
-        <packageId value="hl7.fhir.us.core"/>
-        <version value="3.1.1"/>
-    </dependsOn>
     <dependsOn id="ccda">
         <uri value="http://hl7.org/fhir/us/ccda/ImplementationGuide/hl7.fhir.us.ccda#1.1.0"/>
         <packageId value="hl7.fhir.us.ccda"/>
@@ -100,7 +95,7 @@
                 <display value="Dental Consult Note"/>
             </reference>
             <name value="Dental Consult Note"/>
-            <description value="This profile defines the Dental Consult Note profile. It contains the textual information regarding what was observed and performed by a general dentist or dental specialist in response to a dental referral as well as references to supplemental dental profiles for that referral. This Dental Consult Note is linked to its Dental Referral Note via the In-Fulfillment-Of extension reference to ServiceRequest."/>
+            <description value="This profile defines the Dental Consult Note. It contains the textual information regarding what was observed and performed by a general dentist or dental specialist in response to a dental referral as well as references to supplemental dental profiles for that referral. This Dental Consult Note is linked to its Dental Referral Note via the In-Fulfillment-Of extension reference to ServiceRequest."/>
             <exampleBoolean value="false"/>
             <groupingId value="dental-profiles"/>
         </resource>
@@ -130,7 +125,7 @@
                 <display value="DentalCommunication"/>
             </reference>
             <name value="Dental Communication"/>
-            <description value="This profile is used to convey verbal and written communication and education between providers, patients and other members of the care team."/>
+            <description value="This profile is used to convey verbal and written communication and education between providers, patients, and other members of the care team."/>
             <exampleBoolean value="false"/>
             <groupingId value="dental-profiles"/>
         </resource>
@@ -150,7 +145,7 @@
                 <display value="Dental Observation Codes"/>
             </reference>
             <name value="Dental Observation Codes ValueSet"/>
-            <description value="This ValueSet contains all ICD-9/10, CPT, CDT, LOINC codes, as well as the Clinical Findings (finding) concept from both Snomed and Snodent."/>
+            <description value="This ValueSet contains all ICD-9/10, CPT, CDT, LOINC codes, as well as the Clinical Findings (finding) concept from both SNOMED and SNODENT."/>
             <exampleBoolean value="false"/>
             <groupingId value="dental-terminologies"/>
         </resource>
@@ -160,7 +155,7 @@
                 <display value="Dental Anatomy"/>
             </reference>
             <name value="Dental Anatomy"/>
-            <description value="This is a dental anatomy ValueSet"/>
+            <description value="This is a dental anatomy ValueSet."/>
             <exampleBoolean value="false"/>
             <groupingId value="dental-terminologies"/>
         </resource>
@@ -170,7 +165,7 @@
                 <display value="Oral Cavity Area"/>
             </reference>
             <name value="Oral Cavity Area ValueSet"/>
-            <description value="This ValueSet contains codes for standard oral cavity areas of the mouth"/>
+            <description value="This ValueSet contains codes for standard oral cavity areas of the mouth."/>
             <exampleBoolean value="false"/>
             <groupingId value="dental-terminologies"/>
         </resource>

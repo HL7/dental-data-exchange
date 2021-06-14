@@ -3,14 +3,15 @@
     xmlns="http://hl7.org/fhir">
     <id value="tooth-identification-valueset"/>
     <meta>
-        <versionId value="1"/>
-        <lastUpdated value="2021-03-29T13:47:58.600+00:00"/>
-        <source value="#XSDSxn1MBDfBVtLI"/>
+        <versionId value="3"/>
+        <lastUpdated value="2021-06-11T13:01:44.644+00:00"/>
+        <source value="#qnAocHy0cVjNQzzZ"/>
     </meta>
     <url value="http://hl7.org/fhir/us/dental-data-exchange/ValueSet/tooth-identification-valueset"/>
     <name value="ToothIdentificationValueSet"/>
     <title value="Tooth Identification ValueSet"/>
     <status value="draft"/>
+    <description value="This ValueSet contains codes for associating information to a specific tooth, as defined in the [SNODENT](http://www.ada.org/snodent) dental notation system."/>
     <compose>
         <include>
             <system value="http://www.ada.org/snodent"/>
@@ -434,415 +435,415 @@
         <include>
             <system value="http://snomed.info/sct"/>
             <concept>
-                <code value="68085002"/>
+                <code value="245566003"/>
                 <display value="Permanent upper right third molar tooth"/>
             </concept>
             <concept>
-                <code value="7121006"/>
+                <code value="245567007"/>
                 <display value="Permanent upper right second molar tooth"/>
             </concept>
             <concept>
-                <code value="5140004"/>
+                <code value="245568002"/>
                 <display value="Permanent upper right first molar tooth"/>
             </concept>
             <concept>
-                <code value="36492000"/>
+                <code value="245570006"/>
                 <display value="Permanent upper right second premolar tooth"/>
             </concept>
             <concept>
-                <code value="57826002"/>
+                <code value="245571005"/>
                 <display value="Permanent upper right first premolar tooth"/>
             </concept>
             <concept>
-                <code value="80647007"/>
+                <code value="245572003"/>
                 <display value="Permanent upper right canine tooth"/>
             </concept>
             <concept>
-                <code value="11712009"/>
+                <code value="245574002"/>
                 <display value="Permanent upper right lateral incisor tooth"/>
             </concept>
             <concept>
-                <code value="22120004"/>
+                <code value="245575001"/>
                 <display value="Permanent upper right central incisor tooth"/>
             </concept>
             <concept>
-                <code value="31982000"/>
+                <code value="245587008"/>
                 <display value="Permanent upper left central incisor tooth"/>
             </concept>
             <concept>
-                <code value="25748002"/>
+                <code value="245586004"/>
                 <display value="Permanent upper left lateral incisor tooth"/>
             </concept>
             <concept>
-                <code value="72876007"/>
+                <code value="245584001"/>
                 <display value="Permanent upper left canine tooth"/>
             </concept>
             <concept>
-                <code value="61897005"/>
+                <code value="245583007"/>
                 <display value="Permanent upper left first premolar tooth"/>
             </concept>
             <concept>
-                <code value="23226009"/>
+                <code value="245582002"/>
                 <display value="Permanent upper left second premolar tooth"/>
             </concept>
             <concept>
-                <code value="23427002"/>
+                <code value="245579007"/>
                 <display value="Permanent upper left first molar tooth"/>
             </concept>
             <concept>
-                <code value="66303006"/>
+                <code value="245578004"/>
                 <display value="Permanent upper left second molar tooth"/>
             </concept>
             <concept>
-                <code value="87704003"/>
+                <code value="245577009"/>
                 <display value="Permanent upper left third molar tooth"/>
             </concept>
             <concept>
-                <code value="74344005"/>
+                <code value="245602006"/>
                 <display value="Permanent lower left third molar tooth"/>
             </concept>
             <concept>
-                <code value="48402004"/>
+                <code value="245603001"/>
                 <display value="Permanent lower left second molar tooth"/>
             </concept>
             <concept>
-                <code value="89625000"/>
+                <code value="245604007"/>
                 <display value="Permanent lower left first molar tooth"/>
             </concept>
             <concept>
-                <code value="24573005"/>
+                <code value="245606009"/>
                 <display value="Permanent lower left second premolar tooth"/>
             </concept>
             <concept>
-                <code value="2400006"/>
+                <code value="245607000"/>
                 <display value="Permanent lower left first premolar tooth"/>
             </concept>
             <concept>
-                <code value="39844006"/>
+                <code value="245608005"/>
                 <display value="Permanent lower left canine tooth"/>
             </concept>
             <concept>
-                <code value="77130001"/>
+                <code value="245610007"/>
                 <display value="Permanent lower left lateral incisor tooth"/>
             </concept>
             <concept>
-                <code value="113278005"/>
+                <code value="245611006"/>
                 <display value="Permanent lower left central incisor tooth"/>
             </concept>
             <concept>
-                <code value="15422005"/>
+                <code value="245600003"/>
                 <display value="Permanent lower right central incisor tooth"/>
             </concept>
             <concept>
-                <code value="82628004"/>
+                <code value="245599001"/>
                 <display value="Permanent lower right lateral incisor tooth"/>
             </concept>
             <concept>
-                <code value="47055002"/>
+                <code value="245597004"/>
                 <display value="Permanent lower right canine tooth"/>
             </concept>
             <concept>
-                <code value="80140008"/>
+                <code value="245596008"/>
                 <display value="Permanent lower right first premolar tooth"/>
             </concept>
             <concept>
-                <code value="8873007"/>
+                <code value="245595007"/>
                 <display value="Permanent lower right second premolar tooth"/>
             </concept>
             <concept>
-                <code value="28480000"/>
+                <code value="245592005"/>
                 <display value="Permanent lower right first molar tooth"/>
             </concept>
             <concept>
-                <code value="40005008"/>
+                <code value="245591003"/>
                 <display value="Permanent lower right second molar tooth"/>
             </concept>
             <concept>
-                <code value="38994002"/>
+                <code value="245590002"/>
                 <display value="Permanent lower right third molar tooth"/>
             </concept>
             <concept>
-                <code value="27855007"/>
+                <code value="245615002"/>
                 <display value="Primary upper right second molar tooth"/>
             </concept>
             <concept>
-                <code value="17505006"/>
+                <code value="245616001"/>
                 <display value="Primary upper right first molar tooth"/>
             </concept>
             <concept>
-                <code value="30618001"/>
+                <code value="245617005"/>
                 <display value="Primary upper right canine tooth"/>
             </concept>
             <concept>
-                <code value="65624003"/>
+                <code value="245619008"/>
                 <display value="Primary upper right lateral incisor tooth"/>
             </concept>
             <concept>
-                <code value="88824007"/>
+                <code value="245620002"/>
                 <display value="Primary upper right central incisor tooth"/>
             </concept>
             <concept>
-                <code value="51678005"/>
+                <code value="245627004"/>
                 <display value="Primary upper left central incisor tooth"/>
             </concept>
             <concept>
-                <code value="43622005"/>
+                <code value="245626008"/>
                 <display value="Primary upper left lateral incisor tooth"/>
             </concept>
             <concept>
-                <code value="73937000"/>
+                <code value="245624006"/>
                 <display value="Primary upper left canine tooth"/>
             </concept>
             <concept>
-                <code value="45234009"/>
+                <code value="245623000"/>
                 <display value="Primary upper left first molar tooth"/>
             </concept>
             <concept>
-                <code value="51943008"/>
+                <code value="245622005"/>
                 <display value="Primary upper left second molar tooth"/>
             </concept>
             <concept>
-                <code value="49330006"/>
+                <code value="245637009"/>
                 <display value="Primary lower left second molar tooth"/>
             </concept>
             <concept>
-                <code value="38896004"/>
+                <code value="245638004"/>
                 <display value="Primary lower left first molar tooth"/>
             </concept>
             <concept>
-                <code value="43281008"/>
+                <code value="245639007"/>
                 <display value="Primary lower left canine tooth"/>
             </concept>
             <concept>
-                <code value="14770005"/>
+                <code value="245641008"/>
                 <display value="Primary lower left lateral incisor tooth"/>
             </concept>
             <concept>
-                <code value="89552004"/>
+                <code value="245642001"/>
                 <display value="Primary lower left central incisor tooth"/>
             </concept>
             <concept>
-                <code value="67834006"/>
+                <code value="245635001"/>
                 <display value="Primary lower right central incisor tooth"/>
             </concept>
             <concept>
-                <code value="22445006"/>
+                <code value="245634002"/>
                 <display value="Primary lower right lateral incisor tooth"/>
             </concept>
             <concept>
-                <code value="6062009"/>
+                <code value="245632003"/>
                 <display value="Primary lower right canine tooth"/>
             </concept>
             <concept>
-                <code value="58646007"/>
+                <code value="245631005"/>
                 <display value="Primary lower right first molar tooth"/>
             </concept>
             <concept>
-                <code value="61868007"/>
+                <code value="245630006"/>
                 <display value="Primary lower right second molar tooth"/>
             </concept>
             <concept>
-                <code value="707029006"/>
+                <code value="2211000124103"/>
                 <display value="Supernumerary deciduous mandibular left canine tooth"/>
             </concept>
             <concept>
-                <code value="707021009"/>
+                <code value="2261000124100"/>
                 <display value="Supernumerary deciduous mandibular left central incisor tooth"/>
             </concept>
             <concept>
-                <code value="707030001"/>
+                <code value="2181000124102"/>
                 <display value="Supernumerary deciduous mandibular left first molar tooth"/>
             </concept>
             <concept>
-                <code value="707028003"/>
+                <code value="2171000124100"/>
                 <display value="Supernumerary deciduous mandibular left lateral incisor tooth"/>
             </concept>
             <concept>
-                <code value="707031002"/>
+                <code value="2241000124104"/>
                 <display value="Supernumerary deciduous mandibular left second molar tooth "/>
             </concept>
             <concept>
-                <code value="707023007"/>
+                <code value="2221000124106"/>
                 <display value="Supernumerary deciduous mandibular right canine tooth"/>
             </concept>
             <concept>
-                <code value="707025000"/>
+                <code value="2191000124104"/>
                 <display value="Supernumerary deciduous mandibular right central incisor tooth"/>
             </concept>
             <concept>
-                <code value="707022002"/>
+                <code value="2231000124109"/>
                 <display value="Supernumerary deciduous mandibular right first molar tooth"/>
             </concept>
             <concept>
-                <code value="707024001"/>
+                <code value="2201000124101"/>
                 <display value="Supernumerary deciduous mandibular right lateral incisor tooth"/>
             </concept>
             <concept>
-                <code value="707016006"/>
+                <code value="2361000124105"/>
                 <display value="Supernumerary deciduous maxillary left canine tooth"/>
             </concept>
             <concept>
-                <code value="707014009"/>
+                <code value="2351000124108"/>
                 <display value="Supernumerary deciduous maxillary left central incisor tooth"/>
             </concept>
             <concept>
-                <code value="707017002"/>
+                <code value="2331000124101"/>
                 <display value="Supernumerary deciduous maxillary left first molar tooth"/>
             </concept>
             <concept>
-                <code value="707015005"/>
+                <code value="2271000124107"/>
                 <display value="Supernumerary deciduous maxillary left lateral incisor tooth"/>
             </concept>
             <concept>
-                <code value="707018007"/>
+                <code value="2311000124107"/>
                 <display value="Supernumerary deciduous maxillary left second molar tooth"/>
             </concept>
             <concept>
-                <code value="707011001"/>
+                <code value="2291000124108"/>
                 <display value="Supernumerary deciduous maxillary right canine tooth"/>
             </concept>
             <concept>
-                <code value="707013003"/>
+                <code value="2301000124109"/>
                 <display value="Supernumerary deciduous maxillary right central incisor tooth"/>
             </concept>
             <concept>
-                <code value="707010000"/>
+                <code value="2321000124104"/>
                 <display value="Supernumerary deciduous maxillary right first molar tooth"/>
             </concept>
             <concept>
-                <code value="707012008"/>
+                <code value="2281000124105"/>
                 <display value="Supernumerary deciduous maxillary right lateral incisor tooth"/>
             </concept>
             <concept>
-                <code value="707009005"/>
+                <code value="2341000124106"/>
                 <display value="Supernumerary deciduous maxillary right second molar tooth"/>
             </concept>
             <concept>
-                <code value="707058009"/>
+                <code value="2441000124103"/>
                 <display value="Supernumerary permanent mandibular left canine tooth"/>
             </concept>
             <concept>
-                <code value="707060006"/>
+                <code value="2481000124109"/>
                 <display value="Supernumerary permanent mandibular left central incisor tooth"/>
             </concept>
             <concept>
-                <code value="707055007"/>
+                <code value="2431000124108"/>
                 <display value="Supernumerary permanent mandibular left first molar tooth"/>
             </concept>
             <concept>
-                <code value="707057004"/>
+                <code value="2451000124101"/>
                 <display value="Supernumerary permanent mandibular left first premolar tooth"/>
             </concept>
             <concept>
-                <code value="707059001"/>
+                <code value="2381000124100"/>
                 <display value="Supernumerary permanent mandibular left lateral incisor tooth"/>
             </concept>
             <concept>
-                <code value="707054006"/>
+                <code value="2371000124103"/>
                 <display value="Supernumerary permanent mandibular left second molar tooth"/>
             </concept>
             <concept>
-                <code value="707056008"/>
+                <code value="2471000124106"/>
                 <display value="Supernumerary permanent mandibular left second premolar tooth"/>
             </concept>
             <concept>
-                <code value="707052005"/>
+                <code value="2391000124102"/>
                 <display value="Supernumerary permanent mandibular left third molar tooth"/>
             </concept>
             <concept>
-                <code value="707063008"/>
+                <code value="2501000124104"/>
                 <display value="Supernumerary permanent mandibular right canine tooth"/>
             </concept>
             <concept>
-                <code value="707061005"/>
+                <code value="2511000124101"/>
                 <display value="Supernumerary permanent mandibular right central incisor tooth"/>
             </concept>
             <concept>
-                <code value="707066000"/>
+                <code value="2491000124107"/>
                 <display value="Supernumerary permanent mandibular right first molar tooth"/>
             </concept>
             <concept>
-                <code value="707064002"/>
+                <code value="2461000124104"/>
                 <display value="Supernumerary permanent mandibular right first premolar tooth"/>
             </concept>
             <concept>
-                <code value="707062003"/>
+                <code value="2521000124109"/>
                 <display value="Supernumerary permanent mandibular right lateral incisor tooth"/>
             </concept>
             <concept>
-                <code value="707067009"/>
+                <code value="2401000124100"/>
                 <display value="Supernumerary permanent mandibular right second molar tooth"/>
             </concept>
             <concept>
-                <code value="707065001"/>
+                <code value="2421000124105"/>
                 <display value="Supernumerary permanent mandibular right second premolar tooth"/>
             </concept>
             <concept>
-                <code value="707068004"/>
+                <code value="2411000124102"/>
                 <display value="Supernumerary permanent mandibular right third molar tooth"/>
             </concept>
             <concept>
-                <code value="707044007"/>
+                <code value="2611000124100"/>
                 <display value="Supernumerary permanent maxillary left canine tooth"/>
             </concept>
             <concept>
-                <code value="707042006"/>
+                <code value="2541000124102"/>
                 <display value="Supernumerary permanent maxillary left central incisor tooth"/>
             </concept>
             <concept>
-                <code value="707047000"/>
+                <code value="2661000124102"/>
                 <display value="Supernumerary permanent maxillary left first molar tooth"/>
             </concept>
             <concept>
-                <code value="707045008"/>
+                <code value="2641000124101"/>
                 <display value="Supernumerary permanent maxillary left first premolar tooth"/>
             </concept>
             <concept>
-                <code value="707043001"/>
+                <code value="2651000124104"/>
                 <display value="Supernumerary permanent maxillary left lateral incisor tooth"/>
             </concept>
             <concept>
-                <code value="707048005"/>
+                <code value="2621000124108"/>
                 <display value="Supernumerary permanent maxillary left second molar tooth"/>
             </concept>
             <concept>
-                <code value="707046009"/>
+                <code value="2681000124107"/>
                 <display value="Supernumerary permanent maxillary left second premolar tooth"/>
             </concept>
             <concept>
-                <code value="707049002"/>
+                <code value="2581000124108"/>
                 <display value="Supernumerary permanent maxillary left third molar tooth"/>
             </concept>
             <concept>
-                <code value="707038008"/>
+                <code value="2601000124103"/>
                 <display value="Supernumerary permanent maxillary right canine tooth"/>
             </concept>
             <concept>
-                <code value="707041004"/>
+                <code value="2551000124100"/>
                 <display value="Supernumerary permanent maxillary right central incisor tooth"/>
             </concept>
             <concept>
-                <code value="707035006"/>
+                <code value="2591000124106"/>
                 <display value="Supernumerary permanent maxillary right first molar tooth"/>
             </concept>
             <concept>
-                <code value="707037003"/>
+                <code value="2671000124109"/>
                 <display value="Supernumerary permanent maxillary right first premolar tooth"/>
             </concept>
             <concept>
-                <code value="707039000"/>
+                <code value="2571000124105"/>
                 <display value="Supernumerary permanent maxillary right lateral incisor tooth"/>
             </concept>
             <concept>
-                <code value="707033004"/>
+                <code value="2631000124106"/>
                 <display value="Supernumerary permanent maxillary right second molar tooth"/>
             </concept>
             <concept>
-                <code value="707036007"/>
+                <code value="2561000124103"/>
                 <display value="Supernumerary permanent maxillary right second premolar tooth"/>
             </concept>
             <concept>
-                <code value="707032009"/>
+                <code value="2531000124107"/>
                 <display value="Supernumerary permanent maxillary right third molar tooth"/>
             </concept>
         </include>

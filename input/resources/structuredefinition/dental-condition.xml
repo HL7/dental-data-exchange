@@ -3,16 +3,16 @@
     xmlns="http://hl7.org/fhir">
     <id value="dental-condition"/>
     <meta>
-        <versionId value="26"/>
-        <lastUpdated value="2021-04-27T21:59:38.133+00:00"/>
-        <source value="#aBfJ18aTzcykewmd"/>
+        <versionId value="27"/>
+        <lastUpdated value="2021-06-11T12:44:53.672+00:00"/>
+        <source value="#Q7PwsSgW7U1P5p0I"/>
     </meta>
     <url value="http://hl7.org/fhir/us/dental-data-exchange/StructureDefinition/dental-condition"/>
     <version value="0.1.0"/>
     <name value="DentalCondition"/>
     <title value="Dental Condition"/>
     <status value="active"/>
-    <description value="This profile specifies a 'dental' slice on Condition category. It also constrains bodySite and evidence to MustSupport. Providing evidence (i.e. point-in-time Observations) in support of longitudinal Conditions is highly encouraged. "/>
+    <description value="This profile specifies a 'dental' slice on Condition category. It also constrains bodySite and evidence to MustSupport. Providing evidence (i.e., point-in-time Observations) in support of longitudinal Conditions is highly encouraged. "/>
     <fhirVersion value="4.0.1"/>
     <kind value="resource"/>
     <abstract value="false"/>

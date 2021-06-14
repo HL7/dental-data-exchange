@@ -15,7 +15,18 @@
 			"desc": "Ballot for STU Release 1",
 			"fhirversion": "4.0.1",
 			"status": "ballot",
-			"sequence": "STU1"
+			"sequence": "STU1",
+			"current": false
+		},
+		{
+			"version": "1.0.0",
+			"current": true,
+			"desc": "STU 1 Published version (permanent home). ",
+			"path": "http://hl7.org/fhir/us/ccda/STU1",
+			"fhirversion": "4.0.1",
+			"date": "2021-06-09",
+			"sequence": "STU1",
+			"status": "trial-use"
 		}
 	],
 	"package-id": "hl7.fhir.us.dental-data-exchange",

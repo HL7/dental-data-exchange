@@ -697,9 +697,21 @@ This table is the crosswalk mapping of all teeth in SNOMED-CT and SNODENT.
 
 ### Imaging Results Example Code
 
-Results Description Value / Unit Interpretation Reference Range   Chest X-RAY 2 views   Performed on 02-25-2015 9:10a   Chest X-Ray 2 Views   The lungs are clear. The heart is enlarged with evidence of cardiomegaly. Pulmonary vasculature is normal. The aorta is mildly ectatic and tortuous. IMPRESSION: Cardiomegaly. No other acute abnormality.   Electronically signed: Hermione Seaven, MD 02-25-2015 10:32a
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-color:black;border-style:solid;border-width:1px; overflow:hidden;padding:0px 3px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px; font-weight:normal;overflow:hidden;padding:0px 3px;word-break:normal;}
+.tg .tg-0lax{text-align:left;vertical-align:top}
+</style>
+<table class="tg">
+<thead>
+  <tr>
+    <th class="tg-0lax">Results Description Value / Unit Interpretation Reference Range   Chest X-RAY 2 views   Performed on 02-25-2015 9:10a   Chest X-Ray 2 Views   The lungs are clear. The heart is enlarged with evidence of cardiomegaly. Pulmonary vasculature is normal. The aorta is mildly ectatic and tortuous. IMPRESSION: Cardiomegaly. No other acute abnormality.   Electronically signed: Hermione Seaven, MD 02-25-2015 10:32a </th>
+  </tr>
+</thead>
+</table>
 
-<div>
+```
 <section>
   <templateId root="2.16.840.1.113883.10.20.22.2.3.1"/>
   <templateId root="2.16.840.1.113883.10.20.22.2.3.1" extension="2015-08-01"/>
@@ -746,7 +758,8 @@ Results Description Value / Unit Interpretation Reference Range   Chest X-RAY 2 
       <templateId root="2.16.840.1.113883.10.20.22.4.1" extension="2015-08-01"/>
       <!-- Results Organizer -->
       <id root="e1aa44dd-6f39-4f5c-b267-897c3821b563"/>
-      <code code="71020" displayName="Chest X-Ray 2 Views" codeSystem="2.16.840.1.113883.6.12" codeSystemName="CPT"/>
+      <code code="71020" displayName="Chest X-Ray 2 Views" 
+codeSystem="2.16.840.1.113883.6.12" codeSystemName="CPT"/>
       <statusCode code="completed"/>
       <!-- an organizer/effectiveTime value="20150225091059-0500" could be used but is not required -->
       <component>
@@ -755,24 +768,28 @@ Results Description Value / Unit Interpretation Reference Range   Chest X-RAY 2 
           <templateId root="2.16.840.1.113883.10.20.22.4.2" extension="2015-08-01"/>
           <!-- Results Observation -->
           <id root="e1aa44dd-6f39-2f5c-b267-897c3824b563"/>
-          <code code="36643-5" displayName="Chest X-ray 2 Views" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC">
-            <!-- a translation code may be helpful and used by some EHRs to denote that this is a textual response of result impression -->
+          <code code="36643-5" displayName="Chest X-ray 2 Views" 
+codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC">
+            <!-- a translation code may be helpful and used by some EHRs to denote that this is
+ a textual response of result impression -->
           </code>
           <text>
             <reference value="#Result1"/>
           </text>
           <statusCode code="completed"/>
-          <!-- This is the timestamp of biologically relevance (i.e., when chest x-ray was performed), aligning with HL7 v3 modeling. -->
+          <!-- This is the timestamp of biologically relevance (i.e. when chest x-ray was performed), 
+aligning with HL7 v3 modeling. -->
           <effectiveTime value="20150225091059-0500"/>
           <value xsi:type="ED">
             <reference value="#Result1OriginalText" />
           </value>
           <author>
-            <!-- This is the timestamp of when the author (i.e., the radiologist) interpreted the chest x-ray-->
+            <!-- This is the timestamp of when the author (i.e. the radiologist) interepreted the chest x-ray-->
             <time value="20150225103206-0500"/>
             <assignedAuthor>
               <id extension="66666" root="2.16.840.1.113883.4.6"/>
-              <code code="111NR0200X" codeSystem="2.16.840.1.113883.6.101" codeSystemName="NUCC" displayName="Radiology"/>
+              <code code="111NR0200X" codeSystem="2.16.840.1.113883.6.101" 
+     codeSystemName="NUCC" displayName="Radiology"/>
               <addr>
                 <streetAddressLine>6666 StreetName St.</streetAddressLine>
                 <city>Silver Spring</city>
@@ -795,4 +812,4 @@ Results Description Value / Unit Interpretation Reference Range   Chest X-RAY 2 
     </organizer>
   </entry>
 </section>
-</div>
+```

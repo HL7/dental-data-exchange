@@ -3,16 +3,16 @@
     xmlns="http://hl7.org/fhir">
     <id value="dental-consult-note"/>
     <meta>
-        <versionId value="6"/>
-        <lastUpdated value="2021-04-30T17:00:15.052+00:00"/>
-        <source value="#sS3hegyeAAHRZMbK"/>
+        <versionId value="10"/>
+        <lastUpdated value="2021-06-11T12:50:39.443+00:00"/>
+        <source value="#DzCmkEwXpIpVGtbg"/>
     </meta>
     <url value="http://hl7.org/fhir/us/dental-data-exchange/StructureDefinition/dental-consult-note"/>
     <version value="0.0.1"/>
     <name value="DentalConsultNote"/>
     <title value="Dental Consult Note"/>
     <status value="active"/>
-    <description value="This Profile defines the Dental Consult Note profile. It contains the textual information regarding what was observed and performed by a general dentist or dental specialist in response to a dental referral as well as references to supplemental dental profiles for that referral. This Consult Note is linked to its Referral via the In-Fulfillment-Of extension reference to ServiceRequest. "/>
+    <description value="This profile defines the Dental Consult Note. It contains the textual information regarding what was observed and performed by a general dentist or dental specialist in response to a dental referral as well as references to supplemental dental profiles for that referral. This Dental Consult Note is linked to its Dental Referral Note via the In-Fulfillment-Of extension reference to ServiceRequest. "/>
     <fhirVersion value="4.0.1"/>
     <mapping>
         <identity value="workflow"/>
@@ -48,12 +48,13 @@
         <element id="Composition">
             <path value="Composition"/>
         </element>
-        <element id="Composition.extension:order_extension/dental">
+        <element id="Composition.extension:order_extension">
             <path value="Composition.extension"/>
-            <sliceName value="order_extension/dental"/>
-            <label value="authorization"/>
-            <short value="authorization"/>
-            <mustSupport value="true"/>
+            <sliceName value="order_extension"/>
+            <type>
+                <code value="Extension"/>
+                <targetProfile value="http://hl7.org/fhir/us/dental-data-exchange/dental-servicerequest"/>
+            </type>
         </element>
         <element id="Composition.type">
             <path value="Composition.type"/>
@@ -85,6 +86,10 @@
         <element id="Composition.section:problem_section.entry">
             <path value="Composition.section.entry"/>
             <slicing>
+                <discriminator>
+                    <type value="profile"/>
+                    <path value="resolve()"/>
+                </discriminator>
                 <rules value="open"/>
             </slicing>
         </element>

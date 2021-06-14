@@ -3,15 +3,15 @@
     xmlns="http://hl7.org/fhir">
     <id value="dental-referral-note"/>
     <meta>
-        <versionId value="3"/>
-        <lastUpdated value="2021-04-27T16:37:29.185+00:00"/>
-        <source value="#nV4iMOINF5IpWfmd"/>
+        <versionId value="7"/>
+        <lastUpdated value="2021-06-11T13:40:05.395+00:00"/>
+        <source value="#EGva3uhB2cC5XYE6"/>
     </meta>
     <url value="http://hl7.org/fhir/us/dental-data-exchange/StructureDefinition/dental-referral-note"/>
     <name value="DentalReferralNote"/>
     <title value="Dental Referral Note"/>
     <status value="active"/>
-    <description value="This Profile defines the Dental Referral Note profile. It contains the textual information regarding a referral to a general dentist or dental specialist as well as references to supplemental dental profiles for the referral"/>
+    <description value="This profile defines the Dental Referral Note. It contains the textual information regarding a referral to a general dentist or dental specialist as well as references to supplemental dental profiles for the referral."/>
     <fhirVersion value="4.0.1"/>
     <mapping>
         <identity value="workflow"/>
@@ -65,6 +65,10 @@
         <element id="Composition.section:problem_section.entry">
             <path value="Composition.section.entry"/>
             <slicing>
+                <discriminator>
+                    <type value="profile"/>
+                    <path value="resolve()"/>
+                </discriminator>
                 <rules value="open"/>
             </slicing>
         </element>

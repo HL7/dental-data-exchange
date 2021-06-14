@@ -1,1 +1,1 @@
-This profile is based on the CCDAonFHIR Referral note
+This profile is based on the C-CDA on FHIR Referral Note.

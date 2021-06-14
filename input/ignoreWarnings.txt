@@ -36,6 +36,7 @@ Unknown Code http://www.ada.org/snodent#126488D in http://www.ada.org/snodent - 
 Unknown Code http://www.ada.org/snodent#131687D in http://www.ada.org/snodent - note that the code system is labelled as a fragment, so the code may be valid in some other fragment for 'http://www.ada.org/snodent#131687D'
 Unknown Code http://www.ada.org/snodent#131687D in http://www.ada.org/snodent - note that the code system is labelled as a fragment, so the code may be valid in some other fragment
 Unknown Code http://www.ada.org/snodent#209670D in http://www.ada.org/snodent - note that the code system is labelled as a fragment, so the code may be valid in some other fragment for 'http://www.ada.org/snodent#209670D'
+Unknown Code http://www.ada.org/snodent#175027D in http://www.ada.org/snodent - note that the code system is labelled as a fragment, so the code may be valid in some other fragment
 #Not resolving fullUrl for Bundle entries for pre-published (build.fhir.org) site:
 URL value 'http://hl7.org/fhir/us/dental-data-exchange/Composition/Med-2-Dental-Referral' does not resolve
 URL value 'http://hl7.org/fhir/us/dental-data-exchange/Patient/example-dental' does not resolve
@@ -68,3 +69,8 @@ URL value 'http://hl7.org/fhir/us/dental-data-exchange/Observation/heart-rate' d
 URL value 'http://hl7.org/fhir/us/dental-data-exchange/Observation/blood-pressure' does not resolve
 URL value 'http://hl7.org/fhir/us/dental-data-exchange/Observation/body-temperature' does not resolve
 URL value 'http://hl7.org/fhir/us/dental-data-exchange/Coverage/Dental-Aetna' does not resolve
+#Clinical Document type in VSAC: https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.11.20.9.31/expansion/Latest
+ValueSet https://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.11.20.9.31 not found by validator
+# CPT codes
+[Unable to determine whether the provided codes are in the value set http://hl7.org/fhir/us/core/ValueSet/us-core-encounter-type because the value set or code system is not known to the validator]
+[Unable to determine whether the provided codes are in the value set http://hl7.org/fhir/us/core/ValueSet/us-core-medication-codes because the value set or code system is not known to the validator]
