@@ -3,15 +3,15 @@
     xmlns="http://hl7.org/fhir">
     <id value="dental-findings"/>
     <meta>
-        <versionId value="28"/>
-        <lastUpdated value="2021-06-11T12:44:22.064+00:00"/>
-        <source value="#zqSZ58n4f34x2ISP"/>
+        <versionId value="29"/>
+        <lastUpdated value="2021-06-16T16:47:30.253+00:00"/>
+        <source value="#PbhzxvFsBC4qsuqt"/>
     </meta>
     <url value="http://hl7.org/fhir/us/dental-data-exchange/StructureDefinition/dental-findings"/>
     <name value="DentalFindings"/>
     <title value="Dental Findings"/>
     <status value="active"/>
-    <description value="This profile is used to convey point-in-time oral findings including findings of an odontogram, periodontal assessment, tooth-specific measurement, intraoral or extraoral soft tissue exam, TMJ, TMD, or occlusion assessment. Findings in this profile often support associated Dental Conditions/Problems. See [this](https://jira.hl7.org/browse/FHIR-26904) discussion for greater compare and contrast of FHIR Observations and Conditions. &#xA;&#xA;As multiple tooth surfaces, tooth numbers, and oral cavity areas may be applicable for a single observation, yet only a single Observation.bodySite is allowed, see SNOMED CT [Composition Grammar Syntax](http://hl7.org/fhir/snomedct.html#4.3.1.0.5) for correct use of post-coordinated concepts. "/>
+    <description value="This profile is used to convey point-in-time oral findings including findings of an odontogram, periodontal assessment, tooth-specific measurement, intraoral or extraoral soft tissue exam, TMJ, TMD, or occlusion assessment. Findings in this profile often support associated Dental Conditions/Problems. See the FHIR base resource descriptions for comparisons of [Condition](https://www.hl7.org/fhir/condition.html) and [Observation](https://www.hl7.org/fhir/observation.html).&#xA;&#xA;As multiple tooth surfaces, tooth numbers, and oral cavity areas may be applicable for a single observation, yet only a single Observation.bodySite is allowed, see SNOMED CT [Composition Grammar Syntax](http://hl7.org/fhir/snomedct.html#4.3.1.0.5) for correct use of post-coordinated concepts. "/>
     <fhirVersion value="4.0.1"/>
     <mapping>
         <identity value="workflow"/>

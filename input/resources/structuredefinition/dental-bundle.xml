@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="dental-bundle"/>
     <meta>
-        <versionId value="12"/>
-        <lastUpdated value="2021-06-11T12:38:12.729+00:00"/>
-        <source value="#MfQZnVsyAs7OLhMZ"/>
+        <versionId value="17"/>
+        <lastUpdated value="2021-06-24T18:26:04.130+00:00"/>
+        <source value="#XU6t22Rn3rgQGuM9"/>
     </meta>
     <url value="http://hl7.org/fhir/us/dental-data-exchange/StructureDefinition/dental-bundle"/>
     <name value="DentalBundle"/>
@@ -27,7 +27,7 @@
             <slicing>
                 <discriminator>
                     <type value="profile"/>
-                    <path value="resolve()"/>
+                    <path value="$this.resource"/>
                 </discriminator>
                 <rules value="open"/>
             </slicing>
@@ -38,17 +38,14 @@
             <sliceName value="composition"/>
             <min value="1"/>
             <max value="1"/>
-            <type>
-                <code value="BackboneElement"/>
-            </type>
         </element>
         <element id="Bundle.entry:composition.resource">
             <path value="Bundle.entry.resource"/>
             <min value="1"/>
             <type>
                 <code value="Resource"/>
-                <targetProfile value="http://hl7.org/fhir/us/dental-data-exchange/StructureDefinition/dental-referral-note"/>
-                <targetProfile value="http://hl7.org/fhir/us/dental-data-exchange/StructureDefinition/dental-consult-note"/>
+                <profile value="http://hl7.org/fhir/us/dental-data-exchange/StructureDefinition/dental-referral-note"/>
+                <profile value="http://hl7.org/fhir/us/dental-data-exchange/StructureDefinition/dental-consult-note"/>
             </type>
         </element>
     </differential>

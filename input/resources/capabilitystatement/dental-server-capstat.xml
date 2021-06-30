@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="dental-server-capstat"/>
     <meta>
-        <versionId value="9"/>
-        <lastUpdated value="2021-04-30T03:02:55.319+00:00"/>
-        <source value="#j8zXpCh5eRv1UzPC"/>
+        <versionId value="10"/>
+        <lastUpdated value="2021-06-14T17:11:00.307+00:00"/>
+        <source value="#NwSSPylHexQ2cWPr"/>
     </meta>
     <url value="http://hl7.org/fhir/us/dental-data-exchange/CapabilityStatement/dental-server-capstat"/>
     <version value="0.1.0"/>
@@ -36,7 +36,7 @@
             <value value="rick.geimer@lantanagroup.com"/>
         </telecom>
     </contact>
-    <description value="This section describes the expected capabilities of the Dental Data Exchange Document Source (aka server) actor which is responsible for responding to queries for clinical documents provided by Dental Data Exchange Document Consumer (aka client) actors. This CapabilityStatement imports and extends [CCDAonFHIR-server CapabilityStatement](http://hl7.org/fhir/us/ccda/CapabilityStatement/CcdaOnFhirServer.html), which imports and extends the [us-core-server CapabilityStatement](https://www.hl7.org/fhir/us/core/CapabilityStatement-us-core-server.html)"/>
+    <description value="This section describes the expected capabilities of the Dental Data Exchange Document Source (aka server) actor which is responsible for responding to queries for clinical documents provided by Dental Data Exchange Document Consumer (aka client) actors. This CapabilityStatement imports and extends [CCDAonFHIR-server CapabilityStatement](http://hl7.org/fhir/us/ccda/CapabilityStatement-CcdaOnFhirServer.html), which imports and extends the [us-core-server CapabilityStatement](https://www.hl7.org/fhir/us/core/CapabilityStatement-us-core-server.html)"/>
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>

@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="dental-consult-note"/>
     <meta>
-        <versionId value="10"/>
-        <lastUpdated value="2021-06-11T12:50:39.443+00:00"/>
-        <source value="#DzCmkEwXpIpVGtbg"/>
+        <versionId value="13"/>
+        <lastUpdated value="2021-06-14T21:27:17.756+00:00"/>
+        <source value="#DcghjODy13L7ALn9"/>
     </meta>
     <url value="http://hl7.org/fhir/us/dental-data-exchange/StructureDefinition/dental-consult-note"/>
     <version value="0.0.1"/>
@@ -51,10 +51,7 @@
         <element id="Composition.extension:order_extension">
             <path value="Composition.extension"/>
             <sliceName value="order_extension"/>
-            <type>
-                <code value="Extension"/>
-                <targetProfile value="http://hl7.org/fhir/us/dental-data-exchange/dental-servicerequest"/>
-            </type>
+            <short value="Type: http://hl7.org/fhir/us/dental-data-exchange/dental-servicerequest"/>
         </element>
         <element id="Composition.type">
             <path value="Composition.type"/>

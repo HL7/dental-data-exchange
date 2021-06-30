@@ -71,6 +71,10 @@ URL value 'http://hl7.org/fhir/us/dental-data-exchange/Observation/body-temperat
 URL value 'http://hl7.org/fhir/us/dental-data-exchange/Coverage/Dental-Aetna' does not resolve
 #Clinical Document type in VSAC: https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.11.20.9.31/expansion/Latest
 ValueSet https://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.11.20.9.31 not found by validator
-# CPT codes
+# Terminology Integration issues
 [Unable to determine whether the provided codes are in the value set http://hl7.org/fhir/us/core/ValueSet/us-core-encounter-type because the value set or code system is not known to the validator]
 [Unable to determine whether the provided codes are in the value set http://hl7.org/fhir/us/core/ValueSet/us-core-medication-codes because the value set or code system is not known to the validator]
+ValueSet https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7186 not found by validator
+Binding https://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.11.20.9.31 could not be located
+The valueSet reference https://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.11.20.9.31 on element Composition.type could not be resolved
+Error from server: The filter "concept descendent-of 165877D" was not understood in the context of http://www.ada.org/snodent

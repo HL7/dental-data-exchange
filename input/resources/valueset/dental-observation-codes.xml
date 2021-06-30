@@ -3,15 +3,15 @@
     xmlns="http://hl7.org/fhir">
     <id value="dental-observation-codes"/>
     <meta>
-        <versionId value="22"/>
-        <lastUpdated value="2021-04-26T20:23:55.459+00:00"/>
-        <source value="#TiYMoprnDV9TlswY"/>
+        <versionId value="23"/>
+        <lastUpdated value="2021-06-16T17:05:00.756+00:00"/>
+        <source value="#W56buL2lFNklULuL"/>
     </meta>
     <url value="http://hl7.org/fhir/us/dental-data-exchange/ValueSet/dental-observation-codes"/>
     <name value="DentalObservationCodes"/>
     <title value="Dental Observation Codes"/>
     <status value="draft"/>
-    <description value="This is an intensional ValueSet composed of all Snomed CT and Snodent concepts underneath 'Clinical Findings' or 'Situation with explcit context'. "/>
+    <description value="This is an intensional ValueSet composed of all SNOMED CT and SNODENT concepts underneath 'Clinical Findings' or 'Situation with explicit context'. "/>
     <compose>
         <include>
             <system value="http://www.ada.org/snodent"/>

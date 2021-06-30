@@ -18,7 +18,7 @@ The project uses the ADA 1084 as the authoritative reference for dental data inc
 
 Use cases can bridge understanding between conceptual interpretations and technical implementation of this guide. Four use cases were tested at the May 2020 FHIR Connectathon: Dental Summary Exchange Track, and further refined by the project. 
 
-The use cases outlined in this IG show the complexity of the information that can be exchanged between a dental and medical system or two dental systems. Fully-formed XML sample files representing the data included in each of these scenarios are published with this implementation guide. Additional use cases are available on the [CareQuest Institute website](https://www.carequest.org/health-improvement-programs/care-coordination/use-case-scenarios).
+The use cases outlined in this IG show the complexity of the information that can be exchanged between a dental and medical system or two dental systems. Fully-formed XML sample files representing the data included in each of these scenarios are published with this implementation guide. Additional use cases are available on the [CareQuest Institute website](https://www.carequest.org/care-coordination-cases).
 
 The figure below represents the high-level workflow described across Scenarios 1 (Medical to Dental Referral Note) and 2 (Dental to Medical Consultation Note).
 

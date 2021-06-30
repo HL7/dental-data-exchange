@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7.fhir.us.dental-data-exchange"/>
     <meta>
-        <versionId value="388"/>
-        <lastUpdated value="2021-06-14T16:55:10.443+00:00"/>
-        <source value="#WApq4dhDwZBXFdzN"/>
+        <versionId value="392"/>
+        <lastUpdated value="2021-06-30T14:57:47.259+00:00"/>
+        <source value="#brlHv2geugFrgVWU"/>
     </meta>
     <url value="http://hl7.org/fhir/us/dental-data-exchange/ImplementationGuide/hl7.fhir.us.dental-data-exchange"/>
     <version value="1.0.0"/>
@@ -20,7 +20,7 @@
             <value value="http://www.hl7.org/Special/committees/claims"/>
         </telecom>
     </contact>
-    <description value="This implementation guide provides HL7 FHIR resources to define standards for bi-directional information exchange between a medical and a dental provider or between dental providers. This publication provides the data model, defined data items and their corresponding code and value sets specific to a dental referral note and dental consultation note. This guide describes constraints on the [C-CDA on FHIR](http://www.hl7.org/fhir/us/ccda/) header and body elements for dental information, which are derived from requirements developed by the Dental Summary Exchange Project of the Health Level Seven (HL7) Payer/Provider Information Exchange Work Group (PIE WG). Resources in this US Realm implementation guide are specific to dental referral and consultation notes for exchange and interoperability among dental providers and with medical providers.&#xA;&#xA;This guide contains a library of FHIR profiles and is compliant with FHIR Release 4. At a minimum, a document bundle (C-CDA on FHIR Referral Note or Consultation Note) will be exchanged along with a ServiceRequest, Patient, and associated medical and dental information. This guide specifies how and where these resources are included within the C-CDA on FHIR profiles. &#xA;&#xA;This guide defines 7 new profiles:&#xA;* Dental Bundle&#xA;* Dental Referral Note&#xA;* Dental Service Request&#xA;* Dental Consult Note&#xA;* Dental Condition&#xA;* Dental Finding&#xA;* Dental Communication	&#xA;&#xA;All proprietary documents, guides, guidance, standards, codes, and values contained herein remain the property of their respective Standards Developing Organization (SDO). HL7 does not make any claim to ownership herein.&#xA;&#xA;This HL7 FHIR® R4 Implementation Guide: Dental Data Exchange is developed in parallel to the HL7 CDA® R2 Implementation Guide: Dental Data Exchange.&#xA;&#xA;"/>
+    <description value="This implementation guide provides HL7 FHIR resources to define standards for bi-directional information exchange between a medical and a dental provider or between dental providers. This publication provides the data model, defined data items and their corresponding code and value sets specific to a dental referral note and dental consultation note. This guide describes constraints on the [C-CDA on FHIR](http://www.hl7.org/fhir/us/ccda/) header and body elements for dental information, which are derived from requirements developed by the Dental Summary Exchange Project of the Health Level Seven (HL7) Payer/Provider Information Exchange Work Group (PIE WG). Resources in this US Realm implementation guide are specific to dental referral and consultation notes for exchange and interoperability among dental providers and with medical providers.&#xA;&#xA;This guide contains a library of FHIR profiles and is compliant with FHIR Release 4. At a minimum, a document bundle (C-CDA on FHIR Referral Note or Consultation Note) will be exchanged along with a ServiceRequest, Patient, and associated medical and dental information. This guide specifies how and where these resources are included within the C-CDA on FHIR profiles. &#xA;&#xA;This guide defines 7 new profiles:&#xA;* Dental Bundle&#xA;* Dental Referral Note&#xA;* Dental Service Request&#xA;* Dental Consult Note&#xA;* Dental Condition&#xA;* Dental Finding&#xA;* Dental Communication	&#xA;&#xA;All proprietary documents, guides, guidance, standards, codes, and values contained herein remain the property of their respective Standards Developing Organization (SDO). HL7 does not make any claim to ownership herein.&#xA;&#xA;This HL7 FHIR® R4 Implementation Guide: Dental Data Exchange is developed in parallel to the HL7 CDA® R2 Implementation Guide: Dental Data Exchange.&#xA;"/>
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -758,7 +758,7 @@
                 <display value="Dental Data Exchange Server"/>
             </reference>
             <name value="Dental Data Exchange Server"/>
-            <description value="This section describes the expected capabilities of the Dental Data Exchange Document Source (aka server) actor which is responsible for responding to queries for clinical documents provided by Dental Data Exchange Document Consumer (aka client) actors. This CapabilityStatement imports and extends [CCDAonFHIR-server CapabilityStatement](http://hl7.org/fhir/us/ccda/CapabilityStatement/CcdaOnFhirServer.html), which imports and extends the [us-core-server CapabilityStatement](https://www.hl7.org/fhir/us/core/CapabilityStatement-us-core-server.html)"/>
+            <description value="This section describes the expected capabilities of the Dental Data Exchange Document Source (aka server) actor which is responsible for responding to queries for clinical documents provided by Dental Data Exchange Document Consumer (aka client) actors. This CapabilityStatement imports and extends [CCDAonFHIR-server CapabilityStatement](http://hl7.org/fhir/us/ccda/CapabilityStatement-CcdaOnFhirServer.html), which imports and extends the [us-core-server CapabilityStatement](https://www.hl7.org/fhir/us/core/CapabilityStatement-us-core-server.html)"/>
             <exampleBoolean value="false"/>
         </resource>
         <resource>
@@ -767,7 +767,7 @@
                 <display value="Dental Data Exchange Client"/>
             </reference>
             <name value="Dental Data Exchange Client"/>
-            <description value="This section describes the expected capabilities of the Dental Data Exchange Document Consumer (aka client) actor which is responsible for creating and initiating the queries for clinical documents provided by a Dental Data Exchange Document Source (aka server) actors. This CapabilityStatement imports and extends [CCDAonFHIR-client CapabilityStatement](http://hl7.org/fhir/us/ccda/CapabilityStatement/CcdaOnFhirClient.html)CCDAonFHIR client CapabilityStatement, which imports and extends the [us-core-client CapabilityStatement](https://www.hl7.org/fhir/us/core/CapabilityStatement-us-core-client.html)"/>
+            <description value="This section describes the expected capabilities of the Dental Data Exchange Document Consumer (aka client) actor which is responsible for creating and initiating the queries for clinical documents provided by a Dental Data Exchange Document Source (aka server) actors. This CapabilityStatement imports and extends [CCDAonFHIR-client CapabilityStatement](http://hl7.org/fhir/us/ccda/CapabilityStatement-CcdaOnFhirClient.html)CCDAonFHIR client CapabilityStatement, which imports and extends the [us-core-client CapabilityStatement](https://www.hl7.org/fhir/us/core/CapabilityStatement-us-core-client.html)"/>
             <exampleBoolean value="false"/>
         </resource>
         <page>
