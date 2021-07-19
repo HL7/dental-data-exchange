@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Parameters
+    xmlns="http://hl7.org/fhir">
+    <id value="dental-terminology-settings"/>
+    <meta>
+        <versionId value="2"/>
+        <lastUpdated value="2021-07-16T22:00:33.508+00:00"/>
+        <source value="#ltyXqm0YQRtsrCZI"/>
+    </meta>
+    <parameter>
+        <name value="system-version"/>
+        <valueUri value="http://snomed.info/sct|http://snomed.info/sct/731000124108"/>
+    </parameter>
+</Parameters>

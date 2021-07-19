@@ -3,15 +3,16 @@
     xmlns="http://hl7.org/fhir">
     <id value="dental-reason-for-referral"/>
     <meta>
-        <versionId value="12"/>
-        <lastUpdated value="2021-06-11T13:13:49.264+00:00"/>
-        <source value="#iPjRkddxArQWoMNL"/>
+        <versionId value="15"/>
+        <lastUpdated value="2021-07-19T16:08:39.333+00:00"/>
+        <source value="#MmL7qsaf7XO0rR5c"/>
     </meta>
     <url value="http://hl7.org/fhir/us/dental-data-exchange/ValueSet/dental-reason-for-referral"/>
     <name value="DentalReasonForReferral"/>
     <title value="DentalReasonForReferral"/>
     <status value="draft"/>
-    <description value="This ValueSet contains coded prominent reasons for referral between medical and dental care settings."/>
+    <description value="This ValueSet contains coded prominent reasons for referral between medical and dental care settings or between dental care settings."/>
+    <copyright value="This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement"/>
     <compose>
         <include>
             <system value="http://snomed.info/sct"/>

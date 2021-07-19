@@ -3,10 +3,10 @@
     xmlns="http://hl7.org/fhir">
     <id value="respiratory-rate"/>
     <meta>
-        <versionId value="5"/>
-        <lastUpdated value="2021-03-09T19:22:48.090+00:00"/>
-        <source value="#vs92wMVjGftjYYHy"/>
-        <profile value="http://hl7.org/fhir/StructureDefinition/resprate"/>
+        <versionId value="7"/>
+        <lastUpdated value="2021-07-16T00:43:24.796+00:00"/>
+        <source value="#EcWTwT8MFOX9PINM"/>
+        <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-respiratory-rate"/>
     </meta>
     <status value="final"/>
     <category>

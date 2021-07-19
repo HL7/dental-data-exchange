@@ -3,10 +3,10 @@
     xmlns="http://hl7.org/fhir">
     <id value="heart-rate"/>
     <meta>
-        <versionId value="5"/>
-        <lastUpdated value="2021-03-09T19:22:48.088+00:00"/>
-        <source value="#d1cXoRXL3eYDTkrn"/>
-        <profile value="http://hl7.org/fhir/StructureDefinition/heartrate"/>
+        <versionId value="7"/>
+        <lastUpdated value="2021-07-16T00:42:31.038+00:00"/>
+        <source value="#cceKMTcuaAr8IJDF"/>
+        <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-heart-rate"/>
     </meta>
     <status value="final"/>
     <category>

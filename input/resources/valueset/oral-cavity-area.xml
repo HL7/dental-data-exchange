@@ -3,16 +3,17 @@
     xmlns="http://hl7.org/fhir">
     <id value="oral-cavity-area"/>
     <meta>
-        <versionId value="9"/>
-        <lastUpdated value="2020-10-13T16:48:20.034+00:00"/>
-        <source value="#LaaLJYaD0VuSAkTs"/>
+        <versionId value="12"/>
+        <lastUpdated value="2021-07-19T16:07:07.776+00:00"/>
+        <source value="#SJCROkosrUUWfDjg"/>
     </meta>
     <url value="http://hl7.org/fhir/us/dental-data-exchange/ValueSet/oral-cavity-area"/>
     <version value="0.0.1"/>
     <name value="OralCavityArea"/>
     <title value="Oral Cavity Area"/>
     <status value="draft"/>
-    <description value="This ValueSet contains codes for standard oral cavity areas of the mouth"/>
+    <description value="This ValueSet contains codes for oral cavity areas of the mouth"/>
+    <copyright value="This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement"/>
     <compose>
         <include>
             <system value="http://www.ada.org/snodent"/>

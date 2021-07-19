@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7.fhir.us.dental-data-exchange"/>
     <meta>
-        <versionId value="392"/>
-        <lastUpdated value="2021-06-30T14:57:47.259+00:00"/>
-        <source value="#brlHv2geugFrgVWU"/>
+        <versionId value="409"/>
+        <lastUpdated value="2021-07-19T16:10:46.726+00:00"/>
+        <source value="#BF8Yr9OuKzBUGxqT"/>
     </meta>
     <url value="http://hl7.org/fhir/us/dental-data-exchange/ImplementationGuide/hl7.fhir.us.dental-data-exchange"/>
     <version value="1.0.0"/>
@@ -45,6 +45,11 @@
         <uri value="http://hl7.org/fhir/us/odh/ImplementationGuide/hl7.fhir.us.odh"/>
         <packageId value="hl7.fhir.us.odh"/>
         <version value="1.0.0"/>
+    </dependsOn>
+    <dependsOn id="hl7fhiruscore">
+        <uri value="http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core#4.0.0"/>
+        <packageId value="hl7.fhir.us.core"/>
+        <version value="4.0.0"/>
     </dependsOn>
     <definition>
         <grouping id="dental-profiles">
@@ -134,7 +139,7 @@
                 <reference value="ValueSet/dental-reason-for-referral"/>
                 <display value="Dental Reason For Referral"/>
             </reference>
-            <name value="Dental Reason For Referral"/>
+            <name value="DentalReasonForReferral"/>
             <description value="This ValueSet contains coded prominent reasons for referral between medical and dental care settings."/>
             <exampleBoolean value="false"/>
             <groupingId value="dental-terminologies"/>
@@ -144,7 +149,7 @@
                 <reference value="ValueSet/dental-observation-codes"/>
                 <display value="Dental Observation Codes"/>
             </reference>
-            <name value="Dental Observation Codes ValueSet"/>
+            <name value="Dental Observation Codes"/>
             <description value="This ValueSet contains all ICD-9/10, CPT, CDT, LOINC codes, as well as the Clinical Findings (finding) concept from both SNOMED and SNODENT."/>
             <exampleBoolean value="false"/>
             <groupingId value="dental-terminologies"/>
@@ -155,7 +160,7 @@
                 <display value="Dental Anatomy"/>
             </reference>
             <name value="Dental Anatomy"/>
-            <description value="This is a dental anatomy ValueSet."/>
+            <description value="This valueset represents concepts representing specific teeth and areas of the oral cavity"/>
             <exampleBoolean value="false"/>
             <groupingId value="dental-terminologies"/>
         </resource>
@@ -164,7 +169,7 @@
                 <reference value="ValueSet/oral-cavity-area"/>
                 <display value="Oral Cavity Area"/>
             </reference>
-            <name value="Oral Cavity Area ValueSet"/>
+            <name value="Oral Cavity Area"/>
             <description value="This ValueSet contains codes for standard oral cavity areas of the mouth."/>
             <exampleBoolean value="false"/>
             <groupingId value="dental-terminologies"/>
@@ -196,6 +201,17 @@
             </reference>
             <name value="Complete Dental Referral Note Document Bundle (example)"/>
             <description value="This is an example of a Dental Referral Document Bundle"/>
+            <exampleBoolean value="false"/>
+            <exampleCanonical value="http://hl7.org/fhir/us/dental-data-exchange/StructureDefinition/dental-bundle"/>
+            <groupingId value="dental-examples"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Bundle/Complete-Dental-Consult-Note-Document-Bundle-Example"/>
+                <display value="This is an example of a Dental Consult Note Document Bundle"/>
+            </reference>
+            <name value="Complete Dental Consult Note Document Bundle (example)"/>
+            <description value="This is an example of a Dental Consult Note Document Bundle"/>
             <exampleBoolean value="false"/>
             <exampleCanonical value="http://hl7.org/fhir/us/dental-data-exchange/StructureDefinition/dental-bundle"/>
             <groupingId value="dental-examples"/>
@@ -770,6 +786,11 @@
             <description value="This section describes the expected capabilities of the Dental Data Exchange Document Consumer (aka client) actor which is responsible for creating and initiating the queries for clinical documents provided by a Dental Data Exchange Document Source (aka server) actors. This CapabilityStatement imports and extends [CCDAonFHIR-client CapabilityStatement](http://hl7.org/fhir/us/ccda/CapabilityStatement-CcdaOnFhirClient.html)CCDAonFHIR client CapabilityStatement, which imports and extends the [us-core-client CapabilityStatement](https://www.hl7.org/fhir/us/core/CapabilityStatement-us-core-client.html)"/>
             <exampleBoolean value="false"/>
         </resource>
+        <resource>
+            <reference>
+                <reference value="Parameters/dental-terminology-settings"/></reference>
+            <exampleBoolean value="true"/>
+        </resource>
         <page>
             <nameUrl value="index.html"/>
             <title value="Introduction"/>
@@ -812,6 +833,10 @@
         <parameter>
             <code value="copyrightyear"/>
             <value value="2020+"/>
+        </parameter>
+        <parameter>
+            <code value="path-expansion-params"/>
+            <value value="resources/parameters/dental-terminology-settings.xml"/>
         </parameter>
     </definition>
 </ImplementationGuide>

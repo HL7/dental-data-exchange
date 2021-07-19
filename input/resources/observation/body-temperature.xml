@@ -3,10 +3,10 @@
     xmlns="http://hl7.org/fhir">
     <id value="body-temperature"/>
     <meta>
-        <versionId value="4"/>
-        <lastUpdated value="2021-03-09T19:22:48.091+00:00"/>
-        <source value="#7bzLbFixRhOttZHD"/>
-        <profile value="http://hl7.org/fhir/StructureDefinition/bodytemp"/>
+        <versionId value="5"/>
+        <lastUpdated value="2021-07-16T00:41:29.037+00:00"/>
+        <source value="#REnsBqvBWPf1HQjF"/>
+        <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-body-temperature"/>
     </meta>
     <status value="final"/>
     <category>

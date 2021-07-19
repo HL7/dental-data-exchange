@@ -3,10 +3,10 @@
     xmlns="http://hl7.org/fhir">
     <id value="blood-pressure"/>
     <meta>
-        <versionId value="5"/>
-        <lastUpdated value="2021-03-09T19:22:48.095+00:00"/>
-        <source value="#ZZsklzxmfNyWrpt9"/>
-        <profile value="http://hl7.org/fhir/StructureDefinition/bp"/>
+        <versionId value="7"/>
+        <lastUpdated value="2021-07-16T00:39:05.230+00:00"/>
+        <source value="#YrIfFDp7xvjljto4"/>
+        <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-blood-pressure"/>
     </meta>
     <identifier>
         <system value="urn:ietf:rfc:3986"/>

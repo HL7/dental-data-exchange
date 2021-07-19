@@ -3,15 +3,15 @@
     xmlns="http://hl7.org/fhir">
     <id value="dental-referral-note"/>
     <meta>
-        <versionId value="7"/>
-        <lastUpdated value="2021-06-11T13:40:05.395+00:00"/>
-        <source value="#EGva3uhB2cC5XYE6"/>
+        <versionId value="9"/>
+        <lastUpdated value="2021-07-19T16:13:41.715+00:00"/>
+        <source value="#fPBKGxtoSNHFRxVe"/>
     </meta>
     <url value="http://hl7.org/fhir/us/dental-data-exchange/StructureDefinition/dental-referral-note"/>
     <name value="DentalReferralNote"/>
     <title value="Dental Referral Note"/>
     <status value="active"/>
-    <description value="This profile defines the Dental Referral Note. It contains the textual information regarding a referral to a general dentist or dental specialist as well as references to supplemental dental profiles for the referral."/>
+    <description value="This profile defines the Dental Referral Note. It contains the textual information regarding a referral to a general dentist or dental specialist as well as references to supplemental dental profiles for the referral. This is not intended to be the mechanism for initiating the referral itself, but rather is a secondary communication that provides additional patient information to support a referral that already has been initated through some other channel."/>
     <fhirVersion value="4.0.1"/>
     <mapping>
         <identity value="workflow"/>

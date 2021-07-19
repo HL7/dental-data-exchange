@@ -3,15 +3,16 @@
     xmlns="http://hl7.org/fhir">
     <id value="tooth-identification-valueset"/>
     <meta>
-        <versionId value="3"/>
-        <lastUpdated value="2021-06-11T13:01:44.644+00:00"/>
-        <source value="#qnAocHy0cVjNQzzZ"/>
+        <versionId value="5"/>
+        <lastUpdated value="2021-07-16T21:40:02.329+00:00"/>
+        <source value="#bKOuwKp4izSarFq9"/>
     </meta>
     <url value="http://hl7.org/fhir/us/dental-data-exchange/ValueSet/tooth-identification-valueset"/>
     <name value="ToothIdentificationValueSet"/>
     <title value="Tooth Identification ValueSet"/>
     <status value="draft"/>
     <description value="This ValueSet contains codes for associating information to a specific tooth, as defined in the [SNODENT](http://www.ada.org/snodent) dental notation system."/>
+    <copyright value="This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement"/>
     <compose>
         <include>
             <system value="http://www.ada.org/snodent"/>

@@ -3,35 +3,11 @@
     xmlns="http://hl7.org/fhir">
     <id value="imm-1"/>
     <meta>
-        <versionId value="8"/>
-        <lastUpdated value="2021-05-25T17:02:07.933+00:00"/>
-        <source value="#sXP84IHfIslGQTaq"/>
+        <versionId value="9"/>
+        <lastUpdated value="2021-07-13T20:01:54.521+00:00"/>
+        <source value="#wWskYUsopfP05ugN"/>
         <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-immunization"/>
     </meta>
-    <text>
-        <status value="generated"/>
-        <div
-            xmlns="http://www.w3.org/1999/xhtml">
-            <table border="1" width="100%">
-                <thead>
-                    <tr>
-                        <th>Vaccine</th>
-                        <th>Date</th>
-                        <th>Status</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>
-              Hepatitis B vaccine
-									</td>
-                        <td>January 4, 2020</td>
-                        <td>Completed</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </text>
     <status value="completed"/>
     <vaccineCode>
         <coding>

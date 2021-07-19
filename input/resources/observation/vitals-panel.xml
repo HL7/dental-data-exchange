@@ -3,10 +3,10 @@
     xmlns="http://hl7.org/fhir">
     <id value="vitals-panel"/>
     <meta>
-        <versionId value="5"/>
-        <lastUpdated value="2021-03-09T19:22:48.093+00:00"/>
-        <source value="#X3NVumxOO3uWgX8F"/>
-        <profile value="http://hl7.org/fhir/StructureDefinition/vitalspanel"/>
+        <versionId value="7"/>
+        <lastUpdated value="2021-07-16T00:45:45.852+00:00"/>
+        <source value="#yRwE1fXbuvVKqZ8e"/>
+        <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-vital-signs"/>
     </meta>
     <status value="final"/>
     <category>

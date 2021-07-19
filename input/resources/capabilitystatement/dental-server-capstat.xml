@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="dental-server-capstat"/>
     <meta>
-        <versionId value="10"/>
-        <lastUpdated value="2021-06-14T17:11:00.307+00:00"/>
-        <source value="#NwSSPylHexQ2cWPr"/>
+        <versionId value="11"/>
+        <lastUpdated value="2021-07-13T20:34:49.047+00:00"/>
+        <source value="#IeHKWGt9mkBPbWeC"/>
     </meta>
     <url value="http://hl7.org/fhir/us/dental-data-exchange/CapabilityStatement/dental-server-capstat"/>
     <version value="0.1.0"/>

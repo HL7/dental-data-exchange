@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Smoker-obs-example-dental"/>
     <meta>
-        <versionId value="4"/>
-        <lastUpdated value="2020-08-06T17:04:19.098+00:00"/>
-        <source value="#sy4UnybQcSQGXPsx"/>
+        <versionId value="5"/>
+        <lastUpdated value="2021-07-16T00:36:47.764+00:00"/>
+        <source value="#rbAySE3CzqAqMLAi"/>
         <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-smokingstatus"/>
     </meta>
     <status value="final"/>
@@ -29,6 +29,7 @@
         <reference value="Patient/example-dental"/>
         <display value="Patient A"/>
     </subject>
+    <effectiveDateTime value="2020-01-15T05:27:04Z"/>
     <issued value="2020-01-15T05:27:04Z"/>
     <valueCodeableConcept>
         <coding>

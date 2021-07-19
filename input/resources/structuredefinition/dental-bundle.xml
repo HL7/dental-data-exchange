@@ -3,50 +3,18 @@
     xmlns="http://hl7.org/fhir">
     <id value="dental-bundle"/>
     <meta>
-        <versionId value="17"/>
-        <lastUpdated value="2021-06-24T18:26:04.130+00:00"/>
-        <source value="#XU6t22Rn3rgQGuM9"/>
+        <versionId value="19"/>
+        <lastUpdated value="2021-07-13T20:01:54.521+00:00"/>
+        <source value="#Ql2weE3fWvRZz0p0"/>
     </meta>
     <url value="http://hl7.org/fhir/us/dental-data-exchange/StructureDefinition/dental-bundle"/>
     <name value="DentalBundle"/>
     <title value="Dental Bundle"/>
     <status value="active"/>
-    <description value="This profile applies to the exchange of Referral Notes and Consult Notes and requires, at a minimum, the first entry be Dental Referral Note or Dental Consult Note Composition profiles, respectively. All other referenced resources are optional and encouraged."/>
     <fhirVersion value="4.0.1"/>
     <kind value="resource"/>
     <abstract value="false"/>
     <type value="Bundle"/>
     <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Bundle"/>
     <derivation value="constraint"/>
-    <differential>
-        <element id="Bundle">
-            <path value="Bundle"/>
-        </element>
-        <element id="Bundle.entry">
-            <path value="Bundle.entry"/>
-            <slicing>
-                <discriminator>
-                    <type value="profile"/>
-                    <path value="$this.resource"/>
-                </discriminator>
-                <rules value="open"/>
-            </slicing>
-            <min value="1"/>
-        </element>
-        <element id="Bundle.entry:composition">
-            <path value="Bundle.entry"/>
-            <sliceName value="composition"/>
-            <min value="1"/>
-            <max value="1"/>
-        </element>
-        <element id="Bundle.entry:composition.resource">
-            <path value="Bundle.entry.resource"/>
-            <min value="1"/>
-            <type>
-                <code value="Resource"/>
-                <profile value="http://hl7.org/fhir/us/dental-data-exchange/StructureDefinition/dental-referral-note"/>
-                <profile value="http://hl7.org/fhir/us/dental-data-exchange/StructureDefinition/dental-consult-note"/>
-            </type>
-        </element>
-    </differential>
 </StructureDefinition>

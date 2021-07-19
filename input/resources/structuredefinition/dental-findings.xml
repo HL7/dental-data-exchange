@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="dental-findings"/>
     <meta>
-        <versionId value="29"/>
-        <lastUpdated value="2021-06-16T16:47:30.253+00:00"/>
-        <source value="#PbhzxvFsBC4qsuqt"/>
+        <versionId value="31"/>
+        <lastUpdated value="2021-07-16T00:00:54.355+00:00"/>
+        <source value="#52w88TRCLZuyK3MG"/>
     </meta>
     <url value="http://hl7.org/fhir/us/dental-data-exchange/StructureDefinition/dental-findings"/>
     <name value="DentalFindings"/>
@@ -102,7 +102,7 @@
         </element>
         <element id="Observation.effective[x]">
             <path value="Observation.effective[x]"/>
-            <min value="0"/>
+            <min value="1"/>
             <max value="1"/>
             <mustSupport value="true"/>
         </element>
@@ -112,10 +112,11 @@
                 <code value="Reference"/>
                 <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"/>
             </type>
+            <mustSupport value="true"/>
         </element>
         <element id="Observation.value[x]">
             <path value="Observation.value[x]"/>
-            <min value="0"/>
+            <min value="1"/>
             <max value="1"/>
             <mustSupport value="true"/>
             <binding>

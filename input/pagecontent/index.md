@@ -99,5 +99,5 @@ This material contains content from SNOMED CT® ([http://www.ihtsdo.org/snomed-c
 
 This material contains content from SNODENT® ([http://www.ada.org/snodent](http://www.ada.org/snodent)). SNODENT is a registered trademark of the American Dental Association (ADA). Licensing information is available at [http://www.ada.org/8466.aspx](http://www.ada.org/8466.aspx).
 
-This material contains content from LOINC® ([http://loinc.org](http://loinc.org)). The LOINC table, LOINC codes, LOINC panels and forms file, LOINC linguistic variants file, LOINC/RSNA Radiology Playbook, and LOINC/IEEE Medical Device Code Mapping Table are copyright © 1995-2016, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at [https://loinc.org/kb/license/](https://loinc.org/kb/license/).
+"This material contains content from LOINC ([http://loinc.org](http://loinc.org)). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at [https://loinc.org/kb/license/](https://loinc.org/kb/license/). LOINC® is a registered United States trademark of Regenstrief Institute, Inc."
 

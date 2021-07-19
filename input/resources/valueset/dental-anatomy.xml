@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="dental-anatomy"/>
     <meta>
-        <versionId value="6"/>
-        <lastUpdated value="2021-06-11T12:56:30.832+00:00"/>
-        <source value="#blMPeYzyGpkXZ7Xs"/>
+        <versionId value="7"/>
+        <lastUpdated value="2021-07-13T20:33:49.899+00:00"/>
+        <source value="#z0dW766L5vlQa24C"/>
     </meta>
     <url value="http://hl7.org/fhir/us/dental-data-exchange/ValueSet/dental-anatomy"/>
     <name value="DentalAnatomy"/>
