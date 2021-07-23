@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7.fhir.us.dental-data-exchange"/>
     <meta>
-        <versionId value="409"/>
-        <lastUpdated value="2021-07-19T16:10:46.726+00:00"/>
-        <source value="#BF8Yr9OuKzBUGxqT"/>
+        <versionId value="416"/>
+        <lastUpdated value="2021-07-23T19:02:45.122+00:00"/>
+        <source value="#PJQJjAO5b8VjiXPy"/>
     </meta>
     <url value="http://hl7.org/fhir/us/dental-data-exchange/ImplementationGuide/hl7.fhir.us.dental-data-exchange"/>
     <version value="1.0.0"/>
@@ -789,7 +789,9 @@
         <resource>
             <reference>
                 <reference value="Parameters/dental-terminology-settings"/></reference>
-            <exampleBoolean value="true"/>
+            <name value="Dental Terminology Settings"/>
+            <description value="The parameter defines required Dental Terminology Settings for using version-specific Snomed codes within the US"/>
+            <exampleBoolean value="false"/>
         </resource>
         <page>
             <nameUrl value="index.html"/>

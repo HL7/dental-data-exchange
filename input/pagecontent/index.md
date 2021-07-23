@@ -84,7 +84,7 @@ Implementers of this Dental Data Exchange FHIR standard must have FHIR implement
 | Subject Matter Expert | LCDR Michael Bohman | United States Navy | michael.a.bohman2.mil@mail.mil |
 | Subject Matter Expert | Martha (Marti) Velezis | Food and Drug Administration | martha.velezis@fda.hhs.gov |
 
-**Current Work Group** includes those who participated in the Dental Summary Exchange Project: LTC Jeffrey Ford, Nancy Orvis, Gyle Gales, Kipp Clemmons, Michael Honeycutt, Chris Brancato, Chris Khanoyan, Joel Bales, Eric Kirnbauer, Matt Szczepankievicz, Beto Sepulveda, Chris Breeden.
+**Current Work Group** includes those who participated in the Dental Summary Exchange Project: Col Jeffrey Ford, Nancy Orvis, Gyle Gales, Kipp Clemmons, Michael Honeycutt, Chris Brancato, Chris Khanoyan, Joel Bales, Eric Kirnbauer, Matt Szczepankievicz, Beto Sepulveda, Chris Breeden.
 
 ### Acknowledgements
 This guide was developed and produced through the efforts of Health Level Seven (HL7).

@@ -1,0 +1,13 @@
+﻿{
+  "name": "hl7.ada.fhir.template",
+  "type": "fhir.template",
+  "license": "CC0-1.0",
+  "description": "Template developed for Dental Data Exchange under agreement of HL7 and ADA",
+  "author": "http://lantanagroup.com",
+  "canonical": "http://lantanagroup.com/templates/hl7.ada.fhir.template",
+  "base": "hl7.base.template",
+  "dependencies": {
+    "hl7.base.template": "current"
+  },
+  "version": "0.0.1"
+}

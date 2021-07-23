@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Complete-Dental-Referral-Note-Document-Bundle-Example"/>
     <meta>
-        <versionId value="4"/>
-        <lastUpdated value="2021-05-25T17:34:57.719+00:00"/>
-        <source value="#DogatC4Ccqp66N8a"/>
+        <versionId value="5"/>
+        <lastUpdated value="2021-06-23T16:41:18.957+00:00"/>
+        <source value="#5B866ONGhnpsxr6V"/>
         <profile value="http://hl7.org/fhir/us/dental-data-exchange/StructureDefinition/dental-bundle"/>
     </meta>
     <identifier>
@@ -19,9 +19,6 @@
         <resource>
             <Composition>
                 <id value="Med-2-Dental-Referral"/>
-              <meta>
-                <profile value="http://hl7.org/fhir/us/dental-data-exchange/StructureDefinition/dental-referral-note"/>
-              </meta>
                 <language value="en-US"/>
                 <identifier>
                     <system value="urn:ietf:rfc:3986"/>
@@ -566,15 +563,13 @@
         <resource>
             <Patient>
                 <id value="example-dental"/>
-              <meta>
-                <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"/>
-              </meta>
                 <text>
                     <status value="generated"/>
                     <div
                         xmlns="http://www.w3.org/1999/xhtml">
                         <div class="hapiHeaderText">Patient 
               
+                            
                             <b>A </b>
                         </div>
                         <table class="hapiPropertyTable">
@@ -681,9 +676,6 @@
         <resource>
             <Encounter>
                 <id value="Med-visit-1"/>
-              <meta>
-                <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter"/>
-              </meta>
                 <status value="finished"/>
                 <class>
                     <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
@@ -720,9 +712,6 @@
         <resource>
             <PractitionerRole>
                 <id value="PractitionerRole-M"/>
-              <meta>
-                <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole"/>
-              </meta>
                 <practitioner>
                     <reference value="Practitioner/practitioner-M"/>
                     <display value="Dr. John M"/>
@@ -750,9 +739,6 @@
         <resource>
             <Practitioner>
                 <id value="practitioner-M"/>
-              <meta>
-                <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"/>
-              </meta>
                 <identifier>
                     <system value="http://hl7.org/fhir/sid/us-npi"/>
                     <value value="1234569999"/>
@@ -777,9 +763,6 @@
         <resource>
             <Organization>
                 <id value="GHC-organization"/>
-              <meta>
-                <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization"/>
-              </meta>
                 <identifier>
                     <system value="http://hl7.org/fhir/sid/us-npi"/>
                     <value value="1316452725"/>
@@ -816,9 +799,6 @@
         <resource>
             <AllergyIntolerance>
                 <id value="Allergy-example-dental"/>
-              <meta>
-                <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-allergyintolerance"/>
-              </meta>
                 <clinicalStatus>
                     <coding>
                         <system value="http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical"/>
@@ -854,9 +834,6 @@
         <resource>
             <MedicationRequest>
                 <id value="Lisinopril-medreq"/>
-              <meta>
-                <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationrequest"/>
-              </meta>
                 <status value="active"/>
                 <intent value="plan"/>
                 <medicationReference>
@@ -899,9 +876,6 @@
         <resource>
             <Medication>
                 <id value="Lisinopril-med-example"/>
-              <meta>
-                <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-medication"/>
-              </meta>
                 <text>
                     <status value="generated"/>
                     <div
@@ -925,9 +899,6 @@
         <resource>
             <Condition>
                 <id value="HTN-example"/>
-              <meta>
-                <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"/>
-              </meta>
                 <clinicalStatus>
                     <coding>
                         <system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
@@ -981,9 +952,6 @@
         <resource>
             <Condition>
                 <id value="DM1-example"/>
-              <meta>
-                <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"/>
-              </meta>
                 <clinicalStatus>
                     <coding>
                         <system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
@@ -1037,9 +1005,6 @@
         <resource>
             <Condition>
                 <id value="Dental-plaque-example"/>
-              <meta>
-                <profile value="http://hl7.org/fhir/us/dental-data-exchange/StructureDefinition/dental-condition"/>
-              </meta>
                 <clinicalStatus>
                     <coding>
                         <system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
@@ -1093,9 +1058,6 @@
         <resource>
             <Practitioner>
                 <id value="practitioner-UNK"/>
-              <meta>
-                <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"/>
-              </meta>
                 <identifier>
                     <system value="http://hl7.org/fhir/sid/us-npi"/>
                     <value value="555555555"/>
@@ -1115,9 +1077,6 @@
         <resource>
             <Condition>
                 <id value="toothache-example"/>
-              <meta>
-                <profile value="http://hl7.org/fhir/us/dental-data-exchange/StructureDefinition/dental-condition"/>
-              </meta>
                 <clinicalStatus>
                     <coding>
                         <system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
@@ -1168,9 +1127,6 @@
         <resource>
             <Condition>
                 <id value="Swollen-gums-example"/>
-              <meta>
-                <profile value="http://hl7.org/fhir/us/dental-data-exchange/StructureDefinition/dental-condition"/>
-              </meta>
                 <clinicalStatus>
                     <coding>
                         <system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
@@ -1195,13 +1151,13 @@
                     </coding>
                     <text value="Health Concern"/>
                 </category>
-              <category>
-                <coding>
-                  <system value="http://hl7.org/fhir/us/dental-data-exchange/CodeSystem/dental-category"/>
-                  <code value="dental"/>
-                  <display value="Dental"/>
-                </coding>
-              </category>
+                <category>
+                    <coding>
+                        <system value="http://hl7.org/fhir/us/dental-data-exchange/CodeSystem/dental-category"/>
+                        <code value="dental"/>
+                        <display value="Dental"/>
+                    </coding>
+                </category>
                 <code>
                     <coding>
                         <system value="http://www.ada.org/snodent"/>
@@ -1228,9 +1184,6 @@
         <resource>
             <Condition>
                 <id value="Bleeding-gums-example"/>
-              <meta>
-                <profile value="http://hl7.org/fhir/us/dental-data-exchange/StructureDefinition/dental-condition"/>
-              </meta>
                 <clinicalStatus>
                     <coding>
                         <system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
@@ -1255,13 +1208,13 @@
                     </coding>
                     <text value="Health Concern"/>
                 </category>
-              <category>
-                <coding>
-                  <system value="http://hl7.org/fhir/us/dental-data-exchange/CodeSystem/dental-category"/>
-                  <code value="dental"/>
-                  <display value="Dental"/>
-                </coding>
-              </category>
+                <category>
+                    <coding>
+                        <system value="http://hl7.org/fhir/us/dental-data-exchange/CodeSystem/dental-category"/>
+                        <code value="dental"/>
+                        <display value="Dental"/>
+                    </coding>
+                </category>
                 <code>
                     <coding>
                         <system value="http://www.ada.org/snodent"/>
@@ -1288,9 +1241,6 @@
         <resource>
             <Condition>
                 <id value="Caries-risk"/>
-              <meta>
-                <profile value="http://hl7.org/fhir/us/dental-data-exchange/StructureDefinition/dental-condition"/>
-              </meta>
                 <clinicalStatus>
                     <coding>
                         <system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
@@ -1315,13 +1265,13 @@
                     </coding>
                     <text value="Problem"/>
                 </category>
-              <category>
-                <coding>
-                  <system value="http://hl7.org/fhir/us/dental-data-exchange/CodeSystem/dental-category"/>
-                  <code value="dental"/>
-                  <display value="Dental"/>
-                </coding>
-              </category>
+                <category>
+                    <coding>
+                        <system value="http://hl7.org/fhir/us/dental-data-exchange/CodeSystem/dental-category"/>
+                        <code value="dental"/>
+                        <display value="Dental"/>
+                    </coding>
+                </category>
                 <code>
                     <coding>
                         <system value="http://www.ada.org/snodent"/>
@@ -1348,9 +1298,6 @@
         <resource>
             <ServiceRequest>
                 <id value="example-dental-referral-1"/>
-              <meta>
-                <profile value="http://hl7.org/fhir/us/dental-data-exchange/dental-servicerequest"/>
-              </meta>
                 <status value="active"/>
                 <intent value="plan"/>
                 <category>
@@ -1393,9 +1340,6 @@
         <resource>
             <Encounter>
                 <id value="Comp-oral-eval"/>
-              <meta>
-                <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter"/>
-              </meta>
                 <status value="planned"/>
                 <class>
                     <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
@@ -1431,9 +1375,6 @@
         <resource>
             <Immunization>
                 <id value="imm-1"/>
-              <meta>
-                <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-immunization"/>
-              </meta>
                 <status value="completed"/>
                 <vaccineCode>
                     <coding>
@@ -1456,9 +1397,6 @@
         <resource>
             <Procedure>
                 <id value="Insulin-pump-insertion"/>
-              <meta>
-                <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"/>
-              </meta>
                 <identifier>
                     <system value="urn:ietf:rfc:3986"/>
                     <value value="urn:uuid:b2a737f2-2fdb-49c1-b097-dac173d07aff"/>
@@ -1483,9 +1421,6 @@
         <resource>
             <Observation>
                 <id value="Smoker-obs-example-dental"/>
-              <meta>
-                <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-smokingstatus"/>
-              </meta>
                 <status value="final"/>
                 <category>
                     <coding>
@@ -1555,9 +1490,6 @@
         <resource>
             <Observation>
                 <id value="Present-job-example-dental"/>
-              <meta>
-                <profile value="http://hl7.org/fhir/us/odh/StructureDefinition/odh-PastOrPresentJob"/>
-              </meta>
                 <status value="final"/>
                 <code>
                     <coding>
@@ -1588,9 +1520,6 @@
         <resource>
             <Observation>
                 <id value="vitals-panel"/>
-              <meta>
-                <profile value="http://hl7.org/fhir/StructureDefinition/vitalspanel"/>
-              </meta>
                 <status value="final"/>
                 <category>
                     <coding>
@@ -1636,9 +1565,6 @@
         <resource>
             <Communication>
                 <id value="dental-education"/>
-              <meta>
-                <profile value="http://hl7.org/fhir/us/dental-data-exchange/StructureDefinition/dental-communication"/>
-              </meta>
                 <status value="completed"/>
                 <subject>
                     <reference value="Patient/example-dental"/>
@@ -1665,9 +1591,6 @@
         <resource>
             <Observation>
                 <id value="respiratory-rate"/>
-              <meta>
-                <profile value="http://hl7.org/fhir/StructureDefinition/resprate"/>
-              </meta>
                 <status value="final"/>
                 <category>
                     <coding>
@@ -1703,9 +1626,6 @@
         <resource>
             <Observation>
                 <id value="heart-rate"/>
-              <meta>
-                <profile value="http://hl7.org/fhir/StructureDefinition/heartrate"/>
-              </meta>
                 <status value="final"/>
                 <category>
                     <coding>
@@ -1741,9 +1661,6 @@
         <resource>
             <Observation>
                 <id value="blood-pressure"/>
-              <meta>
-                <profile value="http://hl7.org/fhir/StructureDefinition/bp"/>
-              </meta>
                 <identifier>
                     <system value="urn:ietf:rfc:3986"/>
                     <value value="urn:uuid:187e0c12-8dd2-67e2-99b2-bf273c878281"/>
@@ -1817,9 +1734,6 @@
         <resource>
             <Observation>
                 <id value="body-temperature"/>
-              <meta>
-                <profile value="http://hl7.org/fhir/StructureDefinition/bodytemp"/>
-              </meta>
                 <status value="final"/>
                 <category>
                     <coding>
@@ -1855,9 +1769,6 @@
         <resource>
             <Coverage>
                 <id value="Dental-Aetna"/>
-              <meta>
-                <profile value="http://hl7.org/fhir/us/davinci-hrex/StructureDefinition/hrex-coverage"/>
-              </meta>
                 <identifier>
                     <system value="http://benefitsAetna.com/certificate"/>
                     <value value="12345"/>
