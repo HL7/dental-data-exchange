@@ -72,7 +72,7 @@ Implementers of this Dental Data Exchange FHIR standard must have FHIR implement
 | Primary Editor | David deRoode | Lantana Consulting Group | david.deroode@lantanagroup.com |
 | Co-Editor | Zabrina Gonzaga | Lantana Consulting Group | zabrina.gonzaga@lantanagroup.com |
 | Co-Editor | Diana Wright | Lantana Consulting Group | diana.wright@lantanagroup.com |
-| Co-Editor | Russell Ott | Deloitte Consulting LLP | russell.t.ott3.ctr@mail.mil |
+| Co-Editor | Russell Ott | Deloitte Consulting LLP | rott@deloitte.com |
 | Co-Editor | Manisha Khatta | Deloitte Consulting LLP | makhatta@deloitte.com |
 | Subject Matter Expert | Rebekah Fiehn | CareQuest Institute for Oral Health | rfiehn@carequest.org |
 | Subject Matter Expert | Eric Tranby | CareQuest Institute for Oral Health | etranby@carequest.org |
@@ -84,14 +84,13 @@ Implementers of this Dental Data Exchange FHIR standard must have FHIR implement
 | Subject Matter Expert | LCDR Michael Bohman | United States Navy | michael.a.bohman2.mil@mail.mil |
 | Subject Matter Expert | Martha (Marti) Velezis | Food and Drug Administration | martha.velezis@fda.hhs.gov |
 
-**Current Work Group** includes those who participated in the Dental Summary Exchange Project: Col Jeffrey Ford, Nancy Orvis, Gyle Gales, Kipp Clemmons, Michael Honeycutt, Chris Brancato, Chris Khanoyan, Joel Bales, Eric Kirnbauer, Matt Szczepankievicz, Beto Sepulveda, Chris Breeden.
-
 ### Acknowledgements
 This guide was developed and produced through the efforts of Health Level Seven (HL7).
 
 The editors appreciate the support and sponsorship of the HL7 Payer/Provider Information Exchange Working Group (PIE WG), the HL7 Structured Documents Working Group (SDWG), and all volunteers and staff associated with the creation of this document. This guide would not have been possible without the support of the following organizations:
 * American Dental Association
 * Defense Health Agency, US Department of Defense
+* Veteran's Health Administration, US Department of Veterans Affairs
 * Lantana Consulting Group
 * CareQuest Institute for Oral Health 
 
@@ -100,4 +99,3 @@ This material contains content from SNOMED CT® ([http://www.ihtsdo.org/snomed-c
 This material contains content from SNODENT® ([http://www.ada.org/snodent](http://www.ada.org/snodent)). SNODENT is a registered trademark of the American Dental Association (ADA). Licensing information is available at [http://www.ada.org/8466.aspx](http://www.ada.org/8466.aspx).
 
 "This material contains content from LOINC ([http://loinc.org](http://loinc.org)). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at [https://loinc.org/kb/license/](https://loinc.org/kb/license/). LOINC® is a registered United States trademark of Regenstrief Institute, Inc."
-
