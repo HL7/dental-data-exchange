@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7.fhir.us.dental-data-exchange"/>
     <meta>
-        <versionId value="419"/>
-        <lastUpdated value="2021-07-26T18:31:05.826+00:00"/>
-        <source value="#QQyZgM5osjqeLgQn"/>
+        <versionId value="424"/>
+        <lastUpdated value="2021-07-28T18:56:44.890+00:00"/>
+        <source value="#bJNAXNFS7pqeCrmj"/>
     </meta>
     <url value="http://hl7.org/fhir/us/dental-data-exchange/ImplementationGuide/hl7.fhir.us.dental-data-exchange"/>
     <version value="1.0.0"/>
@@ -50,6 +50,11 @@
         <uri value="http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core#4.0.0"/>
         <packageId value="hl7.fhir.us.core"/>
         <version value="4.0.0"/>
+    </dependsOn>
+    <dependsOn id="hl7terminology">
+        <uri value="http://terminology.hl7.org/ImplementationGuide/hl7.terminology#1.0.0"/>
+        <packageId value="hl7.terminology"/>
+        <version value="1.0.0"/>
     </dependsOn>
     <definition>
         <grouping id="dental-profiles">

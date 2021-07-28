@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="dental-condition"/>
     <meta>
-        <versionId value="29"/>
-        <lastUpdated value="2021-07-13T20:32:35.140+00:00"/>
-        <source value="#ZgSmGwsPatktuBGg"/>
+        <versionId value="34"/>
+        <lastUpdated value="2021-07-28T15:24:41.890+00:00"/>
+        <source value="#IOcyuq8xXGREalct"/>
     </meta>
     <url value="http://hl7.org/fhir/us/dental-data-exchange/StructureDefinition/dental-condition"/>
     <version value="0.1.0"/>
@@ -39,13 +39,13 @@
             <short value="dental"/>
             <min value="1"/>
             <max value="1"/>
-            <patternCodeableConcept>
+            <fixedCodeableConcept>
                 <coding>
                     <system value="http://hl7.org/fhir/us/dental-data-exchange/CodeSystem/dental-category"/>
                     <code value="dental"/>
                     <display value="Dental"/>
                 </coding>
-            </patternCodeableConcept>
+            </fixedCodeableConcept>
             <mustSupport value="true"/>
         </element>
         <element id="Condition.bodySite">

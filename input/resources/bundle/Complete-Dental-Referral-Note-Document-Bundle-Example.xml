@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Complete-Dental-Referral-Note-Document-Bundle-Example"/>
     <meta>
-        <versionId value="5"/>
-        <lastUpdated value="2021-06-23T16:41:18.957+00:00"/>
-        <source value="#5B866ONGhnpsxr6V"/>
+        <versionId value="6"/>
+        <lastUpdated value="2021-07-28T01:18:14.580+00:00"/>
+        <source value="#gbskbq6J91pGSDzW"/>
         <profile value="http://hl7.org/fhir/us/dental-data-exchange/StructureDefinition/dental-bundle"/>
     </meta>
     <identifier>
@@ -15,7 +15,7 @@
     <type value="document"/>
     <timestamp value="2021-04-11T10:30:00.000-08:00"/>
     <entry>
-        <fullUrl value="http://hl7.org/fhir/us/dental-data-exchange/Composition/Med-2-Dental-Referral"/>
+        <fullUrl value="http://example.org/fhir/us/dental-data-exchange/Composition/Med-2-Dental-Referral"/>
         <resource>
             <Composition>
                 <id value="Med-2-Dental-Referral"/>
@@ -559,7 +559,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://hl7.org/fhir/us/dental-data-exchange/Patient/example-dental"/>
+        <fullUrl value="http://example.org/fhir/us/dental-data-exchange/Patient/example-dental"/>
         <resource>
             <Patient>
                 <id value="example-dental"/>
@@ -569,6 +569,7 @@
                         xmlns="http://www.w3.org/1999/xhtml">
                         <div class="hapiHeaderText">Patient 
               
+                            
                             
                             <b>A </b>
                         </div>
@@ -672,7 +673,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://hl7.org/fhir/us/dental-data-exchange/Encounter/Med-visit-1"/>
+        <fullUrl value="http://example.org/fhir/us/dental-data-exchange/Encounter/Med-visit-1"/>
         <resource>
             <Encounter>
                 <id value="Med-visit-1"/>
@@ -708,7 +709,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://hl7.org/fhir/us/dental-data-exchange/PractitionerRole/PractitionerRole-M"/>
+        <fullUrl value="http://example.org/fhir/us/dental-data-exchange/PractitionerRole/PractitionerRole-M"/>
         <resource>
             <PractitionerRole>
                 <id value="PractitionerRole-M"/>
@@ -735,7 +736,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://hl7.org/fhir/us/dental-data-exchange/Practitioner/practitioner-M"/>
+        <fullUrl value="http://example.org/fhir/us/dental-data-exchange/Practitioner/practitioner-M"/>
         <resource>
             <Practitioner>
                 <id value="practitioner-M"/>
@@ -759,7 +760,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://hl7.org/fhir/us/dental-data-exchange/Organization/GHC-organization"/>
+        <fullUrl value="http://example.org/fhir/us/dental-data-exchange/Organization/GHC-organization"/>
         <resource>
             <Organization>
                 <id value="GHC-organization"/>
@@ -795,7 +796,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://hl7.org/fhir/us/dental-data-exchange/AllergyIntolerance/Allergy-example-dental"/>
+        <fullUrl value="http://example.org/fhir/us/dental-data-exchange/AllergyIntolerance/Allergy-example-dental"/>
         <resource>
             <AllergyIntolerance>
                 <id value="Allergy-example-dental"/>
@@ -830,7 +831,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://hl7.org/fhir/us/dental-data-exchange/MedicationRequest/Lisinopril-medreq"/>
+        <fullUrl value="http://example.org/fhir/us/dental-data-exchange/MedicationRequest/Lisinopril-medreq"/>
         <resource>
             <MedicationRequest>
                 <id value="Lisinopril-medreq"/>
@@ -872,7 +873,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://hl7.org/fhir/us/dental-data-exchange/Medication/Lisinopril-med-example"/>
+        <fullUrl value="http://example.org/fhir/us/dental-data-exchange/Medication/Lisinopril-med-example"/>
         <resource>
             <Medication>
                 <id value="Lisinopril-med-example"/>
@@ -895,7 +896,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://hl7.org/fhir/us/dental-data-exchange/Condition/HTN-example"/>
+        <fullUrl value="http://example.org/fhir/us/dental-data-exchange/Condition/HTN-example"/>
         <resource>
             <Condition>
                 <id value="HTN-example"/>
@@ -948,7 +949,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://hl7.org/fhir/us/dental-data-exchange/Condition/DM1-example"/>
+        <fullUrl value="http://example.org/fhir/us/dental-data-exchange/Condition/DM1-example"/>
         <resource>
             <Condition>
                 <id value="DM1-example"/>
@@ -1001,7 +1002,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://hl7.org/fhir/us/dental-data-exchange/Condition/Dental-plaque-example"/>
+        <fullUrl value="http://example.org/fhir/us/dental-data-exchange/Condition/Dental-plaque-example"/>
         <resource>
             <Condition>
                 <id value="Dental-plaque-example"/>
@@ -1054,7 +1055,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://hl7.org/fhir/us/dental-data-exchange/Practitioner/practitioner-UNK"/>
+        <fullUrl value="http://example.org/fhir/us/dental-data-exchange/Practitioner/practitioner-UNK"/>
         <resource>
             <Practitioner>
                 <id value="practitioner-UNK"/>
@@ -1073,7 +1074,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://hl7.org/fhir/us/dental-data-exchange/Condition/toothache-example"/>
+        <fullUrl value="http://example.org/fhir/us/dental-data-exchange/Condition/toothache-example"/>
         <resource>
             <Condition>
                 <id value="toothache-example"/>
@@ -1123,7 +1124,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://hl7.org/fhir/us/dental-data-exchange/Condition/Swollen-gums-example"/>
+        <fullUrl value="http://example.org/fhir/us/dental-data-exchange/Condition/Swollen-gums-example"/>
         <resource>
             <Condition>
                 <id value="Swollen-gums-example"/>
@@ -1180,7 +1181,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://hl7.org/fhir/us/dental-data-exchange/Condition/Bleeding-gums-example"/>
+        <fullUrl value="http://example.org/fhir/us/dental-data-exchange/Condition/Bleeding-gums-example"/>
         <resource>
             <Condition>
                 <id value="Bleeding-gums-example"/>
@@ -1237,7 +1238,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://hl7.org/fhir/us/dental-data-exchange/Condition/Caries-risk"/>
+        <fullUrl value="http://example.org/fhir/us/dental-data-exchange/Condition/Caries-risk"/>
         <resource>
             <Condition>
                 <id value="Caries-risk"/>
@@ -1294,7 +1295,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://hl7.org/fhir/us/dental-data-exchange/ServiceRequest/example-dental-referral-1"/>
+        <fullUrl value="http://example.org/fhir/us/dental-data-exchange/ServiceRequest/example-dental-referral-1"/>
         <resource>
             <ServiceRequest>
                 <id value="example-dental-referral-1"/>
@@ -1336,7 +1337,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://hl7.org/fhir/us/dental-data-exchange/Encounter/Comp-oral-eval"/>
+        <fullUrl value="http://example.org/fhir/us/dental-data-exchange/Encounter/Comp-oral-eval"/>
         <resource>
             <Encounter>
                 <id value="Comp-oral-eval"/>
@@ -1371,7 +1372,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://hl7.org/fhir/us/dental-data-exchange/Immunization/imm-1"/>
+        <fullUrl value="http://example.org/fhir/us/dental-data-exchange/Immunization/imm-1"/>
         <resource>
             <Immunization>
                 <id value="imm-1"/>
@@ -1393,7 +1394,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://hl7.org/fhir/us/dental-data-exchange/Procedure/Insulin-pump-insertion"/>
+        <fullUrl value="http://example.org/fhir/us/dental-data-exchange/Procedure/Insulin-pump-insertion"/>
         <resource>
             <Procedure>
                 <id value="Insulin-pump-insertion"/>
@@ -1417,7 +1418,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://hl7.org/fhir/us/dental-data-exchange/Observation/Smoker-obs-example-dental"/>
+        <fullUrl value="http://example.org/fhir/us/dental-data-exchange/Observation/Smoker-obs-example-dental"/>
         <resource>
             <Observation>
                 <id value="Smoker-obs-example-dental"/>
@@ -1455,7 +1456,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://hl7.org/fhir/us/dental-data-exchange/Observation/Education-level-example-dental"/>
+        <fullUrl value="http://example.org/fhir/us/dental-data-exchange/Observation/Education-level-example-dental"/>
         <resource>
             <Observation>
                 <id value="Education-level-example-dental"/>
@@ -1486,7 +1487,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://hl7.org/fhir/us/dental-data-exchange/Observation/Present-job-example-dental"/>
+        <fullUrl value="http://example.org/fhir/us/dental-data-exchange/Observation/Present-job-example-dental"/>
         <resource>
             <Observation>
                 <id value="Present-job-example-dental"/>
@@ -1516,7 +1517,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://hl7.org/fhir/us/dental-data-exchange/Observation/vitals-panel"/>
+        <fullUrl value="http://example.org/fhir/us/dental-data-exchange/Observation/vitals-panel"/>
         <resource>
             <Observation>
                 <id value="vitals-panel"/>
@@ -1561,7 +1562,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://hl7.org/fhir/us/dental-data-exchange/Communication/dental-education"/>
+        <fullUrl value="http://example.org/fhir/us/dental-data-exchange/Communication/dental-education"/>
         <resource>
             <Communication>
                 <id value="dental-education"/>
@@ -1587,7 +1588,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://hl7.org/fhir/us/dental-data-exchange/Observation/respiratory-rate"/>
+        <fullUrl value="http://example.org/fhir/us/dental-data-exchange/Observation/respiratory-rate"/>
         <resource>
             <Observation>
                 <id value="respiratory-rate"/>
@@ -1622,7 +1623,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://hl7.org/fhir/us/dental-data-exchange/Observation/heart-rate"/>
+        <fullUrl value="http://example.org/fhir/us/dental-data-exchange/Observation/heart-rate"/>
         <resource>
             <Observation>
                 <id value="heart-rate"/>
@@ -1657,7 +1658,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://hl7.org/fhir/us/dental-data-exchange/Observation/blood-pressure"/>
+        <fullUrl value="http://example.org/fhir/us/dental-data-exchange/Observation/blood-pressure"/>
         <resource>
             <Observation>
                 <id value="blood-pressure"/>
@@ -1730,7 +1731,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://hl7.org/fhir/us/dental-data-exchange/Observation/body-temperature"/>
+        <fullUrl value="http://example.org/fhir/us/dental-data-exchange/Observation/body-temperature"/>
         <resource>
             <Observation>
                 <id value="body-temperature"/>
@@ -1765,7 +1766,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://hl7.org/fhir/us/dental-data-exchange/Coverage/Dental-Aetna"/>
+        <fullUrl value="http://example.org/fhir/us/dental-data-exchange/Coverage/Dental-Aetna"/>
         <resource>
             <Coverage>
                 <id value="Dental-Aetna"/>

@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="dental-category"/>
     <meta>
-        <versionId value="3"/>
-        <lastUpdated value="2021-07-13T20:34:58.974+00:00"/>
-        <source value="#sZSbP33pPAIpRdqm"/>
+        <versionId value="4"/>
+        <lastUpdated value="2021-07-28T15:24:30.872+00:00"/>
+        <source value="#XYGJdL8MkqaR1U0S"/>
     </meta>
     <url value="http://hl7.org/fhir/us/dental-data-exchange/CodeSystem/dental-category"/>
     <name value="DentalCategory"/>
@@ -16,10 +16,5 @@
         <code value="dental"/>
         <display value="Dental"/>
         <definition value="Dental in nature"/>
-    </concept>
-    <concept>
-        <code value="fake-code"/>
-        <display value="fake"/>
-        <definition value="fake"/>
     </concept>
 </CodeSystem>

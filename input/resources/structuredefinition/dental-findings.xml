@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="dental-findings"/>
     <meta>
-        <versionId value="31"/>
-        <lastUpdated value="2021-07-16T00:00:54.355+00:00"/>
-        <source value="#52w88TRCLZuyK3MG"/>
+        <versionId value="36"/>
+        <lastUpdated value="2021-07-28T15:25:15.431+00:00"/>
+        <source value="#BakbpQxk5pHdazMq"/>
     </meta>
     <url value="http://hl7.org/fhir/us/dental-data-exchange/StructureDefinition/dental-findings"/>
     <name value="DentalFindings"/>
@@ -68,12 +68,13 @@
             <sliceName value="dental"/>
             <min value="1"/>
             <max value="1"/>
-            <patternCodeableConcept>
+            <fixedCodeableConcept>
                 <coding>
                     <system value="http://hl7.org/fhir/us/dental-data-exchange/CodeSystem/dental-category"/>
                     <code value="dental"/>
+                    <display value="Dental"/>
                 </coding>
-            </patternCodeableConcept>
+            </fixedCodeableConcept>
             <mustSupport value="true"/>
         </element>
         <element id="Observation.code">
