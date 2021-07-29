@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="dental-consult-note"/>
     <meta>
-        <versionId value="15"/>
-        <lastUpdated value="2021-07-28T18:58:05.749+00:00"/>
-        <source value="#hhwWQozM0qhObNYM"/>
+        <versionId value="18"/>
+        <lastUpdated value="2021-07-29T19:52:55.167+00:00"/>
+        <source value="#cG28bQ5RpiQTfr6g"/>
     </meta>
     <url value="http://hl7.org/fhir/us/dental-data-exchange/StructureDefinition/dental-consult-note"/>
     <version value="0.1.0"/>
@@ -131,22 +131,20 @@
         </element>
         <element id="Composition.section:plan_of_treatment_section.entry">
             <path value="Composition.section.entry"/>
-            <slicing>
-                <discriminator>
-                    <type value="profile"/>
-                    <path value="resolve()"/>
-                </discriminator>
-                <rules value="open"/>
-            </slicing>
-            <short value="entry"/>
-        </element>
-        <element id="Composition.section:plan_of_treatment_section.entry:sliceEntry/dental_sliceEntry">
-            <path value="Composition.section.entry"/>
-            <sliceName value="sliceEntry/dental_sliceEntry"/>
-            <short value="This section contains unprofiled resources not covered by US Core. Please refer to C-CDA R2.1 for guidance on terminology, etc."/>
             <type>
                 <code value="Reference"/>
                 <targetProfile value="http://hl7.org/fhir/us/dental-data-exchange/dental-servicerequest"/>
+                <targetProfile value="http://hl7.org/fhir/us/dental-data-exchange/StructureDefinition/dental-communication"/>
+                <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationrequest"/>
+                <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter"/>
+                <targetProfile value="http://hl7.org/fhir/StructureDefinition/Appointment"/>
+                <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-goal"/>
+                <targetProfile value="http://hl7.org/fhir/StructureDefinition/CommunicationRequest"/>
+                <targetProfile value="http://hl7.org/fhir/StructureDefinition/DeviceRequest"/>
+                <targetProfile value="http://hl7.org/fhir/StructureDefinition/NutritionOrder"/>
+                <targetProfile value="http://hl7.org/fhir/StructureDefinition/Task"/>
+                <targetProfile value="http://hl7.org/fhir/StructureDefinition/VisionPrescription"/>
+                <targetProfile value="http://hl7.org/fhir/StructureDefinition/RequestGroup"/>
             </type>
         </element>
         <element id="Composition.section:procedures_section">

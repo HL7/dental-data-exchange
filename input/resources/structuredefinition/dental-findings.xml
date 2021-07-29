@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="dental-findings"/>
     <meta>
-        <versionId value="36"/>
-        <lastUpdated value="2021-07-28T15:25:15.431+00:00"/>
-        <source value="#BakbpQxk5pHdazMq"/>
+        <versionId value="38"/>
+        <lastUpdated value="2021-07-29T14:05:16.541+00:00"/>
+        <source value="#3gIafL4PyHr9dDIB"/>
     </meta>
     <url value="http://hl7.org/fhir/us/dental-data-exchange/StructureDefinition/dental-findings"/>
     <name value="DentalFindings"/>

@@ -78,10 +78,11 @@ Implementers of this Dental Data Exchange FHIR standard must have FHIR implement
 | Subject Matter Expert | Eric Tranby | CareQuest Institute for Oral Health | etranby@carequest.org |
 | Subject Matter Expert | Greg Zeller | American Dental Association | ggzeller@aol.com |
 | Subject Matter Expert | Jean Narcisi | American Dental Association | narcisij@ada.org |
-| Subject Matter Expert | Col William Baez | Chief Medical Information Officer, United States Air Force | william.r.baez2.mil@mail.mil |
+| Subject Matter Expert | Col William Baez | Chief Health Informatics Officer, United States Air Force | william.r.baez2.mil@mail.mil |
 | Subject Matter Expert | LTC Kevin B. Parker | Chief Dental Informatics Officer, United States Army | kevin.b.parker.mil@mail.mil |
 | Subject Matter Expert | CDR Steve Stallings | Chief Dental Informatics Officer, United States Navy | steve.l.stallings.mil@mail.mil |
 | Subject Matter Expert | LCDR Michael Bohman | United States Navy | michael.a.bohman2.mil@mail.mil |
+| Subject Matter Expert| Col Jeff Ford | Chief, Enterprise Coordination & Health Information Exchange, Defense Health Agency | jeffrey.a.ford28.mil@mail.mil |
 | Subject Matter Expert | Martha (Marti) Velezis | Food and Drug Administration | martha.velezis@fda.hhs.gov |
 
 ### Acknowledgements
@@ -96,6 +97,6 @@ The editors appreciate the support and sponsorship of the HL7 Payer/Provider Inf
 
 This material contains content from SNOMED CT® ([http://www.ihtsdo.org/snomed-ct/](http://www.ihtsdo.org/snomed-ct/)). SNOMED CT is a registered trademark of the International Health Terminology Standard Development Organization (IHTSDO).
 
-This material contains content from SNODENT® ([http://www.ada.org/snodent](http://www.ada.org/snodent)). SNODENT is a registered trademark of the American Dental Association (ADA). Licensing information is available at [http://www.ada.org/8466.aspx](http://www.ada.org/8466.aspx).
+This material contains content from [SNODENT®]((https://www.ada.org/snodent)) and [CDT®](https://www.ada.org/cdt). SNODENT and CDT are a registered trademarks of the American Dental Association (ADA). Licensing information is available at [https://www.ada.org/snodent](https://www.ada.org/snodent) and [https://www.ada.org/cdt](https://www.ada.org/cdt).
 
-"This material contains content from LOINC ([http://loinc.org](http://loinc.org)). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at [https://loinc.org/kb/license/](https://loinc.org/kb/license/). LOINC® is a registered United States trademark of Regenstrief Institute, Inc."
+"This material contains content from LOINC ([http://loinc.org](http://loinc.org)). LOINC is copyright © 1995-2021, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at [https://loinc.org/kb/license/](https://loinc.org/kb/license/). LOINC® is a registered United States trademark of Regenstrief Institute, Inc."

@@ -2,19 +2,14 @@
 
 The entire implementation guide (including the HTML files, definitions, validation information, etc.) may be downloaded [here](full-ig.zip).
 
-**Validator Pack and Definitions**
+**Package File**
 
-The validator.pack file is a zip file that contains all the value sets, profiles, extensions, list of pages and URLs in the IG, etc. defined as part of the this Implementation Guide.
+The following package file includes an NPM package file used by many of the FHIR tools. It contains all the value sets, profiles, extensions, list of pages and urls in the IG, etc defined as part of this version of the Implementation Guides. This file should be the first choice whenever generating any implementation artifacts since it contains all of the rules about what makes the profiles valid. Implementers will still need to be familiar with the content of the specification and profiles that apply in order to make a conformant implementation. See the overview on [validating FHIR profiles and resources](http://hl7.org/fhir/R4/validation.html)
 
-It is used:
+* [Package](package.tgz)
 
-* by the validator if you refer to the IG directly by its canonical URL
-* by the IG publisher if you declare that one IG depends on another
-* by a FHIR server if you add the IG to server load list
-
-You may [download the validator.pack](validator.pack) file here.
-
-In addition, there are format specific definitions files.
+Format Specific Definition Files can be loaded onto a FHIR server to validate instance conformance; on a FHIR server containing these Definitions, POST an example using to the appropriate endpoint using /$validate. 
+Note- Validation uses Resource.meta.profile is required for profile validation.
 
 * [XML](definitions.xml.zip)
 * [JSON](definitions.json.zip)
