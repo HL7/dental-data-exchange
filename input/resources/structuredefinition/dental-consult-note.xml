@@ -7,7 +7,7 @@
         <lastUpdated value="2021-07-28T18:58:05.749+00:00"/>
         <source value="#hhwWQozM0qhObNYM"/>
     </meta>
-    <url value="http://hl7.org/fhir/us/dental-data-exchange/StructureDefinition/dental-consult"/>
+    <url value="http://hl7.org/fhir/us/dental-data-exchange/StructureDefinition/dental-consult-note"/>
     <version value="0.1.0"/>
     <name value="DentalConsultNote"/>
     <title value="Dental Consult Note"/>
