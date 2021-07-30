@@ -72,7 +72,7 @@ Implementers of this Dental Data Exchange FHIR standard must have FHIR implement
 | Primary Editor | David deRoode | Lantana Consulting Group | david.deroode@lantanagroup.com |
 | Co-Editor | Zabrina Gonzaga | Lantana Consulting Group | zabrina.gonzaga@lantanagroup.com |
 | Co-Editor | Diana Wright | Lantana Consulting Group | diana.wright@lantanagroup.com |
-| Co-Editor | Russell Ott | Deloitte Consulting LLP | rott@deloitte.com |
+| Co-Editor | Russell Ott | Deloitte Consulting LLP / Federal EHR Modernization (FERHM) program office | rott@deloitte.com |
 | Co-Editor | Manisha Khatta | Deloitte Consulting LLP | makhatta@deloitte.com |
 | Subject Matter Expert | Rebekah Fiehn | CareQuest Institute for Oral Health | rfiehn@carequest.org |
 | Subject Matter Expert | Eric Tranby | CareQuest Institute for Oral Health | etranby@carequest.org |
@@ -84,6 +84,8 @@ Implementers of this Dental Data Exchange FHIR standard must have FHIR implement
 | Subject Matter Expert | LCDR Michael Bohman | United States Navy | michael.a.bohman2.mil@mail.mil |
 | Subject Matter Expert| Col Jeff Ford | Chief, Enterprise Coordination & Health Information Exchange, Defense Health Agency | jeffrey.a.ford28.mil@mail.mil |
 | Subject Matter Expert | Martha (Marti) Velezis | Food and Drug Administration | martha.velezis@fda.hhs.gov |
+| Subject Matter Expert | Matt Szczepankiewicz | Epic | mszczepa@epic.com |
+| Subject Matter Expert | Chris Breeden | Epic | cbreeden@epic.com |
 
 ### Acknowledgements
 This guide was developed and produced through the efforts of Health Level Seven (HL7).
@@ -92,11 +94,12 @@ The editors appreciate the support and sponsorship of the HL7 Payer/Provider Inf
 * American Dental Association
 * Defense Health Agency, US Department of Defense
 * Veteran's Health Administration, US Department of Veterans Affairs
+* Federal Electronic Health Record Modernization (FEHRM) program office
 * Lantana Consulting Group
 * CareQuest Institute for Oral Health 
 
 This material contains content from SNOMED CT® ([http://www.ihtsdo.org/snomed-ct/](http://www.ihtsdo.org/snomed-ct/)). SNOMED CT is a registered trademark of the International Health Terminology Standard Development Organization (IHTSDO).
 
-This material contains content from [SNODENT®]((https://www.ada.org/snodent)) and [CDT®](https://www.ada.org/cdt). SNODENT and CDT are a registered trademarks of the American Dental Association (ADA). Licensing information is available at [https://www.ada.org/snodent](https://www.ada.org/snodent) and [https://www.ada.org/cdt](https://www.ada.org/cdt).
+This material contains content from [SNODENT®](https://www.ada.org/snodent) and [CDT®](https://www.ada.org/cdt). SNODENT and CDT are a registered trademarks of the American Dental Association (ADA). Licensing information is available at [https://www.ada.org/snodent](https://www.ada.org/snodent) and [https://www.ada.org/cdt](https://www.ada.org/cdt).
 
 "This material contains content from LOINC ([http://loinc.org](http://loinc.org)). LOINC is copyright © 1995-2021, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at [https://loinc.org/kb/license/](https://loinc.org/kb/license/). LOINC® is a registered United States trademark of Regenstrief Institute, Inc."

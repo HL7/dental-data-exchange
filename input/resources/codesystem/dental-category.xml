@@ -3,15 +3,15 @@
     xmlns="http://hl7.org/fhir">
     <id value="dental-category"/>
     <meta>
-        <versionId value="4"/>
-        <lastUpdated value="2021-07-28T15:24:30.872+00:00"/>
-        <source value="#XYGJdL8MkqaR1U0S"/>
+        <versionId value="6"/>
+        <lastUpdated value="2021-07-30T03:08:59.193+00:00"/>
+        <source value="#xguGj9dRLL3l5tVC"/>
     </meta>
     <url value="http://hl7.org/fhir/us/dental-data-exchange/CodeSystem/dental-category"/>
     <name value="DentalCategory"/>
     <title value="Dental Category"/>
     <status value="draft"/>
-    <content value="not-present"/>
+    <content value="complete"/>
     <concept>
         <code value="dental"/>
         <display value="Dental"/>
