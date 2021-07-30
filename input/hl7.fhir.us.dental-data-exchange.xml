@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="hl7.fhir.us.dental-data-exchange"/>
     <meta>
-        <versionId value="432"/>
-        <lastUpdated value="2021-07-30T14:57:01.028+00:00"/>
-        <source value="#u8qieN0lmE5fKzNv"/>
+        <versionId value="434"/>
+        <lastUpdated value="2021-07-30T15:55:28.302+00:00"/>
+        <source value="#pMItEnNRhW2vLBUP"/>
     </meta>
     <url value="http://hl7.org/fhir/us/dental-data-exchange/ImplementationGuide/hl7.fhir.us.dental-data-exchange"/>
     <version value="1.0.0"/>
@@ -144,7 +144,7 @@
                 <reference value="ValueSet/dental-reason-for-referral"/>
                 <display value="Dental Reason For Referral"/>
             </reference>
-            <name value="DentalReasonForReferral"/>
+            <name value="Dental Reason For Referral"/>
             <description value="This ValueSet contains coded prominent reasons for referral between medical and dental care settings."/>
             <exampleBoolean value="false"/>
             <groupingId value="dental-terminologies"/>
@@ -165,7 +165,7 @@
                 <display value="Dental Anatomy"/>
             </reference>
             <name value="Dental Anatomy"/>
-            <description value="This valueset represents concepts representing specific teeth and areas of the oral cavity"/>
+            <description value="This Valueset represents concepts representing specific teeth and areas of the oral cavity"/>
             <exampleBoolean value="false"/>
             <groupingId value="dental-terminologies"/>
         </resource>
