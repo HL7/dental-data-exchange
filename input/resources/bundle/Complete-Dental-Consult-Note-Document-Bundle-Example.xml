@@ -20,14 +20,9 @@
             <Composition>
                 <id value="Dental-2-Med-Consult"/>
                 <language value="en-US"/>
-                <extension url="http://hl7.org/fhir/us/ccda/StructureDefinition/OrderExtension">
-                    <valueReference>
-                        <identifier>
-                            <system value="urn:ietf:rfc:3986"/>
-                            <value value="http://good-health-clinic.org/101"/>
-                        </identifier>
-                    </valueReference>
-                </extension>
+              <extension url="http://hl7.org/fhir/us/ccda/StructureDefinition/OrderExtension">
+                <reference value="ServiceRequest/example-dental-referral-1"/>
+              </extension>
                 <identifier>
                     <system value="urn:ietf:rfc:3986"/>
                     <value value="urn:uuid:f28fefc8-5aac-427c-93d7-f0bc7d633a9b"/>
