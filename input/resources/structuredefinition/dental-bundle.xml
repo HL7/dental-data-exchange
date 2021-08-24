@@ -6,6 +6,83 @@
         <versionId value="27"/>
         <lastUpdated value="2021-08-24T22:36:43.563+00:00"/>
         <source value="#wk9vADIGVwEALuzH"/>
+        <security>
+            <system value="https://trifolia-fhir.lantanagroup.com/security"/>
+            <code value="user^1cNk7Rvo^read"/>
+        </security>
+        <security>
+            <system value="https://trifolia-fhir.lantanagroup.com/security"/>
+            <code value="user^E8rHe8si^write"/>
+        </security>
+        <security>
+            <system value="https://trifolia-fhir.lantanagroup.com/security"/>
+            <code value="user^s7DIn2HM^read"/>
+        </security>
+        <security>
+            <system value="https://trifolia-fhir.lantanagroup.com/security"/>
+            <code value="everyone^write"/>
+        </security>
+        <security>
+            <system value="https://trifolia-fhir.lantanagroup.com/security"/>
+            <code value="user^E8rHe8si^read"/>
+        </security>
+        <security>
+            <system value="https://trifolia-fhir.lantanagroup.com/security"/>
+            <code value="user^34EAHd1Q^write"/>
+        </security>
+        <security>
+            <system value="https://trifolia-fhir.lantanagroup.com/security"/>
+            <code value="user^1cNk7Rvo^write"/>
+        </security>
+        <security>
+            <system value="https://trifolia-fhir.lantanagroup.com/security"/>
+            <code value="user^N5vFqxe9^write"/>
+        </security>
+        <security>
+            <system value="https://trifolia-fhir.lantanagroup.com/security"/>
+            <code value="user^N5vFqxe9^read"/>
+        </security>
+        <security>
+            <system value="https://trifolia-fhir.lantanagroup.com/security"/>
+            <code value="user^G4dwOcFt^read"/>
+        </security>
+        <security>
+            <system value="https://trifolia-fhir.lantanagroup.com/security"/>
+            <code value="everyone^read"/>
+        </security>
+        <security>
+            <system value="https://trifolia-fhir.lantanagroup.com/security"/>
+            <code value="user^34EAHd1Q^read"/>
+        </security>
+        <security>
+            <system value="https://trifolia-fhir.lantanagroup.com/security"/>
+            <code value="user^G4dwOcFt^write"/>
+        </security>
+        <security>
+            <system value="https://trifolia-fhir.lantanagroup.com/security"/>
+            <code value="user^dBvXPzf6^write"/>
+        </security>
+        <security>
+            <system value="https://trifolia-fhir.lantanagroup.com/security"/>
+            <code value="user^jcDbBWaz^write"/>
+        </security>
+        <security>
+            <system value="https://trifolia-fhir.lantanagroup.com/security"/>
+            <code value="user^dBvXPzf6^read"/>
+        </security>
+        <security>
+            <system value="https://trifolia-fhir.lantanagroup.com/security"/>
+            <code value="user^jcDbBWaz^read"/>
+        </security>
+        <security>
+            <system value="https://trifolia-fhir.lantanagroup.com/security"/>
+            <code value="user^s7DIn2HM^write"/>
+        </security>
+        <tag>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-ObservationValue"/>
+            <code value="SUBSETTED"/>
+            <display value="Resource encoded in summary mode"/>
+        </tag>
     </meta>
     <url value="http://hl7.org/fhir/us/dental-data-exchange/StructureDefinition/dental-bundle"/>
     <name value="DentalBundle"/>
@@ -55,20 +132,26 @@
         <element id="Bundle.entry:referral_note">
             <path value="Bundle.entry"/>
             <sliceName value="referral_note"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Bundle.entry:referral_note.resource">
+            <path value="Bundle.entry.resource"/>
             <type>
-                <code value="BackboneElement"/>
+                <code value="Resource"/>
                 <targetProfile value="http://hl7.org/fhir/us/dental-data-exchange/StructureDefinition/dental-referral-note"/>
             </type>
-            <mustSupport value="true"/>
         </element>
         <element id="Bundle.entry:consult_note">
             <path value="Bundle.entry"/>
             <sliceName value="consult_note"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Bundle.entry:consult_note.resource">
+            <path value="Bundle.entry.resource"/>
             <type>
-                <code value="BackboneElement"/>
+                <code value="Resource"/>
                 <targetProfile value="http://hl7.org/fhir/us/dental-data-exchange/StructureDefinition/dental-consult-note"/>
             </type>
-            <mustSupport value="true"/>
         </element>
     </differential>
 </StructureDefinition>
