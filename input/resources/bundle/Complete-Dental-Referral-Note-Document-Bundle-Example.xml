@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Complete-Dental-Referral-Note-Document-Bundle-Example"/>
     <meta>
-        <versionId value="6"/>
-        <lastUpdated value="2021-07-28T01:18:14.580+00:00"/>
-        <source value="#gbskbq6J91pGSDzW"/>
+        <versionId value="9"/>
+        <lastUpdated value="2021-08-17T18:21:13.437+00:00"/>
+        <source value="#sSl8gQi5IUb6VLT0"/>
         <profile value="http://hl7.org/fhir/us/dental-data-exchange/StructureDefinition/dental-bundle"/>
     </meta>
     <identifier>
@@ -569,6 +569,7 @@
                         xmlns="http://www.w3.org/1999/xhtml">
                         <div class="hapiHeaderText">Patient 
               
+                            
                             
                             
                             <b>A </b>
@@ -1299,6 +1300,10 @@
         <resource>
             <ServiceRequest>
                 <id value="example-dental-referral-1"/>
+                <identifier>
+                    <system value="urn:ietf:rfc:3986"/>
+                    <value value="urn:uid:0c2aacfc-ce7d-4652-b9ea-7280ea21dec4"/>
+                </identifier>
                 <status value="active"/>
                 <intent value="plan"/>
                 <category>

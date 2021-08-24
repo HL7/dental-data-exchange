@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Complete-Dental-Consult-Note-Document-Bundle-Example"/>
     <meta>
-        <versionId value="4"/>
-        <lastUpdated value="2021-07-28T01:18:09.952+00:00"/>
-        <source value="#w1RBHIbpiBIPnDhr"/>
+        <versionId value="10"/>
+        <lastUpdated value="2021-08-17T18:21:09.276+00:00"/>
+        <source value="#RQAXGXUYy4baqwbU"/>
         <profile value="http://hl7.org/fhir/us/dental-data-exchange/StructureDefinition/dental-bundle"/>
     </meta>
     <identifier>
@@ -20,9 +20,6 @@
             <Composition>
                 <id value="Dental-2-Med-Consult"/>
                 <language value="en-US"/>
-              <extension url="http://hl7.org/fhir/us/ccda/StructureDefinition/OrderExtension">
-                <reference value="ServiceRequest/example-dental-referral-1"/>
-              </extension>
                 <identifier>
                     <system value="urn:ietf:rfc:3986"/>
                     <value value="urn:uuid:f28fefc8-5aac-427c-93d7-f0bc7d633a9b"/>
@@ -719,6 +716,7 @@
                         xmlns="http://www.w3.org/1999/xhtml">
                         <div class="hapiHeaderText">Patient 
               
+                            
                             
                             
                             <b>A </b>
@@ -1449,6 +1447,10 @@
         <resource>
             <ServiceRequest>
                 <id value="example-dental-referral-1"/>
+                <identifier>
+                    <system value="urn:ietf:rfc:3986"/>
+                    <value value="urn:uid:0c2aacfc-ce7d-4652-b9ea-7280ea21dec4"/>
+                </identifier>
                 <status value="active"/>
                 <intent value="plan"/>
                 <category>
@@ -2385,7 +2387,7 @@
                 <intent value="plan"/>
                 <category>
                     <coding>
-                        <system value="https://www.ada.org/en/publications/cdt"/>
+                      <system value="http://snomed.info/sct"/>
                         <code value="387713003"/>
                         <display value="Surgical procedure"/>
                     </coding>

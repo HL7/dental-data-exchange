@@ -12,7 +12,7 @@
     <intent value="plan"/>
     <category>
         <coding>
-            <system value="https://www.ada.org/en/publications/cdt"/>
+          <system value="http://snomed.info/sct"/>
             <code value="387713003"/>
             <display value="Surgical procedure"/>
         </coding>

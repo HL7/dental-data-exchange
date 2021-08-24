@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="dental-bundle"/>
     <meta>
-        <versionId value="19"/>
-        <lastUpdated value="2021-07-13T20:01:54.521+00:00"/>
-        <source value="#Ql2weE3fWvRZz0p0"/>
+        <versionId value="27"/>
+        <lastUpdated value="2021-08-24T22:36:43.563+00:00"/>
+        <source value="#wk9vADIGVwEALuzH"/>
     </meta>
     <url value="http://hl7.org/fhir/us/dental-data-exchange/StructureDefinition/dental-bundle"/>
     <name value="DentalBundle"/>
@@ -17,4 +17,58 @@
     <type value="Bundle"/>
     <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Bundle"/>
     <derivation value="constraint"/>
+    <differential>
+        <element id="Bundle">
+            <path value="Bundle"/>
+        </element>
+        <element id="Bundle.id">
+            <path value="Bundle.id"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Bundle.identifier">
+            <path value="Bundle.identifier"/>
+            <definition value="This is equivalent to ClinicalDocument.id in CDA"/>
+            <min value="1"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Bundle.type">
+            <path value="Bundle.type"/>
+            <fixedCode value="document"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Bundle.timestamp">
+            <path value="Bundle.timestamp"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Bundle.entry">
+            <path value="Bundle.entry"/>
+            <slicing>
+                <discriminator>
+                    <type value="profile"/>
+                    <path value="resource"/>
+                </discriminator>
+                <rules value="open"/>
+            </slicing>
+            <min value="1"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Bundle.entry:referral_note">
+            <path value="Bundle.entry"/>
+            <sliceName value="referral_note"/>
+            <type>
+                <code value="BackboneElement"/>
+                <targetProfile value="http://hl7.org/fhir/us/dental-data-exchange/StructureDefinition/dental-referral-note"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="Bundle.entry:consult_note">
+            <path value="Bundle.entry"/>
+            <sliceName value="consult_note"/>
+            <type>
+                <code value="BackboneElement"/>
+                <targetProfile value="http://hl7.org/fhir/us/dental-data-exchange/StructureDefinition/dental-consult-note"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+    </differential>
 </StructureDefinition>

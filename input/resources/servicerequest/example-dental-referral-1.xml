@@ -3,14 +3,14 @@
     xmlns="http://hl7.org/fhir">
     <id value="example-dental-referral-1"/>
     <meta>
-        <versionId value="6"/>
-        <lastUpdated value="2021-04-13T15:55:50.646+00:00"/>
-        <source value="#n26yD2Ap7GJXsoMd"/>
+        <versionId value="9"/>
+        <lastUpdated value="2021-08-17T18:21:18.760+00:00"/>
+        <source value="#SNBbxDLfpSgMOlLL"/>
         <profile value="http://hl7.org/fhir/us/dental-data-exchange/dental-servicerequest"/>
     </meta>
     <identifier>
         <system value="urn:ietf:rfc:3986"/>
-        <value value="http://good-health-clinic.org/101"/>
+        <value value="urn:uid:0c2aacfc-ce7d-4652-b9ea-7280ea21dec4"/>
     </identifier>
     <status value="active"/>
     <intent value="plan"/>

@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="dental-consult-note"/>
     <meta>
-        <versionId value="18"/>
-        <lastUpdated value="2021-07-29T19:52:55.167+00:00"/>
-        <source value="#cG28bQ5RpiQTfr6g"/>
+        <versionId value="20"/>
+        <lastUpdated value="2021-08-24T22:42:35.613+00:00"/>
+        <source value="#E48Hvi8yEqxnaQbT"/>
     </meta>
     <url value="http://hl7.org/fhir/us/dental-data-exchange/StructureDefinition/dental-consult-note"/>
     <version value="0.1.0"/>
@@ -89,13 +89,14 @@
         </element>
         <element id="Composition.type">
             <path value="Composition.type"/>
-            <label value="Consultation Note"/>
-            <short value="Consultation Note"/>
+            <short value="Dentistry Consult note"/>
+            <patternCodeableConcept>
+                <coding>
+                    <system value="http://loinc.org"/>
+                    <code value="34756-7"/>
+                </coding>
+            </patternCodeableConcept>
             <mustSupport value="true"/>
-            <binding>
-                <strength value="required"/>
-                <valueSet value="https://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.11.20.9.31"/>
-            </binding>
         </element>
         <element id="Composition.encounter">
             <path value="Composition.encounter"/>
