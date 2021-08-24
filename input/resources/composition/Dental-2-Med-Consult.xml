@@ -22,8 +22,8 @@
     <type>
         <coding>
             <system value="http://loinc.org"/>
-            <code value="11488-4"/>
-            <display value="Consult Note"/>
+          <code value="34756-7"/>
+            <display value="Dentistry Consult note"/>
         </coding>
     </type>
     <subject>
