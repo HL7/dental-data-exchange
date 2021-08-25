@@ -15,7 +15,7 @@
     <status value="preparation"/>
     <code>
         <coding>
-            <system value="http://www.ama-assn.org/go/cdt"/>
+          <system value="http://ada.org/cdt"/>
             <code value="D2393"/>
         </coding>
         <text value="Resin-based composite- three surfaces, posterior (restoration)"/>

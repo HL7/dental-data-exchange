@@ -1501,7 +1501,7 @@
                 </class>
                 <type>
                     <coding>
-                        <system value="https://www.ada.org/en/publications/cdt"/>
+                      <system value="http://ada.org/cdt"/>
                         <code value="D0150"/>
                     </coding>
                     <text value="Comprehensive Oral Evaluation"/>
@@ -2395,7 +2395,7 @@
                 </category>
                 <code>
                     <coding>
-                        <system value="https://ada.org/en/publications/cdt"/>
+                      <system value="http://ada.org/cdt"/>
                         <code value="D7140"/>
                         <display value="Extraction, erupted tooth or exposed root (elevation and/or forceps removal)"/>
                     </coding>
@@ -2431,7 +2431,7 @@
                 <intent value="plan"/>
                 <code>
                     <coding>
-                        <system value="https://ada.org/en/publications/cdt"/>
+                      <system value="http://ada.org/cdt"/>
                         <code value="D1352"/>
                         <display value="Preventive resin restoration in a moderate to high caries risk patient-permanent tooth"/>
                     </coding>
@@ -2468,7 +2468,7 @@
                 <intent value="plan"/>
                 <code>
                     <coding>
-                        <system value="https://ada.org/en/publications/cdt"/>
+                      <system value="http://ada.org/cdt"/>
                         <code value="D1352"/>
                         <display value="Preventive resin restoration in a moderate to high caries risk patient-permanent tooth"/>
                     </coding>
@@ -2505,7 +2505,7 @@
                 <intent value="plan"/>
                 <code>
                     <coding>
-                        <system value="https://ada.org/en/publications/cdt"/>
+                      <system value="http://ada.org/cdt"/>
                         <code value="D0210"/>
                         <display value="Full mouth radiographic survey"/>
                     </coding>
@@ -2532,7 +2532,7 @@
                 <status value="completed"/>
                 <code>
                     <coding>
-                        <system value="http://www.ama-assn.org/go/cdt"/>
+                      <system value="http://ada.org/cdt"/>
                         <code value="D1206"/>
                     </coding>
                     <text value="topical application of fluoride varnish"/>

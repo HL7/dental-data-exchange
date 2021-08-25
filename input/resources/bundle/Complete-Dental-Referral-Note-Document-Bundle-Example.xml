@@ -1354,7 +1354,7 @@
                 </class>
                 <type>
                     <coding>
-                        <system value="https://www.ada.org/en/publications/cdt"/>
+                      <system value="http://ada.org/cdt"/>
                         <code value="D0150"/>
                     </coding>
                     <text value="Comprehensive Oral Evaluation"/>

@@ -12,7 +12,7 @@
     <intent value="plan"/>
     <code>
         <coding>
-            <system value="https://ada.org/en/publications/cdt"/>
+          <system value="http://ada.org/cdt"/>
             <code value="D1352"/>
             <display value="Preventive resin restoration in a moderate to high caries risk patient-permanent tooth"/>
         </coding>

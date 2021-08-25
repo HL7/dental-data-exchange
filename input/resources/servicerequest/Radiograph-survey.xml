@@ -12,7 +12,7 @@
     <intent value="plan"/>
     <code>
         <coding>
-            <system value="https://ada.org/en/publications/cdt"/>
+          <system value="http://ada.org/cdt"/>
             <code value="D0210"/>
             <display value="Full mouth radiographic survey"/>
         </coding>
