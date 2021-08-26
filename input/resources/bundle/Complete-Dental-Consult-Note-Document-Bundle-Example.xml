@@ -1595,6 +1595,7 @@
                     <reference value="Patient/example-dental"/>
                     <display value="Patient A"/>
                 </subject>
+              <effectiveDateTime value="2020-01-15T05:27:04Z"/>
                 <issued value="2020-01-15T05:27:04Z"/>
                 <valueCodeableConcept>
                     <coding>

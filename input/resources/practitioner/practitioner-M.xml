@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Practitioner
     xmlns="http://hl7.org/fhir">
-    <id value="practitioner-M"/>
+    <id value="Practitioner-M"/>
     <meta>
         <versionId value="3"/>
         <lastUpdated value="2020-07-30T22:03:04.665+00:00"/>
