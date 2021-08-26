@@ -1725,8 +1725,6 @@
                 <encounter>
                     <reference value="Encounter/Med-visit-1"/>
                 </encounter>
-                <sent value="2020-02-14T18:01:10-08:00"/>
-                <received value="2020-01-12T18:01:11-08:00"/>
                 <recipient>
                     <reference value="Patient/example-dental"/>
                 </recipient>
