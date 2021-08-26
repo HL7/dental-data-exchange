@@ -43,7 +43,7 @@
         </encounter>
         <date value="2020-01-14T03:10:14Z" />
         <author>
-          <reference value="Practitioner/Practitioner-M" />
+          <reference value="Practitioner/practitioner-M" />
           <display value="Dr. John M, MD" />
         </author>
         <title value="Referral Note" />
@@ -700,7 +700,7 @@
       <PractitionerRole>
         <id value="PractitionerRole-M" />
         <practitioner>
-          <reference value="Practitioner/Practitioner-M" />
+          <reference value="Practitioner/practitioner-M" />
           <display value="Dr. John M" />
         </practitioner>
         <organization>
@@ -722,10 +722,10 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="http://example.org/fhir/us/dental-data-exchange/Practitioner/Practitioner-M" />
+    <fullUrl value="http://example.org/fhir/us/dental-data-exchange/Practitioner/practitioner-M" />
     <resource>
       <Practitioner>
-        <id value="Practitioner-M" />
+        <id value="practitioner-M" />
         <identifier>
           <system value="http://hl7.org/fhir/sid/us-npi" />
           <value value="1234569999" />
@@ -834,7 +834,7 @@
         </subject>
         <authoredOn value="2020-02-14" />
         <requester>
-          <reference value="Practitioner/Practitioner-M" />
+          <reference value="Practitioner/practitioner-M" />
           <display value="Dr. John M, MD" />
         </requester>
         <reasonReference>
@@ -1317,7 +1317,7 @@
           <reference value="Patient/example-dental" />
         </subject>
         <requester>
-          <reference value="Practitioner/Practitioner-M" />
+          <reference value="Practitioner/practitioner-M" />
         </requester>
         <reasonReference>
           <reference value="Condition/toothache-example" />
@@ -1578,7 +1578,7 @@
           <reference value="Patient/example-dental" />
         </recipient>
         <sender>
-          <reference value="Practitioner/Practitioner-M" />
+          <reference value="Practitioner/practitioner-M" />
         </sender>
         <payload>
           <contentString
