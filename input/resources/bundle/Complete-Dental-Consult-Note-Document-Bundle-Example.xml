@@ -1715,30 +1715,6 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://example.org/fhir/us/dental-data-exchange/Communication/dental-education"/>
-        <resource>
-            <Communication>
-                <id value="dental-education"/>
-                <status value="completed"/>
-                <subject>
-                    <reference value="Patient/example-dental"/>
-                </subject>
-                <encounter>
-                    <reference value="Encounter/Med-visit-1"/>
-                </encounter>
-                <recipient>
-                    <reference value="Patient/example-dental"/>
-                </recipient>
-                <sender>
-                    <reference value="Practitioner/practitioner-M"/>
-                </sender>
-                <payload>
-                    <contentString value="Pt. Education. Advised to see dentist regularly, brush 2x/day w/ fluoride toothpaste, floss"/>
-                </payload>
-            </Communication>
-        </resource>
-    </entry>
-    <entry>
         <fullUrl value="http://example.org/fhir/us/dental-data-exchange/Observation/respiratory-rate"/>
         <resource>
             <Observation>

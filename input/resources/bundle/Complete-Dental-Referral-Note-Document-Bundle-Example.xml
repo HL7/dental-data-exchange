@@ -1568,6 +1568,13 @@
       <Communication>
         <id value="dental-education" />
         <status value="completed" />
+        <category>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/communication-category"/>
+            <code value="instruction"/>
+            <display value="Instruction"/>
+          </coding>
+        </category>
         <subject>
           <reference value="Patient/example-dental" />
         </subject>
