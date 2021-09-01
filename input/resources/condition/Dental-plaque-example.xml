@@ -1,63 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Condition
-    xmlns="http://hl7.org/fhir">
-    <id value="Dental-plaque-example"/>
-    <meta>
-        <versionId value="10"/>
-        <lastUpdated value="2021-04-28T00:01:25.126+00:00"/>
-        <source value="#X2hPir6JPI5pvG5b"/>
-        <profile value="http://hl7.org/fhir/us/dental-data-exchange/StructureDefinition/dental-condition"/>
-    </meta>
-    <clinicalStatus>
-        <coding>
-            <system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
-            <code value="active"/>
-            <display value="Active"/>
-        </coding>
-        <text value="Active"/>
-    </clinicalStatus>
-    <verificationStatus>
-        <coding>
-            <system value="http://terminology.hl7.org/CodeSystem/condition-ver-status"/>
-            <code value="confirmed"/>
-            <display value="Confirmed"/>
-        </coding>
-        <text value="Confirmed"/>
-    </verificationStatus>
-    <category>
-        <coding>
-            <system value="http://hl7.org/fhir/us/core/CodeSystem/condition-category"/>
-            <code value="health-concern"/>
-            <display value="Health Concern"/>
-        </coding>
-        <text value="Health Concern"/>
-    </category>
-    <category>
-        <coding>
-            <system value="http://hl7.org/fhir/us/dental-data-exchange/CodeSystem/dental-category"/>
-            <code value="dental"/>
-            <display value="Dental"/>
-        </coding>
-    </category>
-    <code>
-        <coding>
-            <system value="http://snomed.info/sct"/>
-            <code value="276453000"/>
-            <display value="Teeth covered in plaque (finding)"/>
-        </coding>
-        <coding>
-            <system value="http://www.ada.org/snodent"/>
-            <code value="108723D"/>
-            <display value="Teeth covered in plaque (finding)"/>
-        </coding>
-        <text value="Teeth covered in plaque (finding)"/>
-    </code>
-    <subject>
-        <reference value="Patient/example-dental"/>
-        <display value="Patient A"/>
-    </subject>
-    <onsetDateTime value="2013-07-06"/>
-    <asserter>
-        <reference value="Practitioner/practitioner-UNK"/>
-    </asserter>
+<Condition xmlns="http://hl7.org/fhir">
+  <id value="Dental-plaque-example" />
+  <meta>
+    <versionId value="10" />
+    <lastUpdated value="2021-04-28T00:01:25.126+00:00" />
+    <source value="#X2hPir6JPI5pvG5b" />
+    <profile
+      value="http://hl7.org/fhir/us/dental-data-exchange/StructureDefinition/dental-condition" />
+  </meta>
+  <clinicalStatus>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/condition-clinical" />
+      <code value="active" />
+      <display value="Active" />
+    </coding>
+    <text value="Active" />
+  </clinicalStatus>
+  <verificationStatus>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/condition-ver-status" />
+      <code value="confirmed" />
+      <display value="Confirmed" />
+    </coding>
+    <text value="Confirmed" />
+  </verificationStatus>
+  <category>
+    <coding>
+      <system value="http://hl7.org/fhir/us/dental-data-exchange/CodeSystem/dental-category" />
+      <code value="dental" />
+      <display value="Dental" />
+    </coding>
+  </category>
+  <category>
+    <coding>
+      <system value="http://hl7.org/fhir/us/core/CodeSystem/condition-category" />
+      <code value="health-concern" />
+      <display value="Health Concern" />
+    </coding>
+    <text value="Health Concern" />
+  </category>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct" />
+      <code value="276453000" />
+      <display value="Teeth covered in plaque (finding)" />
+    </coding>
+    <coding>
+      <system value="http://www.ada.org/snodent" />
+      <code value="108723D" />
+      <display value="Teeth covered in plaque (finding)" />
+    </coding>
+    <text value="Teeth covered in plaque (finding)" />
+  </code>
+  <subject>
+    <reference value="Patient/example-dental" />
+    <display value="Patient A" />
+  </subject>
+  <onsetDateTime value="2013-07-06" />
+  <asserter>
+    <reference value="Practitioner/practitioner-UNK" />
+  </asserter>
 </Condition>
