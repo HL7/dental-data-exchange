@@ -1,849 +1,929 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ImplementationGuide
-    xmlns="http://hl7.org/fhir">
-    <id value="hl7.fhir.us.dental-data-exchange"/>
-    <meta>
-        <versionId value="437"/>
-        <lastUpdated value="2021-08-09T16:28:55.912+00:00"/>
-        <source value="#mhwkx5FzWF9RRWHj"/>
-    </meta>
-    <url value="http://hl7.org/fhir/us/dental-data-exchange/ImplementationGuide/hl7.fhir.us.dental-data-exchange"/>
-    <version value="1.0.0"/>
-    <name value="DentalDataExchange"/>
-    <title value="Dental Data Exchange"/>
-    <status value="draft"/>
-    <publisher value="Payer/Provider Information Exchange Work Group"/>
-    <contact>
-        <name value="HL7 International - Payer/Provider Information Exchange Work Group"/>
-        <telecom>
-            <system value="url"/>
-            <value value="http://www.hl7.org/Special/committees/claims"/>
-        </telecom>
-    </contact>
-    <description value="This implementation guide provides HL7 FHIR resources to define standards for bi-directional information exchange between a medical and a dental provider or between dental providers. This publication provides the data model, defined data items and their corresponding code and value sets specific to a dental referral note and dental consultation note. This guide describes constraints on the [C-CDA on FHIR](http://www.hl7.org/fhir/us/ccda/) header and body elements for dental information, which are derived from requirements developed by the Dental Summary Exchange Project of the Health Level Seven (HL7) Payer/Provider Information Exchange Work Group (PIE WG). Resources in this US Realm implementation guide are specific to dental referral and consultation notes for exchange and interoperability among dental providers and with medical providers.&#xA;&#xA;This guide contains a library of FHIR profiles and is compliant with FHIR Release 4. At a minimum, a document bundle (C-CDA on FHIR Referral Note or Consultation Note) will be exchanged along with a ServiceRequest, Patient, and associated medical and dental information. This guide specifies how and where these resources are included within the C-CDA on FHIR profiles. &#xA;&#xA;This guide defines 7 new profiles:&#xA;* Dental Bundle&#xA;* Dental Referral Note&#xA;* Dental Service Request&#xA;* Dental Consult Note&#xA;* Dental Condition&#xA;* Dental Finding&#xA;* Dental Communication	&#xA;&#xA;All proprietary documents, guides, guidance, standards, codes, and values contained herein remain the property of their respective Standards Developing Organization (SDO). HL7 does not make any claim to ownership herein.&#xA;&#xA;This HL7 FHIR® R4 Implementation Guide: Dental Data Exchange is developed in parallel to the HL7 CDA® R2 Implementation Guide: Dental Data Exchange.&#xA;"/>
-    <jurisdiction>
-        <coding>
-            <system value="urn:iso:std:iso:3166"/>
-            <code value="US"/>
-            <display value="United States of America"/>
-        </coding>
-        <text value="US"/>
-    </jurisdiction>
-    <packageId value="hl7.fhir.us.dental-data-exchange"/>
-    <fhirVersion value="4.0.1"/>
-    <dependsOn id="ccda">
-        <uri value="http://hl7.org/fhir/us/ccda/ImplementationGuide/hl7.fhir.us.ccda#1.1.0"/>
-        <packageId value="hl7.fhir.us.ccda"/>
-        <version value="1.1.0"/>
-    </dependsOn>
-    <dependsOn id="hrex">
-        <uri value="http://hl7.org/fhir/us/davinci-hrex/ImplementationGuide/davinci-hrex"/>
-        <packageId value="hl7.fhir.us.davinci-hrex"/>
-        <version value="0.1.0"/>
-    </dependsOn>
-    <dependsOn id="odh">
-        <uri value="http://hl7.org/fhir/us/odh/ImplementationGuide/hl7.fhir.us.odh"/>
-        <packageId value="hl7.fhir.us.odh"/>
-        <version value="1.0.0"/>
-    </dependsOn>
-    <dependsOn id="hl7fhiruscore">
-        <uri value="http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core#4.0.0"/>
-        <packageId value="hl7.fhir.us.core"/>
-        <version value="4.0.0"/>
-    </dependsOn>
-    <dependsOn id="hl7terminology">
-        <uri value="http://terminology.hl7.org/ImplementationGuide/hl7.terminology#1.0.0"/>
-        <packageId value="hl7.terminology"/>
-        <version value="1.0.0"/>
-    </dependsOn>
-    <definition>
-        <grouping id="dental-profiles">
-            <name value="Profiles"/>
-            <description value="This group contains the StructureDefinitions defined in this guide."/>
-        </grouping>
-        <grouping id="dental-terminologies">
-            <name value="Terminologies"/>
-            <description value="This group contains ValueSets and CodeSystems which are defined in this guide."/>
-        </grouping>
-        <grouping id="dental-examples">
-            <name value="Examples"/>
-            <description value="This group contains example FHIR instances provided as part of this guide"/>
-        </grouping>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/dental-bundle"/>
-                <display value="Dental Bundle"/>
-            </reference>
-            <name value="Dental Bundle"/>
-            <description value="This profile on FHIR's Document Bundle paradigm is applicable to the exchange of Referral Notes and Consult Notes and requires at a minimum the first entry be Dental Referral Note or Dental Consult Note Composition profiles, respectively. All other referenced resources are optional and encouraged."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="dental-profiles"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/dental-referral-note"/>
-                <display value="Dental Referral Note"/>
-            </reference>
-            <name value="Dental Referral Note"/>
-            <description value="This Profile defines the Dental Referral Note profile. It contains the textual information regarding a referral to a general dentist or dental specialist as well as references to supplemental dental profiles for the referral"/>
-            <exampleBoolean value="false"/>
-            <groupingId value="dental-profiles"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/dental-servicerequest"/>
-                <display value="DentalServiceRequest"/>
-            </reference>
-            <name value="Dental Service Request"/>
-            <description value="This profile contains information regarding the dental referral request including a required identifier and a reference to the reason for the referral, if possible. It also includes basic information such as the patient, referring provider, and encounter information that resulted in the referral."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="dental-profiles"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/dental-consult-note"/>
-                <display value="Dental Consult Note"/>
-            </reference>
-            <name value="Dental Consult Note"/>
-            <description value="This profile defines the Dental Consult Note. It contains the textual information regarding what was observed and performed by a general dentist or dental specialist in response to a dental referral as well as references to supplemental dental profiles for that referral. This Dental Consult Note is linked to its Dental Referral Note via the In-Fulfillment-Of extension reference to ServiceRequest."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="dental-profiles"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/dental-condition"/>
-                <display value="DentalCondition"/>
-            </reference>
-            <name value="Dental Condition"/>
-            <description value="This is the Dental Condition profile. It is intended to be used to distinguish dental-related problems from purely medically-related problem (US Core Condition)."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="dental-profiles"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/dental-findings"/>
-                <display value="dental-findings"/>
-            </reference>
-            <name value="Dental Finding"/>
-            <description value="This profile is used to convey oral findings including from odontograms, periodontal assessments, tooth-specific observations, intraoral and extraoral soft tissue exams, TMJ, TMD, and occlusion assessments. Findings in this profile often support associated diagnoses (FHIR Conditions). Dental measurements are represented here as observations. Measurements are distinct from a dental problem which would be represented in the Dental Condition profile."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="dental-profiles"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/dental-communication"/>
-                <display value="DentalCommunication"/>
-            </reference>
-            <name value="Dental Communication"/>
-            <description value="This profile is used to convey verbal and written communication and education between providers, patients, and other members of the care team."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="dental-profiles"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="ValueSet/dental-reason-for-referral"/>
-                <display value="Dental Reason For Referral"/>
-            </reference>
-            <name value="Dental Reason For Referral"/>
-            <description value="This ValueSet contains coded prominent reasons for referral between medical and dental care settings."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="dental-terminologies"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="ValueSet/dental-observation-codes"/>
-                <display value="Dental Observation Codes"/>
-            </reference>
-            <name value="Dental Observation Codes"/>
-            <description value="This ValueSet contains all concepts underneath Clinical Findings (finding) concept from both SNOMED and SNODENT."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="dental-terminologies"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="ValueSet/dental-anatomy"/>
-                <display value="Dental Anatomy"/>
-            </reference>
-            <name value="Dental Anatomy"/>
-            <description value="This Valueset represents concepts representing specific teeth and areas of the oral cavity"/>
-            <exampleBoolean value="false"/>
-            <groupingId value="dental-terminologies"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="ValueSet/oral-cavity-area"/>
-                <display value="Oral Cavity Area"/>
-            </reference>
-            <name value="Oral Cavity Area"/>
-            <description value="This ValueSet contains codes for standard oral cavity areas of the mouth."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="dental-terminologies"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="ValueSet/tooth-identification-valueset"/>
-                <display value="Tooth Identification ValueSet"/>
-            </reference>
-            <name value="Tooth Identification ValueSet"/>
-            <description value="A dental notation system for associating information to a specific tooth, commonly used in the United States."/>
-            <exampleBoolean value="false"/>
-            <groupingId value="dental-terminologies"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="CodeSystem/dental-category"/>
-                <display value="Dental Category"/>
-            </reference>
-            <name value="Dental Category"/>
-            <description value="Dental Category (type) codes"/>
-            <exampleBoolean value="false"/>
-            <groupingId value="dental-terminologies"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Bundle/Complete-Dental-Referral-Note-Document-Bundle-Example"/>
-                <display value="This is an example of a Dental Referral Document Bundle"/>
-            </reference>
-            <name value="Complete Dental Referral Note Document Bundle (example)"/>
-            <description value="This is an example of a Dental Referral Document Bundle"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/dental-data-exchange/StructureDefinition/dental-bundle"/>
-            <groupingId value="dental-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Bundle/Complete-Dental-Consult-Note-Document-Bundle-Example"/>
-                <display value="This is an example of a Dental Consult Note Document Bundle"/>
-            </reference>
-            <name value="Complete Dental Consult Note Document Bundle (example)"/>
-            <description value="This is an example of a Dental Consult Note Document Bundle"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/dental-data-exchange/StructureDefinition/dental-bundle"/>
-            <groupingId value="dental-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Composition/Med-2-Dental-Referral"/>
-                <display value="Referral Note"/>
-            </reference>
-            <name value="Dental Referral Note (example)"/>
-            <description value="This is an example of Referral Note Composition"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/dental-data-exchange/StructureDefinition/dental-referral-note"/>
-            <groupingId value="dental-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Composition/Dental-2-Med-Consult"/>
-                <display value="Consultation Note"/>
-            </reference>
-            <name value="Dental Consultation Note (example)"/>
-            <description value="This is an example of Consult Note Composition"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/dental-data-exchange/StructureDefinition/dental-consult-note"/>
-            <groupingId value="dental-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Encounter/Med-visit-1"/></reference>
-            <name value="Medical Encounter (example)"/>
-            <description value="This is an example of US Core Encounter"/>
-            <exampleBoolean value="true"/>
-            <groupingId value="dental-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Encounter/Dental-encounter"/></reference>
-            <name value="Dental Encounter (example)"/>
-            <description value="This is an example of US Core Encounter"/>
-            <exampleBoolean value="true"/>
-            <groupingId value="dental-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Encounter/Comp-oral-eval"/>
-                <display value="US Core Encounter"/>
-            </reference>
-            <name value="Encounter- Comprehensive Oral Eval (example)"/>
-            <description value="This is an example of US Core Encounter"/>
-            <exampleBoolean value="true"/>
-            <groupingId value="dental-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="ServiceRequest/example-dental-referral-1"/>
-                <display value="Dental Service Request"/>
-            </reference>
-            <name value="Dental Referral ServiceRequest (example)"/>
-            <description value="This is an example of ServiceRequest"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/dental-data-exchange/dental-servicerequest"/>
-            <groupingId value="dental-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Coverage/Dental-Aetna"/></reference>
-            <name value="Medical/Dental Coverage (example)"/>
-            <description value="This is an example of Coverage"/>
-            <exampleBoolean value="true"/>
-            <groupingId value="dental-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Encounter/Dentist-followup-prophylaxis"/></reference>
-            <name value="Dental followup - prophylaxis (example)"/>
-            <description value="This is an example of US Core Encounter"/>
-            <exampleBoolean value="true"/>
-            <groupingId value="dental-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="AllergyIntolerance/Allergy-example-dental"/></reference>
-            <name value="Allergy example (example)"/>
-            <description value="This is an example of US Core AllergyIntollerance"/>
-            <exampleBoolean value="true"/>
-            <groupingId value="dental-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Medication/ibuprofen-med-example-2"/></reference>
-            <name value="Mediation- Ibuprofen (example)"/>
-            <description value="This is an example of US Core Medication"/>
-            <exampleBoolean value="true"/>
-            <groupingId value="dental-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="MedicationRequest/Ibuprofen-medreq-2"/></reference>
-            <name value="MedicationRequest- Ibuprofen (example)"/>
-            <description value="This is an example of US Core MedicationRequest"/>
-            <exampleBoolean value="true"/>
-            <groupingId value="dental-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Medication/erythromycin-med-example"/></reference>
-            <name value="Medication- Erythromycin (example)"/>
-            <description value="This is an example of US Core Medication"/>
-            <exampleBoolean value="true"/>
-            <groupingId value="dental-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="MedicationRequest/erythromycin-medreq-2"/></reference>
-            <name value="MedicationRequest- Erythromycin (example)"/>
-            <description value="This is an example of US Core MedicationRequest"/>
-            <exampleBoolean value="true"/>
-            <groupingId value="dental-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="MedicationRequest/Tylenol-med-dental"/></reference>
-            <name value="MedicationRequest- Tylenol (example)"/>
-            <description value="This is an example of US Core MedicationRequest"/>
-            <exampleBoolean value="true"/>
-            <groupingId value="dental-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Medication/Lisinopril-med-example"/></reference>
-            <name value="MedicationRequest- Lisinporil Medication (example)"/>
-            <description value="This is an example of US Core Medication"/>
-            <exampleBoolean value="true"/>
-            <groupingId value="dental-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="MedicationRequest/Lisinopril-medreq"/></reference>
-            <name value="MedicationRequest- Lisinopril Medication Request (example)"/>
-            <description value="This is an example of US Core MedicationRequest"/>
-            <exampleBoolean value="true"/>
-            <groupingId value="dental-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Patient/example-dental"/></reference>
-            <name value="Patient A (example)"/>
-            <description value="This is an example of US Core Patient"/>
-            <exampleBoolean value="true"/>
-            <groupingId value="dental-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Practitioner/practitioner-D"/></reference>
-            <name value="Practitioner Dentist (example)"/>
-            <description value="This is an example of US Core Practitioner"/>
-            <exampleBoolean value="true"/>
-            <groupingId value="dental-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="PractitionerRole/PractitionerRole-M"/></reference>
-            <name value="PractitionerRole Medical (example)"/>
-            <description value="This is an example of US Core PractitionerRole"/>
-            <exampleBoolean value="true"/>
-            <groupingId value="dental-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="PractitionerRole/PractitionerRole-D"/></reference>
-            <name value="PractitionerRole Dentist (example)"/>
-            <description value="This is an example of US Core PractitionerRole"/>
-            <exampleBoolean value="true"/>
-            <groupingId value="dental-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Practitioner/practitioner-M"/></reference>
-            <name value="Practitioner Medical (example)"/>
-            <description value="This is an example of US Core Practitioner"/>
-            <exampleBoolean value="true"/>
-            <groupingId value="dental-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Procedure/Dental-flouride-tx-example"/></reference>
-            <name value="Procedure- Flouride Treatment (example)"/>
-            <description value="This is an example of US Core Procedure"/>
-            <exampleBoolean value="true"/>
-            <groupingId value="dental-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Procedure/Dental-incisor-restoration-example"/></reference>
-            <name value="Procedure- Incisor Restoration (example)"/>
-            <description value="This is an example of US Core Procedure"/>
-            <exampleBoolean value="true"/>
-            <groupingId value="dental-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Organization/GHC-organization"/>
-                <display value="Good Health Clinic"/>
-            </reference>
-            <name value="Organization- Good Health Clinic (example)"/>
-            <description value="This is an example of US Core Organization"/>
-            <exampleBoolean value="true"/>
-            <groupingId value="dental-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Organization/GOHC-organization"/>
-                <display value="Good Oral Health Clinic"/>
-            </reference>
-            <name value="Organization- Good Oral Health Clinic (example)"/>
-            <description value="This is an example of US Core Organization"/>
-            <exampleBoolean value="true"/>
-            <groupingId value="dental-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Condition/Dental-caries-example"/></reference>
-            <name value="Condition- Dental Caries (example)"/>
-            <description value="This is an example of Dental Condition"/>
-            <exampleBoolean value="true"/>
-            <groupingId value="dental-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Organization/GEHC-organization"/>
-                <display value="Good Endodontics Health Clinic"/>
-            </reference>
-            <name value="Organization- Good Endodontics Health Clinic (example)"/>
-            <description value="This is an example of US Core Organization"/>
-            <exampleBoolean value="true"/>
-            <groupingId value="dental-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Organization/Aetna-organization"/>
-                <display value="Aetna Insurance"/>
-            </reference>
-            <name value="Organization- Aetna Insurance (example)"/>
-            <description value="This is an example of US Core Organization"/>
-            <exampleBoolean value="true"/>
-            <groupingId value="dental-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Condition/Maxillary-perm7-example"/></reference>
-            <name value="Condition- Dental Caries on Permanent Mandibular 7 (example)"/>
-            <description value="This is an example of Dental Condition"/>
-            <exampleBoolean value="true"/>
-            <groupingId value="dental-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Condition/Pulpitis-example-4"/>
-                <display value="Dental Condition"/>
-            </reference>
-            <name value="Condition- Pulpitis (example)"/>
-            <description value="This is an example of Dental Condition"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/dental-data-exchange/StructureDefinition/dental-condition"/>
-            <groupingId value="dental-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Condition/Mandibular-perm18-example"/></reference>
-            <name value="Condition- Caries on Permanent Mandibular 18 (example)"/>
-            <description value="This is an example of Dental Condition"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/dental-data-exchange/StructureDefinition/dental-condition"/>
-            <groupingId value="dental-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Condition/Dental-plaque-example"/></reference>
-            <name value="Condition- Plaque (example)"/>
-            <description value="This is an example of Dental Condition"/>
-            <exampleBoolean value="true"/>
-            <groupingId value="dental-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Condition/LLQP-example"/></reference>
-            <name value="Condition- Left Lower Quadrant Pain (example)"/>
-            <description value="This is an example of Dental Condition"/>
-            <exampleBoolean value="true"/>
-            <groupingId value="dental-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Condition/Swollen-gums-example"/>
-                <display value="Dental Condition"/>
-            </reference>
-            <name value="Condition- Swollen gums (example)"/>
-            <description value="This is an example of Dental Condition"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/dental-data-exchange/StructureDefinition/dental-condition"/>
-            <groupingId value="dental-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Condition/toothache-example"/></reference>
-            <name value="Condition- Tootheache (example)"/>
-            <description value="This is an example of Dental Condition"/>
-            <exampleBoolean value="true"/>
-            <groupingId value="dental-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Condition/Bleeding-gums-example"/></reference>
-            <name value="Condition- Bleeding gums (example)"/>
-            <description value="This is an example of Dental Condition"/>
-            <exampleBoolean value="true"/>
-            <groupingId value="dental-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Condition/Caries-risk"/></reference>
-            <name value="Condition- Caries risk (example)"/>
-            <description value="This is an example of Dental Condition"/>
-            <exampleBoolean value="true"/>
-            <groupingId value="dental-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Condition/Dental-caries"/></reference>
-            <name value="Condition- Dental Caries (example)"/>
-            <description value="This is an example of Dental Condition"/>
-            <exampleBoolean value="true"/>
-            <groupingId value="dental-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Condition/Tooth-infection18"/>
-                <display value="Dental Condition"/>
-            </reference>
-            <name value="Condition- Tooth infection 18 (example)"/>
-            <description value="This is an example of Dental Condition"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/dental-data-exchange/StructureDefinition/dental-condition"/>
-            <groupingId value="dental-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Condition/Chronic-periodontitis-example"/>
-                <display value="Dental Condition"/>
-            </reference>
-            <name value="Condition- Periodontitis (example)"/>
-            <description value="This is an example of Dental Condition"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/dental-data-exchange/StructureDefinition/dental-condition"/>
-            <groupingId value="dental-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Condition/no-chew"/>
-                <display value="Dental Condition"/>
-            </reference>
-            <name value="Condition- Unable to Chew (example)"/>
-            <description value="This is an example of Dental Condition"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/dental-data-exchange/StructureDefinition/dental-condition"/>
-            <groupingId value="dental-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Condition/HTN-example"/></reference>
-            <name value="Condition- Hypertension (example)"/>
-            <description value="This is an example of US Core Condition"/>
-            <exampleBoolean value="true"/>
-            <groupingId value="dental-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Condition/DM1-example"/></reference>
-            <name value="Condition- Diabetes (example)"/>
-            <description value="This is an example of US Core Condition"/>
-            <exampleBoolean value="true"/>
-            <groupingId value="dental-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Immunization/imm-1"/></reference>
-            <name value="Immunization (example)"/>
-            <description value="This is an example of US Core Immunization"/>
-            <exampleBoolean value="true"/>
-            <groupingId value="dental-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Communication/dental-education"/>
-                <display value="Dental Communication"/>
-            </reference>
-            <name value="Communication- Patient education (example)"/>
-            <description value="This is an example of Communication"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/dental-data-exchange/StructureDefinition/dental-communication"/>
-            <groupingId value="dental-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Communication/dental-education2"/>
-                <display value="Dental Comunication"/>
-            </reference>
-            <name value="Communication- Patient Education 2 (example)"/>
-            <description value="This is an example of Patient education (verbal)"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/dental-data-exchange/StructureDefinition/dental-communication"/>
-            <groupingId value="dental-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Observation/Overjet"/>
-                <display value="Dental Observation"/>
-            </reference>
-            <name value="Dental Observation- Overjet (example)"/>
-            <description value="This is an example of a dental finding (measurement)"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/dental-data-exchange/StructureDefinition/dental-findings"/>
-            <groupingId value="dental-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Observation/Present-job-example-dental"/></reference>
-            <name value="Observation- Occupation: Accountant (example)"/>
-            <description value="This is an example of ODH past or present occupation Observation"/>
-            <exampleBoolean value="true"/>
-            <groupingId value="dental-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Observation/Education-level-example-dental"/></reference>
-            <name value="Observation- Education level (example)"/>
-            <description value="This is an example of education level"/>
-            <exampleBoolean value="true"/>
-            <groupingId value="dental-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Observation/Smoker-obs-example-dental"/></reference>
-            <name value="Observation- Smoking Status (example)"/>
-            <description value="This is an example of smoking status"/>
-            <exampleBoolean value="true"/>
-            <groupingId value="dental-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Observation/vitals-panel"/></reference>
-            <name value="Observation- Vital signs panel (example)"/>
-            <description value="This is an example of US Core Vitals panel"/>
-            <exampleBoolean value="true"/>
-            <groupingId value="dental-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Observation/respiratory-rate"/></reference>
-            <name value="Observation- Respiratory Rate (example)"/>
-            <description value="This is an example of Respiratory Rate"/>
-            <exampleBoolean value="true"/>
-            <groupingId value="dental-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Observation/body-temperature"/></reference>
-            <name value="Observation- Body temperature (example)"/>
-            <description value="This is an example of body temp"/>
-            <exampleBoolean value="true"/>
-            <groupingId value="dental-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Observation/heart-rate"/></reference>
-            <name value="Observation- Heart rate (example)"/>
-            <description value="This is an example of heart rate"/>
-            <exampleBoolean value="true"/>
-            <groupingId value="dental-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Observation/blood-pressure"/></reference>
-            <name value="Observation- Blood pressure (example)"/>
-            <description value="This is an example of blood pressure"/>
-            <exampleBoolean value="true"/>
-            <groupingId value="dental-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Practitioner/practitioner-UNK"/></reference>
-            <name value="Practitioner with unknown name (example)"/>
-            <description value="This is an example of US Core Practitioner"/>
-            <exampleBoolean value="true"/>
-            <groupingId value="dental-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Procedure/Insulin-pump-insertion"/></reference>
-            <name value="Procedure- Insulin pump insertion (example)"/>
-            <description value="This is an example of US Core Procedure"/>
-            <exampleBoolean value="true"/>
-            <groupingId value="dental-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Procedure/Oral-eval-example"/></reference>
-            <name value="Procedure- Oral evaluation (example)"/>
-            <description value="This is an example of US Core Procedure"/>
-            <exampleBoolean value="true"/>
-            <groupingId value="dental-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="ServiceRequest/Dental-extraction-example"/>
-                <display value="Dental ServiceRequest"/>
-            </reference>
-            <name value="ServiceRequest- Extraction (example)"/>
-            <description value="This is an example of a Dental ServiceRequest for a future dental procedure"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/dental-data-exchange/dental-servicerequest"/>
-            <groupingId value="dental-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="ServiceRequest/Radiograph-survey"/>
-                <display value="Dental Service Request"/>
-            </reference>
-            <name value="ServiceRequest- Full Mouth Radiography imaging survey (example)"/>
-            <description value="This is an example of a Dental ServiceRequest for a future dental procedure"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/dental-data-exchange/dental-servicerequest"/>
-            <groupingId value="dental-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="ServiceRequest/Resin-restore-example"/>
-                <display value="Dental Service Request"/>
-            </reference>
-            <name value="ServiceRequest- Resin Restoration (example)"/>
-            <description value="This is an example of a Dental ServiceRequest for a future dental procedure"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/dental-data-exchange/dental-servicerequest"/>
-            <groupingId value="dental-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="ServiceRequest/prophylaxis-example"/>
-                <display value="This is an example of a requested prophylaxis treatment (ServiceRequest)"/>
-            </reference>
-            <name value="ServiceRequest- Prophylaxis ServiceRequest (example)"/>
-            <description value="This is an example of a requested prophylaxis treatment (ServiceRequest)"/>
-            <exampleBoolean value="false"/>
-            <exampleCanonical value="http://hl7.org/fhir/us/dental-data-exchange/dental-servicerequest"/>
-            <groupingId value="dental-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="CapabilityStatement/dental-server-capstat"/>
-                <display value="Dental Data Exchange Server"/>
-            </reference>
-            <name value="Dental Data Exchange Server"/>
-            <description value="This section describes the expected capabilities of the Dental Data Exchange Document Source (aka server) actor which is responsible for responding to queries for clinical documents provided by Dental Data Exchange Document Consumer (aka client) actors. This CapabilityStatement imports and extends [CCDAonFHIR-server CapabilityStatement](http://hl7.org/fhir/us/ccda/CapabilityStatement-CcdaOnFhirServer.html), which imports and extends the [us-core-server CapabilityStatement](https://www.hl7.org/fhir/us/core/CapabilityStatement-us-core-server.html)"/>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="CapabilityStatement/dental-client-capstat"/>
-                <display value="Dental Data Exchange Client"/>
-            </reference>
-            <name value="Dental Data Exchange Client"/>
-            <description value="This section describes the expected capabilities of the Dental Data Exchange Document Consumer (aka client) actor which is responsible for creating and initiating the queries for clinical documents provided by a Dental Data Exchange Document Source (aka server) actors. This CapabilityStatement imports and extends [CCDAonFHIR-client CapabilityStatement](http://hl7.org/fhir/us/ccda/CapabilityStatement-CcdaOnFhirClient.html)CCDAonFHIR client CapabilityStatement, which imports and extends the [us-core-client CapabilityStatement](https://www.hl7.org/fhir/us/core/CapabilityStatement-us-core-client.html)"/>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Parameters/dental-terminology-settings"/></reference>
-            <name value="Dental Terminology Settings"/>
-            <description value="The parameter defines required Dental Terminology Settings for using version-specific Snomed codes within the US"/>
-            <exampleBoolean value="false"/>
-        </resource>
-        <page>
-            <nameUrl value="index.html"/>
-            <title value="Introduction"/>
-            <generation value="markdown"/>
-            <page>
-                <nameUrl value="workflows.html"/>
-                <title value="Workflows"/>
-                <generation value="markdown"/>
-            </page>
-            <page>
-                <nameUrl value="background.html"/>
-                <title value="Background"/>
-                <generation value="markdown"/>
-            </page>
-            <page>
-                <nameUrl value="specification.html"/>
-                <title value="Specification"/>
-                <generation value="markdown"/>
-            </page>
-            <page>
-                <nameUrl value="best_practices.html"/>
-                <title value="Best Practices"/>
-                <generation value="markdown"/>
-            </page>
-            <page>
-                <nameUrl value="dental_forms_resources.html"/>
-                <title value="Dental Forms &amp; Resources"/>
-                <generation value="markdown"/>
-            </page>
-            <page>
-                <nameUrl value="downloads.html"/>
-                <title value="Downloads"/>
-                <generation value="markdown"/>
-            </page>
-        </page>
-        <parameter>
-            <code value="releaselabel"/>
-            <value value="CI Build"/>
-        </parameter>
-        <parameter>
-            <code value="copyrightyear"/>
-            <value value="2020+"/>
-        </parameter>
-        <parameter>
-            <code value="path-expansion-params"/>
-            <value value="resources/parameters/dental-terminology-settings.xml"/>
-        </parameter>
-    </definition>
+<ImplementationGuide xmlns="http://hl7.org/fhir">
+  <id value="hl7.fhir.us.dental-data-exchange" />
+  <meta>
+    <versionId value="437" />
+    <lastUpdated value="2021-08-09T16:28:55.912+00:00" />
+    <source value="#mhwkx5FzWF9RRWHj" />
+  </meta>
+  <url
+    value="http://hl7.org/fhir/us/dental-data-exchange/ImplementationGuide/hl7.fhir.us.dental-data-exchange" />
+  <version value="1.0.0" />
+  <name value="DentalDataExchange" />
+  <title value="Dental Data Exchange" />
+  <status value="draft" />
+  <publisher value="Payer/Provider Information Exchange Work Group" />
+  <contact>
+    <name value="HL7 International - Payer/Provider Information Exchange Work Group" />
+    <telecom>
+      <system value="url" />
+      <value value="http://www.hl7.org/Special/committees/claims" />
+    </telecom>
+  </contact>
+  <description
+    value="This implementation guide provides HL7 FHIR resources to define standards for bi-directional information exchange between a medical and a dental provider or between dental providers. This publication provides the data model, defined data items and their corresponding code and value sets specific to a dental referral note and dental consultation note. This guide describes constraints on the [C-CDA on FHIR](http://www.hl7.org/fhir/us/ccda/) header and body elements for dental information, which are derived from requirements developed by the Dental Summary Exchange Project of the Health Level Seven (HL7) Payer/Provider Information Exchange Work Group (PIE WG). Resources in this US Realm implementation guide are specific to dental referral and consultation notes for exchange and interoperability among dental providers and with medical providers.&#xA;&#xA;This guide contains a library of FHIR profiles and is compliant with FHIR Release 4. At a minimum, a document bundle (C-CDA on FHIR Referral Note or Consultation Note) will be exchanged along with a ServiceRequest, Patient, and associated medical and dental information. This guide specifies how and where these resources are included within the C-CDA on FHIR profiles. &#xA;&#xA;This guide defines 7 new profiles:&#xA;* Dental Bundle&#xA;* Dental Referral Note&#xA;* Dental Service Request&#xA;* Dental Consult Note&#xA;* Dental Condition&#xA;* Dental Finding&#xA;* Dental Communication &#xA;&#xA;All proprietary documents, guides, guidance, standards, codes, and values contained herein remain the property of their respective Standards Developing Organization (SDO). HL7 does not make any claim to ownership herein.&#xA;&#xA;This HL7 FHIR® R4 Implementation Guide: Dental Data Exchange is developed in parallel to the HL7 CDA® R2 Implementation Guide: Dental Data Exchange.&#xA;" />
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166" />
+      <code value="US" />
+      <display value="United States of America" />
+    </coding>
+    <text value="US" />
+  </jurisdiction>
+  <packageId value="hl7.fhir.us.dental-data-exchange" />
+  <fhirVersion value="4.0.1" />
+  <dependsOn id="ccda">
+    <uri value="http://hl7.org/fhir/us/ccda/ImplementationGuide/hl7.fhir.us.ccda#1.1.0" />
+    <packageId value="hl7.fhir.us.ccda" />
+    <version value="1.1.0" />
+  </dependsOn>
+  <dependsOn id="hrex">
+    <uri value="http://hl7.org/fhir/us/davinci-hrex/ImplementationGuide/davinci-hrex" />
+    <packageId value="hl7.fhir.us.davinci-hrex" />
+    <version value="0.1.0" />
+  </dependsOn>
+  <dependsOn id="odh">
+    <uri value="http://hl7.org/fhir/us/odh/ImplementationGuide/hl7.fhir.us.odh" />
+    <packageId value="hl7.fhir.us.odh" />
+    <version value="1.0.0" />
+  </dependsOn>
+  <dependsOn id="hl7fhiruscore">
+    <uri value="http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core#4.0.0" />
+    <packageId value="hl7.fhir.us.core" />
+    <version value="4.0.0" />
+  </dependsOn>
+  <dependsOn id="hl7terminology">
+    <uri value="http://terminology.hl7.org/ImplementationGuide/hl7.terminology#1.0.0" />
+    <packageId value="hl7.terminology" />
+    <version value="1.0.0" />
+  </dependsOn>
+  <definition>
+    <grouping id="dental-profiles">
+      <name value="Profiles" />
+      <description value="This group contains the StructureDefinitions defined in this guide." />
+    </grouping>
+    <grouping id="dental-terminologies">
+      <name value="Terminologies" />
+      <description
+        value="This group contains ValueSets and CodeSystems which are defined in this guide." />
+    </grouping>
+    <grouping id="dental-examples">
+      <name value="Examples" />
+      <description value="This group contains example FHIR instances provided as part of this guide"
+       />
+    </grouping>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/dental-bundle" />
+        <display value="Dental Bundle" />
+      </reference>
+      <name value="Dental Bundle" />
+      <description
+        value="This profile on FHIR's Document Bundle paradigm is applicable to the exchange of Referral Notes and Consult Notes and requires at a minimum the first entry be Dental Referral Note or Dental Consult Note Composition profiles, respectively. All other referenced resources are optional and encouraged." />
+      <exampleBoolean value="false" />
+      <groupingId value="dental-profiles" />
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/dental-referral-note" />
+        <display value="Dental Referral Note" />
+      </reference>
+      <name value="Dental Referral Note" />
+      <description
+        value="This Profile defines the Dental Referral Note profile. It contains the textual information regarding a referral to a general dentist or dental specialist as well as references to supplemental dental profiles for the referral" />
+      <exampleBoolean value="false" />
+      <groupingId value="dental-profiles" />
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/dental-servicerequest" />
+        <display value="DentalServiceRequest" />
+      </reference>
+      <name value="Dental Service Request" />
+      <description
+        value="This profile contains information regarding the dental referral request including a required identifier and a reference to the reason for the referral, if possible. It also includes basic information such as the patient, referring provider, and encounter information that resulted in the referral." />
+      <exampleBoolean value="false" />
+      <groupingId value="dental-profiles" />
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/dental-consult-note" />
+        <display value="Dental Consult Note" />
+      </reference>
+      <name value="Dental Consult Note" />
+      <description
+        value="This profile defines the Dental Consult Note. It contains the textual information regarding what was observed and performed by a general dentist or dental specialist in response to a dental referral as well as references to supplemental dental profiles for that referral. This Dental Consult Note is linked to its Dental Referral Note via the In-Fulfillment-Of extension reference to ServiceRequest." />
+      <exampleBoolean value="false" />
+      <groupingId value="dental-profiles" />
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/dental-condition" />
+        <display value="DentalCondition" />
+      </reference>
+      <name value="Dental Condition" />
+      <description
+        value="This is the Dental Condition profile. It is intended to be used to distinguish dental-related problems from purely medically-related problem (US Core Condition)." />
+      <exampleBoolean value="false" />
+      <groupingId value="dental-profiles" />
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/dental-findings" />
+        <display value="dental-findings" />
+      </reference>
+      <name value="Dental Finding" />
+      <description
+        value="This profile is used to convey oral findings including from odontograms, periodontal assessments, tooth-specific observations, intraoral and extraoral soft tissue exams, TMJ, TMD, and occlusion assessments. Findings in this profile often support associated diagnoses (FHIR Conditions). Dental measurements are represented here as observations. Measurements are distinct from a dental problem which would be represented in the Dental Condition profile." />
+      <exampleBoolean value="false" />
+      <groupingId value="dental-profiles" />
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/dental-communication" />
+        <display value="DentalCommunication" />
+      </reference>
+      <name value="Dental Communication" />
+      <description
+        value="This profile is used to convey verbal and written communication and education between providers, patients, and other members of the care team." />
+      <exampleBoolean value="false" />
+      <groupingId value="dental-profiles" />
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/dental-reason-for-referral" />
+        <display value="Dental Reason For Referral" />
+      </reference>
+      <name value="Dental Reason For Referral" />
+      <description
+        value="This ValueSet contains coded prominent reasons for referral between medical and dental care settings." />
+      <exampleBoolean value="false" />
+      <groupingId value="dental-terminologies" />
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/dental-observation-codes" />
+        <display value="Dental Observation Codes" />
+      </reference>
+      <name value="Dental Observation Codes" />
+      <description
+        value="This ValueSet contains all concepts underneath Clinical Findings (finding) concept from both SNOMED and SNODENT." />
+      <exampleBoolean value="false" />
+      <groupingId value="dental-terminologies" />
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/dental-anatomy" />
+        <display value="Dental Anatomy" />
+      </reference>
+      <name value="Dental Anatomy" />
+      <description
+        value="This Valueset represents concepts representing specific teeth and areas of the oral cavity" />
+      <exampleBoolean value="false" />
+      <groupingId value="dental-terminologies" />
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/oral-cavity-area" />
+        <display value="Oral Cavity Area" />
+      </reference>
+      <name value="Oral Cavity Area" />
+      <description value="This ValueSet contains codes for standard oral cavity areas of the mouth." />
+      <exampleBoolean value="false" />
+      <groupingId value="dental-terminologies" />
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/tooth-identification-valueset" />
+        <display value="Tooth Identification ValueSet" />
+      </reference>
+      <name value="Tooth Identification ValueSet" />
+      <description
+        value="A dental notation system for associating information to a specific tooth, commonly used in the United States." />
+      <exampleBoolean value="false" />
+      <groupingId value="dental-terminologies" />
+    </resource>
+    <resource>
+      <reference>
+        <reference value="CodeSystem/dental-category" />
+        <display value="Dental Category" />
+      </reference>
+      <name value="Dental Category" />
+      <description value="Dental Category (type) codes" />
+      <exampleBoolean value="false" />
+      <groupingId value="dental-terminologies" />
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Bundle/Complete-Dental-Referral-Note-Document-Bundle-Example" />
+        <display value="This is an example of a Dental Referral Document Bundle" />
+      </reference>
+      <name value="Complete Dental Referral Note Document Bundle (example)" />
+      <description value="This is an example of a Dental Referral Document Bundle" />
+      <exampleBoolean value="false" />
+      <exampleCanonical
+        value="http://hl7.org/fhir/us/dental-data-exchange/StructureDefinition/dental-bundle" />
+      <groupingId value="dental-examples" />
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Bundle/Complete-Dental-Consult-Note-Document-Bundle-Example" />
+        <display value="This is an example of a Dental Consult Note Document Bundle" />
+      </reference>
+      <name value="Complete Dental Consult Note Document Bundle (example)" />
+      <description value="This is an example of a Dental Consult Note Document Bundle" />
+      <exampleBoolean value="false" />
+      <exampleCanonical
+        value="http://hl7.org/fhir/us/dental-data-exchange/StructureDefinition/dental-bundle" />
+      <groupingId value="dental-examples" />
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Composition/Med-2-Dental-Referral" />
+        <display value="Referral Note" />
+      </reference>
+      <name value="Dental Referral Note (example)" />
+      <description value="This is an example of Referral Note Composition" />
+      <exampleBoolean value="false" />
+      <exampleCanonical
+        value="http://hl7.org/fhir/us/dental-data-exchange/StructureDefinition/dental-referral-note" />
+      <groupingId value="dental-examples" />
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Composition/Dental-2-Med-Consult" />
+        <display value="Consultation Note" />
+      </reference>
+      <name value="Dental Consultation Note (example)" />
+      <description value="This is an example of Consult Note Composition" />
+      <exampleBoolean value="false" />
+      <exampleCanonical
+        value="http://hl7.org/fhir/us/dental-data-exchange/StructureDefinition/dental-consult-note" />
+      <groupingId value="dental-examples" />
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Encounter/Med-visit-1" />
+      </reference>
+      <name value="Medical Encounter (example)" />
+      <description value="This is an example of US Core Encounter" />
+      <exampleBoolean value="true" />
+      <groupingId value="dental-examples" />
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Encounter/Dental-encounter" />
+      </reference>
+      <name value="Dental Encounter (example)" />
+      <description value="This is an example of US Core Encounter" />
+      <exampleBoolean value="true" />
+      <groupingId value="dental-examples" />
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Encounter/Comp-oral-eval" />
+        <display value="US Core Encounter" />
+      </reference>
+      <name value="Encounter- Comprehensive Oral Eval (example)" />
+      <description value="This is an example of US Core Encounter" />
+      <exampleBoolean value="true" />
+      <groupingId value="dental-examples" />
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ServiceRequest/example-dental-referral-1" />
+        <display value="Dental Service Request" />
+      </reference>
+      <name value="Dental Referral ServiceRequest (example)" />
+      <description value="This is an example of ServiceRequest" />
+      <exampleBoolean value="false" />
+      <exampleCanonical value="http://hl7.org/fhir/us/dental-data-exchange/dental-servicerequest" />
+      <groupingId value="dental-examples" />
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Coverage/Dental-Aetna" />
+      </reference>
+      <name value="Medical/Dental Coverage (example)" />
+      <description value="This is an example of Coverage" />
+      <exampleBoolean value="true" />
+      <groupingId value="dental-examples" />
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Encounter/Dentist-followup-prophylaxis" />
+      </reference>
+      <name value="Dental followup - prophylaxis (example)" />
+      <description value="This is an example of US Core Encounter" />
+      <exampleBoolean value="true" />
+      <groupingId value="dental-examples" />
+    </resource>
+    <resource>
+      <reference>
+        <reference value="AllergyIntolerance/Allergy-example-dental" />
+      </reference>
+      <name value="Allergy example (example)" />
+      <description value="This is an example of US Core AllergyIntollerance" />
+      <exampleBoolean value="true" />
+      <groupingId value="dental-examples" />
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Medication/ibuprofen-med-example-2" />
+      </reference>
+      <name value="Mediation- Ibuprofen (example)" />
+      <description value="This is an example of US Core Medication" />
+      <exampleBoolean value="true" />
+      <groupingId value="dental-examples" />
+    </resource>
+    <resource>
+      <reference>
+        <reference value="MedicationRequest/Ibuprofen-medreq-2" />
+      </reference>
+      <name value="MedicationRequest- Ibuprofen (example)" />
+      <description value="This is an example of US Core MedicationRequest" />
+      <exampleBoolean value="true" />
+      <groupingId value="dental-examples" />
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Medication/erythromycin-med-example" />
+      </reference>
+      <name value="Medication- Erythromycin (example)" />
+      <description value="This is an example of US Core Medication" />
+      <exampleBoolean value="true" />
+      <groupingId value="dental-examples" />
+    </resource>
+    <resource>
+      <reference>
+        <reference value="MedicationRequest/erythromycin-medreq-2" />
+      </reference>
+      <name value="MedicationRequest- Erythromycin (example)" />
+      <description value="This is an example of US Core MedicationRequest" />
+      <exampleBoolean value="true" />
+      <groupingId value="dental-examples" />
+    </resource>
+    <resource>
+      <reference>
+        <reference value="MedicationRequest/Tylenol-med-dental" />
+      </reference>
+      <name value="MedicationRequest- Tylenol (example)" />
+      <description value="This is an example of US Core MedicationRequest" />
+      <exampleBoolean value="true" />
+      <groupingId value="dental-examples" />
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Medication/Lisinopril-med-example" />
+      </reference>
+      <name value="MedicationRequest- Lisinporil Medication (example)" />
+      <description value="This is an example of US Core Medication" />
+      <exampleBoolean value="true" />
+      <groupingId value="dental-examples" />
+    </resource>
+    <resource>
+      <reference>
+        <reference value="MedicationRequest/Lisinopril-medreq" />
+      </reference>
+      <name value="MedicationRequest- Lisinopril Medication Request (example)" />
+      <description value="This is an example of US Core MedicationRequest" />
+      <exampleBoolean value="true" />
+      <groupingId value="dental-examples" />
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Patient/example-dental" />
+      </reference>
+      <name value="Patient A (example)" />
+      <description value="This is an example of US Core Patient" />
+      <exampleBoolean value="true" />
+      <groupingId value="dental-examples" />
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Practitioner/practitioner-D" />
+      </reference>
+      <name value="Practitioner Dentist (example)" />
+      <description value="This is an example of US Core Practitioner" />
+      <exampleBoolean value="true" />
+      <groupingId value="dental-examples" />
+    </resource>
+    <resource>
+      <reference>
+        <reference value="PractitionerRole/PractitionerRole-M" />
+      </reference>
+      <name value="PractitionerRole Medical (example)" />
+      <description value="This is an example of US Core PractitionerRole" />
+      <exampleBoolean value="true" />
+      <groupingId value="dental-examples" />
+    </resource>
+    <resource>
+      <reference>
+        <reference value="PractitionerRole/PractitionerRole-D" />
+      </reference>
+      <name value="PractitionerRole Dentist (example)" />
+      <description value="This is an example of US Core PractitionerRole" />
+      <exampleBoolean value="true" />
+      <groupingId value="dental-examples" />
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Practitioner/practitioner-M" />
+      </reference>
+      <name value="Practitioner Medical (example)" />
+      <description value="This is an example of US Core Practitioner" />
+      <exampleBoolean value="true" />
+      <groupingId value="dental-examples" />
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Procedure/Dental-flouride-tx-example" />
+      </reference>
+      <name value="Procedure- Flouride Treatment (example)" />
+      <description value="This is an example of US Core Procedure" />
+      <exampleBoolean value="true" />
+      <groupingId value="dental-examples" />
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Procedure/Dental-incisor-restoration-example" />
+      </reference>
+      <name value="Procedure- Incisor Restoration (example)" />
+      <description value="This is an example of US Core Procedure" />
+      <exampleBoolean value="true" />
+      <groupingId value="dental-examples" />
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Organization/GHC-organization" />
+        <display value="Good Health Clinic" />
+      </reference>
+      <name value="Organization- Good Health Clinic (example)" />
+      <description value="This is an example of US Core Organization" />
+      <exampleBoolean value="true" />
+      <groupingId value="dental-examples" />
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Organization/GOHC-organization" />
+        <display value="Good Oral Health Clinic" />
+      </reference>
+      <name value="Organization- Good Oral Health Clinic (example)" />
+      <description value="This is an example of US Core Organization" />
+      <exampleBoolean value="true" />
+      <groupingId value="dental-examples" />
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Condition/Dental-caries-example" />
+      </reference>
+      <name value="Condition- Dental Caries (example)" />
+      <description value="This is an example of Dental Condition" />
+      <exampleBoolean value="true" />
+      <groupingId value="dental-examples" />
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Organization/GEHC-organization" />
+        <display value="Good Endodontics Health Clinic" />
+      </reference>
+      <name value="Organization- Good Endodontics Health Clinic (example)" />
+      <description value="This is an example of US Core Organization" />
+      <exampleBoolean value="true" />
+      <groupingId value="dental-examples" />
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Organization/Aetna-organization" />
+        <display value="Aetna Insurance" />
+      </reference>
+      <name value="Organization- Aetna Insurance (example)" />
+      <description value="This is an example of US Core Organization" />
+      <exampleBoolean value="true" />
+      <groupingId value="dental-examples" />
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Condition/Maxillary-perm7-example" />
+      </reference>
+      <name value="Condition- Dental Caries on Permanent Mandibular 7 (example)" />
+      <description value="This is an example of Dental Condition" />
+      <exampleBoolean value="true" />
+      <groupingId value="dental-examples" />
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Condition/Pulpitis-example-4" />
+        <display value="Dental Condition" />
+      </reference>
+      <name value="Condition- Pulpitis (example)" />
+      <description value="This is an example of Dental Condition" />
+      <exampleBoolean value="false" />
+      <exampleCanonical
+        value="http://hl7.org/fhir/us/dental-data-exchange/StructureDefinition/dental-condition" />
+      <groupingId value="dental-examples" />
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Condition/Mandibular-perm18-example" />
+      </reference>
+      <name value="Condition- Caries on Permanent Mandibular 18 (example)" />
+      <description value="This is an example of Dental Condition" />
+      <exampleBoolean value="false" />
+      <exampleCanonical
+        value="http://hl7.org/fhir/us/dental-data-exchange/StructureDefinition/dental-condition" />
+      <groupingId value="dental-examples" />
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Condition/Dental-plaque-example" />
+      </reference>
+      <name value="Condition- Plaque (example)" />
+      <description value="This is an example of Dental Condition" />
+      <exampleBoolean value="true" />
+      <groupingId value="dental-examples" />
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Condition/LLQP-example" />
+      </reference>
+      <name value="Condition- Left Lower Quadrant Pain (example)" />
+      <description value="This is an example of Dental Condition" />
+      <exampleBoolean value="true" />
+      <groupingId value="dental-examples" />
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Condition/Swollen-gums-example" />
+        <display value="Dental Condition" />
+      </reference>
+      <name value="Condition- Swollen gums (example)" />
+      <description value="This is an example of Dental Condition" />
+      <exampleBoolean value="false" />
+      <exampleCanonical
+        value="http://hl7.org/fhir/us/dental-data-exchange/StructureDefinition/dental-condition" />
+      <groupingId value="dental-examples" />
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Condition/toothache-example" />
+      </reference>
+      <name value="Condition- Tootheache (example)" />
+      <description value="This is an example of Dental Condition" />
+      <exampleBoolean value="true" />
+      <groupingId value="dental-examples" />
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Condition/Bleeding-gums-example" />
+      </reference>
+      <name value="Condition- Bleeding gums (example)" />
+      <description value="This is an example of Dental Condition" />
+      <exampleBoolean value="true" />
+      <groupingId value="dental-examples" />
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Condition/Caries-risk" />
+      </reference>
+      <name value="Condition- Caries risk (example)" />
+      <description value="This is an example of Dental Condition" />
+      <exampleBoolean value="true" />
+      <groupingId value="dental-examples" />
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Condition/Dental-caries" />
+      </reference>
+      <name value="Condition- Dental Caries (example)" />
+      <description value="This is an example of Dental Condition" />
+      <exampleBoolean value="true" />
+      <groupingId value="dental-examples" />
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Condition/Tooth-infection18" />
+        <display value="Dental Condition" />
+      </reference>
+      <name value="Condition- Tooth infection 18 (example)" />
+      <description value="This is an example of Dental Condition" />
+      <exampleBoolean value="false" />
+      <exampleCanonical
+        value="http://hl7.org/fhir/us/dental-data-exchange/StructureDefinition/dental-condition" />
+      <groupingId value="dental-examples" />
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Condition/Chronic-periodontitis-example" />
+        <display value="Dental Condition" />
+      </reference>
+      <name value="Condition- Periodontitis (example)" />
+      <description value="This is an example of Dental Condition" />
+      <exampleBoolean value="false" />
+      <exampleCanonical
+        value="http://hl7.org/fhir/us/dental-data-exchange/StructureDefinition/dental-condition" />
+      <groupingId value="dental-examples" />
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Condition/no-chew" />
+        <display value="Dental Condition" />
+      </reference>
+      <name value="Condition- Unable to Chew (example)" />
+      <description value="This is an example of Dental Condition" />
+      <exampleBoolean value="false" />
+      <exampleCanonical
+        value="http://hl7.org/fhir/us/dental-data-exchange/StructureDefinition/dental-condition" />
+      <groupingId value="dental-examples" />
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Condition/HTN-example" />
+      </reference>
+      <name value="Condition- Hypertension (example)" />
+      <description value="This is an example of US Core Condition" />
+      <exampleBoolean value="true" />
+      <groupingId value="dental-examples" />
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Condition/DM1-example" />
+      </reference>
+      <name value="Condition- Diabetes (example)" />
+      <description value="This is an example of US Core Condition" />
+      <exampleBoolean value="true" />
+      <groupingId value="dental-examples" />
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Immunization/imm-1" />
+      </reference>
+      <name value="Immunization (example)" />
+      <description value="This is an example of US Core Immunization" />
+      <exampleBoolean value="true" />
+      <groupingId value="dental-examples" />
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Communication/dental-education" />
+        <display value="Dental Communication" />
+      </reference>
+      <name value="Communication- Patient education (example)" />
+      <description value="This is an example of Communication" />
+      <exampleBoolean value="false" />
+      <exampleCanonical
+        value="http://hl7.org/fhir/us/dental-data-exchange/StructureDefinition/dental-communication" />
+      <groupingId value="dental-examples" />
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Communication/dental-education2" />
+        <display value="Dental Comunication" />
+      </reference>
+      <name value="Communication- Patient Education 2 (example)" />
+      <description value="This is an example of Patient education (verbal)" />
+      <exampleBoolean value="false" />
+      <exampleCanonical
+        value="http://hl7.org/fhir/us/dental-data-exchange/StructureDefinition/dental-communication" />
+      <groupingId value="dental-examples" />
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Observation/Overjet" />
+        <display value="Dental Observation" />
+      </reference>
+      <name value="Dental Observation- Overjet (example)" />
+      <description value="This is an example of a dental finding (measurement)" />
+      <exampleBoolean value="false" />
+      <exampleCanonical
+        value="http://hl7.org/fhir/us/dental-data-exchange/StructureDefinition/dental-findings" />
+      <groupingId value="dental-examples" />
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Observation/Present-job-example-dental" />
+      </reference>
+      <name value="Observation- Occupation: Accountant (example)" />
+      <description value="This is an example of ODH past or present occupation Observation" />
+      <exampleBoolean value="true" />
+      <groupingId value="dental-examples" />
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Observation/Education-level-example-dental" />
+      </reference>
+      <name value="Observation- Education level (example)" />
+      <description value="This is an example of education level" />
+      <exampleBoolean value="true" />
+      <groupingId value="dental-examples" />
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Observation/Smoker-obs-example-dental" />
+      </reference>
+      <name value="Observation- Smoking Status (example)" />
+      <description value="This is an example of smoking status" />
+      <exampleBoolean value="true" />
+      <groupingId value="dental-examples" />
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Observation/vitals-panel" />
+      </reference>
+      <name value="Observation- Vital signs panel (example)" />
+      <description value="This is an example of US Core Vitals panel" />
+      <exampleBoolean value="true" />
+      <groupingId value="dental-examples" />
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Observation/respiratory-rate" />
+      </reference>
+      <name value="Observation- Respiratory Rate (example)" />
+      <description value="This is an example of Respiratory Rate" />
+      <exampleBoolean value="true" />
+      <groupingId value="dental-examples" />
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Observation/body-temperature" />
+      </reference>
+      <name value="Observation- Body temperature (example)" />
+      <description value="This is an example of body temp" />
+      <exampleBoolean value="true" />
+      <groupingId value="dental-examples" />
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Observation/heart-rate" />
+      </reference>
+      <name value="Observation- Heart rate (example)" />
+      <description value="This is an example of heart rate" />
+      <exampleBoolean value="true" />
+      <groupingId value="dental-examples" />
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Observation/blood-pressure" />
+      </reference>
+      <name value="Observation- Blood pressure (example)" />
+      <description value="This is an example of blood pressure" />
+      <exampleBoolean value="true" />
+      <groupingId value="dental-examples" />
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Practitioner/practitioner-UNK" />
+      </reference>
+      <name value="Practitioner with unknown name (example)" />
+      <description value="This is an example of US Core Practitioner" />
+      <exampleBoolean value="true" />
+      <groupingId value="dental-examples" />
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Procedure/Insulin-pump-insertion" />
+      </reference>
+      <name value="Procedure- Insulin pump insertion (example)" />
+      <description value="This is an example of US Core Procedure" />
+      <exampleBoolean value="true" />
+      <groupingId value="dental-examples" />
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Procedure/Oral-eval-example" />
+      </reference>
+      <name value="Procedure- Oral evaluation (example)" />
+      <description value="This is an example of US Core Procedure" />
+      <exampleBoolean value="true" />
+      <groupingId value="dental-examples" />
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ServiceRequest/Dental-extraction-example" />
+        <display value="Dental ServiceRequest" />
+      </reference>
+      <name value="ServiceRequest- Extraction (example)" />
+      <description
+        value="This is an example of a Dental ServiceRequest for a future dental procedure" />
+      <exampleBoolean value="false" />
+      <exampleCanonical value="http://hl7.org/fhir/us/dental-data-exchange/dental-servicerequest" />
+      <groupingId value="dental-examples" />
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ServiceRequest/Radiograph-survey" />
+        <display value="Dental Service Request" />
+      </reference>
+      <name value="ServiceRequest- Full Mouth Radiography imaging survey (example)" />
+      <description
+        value="This is an example of a Dental ServiceRequest for a future dental procedure" />
+      <exampleBoolean value="false" />
+      <exampleCanonical value="http://hl7.org/fhir/us/dental-data-exchange/dental-servicerequest" />
+      <groupingId value="dental-examples" />
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ServiceRequest/Resin-restore-example" />
+        <display value="Dental Service Request" />
+      </reference>
+      <name value="ServiceRequest- Resin Restoration (example)" />
+      <description
+        value="This is an example of a Dental ServiceRequest for a future dental procedure" />
+      <exampleBoolean value="false" />
+      <exampleCanonical value="http://hl7.org/fhir/us/dental-data-exchange/dental-servicerequest" />
+      <groupingId value="dental-examples" />
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ServiceRequest/prophylaxis-example" />
+        <display value="This is an example of a requested prophylaxis treatment (ServiceRequest)" />
+      </reference>
+      <name value="ServiceRequest- Prophylaxis ServiceRequest (example)" />
+      <description value="This is an example of a requested prophylaxis treatment (ServiceRequest)" />
+      <exampleBoolean value="false" />
+      <exampleCanonical value="http://hl7.org/fhir/us/dental-data-exchange/dental-servicerequest" />
+      <groupingId value="dental-examples" />
+    </resource>
+    <resource>
+      <reference>
+        <reference value="CapabilityStatement/dental-server-capstat" />
+        <display value="Dental Data Exchange Server" />
+      </reference>
+      <name value="Dental Data Exchange Server" />
+      <description
+        value="This section describes the expected capabilities of the Dental Data Exchange Document Source (aka server) actor which is responsible for responding to queries for clinical documents provided by Dental Data Exchange Document Consumer (aka client) actors. This CapabilityStatement imports and extends [CCDAonFHIR-server CapabilityStatement](http://hl7.org/fhir/us/ccda/CapabilityStatement-CcdaOnFhirServer.html), which imports and extends the [us-core-server CapabilityStatement](https://www.hl7.org/fhir/us/core/CapabilityStatement-us-core-server.html)" />
+      <exampleBoolean value="false" />
+    </resource>
+    <resource>
+      <reference>
+        <reference value="CapabilityStatement/dental-client-capstat" />
+        <display value="Dental Data Exchange Client" />
+      </reference>
+      <name value="Dental Data Exchange Client" />
+      <description
+        value="This section describes the expected capabilities of the Dental Data Exchange Document Consumer (aka client) actor which is responsible for creating and initiating the queries for clinical documents provided by a Dental Data Exchange Document Source (aka server) actors. This CapabilityStatement imports and extends [CCDAonFHIR-client CapabilityStatement](http://hl7.org/fhir/us/ccda/CapabilityStatement-CcdaOnFhirClient.html)CCDAonFHIR client CapabilityStatement, which imports and extends the [us-core-client CapabilityStatement](https://www.hl7.org/fhir/us/core/CapabilityStatement-us-core-client.html)" />
+      <exampleBoolean value="false" />
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Parameters/dental-terminology-settings" />
+      </reference>
+      <name value="Dental Terminology Settings" />
+      <description
+        value="The parameter defines required Dental Terminology Settings for using version-specific Snomed codes within the US" />
+      <exampleBoolean value="false" />
+    </resource>
+    <page>
+      <nameUrl value="index.html" />
+      <title value="Introduction" />
+      <generation value="markdown" />
+      <page>
+        <nameUrl value="workflows.html" />
+        <title value="Workflows" />
+        <generation value="markdown" />
+      </page>
+      <page>
+        <nameUrl value="background.html" />
+        <title value="Background" />
+        <generation value="markdown" />
+      </page>
+      <page>
+        <nameUrl value="specification.html" />
+        <title value="Specification" />
+        <generation value="markdown" />
+      </page>
+      <page>
+        <nameUrl value="best_practices.html" />
+        <title value="Best Practices" />
+        <generation value="markdown" />
+      </page>
+      <page>
+        <nameUrl value="dental_forms_resources.html" />
+        <title value="Dental Forms &amp; Resources" />
+        <generation value="markdown" />
+      </page>
+      <page>
+        <nameUrl value="downloads.html" />
+        <title value="Downloads" />
+        <generation value="markdown" />
+      </page>
+    </page>
+    <parameter>
+      <code value="releaselabel" />
+      <value value="CI Build" />
+    </parameter>
+    <parameter>
+      <code value="copyrightyear" />
+      <value value="2020+" />
+    </parameter>
+    <parameter>
+      <code value="path-expansion-params" />
+      <value value="resources/parameters/dental-terminology-settings.xml" />
+    </parameter>
+    <parameter>
+      <code value="jira-code" />
+      <value value="dentalreferral" />
+    </parameter>
+  </definition>
 </ImplementationGuide>
