@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Dental-encounter"/>
     <meta>
-        <versionId value="4"/>
-        <lastUpdated value="2020-08-06T17:04:22.367+00:00"/>
-        <source value="#ZYLlLQyPtx1ZimhM"/>
+        <versionId value="5"/>
+        <lastUpdated value="2021-08-25T15:09:21.051+00:00"/>
+        <source value="#Y2kcv0DWSGwV4oRQ"/>
         <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter"/>
     </meta>
     <status value="finished"/>

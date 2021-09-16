@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Complete-Dental-Consult-Note-Document-Bundle-Example"/>
     <meta>
-        <versionId value="10"/>
-        <lastUpdated value="2021-08-17T18:21:09.276+00:00"/>
-        <source value="#RQAXGXUYy4baqwbU"/>
+        <versionId value="17"/>
+        <lastUpdated value="2021-08-27T15:48:21.262+00:00"/>
+        <source value="#0QvC0RTdwuXOfzzP"/>
         <profile value="http://hl7.org/fhir/us/dental-data-exchange/StructureDefinition/dental-bundle"/>
     </meta>
     <identifier>
@@ -28,7 +28,7 @@
                 <type>
                     <coding>
                         <system value="http://loinc.org"/>
-                      <code value="34756-7"/>
+                        <code value="34756-7"/>
                         <display value="Dentistry Consult note"/>
                     </coding>
                 </type>
@@ -716,6 +716,7 @@
                         xmlns="http://www.w3.org/1999/xhtml">
                         <div class="hapiHeaderText">Patient 
               
+                            
                             
                             
                             
@@ -1501,7 +1502,7 @@
                 </class>
                 <type>
                     <coding>
-                      <system value="http://ada.org/cdt"/>
+                        <system value="http://ada.org/cdt"/>
                         <code value="D0150"/>
                     </coding>
                     <text value="Comprehensive Oral Evaluation"/>
@@ -1595,7 +1596,7 @@
                     <reference value="Patient/example-dental"/>
                     <display value="Patient A"/>
                 </subject>
-              <effectiveDateTime value="2020-01-15T05:27:04Z"/>
+                <effectiveDateTime value="2020-01-15T05:27:04Z"/>
                 <issued value="2020-01-15T05:27:04Z"/>
                 <valueCodeableConcept>
                     <coding>
@@ -2362,7 +2363,7 @@
                 <intent value="plan"/>
                 <category>
                     <coding>
-                      <system value="http://snomed.info/sct"/>
+                        <system value="http://snomed.info/sct"/>
                         <code value="387713003"/>
                         <display value="Surgical procedure"/>
                     </coding>
@@ -2370,7 +2371,7 @@
                 </category>
                 <code>
                     <coding>
-                      <system value="http://ada.org/cdt"/>
+                        <system value="http://ada.org/cdt"/>
                         <code value="D7140"/>
                         <display value="Extraction, erupted tooth or exposed root (elevation and/or forceps removal)"/>
                     </coding>
@@ -2406,7 +2407,7 @@
                 <intent value="plan"/>
                 <code>
                     <coding>
-                      <system value="http://ada.org/cdt"/>
+                        <system value="http://ada.org/cdt"/>
                         <code value="D1352"/>
                         <display value="Preventive resin restoration in a moderate to high caries risk patient-permanent tooth"/>
                     </coding>
@@ -2443,7 +2444,7 @@
                 <intent value="plan"/>
                 <code>
                     <coding>
-                      <system value="http://ada.org/cdt"/>
+                        <system value="http://ada.org/cdt"/>
                         <code value="D1352"/>
                         <display value="Preventive resin restoration in a moderate to high caries risk patient-permanent tooth"/>
                     </coding>
@@ -2480,7 +2481,7 @@
                 <intent value="plan"/>
                 <code>
                     <coding>
-                      <system value="http://ada.org/cdt"/>
+                        <system value="http://ada.org/cdt"/>
                         <code value="D0210"/>
                         <display value="Full mouth radiographic survey"/>
                     </coding>
@@ -2507,7 +2508,7 @@
                 <status value="completed"/>
                 <code>
                     <coding>
-                      <system value="http://ada.org/cdt"/>
+                        <system value="http://ada.org/cdt"/>
                         <code value="D1206"/>
                     </coding>
                     <text value="topical application of fluoride varnish"/>

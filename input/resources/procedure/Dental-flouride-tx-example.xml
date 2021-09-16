@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Dental-flouride-tx-example"/>
     <meta>
-        <versionId value="4"/>
-        <lastUpdated value="2020-08-06T17:04:21.753+00:00"/>
-        <source value="#3hgxMRXoaIm6ErWP"/>
+        <versionId value="5"/>
+        <lastUpdated value="2021-08-25T15:09:13.550+00:00"/>
+        <source value="#cHMLs3g5945SkCHA"/>
         <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"/>
     </meta>
     <identifier>
@@ -15,7 +15,7 @@
     <status value="completed"/>
     <code>
         <coding>
-          <system value="http://ada.org/cdt"/>
+            <system value="http://ada.org/cdt"/>
             <code value="D1206"/>
         </coding>
         <text value="topical application of fluoride varnish"/>

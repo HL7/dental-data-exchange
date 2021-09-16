@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Dental-incisor-restoration-example"/>
     <meta>
-        <versionId value="3"/>
-        <lastUpdated value="2020-08-06T17:04:21.884+00:00"/>
-        <source value="#2H8UJOrH58r0mvCE"/>
+        <versionId value="4"/>
+        <lastUpdated value="2021-08-25T15:09:13.550+00:00"/>
+        <source value="#lPM7pEsvMekElqYD"/>
         <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"/>
     </meta>
     <identifier>
@@ -15,7 +15,7 @@
     <status value="preparation"/>
     <code>
         <coding>
-          <system value="http://ada.org/cdt"/>
+            <system value="http://ada.org/cdt"/>
             <code value="D2393"/>
         </coding>
         <text value="Resin-based composite- three surfaces, posterior (restoration)"/>

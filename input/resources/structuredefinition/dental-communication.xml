@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="dental-communication"/>
     <meta>
-        <versionId value="32"/>
-        <lastUpdated value="2021-07-13T20:32:47.340+00:00"/>
-        <source value="#ZZk2FizkoRYwkNtD"/>
+        <versionId value="33"/>
+        <lastUpdated value="2021-08-27T15:33:32.015+00:00"/>
+        <source value="#TGzHf0uupKuQEEGZ"/>
     </meta>
     <url value="http://hl7.org/fhir/us/dental-data-exchange/StructureDefinition/dental-communication"/>
     <name value="DentalCommunication"/>
@@ -36,6 +36,17 @@
     <differential>
         <element id="Communication">
             <path value="Communication"/>
+        </element>
+        <element id="Communication.category">
+            <path value="Communication.category"/>
+            <patternCodeableConcept>
+                <coding>
+                    <system value="http://terminology.hl7.org/CodeSystem/communication-category"/>
+                    <code value="instruction"/>
+                    <display value="Instruction"/>
+                </coding>
+            </patternCodeableConcept>
+            <mustSupport value="true"/>
         </element>
         <element id="Communication.subject">
             <path value="Communication.subject"/>

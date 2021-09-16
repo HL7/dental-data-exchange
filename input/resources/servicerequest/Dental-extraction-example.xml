@@ -3,16 +3,16 @@
     xmlns="http://hl7.org/fhir">
     <id value="Dental-extraction-example"/>
     <meta>
-        <versionId value="4"/>
-        <lastUpdated value="2020-08-06T19:17:07.676+00:00"/>
-        <source value="#BEKih8bMtfeRUqHZ"/>
+        <versionId value="6"/>
+        <lastUpdated value="2021-08-25T15:09:04.426+00:00"/>
+        <source value="#c7jv7dROPUQx9Rtd"/>
         <profile value="http://hl7.org/fhir/us/dental-data-exchange/dental-servicerequest"/>
     </meta>
     <status value="active"/>
     <intent value="plan"/>
     <category>
         <coding>
-          <system value="http://snomed.info/sct"/>
+            <system value="http://snomed.info/sct"/>
             <code value="387713003"/>
             <display value="Surgical procedure"/>
         </coding>
@@ -20,7 +20,7 @@
     </category>
     <code>
         <coding>
-          <system value="http://ada.org/cdt"/>
+            <system value="http://ada.org/cdt"/>
             <code value="D7140"/>
             <display value="Extraction, erupted tooth or exposed root (elevation and/or forceps removal)"/>
         </coding>

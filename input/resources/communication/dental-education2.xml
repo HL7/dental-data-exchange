@@ -3,19 +3,19 @@
     xmlns="http://hl7.org/fhir">
     <id value="dental-education2"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2020-08-06T17:04:20.229+00:00"/>
-        <source value="#0nqBwdD1fsJJdCRN"/>
+        <versionId value="4"/>
+        <lastUpdated value="2021-08-27T15:26:33.979+00:00"/>
+        <source value="#GdB7kPWmcWXC0N81"/>
         <profile value="http://hl7.org/fhir/us/dental-data-exchange/StructureDefinition/dental-communication"/>
     </meta>
     <status value="completed"/>
-  <category>
-    <coding>
-      <system value="http://terminology.hl7.org/CodeSystem/communication-category"/>
-      <code value="instruction"/>
-      <display value="Instruction"/>
-    </coding>
-  </category>
+    <category>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/communication-category"/>
+            <code value="instruction"/>
+            <display value="Instruction"/>
+        </coding>
+    </category>
     <subject>
         <reference value="Patient/example-dental"/>
     </subject>

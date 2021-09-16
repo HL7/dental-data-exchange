@@ -3,16 +3,16 @@
     xmlns="http://hl7.org/fhir">
     <id value="Resin-restore-example"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2020-08-06T17:04:19.936+00:00"/>
-        <source value="#nCbPfQgJGYzektQG"/>
+        <versionId value="3"/>
+        <lastUpdated value="2021-08-25T15:09:04.431+00:00"/>
+        <source value="#8eTk7ieg8JpgAUgE"/>
         <profile value="http://hl7.org/fhir/us/dental-data-exchange/dental-servicerequest"/>
     </meta>
     <status value="active"/>
     <intent value="plan"/>
     <code>
         <coding>
-          <system value="http://ada.org/cdt"/>
+            <system value="http://ada.org/cdt"/>
             <code value="D1352"/>
             <display value="Preventive resin restoration in a moderate to high caries risk patient-permanent tooth"/>
         </coding>

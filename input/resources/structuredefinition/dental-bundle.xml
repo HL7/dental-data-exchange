@@ -2,6 +2,11 @@
 <StructureDefinition
     xmlns="http://hl7.org/fhir">
     <id value="dental-bundle"/>
+    <meta>
+        <versionId value="29"/>
+        <lastUpdated value="2021-08-24T23:42:29.166+00:00"/>
+        <source value="#i0HQYqkmBedgSNjp"/>
+    </meta>
     <url value="http://hl7.org/fhir/us/dental-data-exchange/StructureDefinition/dental-bundle"/>
     <name value="DentalBundle"/>
     <title value="Dental Bundle"/>

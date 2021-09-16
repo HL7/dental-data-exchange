@@ -3,9 +3,9 @@
     xmlns="http://hl7.org/fhir">
     <id value="Comp-oral-eval"/>
     <meta>
-        <versionId value="2"/>
-        <lastUpdated value="2020-08-06T17:04:21.616+00:00"/>
-        <source value="#QZSCqR3h3zVtaXVj"/>
+        <versionId value="3"/>
+        <lastUpdated value="2021-08-25T15:09:21.055+00:00"/>
+        <source value="#1vKsReNQ6kEiNemP"/>
         <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter"/>
     </meta>
     <status value="planned"/>
@@ -16,7 +16,7 @@
     </class>
     <type>
         <coding>
-          <system value="http://ada.org/cdt"/>
+            <system value="http://ada.org/cdt"/>
             <code value="D0150"/>
         </coding>
         <text value="Comprehensive Oral Evaluation"/>

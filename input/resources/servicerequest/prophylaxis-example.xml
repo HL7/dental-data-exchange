@@ -3,16 +3,16 @@
     xmlns="http://hl7.org/fhir">
     <id value="prophylaxis-example"/>
     <meta>
-        <versionId value="1"/>
-        <lastUpdated value="2021-04-10T03:28:45.159+00:00"/>
-        <source value="#Q4Gi7ccCLhYZBm5u"/>
+        <versionId value="2"/>
+        <lastUpdated value="2021-08-25T15:09:04.425+00:00"/>
+        <source value="#3GuJaGTJjbgyJVdj"/>
         <profile value="http://hl7.org/fhir/us/dental-data-exchange/dental-servicerequest"/>
     </meta>
     <status value="active"/>
     <intent value="plan"/>
     <code>
         <coding>
-          <system value="http://ada.org/cdt"/>
+            <system value="http://ada.org/cdt"/>
             <code value="D1352"/>
             <display value="Preventive resin restoration in a moderate to high caries risk patient-permanent tooth"/>
         </coding>
