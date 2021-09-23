@@ -3,74 +3,40 @@
 Code System URI 'http://www.ama-assn.org/go/cpt' is unknown so the code cannot be validated
 Code System URI 'http://ada.org/cdt' is unknown so the code cannot be validated
 Code System URI 'urn:oid:2.16.840.1.114222.4.11.7186' is unknown so the code cannot be validated
-Code System URI 'http://ada.org/cdt' is unknown so the code cannot be validated
 
-Code System URI 'http://ada.org/cdt' is unknown so the code cannot be validated
-Code System URI 'http://www.ama-assn.org/go/cpt' is unknown so the code cannot be validated
-Code System URI 'http://ada.org/cdt' is unknown so the code cannot be validated
-Code System URI 'urn:oid:2.16.840.1.114222.4.11.7186' is unknown so the code cannot be validated
-Code System URI 'http://www.ama-assn.org/go/cpt' is unknown so the code cannot be validated
-Code System URI 'urn:oid:2.16.840.1.114222.4.11.7186' is unknown so the code cannot be validated
-Code System URI 'http://ada.org/cdt' is unknown so the code cannot be validated
+# See Zulip thread: https://chat.fhir.org/#narrow/stream/179252-IG-creation/topic/US-Core.20ValueSets.20not.20recognized.20by.20validator
+[Unable to determine whether the provided codes are in the value set http://hl7.org/fhir/us/core/ValueSet/us-core-condition-category because the value set or code system is not known to the validator]
+[Unable to determine whether the provided codes are in the value set http://hl7.org/fhir/us/core/ValueSet/us-core-condition-category because the value set or a code system it depends on is not known to the validator]
+[Unable to determine whether the provided codes are in the value set http://hl7.org/fhir/us/core/ValueSet/us-core-encounter-type because the value set or a code system it depends on is not known to the validator]
 
 # Known issue that has been raised to US Steering Committee, as all instances of Dental Findings are not expected to conform to one of US Core Observation profiles. See https://confluence.hl7.org/pages/viewpage.action?pageId=66923650
 US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles
 
 # Snodent CodeSystem is known to be labelled as a fragment, therefore its codes cannot be validated
-Unknown Code http://www.ada.org/snodent#175027D in http://www.ada.org/snodent - note that the code system is labelled as a fragment, so the code may be valid in some other fragment for 'http://www.ada.org/snodent#175027D'
-Unknown Code http://www.ada.org/snodent#175321D in http://www.ada.org/snodent - note that the code system is labelled as a fragment, so the code may be valid in some other fragment for 'http://www.ada.org/snodent#175321D'
 Unknown Code http://www.ada.org/snodent#108723D in http://www.ada.org/snodent - note that the code system is labelled as a fragment, so the code may be valid in some other fragment for 'http://www.ada.org/snodent#108723D'
-Unknown Code http://www.ada.org/snodent#131687D in http://www.ada.org/snodent - note that the code system is labelled as a fragment, so the code may be valid in some other fragment for 'http://www.ada.org/snodent#131687D'
-Unknown Code http://www.ada.org/snodent#148393D in http://www.ada.org/snodent - note that the code system is labelled as a fragment, so the code may be valid in some other fragment for 'http://www.ada.org/snodent#148393D'
-Unknown Code http://www.ada.org/snodent#148393D in http://www.ada.org/snodent - note that the code system is labelled as a fragment, so the code may be valid in some other fragment for 'http://www.ada.org/snodent#148393D'
-Unknown Code http://www.ada.org/snodent#179051D in http://www.ada.org/snodent - note that the code system is labelled as a fragment, so the code may be valid in some other fragment for 'http://www.ada.org/snodent#179051D'
-Unknown Code http://www.ada.org/snodent#181608D in http://www.ada.org/snodent - note that the code system is labelled as a fragment, so the code may be valid in some other fragment for 'http://www.ada.org/snodent#181608D'
-Unknown Code http://www.ada.org/snodent#118666D in http://www.ada.org/snodent - note that the code system is labelled as a fragment, so the code may be valid in some other fragment for 'http://www.ada.org/snodent#118666D'
-Unknown Code http://www.ada.org/snodent#118065D in http://www.ada.org/snodent - note that the code system is labelled as a fragment, so the code may be valid in some other fragment for 'http://www.ada.org/snodent#118065D'
-Unknown Code http://www.ada.org/snodent#118065D in http://www.ada.org/snodent - note that the code system is labelled as a fragment, so the code may be valid in some other fragment for 'http://www.ada.org/snodent#118065D'
-Unknown Code http://www.ada.org/snodent#118065D in http://www.ada.org/snodent - note that the code system is labelled as a fragment, so the code may be valid in some other fragment for 'http://www.ada.org/snodent#118065D'
-Unknown Code http://www.ada.org/snodent#126488D in http://www.ada.org/snodent - note that the code system is labelled as a fragment, so the code may be valid in some other fragment for 'http://www.ada.org/snodent#126488D'
-Unknown Code http://www.ada.org/snodent#118666D in http://www.ada.org/snodent - note that the code system is labelled as a fragment, so the code may be valid in some other fragment for 'http://www.ada.org/snodent#118666D'
-Unknown Code http://www.ada.org/snodent#116957D in http://www.ada.org/snodent - note that the code system is labelled as a fragment, so the code may be valid in some other fragment for 'http://www.ada.org/snodent#116957D'
-Unknown Code http://www.ada.org/snodent#175027D in http://www.ada.org/snodent - note that the code system is labelled as a fragment, so the code may be valid in some other fragment for 'http://www.ada.org/snodent#175027D'
-Unknown Code http://www.ada.org/snodent#175321D in http://www.ada.org/snodent - note that the code system is labelled as a fragment, so the code may be valid in some other fragment for 'http://www.ada.org/snodent#175321D'
-Unknown Code http://www.ada.org/snodent#108723D in http://www.ada.org/snodent - note that the code system is labelled as a fragment, so the code may be valid in some other fragment for 'http://www.ada.org/snodent#108723D'
-Unknown Code http://www.ada.org/snodent#131687D in http://www.ada.org/snodent - note that the code system is labelled as a fragment, so the code may be valid in some other fragment for 'http://www.ada.org/snodent#131687D'
-Unknown Code http://www.ada.org/snodent#148393D in http://www.ada.org/snodent - note that the code system is labelled as a fragment, so the code may be valid in some other fragment for 'http://www.ada.org/snodent#148393D'
-Unknown Code http://www.ada.org/snodent#148393D in http://www.ada.org/snodent - note that the code system is labelled as a fragment, so the code may be valid in some other fragment for 'http://www.ada.org/snodent#148393D'
-Unknown Code http://www.ada.org/snodent#179051D in http://www.ada.org/snodent - note that the code system is labelled as a fragment, so the code may be valid in some other fragment for 'http://www.ada.org/snodent#179051D'
-Unknown Code http://www.ada.org/snodent#148393D in http://www.ada.org/snodent - note that the code system is labelled as a fragment, so the code may be valid in some other fragment for 'http://www.ada.org/snodent#148393D'
-Unknown Code http://www.ada.org/snodent#148393D in http://www.ada.org/snodent - note that the code system is labelled as a fragment, so the code may be valid in some other fragment
-Unknown Code http://www.ada.org/snodent#179051D in http://www.ada.org/snodent - note that the code system is labelled as a fragment, so the code may be valid in some other fragment for 'http://www.ada.org/snodent#179051D'
-Unknown Code http://www.ada.org/snodent#179051D in http://www.ada.org/snodent - note that the code system is labelled as a fragment, so the code may be valid in some other fragment
-Unknown Code http://www.ada.org/snodent#118666D in http://www.ada.org/snodent - note that the code system is labelled as a fragment, so the code may be valid in some other fragment for 'http://www.ada.org/snodent#118666D'
 Unknown Code http://www.ada.org/snodent#116957D in http://www.ada.org/snodent - note that the code system is labelled as a fragment, so the code may be valid in some other fragment
 Unknown Code http://www.ada.org/snodent#116957D in http://www.ada.org/snodent - note that the code system is labelled as a fragment, so the code may be valid in some other fragment for 'http://www.ada.org/snodent#116957D'
-Unknown Code http://www.ada.org/snodent#175321D in http://www.ada.org/snodent - note that the code system is labelled as a fragment, so the code may be valid in some other fragment for 'http://www.ada.org/snodent#175321D'
-Unknown Code http://www.ada.org/snodent#175321D in http://www.ada.org/snodent - note that the code system is labelled as a fragment, so the code may be valid in some other fragment
-Unknown Code http://www.ada.org/snodent#118065D in http://www.ada.org/snodent - note that the code system is labelled as a fragment, so the code may be valid in some other fragment for 'http://www.ada.org/snodent#118065D'
 Unknown Code http://www.ada.org/snodent#118065D in http://www.ada.org/snodent - note that the code system is labelled as a fragment, so the code may be valid in some other fragment
-Unknown Code http://www.ada.org/snodent#108723D in http://www.ada.org/snodent - note that the code system is labelled as a fragment, so the code may be valid in some other fragment for 'http://www.ada.org/snodent#108723D'
-WARNING: Condition/Dental-plaque-example: Condition.code: Unknown Code http://www.ada.org/snodent#108723D in http://www.ada.org/snodent - note that the code system is labelled as a fragment, so the code may be valid in some other fragment
-Unknown Code http://www.ada.org/snodent#175027D in http://www.ada.org/snodent - note that the code system is labelled as a fragment, so the code may be valid in some other fragment for 'http://www.ada.org/snodent#175027D'
-Unknown Code http://www.ada.org/snodent#175027D in http://www.ada.org/snodent - note that the code system is labelled as a fragment, so the code may be valid in some other fragment
-[Unable to determine whether the provided codes are in the value set http://hl7.org/fhir/us/core/ValueSet/us-core-condition-category because the value set or code system is not known to the validator]
+Unknown Code http://www.ada.org/snodent#118065D in http://www.ada.org/snodent - note that the code system is labelled as a fragment, so the code may be valid in some other fragment for 'http://www.ada.org/snodent#118065D'
 Unknown Code http://www.ada.org/snodent#118666D in http://www.ada.org/snodent - note that the code system is labelled as a fragment, so the code may be valid in some other fragment
 Unknown Code http://www.ada.org/snodent#118666D in http://www.ada.org/snodent - note that the code system is labelled as a fragment, so the code may be valid in some other fragment for 'http://www.ada.org/snodent#118666D'
-Unknown Code http://www.ada.org/snodent#118065D in http://www.ada.org/snodent - note that the code system is labelled as a fragment, so the code may be valid in some other fragment
-Unknown Code http://www.ada.org/snodent#118065D in http://www.ada.org/snodent - note that the code system is labelled as a fragment, so the code may be valid in some other fragment for 'http://www.ada.org/snodent#118065D'
-Unknown Code http://www.ada.org/snodent#118065D in http://www.ada.org/snodent - note that the code system is labelled as a fragment, so the code may be valid in some other fragment for 'http://www.ada.org/snodent#118065D'
-Unknown Code http://www.ada.org/snodent#118065D in http://www.ada.org/snodent - note that the code system is labelled as a fragment, so the code may be valid in some other fragment
 Unknown Code http://www.ada.org/snodent#125784D in http://www.ada.org/snodent - note that the code system is labelled as a fragment, so the code may be valid in some other fragment for 'http://www.ada.org/snodent#125784D'
-Unknown Code http://www.ada.org/snodent#148393D in http://www.ada.org/snodent - note that the code system is labelled as a fragment, so the code may be valid in some other fragment
-Unknown Code http://www.ada.org/snodent#148393D in http://www.ada.org/snodent - note that the code system is labelled as a fragment, so the code may be valid in some other fragment for 'http://www.ada.org/snodent#148393D'
-Unknown Code http://www.ada.org/snodent#181608D in http://www.ada.org/snodent - note that the code system is labelled as a fragment, so the code may be valid in some other fragment
-Unknown Code http://www.ada.org/snodent#181608D in http://www.ada.org/snodent - note that the code system is labelled as a fragment, so the code may be valid in some other fragment for 'http://www.ada.org/snodent#181608D'
 Unknown Code http://www.ada.org/snodent#126488D in http://www.ada.org/snodent - note that the code system is labelled as a fragment, so the code may be valid in some other fragment
 Unknown Code http://www.ada.org/snodent#126488D in http://www.ada.org/snodent - note that the code system is labelled as a fragment, so the code may be valid in some other fragment for 'http://www.ada.org/snodent#126488D'
-Unknown Code http://www.ada.org/snodent#131687D in http://www.ada.org/snodent - note that the code system is labelled as a fragment, so the code may be valid in some other fragment for 'http://www.ada.org/snodent#131687D'
 Unknown Code http://www.ada.org/snodent#131687D in http://www.ada.org/snodent - note that the code system is labelled as a fragment, so the code may be valid in some other fragment
+Unknown Code http://www.ada.org/snodent#131687D in http://www.ada.org/snodent - note that the code system is labelled as a fragment, so the code may be valid in some other fragment for 'http://www.ada.org/snodent#131687D'
+Unknown Code http://www.ada.org/snodent#148393D in http://www.ada.org/snodent - note that the code system is labelled as a fragment, so the code may be valid in some other fragment
+Unknown Code http://www.ada.org/snodent#148393D in http://www.ada.org/snodent - note that the code system is labelled as a fragment, so the code may be valid in some other fragment for 'http://www.ada.org/snodent#148393D'
+Unknown Code http://www.ada.org/snodent#175027D in http://www.ada.org/snodent - note that the code system is labelled as a fragment, so the code may be valid in some other fragment
+Unknown Code http://www.ada.org/snodent#175027D in http://www.ada.org/snodent - note that the code system is labelled as a fragment, so the code may be valid in some other fragment for 'http://www.ada.org/snodent#175027D'
+Unknown Code http://www.ada.org/snodent#175321D in http://www.ada.org/snodent - note that the code system is labelled as a fragment, so the code may be valid in some other fragment
+Unknown Code http://www.ada.org/snodent#175321D in http://www.ada.org/snodent - note that the code system is labelled as a fragment, so the code may be valid in some other fragment for 'http://www.ada.org/snodent#175321D'
+Unknown Code http://www.ada.org/snodent#179051D in http://www.ada.org/snodent - note that the code system is labelled as a fragment, so the code may be valid in some other fragment
+Unknown Code http://www.ada.org/snodent#179051D in http://www.ada.org/snodent - note that the code system is labelled as a fragment, so the code may be valid in some other fragment for 'http://www.ada.org/snodent#179051D'
+Unknown Code http://www.ada.org/snodent#181608D in http://www.ada.org/snodent - note that the code system is labelled as a fragment, so the code may be valid in some other fragment
+Unknown Code http://www.ada.org/snodent#181608D in http://www.ada.org/snodent - note that the code system is labelled as a fragment, so the code may be valid in some other fragment for 'http://www.ada.org/snodent#181608D'
 Unknown Code http://www.ada.org/snodent#209670D in http://www.ada.org/snodent - note that the code system is labelled as a fragment, so the code may be valid in some other fragment for 'http://www.ada.org/snodent#209670D'
+WARNING: Condition/Dental-plaque-example: Condition.code: Unknown Code http://www.ada.org/snodent#108723D in http://www.ada.org/snodent - note that the code system is labelled as a fragment, so the code may be valid in some other fragment
 
 # Warning from ODH
 WARNING: Observation/Present-job-example-dental: Observation.value.ofType(CodeableConcept): ValueSet https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.7186 not found by validator
