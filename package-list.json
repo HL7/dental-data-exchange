@@ -9,16 +9,6 @@
 			"current": true
 		},
 		{
-			"version": "0.1.0",
-			"date": "2020-08-05",
-			"path": "http://hl7.org/fhir/us/dental-data-exchange/2020SEP",
-			"desc": "Ballot for STU Release 1",
-			"fhirversion": "4.0.1",
-			"status": "ballot",
-			"sequence": "STU1",
-			"current": false
-		},
-		{
 			"version": "1.0.0",
 			"current": true,
 			"desc": "STU Release 1",
@@ -27,6 +17,16 @@
 			"date": "2021-08-01",
 			"sequence": "STU1",
 			"status": "trial-use"
+		},
+		{
+			"version": "0.1.0",
+			"date": "2020-08-05",
+			"path": "http://hl7.org/fhir/us/dental-data-exchange/2020SEP",
+			"desc": "Ballot for STU Release 1",
+			"fhirversion": "4.0.1",
+			"status": "ballot",
+			"sequence": "STU1",
+			"current": false
 		}
 	],
 	"package-id": "hl7.fhir.us.dental-data-exchange",
