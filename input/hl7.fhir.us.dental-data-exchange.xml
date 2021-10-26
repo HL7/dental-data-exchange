@@ -546,8 +546,8 @@
         <resource>
             <reference>
                 <reference value="Condition/Dental-caries"/></reference>
-            <name value="Condition- Dental Caries (example)"/>
-            <description value="This is an example of Dental Condition"/>
+            <name value="Condition- Dental Caries (US Core) (example)"/>
+            <description value="This is an example of Dental Condition (US Core Condition)"/>
             <exampleBoolean value="true"/>
             <groupingId value="dental-examples"/>
         </resource>
