@@ -307,7 +307,7 @@
         <resource>
             <reference>
                 <reference value="Medication/ibuprofen-med-example-2"/></reference>
-            <name value="Mediation- Ibuprofen (example)"/>
+            <name value="Medication- Ibuprofen (example)"/>
             <description value="This is an example of US Core Medication"/>
             <exampleBoolean value="true"/>
             <groupingId value="dental-examples"/>
