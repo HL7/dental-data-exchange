@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Condition
     xmlns="http://hl7.org/fhir">
-    <id value="Dental-caries-example"/>
+    <id value="Dental-caries-example-us-core-contition"/>
     <meta>
-        <versionId value="6"/>
-        <lastUpdated value="2020-08-06T17:04:21.776+00:00"/>
-        <source value="#F4FmM7555HccNM56"/>
         <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"/>
     </meta>
     <clinicalStatus>

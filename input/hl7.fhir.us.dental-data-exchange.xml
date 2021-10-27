@@ -438,7 +438,15 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Condition/Dental-caries-example"/></reference>
+                <reference value="Condition/Dental-caries-example-us-core-contition"/></reference>
+            <name value="Condition- Dental Caries (US Core Condition) (example)"/>
+            <description value="This is an example of Dental Condition (US Core Condition)"/>
+            <exampleBoolean value="true"/>
+            <groupingId value="dental-examples"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Condition/Dental-caries"/></reference>
             <name value="Condition- Dental Caries (example)"/>
             <description value="This is an example of Dental Condition"/>
             <exampleBoolean value="true"/>
@@ -540,14 +548,6 @@
                 <reference value="Condition/Caries-risk"/></reference>
             <name value="Condition- Caries risk (example)"/>
             <description value="This is an example of Dental Condition"/>
-            <exampleBoolean value="true"/>
-            <groupingId value="dental-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Condition/Dental-caries"/></reference>
-            <name value="Condition- Dental Caries (US Core) (example)"/>
-            <description value="This is an example of Dental Condition (US Core Condition)"/>
             <exampleBoolean value="true"/>
             <groupingId value="dental-examples"/>
         </resource>
