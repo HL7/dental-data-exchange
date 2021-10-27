@@ -438,7 +438,7 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Condition/Dental-caries-example-us-core-contition"/></reference>
+                <reference value="Condition/Dental-caries-example-us-core-condition"/></reference>
             <name value="Condition- Dental Caries (US Core Condition) (example)"/>
             <description value="This is an example of Dental Condition (US Core Condition)"/>
             <exampleBoolean value="true"/>

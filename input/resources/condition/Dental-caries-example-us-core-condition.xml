@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Condition
     xmlns="http://hl7.org/fhir">
-    <id value="Dental-caries-example-us-core-contition"/>
+    <id value="Dental-caries-example-us-core-condition"/>
     <meta>
         <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"/>
     </meta>
