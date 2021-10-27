@@ -8,6 +8,7 @@ Code System URI 'urn:oid:2.16.840.1.114222.4.11.7186' is unknown so the code can
 [Unable to determine whether the provided codes are in the value set http://hl7.org/fhir/us/core/ValueSet/us-core-condition-category because the value set or code system is not known to the validator]
 [Unable to determine whether the provided codes are in the value set http://hl7.org/fhir/us/core/ValueSet/us-core-condition-category because the value set or a code system it depends on is not known to the validator]
 [Unable to determine whether the provided codes are in the value set http://hl7.org/fhir/us/core/ValueSet/us-core-encounter-type because the value set or a code system it depends on is not known to the validator]
+[Unable to determine whether the provided codes are in the value set http://hl7.org/fhir/us/core/ValueSet/us-core-procedure-code because the value set or a code system it depends on is not known to the validator, Code System URI 'http://ada.org/cdt' is unknown so the code cannot be validated]
 
 # Known issue that has been raised to US Steering Committee, as all instances of Dental Findings are not expected to conform to one of US Core Observation profiles. See https://confluence.hl7.org/pages/viewpage.action?pageId=66923650
 US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles
