@@ -307,7 +307,7 @@
         <resource>
             <reference>
                 <reference value="Medication/ibuprofen-med-example-2"/></reference>
-            <name value="Mediation- Ibuprofen (example)"/>
+            <name value="Medication- Ibuprofen (example)"/>
             <description value="This is an example of US Core Medication"/>
             <exampleBoolean value="true"/>
             <groupingId value="dental-examples"/>
@@ -438,7 +438,15 @@
         </resource>
         <resource>
             <reference>
-                <reference value="Condition/Dental-caries-example"/></reference>
+                <reference value="Condition/Dental-caries-example-us-core-condition"/></reference>
+            <name value="Condition- Dental Caries (US Core Condition) (example)"/>
+            <description value="This is an example of Dental Condition (US Core Condition)"/>
+            <exampleBoolean value="true"/>
+            <groupingId value="dental-examples"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Condition/Dental-caries"/></reference>
             <name value="Condition- Dental Caries (example)"/>
             <description value="This is an example of Dental Condition"/>
             <exampleBoolean value="true"/>
@@ -539,14 +547,6 @@
             <reference>
                 <reference value="Condition/Caries-risk"/></reference>
             <name value="Condition- Caries risk (example)"/>
-            <description value="This is an example of Dental Condition"/>
-            <exampleBoolean value="true"/>
-            <groupingId value="dental-examples"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Condition/Dental-caries"/></reference>
-            <name value="Condition- Dental Caries (example)"/>
             <description value="This is an example of Dental Condition"/>
             <exampleBoolean value="true"/>
             <groupingId value="dental-examples"/>
