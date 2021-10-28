@@ -86,7 +86,7 @@
             </reference>
             <name value="Dental Referral Note"/>
             <description value="This Profile defines the Dental Referral Note profile. It contains the textual information regarding a referral to a general dentist or dental specialist as well as references to supplemental dental profiles for the referral"/>
-            <exampleBoolean value="false"/>
+<!--            <exampleBoolean value="false"/>-->
             <groupingId value="dental-profiles"/>
         </resource>
         <resource>
@@ -226,7 +226,7 @@
                 <reference value="Composition/Med-2-Dental-Referral"/>
                 <display value="Referral Note"/>
             </reference>
-            <name value="Dental Referral Note (example)"/>
+            <name value="Dental Referral Note example"/>
             <description value="This is an example of Referral Note Composition"/>
             <!--<exampleBoolean value="false"/>-->
             <exampleCanonical value="http://hl7.org/fhir/us/dental-data-exchange/StructureDefinition/dental-referral-note"/>
