@@ -206,7 +206,7 @@
             </reference>
             <name value="Complete Dental Referral Note Document Bundle (example)"/>
             <description value="This is an example of a Dental Referral Document Bundle"/>
-            <exampleBoolean value="false"/>
+            <!--<exampleBoolean value="false"/>-->
             <exampleCanonical value="http://hl7.org/fhir/us/dental-data-exchange/StructureDefinition/dental-bundle"/>
             <groupingId value="dental-examples"/>
         </resource>
@@ -217,7 +217,7 @@
             </reference>
             <name value="Complete Dental Consult Note Document Bundle (example)"/>
             <description value="This is an example of a Dental Consult Note Document Bundle"/>
-            <exampleBoolean value="false"/>
+            <!--<exampleBoolean value="false"/>-->
             <exampleCanonical value="http://hl7.org/fhir/us/dental-data-exchange/StructureDefinition/dental-bundle"/>
             <groupingId value="dental-examples"/>
         </resource>
@@ -228,7 +228,7 @@
             </reference>
             <name value="Dental Referral Note (example)"/>
             <description value="This is an example of Referral Note Composition"/>
-            <exampleBoolean value="false"/>
+            <!--<exampleBoolean value="false"/>-->
             <exampleCanonical value="http://hl7.org/fhir/us/dental-data-exchange/StructureDefinition/dental-referral-note"/>
             <groupingId value="dental-examples"/>
         </resource>
@@ -239,7 +239,7 @@
             </reference>
             <name value="Dental Consultation Note (example)"/>
             <description value="This is an example of Consult Note Composition"/>
-            <exampleBoolean value="false"/>
+            <!--<exampleBoolean value="false"/>-->
             <exampleCanonical value="http://hl7.org/fhir/us/dental-data-exchange/StructureDefinition/dental-consult-note"/>
             <groupingId value="dental-examples"/>
         </resource>
@@ -276,7 +276,7 @@
             </reference>
             <name value="Dental Referral ServiceRequest (example)"/>
             <description value="This is an example of ServiceRequest"/>
-            <exampleBoolean value="false"/>
+            <!--<exampleBoolean value="false"/>-->
             <exampleCanonical value="http://hl7.org/fhir/us/dental-data-exchange/dental-servicerequest"/>
             <groupingId value="dental-examples"/>
         </resource>
@@ -487,7 +487,7 @@
             </reference>
             <name value="Condition- Pulpitis (example)"/>
             <description value="This is an example of Dental Condition"/>
-            <exampleBoolean value="false"/>
+            <!--<exampleBoolean value="false"/>-->
             <exampleCanonical value="http://hl7.org/fhir/us/dental-data-exchange/StructureDefinition/dental-condition"/>
             <groupingId value="dental-examples"/>
         </resource>
@@ -496,7 +496,7 @@
                 <reference value="Condition/Mandibular-perm18-example"/></reference>
             <name value="Condition- Caries on Permanent Mandibular 18 (example)"/>
             <description value="This is an example of Dental Condition"/>
-            <exampleBoolean value="false"/>
+            <!--<exampleBoolean value="false"/>-->
             <exampleCanonical value="http://hl7.org/fhir/us/dental-data-exchange/StructureDefinition/dental-condition"/>
             <groupingId value="dental-examples"/>
         </resource>
@@ -523,7 +523,7 @@
             </reference>
             <name value="Condition- Swollen gums (example)"/>
             <description value="This is an example of Dental Condition"/>
-            <exampleBoolean value="false"/>
+            <!--<exampleBoolean value="false"/>-->
             <exampleCanonical value="http://hl7.org/fhir/us/dental-data-exchange/StructureDefinition/dental-condition"/>
             <groupingId value="dental-examples"/>
         </resource>
@@ -558,7 +558,7 @@
             </reference>
             <name value="Condition- Tooth infection 18 (example)"/>
             <description value="This is an example of Dental Condition"/>
-            <exampleBoolean value="false"/>
+            <!--<exampleBoolean value="false"/>-->
             <exampleCanonical value="http://hl7.org/fhir/us/dental-data-exchange/StructureDefinition/dental-condition"/>
             <groupingId value="dental-examples"/>
         </resource>
@@ -569,7 +569,7 @@
             </reference>
             <name value="Condition- Periodontitis (example)"/>
             <description value="This is an example of Dental Condition"/>
-            <exampleBoolean value="false"/>
+<!--            <exampleBoolean value="false"/>-->
             <exampleCanonical value="http://hl7.org/fhir/us/dental-data-exchange/StructureDefinition/dental-condition"/>
             <groupingId value="dental-examples"/>
         </resource>
@@ -580,7 +580,7 @@
             </reference>
             <name value="Condition- Unable to Chew (example)"/>
             <description value="This is an example of Dental Condition"/>
-            <exampleBoolean value="false"/>
+<!--            <exampleBoolean value="false"/>-->
             <exampleCanonical value="http://hl7.org/fhir/us/dental-data-exchange/StructureDefinition/dental-condition"/>
             <groupingId value="dental-examples"/>
         </resource>
@@ -615,7 +615,7 @@
             </reference>
             <name value="Communication- Patient education (example)"/>
             <description value="This is an example of Communication"/>
-            <exampleBoolean value="false"/>
+            <!--<exampleBoolean value="false"/>-->
             <exampleCanonical value="http://hl7.org/fhir/us/dental-data-exchange/StructureDefinition/dental-communication"/>
             <groupingId value="dental-examples"/>
         </resource>
@@ -626,7 +626,7 @@
             </reference>
             <name value="Communication- Patient Education 2 (example)"/>
             <description value="This is an example of Patient education (verbal)"/>
-            <exampleBoolean value="false"/>
+            <!--<exampleBoolean value="false"/>-->
             <exampleCanonical value="http://hl7.org/fhir/us/dental-data-exchange/StructureDefinition/dental-communication"/>
             <groupingId value="dental-examples"/>
         </resource>
@@ -637,7 +637,7 @@
             </reference>
             <name value="Dental Observation- Overjet (example)"/>
             <description value="This is an example of a dental finding (measurement)"/>
-            <exampleBoolean value="false"/>
+            <!--<exampleBoolean value="false"/>-->
             <exampleCanonical value="http://hl7.org/fhir/us/dental-data-exchange/StructureDefinition/dental-findings"/>
             <groupingId value="dental-examples"/>
         </resource>
@@ -736,7 +736,7 @@
             </reference>
             <name value="ServiceRequest- Extraction (example)"/>
             <description value="This is an example of a Dental ServiceRequest for a future dental procedure"/>
-            <exampleBoolean value="false"/>
+            <!--<exampleBoolean value="false"/>-->
             <exampleCanonical value="http://hl7.org/fhir/us/dental-data-exchange/dental-servicerequest"/>
             <groupingId value="dental-examples"/>
         </resource>
@@ -747,7 +747,7 @@
             </reference>
             <name value="ServiceRequest- Full Mouth Radiography imaging survey (example)"/>
             <description value="This is an example of a Dental ServiceRequest for a future dental procedure"/>
-            <exampleBoolean value="false"/>
+            <!--<exampleBoolean value="false"/>-->
             <exampleCanonical value="http://hl7.org/fhir/us/dental-data-exchange/dental-servicerequest"/>
             <groupingId value="dental-examples"/>
         </resource>
@@ -758,7 +758,7 @@
             </reference>
             <name value="ServiceRequest- Resin Restoration (example)"/>
             <description value="This is an example of a Dental ServiceRequest for a future dental procedure"/>
-            <exampleBoolean value="false"/>
+            <!--<exampleBoolean value="false"/>-->
             <exampleCanonical value="http://hl7.org/fhir/us/dental-data-exchange/dental-servicerequest"/>
             <groupingId value="dental-examples"/>
         </resource>
@@ -769,7 +769,7 @@
             </reference>
             <name value="ServiceRequest- Prophylaxis ServiceRequest (example)"/>
             <description value="This is an example of a requested prophylaxis treatment (ServiceRequest)"/>
-            <exampleBoolean value="false"/>
+            <!--<exampleBoolean value="false"/>-->
             <exampleCanonical value="http://hl7.org/fhir/us/dental-data-exchange/dental-servicerequest"/>
             <groupingId value="dental-examples"/>
         </resource>
