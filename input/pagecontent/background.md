@@ -639,11 +639,11 @@ This table maps the FHIR resources to CDA sections and entries and to data value
 
 
 ### Scenario 3: Dental to Dental (Endodontist) Referral
-Patient A contacts Dr. Drew Dentist complaining about pain in lower right quadrant of his mouth. He mentioned the pain started two weeks ago and has worsened. He noticed sharp, stabbing pain provoked by drinking cold beverages in the past week and lingering pain with biting in the last 2 days. Patient A is able to eat regular food but is only chewing on the left side. He is taking 400mg ibuprofen every 8 hours for pain. 
+Patient B has a history of hypertension and takes Lisinopril 10mg tablet once daily. He is also taking Azithromycin in accordance with the current American Dental Association Clinical Practice Guidelines for the infection (since there will be a delay in definitive conservative dental treatment due to the referral, and he is allergic to penicillin), and alternating acetaminophen and ibuprofen as needed for pain control. 
 
-Patient A has a history of hypertension and takes Lisinopril 10mg tablet once daily. He is also taking erythromycin 500mg every 6 hours for the infection, and additional ibuprofen for pain as needed. He is allergic to penicillin. 
+Patient B has a history of hypertension and takes Lisinopril 10mg tablet once daily. He is also taking Azithromycin in accordance with the current American Dental Association Clinical Practice Guidelines for the infection (since there will be a delay in definitive conservative dental treatment due to the referral, and he is allergic to penicillin), and alternating acetaminophen and ibuprofen as needed for pain control. 
 
-Dr. Dentist takes Patient A’s clinical impressions and sends referral to Endodontist for an evaluation of tooth #30 and endodontic therapy #30. Referral included medications prescribed, diagnosis, prognosis, treatment notes, images, and follow up recommendations.
+Dr. Dentist records Patient B’s diagnostic test results and clinical impressions and sends a referral to the endodontist for an evaluation and appropriate treatment for tooth #30. The referral included medications prescribed, diagnosis, prognosis, treatment notes, images, and follow up recommendations.
 
 **Capability Statement references:** General Dentist office system is the Document Source (i.e., server) that generates the Dental Referral Note and the Dental specialist office application is the Document Consumer (i.e., client) that consumes the Dental Referral Note.
 
@@ -656,8 +656,7 @@ Dr. Dentist takes Patient A’s clinical impressions and sends referral to Endod
 <table class="tg">
 <thead>
   <tr>
-    <th class="tg-0lax">#30 pulpal necrosis and periapical pathosis with draining fistula. Clinical impression is that possible vital pulp remnants remain. #30 possible cracked DB cusp; rule out cracked tooth. Clinical impression is that tooth is restorable. #29 D caries lesion. 
-<br>On exam of the right lower quadrant, tooth #30 was sensitive to percussion (lingering for 45 seconds) and to cold (sharp, stops when cold removed). No sensitivity to palpation, pain upon biting with relief upon opening. No evidence of new caries on distal; missing #28, replaced with endosteal (root form) implant with full crown tooth-colored restoration;#32 impacted with possible full boney impaction. One cm swelling present on buccal free-gingiva around #29 and #30 with sinus tract present #30B. Periodontal pocket depth WNL.
+    <th class="tg-0lax">Diagnosis for tooth #30: pulpal necrosis and chronic apical abscess (with a draining sinus tract). #30 has a potentially cracked DB cusp. Use of Tooth Slooth appeared to rule out vertical root fracture. Clinical impression is that tooth #30 is restorable with a good long-term prognosis. #29 D has a moderate active carious lesion. On exam of the lower right quadrant, tooth #30 was very sensitive to percussion and non-responsive to cold or EPT testing.  Minor sensitivity to palpation elicited in this area, but pain experienced on biting with relief on opening for tooth #30. No evidence of new caries on distal. Missing tooth #28 was replaced with an endosteal implant with a porcelain fused to metal crown. Tooth #32 is impacted (possible full-bony impaction). Minimal swelling present on lower right buccal vestibule around #29 and #30 with sinus tract present on #30B. Periodontal probing depths in lower right quadrant were all less than or equal to 3 millimeters. Pt is taking Azithromycin (500 mg loading dose and 250 mg each day for 4 additional days) for the infection and alternating 600 mg of ibuprofen and 1000 mg of acetaminophen every 6 hours for pain and swelling. 
 </th>
   </tr>
 </thead>
@@ -775,9 +774,9 @@ This table maps the FHIR resources to CDA sections and entries and to data value
 <td> Medications Section (entries required) (V2) </td>
 <td> Medication Activity (V2) / Medication Information (V2) </td>
 <td> 314076 Lisinopril 10 mg Oral Tablet RxNorm
-   <br> 197650 erythromycin 500 MG Oral Tablet RxNorm
+   <br> 308460 Azithromycin 250 MG Oral Tablet RxNorm
    <br> 310965 ibuprofen 200 MG Oral Tablet RxNorm
-   <br> 313782 acetaminophen 325 MG Oral Tablet RxNorm </td>
+   <br> 198440 acetaminophen 500 MG Oral Tablet RxNorm </td>
 </tr>
 <tr>
 <td> US Core AllergyIntollerance </td>
@@ -883,26 +882,25 @@ This table maps the FHIR resources to CDA sections and entries and to data value
 <td> Composition.section.title = "Assessment Section" </td>
 <td> Assessment Section </td>
 <td> N/A </td>
-<td> #30 pulpal necrosis and periapical pathosis with draining fistula. Clinical impression is that possible vital pulp remnants remain.
-   <br> #30 possible cracked DB cusp; rule out cracked tooth. Clinical impression is that tooth is restorable.
-   <br> #29 D caries lesion.
-   <br> On exam of the right lower quadrant, tooth #30 was sensitive to percussion (lingering for 45 seconds) and to cold (sharp, stops when cold removed). No sensitivity to palpation, pain upon biting with relief upon opening. No evidence of new caries on distal; missing #28, replaced with endosteal (root form) implant with full crown tooth-colored restoration; #32 impacted with possible full boney impaction. One cm swelling present on buccal free-gingival around #29 and #30 with sinus tract present #30B. Periodontal pocket depth WNL. </td>
+<td> #30 pulpal necrosis and chronic apical abscess with draining sinus tract.
+   <br> #30 has a possible cracked DB cusp; ruled out vertical root fracture. Clinical impression is that tooth is restorable.
+   <br> #29 D has an active moderate carious lesion.
+   <br> On exam of the right lower quadrant, tooth #30 was sensitive to percussion with no response to cold or EPT. Mild sensitivity to palpation near #30 B, pain upon biting with relief upon opening. No evidence of new caries on distal; missing #28, replaced with endosteal implant with porcelain fused to metal crown.  #32 is impacted (possible full bony impaction). Minimal swelling present on buccal mucosa around #29 and #30 with sinus tract present #30B. Periodontal probing depths all less than or equal to 3mm. </td>
 </tr>
 <tr>
 <td> Dental Referral Note </td>
 <td> Composition.section.title = "History of Present Illness Section" </td>
 <td> History of Present Illness Section </td>
 <td> N/A </td>
-<td> One month ago, pt. reports he had a MOBD amalgam restoration (D2161 #30 MOBD) placed in his right lower first molar (tooth #30) for a fractured tooth - MB cusp lost due to undermining by caries lesion (ADA Caries Classification System advanced caries lesion).
-   <br> Patient A said the pain started 2 weeks ago and has progressively worsened. He noticed sharp, stabbing pain provoked by drinking cold beverages in the past week and lingering pain with biting in the last 2 days. He is able to eat regular food but only chews on the left side. He takes 400 mg ibuprofen every 8 hours for pain. His last dose was 2 hours prior to this visit. </td>
+<td> One month ago, pt. reports he had an MOBD amalgam restoration (D2161 #30 MOBD) placed in his right lower first molar (tooth #30) for a fractured tooth - MB cusp lost due to undermining by caries lesion (ADA Caries Classification System advanced caries lesion).
+   <br> Patient B said the pain started a month ago, and worsened until the cold sensitivity went away about a week ago.  He noticed a bad taste in his mouth about that same time. He is able to eat regular food but only chews on the left side. He takes 400 mg ibuprofen every 6 hours for pain. His last dose was 2 hours prior to this visit. </td>
 </tr>
 <tr>
 <td> Dental Referral Note </td>
 <td> Composition .section .code =’43241-9’ </td>
 <td> Reason for Referral Section (V3) </td>
 <td> N/A </td>
-<td> "Referral to endodontist for evaluation of #30 and endodontic therapy. (D3330)
-   <br> Suspect irreversible pulpitis with necrotic pulp and periapical pathosis. Tooth is restorable despite possible incomplete fracture DB cusp #30." </td>
+<td> Referral to endodontist for evaluation and treatment of #30. Diagnosis is necrotic pulp and chronic apical abscess #30. Tooth appears to be restorable despite possible incomplete crown fracture of DB cusp on tooth #30. </td>
 </tr>
 <tr>
 <td> <b><i>Da Vinci Profiles</i></b> </td>
