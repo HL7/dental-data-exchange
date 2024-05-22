@@ -7,6 +7,8 @@ All proprietary documents, guides, guidance, standards, codes, and values contai
 
 This HL7 FHIR® R4 Implementation Guide: Dental Data Exchange is developed in parallel to the HL7 CDA® R2 Implementation Guide: Dental Data Exchange.
 
+Refer to the [Dental Data Exchange Project](https://confluence.hl7.org/display/ATT/Dental+Summary+Exchange+Project) on HL7 Confluence for the latest information on ongoing development of this guide and associated industry testing events.
+
 ### Scope
 This guide defines 7 FHIR profiles:
 * Dental Bundle

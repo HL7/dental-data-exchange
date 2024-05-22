@@ -1,0 +1,81 @@
+# Compiled source #
+###################
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+*.py
+
+
+# Packages #
+############
+# it's better to unpack these files and commit the raw source
+# git has its own built in compression methods
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# Logs and databases #
+######################
+*.log
+*.sql
+*.sqlite
+
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+
+# FHIR IG Publisher local build directories #
+#############################################
+
+/output/
+/input-cache/
+/temp/
+/template/
+/node_modules/
+/save/
+/bin/
+/target/
+/docs/
+publish.sh
+push_to_autobuild.sh
+_gencontinuous.*
+_genonce.*
+_updatePublisher.*
+SUSHI-GENERATED-FILES.mdv
+/my-notes/
+
+
+# Altova files #
+################
+*.spp
+tmp*.html
+tmp*.md
+*.mfd
+tmp*.xml
+~mf*.tmp
+*.xlst
+
+# Microsoft Office #
+####################
+~*.docx
+~*.xlsx
+~*.pptx
+
+# Other Local Files #
+#####################
+setJVMheapSize.sh
