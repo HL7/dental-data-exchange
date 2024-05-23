@@ -8,7 +8,7 @@
         <source value="#BeJixuBWtcDDUccU"/>
     </meta>
     <url value="http://hl7.org/fhir/us/dental-data-exchange/ImplementationGuide/hl7.fhir.us.dental-data-exchange"/>
-    <version value="1.0.0"/>
+    <version value="2.0.0-ballot"/>
     <name value="DentalDataExchange"/>
     <title value="Dental Data Exchange"/>
     <status value="draft"/>
