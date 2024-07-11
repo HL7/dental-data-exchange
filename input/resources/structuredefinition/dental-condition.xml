@@ -23,6 +23,33 @@
         <element id="Condition">
             <path value="Condition"/>
         </element>
+        <element id="Condition.extension">
+            <path value="Condition.extension"/>
+            <slicing>
+                <discriminator>
+                    <type value="value"/>
+                    <path value="url"/>
+                </discriminator>
+                <rules value="open"/>
+            </slicing>
+        </element>
+        <element id="Condition.extension:BodyStructure">
+            <path value="Condition.extension"/>
+            <sliceName value="BodyStructure"/>
+            <short value="BodyStructure for more complex anatomical locations"/>
+            <min value="0"/>
+            <max value="1"/>
+      	    <base>
+        	<path value="Element.extension"/>
+        	<min value="0"/>
+        	<max value="*"/>
+      	    </base>
+      	    <type>
+        	<code value="Extension"/>
+        	<profile
+                 value="http://hl7.org/fhir/StructureDefinition/bodySite"/>
+      	    </type>
+        </element>
         <element id="Condition.category">
             <path value="Condition.category"/>
             <slicing>
