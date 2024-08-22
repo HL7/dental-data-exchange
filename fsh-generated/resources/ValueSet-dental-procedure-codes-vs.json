@@ -1,0 +1,17 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "DentalProcedureCodes",
+  "id": "dental-procedure-codes-vs",
+  "title": "Dental Procedure Codes Value Set",
+  "description": "Codes applicable for use with Dental Procedures",
+  "url": "http://hl7.org/fhir/us/dental-data-exchange/ValueSet/dental-procedure-codes-vs",
+  "experimental": false,
+  "compose": {
+    "include": [
+      {
+        "system": "http://www.ada.org/cdt"
+      }
+    ]
+  }
+}

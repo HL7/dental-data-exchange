@@ -79,3 +79,4 @@ tmp*.xml
 # Other Local Files #
 #####################
 setJVMheapSize.sh
+/backup/

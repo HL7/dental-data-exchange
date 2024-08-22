@@ -1,0 +1,156 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "dental-condition",
+  "meta": {
+    "versionId": "36",
+    "lastUpdated": "2021-07-29T14:05:33.820+00:00",
+    "source": "#oPwHtcP2s5XfAmAj"
+  },
+  "url": "http://hl7.org/fhir/us/dental-data-exchange/StructureDefinition/dental-condition",
+  "name": "DentalCondition",
+  "title": "Dental Condition",
+  "status": "draft",
+  "date": "2024-08-15T09:50:57-04:00",
+  "publisher": "Payer/Provider Information Exchange Work Group",
+  "contact": [
+    {
+      "name": "HL7 International - Payer/Provider Information Exchange Work Group",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/claims"
+        }
+      ]
+    }
+  ],
+  "description": "This profile specifies a 'dental' slice on Condition category. It also constrains bodySite and evidence to MustSupport. Providing evidence (i.e., point-in-time Observations) in support of longitudinal Conditions is highly encouraged.",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "code": "US",
+          "system": "urn:iso:std:iso:3166",
+          "display": "United States of America"
+        }
+      ],
+      "text": "US"
+    }
+  ],
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "workflow",
+      "uri": "http://hl7.org/fhir/workflow",
+      "name": "Workflow Pattern"
+    },
+    {
+      "identity": "sct-concept",
+      "uri": "http://snomed.info/conceptdomain",
+      "name": "SNOMED CT Concept Domain Binding"
+    },
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "sct-attr",
+      "uri": "http://snomed.org/attributebinding",
+      "name": "SNOMED CT Attribute Binding"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Condition",
+  "baseDefinition": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Condition.extension",
+        "path": "Condition.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Condition.extension:BodyStructure",
+        "path": "Condition.extension",
+        "sliceName": "BodyStructure",
+        "short": "BodyStructure for more complex anatomical locations",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Element.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/bodySite"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Condition.category",
+        "path": "Condition.category",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Condition.category:dental",
+        "path": "Condition.category",
+        "sliceName": "dental",
+        "short": "dental",
+        "min": 1,
+        "max": "1",
+        "fixedCodeableConcept": {
+          "coding": [
+            {
+              "code": "dental",
+              "system": "http://hl7.org/fhir/us/dental-data-exchange/CodeSystem/dental-category",
+              "display": "Dental"
+            }
+          ]
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Condition.bodySite",
+        "path": "Condition.bodySite",
+        "mustSupport": true
+      },
+      {
+        "id": "Condition.evidence",
+        "path": "Condition.evidence",
+        "mustSupport": true
+      }
+    ]
+  }
+}
