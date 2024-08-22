@@ -62,6 +62,7 @@
 <artifact deprecated="true" id="Media/DoDSummaryExchangeProcess" key="Media-DoDSummaryExchangeProcess" name="DoD Summary Exchange Process"/>
 <artifact id="Encounter/Comp-oral-eval" key="Encounter-Comp-oral-eval" name="Encounter- Comprehensive Oral Eval example"/>
 <artifact id="Condition/Rampant-caries-example-dental-condition" key="Condition-Rampant-caries-example-dental-condition" name="Example Condition - Rampant-caries-example-dental-condition"/>
+<artifact id="Procedure/buccal-restoration-example-dental-procedure" key="Procedure-buccal-restoration-example-dental-procedure" name="Example Procedure - buccal-restoration-example-dental-procedure"/>
 <artifact id="Immunization/imm-1" key="Immunization-imm-1" name="Immunization example"/>
 <artifact deprecated="true" id="Media/DnetalDataExchange" key="Media-DnetalDataExchange" name="Media DnetalDataExchange"/>
 <artifact deprecated="true" id="Media/MORECareReferralForm" key="Media-MORECareReferralForm" name="Media MORECare Referral Form"/>
