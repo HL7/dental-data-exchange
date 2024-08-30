@@ -1,0 +1,77 @@
+{
+  "resourceType": "Procedure",
+  "id": "RestorationTooth14-example-dental-procedure",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/us/dental-data-exchange/StructureDefinition/dental-procedure"
+    ]
+  },
+  "category": {
+    "coding": [
+      {
+        "code": "dental",
+        "system": "http://hl7.org/fhir/us/dental-data-exchange/CodeSystem/dental-category",
+        "display": "Dental"
+      }
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/bodySite",
+      "valueReference": {
+        "reference": "#bs14buccal"
+      }
+    }
+  ],
+  "contained": [
+    {
+      "resourceType": "BodyStructure",
+      "id": "bs14buccal",
+      "location": {
+        "coding": [
+          {
+            "code": "865988009",
+            "system": "http://snomed.info/sct",
+            "display": "Structure of permanent maxillary left first molar tooth (body structure)"
+          },
+          {
+            "code": "14",
+            "system": "http://terminology.hl7.org/CodeSystem/ADAUniversalToothDesignationSystem",
+            "display": "Permanent maxillary left first molar tooth"
+          }
+        ]
+      },
+      "locationQualifier": [
+        {
+          "coding": [
+            {
+              "code": "245647007",
+              "system": "http://snomed.info/sct",
+              "display": "Entire buccal surface"
+            }
+          ]
+        }
+      ],
+      "patient": {
+        "reference": "Patient/example-dental",
+        "display": "Patient A"
+      }
+    }
+  ],
+  "status": "completed",
+  "code": {
+    "coding": [
+      {
+        "code": "D2391",
+        "system": "http://www.ada.org/cdt",
+        "display": "resin-based composite - one surface, posterior"
+      }
+    ],
+    "text": "resin-based composite - one surface, posterior"
+  },
+  "subject": {
+    "reference": "Patient/example-dental",
+    "display": "Patient A"
+  },
+  "performedDateTime": "2024-08-17"
+}

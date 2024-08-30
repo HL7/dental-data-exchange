@@ -61,7 +61,35 @@
 <artifact deprecated="true" id="ValueSet/dental-universal-numbering-system" key="ValueSet-dental-universal-numbering-system" name="DentalUniversalNumberingSystem"/>
 <artifact deprecated="true" id="Media/DoDSummaryExchangeProcess" key="Media-DoDSummaryExchangeProcess" name="DoD Summary Exchange Process"/>
 <artifact id="Encounter/Comp-oral-eval" key="Encounter-Comp-oral-eval" name="Encounter- Comprehensive Oral Eval example"/>
+<artifact id="Condition/CariesTooth10-example-dental-condition" key="Condition-CariesTooth10-example-dental-condition" name="Example Condition - CariesTooth10-example-dental-condition"/>
+<artifact id="Condition/CariesTooth11-example-dental-condition" key="Condition-CariesTooth11-example-dental-condition" name="Example Condition - CariesTooth11-example-dental-condition"/>
+<artifact id="Condition/CariesTooth12-example-dental-condition" key="Condition-CariesTooth12-example-dental-condition" name="Example Condition - CariesTooth12-example-dental-condition"/>
+<artifact id="Condition/CariesTooth13-example-dental-condition" key="Condition-CariesTooth13-example-dental-condition" name="Example Condition - CariesTooth13-example-dental-condition"/>
+<artifact id="Condition/CariesTooth14-example-dental-condition" key="Condition-CariesTooth14-example-dental-condition" name="Example Condition - CariesTooth14-example-dental-condition"/>
+<artifact id="Condition/CariesTooth15-example-dental-condition" key="Condition-CariesTooth15-example-dental-condition" name="Example Condition - CariesTooth15-example-dental-condition"/>
+<artifact id="Condition/CariesTooth2-example-dental-condition" key="Condition-CariesTooth2-example-dental-condition" name="Example Condition - CariesTooth2-example-dental-condition"/>
+<artifact id="Condition/CariesTooth3-example-dental-condition" key="Condition-CariesTooth3-example-dental-condition" name="Example Condition - CariesTooth3-example-dental-condition"/>
+<artifact id="Condition/CariesTooth4-example-dental-condition" key="Condition-CariesTooth4-example-dental-condition" name="Example Condition - CariesTooth4-example-dental-condition"/>
+<artifact id="Condition/CariesTooth5-example-dental-condition" key="Condition-CariesTooth5-example-dental-condition" name="Example Condition - CariesTooth5-example-dental-condition"/>
+<artifact id="Condition/CariesTooth6-example-dental-condition" key="Condition-CariesTooth6-example-dental-condition" name="Example Condition - CariesTooth6-example-dental-condition"/>
+<artifact id="Condition/CariesTooth7-example-dental-condition" key="Condition-CariesTooth7-example-dental-condition" name="Example Condition - CariesTooth7-example-dental-condition"/>
+<artifact id="Condition/CariesTooth8-example-dental-condition" key="Condition-CariesTooth8-example-dental-condition" name="Example Condition - CariesTooth8-example-dental-condition"/>
+<artifact id="Condition/CariesTooth9-example-dental-condition" key="Condition-CariesTooth9-example-dental-condition" name="Example Condition - CariesTooth9-example-dental-condition"/>
 <artifact id="Condition/Rampant-caries-example-dental-condition" key="Condition-Rampant-caries-example-dental-condition" name="Example Condition - Rampant-caries-example-dental-condition"/>
+<artifact id="Procedure/RestorationTooth10-example-dental-procedure" key="Procedure-RestorationTooth10-example-dental-procedure" name="Example Procedure - RestorationTooth10-example-dental-procedure"/>
+<artifact id="Procedure/RestorationTooth11-example-dental-procedure" key="Procedure-RestorationTooth11-example-dental-procedure" name="Example Procedure - RestorationTooth11-example-dental-procedure"/>
+<artifact id="Procedure/RestorationTooth12-example-dental-procedure" key="Procedure-RestorationTooth12-example-dental-procedure" name="Example Procedure - RestorationTooth12-example-dental-procedure"/>
+<artifact id="Procedure/RestorationTooth13-example-dental-procedure" key="Procedure-RestorationTooth13-example-dental-procedure" name="Example Procedure - RestorationTooth13-example-dental-procedure"/>
+<artifact id="Procedure/RestorationTooth14-example-dental-procedure" key="Procedure-RestorationTooth14-example-dental-procedure" name="Example Procedure - RestorationTooth14-example-dental-procedure"/>
+<artifact id="Procedure/RestorationTooth15-example-dental-procedure" key="Procedure-RestorationTooth15-example-dental-procedure" name="Example Procedure - RestorationTooth15-example-dental-procedure"/>
+<artifact id="Procedure/RestorationTooth2-example-dental-procedure" key="Procedure-RestorationTooth2-example-dental-procedure" name="Example Procedure - RestorationTooth2-example-dental-procedure"/>
+<artifact id="Procedure/RestorationTooth3-example-dental-procedure" key="Procedure-RestorationTooth3-example-dental-procedure" name="Example Procedure - RestorationTooth3-example-dental-procedure"/>
+<artifact id="Procedure/RestorationTooth4-example-dental-procedure" key="Procedure-RestorationTooth4-example-dental-procedure" name="Example Procedure - RestorationTooth4-example-dental-procedure"/>
+<artifact id="Procedure/RestorationTooth5-example-dental-procedure" key="Procedure-RestorationTooth5-example-dental-procedure" name="Example Procedure - RestorationTooth5-example-dental-procedure"/>
+<artifact id="Procedure/RestorationTooth6-example-dental-procedure" key="Procedure-RestorationTooth6-example-dental-procedure" name="Example Procedure - RestorationTooth6-example-dental-procedure"/>
+<artifact id="Procedure/RestorationTooth7-example-dental-procedure" key="Procedure-RestorationTooth7-example-dental-procedure" name="Example Procedure - RestorationTooth7-example-dental-procedure"/>
+<artifact id="Procedure/RestorationTooth8-example-dental-procedure" key="Procedure-RestorationTooth8-example-dental-procedure" name="Example Procedure - RestorationTooth8-example-dental-procedure"/>
+<artifact id="Procedure/RestorationTooth9-example-dental-procedure" key="Procedure-RestorationTooth9-example-dental-procedure" name="Example Procedure - RestorationTooth9-example-dental-procedure"/>
 <artifact id="Procedure/buccal-restoration-example-dental-procedure" key="Procedure-buccal-restoration-example-dental-procedure" name="Example Procedure - buccal-restoration-example-dental-procedure"/>
 <artifact id="Immunization/imm-1" key="Immunization-imm-1" name="Immunization example"/>
 <artifact deprecated="true" id="Media/DnetalDataExchange" key="Media-DnetalDataExchange" name="Media DnetalDataExchange"/>

@@ -1,0 +1,266 @@
+[
+  {
+    "outputFile": "Condition-CariesTooth10-example-dental-condition.json",
+    "fshName": "CariesTooth10-example-dental-condition",
+    "fshType": "Instance",
+    "fshFile": "SEP2024_Connectathon_Condition_Examples.fsh",
+    "startLine": 143,
+    "endLine": 158
+  },
+  {
+    "outputFile": "Condition-CariesTooth11-example-dental-condition.json",
+    "fshName": "CariesTooth11-example-dental-condition",
+    "fshType": "Instance",
+    "fshFile": "SEP2024_Connectathon_Condition_Examples.fsh",
+    "startLine": 160,
+    "endLine": 175
+  },
+  {
+    "outputFile": "Condition-CariesTooth12-example-dental-condition.json",
+    "fshName": "CariesTooth12-example-dental-condition",
+    "fshType": "Instance",
+    "fshFile": "SEP2024_Connectathon_Condition_Examples.fsh",
+    "startLine": 177,
+    "endLine": 192
+  },
+  {
+    "outputFile": "Condition-CariesTooth13-example-dental-condition.json",
+    "fshName": "CariesTooth13-example-dental-condition",
+    "fshType": "Instance",
+    "fshFile": "SEP2024_Connectathon_Condition_Examples.fsh",
+    "startLine": 194,
+    "endLine": 209
+  },
+  {
+    "outputFile": "Condition-CariesTooth14-example-dental-condition.json",
+    "fshName": "CariesTooth14-example-dental-condition",
+    "fshType": "Instance",
+    "fshFile": "SEP2024_Connectathon_Condition_Examples.fsh",
+    "startLine": 211,
+    "endLine": 226
+  },
+  {
+    "outputFile": "Condition-CariesTooth15-example-dental-condition.json",
+    "fshName": "CariesTooth15-example-dental-condition",
+    "fshType": "Instance",
+    "fshFile": "SEP2024_Connectathon_Condition_Examples.fsh",
+    "startLine": 228,
+    "endLine": 243
+  },
+  {
+    "outputFile": "Condition-CariesTooth2-example-dental-condition.json",
+    "fshName": "CariesTooth2-example-dental-condition",
+    "fshType": "Instance",
+    "fshFile": "SEP2024_Connectathon_Condition_Examples.fsh",
+    "startLine": 7,
+    "endLine": 22
+  },
+  {
+    "outputFile": "Condition-CariesTooth3-example-dental-condition.json",
+    "fshName": "CariesTooth3-example-dental-condition",
+    "fshType": "Instance",
+    "fshFile": "SEP2024_Connectathon_Condition_Examples.fsh",
+    "startLine": 24,
+    "endLine": 39
+  },
+  {
+    "outputFile": "Condition-CariesTooth4-example-dental-condition.json",
+    "fshName": "CariesTooth4-example-dental-condition",
+    "fshType": "Instance",
+    "fshFile": "SEP2024_Connectathon_Condition_Examples.fsh",
+    "startLine": 41,
+    "endLine": 56
+  },
+  {
+    "outputFile": "Condition-CariesTooth5-example-dental-condition.json",
+    "fshName": "CariesTooth5-example-dental-condition",
+    "fshType": "Instance",
+    "fshFile": "SEP2024_Connectathon_Condition_Examples.fsh",
+    "startLine": 58,
+    "endLine": 73
+  },
+  {
+    "outputFile": "Condition-CariesTooth6-example-dental-condition.json",
+    "fshName": "CariesTooth6-example-dental-condition",
+    "fshType": "Instance",
+    "fshFile": "SEP2024_Connectathon_Condition_Examples.fsh",
+    "startLine": 75,
+    "endLine": 90
+  },
+  {
+    "outputFile": "Condition-CariesTooth7-example-dental-condition.json",
+    "fshName": "CariesTooth7-example-dental-condition",
+    "fshType": "Instance",
+    "fshFile": "SEP2024_Connectathon_Condition_Examples.fsh",
+    "startLine": 92,
+    "endLine": 107
+  },
+  {
+    "outputFile": "Condition-CariesTooth8-example-dental-condition.json",
+    "fshName": "CariesTooth8-example-dental-condition",
+    "fshType": "Instance",
+    "fshFile": "SEP2024_Connectathon_Condition_Examples.fsh",
+    "startLine": 109,
+    "endLine": 124
+  },
+  {
+    "outputFile": "Condition-CariesTooth9-example-dental-condition.json",
+    "fshName": "CariesTooth9-example-dental-condition",
+    "fshType": "Instance",
+    "fshFile": "SEP2024_Connectathon_Condition_Examples.fsh",
+    "startLine": 126,
+    "endLine": 141
+  },
+  {
+    "outputFile": "Condition-Rampant-caries-example-dental-condition.json",
+    "fshName": "Rampant-caries-example-dental-condition",
+    "fshType": "Instance",
+    "fshFile": "Example_DentalCondition_RampantCaries.fsh",
+    "startLine": 7,
+    "endLine": 22
+  },
+  {
+    "outputFile": "Procedure-RestorationTooth10-example-dental-procedure.json",
+    "fshName": "RestorationTooth10-example-dental-procedure",
+    "fshType": "Instance",
+    "fshFile": "SEP2024_Connectathon_Procedure_Examples.fsh",
+    "startLine": 111,
+    "endLine": 122
+  },
+  {
+    "outputFile": "Procedure-RestorationTooth11-example-dental-procedure.json",
+    "fshName": "RestorationTooth11-example-dental-procedure",
+    "fshType": "Instance",
+    "fshFile": "SEP2024_Connectathon_Procedure_Examples.fsh",
+    "startLine": 124,
+    "endLine": 135
+  },
+  {
+    "outputFile": "Procedure-RestorationTooth12-example-dental-procedure.json",
+    "fshName": "RestorationTooth12-example-dental-procedure",
+    "fshType": "Instance",
+    "fshFile": "SEP2024_Connectathon_Procedure_Examples.fsh",
+    "startLine": 137,
+    "endLine": 148
+  },
+  {
+    "outputFile": "Procedure-RestorationTooth13-example-dental-procedure.json",
+    "fshName": "RestorationTooth13-example-dental-procedure",
+    "fshType": "Instance",
+    "fshFile": "SEP2024_Connectathon_Procedure_Examples.fsh",
+    "startLine": 150,
+    "endLine": 161
+  },
+  {
+    "outputFile": "Procedure-RestorationTooth14-example-dental-procedure.json",
+    "fshName": "RestorationTooth14-example-dental-procedure",
+    "fshType": "Instance",
+    "fshFile": "SEP2024_Connectathon_Procedure_Examples.fsh",
+    "startLine": 163,
+    "endLine": 174
+  },
+  {
+    "outputFile": "Procedure-RestorationTooth15-example-dental-procedure.json",
+    "fshName": "RestorationTooth15-example-dental-procedure",
+    "fshType": "Instance",
+    "fshFile": "SEP2024_Connectathon_Procedure_Examples.fsh",
+    "startLine": 176,
+    "endLine": 187
+  },
+  {
+    "outputFile": "Procedure-RestorationTooth2-example-dental-procedure.json",
+    "fshName": "RestorationTooth2-example-dental-procedure",
+    "fshType": "Instance",
+    "fshFile": "SEP2024_Connectathon_Procedure_Examples.fsh",
+    "startLine": 7,
+    "endLine": 18
+  },
+  {
+    "outputFile": "Procedure-RestorationTooth3-example-dental-procedure.json",
+    "fshName": "RestorationTooth3-example-dental-procedure",
+    "fshType": "Instance",
+    "fshFile": "SEP2024_Connectathon_Procedure_Examples.fsh",
+    "startLine": 20,
+    "endLine": 31
+  },
+  {
+    "outputFile": "Procedure-RestorationTooth4-example-dental-procedure.json",
+    "fshName": "RestorationTooth4-example-dental-procedure",
+    "fshType": "Instance",
+    "fshFile": "SEP2024_Connectathon_Procedure_Examples.fsh",
+    "startLine": 33,
+    "endLine": 44
+  },
+  {
+    "outputFile": "Procedure-RestorationTooth5-example-dental-procedure.json",
+    "fshName": "RestorationTooth5-example-dental-procedure",
+    "fshType": "Instance",
+    "fshFile": "SEP2024_Connectathon_Procedure_Examples.fsh",
+    "startLine": 46,
+    "endLine": 57
+  },
+  {
+    "outputFile": "Procedure-RestorationTooth6-example-dental-procedure.json",
+    "fshName": "RestorationTooth6-example-dental-procedure",
+    "fshType": "Instance",
+    "fshFile": "SEP2024_Connectathon_Procedure_Examples.fsh",
+    "startLine": 59,
+    "endLine": 70
+  },
+  {
+    "outputFile": "Procedure-RestorationTooth7-example-dental-procedure.json",
+    "fshName": "RestorationTooth7-example-dental-procedure",
+    "fshType": "Instance",
+    "fshFile": "SEP2024_Connectathon_Procedure_Examples.fsh",
+    "startLine": 72,
+    "endLine": 83
+  },
+  {
+    "outputFile": "Procedure-RestorationTooth8-example-dental-procedure.json",
+    "fshName": "RestorationTooth8-example-dental-procedure",
+    "fshType": "Instance",
+    "fshFile": "SEP2024_Connectathon_Procedure_Examples.fsh",
+    "startLine": 85,
+    "endLine": 96
+  },
+  {
+    "outputFile": "Procedure-RestorationTooth9-example-dental-procedure.json",
+    "fshName": "RestorationTooth9-example-dental-procedure",
+    "fshType": "Instance",
+    "fshFile": "SEP2024_Connectathon_Procedure_Examples.fsh",
+    "startLine": 98,
+    "endLine": 109
+  },
+  {
+    "outputFile": "Procedure-buccal-restoration-example-dental-procedure.json",
+    "fshName": "buccal-restoration-example-dental-procedure",
+    "fshType": "Instance",
+    "fshFile": "Example_DentalProcedure_BuccalRestoration.fsh",
+    "startLine": 8,
+    "endLine": 19
+  },
+  {
+    "outputFile": "StructureDefinition-dental-condition.json",
+    "fshName": "DentalCondition",
+    "fshType": "Profile",
+    "fshFile": "Profile_DentalCondition.fsh",
+    "startLine": 4,
+    "endLine": 34
+  },
+  {
+    "outputFile": "StructureDefinition-dental-procedure.json",
+    "fshName": "DentalProcedure",
+    "fshType": "Profile",
+    "fshFile": "Profile_DentalProcedure.fsh",
+    "startLine": 4,
+    "endLine": 26
+  },
+  {
+    "outputFile": "ValueSet-dental-procedure-codes-vs.json",
+    "fshName": "DentalProcedureCodes",
+    "fshType": "ValueSet",
+    "fshFile": "ValueSets.fsh",
+    "startLine": 1,
+    "endLine": 6
+  }
+]
