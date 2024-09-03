@@ -3,64 +3,9 @@
   "id": "Rampant-caries-example-dental-condition",
   "meta": {
     "profile": [
-      "http://hl7.org/fhir/us/dental-data-exchange/StructureDefinition/dental-condition",
       "http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"
     ]
   },
-  "category": [
-    {
-      "coding": [
-        {
-          "code": "dental",
-          "system": "http://hl7.org/fhir/us/dental-data-exchange/CodeSystem/dental-category",
-          "display": "Dental"
-        }
-      ]
-    }
-  ],
-  "extension": [
-    {
-      "url": "http://hl7.org/fhir/StructureDefinition/bodySite",
-      "valueReference": {
-        "reference": "#bs1"
-      }
-    }
-  ],
-  "contained": [
-    {
-      "resourceType": "BodyStructure",
-      "id": "bs1",
-      "location": {
-        "coding": [
-          {
-            "code": "424877001",
-            "system": "http://snomed.info/sct",
-            "display": "Structure of permanent maxillary right lateral incisor tooth (body structure)"
-          },
-          {
-            "code": "7",
-            "system": "http://terminology.hl7.org/CodeSystem/ADAUniversalToothDesignationSystem",
-            "display": "Permanent maxillary right lateral incisor tooth"
-          }
-        ]
-      },
-      "locationQualifier": [
-        {
-          "coding": [
-            {
-              "code": "245647007",
-              "system": "http://snomed.info/sct",
-              "display": "Entire buccal surface"
-            }
-          ]
-        }
-      ],
-      "patient": {
-        "reference": "Patient/example-dental",
-        "display": "Patient A"
-      }
-    }
-  ],
   "clinicalStatus": {
     "coding": [
       {
@@ -81,15 +26,26 @@
     ],
     "text": "Confirmed"
   },
+  "category": [
+    {
+      "coding": [
+        {
+          "code": "problem-list-item",
+          "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+          "display": "Problem List Item"
+        }
+      ]
+    }
+  ],
   "code": {
     "coding": [
       {
-        "code": "251330002",
+        "code": "234976000",
         "system": "http://snomed.info/sct",
-        "display": "Caries active (finding)"
+        "display": "Rampant dental caries (disorder)"
       }
     ],
-    "text": "Caries active (finding)"
+    "text": "Rampant dental caries (disorder)"
   },
   "subject": {
     "reference": "Patient/example-dental",

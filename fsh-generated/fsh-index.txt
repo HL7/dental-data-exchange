@@ -13,7 +13,7 @@ Condition-CariesTooth6-example-dental-condition.json        CariesTooth6-example
 Condition-CariesTooth7-example-dental-condition.json        CariesTooth7-example-dental-condition        Instance  SEP2024_Connectathon_Condition_Examples.fsh    92 - 107
 Condition-CariesTooth8-example-dental-condition.json        CariesTooth8-example-dental-condition        Instance  SEP2024_Connectathon_Condition_Examples.fsh    109 - 124
 Condition-CariesTooth9-example-dental-condition.json        CariesTooth9-example-dental-condition        Instance  SEP2024_Connectathon_Condition_Examples.fsh    126 - 141
-Condition-Rampant-caries-example-dental-condition.json      Rampant-caries-example-dental-condition      Instance  Example_DentalCondition_RampantCaries.fsh      7 - 22
+Condition-Rampant-caries-example-dental-condition.json      Rampant-caries-example-dental-condition      Instance  Example_DentalCondition_RampantCaries.fsh      7 - 19
 Procedure-RestorationTooth10-example-dental-procedure.json  RestorationTooth10-example-dental-procedure  Instance  SEP2024_Connectathon_Procedure_Examples.fsh    111 - 122
 Procedure-RestorationTooth11-example-dental-procedure.json  RestorationTooth11-example-dental-procedure  Instance  SEP2024_Connectathon_Procedure_Examples.fsh    124 - 135
 Procedure-RestorationTooth12-example-dental-procedure.json  RestorationTooth12-example-dental-procedure  Instance  SEP2024_Connectathon_Procedure_Examples.fsh    137 - 148

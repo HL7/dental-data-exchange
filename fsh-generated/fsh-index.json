@@ -117,7 +117,7 @@
     "fshType": "Instance",
     "fshFile": "Example_DentalCondition_RampantCaries.fsh",
     "startLine": 7,
-    "endLine": 22
+    "endLine": 19
   },
   {
     "outputFile": "Procedure-RestorationTooth10-example-dental-procedure.json",

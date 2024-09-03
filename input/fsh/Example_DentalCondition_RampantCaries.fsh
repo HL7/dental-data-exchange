@@ -5,26 +5,15 @@ Alias: $sct = http://snomed.info/sct
 Alias: $ADAUniversalToothDesignationSystem = http://terminology.hl7.org/CodeSystem/ADAUniversalToothDesignationSystem
 
 Instance: Rampant-caries-example-dental-condition
-InstanceOf: DentalCondition
+InstanceOf: http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition
 Usage: #example
-* extension.url = "http://hl7.org/fhir/StructureDefinition/bodySite"
-* extension.valueReference = Reference(bs1)
-* contained = bs1
 * meta.profile = "http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"
 * clinicalStatus = $condition-clinical#active "Active"
 * clinicalStatus.text = "Active"
 * verificationStatus = $condition-ver-status#confirmed "Confirmed"
 * verificationStatus.text = "Confirmed"
-* category = $dental-category#dental "Dental"
-* code = $sct#251330002 "Caries active (finding)"
-* code.text = "Caries active (finding)"
+* category = http://terminology.hl7.org/CodeSystem/condition-category#problem-list-item "Problem List Item"
+* code = $sct#234976000 "Rampant dental caries (disorder)"
+* code.text = "Rampant dental caries (disorder)"
 * subject = Reference(Patient/example-dental) "Patient A"
 * onsetDateTime = "2019-12-10"
-
-Instance: bs1
-InstanceOf: BodyStructure
-Usage: #inline
-* location.coding[0] = $sct#424877001 "Structure of permanent maxillary right lateral incisor tooth (body structure)"
-* location.coding[+] = $ADAUniversalToothDesignationSystem#7 "Permanent maxillary right lateral incisor tooth"
-* locationQualifier[0] = $sct#245647007 "Entire buccal surface"
-* patient = Reference(Patient/example-dental) "Patient A"

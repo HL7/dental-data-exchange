@@ -18,10 +18,10 @@ Usage: #example
 * subject = Reference(Patient/example-dental) "Patient A"
 * performedDateTime = "2024-08-10"
 
-//Instance: bs1
-//InstanceOf: BodyStructure
-//Usage: #inline
-//* location.coding[0] = $sct#424877001 "Structure of permanent maxillary right lateral incisor tooth (body structure)"
-//* location.coding[+] = $ADAUniversalToothDesignationSystem#7 "Permanent maxillary right lateral incisor tooth"
-//* locationQualifier[0] = $sct#245647007 "Entire buccal surface"
-//* patient = Reference(Patient/example-dental) "Patient A"
+Instance: bs1
+InstanceOf: BodyStructure
+Usage: #inline
+* location.coding[0] = $sct#424877001 "Structure of permanent maxillary right lateral incisor tooth (body structure)"
+* location.coding[+] = $ADAUniversalToothDesignationSystem#7 "Permanent maxillary right lateral incisor tooth"
+* locationQualifier[0] = $sct#245647007 "Entire buccal surface"
+* patient = Reference(Patient/example-dental) "Patient A"
