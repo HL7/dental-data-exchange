@@ -123,6 +123,23 @@ Usage: #example
 * subject = Reference(Patient/example-dental) "Patient A"
 * onsetDateTime = "2019-12-10"
 
+Instance: PeriodontalAbscessTooth8-example-dental-condition
+InstanceOf: DentalCondition
+Usage: #example
+* meta.profile = "http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"
+* clinicalStatus = $condition-clinical#active "Active"
+* clinicalStatus.text = "Active"
+* verificationStatus = $condition-ver-status#confirmed "Confirmed"
+* verificationStatus.text = "Confirmed"
+* category[+] = $dental-category#dental "Dental"
+* category[+] = http://terminology.hl7.org/CodeSystem/condition-category#problem-list-item "Problem List Item"
+* code = $sct#83412009 "Periodontal abscess (disorder)"
+* code.text = "Periodontal abscess (disorder)"
+* bodySite.coding[+] = $sct#422653006 "Structure of permanent maxillary right central incisor tooth (body structure)"
+* bodySite.coding[+] = $ADAUniversalToothDesignationSystem#8 "Permanent maxillary right central incisor tooth"
+* subject = Reference(Patient/example-dental) "Patient A"
+* onsetDateTime = "2019-12-10"
+
 Instance: CariesTooth9-example-dental-condition
 InstanceOf: DentalCondition
 Usage: #example

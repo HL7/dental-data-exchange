@@ -76,6 +76,7 @@
 <artifact id="Condition/CariesTooth7-example-dental-condition" key="Condition-CariesTooth7-example-dental-condition" name="Example Condition - CariesTooth7-example-dental-condition"/>
 <artifact id="Condition/CariesTooth8-example-dental-condition" key="Condition-CariesTooth8-example-dental-condition" name="Example Condition - CariesTooth8-example-dental-condition"/>
 <artifact id="Condition/CariesTooth9-example-dental-condition" key="Condition-CariesTooth9-example-dental-condition" name="Example Condition - CariesTooth9-example-dental-condition"/>
+<artifact id="Condition/PeriodontalAbscessTooth8-example-dental-condition" key="Condition-PeriodontalAbscessTooth8-example-dental-condition" name="Example Condition - PeriodontalAbscessTooth8-example-dental-condition"/>
 <artifact id="Procedure/RestorationTooth10-example-dental-procedure" key="Procedure-RestorationTooth10-example-dental-procedure" name="Example Procedure - RestorationTooth10-example-dental-procedure"/>
 <artifact id="Procedure/RestorationTooth11-example-dental-procedure" key="Procedure-RestorationTooth11-example-dental-procedure" name="Example Procedure - RestorationTooth11-example-dental-procedure"/>
 <artifact id="Procedure/RestorationTooth12-example-dental-procedure" key="Procedure-RestorationTooth12-example-dental-procedure" name="Example Procedure - RestorationTooth12-example-dental-procedure"/>
