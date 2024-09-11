@@ -1,0 +1,50 @@
+{
+  "resourceType": "Procedure",
+  "id": "RootCanalTooth8-example-dental-procedure",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/us/dental-data-exchange/StructureDefinition/dental-procedure"
+    ]
+  },
+  "category": {
+    "coding": [
+      {
+        "code": "dental",
+        "system": "http://hl7.org/fhir/us/dental-data-exchange/CodeSystem/dental-category",
+        "display": "Dental"
+      }
+    ]
+  },
+  "status": "completed",
+  "code": {
+    "coding": [
+      {
+        "code": "D3310",
+        "system": "http://www.ada.org/cdt",
+        "display": "Endodontic therapy, anterior tooth (excluding final restoration)"
+      }
+    ],
+    "text": "Endodontic therapy, anterior tooth (excluding final restoration)"
+  },
+  "bodySite": [
+    {
+      "coding": [
+        {
+          "code": "422653006",
+          "system": "http://snomed.info/sct",
+          "display": "Structure of permanent maxillary right central incisor tooth (body structure)"
+        },
+        {
+          "code": "8",
+          "system": "http://terminology.hl7.org/CodeSystem/ADAUniversalToothDesignationSystem",
+          "display": "Permanent maxillary right central incisor tooth"
+        }
+      ]
+    }
+  ],
+  "subject": {
+    "reference": "Patient/example-dental",
+    "display": "Patient A"
+  },
+  "performedDateTime": "2024-08-17"
+}

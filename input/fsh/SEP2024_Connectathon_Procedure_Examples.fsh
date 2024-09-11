@@ -82,18 +82,39 @@ Usage: #example
 * subject = Reference(Patient/example-dental) "Patient A"
 * performedDateTime = "2024-08-17"
 
+Instance: RootCanalTooth8-example-dental-procedure
+InstanceOf: DentalProcedure
+Usage: #example
+* status = #completed
+* category[+] = $dental-category#dental "Dental"
+* code = $cdt#D3310 "Endodontic therapy, anterior tooth (excluding final restoration)"
+* code.text = "Endodontic therapy, anterior tooth (excluding final restoration)"
+* bodySite.coding[+] = $sct#422653006 "Structure of permanent maxillary right central incisor tooth (body structure)"
+* bodySite.coding[+] = $ADAUniversalToothDesignationSystem#8 "Permanent maxillary right central incisor tooth"
+* subject = Reference(Patient/example-dental) "Patient A"
+* performedDateTime = "2024-08-17"
+
 Instance: RestorationTooth8-example-dental-procedure
 InstanceOf: DentalProcedure
 Usage: #example
 * extension.url = "http://hl7.org/fhir/StructureDefinition/bodySite"
-* extension.valueReference = Reference(bs8buccal)
-* contained = bs8buccal
+* extension.valueReference = Reference(bs8buccallingual)
+* contained = bs8buccallingual
 * status = #completed
 * category = $dental-category#dental "Dental"
-* code = $cdt#D2330 "resin-based composite - one surface, anterior"
-* code.text = "resin-based composite - one surface, anterior"
+* code = $cdt#D2331 "resin-based composite - two surfaces, anterior"
+* code.text = "resin-based composite - two surfaces, anterior"
 * subject = Reference(Patient/example-dental) "Patient A"
 * performedDateTime = "2024-08-17"
+
+Instance: bs8buccallingual
+InstanceOf: BodyStructure
+Usage: #inline
+* location.coding[0] = $sct#422653006 "Structure of permanent maxillary right central incisor tooth (body structure)"
+* location.coding[+] = $ADAUniversalToothDesignationSystem#8 "Permanent maxillary right central incisor tooth"
+* locationQualifier[0] = $sct#245647007 "Entire buccal surface"
+* locationQualifier[+] = $sct#362104007 "Entire lingual surface of tooth (body structure)"
+* patient = Reference(Patient/example-dental) "Patient A"
 
 Instance: RestorationTooth9-example-dental-procedure
 InstanceOf: DentalProcedure

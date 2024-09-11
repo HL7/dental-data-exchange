@@ -19,14 +19,14 @@
     {
       "url": "http://hl7.org/fhir/StructureDefinition/bodySite",
       "valueReference": {
-        "reference": "#bs8buccal"
+        "reference": "#bs8buccallingual"
       }
     }
   ],
   "contained": [
     {
       "resourceType": "BodyStructure",
-      "id": "bs8buccal",
+      "id": "bs8buccallingual",
       "location": {
         "coding": [
           {
@@ -50,6 +50,15 @@
               "display": "Entire buccal surface"
             }
           ]
+        },
+        {
+          "coding": [
+            {
+              "code": "362104007",
+              "system": "http://snomed.info/sct",
+              "display": "Entire lingual surface of tooth (body structure)"
+            }
+          ]
         }
       ],
       "patient": {
@@ -62,12 +71,12 @@
   "code": {
     "coding": [
       {
-        "code": "D2330",
+        "code": "D2331",
         "system": "http://www.ada.org/cdt",
-        "display": "resin-based composite - one surface, anterior"
+        "display": "resin-based composite - two surfaces, anterior"
       }
     ],
-    "text": "resin-based composite - one surface, anterior"
+    "text": "resin-based composite - two surfaces, anterior"
   },
   "subject": {
     "reference": "Patient/example-dental",

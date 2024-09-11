@@ -90,6 +90,7 @@
 <artifact id="Procedure/RestorationTooth7-example-dental-procedure" key="Procedure-RestorationTooth7-example-dental-procedure" name="Example Procedure - RestorationTooth7-example-dental-procedure"/>
 <artifact id="Procedure/RestorationTooth8-example-dental-procedure" key="Procedure-RestorationTooth8-example-dental-procedure" name="Example Procedure - RestorationTooth8-example-dental-procedure"/>
 <artifact id="Procedure/RestorationTooth9-example-dental-procedure" key="Procedure-RestorationTooth9-example-dental-procedure" name="Example Procedure - RestorationTooth9-example-dental-procedure"/>
+<artifact id="Procedure/RootCanalTooth8-example-dental-procedure" key="Procedure-RootCanalTooth8-example-dental-procedure" name="Example Procedure - RootCanalTooth8-example-dental-procedure"/>
 <artifact id="Procedure/buccal-restoration-example-dental-procedure" key="Procedure-buccal-restoration-example-dental-procedure" name="Example Procedure - buccal-restoration-example-dental-procedure"/>
 <artifact id="Immunization/imm-1" key="Immunization-imm-1" name="Immunization example"/>
 <artifact deprecated="true" id="Media/DnetalDataExchange" key="Media-DnetalDataExchange" name="Media DnetalDataExchange"/>

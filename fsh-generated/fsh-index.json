@@ -124,48 +124,48 @@
     "fshName": "RestorationTooth10-example-dental-procedure",
     "fshType": "Instance",
     "fshFile": "SEP2024_Connectathon_Procedure_Examples.fsh",
-    "startLine": 111,
-    "endLine": 122
+    "startLine": 132,
+    "endLine": 143
   },
   {
     "outputFile": "Procedure-RestorationTooth11-example-dental-procedure.json",
     "fshName": "RestorationTooth11-example-dental-procedure",
     "fshType": "Instance",
     "fshFile": "SEP2024_Connectathon_Procedure_Examples.fsh",
-    "startLine": 124,
-    "endLine": 135
+    "startLine": 145,
+    "endLine": 156
   },
   {
     "outputFile": "Procedure-RestorationTooth12-example-dental-procedure.json",
     "fshName": "RestorationTooth12-example-dental-procedure",
     "fshType": "Instance",
     "fshFile": "SEP2024_Connectathon_Procedure_Examples.fsh",
-    "startLine": 137,
-    "endLine": 148
+    "startLine": 158,
+    "endLine": 169
   },
   {
     "outputFile": "Procedure-RestorationTooth13-example-dental-procedure.json",
     "fshName": "RestorationTooth13-example-dental-procedure",
     "fshType": "Instance",
     "fshFile": "SEP2024_Connectathon_Procedure_Examples.fsh",
-    "startLine": 150,
-    "endLine": 161
+    "startLine": 171,
+    "endLine": 182
   },
   {
     "outputFile": "Procedure-RestorationTooth14-example-dental-procedure.json",
     "fshName": "RestorationTooth14-example-dental-procedure",
     "fshType": "Instance",
     "fshFile": "SEP2024_Connectathon_Procedure_Examples.fsh",
-    "startLine": 163,
-    "endLine": 174
+    "startLine": 184,
+    "endLine": 195
   },
   {
     "outputFile": "Procedure-RestorationTooth15-example-dental-procedure.json",
     "fshName": "RestorationTooth15-example-dental-procedure",
     "fshType": "Instance",
     "fshFile": "SEP2024_Connectathon_Procedure_Examples.fsh",
-    "startLine": 176,
-    "endLine": 187
+    "startLine": 197,
+    "endLine": 208
   },
   {
     "outputFile": "Procedure-RestorationTooth2-example-dental-procedure.json",
@@ -220,16 +220,24 @@
     "fshName": "RestorationTooth8-example-dental-procedure",
     "fshType": "Instance",
     "fshFile": "SEP2024_Connectathon_Procedure_Examples.fsh",
-    "startLine": 85,
-    "endLine": 96
+    "startLine": 97,
+    "endLine": 108
   },
   {
     "outputFile": "Procedure-RestorationTooth9-example-dental-procedure.json",
     "fshName": "RestorationTooth9-example-dental-procedure",
     "fshType": "Instance",
     "fshFile": "SEP2024_Connectathon_Procedure_Examples.fsh",
-    "startLine": 98,
-    "endLine": 109
+    "startLine": 119,
+    "endLine": 130
+  },
+  {
+    "outputFile": "Procedure-RootCanalTooth8-example-dental-procedure.json",
+    "fshName": "RootCanalTooth8-example-dental-procedure",
+    "fshType": "Instance",
+    "fshFile": "SEP2024_Connectathon_Procedure_Examples.fsh",
+    "startLine": 85,
+    "endLine": 95
   },
   {
     "outputFile": "Procedure-buccal-restoration-example-dental-procedure.json",
