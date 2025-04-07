@@ -1,5 +1,5 @@
 Alias: $dental-category = http://hl7.org/fhir/us/dental-data-exchange/CodeSystem/dental-category
-Alias: $us-core-condition = http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition
+Alias: $us-core-condition = http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-problems-health-concerns
 
 Profile: DentalCondition
 Parent: $us-core-condition

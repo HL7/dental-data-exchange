@@ -5,7 +5,7 @@ Alias: $sct = http://snomed.info/sct
 Alias: $ADAUniversalToothDesignationSystem = http://terminology.hl7.org/CodeSystem/ADAUniversalToothDesignationSystem
 
 Instance: Rampant-caries-example-dental-condition
-InstanceOf: http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition
+InstanceOf: http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-problems-health-concerns
 Usage: #example
 * meta.profile = "http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"
 * clinicalStatus = $condition-clinical#active "Active"

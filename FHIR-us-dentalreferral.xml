@@ -12,8 +12,8 @@
 <artifact deprecated="true" id="CapabilityStatement/capabilitystatement-dental" key="CapabilityStatement-capabilitystatement-dental" name="Capability Statement - Dental"/>
 <artifact id="Communication/dental-education2" key="Communication-dental-education2" name="Communication- Patient Education 2 example"/>
 <artifact id="Communication/dental-education" key="Communication-dental-education" name="Communication- Patient education example"/>
-<artifact id="Bundle/Complete-Dental-Consult-Note-Document-Bundle-Example" key="Bundle-Complete-Dental-Consult-Note-Document-Bundle-Example" name="Complete Dental Consult Note Document Bundle example"/>
-<artifact id="Bundle/Complete-Dental-Referral-Note-Document-Bundle-Example" key="Bundle-Complete-Dental-Referral-Note-Document-Bundle-Example" name="Complete Dental Referral Note Document Bundle example"/>
+<artifact deprecated="true" id="Bundle/Complete-Dental-Consult-Note-Document-Bundle-Example" key="Bundle-Complete-Dental-Consult-Note-Document-Bundle-Example" name="Complete Dental Consult Note Document Bundle example"/>
+<artifact deprecated="true" id="Bundle/Complete-Dental-Referral-Note-Document-Bundle-Example" key="Bundle-Complete-Dental-Referral-Note-Document-Bundle-Example" name="Complete Dental Referral Note Document Bundle example"/>
 <artifact id="Condition/Bleeding-gums-example" key="Condition-Bleeding-gums-example" name="Condition- Bleeding gums example"/>
 <artifact id="Condition/Mandibular-perm18-example" key="Condition-Mandibular-perm18-example" name="Condition- Caries on Permanent Mandibular 18 example"/>
 <artifact id="Condition/Caries-risk" key="Condition-Caries-risk" name="Condition- Caries risk example"/>
@@ -33,15 +33,15 @@
 <artifact deprecated="true" id="Media/DQCurrentState" key="Media-DQCurrentState" name="DentaQuest Current State"/>
 <artifact deprecated="true" id="Media/DQIdealState" key="Media-DQIdealState" name="DentaQuest Ideal State"/>
 <artifact id="ValueSet/dental-anatomy" key="ValueSet-dental-anatomy" name="Dental Anatomy"/>
-<artifact id="StructureDefinition/dental-bundle" key="StructureDefinition-dental-bundle" name="Dental Bundle"/>
+<artifact deprecated="true" id="StructureDefinition/dental-bundle" key="StructureDefinition-dental-bundle" name="Dental Bundle"/>
 <artifact id="CodeSystem/dental-category" key="CodeSystem-dental-category" name="Dental Category"/>
 <artifact id="StructureDefinition/dental-communication" key="StructureDefinition-dental-communication" name="Dental Communication"/>
 <artifact id="StructureDefinition/dental-condition" key="StructureDefinition-dental-condition" name="Dental Condition"/>
 <artifact deprecated="true" id="CodeSystem/dental-condition" key="CodeSystem-dental-condition" name="Dental Condition Code Systems"/>
 <artifact deprecated="true" id="ValueSet/dental-condition" key="ValueSet-dental-condition" name="Dental Condition Value Set"/>
-<artifact id="StructureDefinition/dental-consult-note" key="StructureDefinition-dental-consult-note" name="Dental Consult Note"/>
+<artifact deprecated="true" id="StructureDefinition/dental-consult-note" key="StructureDefinition-dental-consult-note" name="Dental Consult Note"/>
 <artifact deprecated="true" id="StructureDefinition/dental-consult" key="StructureDefinition-dental-consult" name="Dental Consult Note-old"/>
-<artifact id="Composition/Dental-2-Med-Consult" key="Composition-Dental-2-Med-Consult" name="Dental Consultation Note example"/>
+<artifact deprecated="true" id="Composition/Dental-2-Med-Consult" key="Composition-Dental-2-Med-Consult" name="Dental Consultation Note example"/>
 <artifact id="CapabilityStatement/dental-client-capstat" key="CapabilityStatement-dental-client-capstat" name="Dental Data Exchange Client"/>
 <artifact id="CapabilityStatement/dental-server-capstat" key="CapabilityStatement-dental-server-capstat" name="Dental Data Exchange Server"/>
 <artifact id="Encounter/Dental-encounter" key="Encounter-Dental-encounter" name="Dental Encounter example"/>
@@ -52,9 +52,9 @@
 <artifact id="StructureDefinition/dental-procedure" key="StructureDefinition-dental-procedure" name="Dental Procedure"/>
 <artifact id="ValueSet/dental-procedure-codes-vs" key="ValueSet-dental-procedure-codes-vs" name="Dental Procedure Codes Value Set"/>
 <artifact id="ValueSet/dental-reason-for-referral" key="ValueSet-dental-reason-for-referral" name="Dental Reason For Referral"/>
-<artifact id="StructureDefinition/dental-referral-note" key="StructureDefinition-dental-referral-note" name="Dental Referral Note"/>
+<artifact deprecated="true" id="StructureDefinition/dental-referral-note" key="StructureDefinition-dental-referral-note" name="Dental Referral Note"/>
 <artifact deprecated="true" id="StructureDefinition/dental-referralnote" key="StructureDefinition-dental-referralnote" name="Dental Referral Note Profile"/>
-<artifact id="Composition/Med-2-Dental-Referral" key="Composition-Med-2-Dental-Referral" name="Dental Referral Note example"/>
+<artifact deprecated="true" id="Composition/Med-2-Dental-Referral" key="Composition-Med-2-Dental-Referral" name="Dental Referral Note example"/>
 <artifact id="ServiceRequest/example-dental-referral-1" key="ServiceRequest-example-dental-referral-1" name="Dental Referral ServiceRequest example"/>
 <artifact id="StructureDefinition/dental-servicerequest" key="StructureDefinition-dental-servicerequest" name="Dental Service Request"/>
 <artifact id="Parameters/dental-terminology-settings" key="Parameters-dental-terminology-settings" name="Dental Terminology Settings"/>

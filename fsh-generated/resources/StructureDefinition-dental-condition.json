@@ -72,23 +72,10 @@
   "kind": "resource",
   "abstract": false,
   "type": "Condition",
-  "baseDefinition": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition",
+  "baseDefinition": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-problems-health-concerns",
   "derivation": "constraint",
   "differential": {
     "element": [
-      {
-        "id": "Condition.extension",
-        "path": "Condition.extension",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "rules": "open"
-        }
-      },
       {
         "id": "Condition.extension:BodyStructure",
         "path": "Condition.extension",
@@ -113,15 +100,7 @@
       {
         "id": "Condition.category",
         "path": "Condition.category",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "pattern",
-              "path": "$this"
-            }
-          ],
-          "rules": "open"
-        }
+        "min": 2
       },
       {
         "id": "Condition.category:dental",

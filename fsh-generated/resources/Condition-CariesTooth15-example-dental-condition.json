@@ -16,6 +16,15 @@
           "display": "Dental"
         }
       ]
+    },
+    {
+      "coding": [
+        {
+          "code": "problem-list-item",
+          "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+          "display": "Problem List Item"
+        }
+      ]
     }
   ],
   "extension": [

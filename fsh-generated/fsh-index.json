@@ -4,48 +4,48 @@
     "fshName": "CariesTooth10-example-dental-condition",
     "fshType": "Instance",
     "fshFile": "SEP2024_Connectathon_Condition_Examples.fsh",
-    "startLine": 160,
-    "endLine": 175
+    "startLine": 168,
+    "endLine": 184
   },
   {
     "outputFile": "Condition-CariesTooth11-example-dental-condition.json",
     "fshName": "CariesTooth11-example-dental-condition",
     "fshType": "Instance",
     "fshFile": "SEP2024_Connectathon_Condition_Examples.fsh",
-    "startLine": 177,
-    "endLine": 192
+    "startLine": 186,
+    "endLine": 202
   },
   {
     "outputFile": "Condition-CariesTooth12-example-dental-condition.json",
     "fshName": "CariesTooth12-example-dental-condition",
     "fshType": "Instance",
     "fshFile": "SEP2024_Connectathon_Condition_Examples.fsh",
-    "startLine": 194,
-    "endLine": 209
+    "startLine": 204,
+    "endLine": 220
   },
   {
     "outputFile": "Condition-CariesTooth13-example-dental-condition.json",
     "fshName": "CariesTooth13-example-dental-condition",
     "fshType": "Instance",
     "fshFile": "SEP2024_Connectathon_Condition_Examples.fsh",
-    "startLine": 211,
-    "endLine": 226
+    "startLine": 222,
+    "endLine": 238
   },
   {
     "outputFile": "Condition-CariesTooth14-example-dental-condition.json",
     "fshName": "CariesTooth14-example-dental-condition",
     "fshType": "Instance",
     "fshFile": "SEP2024_Connectathon_Condition_Examples.fsh",
-    "startLine": 228,
-    "endLine": 243
+    "startLine": 240,
+    "endLine": 256
   },
   {
     "outputFile": "Condition-CariesTooth15-example-dental-condition.json",
     "fshName": "CariesTooth15-example-dental-condition",
     "fshType": "Instance",
     "fshFile": "SEP2024_Connectathon_Condition_Examples.fsh",
-    "startLine": 245,
-    "endLine": 260
+    "startLine": 258,
+    "endLine": 274
   },
   {
     "outputFile": "Condition-CariesTooth2-example-dental-condition.json",
@@ -53,71 +53,71 @@
     "fshType": "Instance",
     "fshFile": "SEP2024_Connectathon_Condition_Examples.fsh",
     "startLine": 7,
-    "endLine": 22
+    "endLine": 23
   },
   {
     "outputFile": "Condition-CariesTooth3-example-dental-condition.json",
     "fshName": "CariesTooth3-example-dental-condition",
     "fshType": "Instance",
     "fshFile": "SEP2024_Connectathon_Condition_Examples.fsh",
-    "startLine": 24,
-    "endLine": 39
+    "startLine": 25,
+    "endLine": 41
   },
   {
     "outputFile": "Condition-CariesTooth4-example-dental-condition.json",
     "fshName": "CariesTooth4-example-dental-condition",
     "fshType": "Instance",
     "fshFile": "SEP2024_Connectathon_Condition_Examples.fsh",
-    "startLine": 41,
-    "endLine": 56
+    "startLine": 43,
+    "endLine": 59
   },
   {
     "outputFile": "Condition-CariesTooth5-example-dental-condition.json",
     "fshName": "CariesTooth5-example-dental-condition",
     "fshType": "Instance",
     "fshFile": "SEP2024_Connectathon_Condition_Examples.fsh",
-    "startLine": 58,
-    "endLine": 73
+    "startLine": 61,
+    "endLine": 77
   },
   {
     "outputFile": "Condition-CariesTooth6-example-dental-condition.json",
     "fshName": "CariesTooth6-example-dental-condition",
     "fshType": "Instance",
     "fshFile": "SEP2024_Connectathon_Condition_Examples.fsh",
-    "startLine": 75,
-    "endLine": 90
+    "startLine": 79,
+    "endLine": 95
   },
   {
     "outputFile": "Condition-CariesTooth7-example-dental-condition.json",
     "fshName": "CariesTooth7-example-dental-condition",
     "fshType": "Instance",
     "fshFile": "SEP2024_Connectathon_Condition_Examples.fsh",
-    "startLine": 92,
-    "endLine": 107
+    "startLine": 97,
+    "endLine": 113
   },
   {
     "outputFile": "Condition-CariesTooth8-example-dental-condition.json",
     "fshName": "CariesTooth8-example-dental-condition",
     "fshType": "Instance",
     "fshFile": "SEP2024_Connectathon_Condition_Examples.fsh",
-    "startLine": 109,
-    "endLine": 124
+    "startLine": 115,
+    "endLine": 131
   },
   {
     "outputFile": "Condition-CariesTooth9-example-dental-condition.json",
     "fshName": "CariesTooth9-example-dental-condition",
     "fshType": "Instance",
     "fshFile": "SEP2024_Connectathon_Condition_Examples.fsh",
-    "startLine": 143,
-    "endLine": 158
+    "startLine": 150,
+    "endLine": 166
   },
   {
     "outputFile": "Condition-PeriodontalAbscessTooth8-example-dental-condition.json",
     "fshName": "PeriodontalAbscessTooth8-example-dental-condition",
     "fshType": "Instance",
     "fshFile": "SEP2024_Connectathon_Condition_Examples.fsh",
-    "startLine": 126,
-    "endLine": 141
+    "startLine": 133,
+    "endLine": 148
   },
   {
     "outputFile": "Condition-Rampant-caries-example-dental-condition.json",
